@@ -1,0 +1,13 @@
+{
+  "string_example": "Hello, world!",
+  "number_example": 42,
+  "float_example": 3.14,
+  "boolean_example": true,
+  "array_example": [1, 2, 3, 4, 5],
+  "object_example": {
+    "name": "John",
+    "age": 30,
+    "is_student": false
+  },
+  "null_example": null
+}
