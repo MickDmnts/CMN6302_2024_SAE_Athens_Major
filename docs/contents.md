@@ -14,7 +14,7 @@
 
 (Μέχρι 1/5, έχει ήδη γίνει συγγραφή περίπου του μισού μέρους)
 Κεφάλαιο 2: Θεωρητικό πλαίσιο
-2.1 Εισαγωγή κεφαλαίου
+~~2.1 Εισαγωγή κεφαλαίου~~
 ~~2.2 Persistent Data στην Πληροφορική
 2.3 Data Serialization
 2.3.1 Ορισμός του Serialization-Deserialization
@@ -23,17 +23,14 @@
 - ~~JSON~~
 - ~~XML~~
 - ~~YAML~~
-- Binary (wip)
+- ~~Binary~~
 
-2.3.3 Κριτήρια επιλογής serializer (Εδώ θα μιλήσω για όλα τα βασικά χαρακτηριστικά επιλογής ενός serializer) - ισως παει στο κεφ 3
-2.3.4 Object references κατα το serialization
-2.3.5 Επισκόπηση Serializers προς ανάλυση
+2.3.3 Object references κατα το serialization
+2.3.4 Επισκόπηση Serializers προς ανάλυση
 
-- Cap 'n Proto
+- MsgPack C++ 17
 
-- ProtoBuffs
-
-- MessagePackCCPP
+- protobuf
 
 2.4 Foreign Function Interfaces
 2.4.1 Ορισμός του Foreign Function Interface (FFI)
@@ -57,9 +54,9 @@
 - COM Interop
 
 2.5.3 Επισκόπηση SWIG (Simplified Wrapper and Interface Generator) (ίσως αφαιρεθεί)
-2.6 Συστήματα και λύσεις serializer στις μηχανές βιντεοπαιχνιδιών
+~~2.6 Συστήματα και λύσεις serializer στις μηχανές βιντεοπαιχνιδιών
 2.6.1 Unity
-2.6.2 Unreal Engine
+2.6.2 Unreal Engine~~
 
 (Μέχρι 1/5)
 Κεφάλαιο 3: Μεθοδολογία
@@ -68,7 +65,7 @@
 3.3 Ανάλυση επιλογής C/C++ ως βασική γλώσσα συγγραφής
 3.4 Ανάλυση και επιλογή εργαλείων
 
-- Base serializer (Can 'n Proto, ProtoBuffs, MessagePackCCPP)
+- Base serializer (protobuf ή MsgPack)
 - Χαρακτηριστικά βιβλιοθήκης 
 - Χαρακτηριστικά FFI
 - Χαρακτηριστικά Wrapper
@@ -103,6 +100,7 @@
 6.1 Εισαγωγή κεφαλαίου
 6.2 Ανάλυση παραχθέντος serialized αρχείου δοκιμών
 6.3 Αξιολόγηση χρήσης βιβλιοθήκης
+6.4 Σημειώσεις βελτιστοποίησης
 
 Κεφάλαιο 7: Συμπεράσματα
 7.1 Επισκόπηση της διατριβής
