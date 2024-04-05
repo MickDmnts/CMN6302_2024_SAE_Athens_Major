@@ -1,0 +1,25 @@
+# Scalars
+name: John Doe
+age: 30
+is_student: false
+null_value: null
+
+# Sequences
+hobbies:
+  - Reading
+  - Hiking
+  - Cooking
+
+# Mappings
+address:
+  city: New York
+  street: 123 Main St
+  zip_code: "10001"
+
+# Anchors and References
+person1: &person
+  name: Alice
+  age: 25
+
+#Reference to anchor &person
+person2: *person

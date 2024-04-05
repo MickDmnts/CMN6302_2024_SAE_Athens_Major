@@ -15,27 +15,35 @@
 (Μέχρι 1/5, έχει ήδη γίνει συγγραφή περίπου του μισού μέρους)
 Κεφάλαιο 2: Θεωρητικό πλαίσιο
 2.1 Εισαγωγή κεφαλαίου
-2.2 Persistent Data στην Πληροφορική
+~~2.2 Persistent Data στην Πληροφορική
 2.3 Data Serialization
 2.3.1 Ορισμός του Serialization-Deserialization
-2.3.2 Τύποι Serialization
-2.3.3 Κριτήρια επιλογής serializer (Εδώ θα μιλήσω για όλα τα βασικά χαρακτηριστικά επιλογής ενός serializer)
+2.3.2 Τύποι Serialization~~
+
+- ~~JSON~~
+- ~~XML~~
+- ~~YAML~~
+- Binary (wip)
+
+2.3.3 Κριτήρια επιλογής serializer (Εδώ θα μιλήσω για όλα τα βασικά χαρακτηριστικά επιλογής ενός serializer) - ισως παει στο κεφ 3
 2.3.4 Object references κατα το serialization
 2.3.5 Επισκόπηση Serializers προς ανάλυση
 
 - Cap 'n Proto
+
 - ProtoBuffs
+
 - MessagePackCCPP
 
 2.4 Foreign Function Interfaces
 2.4.1 Ορισμός του Foreign Function Interface (FFI)
-2.4.2 Σημείωση: Σχετικά με τα FFIs σκέφτομαι να τα εξηγήσω αρκετά σε αυτή την ενότητα με βάση τα παρακάτω bullet points (Δεν εχω σκεφτεί ακόμα τίτλο)
+2.4.2 Σημείωση: Σχετικά με τα FFIs σκέφτομαι να τα εξηγήσω αρκετά σε αυτή την ενότητα με βάση τα παρακάτω bullet points (Δεν έχω σκεφτεί ακόμα τίτλο)
 
 - Data Marshalling in FFIs
 - Error Handling in FFIs
 - Performance in FFIs
 
-2.4.3 Επισκόπηση διαφόρων FFΙs
+2.4.3 Επισκόπηση διαφόρων FFΙs (ίσως αφαιρεθεί)
 
 - JNI, Java
 - ctypes, Python
@@ -48,7 +56,7 @@
 - P/Invoke
 - COM Interop
 
-2.5.3 Επισκόπηση SWIG (Simplified Wrapper and Interface Generator)
+2.5.3 Επισκόπηση SWIG (Simplified Wrapper and Interface Generator) (ίσως αφαιρεθεί)
 2.6 Συστήματα και λύσεις serializer στις μηχανές βιντεοπαιχνιδιών
 2.6.1 Unity
 2.6.2 Unreal Engine
