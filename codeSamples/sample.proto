@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+// Define a message called "Person"
+message Person {
+  string name = 1;
+  int32 age = 2;
+  string email = 3;
+
+  // Nested message for address
+  message Address {
+    string street = 1;
+    string city = 2;
+    string postal_code = 3;
+  }
+
+  Address address = 4;
+
+  // Field for a list of phone numbers
+  repeated string phone_numbers = 5;
+}

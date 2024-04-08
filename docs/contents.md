@@ -13,7 +13,7 @@
 1.4 Δομή πτυχιακής εργασίας
 
 (Μέχρι 1/5, έχει ήδη γίνει συγγραφή περίπου του μισού μέρους)
-Κεφάλαιο 2: Θεωρητικό πλαίσιο
+~~Κεφάλαιο 2: Θεωρητικό πλαίσιο~~
 ~~2.1 Εισαγωγή κεφαλαίου~~
 ~~2.2 Persistent Data στην Πληροφορική
 2.3 Data Serialization
@@ -26,11 +26,11 @@
 - ~~Binary~~
 
 ~~2.4 Object references κατα το serialization~~
-2.5 Επισκόπηση Serializers προς ανάλυση
+~~2.5 Επισκόπηση Serializers προς ανάλυση~~
 
-- MsgPack C++ 17
+- ~~MsgPack C++ 17~~
 
-- protobuf
+- ~~protobuf~~
 
 2.6 Foreign Function Interfaces
 2.6.1 Ορισμός του Foreign Function Interface (FFI)
