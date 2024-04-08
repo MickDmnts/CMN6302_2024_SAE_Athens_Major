@@ -1,4 +1,5 @@
 # SAE Athens Major Project for CMN6302 by Diamantis Michail-Evangelos
+
 ###### SID: 13-13246
 
 ## Table of Contents
@@ -18,7 +19,7 @@ The Major Project is based on the following [Major Project Proposal](https://git
 - **Refs:** Almost every external paper, article, book, journal etc that will be cited in the paper can be found here.
 - **Code:** @TODO
 
-## Special Thanks 
+## Special Thanks
 
 @TODO
 

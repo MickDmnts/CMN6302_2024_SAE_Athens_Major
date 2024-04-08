@@ -25,38 +25,38 @@
 - ~~YAML~~
 - ~~Binary~~
 
-2.3.3 Object references κατα το serialization
-2.3.4 Επισκόπηση Serializers προς ανάλυση
+~~2.4 Object references κατα το serialization~~
+2.5 Επισκόπηση Serializers προς ανάλυση
 
 - MsgPack C++ 17
 
 - protobuf
 
-2.4 Foreign Function Interfaces
-2.4.1 Ορισμός του Foreign Function Interface (FFI)
-2.4.2 Σημείωση: Σχετικά με τα FFIs σκέφτομαι να τα εξηγήσω αρκετά σε αυτή την ενότητα με βάση τα παρακάτω bullet points (Δεν έχω σκεφτεί ακόμα τίτλο)
+2.6 Foreign Function Interfaces
+2.6.1 Ορισμός του Foreign Function Interface (FFI)
+2.6.2 Σημείωση: Σχετικά με τα FFIs σκέφτομαι να τα εξηγήσω αρκετά σε αυτή την ενότητα με βάση τα παρακάτω bullet points (Δεν έχω σκεφτεί ακόμα τίτλο)
 
 - Data Marshalling in FFIs
 - Error Handling in FFIs
 - Performance in FFIs
 
-2.4.3 Επισκόπηση διαφόρων FFΙs (ίσως αφαιρεθεί)
+2.7 Επισκόπηση διαφόρων FFΙs (ίσως αφαιρεθεί)
 
 - JNI, Java
 - ctypes, Python
 - FFI for Rust
 
-2.5 Code wrappers
-2.5.1 Ορισμός Code wrapper
-2.5.2 Managed wrappers και native wrappers
+2.8 Code wrappers
+2.8.1 Ορισμός Code wrapper
+2.8.2 Managed wrappers και native wrappers
 
 - P/Invoke
 - COM Interop
 
-2.5.3 Επισκόπηση SWIG (Simplified Wrapper and Interface Generator) (ίσως αφαιρεθεί)
-~~2.6 Συστήματα και λύσεις serializer στις μηχανές βιντεοπαιχνιδιών
-2.6.1 Unity
-2.6.2 Unreal Engine~~
+2.9.3 Επισκόπηση SWIG (Simplified Wrapper and Interface Generator) (ίσως αφαιρεθεί)
+~~2.9 Συστήματα και λύσεις serializer στις μηχανές βιντεοπαιχνιδιών
+2.9.1 Unity
+2.9.2 Unreal Engine~~
 
 (Μέχρι 1/5)
 Κεφάλαιο 3: Μεθοδολογία
