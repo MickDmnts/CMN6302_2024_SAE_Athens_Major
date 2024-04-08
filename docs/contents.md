@@ -33,18 +33,12 @@
 - ~~protobuf~~
 
 2.6 Foreign Function Interfaces
-2.6.1 Ορισμός του Foreign Function Interface (FFI)
-2.6.2 Σημείωση: Σχετικά με τα FFIs σκέφτομαι να τα εξηγήσω αρκετά σε αυτή την ενότητα με βάση τα παρακάτω bullet points (Δεν έχω σκεφτεί ακόμα τίτλο)
+~~2.6.1 Ορισμός του Foreign Function Interface (FFI)~~
+~~2.6.2 Data Marshalling in FFIs~~
+~~2.6.3 Error Handling in FFIs~~
+~~2.6.4 Performance in FFIs~~
 
-- Data Marshalling in FFIs
-- Error Handling in FFIs
-- Performance in FFIs
 
-2.7 Επισκόπηση διαφόρων FFΙs (ίσως αφαιρεθεί)
-
-- JNI, Java
-- ctypes, Python
-- FFI for Rust
 
 2.8 Code wrappers
 2.8.1 Ορισμός Code wrapper
