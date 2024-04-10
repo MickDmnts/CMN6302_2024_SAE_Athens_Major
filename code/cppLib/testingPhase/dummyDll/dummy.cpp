@@ -1,20 +1,44 @@
 #include "pch.h"
 #include "dummy.h"
+#include <vector>
 #include <iostream>
+#include <fstream>
 
-static unsigned int _number;
+unsigned int _number;
+unsigned char* _externalData = nullptr;
+int _size;
 
 unsigned int getNum()
 {
 	return _number;
 }
 
-void setNum(const unsigned int num)
+void setNum(unsigned int num)
 {
-	_number = num+1;
+	_number = num + 1;
 }
 
-bool isItCool(const bool state)
+bool isItCool(bool state)
 {
 	return !state;
 }
+
+void cacheByteArray(unsigned char* externalData, int size)
+{
+	_externalData = externalData;
+	_size = size;
+
+	std::ofstream MyFile("myData.txt");
+
+	for (int i = 0; i < _size; i++)
+	{
+		MyFile << _externalData[i];
+	}
+
+	MyFile.close();
+}
+
+//unsigned char* getByteArray()
+//{
+//	return _externalData;
+//}

@@ -166,6 +166,14 @@ MonoBehaviour:
   passNumber: 0
   number: 10
   myBool: 0
+  numbers: 0000000001000000020000000400000005000000
+  serializeData: 0
+  index: 0
+  retrieveSerialized: 0
+  serializedData:
+    number: 0
+    myBool: 0
+    numbers: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
