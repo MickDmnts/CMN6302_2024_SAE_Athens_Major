@@ -12,7 +12,7 @@
 1.3 Τρόπος προσέγγισης
 1.4 Δομή πτυχιακής εργασίας
 
-(Μέχρι 1/5, έχει ήδη γίνει συγγραφή περίπου του μισού μέρους)
+(Μέχρι 1/5)
 ~~Κεφάλαιο 2: Θεωρητικό πλαίσιο~~
 ~~2.1 Εισαγωγή κεφαλαίου~~
 ~~2.2 Persistent Data στην Πληροφορική
@@ -32,25 +32,20 @@
 
 - ~~protobuf~~
 
-2.6 Foreign Function Interfaces
+~~2.6 Foreign Function Interfaces~~
 ~~2.6.1 Ορισμός του Foreign Function Interface (FFI)~~
 ~~2.6.2 Data Marshalling in FFIs~~
 ~~2.6.3 Error Handling in FFIs~~
 ~~2.6.4 Performance in FFIs~~
 
+~~2.7 Code wrapper
+2.7.1 Managed και Unmanaged code
+2.7.2 Ορισμός Code wrapper
+2.7.3 Managed wrappers και native wrappers~~
 
-
-2.8 Code wrappers
-2.8.1 Ορισμός Code wrapper
-2.8.2 Managed wrappers και native wrappers
-
-- P/Invoke
-- COM Interop
-
-2.9.3 Επισκόπηση SWIG (Simplified Wrapper and Interface Generator) (ίσως αφαιρεθεί)
-~~2.9 Συστήματα και λύσεις serializer στις μηχανές βιντεοπαιχνιδιών
-2.9.1 Unity
-2.9.2 Unreal Engine~~
+~~2.8 Συστήματα και λύσεις serializer στις μηχανές βιντεοπαιχνιδιών
+2.8.1 Unity
+2.8.2 Unreal Engine~~
 
 (Μέχρι 1/5)
 Κεφάλαιο 3: Μεθοδολογία
