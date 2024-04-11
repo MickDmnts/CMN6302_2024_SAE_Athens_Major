@@ -25,11 +25,13 @@
 - ~~YAML~~
 - ~~Binary~~
 
-~~2.4 Object references κατα το serialization~~
+~~2.4 Memory management, addresses και serialization~~
+~~2.4.1 Logical και Physical addresses~~
+~~2.4.2 Memory Management και Virtual Memory σε ένα λειτουργικό σύστημα~~
+~~2.4.3 Τα memory addresses κατά το serialization~~
 ~~2.5 Επισκόπηση Serializers προς ανάλυση~~
 
 - ~~MsgPack C++ 17~~
-
 - ~~protobuf~~
 
 ~~2.6 Foreign Function Interfaces~~
@@ -38,10 +40,10 @@
 ~~2.6.3 Error Handling in FFIs~~
 ~~2.6.4 Performance in FFIs~~
 
-~~2.7 Code wrapper
-2.7.1 Managed και Unmanaged code
-2.7.2 Ορισμός Code wrapper
-2.7.3 Managed wrappers και native wrappers~~
+~~2.7 Library wrappers
+2.7.1 Managed και Unmanaged κώδικας
+2.7.2 Ορισμός των Library/DLL Wrappers στην Πληροφορική
+2.7.3 Managed και Unmanaged code wrappers~~
 
 ~~2.8 Συστήματα και λύσεις serializer στις μηχανές βιντεοπαιχνιδιών
 2.8.1 Unity
