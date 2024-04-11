@@ -17,7 +17,8 @@ The Major Project is based on the following [Major Project Proposal](https://git
 - **Docs:** The source .docx and .pdf files of the development of the paper can be found here.
 - **Imgs:** Every image, screenshot and self-made diagram can be found here.
 - **Refs:** Almost every external paper, article, book, journal etc that will be cited in the paper can be found here.
-- **Code:** @TODO
+    - Since, many sources are gathered through [Mendeley](https://www.mendeley.com/search/) around 90% of the cited work is not visible in the **Refs** folder 
+- **Code:** This folder contains the testing and production phase of this majors' hands-on work.
 
 ## Special Thanks
 
