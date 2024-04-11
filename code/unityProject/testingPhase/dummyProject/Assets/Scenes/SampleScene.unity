@@ -160,15 +160,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1453142518}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c515380819f3bfa4bacdc7a69619970d, type: 3}
+  m_Script: {fileID: 11500000, guid: 2bf151bafe3374d478c5a5de55377d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   passNumber: 0
-  number: 10
+  number: 0
   myBool: 0
-  numbers: 0000000001000000020000000400000005000000
+  numbers: 0000000001000000020000000300000004000000
   serializeData: 0
-  index: 0
   retrieveSerialized: 0
   serializedData:
     number: 0

@@ -1,7 +1,5 @@
 #pragma once
 
-#include <string>
-
 #ifdef DUMMY_EXPORTS
 #define DUMMY_API __declspec(dllexport)
 #else
@@ -16,4 +14,4 @@ extern "C" DUMMY_API bool isItCool(bool state);
 
 extern "C" DUMMY_API void cacheByteArray(unsigned char* data, int size);
 
-//extern "C" DUMMY_API unsigned char* getByteArray();
+extern "C" DUMMY_API unsigned char* getByteArray(int* size);

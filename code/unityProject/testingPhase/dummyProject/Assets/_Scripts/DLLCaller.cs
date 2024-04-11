@@ -1,13 +1,16 @@
 using UnityEngine;
 using System.Runtime.InteropServices;
-using System.Text;
 using System;
+using MessagePack;
 
-[Serializable]
+[Serializable, MessagePackObject]
 public struct Model
 {
+    [Key(0)]
     public int number;
+    [Key(1)]
     public bool myBool;
+    [Key(2)]
     public int[] numbers;
 }
 
@@ -21,8 +24,8 @@ public class DLLCaller : MonoBehaviour
     static extern bool isItCool(bool state);
     [DllImport("dummyDll.dll", CallingConvention = CallingConvention.Cdecl)]
     static extern void cacheByteArray(byte[] data, int size);
-    /* [DllImport("dummyDll.dll")]
-    static extern IntPtr getByteArray(); */
+    [DllImport("dummyDll.dll", CallingConvention = CallingConvention.Cdecl)]
+    static extern IntPtr getByteArray(out int size);
 
     uint GetNum()
     {
@@ -44,13 +47,18 @@ public class DLLCaller : MonoBehaviour
         cacheByteArray(data, size);
     }
 
-    /* byte[] GetByteArrayExternally()
+    byte[] GetByteArrayExternally()
     {
-        IntPtr ptr = getByteArray();
-        
+        int size = -1;
+        IntPtr unmanagedArray = getByteArray(out size);
 
-        return getByteArray();
-    } */
+        Debug.Log(size);
+
+        byte[] bytes = new byte[size];
+        Marshal.Copy(unmanagedArray, bytes, 0, size);
+
+        return bytes;
+    }
 
     public bool passNumber;
     [Space()]
@@ -60,7 +68,6 @@ public class DLLCaller : MonoBehaviour
     public int[] numbers;
     public bool serializeData;
     [Space()]
-    public int index;
     public bool retrieveSerialized;
     public Model serializedData;
 
@@ -90,16 +97,17 @@ public class DLLCaller : MonoBehaviour
                 numbers = numbers
             };
 
-            string json = JsonUtility.ToJson(temp);
-            CacheBytesExternally(Encoding.UTF8.GetBytes(json), json.Length);
+            byte[] bytes = MessagePackSerializer.Serialize(typeof(Model), temp);
+            CacheBytesExternally(bytes, bytes.Length);
         }
 
-        /* if (retrieveSerialized)
+        if (retrieveSerialized)
         {
             retrieveSerialized = false;
+
             byte[] externalData = GetByteArrayExternally();
-            string deserialized = Encoding.UTF8.GetString(externalData);
-            serializedData = JsonUtility.FromJson<Model>(deserialized);
-        } */
+
+            serializedData = (Model)MessagePackSerializer.Deserialize(typeof(Model), externalData);
+        }
     }
 }

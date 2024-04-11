@@ -3,10 +3,11 @@
 #include <vector>
 #include <iostream>
 #include <fstream>
+#include <filesystem>
 
-unsigned int _number;
-unsigned char* _externalData = nullptr;
-int _size;
+static unsigned int _number;
+static unsigned char* _externalData = nullptr;
+static int _size;
 
 unsigned int getNum()
 {
@@ -25,20 +26,15 @@ bool isItCool(bool state)
 
 void cacheByteArray(unsigned char* externalData, int size)
 {
-	_externalData = externalData;
 	_size = size;
+	_externalData = new unsigned char[_size];
 
-	std::ofstream MyFile("myData.txt");
-
-	for (int i = 0; i < _size; i++)
-	{
-		MyFile << _externalData[i];
-	}
-
-	MyFile.close();
+	memcpy(_externalData, externalData, _size);
 }
 
-//unsigned char* getByteArray()
-//{
-//	return _externalData;
-//}
+unsigned char* getByteArray(int* size)
+{
+	*size = _size;
+
+	return _externalData;
+}
