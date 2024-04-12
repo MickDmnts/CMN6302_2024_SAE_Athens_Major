@@ -17,22 +17,22 @@ public struct Model
 public class DLLCaller : MonoBehaviour
 {
     [DllImport("dummyDll.dll")]
-    static extern void setNum(uint msg);
+    static extern void setNum(Int32 msg);
     [DllImport("dummyDll.dll")]
-    static extern uint getNum();
+    static extern Int32 getNum();
     [DllImport("dummyDll.dll")]
     static extern bool isItCool(bool state);
     [DllImport("dummyDll.dll", CallingConvention = CallingConvention.Cdecl)]
-    static extern void cacheByteArray(byte[] data, int size);
+    static extern Int32 cacheByteArray(byte[] data, Int32 size);
     [DllImport("dummyDll.dll", CallingConvention = CallingConvention.Cdecl)]
     static extern IntPtr getByteArray(out int size);
 
-    uint GetNum()
+    Int32 GetNum()
     {
         return getNum();
     }
 
-    void SetNum(uint num)
+    void SetNum(Int32 num)
     {
         setNum(num);
     }
@@ -42,9 +42,9 @@ public class DLLCaller : MonoBehaviour
         return isItCool(state);
     }
 
-    void CacheBytesExternally(byte[] data, int size)
+    Int32 CacheBytesExternally(byte[] data, int size)
     {
-        cacheByteArray(data, size);
+        return cacheByteArray(data, size);
     }
 
     byte[] GetByteArrayExternally()
@@ -77,9 +77,9 @@ public class DLLCaller : MonoBehaviour
         {
             passNumber = false;
 
-            SetNum((uint)number);
+            SetNum((Int32)number);
 
-            number = (int)GetNum();
+            number = (Int32)GetNum();
 
             Debug.Log(number);
 
@@ -98,7 +98,11 @@ public class DLLCaller : MonoBehaviour
             };
 
             byte[] bytes = MessagePackSerializer.Serialize(typeof(Model), temp);
-            CacheBytesExternally(bytes, bytes.Length);
+            int rc = CacheBytesExternally(bytes, bytes.Length);
+            if (rc != 0)
+            { Debug.LogError($"Serialization caching ended with code: {rc}"); }
+            else
+            { Debug.Log($"Serialization caching ended with code: {rc}"); }
         }
 
         if (retrieveSerialized)

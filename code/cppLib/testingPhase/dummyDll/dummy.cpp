@@ -5,16 +5,16 @@
 #include <fstream>
 #include <filesystem>
 
-static unsigned int _number;
+static int _number;
 static unsigned char* _externalData = nullptr;
 static int _size;
 
-unsigned int getNum()
+int getNum()
 {
 	return _number;
 }
 
-void setNum(unsigned int num)
+void setNum(int num)
 {
 	_number = num + 1;
 }
@@ -24,12 +24,25 @@ bool isItCool(bool state)
 	return !state;
 }
 
-void cacheByteArray(unsigned char* externalData, int size)
+int cacheByteArray(unsigned char* externalData, int size)
 {
-	_size = size;
-	_externalData = new unsigned char[_size];
+	int result = -1;
 
-	memcpy(_externalData, externalData, _size);
+	try
+	{
+		_size = size;
+		_externalData = new unsigned char[_size];
+
+		memcpy(_externalData, externalData, _size);
+
+		result = 0;
+	}
+	catch (...)
+	{
+		result = 1;
+	}
+
+	return result;
 }
 
 unsigned char* getByteArray(int* size)
