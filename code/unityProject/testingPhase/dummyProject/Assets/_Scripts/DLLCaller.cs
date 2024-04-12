@@ -73,6 +73,7 @@ public class DLLCaller : MonoBehaviour
 
     void Update()
     {
+        passNumber = true;
         if (passNumber)
         {
             passNumber = false;
@@ -83,9 +84,10 @@ public class DLLCaller : MonoBehaviour
 
             Debug.Log(number);
 
-            Debug.Log(GetBool(myBool));
-        }
+            myBool = GetBool(myBool);
+        }   
 
+        serializeData = true;
         if (serializeData)
         {
             serializeData = false;
@@ -105,6 +107,7 @@ public class DLLCaller : MonoBehaviour
             { Debug.Log($"Serialization caching ended with code: {rc}"); }
         }
 
+        retrieveSerialized = true;
         if (retrieveSerialized)
         {
             retrieveSerialized = false;

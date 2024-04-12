@@ -5,9 +5,9 @@
 #include <fstream>
 #include <filesystem>
 
-static int _number;
-static unsigned char* _externalData = nullptr;
-static int _size;
+int _number;
+unsigned char* _externalData = nullptr;
+int _size;
 
 int getNum()
 {
@@ -49,5 +49,8 @@ unsigned char* getByteArray(int* size)
 {
 	*size = _size;
 
-	return _externalData;
+	unsigned char* temp = new unsigned char[_size];
+	memcpy(temp, _externalData, _size);
+
+	return temp;
 }
