@@ -19,6 +19,7 @@ The Major Project is based on the following [Major Project Proposal](https://git
 - **Refs:** Almost every external paper, article, book, journal etc that will be cited in the paper can be found here.
     - Since, many sources are gathered through [Mendeley](https://www.mendeley.com/search/) around 90% of the cited work is not visible in the **Refs** folder 
 - **Code:** This folder contains the testing and production phase of this majors' hands-on work.
+- **Reports**: Momthly milestone reports for the current progress of the Major.
 
 ## Special Thanks
 
