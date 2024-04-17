@@ -59,8 +59,8 @@
 ~~3.5.1 Χαρακτηριστικά βιβλιοθήκης ~~
 ~~3.5.2 Χαρακτηριστικά FFI
 3.5.3 Χαρακτηριστικά Wrapper~~
-3.6 Διατήρηση των references μεταξύ των instances μετα το serialization (SMRI)
-3.7 Test environment στη Unity
+~~3.6 Διατήρηση των references μεταξύ των instances μετα το serialization (SMRI)~~
+~~3.7 Test environment στη Unity~~
 3.8 Σχεδιασμός λύσης
 3.8.1 Σχεδιασμός βασικής βιβλιοθήκης σε C/C++
 3.8.2 Σχεδιασμός Foreign Function Interface
