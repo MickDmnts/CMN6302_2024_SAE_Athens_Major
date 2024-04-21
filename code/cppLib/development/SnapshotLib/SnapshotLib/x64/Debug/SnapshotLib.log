@@ -1,0 +1,8 @@
+﻿  SnapshotLib.cpp
+C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.cpp(4,5): warning C4273: 'getNum': inconsistent dll linkage
+  (compiling source file '/SnapshotLib.cpp')
+  C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.h(9,29):
+  see previous definition of 'getNum'
+  
+     Creating library C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\x64\Debug\SnapshotLib.lib and object C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\x64\Debug\SnapshotLib.exp
+  SnapshotLib.vcxproj -> C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\x64\Debug\SnapshotLib.dll

@@ -1,28 +1,18 @@
 ﻿  dummy.cpp
-C:\Users\micha\Desktop\_Major\code\cppLib\testingPhase\dummyDll\dummy.cpp(12,5): warning C4273: 'getNum': inconsistent dll linkage
+C:\Users\micha\Desktop\_Major\code\cppLib\testingPhase\dummyDll\dummy.h(24,68): warning C4190: 'getModelData' has C-linkage specified, but returns UDT 'DataContainer' which is incompatible with C
   (compiling source file '/dummy.cpp')
-  C:\Users\micha\Desktop\_Major\code\cppLib\testingPhase\dummyDll\dummy.h(11,26):
-  see previous definition of 'getNum'
+  C:\Users\micha\Desktop\_Major\code\cppLib\testingPhase\dummyDll\dummy.h(9,8):
+  see declaration of 'DataContainer'
   
-C:\Users\micha\Desktop\_Major\code\cppLib\testingPhase\dummyDll\dummy.cpp(17,6): warning C4273: 'setNum': inconsistent dll linkage
+C:\Users\micha\Desktop\_Major\code\cppLib\testingPhase\dummyDll\dummy.cpp(14,7): warning C4273: 'cacheModel': inconsistent dll linkage
   (compiling source file '/dummy.cpp')
-  C:\Users\micha\Desktop\_Major\code\cppLib\testingPhase\dummyDll\dummy.h(9,27):
-  see previous definition of 'setNum'
+  C:\Users\micha\Desktop\_Major\code\cppLib\testingPhase\dummyDll\dummy.h(22,28):
+  see previous definition of 'cacheModel'
   
-C:\Users\micha\Desktop\_Major\code\cppLib\testingPhase\dummyDll\dummy.cpp(22,6): warning C4273: 'isItCool': inconsistent dll linkage
+C:\Users\micha\Desktop\_Major\code\cppLib\testingPhase\dummyDll\dummy.cpp(30,15): warning C4273: 'getModelData': inconsistent dll linkage
   (compiling source file '/dummy.cpp')
-  C:\Users\micha\Desktop\_Major\code\cppLib\testingPhase\dummyDll\dummy.h(13,27):
-  see previous definition of 'isItCool'
-  
-C:\Users\micha\Desktop\_Major\code\cppLib\testingPhase\dummyDll\dummy.cpp(27,5): warning C4273: 'cacheByteArray': inconsistent dll linkage
-  (compiling source file '/dummy.cpp')
-  C:\Users\micha\Desktop\_Major\code\cppLib\testingPhase\dummyDll\dummy.h(15,26):
-  see previous definition of 'cacheByteArray'
-  
-C:\Users\micha\Desktop\_Major\code\cppLib\testingPhase\dummyDll\dummy.cpp(48,16): warning C4273: 'getByteArray': inconsistent dll linkage
-  (compiling source file '/dummy.cpp')
-  C:\Users\micha\Desktop\_Major\code\cppLib\testingPhase\dummyDll\dummy.h(17,37):
-  see previous definition of 'getByteArray'
+  C:\Users\micha\Desktop\_Major\code\cppLib\testingPhase\dummyDll\dummy.h(24,36):
+  see previous definition of 'getModelData'
   
   dllmain.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
      Creating library C:\Users\micha\Desktop\_Major\code\cppLib\testingPhase\dummyDll\x64\Debug\dummyDll.lib and object C:\Users\micha\Desktop\_Major\code\cppLib\testingPhase\dummyDll\x64\Debug\dummyDll.exp
