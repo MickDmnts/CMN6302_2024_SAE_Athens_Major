@@ -167,7 +167,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93b82fda541d34f4c9f2d80be9f75d40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Save: 0
+  _GetSmri: 0
+  _DecreaseSmri: 0
+  _ResetSmri: 0
+  _CacheModel: 0
+  _RetrieveOnSmri: 0
+  _Smri: 0
+  _CurrentSmri: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
