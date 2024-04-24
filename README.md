@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-| [Student ID](#sid-13-13246) | [Introduction](#introduction) | [Folder Definitions](#folder-definitions) | [Special Thanks](#special-thanks) | [References and Tools](#references-and-tools) |
+| [Student ID](#sid-13-13246) | [Introduction](#introduction) | [Folder Definitions](#folder-definitions) | [Active Issues](#issues) | [Special Thanks](#special-thanks) | [References and Tools](#references-and-tools) |
 
 ## Introduction
 
@@ -20,6 +20,10 @@ The Major Project is based on the following [Major Project Proposal](https://git
     - Since, many sources are gathered through [Mendeley](https://www.mendeley.com/search/) around 90% of the cited work is not visible in the **Refs** folder 
 - **Code:** This folder contains the testing and production phase of this majors' hands-on work.
 - **Reports**: Monthly milestone reports for the current progress of the Major.
+
+## Issues
+
+Take a look on what I'm [currently working](https://github.com/MichaelEvangelosD/cmn6302_majorSAE/issues) on!
 
 ## Special Thanks
 
