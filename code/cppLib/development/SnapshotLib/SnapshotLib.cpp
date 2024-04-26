@@ -1,8 +1,10 @@
 #include "pch.h"
 #include "SnapshotLib.h"
+#include "LibraryUtils.h"
 #include <unordered_map>
 #include <iostream>
 #include <fstream>
+#include <stdexcept>
 
 DataContainer::DataContainer(unsigned int _smri, unsigned char* _data, int _dataSize) {
 	_Smri = _smri;
@@ -44,7 +46,13 @@ std::string _SavePath = "";
 short setSavePath(const char* _savePath) {
 	try {
 		_SavePath = _savePath;
+		if (!directoryExists(_SavePath)) {
+			throw std::runtime_error("Passed _SavePath does not exist.");
+		}
 		return 0;
+	}
+	catch (std::runtime_error) {
+		return 76;
 	}
 	catch (...) {
 		return 1;
@@ -110,9 +118,17 @@ short resetSmri() {
 short cacheData(DataContainer _model, int _dataSize) {
 	try {
 		DataContainer temp(_model._Smri, _model._Data, _dataSize);
-		std::ofstream outfile("output.bin", std::ios::out | std::ios::binary);
+
+		//DEBUG========================================
+		int cnt = getFileCount(_SavePath);
+		std::string dt = getCurrentDate();
+		std::string finalSaveName = formatSaveString(SAVE_FORMAT, dt, cnt);
+
+		std::string saveStr = combinePath(_SavePath, finalSaveName) + SAVE_EXTENSION;
+		std::ofstream outfile(saveStr, std::ios::out | std::ios::binary);
 		outfile.write(reinterpret_cast<char*>(temp._Data), _dataSize);
 		outfile.close();
+		//=====================================================================
 
 		_ModelCache.insert(std::make_pair(temp._Smri, std::tuple<int, unsigned char*>(_dataSize, temp._Data)));
 

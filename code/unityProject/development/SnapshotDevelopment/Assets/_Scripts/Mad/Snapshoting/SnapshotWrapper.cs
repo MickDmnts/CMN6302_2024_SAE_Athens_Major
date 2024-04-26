@@ -1,4 +1,5 @@
 using System;
+using System.IO;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
@@ -14,6 +15,15 @@ public struct DataContainer {
 }
 
 public static class SnapshotWrapper {
+
+    /// <summary>
+    /// 
+    /// </summary>
+    enum ErrorCodes{
+        OperationSuccessful = 0,
+        OperationFailed = 1,
+        DirectoryNotFound = 76,
+    }
 
     #region DLL Invokes
     [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
@@ -52,7 +62,11 @@ public static class SnapshotWrapper {
     /// <returns></returns>
     public static bool SetSavePath(string _path) {
         try {
-            return setSavePath(_path) == 0;
+            Int16 ec = setSavePath(_path);
+            if(ec == (Int16)ErrorCodes.DirectoryNotFound){
+                throw new DirectoryNotFoundException($"Passed path {_path} does not exist.");
+            }
+            return ec == (Int16)ErrorCodes.OperationSuccessful;
         } catch (Exception exception) {
             Debug.LogError($"Could not set the DLL save path:\n{exception}");
             return false;
@@ -68,7 +82,8 @@ public static class SnapshotWrapper {
         try {
             IntPtr strPtr = getSavePath();
             return Marshal.PtrToStringAnsi(strPtr);
-        } catch (Exception exception) {
+        } 
+        catch (Exception exception) {
             throw new Exception("Could not get the current save path from DLL:\n{0}", exception);
         }
     }
@@ -116,7 +131,7 @@ public static class SnapshotWrapper {
     /// <returns>True if the reset was succesfull, false otherwise with an error log.</returns>
     public static bool ResetSmri() {
         try {
-            return resetSmri() == 0;
+            return resetSmri() == (Int16)ErrorCodes.OperationSuccessful;
         } catch (Exception exception) {
             Debug.LogError($"Could not reset the DLL SMRI:\n{exception}");
             return false;
@@ -167,7 +182,7 @@ public static class SnapshotWrapper {
     /// <returns></returns>
     public static bool ResetCache() {
         try {
-            return resetCache() == 0;
+            return resetCache() == (Int16)ErrorCodes.OperationSuccessful;
         } catch (Exception exception) {
             Debug.LogError($"Could not reset the cache of the DLL:\n{exception}");
             return false;

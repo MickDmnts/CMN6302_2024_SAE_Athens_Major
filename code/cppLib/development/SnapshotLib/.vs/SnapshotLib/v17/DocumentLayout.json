@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\micha\\Desktop\\_Major\\code\\cppLib\\development\\SnapshotLib\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FB732E1A-0B72-45F3-8880-02967E018985}|SnapshotLib.vcxproj|C:\\Users\\micha\\Desktop\\_Major\\code\\cppLib\\development\\SnapshotLib\\SnapshotLib.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{FB732E1A-0B72-45F3-8880-02967E018985}|SnapshotLib.vcxproj|solutionrelative:SnapshotLib.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{FB732E1A-0B72-45F3-8880-02967E018985}|SnapshotLib.vcxproj|C:\\Users\\micha\\Desktop\\_Major\\code\\cppLib\\development\\SnapshotLib\\LibraryUtils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FB732E1A-0B72-45F3-8880-02967E018985}|SnapshotLib.vcxproj|solutionrelative:LibraryUtils.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FB732E1A-0B72-45F3-8880-02967E018985}|SnapshotLib.vcxproj|C:\\Users\\micha\\Desktop\\_Major\\code\\cppLib\\development\\SnapshotLib\\SnapshotLib.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{FB732E1A-0B72-45F3-8880-02967E018985}|SnapshotLib.vcxproj|solutionrelative:SnapshotLib.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB732E1A-0B72-45F3-8880-02967E018985}|SnapshotLib.vcxproj|C:\\Users\\micha\\Desktop\\_Major\\code\\cppLib\\development\\SnapshotLib\\LibraryUtils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FB732E1A-0B72-45F3-8880-02967E018985}|SnapshotLib.vcxproj|solutionrelative:LibraryUtils.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB732E1A-0B72-45F3-8880-02967E018985}|SnapshotLib.vcxproj|C:\\Users\\micha\\Desktop\\_Major\\code\\cppLib\\development\\SnapshotLib\\SnapshotLib.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{FB732E1A-0B72-45F3-8880-02967E018985}|SnapshotLib.vcxproj|solutionrelative:SnapshotLib.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,15 +31,43 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "LibraryUtils.h",
+              "DocumentMoniker": "C:\\Users\\micha\\Desktop\\_Major\\code\\cppLib\\development\\SnapshotLib\\LibraryUtils.h",
+              "RelativeDocumentMoniker": "LibraryUtils.h",
+              "ToolTip": "C:\\Users\\micha\\Desktop\\_Major\\code\\cppLib\\development\\SnapshotLib\\LibraryUtils.h",
+              "RelativeToolTip": "LibraryUtils.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-26T00:16:27.148Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LibraryUtils.cpp",
+              "DocumentMoniker": "C:\\Users\\micha\\Desktop\\_Major\\code\\cppLib\\development\\SnapshotLib\\LibraryUtils.cpp",
+              "RelativeDocumentMoniker": "LibraryUtils.cpp",
+              "ToolTip": "C:\\Users\\micha\\Desktop\\_Major\\code\\cppLib\\development\\SnapshotLib\\LibraryUtils.cpp",
+              "RelativeToolTip": "LibraryUtils.cpp",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAEEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-04-26T00:19:02.949Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "SnapshotLib.h",
               "DocumentMoniker": "C:\\Users\\micha\\Desktop\\_Major\\code\\cppLib\\development\\SnapshotLib\\SnapshotLib.h",
               "RelativeDocumentMoniker": "SnapshotLib.h",
               "ToolTip": "C:\\Users\\micha\\Desktop\\_Major\\code\\cppLib\\development\\SnapshotLib\\SnapshotLib.h",
               "RelativeToolTip": "SnapshotLib.h",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAgAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-04-20T11:41:42.888Z",
-              "EditorCaption": ""
+              "IsPinned": true
             }
           ]
         },
@@ -47,7 +83,7 @@
               "RelativeDocumentMoniker": "SnapshotLib.cpp",
               "ToolTip": "C:\\Users\\micha\\Desktop\\_Major\\code\\cppLib\\development\\SnapshotLib\\SnapshotLib.cpp",
               "RelativeToolTip": "SnapshotLib.cpp",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAmAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAACwAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-20T11:41:56.523Z",
               "EditorCaption": ""
