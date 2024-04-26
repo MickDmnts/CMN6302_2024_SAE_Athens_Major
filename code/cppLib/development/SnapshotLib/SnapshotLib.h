@@ -6,6 +6,8 @@
 #define SNAPSHOT_API __declspec(dllimport)
 #endif
 
+#include <string>
+
 struct DataContainer
 {
 public:
@@ -15,6 +17,8 @@ public:
 	unsigned char* _Data;
 };
 
+extern "C" SNAPSHOT_API short setSavePath(const char* _savePath);
+extern "C" SNAPSHOT_API const char* getSavePath();
 extern "C" SNAPSHOT_API unsigned int getSmri();
 extern "C" SNAPSHOT_API void decreaseSmri();
 extern "C" SNAPSHOT_API unsigned int getCurrentSmri();

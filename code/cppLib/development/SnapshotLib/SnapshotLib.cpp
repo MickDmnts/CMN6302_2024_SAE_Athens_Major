@@ -10,16 +10,58 @@ DataContainer::DataContainer(unsigned int _smri, unsigned char* _data, int _data
 	memcpy(_Data, _data, _dataSize);
 }
 
+#pragma region GlobalVariables
+/*
+@TODO: Summary
+*/
+const std::string SAVE_FORMAT = "{date}_{cnt}";
+
+/*
+@TODO: Summary
+*/
+const std::string SAVE_EXTENSION = ".sav";
+
 /*
 The global SMRI value used in data storage and reference preservation.
 Default value is -1
 */
 int _GlobalSmriValue = -1;
-
 /*
 TODO: Summary
 */
 std::unordered_map<unsigned int, std::tuple<int, unsigned char*>> _ModelCache;
+
+/*
+@TODO: Summary
+*/
+std::string _SavePath = "";
+
+#pragma endregion
+
+/*
+@TODO: Summary
+*/
+short setSavePath(const char* _savePath) {
+	try {
+		_SavePath = _savePath;
+		return 0;
+	}
+	catch (...) {
+		return 1;
+	}
+}
+
+/*
+@TODO: Summary
+*/
+const char* getSavePath() {
+	try {
+		return _SavePath.c_str();
+	}
+	catch (...) {
+		return nullptr;
+	}
+}
 
 /*
 Increases and returns the current global SMRI.
@@ -63,7 +105,7 @@ short resetSmri() {
 }
 
 /*
-
+@TODO: Summary
 */
 short cacheData(DataContainer _model, int _dataSize) {
 	try {

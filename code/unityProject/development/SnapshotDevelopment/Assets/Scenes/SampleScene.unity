@@ -164,15 +164,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 722215409}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93b82fda541d34f4c9f2d80be9f75d40, type: 3}
+  m_Script: {fileID: 11500000, guid: 84cefb3ee1a5e344c82683c51ef3b040, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _GetSmri: 0
   _DecreaseSmri: 0
   _ResetSmri: 0
   _CacheModel: 0
-  _RetrieveOnSmri: 0
   _Smri: 0
+  _RetrieveOnSmri: 0
+  _SavePath: C:\SnapSaves
+  _SetPath: 0
+  _GetPath: 0
   _CurrentSmri: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

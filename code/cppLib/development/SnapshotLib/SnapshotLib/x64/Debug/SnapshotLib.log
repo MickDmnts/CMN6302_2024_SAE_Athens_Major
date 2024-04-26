@@ -1,37 +1,48 @@
 ﻿  SnapshotLib.cpp
-C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.cpp(28,14): warning C4273: 'getSmri': inconsistent dll linkage
+C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.cpp(44,7): warning C4273: 'setSavePath': inconsistent dll linkage
   (compiling source file '/SnapshotLib.cpp')
-  C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.h(18,38):
+  C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.h(20,31):
+  see previous definition of 'setSavePath'
+  
+C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.cpp(57,13): warning C4273: 'getSavePath': inconsistent dll linkage
+  (compiling source file '/SnapshotLib.cpp')
+  C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.h(21,37):
+  see previous definition of 'getSavePath'
+  
+C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.cpp(70,14): warning C4273: 'getSmri': inconsistent dll linkage
+  (compiling source file '/SnapshotLib.cpp')
+  C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.h(22,38):
   see previous definition of 'getSmri'
   
-C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.cpp(37,6): warning C4273: 'decreaseSmri': inconsistent dll linkage
+C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.cpp(79,6): warning C4273: 'decreaseSmri': inconsistent dll linkage
   (compiling source file '/SnapshotLib.cpp')
-  C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.h(19,30):
+  C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.h(23,30):
   see previous definition of 'decreaseSmri'
   
-C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.cpp(47,14): warning C4273: 'getCurrentSmri': inconsistent dll linkage
+C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.cpp(89,14): warning C4273: 'getCurrentSmri': inconsistent dll linkage
   (compiling source file '/SnapshotLib.cpp')
-  C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.h(20,38):
+  C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.h(24,38):
   see previous definition of 'getCurrentSmri'
   
-C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.cpp(55,7): warning C4273: 'resetSmri': inconsistent dll linkage
+C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.cpp(97,7): warning C4273: 'resetSmri': inconsistent dll linkage
   (compiling source file '/SnapshotLib.cpp')
-  C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.h(21,31):
+  C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.h(25,31):
   see previous definition of 'resetSmri'
   
-C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.cpp(68,7): warning C4273: 'cacheData': inconsistent dll linkage
+C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.cpp(110,7): warning C4273: 'cacheData': inconsistent dll linkage
   (compiling source file '/SnapshotLib.cpp')
-  C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.h(22,31):
+  C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.h(26,31):
   see previous definition of 'cacheData'
   
-C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.cpp(87,16): warning C4273: 'getData': inconsistent dll linkage
+C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.cpp(129,16): warning C4273: 'getData': inconsistent dll linkage
   (compiling source file '/SnapshotLib.cpp')
-  C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.h(23,40):
+  C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.h(27,40):
   see previous definition of 'getData'
   
-C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.cpp(100,7): warning C4273: 'resetCache': inconsistent dll linkage
+C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.cpp(142,7): warning C4273: 'resetCache': inconsistent dll linkage
   (compiling source file '/SnapshotLib.cpp')
-  C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.h(24,31):
+  C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\SnapshotLib.h(28,31):
   see previous definition of 'resetCache'
   
+     Creating library C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\x64\Debug\SnapshotLib.lib and object C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\x64\Debug\SnapshotLib.exp
   SnapshotLib.vcxproj -> C:\Users\micha\Desktop\_Major\code\cppLib\development\SnapshotLib\x64\Debug\SnapshotLib.dll
