@@ -16,6 +16,8 @@ public class DummySaveManager : MonoBehaviour {
     public string _SavePath;
     public bool _SetPath;
     public bool _GetPath;
+    [Header("Packing")]
+    public bool _Pack;
 
     [ReadOnly(true)]
     public int _CurrentSmri;
@@ -52,8 +54,9 @@ public class DummySaveManager : MonoBehaviour {
 
             DataContainer container = new DataContainer() {
                 _Smri = data._Smri,
-                _Data = MessagePackSerializer.Serialize(data),
+                _Data = MessagePackSerializer.Serialize(data)
             };
+            container._DataSize = container._Data.Length;
 
             SnapshotWrapper.CacheData(container);
         }
@@ -82,6 +85,12 @@ public class DummySaveManager : MonoBehaviour {
             _GetPath = false;
 
             Debug.Log($"Save path: {SnapshotWrapper.GetSavePath()}");
+        }
+
+        if (_Pack) {
+            _Pack = false;
+
+            Debug.Log($"Pack data: {SnapshotWrapper.PackData()}");
         }
     }
 

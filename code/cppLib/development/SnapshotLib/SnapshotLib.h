@@ -16,13 +16,24 @@
 #define SNAPSHOT_API __declspec(dllimport)
 #endif
 
+/*
+@TODO: Summary
+*/
 struct DataContainer
 {
-public:
-	DataContainer(unsigned int _smri, unsigned char* _data, int _dataSize);
-
+	int _DataSize;
 	unsigned int _Smri;
 	unsigned char* _Data;
+
+	template<class T>
+	void pack(T& pack) {
+		std::vector<unsigned char> temp;
+		for (int i = 0; i < _DataSize; ++i) {
+			temp.push_back(_Data[i]);
+		}
+
+		pack(_Smri, _DataSize, temp);
+	}
 };
 
 extern "C" SNAPSHOT_API short setSavePath(const char* _savePath);
@@ -31,7 +42,7 @@ extern "C" SNAPSHOT_API unsigned int getSmri();
 extern "C" SNAPSHOT_API void decreaseSmri();
 extern "C" SNAPSHOT_API unsigned int getCurrentSmri();
 extern "C" SNAPSHOT_API short resetSmri();
-extern "C" SNAPSHOT_API short cacheData(DataContainer _model, int _dataSize);
+extern "C" SNAPSHOT_API short cacheData(DataContainer _model);
 extern "C" SNAPSHOT_API unsigned char* getData(unsigned int _smri, int* _size);
 extern "C" SNAPSHOT_API short packData();
 extern "C" SNAPSHOT_API short resetCache();

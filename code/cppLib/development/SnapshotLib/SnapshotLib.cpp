@@ -13,26 +13,13 @@
 */
 struct Data
 {
-public:
-	/*
-	@TODO: Summary
-	*/
-	std::unordered_map<unsigned int, std::tuple<int, unsigned char*>> _Data;
+	std::unordered_map<unsigned int, DataContainer> _ModelsCache;
 
 	template<class T>
 	void pack(T& pack) {
-		pack(_Data);
+		pack(_ModelsCache);
 	}
 };
-
-/*
-@TODO: Summary
-*/
-DataContainer::DataContainer(unsigned int _smri, unsigned char* _data, int _dataSize) {
-	_Smri = _smri;
-	_Data = new unsigned char[_dataSize];
-	memcpy(_Data, _data, _dataSize);
-}
 
 #pragma region GlobalVariables
 /*
@@ -51,7 +38,7 @@ int _GlobalSmriValue = -1;
 /*
 TODO: Summary - SMRI, (Size of data, Data)
 */
-std::unordered_map<unsigned int, std::tuple<int, unsigned char*>> _ModelCache;
+std::unordered_map<unsigned int, DataContainer> _ModelsCache;
 /*
 @TODO: Summary
 */
@@ -133,11 +120,15 @@ short resetSmri() {
 /*
 @TODO: Summary
 */
-short cacheData(DataContainer _model, int _dataSize) {
+short cacheData(DataContainer _model) {
 	try {
-		DataContainer temp(_model._Smri, _model._Data, _dataSize);
+		DataContainer data = DataContainer();
+		data._Smri = _model._Smri;
+		data._DataSize = _model._DataSize;
+		data._Data = new unsigned char[data._DataSize];
+		std::memcpy(data._Data, _model._Data, data._DataSize);
 
-		_ModelCache.insert(std::make_pair(temp._Smri, std::tuple<int, unsigned char*>(_dataSize, temp._Data)));
+		_ModelsCache[_model._Smri] = data;
 
 		return 0;
 	}
@@ -151,8 +142,8 @@ short cacheData(DataContainer _model, int _dataSize) {
 */
 unsigned char* getData(unsigned int _smri, int* _size) {
 	try {
-		*_size = std::get<0>(_ModelCache.at(_smri));
-		return std::get<1>(_ModelCache.at(_smri));
+		*_size = _ModelsCache[_smri]._DataSize;
+		return _ModelsCache[_smri]._Data;
 	}
 	catch (...) {
 		return nullptr;
@@ -164,16 +155,17 @@ unsigned char* getData(unsigned int _smri, int* _size) {
 */
 short packData() {
 	try {
-		Data container = Data{ _ModelCache };
-		std::vector<uint8_t> data = msgpack::pack(container);
+		Data container = Data();
+		container._ModelsCache = _ModelsCache;
+		std::vector<uint8_t> serData = msgpack::pack(container);
 
 		int cnt = getFileCount(_SavePath);
 		std::string dt = getCurrentDate();
 		std::string finalSaveName = formatSaveString(SAVE_FORMAT, dt, cnt);
 
 		std::string saveStr = combinePath(_SavePath, finalSaveName) + SAVE_EXTENSION;
-		std::ofstream outfile(saveStr, std::ios::out | std::ios::binary);
-		outfile.write(reinterpret_cast<const char*>(data.data()), data.size());
+		std::ofstream outfile(saveStr, std::ios::out);
+		outfile.write(reinterpret_cast<const char*>(serData.data()), serData.size());
 		outfile.close();
 		return 0;
 	}
@@ -187,12 +179,7 @@ short packData() {
 */
 short resetCache() {
 	try {
-		for (std::pair<const unsigned int, std::tuple<int, unsigned char*>>& pair : _ModelCache) {
-			std::get<0>(pair.second) = 0;
-			delete[] std::get<1>(pair.second);
-		}
-
-		_ModelCache.clear();
+		_ModelsCache.clear();
 		return 0;
 	}
 	catch (...) {

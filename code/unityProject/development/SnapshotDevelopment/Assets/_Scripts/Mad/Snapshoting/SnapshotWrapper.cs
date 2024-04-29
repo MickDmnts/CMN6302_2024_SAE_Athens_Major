@@ -8,6 +8,8 @@ using UnityEngine;
 /// </summary>
 [StructLayout(LayoutKind.Sequential)]
 public struct DataContainer {
+    ///<summary>The data size of the passed byte array</summary>
+    public Int32 _DataSize;
     ///<summary>The SMRI corresponding to the cached data</summary>
     public UInt32 _Smri;
     ///<summary>The data to be cached to the library</summary>
@@ -45,10 +47,13 @@ public static class SnapshotWrapper {
     private static extern Int16 resetSmri();
 
     [DllImport("SnapshotLib.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.Cdecl)]
-    private static extern Int16 cacheData(DataContainer _model, Int32 _dataSize);
+    private static extern Int16 cacheData(DataContainer _model);
 
     [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
     private static extern IntPtr getData(uint _smri, out Int32 _arraySize);
+
+    [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
+    private static extern Int16 packData();
 
     [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
     private static extern Int16 resetCache();
@@ -145,7 +150,7 @@ public static class SnapshotWrapper {
     /// <returns>True if caching was succesful, false otherwise.</returns>
     public static bool CacheData(DataContainer _container) {
         try {
-            return cacheData(_container, _container._Data.Length) == 0;
+            return cacheData(_container) == 0;
         } catch (Exception exception) {
             Debug.LogError($"Could not cache the passed container(SMRI: {_container._Smri}) to the DLL:\n{exception}");
             return false;
@@ -173,6 +178,20 @@ public static class SnapshotWrapper {
         } catch (Exception exception) {
             Debug.LogError($"Could not get data for the passed SMRI: {_smri} from the DLL:\n{exception}");
             return null;
+        }
+    }
+
+    /// <summary>
+    /// @TODO: Summary
+    /// </summary>
+    /// <returns></returns>
+    public static bool PackData(){
+        try {
+            return packData() == (Int16)ErrorCodes.OperationSuccessful;
+        }
+        catch (Exception exception) {
+            Debug.LogError($"Could not pack data in the DLL:\n{exception}");
+            return false;
         }
     }
 
