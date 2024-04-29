@@ -63,6 +63,10 @@ std::string _SavePath = "";
 @TODO: Summary
 */
 std::string _LoadFile = "";
+/*
+@TODO: Summary
+*/
+std::vector<EventHandler> _OnPackStart;
 #pragma endregion
 
 #pragma region SavePath
@@ -177,6 +181,34 @@ int* getRefSmris(unsigned int _parentSmri) {
 	}
 	catch (...) {
 		return nullptr;
+	}
+}
+
+/*
+@TODO: Summary
+*/
+short registerOnPackStart(EventHandler handler) {
+	try {
+		_OnPackStart.push_back(handler);
+		return 0;
+	}
+	catch (...) {
+		return 1;
+	}
+}
+
+/*
+@TODO: Summary
+*/
+short raiseOnPackStart() {
+	try {
+		for (EventHandler handler : _OnPackStart) {
+			handler();
+		}
+		return 0;
+	}
+	catch (...) {
+		return 1;
 	}
 }
 

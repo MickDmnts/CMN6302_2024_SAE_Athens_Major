@@ -3,19 +3,6 @@ using System.IO;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
-/* /// <summary>
-/// An one-on-one struct used for data transportation to the Snapshot DLL.
-/// </summary>
-[StructLayout(LayoutKind.Sequential)]
-public struct DataContainer {
-    ///<summary>The data size of the passed byte array</summary>
-    public Int32 _DataSize;
-    ///<summary>The SMRI corresponding to the cached data</summary>
-    public UInt32 _Smri;
-    ///<summary>The data to be cached to the library</summary>
-    public byte[] _Data;
-}
- */
 public static class SnapshotWrapper {
 
     /// <summary>
@@ -47,7 +34,7 @@ public static class SnapshotWrapper {
 
     //Data caching and packing
     [DllImport("SnapshotLib.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.Cdecl)]
-    private static extern Int16 cacheData(UInt32 _smri, Int32 _dataSize, byte[] _data);
+    private static extern Int16 cacheData(UInt32 _smri, Int32 _dataSize, byte[] _data, Int32[] _refSmris, int _refSmrisSize);
     [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
     private static extern IntPtr getData(UInt32 _smri, out Int32 _arraySize);
     [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
@@ -147,9 +134,9 @@ public static class SnapshotWrapper {
     /// </summary>
     /// <param name="_container">The container instance to cache</param>
     /// <returns>True if caching was succesful, false otherwise.</returns>
-    public static bool CacheData(uint _smri, int _dataSize, byte[] _data) {
+    public static bool CacheData(uint _smri, int _dataSize, byte[] _data, int[] _refSmris, int _refSmrisSize) {
         try {
-            return cacheData(_smri, _dataSize, _data) == 0;
+            return cacheData(_smri, _dataSize, _data, _refSmris, _refSmrisSize) == 0;
         } catch (Exception exception) {
             Debug.LogError($"Could not cache the passed (SMRI: {_smri}) to the DLL:\n{exception}");
             return false;

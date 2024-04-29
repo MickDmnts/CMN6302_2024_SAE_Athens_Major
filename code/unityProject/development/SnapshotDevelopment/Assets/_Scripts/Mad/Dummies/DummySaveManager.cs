@@ -34,6 +34,8 @@ public class DummySaveManager : MonoBehaviour {
     public int _CurrentSmri;
 
     void Update() {
+        _CurrentSmri = SnapshotWrapper.GetCurrentSmri();
+
         if (_GetSmri) {
             _GetSmri = false;
 
@@ -65,7 +67,7 @@ public class DummySaveManager : MonoBehaviour {
 
             byte[] bytes = SnapshotWrapper.StructToByteArray(data);
 
-            SnapshotWrapper.CacheData(data._Smri, bytes.Length, bytes);
+            SnapshotWrapper.CacheData(data._Smri, bytes.Length, bytes, new int[] { -1, -1, -1 }, 3);
         }
 
         if (_RetrieveOnSmri) {

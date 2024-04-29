@@ -16,6 +16,15 @@
 #define SNAPSHOT_API __declspec(dllimport)
 #endif
 
+/*
+@TODO: Summary
+*/
+typedef void(*EventHandler)();
+
+//Events
+extern "C" SNAPSHOT_API short registerOnPackStart(EventHandler handler);
+short raiseOnPackStart();
+
 //Save path
 extern "C" SNAPSHOT_API short setSavePath(const char* _savePath);
 extern "C" SNAPSHOT_API const char* getSavePath();
