@@ -26,7 +26,7 @@ extern "C" SNAPSHOT_API void decreaseSmri();
 extern "C" SNAPSHOT_API unsigned int getCurrentSmri();
 
 //Data caching and packing
-extern "C" SNAPSHOT_API short cacheData(unsigned int _smri, int _dataSize, unsigned char* _data);
+extern "C" SNAPSHOT_API short cacheData(unsigned int _smri, int _dataSize, unsigned char* _data, int* _refSmris, int _refsSize);
 extern "C" SNAPSHOT_API unsigned char* getData(unsigned int _smri, int* _size);
 extern "C" SNAPSHOT_API short packData();
 

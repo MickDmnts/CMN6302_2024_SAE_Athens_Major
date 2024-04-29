@@ -16,6 +16,7 @@ struct DataContainer
 	unsigned int _Smri;
 	int _DataSize;
 	std::vector<unsigned char> _DataValues;
+	std::vector<int> _RefSmris;
 
 	template<class T>
 	void pack(T& pack) {
@@ -131,7 +132,7 @@ unsigned int getCurrentSmri() {
 /*
 @TODO: Summary
 */
-short cacheData(unsigned int _smri, int _dataSize, unsigned char* _data) {
+short cacheData(unsigned int _smri, int _dataSize, unsigned char* _data, int* _refSmris, int _refsSize) {
 	try {
 		DataContainer data = DataContainer();
 		data._Smri = _smri;
@@ -139,6 +140,10 @@ short cacheData(unsigned int _smri, int _dataSize, unsigned char* _data) {
 		//Data copying
 		for (int i = 0; i < data._DataSize; ++i) {
 			data._DataValues.push_back(_data[i]);
+		}
+
+		for (int i = 0; i < _refsSize; i++) {
+			data._RefSmris.push_back(_refSmris[i]);
 		}
 
 		_ModelsCache[_smri] = data;
