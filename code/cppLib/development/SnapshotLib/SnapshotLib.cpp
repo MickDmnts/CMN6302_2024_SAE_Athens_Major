@@ -43,6 +43,10 @@ std::unordered_map<unsigned int, DataContainer> _ModelsCache;
 @TODO: Summary
 */
 std::string _SavePath = "";
+/*
+@TODO: Summary
+*/
+std::string _LoadFile = "";
 #pragma endregion
 
 /*
@@ -50,10 +54,11 @@ std::string _SavePath = "";
 */
 short setSavePath(const char* _savePath) {
 	try {
-		_SavePath = _savePath;
-		if (!directoryExists(_SavePath)) {
+		if (!directoryExists(_savePath)) {
 			throw std::runtime_error("Passed _SavePath does not exist.");
 		}
+
+		_SavePath = _savePath;
 		return 0;
 	}
 	catch (std::runtime_error) {
@@ -101,20 +106,6 @@ void decreaseSmri() {
 */
 unsigned int getCurrentSmri() {
 	return _GlobalSmriValue;
-}
-
-/*
-Resets the global SMRI back to its default value: -1
-@return 0 if the operation was successful, 1 otherwise.
-*/
-short resetSmri() {
-	try {
-		_GlobalSmriValue = -1;
-		return 0;
-	}
-	catch (...) {
-		return 1;
-	}
 }
 
 /*
@@ -177,9 +168,58 @@ short packData() {
 /*
 @TODO: Summary
 */
+short setLoadFileName(const char* _loadFileName) {
+	try {
+		std::string comp = combinePath(_SavePath, _loadFileName);
+		if (!fileExists(comp)) {
+			throw std::runtime_error("Passed _LoadFile does not exist in the saves folder.");
+		}
+
+		_LoadFile = _loadFileName;
+		return 0;
+	}
+	catch (std::runtime_error) {
+		return 404;
+	}
+	catch (...) {
+		return 1;
+	}
+}
+
+/*
+@TODO: Summary
+*/
+const char* getLoadFileName() {
+	try {
+		return _LoadFile.c_str();
+	}
+	catch (...) {
+		return nullptr;
+	}
+}
+
+/*
+Resets the global SMRI back to its default value: -1
+@return 0 if the operation was successful, 1 otherwise.
+*/
+short resetSmri() {
+	try {
+		_GlobalSmriValue = -1;
+		return 0;
+	}
+	catch (...) {
+		return 1;
+	}
+}
+
+/*
+@TODO: Summary
+*/
 short resetCache() {
 	try {
 		_ModelsCache.clear();
+		_SavePath = "";
+		_LoadFile = "";
 		return 0;
 	}
 	catch (...) {

@@ -36,13 +36,24 @@ struct DataContainer
 	}
 };
 
+//Save path
 extern "C" SNAPSHOT_API short setSavePath(const char* _savePath);
 extern "C" SNAPSHOT_API const char* getSavePath();
+
+//SMRI handling
 extern "C" SNAPSHOT_API unsigned int getSmri();
 extern "C" SNAPSHOT_API void decreaseSmri();
 extern "C" SNAPSHOT_API unsigned int getCurrentSmri();
-extern "C" SNAPSHOT_API short resetSmri();
+
+//Data caching and packing
 extern "C" SNAPSHOT_API short cacheData(DataContainer _model);
 extern "C" SNAPSHOT_API unsigned char* getData(unsigned int _smri, int* _size);
 extern "C" SNAPSHOT_API short packData();
+
+//Load from file
+extern "C" SNAPSHOT_API short setLoadFileName(const char* _loadFileName);
+extern "C" SNAPSHOT_API const char* getLoadFileName();
+
+//DLL Cleanup
+extern "C" SNAPSHOT_API short resetSmri();
 extern "C" SNAPSHOT_API short resetCache();

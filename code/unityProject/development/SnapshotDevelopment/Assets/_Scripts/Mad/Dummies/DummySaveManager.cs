@@ -18,6 +18,10 @@ public class DummySaveManager : MonoBehaviour {
     public bool _GetPath;
     [Header("Packing")]
     public bool _Pack;
+    [Header("Save file")]
+    public string _SaveFileName;
+    public bool _SetLoadFromFile;
+    public bool _GetLoadFromFile;
 
     [ReadOnly(true)]
     public int _CurrentSmri;
@@ -72,9 +76,6 @@ public class DummySaveManager : MonoBehaviour {
             $"Deserialized State:\n{model._State}");
         }
 
-        _CurrentSmri = SnapshotWrapper.GetCurrentSmri();
-        _Smri = (uint)_CurrentSmri;
-
         if (_SetPath) {
             _SetPath = false;
 
@@ -91,6 +92,18 @@ public class DummySaveManager : MonoBehaviour {
             _Pack = false;
 
             Debug.Log($"Pack data: {SnapshotWrapper.PackData()}");
+        }
+
+        if (_SetLoadFromFile) {
+            _SetLoadFromFile = false;
+
+            Debug.Log($"Set load file name: {SnapshotWrapper.SetLoadFileName(_SaveFileName)}");
+        }
+
+        if (_GetLoadFromFile) {
+            _GetLoadFromFile = false;
+
+            Debug.Log($"Get load file name: {SnapshotWrapper.GetLoadFileName()}");
         }
     }
 

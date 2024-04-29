@@ -68,3 +68,12 @@ bool directoryExists(const std::string& path) {
 
 	return fs::exists(directoryPath) && fs::is_directory(directoryPath);
 }
+
+/*
+@TODO: Summary
+*/
+bool fileExists(const std::string& path) {
+	fs::path directoryPath(path);
+
+	return fs::exists(directoryPath);
+}

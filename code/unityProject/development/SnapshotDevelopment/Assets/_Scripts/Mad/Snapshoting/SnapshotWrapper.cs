@@ -21,45 +21,50 @@ public static class SnapshotWrapper {
     /// <summary>
     /// @TODO: Summary
     /// </summary>
-    enum ErrorCodes{
+    enum ErrorCodes {
         OperationSuccessful = 0,
         OperationFailed = 1,
         DirectoryNotFound = 76,
+        FileNotFound = 404,
     }
 
     #region DLL Invokes
+    //Save path
     [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
     private static extern Int16 setSavePath(string _path);
-
     [DllImport("SnapshotLib.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.Cdecl)]
     private static extern IntPtr getSavePath();
 
+    //SMRI Handling
     [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
     private static extern UInt32 getSmri();
-
     [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
     private static extern void decreaseSmri();
-
     [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
     private static extern Int32 getCurrentSmri();
 
-    [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
-    private static extern Int16 resetSmri();
-
+    //Data caching and packing
     [DllImport("SnapshotLib.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.Cdecl)]
     private static extern Int16 cacheData(DataContainer _model);
-
     [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
     private static extern IntPtr getData(uint _smri, out Int32 _arraySize);
-
     [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
     private static extern Int16 packData();
 
+    //Load from file
+    [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
+    private static extern Int16 setLoadFileName(string _saveFileName);
+    [DllImport("SnapshotLib.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.Cdecl)]
+    private static extern IntPtr getLoadFileName();
+
+    //Memory cleanup
+    [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
+    private static extern Int16 resetSmri();
     [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
     private static extern Int16 resetCache();
     #endregion
 
-    #region DLL Method Wrapping
+    #region Save Path
     /// <summary>
     /// @TODO: Summary
     /// </summary>
@@ -68,7 +73,7 @@ public static class SnapshotWrapper {
     public static bool SetSavePath(string _path) {
         try {
             Int16 ec = setSavePath(_path);
-            if(ec == (Int16)ErrorCodes.DirectoryNotFound){
+            if (ec == (Int16)ErrorCodes.DirectoryNotFound) {
                 throw new DirectoryNotFoundException($"Passed path {_path} does not exist.");
             }
             return ec == (Int16)ErrorCodes.OperationSuccessful;
@@ -87,12 +92,13 @@ public static class SnapshotWrapper {
         try {
             IntPtr strPtr = getSavePath();
             return Marshal.PtrToStringAnsi(strPtr);
-        } 
-        catch (Exception exception) {
+        } catch (Exception exception) {
             throw new Exception("Could not get the current save path from DLL:\n{0}", exception);
         }
     }
+    #endregion
 
+    #region SMRI Handling
     /// <summary>
     /// Increases and returns the global DLL SMRI used for data storing and reference preservation.
     /// </summary>
@@ -129,20 +135,9 @@ public static class SnapshotWrapper {
             throw new Exception("Could not retrieve current smri due to:\n{0}", exception);
         }
     }
+    #endregion
 
-    /// <summary>
-    /// Resets the DLL global SMRI back to its default value: -1.
-    /// </summary>
-    /// <returns>True if the reset was succesfull, false otherwise with an error log.</returns>
-    public static bool ResetSmri() {
-        try {
-            return resetSmri() == (Int16)ErrorCodes.OperationSuccessful;
-        } catch (Exception exception) {
-            Debug.LogError($"Could not reset the DLL SMRI:\n{exception}");
-            return false;
-        }
-    }
-
+    #region Data Caching - Packing
     /// <summary>
     /// Caches the passed container to the DLL library.
     /// </summary>
@@ -185,12 +180,60 @@ public static class SnapshotWrapper {
     /// @TODO: Summary
     /// </summary>
     /// <returns></returns>
-    public static bool PackData(){
+    public static bool PackData() {
         try {
             return packData() == (Int16)ErrorCodes.OperationSuccessful;
-        }
-        catch (Exception exception) {
+        } catch (Exception exception) {
             Debug.LogError($"Could not pack data in the DLL:\n{exception}");
+            return false;
+        }
+    }
+    #endregion
+
+    #region Load from file
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="_loadFromFileName"></param>
+    /// <returns></returns>
+    public static bool SetLoadFileName(string _loadFromFileName) {
+        try {
+            Int16 ec = setLoadFileName(_loadFromFileName);
+            if (ec == (Int16)ErrorCodes.FileNotFound) {
+                throw new DirectoryNotFoundException($"Passed filename {_loadFromFileName} does not exist inside the save path: {GetSavePath()}.");
+            }
+            return ec == (Int16)ErrorCodes.OperationSuccessful;
+        } catch (Exception exception) {
+            Debug.LogError($"Could not set the DLL load from filename:\n{exception}");
+            return false;
+        }
+    }
+
+    /// <summary>
+    /// @TODO: Summary
+    /// </summary>
+    /// <returns></returns>
+    /// <exception cref="Exception"></exception>
+    public static string GetLoadFileName() {
+        try {
+            IntPtr strPtr = getLoadFileName();
+            return Marshal.PtrToStringAnsi(strPtr);
+        } catch (Exception exception) {
+            throw new Exception("Could not get the currentload from filename from DLL:\n{0}", exception);
+        }
+    }
+    #endregion
+
+    #region Memory Cleanup
+    /// <summary>
+    /// Resets the DLL global SMRI back to its default value: -1.
+    /// </summary>
+    /// <returns>True if the reset was succesfull, false otherwise with an error log.</returns>
+    public static bool ResetSmri() {
+        try {
+            return resetSmri() == (Int16)ErrorCodes.OperationSuccessful;
+        } catch (Exception exception) {
+            Debug.LogError($"Could not reset the DLL SMRI:\n{exception}");
             return false;
         }
     }
