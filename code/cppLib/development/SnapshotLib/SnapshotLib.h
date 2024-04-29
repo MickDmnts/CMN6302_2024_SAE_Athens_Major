@@ -16,15 +16,6 @@
 #define SNAPSHOT_API __declspec(dllimport)
 #endif
 
-/*
-@TODO: Summary
-*/
-typedef void(*EventHandler)();
-
-//Events
-extern "C" SNAPSHOT_API short registerOnPackStart(EventHandler handler);
-short raiseOnPackStart();
-
 //Save path
 extern "C" SNAPSHOT_API short setSavePath(const char* _savePath);
 extern "C" SNAPSHOT_API const char* getSavePath();
@@ -37,7 +28,7 @@ extern "C" SNAPSHOT_API unsigned int getCurrentSmri();
 //Data caching and packing
 extern "C" SNAPSHOT_API short cacheData(unsigned int _smri, int _dataSize, unsigned char* _data, int* _refSmris, int _refsSize);
 extern "C" SNAPSHOT_API unsigned char* getData(unsigned int _smri, int* _size);
-extern "C" SNAPSHOT_API int* getRefSmris(unsigned int _parentSmri);
+extern "C" SNAPSHOT_API int* getRefSmris(unsigned int _parentSmri, int* _size);
 extern "C" SNAPSHOT_API short packData();
 
 //Load from file

@@ -5,6 +5,9 @@ using UnityEngine;
 
 public static class SnapshotWrapper {
 
+    ///<summary>@TODO: Summary</summary>
+    public delegate void EventHandler();
+
     /// <summary>
     /// @TODO: Summary
     /// </summary>
@@ -37,6 +40,8 @@ public static class SnapshotWrapper {
     private static extern Int16 cacheData(UInt32 _smri, Int32 _dataSize, byte[] _data, Int32[] _refSmris, int _refSmrisSize);
     [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
     private static extern IntPtr getData(UInt32 _smri, out Int32 _arraySize);
+    [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
+    private static extern IntPtr getRefSmris(UInt32 _parentSmri, out Int32 _size);
     [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
     private static extern Int16 packData();
 
@@ -136,7 +141,7 @@ public static class SnapshotWrapper {
     /// <returns>True if caching was succesful, false otherwise.</returns>
     public static bool CacheData(uint _smri, int _dataSize, byte[] _data, int[] _refSmris, int _refSmrisSize) {
         try {
-            return cacheData(_smri, _dataSize, _data, _refSmris, _refSmrisSize) == 0;
+            return cacheData(_smri, _dataSize, _data, _refSmris, _refSmrisSize) == (Int16)ErrorCodes.OperationSuccessful;
         } catch (Exception exception) {
             Debug.LogError($"Could not cache the passed (SMRI: {_smri}) to the DLL:\n{exception}");
             return false;
@@ -162,6 +167,25 @@ public static class SnapshotWrapper {
             return data;
         } catch (Exception exception) {
             Debug.LogError($"Could not get data for the passed SMRI: {_smri} from the DLL:\n{exception}");
+            return null;
+        }
+    }
+
+    /// <summary>
+    /// @TODO: Summary
+    /// </summary>
+    /// <param name="_parentSmri"></param>
+    /// <returns></returns>
+    public static int[] GetRefSmris(uint _parentSmri) {
+        try {
+            int size = -1;
+            IntPtr ptr = getRefSmris(_parentSmri, out size);
+            int[] refSmris = new int[size];
+            Marshal.Copy(ptr, refSmris, 0, size);
+
+            return refSmris;
+        } catch (Exception exception) {
+            Debug.LogError($"Could not get ref SMRIs for the passed SMRI: {_parentSmri} from the DLL:\n{exception}");
             return null;
         }
     }
@@ -262,19 +286,15 @@ public static class SnapshotWrapper {
     /// <typeparam name="T"></typeparam>
     /// <param name="_struct"></param>
     /// <returns></returns>
-    public static byte[] StructToByteArray<T>(T _struct) where T : struct
-    {
+    public static byte[] StructToByteArray<T>(T _struct) where T : struct {
         int size = Marshal.SizeOf(_struct);
         byte[] byteArray = new byte[size];
         IntPtr ptr = Marshal.AllocHGlobal(size);
 
-        try
-        {
+        try {
             Marshal.StructureToPtr(_struct, ptr, false);
             Marshal.Copy(ptr, byteArray, 0, size);
-        }
-        finally
-        {
+        } finally {
             Marshal.FreeHGlobal(ptr);
         }
 
@@ -288,8 +308,7 @@ public static class SnapshotWrapper {
     /// <param name="_bytes"></param>
     /// <returns></returns>
     /// <exception cref="ArgumentException"></exception>
-    public static T ByteArrayToStruct<T>(byte[] _bytes) where T : struct
-    {
+    public static T ByteArrayToStruct<T>(byte[] _bytes) where T : struct {
         int size = Marshal.SizeOf(typeof(T));
 
         if (_bytes.Length < size)
@@ -297,13 +316,10 @@ public static class SnapshotWrapper {
 
         IntPtr ptr = Marshal.AllocHGlobal(size);
 
-        try
-        {
+        try {
             Marshal.Copy(_bytes, 0, ptr, size);
             return (T)Marshal.PtrToStructure(ptr, typeof(T));
-        }
-        finally
-        {
+        } finally {
             Marshal.FreeHGlobal(ptr);
         }
     }

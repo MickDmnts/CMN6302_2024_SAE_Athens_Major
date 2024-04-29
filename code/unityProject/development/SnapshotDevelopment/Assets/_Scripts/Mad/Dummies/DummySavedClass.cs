@@ -3,15 +3,39 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+struct ChildClassModel {
+    public uint _Smri;
+    public bool _State;
+}
+
 [Serializable]
 public class ChildClass {
     [SerializeField] uint _OwnSmri;
     [SerializeField] bool _State;
 
+    public uint Smri => _OwnSmri;
+
     public ChildClass() {
         _OwnSmri = SnapshotWrapper.GetSmri();
         _State = UnityEngine.Random.Range(0, 1000) < 500;
     }
+
+    public void OnPackStart() {
+        ChildClassModel data = new ChildClassModel() {
+            _Smri = _OwnSmri,
+            _State = _State
+        };
+
+        byte[] bytes = SnapshotWrapper.StructToByteArray(data);
+        SnapshotWrapper.CacheData(_OwnSmri, bytes.Length, bytes, null, 0);
+    }
+}
+
+struct SaveClassModel {
+    public uint _Smri;
+    public int[] _RefSmris;
+    public int _RefInstances;
+    public string _Sentence;
 }
 
 public class DummySavedClass : MonoBehaviour {
@@ -31,8 +55,20 @@ public class DummySavedClass : MonoBehaviour {
         }
     }
 
-    void OnPackStart(){
-        //@TODO: 
+    public void OnPackStart() {
+        SaveClassModel data = new SaveClassModel() {
+            _Smri = _OwnSmri,
+            _RefInstances = _RefInstances,
+            _Sentence = _Sentence,
+        };
+
+        byte[] bytes = SnapshotWrapper.StructToByteArray(data);
+        int[] refSmris = new int[_Refs.Count];
+        for (int i = 0; i < refSmris.Length; i++) {
+            _Refs[i].OnPackStart();
+            refSmris[i] = (int)_Refs[i].Smri;
+        }
+        SnapshotWrapper.CacheData(_OwnSmri, bytes.Length, bytes, refSmris, refSmris.Length);
     }
 }
 #endif

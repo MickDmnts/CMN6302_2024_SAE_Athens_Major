@@ -95,7 +95,9 @@ public class DummySaveManager : MonoBehaviour {
 
         if (_Pack) {
             _Pack = false;
-
+            
+            //@TODO: To be replaced from event
+            GetComponent<DummySavedClass>().OnPackStart();
             Debug.Log($"Pack data: {SnapshotWrapper.PackData()}");
         }
 
