@@ -171,6 +171,18 @@ unsigned char* getData(unsigned int _smri, int* _size) {
 /*
 @TODO: Summary
 */
+int* getRefSmris(unsigned int _parentSmri) {
+	try {
+		return _ModelsCache.at(_parentSmri)._RefSmris.data();
+	}
+	catch (...) {
+		return nullptr;
+	}
+}
+
+/*
+@TODO: Summary
+*/
 short packData() {
 	try {
 		Data container = Data();
