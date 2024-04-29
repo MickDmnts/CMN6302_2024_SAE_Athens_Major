@@ -1,7 +1,13 @@
 #if UNITY_EDITOR
 using UnityEngine;
-using MessagePack;
 using System.ComponentModel;
+using System.IO;
+
+public struct ModelDummy {
+    public uint _Smri;
+    public bool _State;
+    public string _Sentence;
+}
 
 public class DummySaveManager : MonoBehaviour {
     [Header("Smris tests")]
@@ -22,6 +28,7 @@ public class DummySaveManager : MonoBehaviour {
     public string _SaveFileName;
     public bool _SetLoadFromFile;
     public bool _GetLoadFromFile;
+    public bool _Unpack;
 
     [ReadOnly(true)]
     public int _CurrentSmri;
@@ -52,25 +59,21 @@ public class DummySaveManager : MonoBehaviour {
             uint smri = SnapshotWrapper.GetSmri();
             ModelDummy data = new ModelDummy() {
                 _Smri = smri,
-                _Sentence = "Hello from Unity",
+                _Sentence = "Hello from Unity" + smri,
                 _State = !_GetSmri
             };
 
-            DataContainer container = new DataContainer() {
-                _Smri = data._Smri,
-                _Data = MessagePackSerializer.Serialize(data)
-            };
-            container._DataSize = container._Data.Length;
+            byte[] bytes = SnapshotWrapper.StructToByteArray(data);
 
-            SnapshotWrapper.CacheData(container);
+            SnapshotWrapper.CacheData(data._Smri, bytes.Length, bytes);
         }
 
         if (_RetrieveOnSmri) {
             _RetrieveOnSmri = false;
 
-            DataContainer container = (DataContainer)SnapshotWrapper.GetData(_Smri);
+            byte[] data = SnapshotWrapper.GetData(_Smri);
 
-            ModelDummy model = (ModelDummy)MessagePackSerializer.Deserialize(typeof(ModelDummy), container._Data);
+            ModelDummy model = SnapshotWrapper.ByteArrayToStruct<ModelDummy>(data);
             Debug.Log($"Deserialized Smri:\n{model._Smri}\n" +
             $"Deserialized Sentence:\n{model._Sentence}\n" +
             $"Deserialized State:\n{model._State}");
@@ -104,6 +107,12 @@ public class DummySaveManager : MonoBehaviour {
             _GetLoadFromFile = false;
 
             Debug.Log($"Get load file name: {SnapshotWrapper.GetLoadFileName()}");
+        }
+
+        if (_Unpack) {
+            _Unpack = false;
+
+            Debug.Log($"Unpack from {Path.Combine(SnapshotWrapper.GetSavePath(), SnapshotWrapper.GetLoadFileName())}: {SnapshotWrapper.UnpackData()}");
         }
     }
 

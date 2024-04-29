@@ -177,6 +177,10 @@ MonoBehaviour:
   _SetPath: 1
   _GetPath: 0
   _Pack: 0
+  _SaveFileName: 29_04_2024_0.sav
+  _SetLoadFromFile: 0
+  _GetLoadFromFile: 0
+  _Unpack: 0
   _CurrentSmri: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

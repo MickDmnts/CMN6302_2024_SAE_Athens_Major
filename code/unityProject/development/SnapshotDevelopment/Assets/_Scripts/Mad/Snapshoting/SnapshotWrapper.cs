@@ -3,7 +3,7 @@ using System.IO;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
-/// <summary>
+/* /// <summary>
 /// An one-on-one struct used for data transportation to the Snapshot DLL.
 /// </summary>
 [StructLayout(LayoutKind.Sequential)]
@@ -15,7 +15,7 @@ public struct DataContainer {
     ///<summary>The data to be cached to the library</summary>
     public byte[] _Data;
 }
-
+ */
 public static class SnapshotWrapper {
 
     /// <summary>
@@ -26,6 +26,8 @@ public static class SnapshotWrapper {
         OperationFailed = 1,
         DirectoryNotFound = 76,
         FileNotFound = 404,
+        CouldNotOpenFile = 2,
+        ReadNotSuccessful = 3,
     }
 
     #region DLL Invokes
@@ -45,9 +47,9 @@ public static class SnapshotWrapper {
 
     //Data caching and packing
     [DllImport("SnapshotLib.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.Cdecl)]
-    private static extern Int16 cacheData(DataContainer _model);
+    private static extern Int16 cacheData(UInt32 _smri, Int32 _dataSize, byte[] _data);
     [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
-    private static extern IntPtr getData(uint _smri, out Int32 _arraySize);
+    private static extern IntPtr getData(UInt32 _smri, out Int32 _arraySize);
     [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
     private static extern Int16 packData();
 
@@ -56,6 +58,8 @@ public static class SnapshotWrapper {
     private static extern Int16 setLoadFileName(string _saveFileName);
     [DllImport("SnapshotLib.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.Cdecl)]
     private static extern IntPtr getLoadFileName();
+    [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
+    private static extern Int16 unpackData();
 
     //Memory cleanup
     [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
@@ -143,11 +147,11 @@ public static class SnapshotWrapper {
     /// </summary>
     /// <param name="_container">The container instance to cache</param>
     /// <returns>True if caching was succesful, false otherwise.</returns>
-    public static bool CacheData(DataContainer _container) {
+    public static bool CacheData(uint _smri, int _dataSize, byte[] _data) {
         try {
-            return cacheData(_container) == 0;
+            return cacheData(_smri, _dataSize, _data) == 0;
         } catch (Exception exception) {
-            Debug.LogError($"Could not cache the passed container(SMRI: {_container._Smri}) to the DLL:\n{exception}");
+            Debug.LogError($"Could not cache the passed (SMRI: {_smri}) to the DLL:\n{exception}");
             return false;
         }
     }
@@ -157,11 +161,10 @@ public static class SnapshotWrapper {
     /// </summary>
     /// <param name="_smri"></param>
     /// <returns></returns>
-    public static DataContainer? GetData(uint _smri) {
+    public static byte[] GetData(uint _smri) {
         try {
             Int32 size = -1;
             IntPtr containerData = getData(_smri, out size);
-
             if (containerData == IntPtr.Zero) {
                 throw new Exception($"Passed SMRI: {_smri} returned a nullptr for container.");
             }
@@ -169,7 +172,7 @@ public static class SnapshotWrapper {
             byte[] data = new byte[size];
             Marshal.Copy(containerData, data, 0, size);
 
-            return new DataContainer() { _Smri = _smri, _Data = data };
+            return data;
         } catch (Exception exception) {
             Debug.LogError($"Could not get data for the passed SMRI: {_smri} from the DLL:\n{exception}");
             return null;
@@ -222,6 +225,19 @@ public static class SnapshotWrapper {
             throw new Exception("Could not get the currentload from filename from DLL:\n{0}", exception);
         }
     }
+
+    /// <summary>
+    /// @TODO: Summary
+    /// </summary>
+    /// <returns></returns>
+    public static bool UnpackData() {
+        try {
+            return unpackData() == (Int16)ErrorCodes.OperationSuccessful;
+        } catch (Exception exception) {
+            Debug.LogError($"Could not pack data in the DLL:\n{exception}");
+            return false;
+        }
+    }
     #endregion
 
     #region Memory Cleanup
@@ -248,6 +264,60 @@ public static class SnapshotWrapper {
         } catch (Exception exception) {
             Debug.LogError($"Could not reset the cache of the DLL:\n{exception}");
             return false;
+        }
+    }
+    #endregion
+
+    #region Utils
+    /// <summary>
+    /// @TODO: Summary
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <param name="_struct"></param>
+    /// <returns></returns>
+    public static byte[] StructToByteArray<T>(T _struct) where T : struct
+    {
+        int size = Marshal.SizeOf(_struct);
+        byte[] byteArray = new byte[size];
+        IntPtr ptr = Marshal.AllocHGlobal(size);
+
+        try
+        {
+            Marshal.StructureToPtr(_struct, ptr, false);
+            Marshal.Copy(ptr, byteArray, 0, size);
+        }
+        finally
+        {
+            Marshal.FreeHGlobal(ptr);
+        }
+
+        return byteArray;
+    }
+
+    /// <summary>
+    /// @TODO: Summary
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <param name="_bytes"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentException"></exception>
+    public static T ByteArrayToStruct<T>(byte[] _bytes) where T : struct
+    {
+        int size = Marshal.SizeOf(typeof(T));
+
+        if (_bytes.Length < size)
+            throw new ArgumentException("Byte array is too small to convert to the struct.");
+
+        IntPtr ptr = Marshal.AllocHGlobal(size);
+
+        try
+        {
+            Marshal.Copy(_bytes, 0, ptr, size);
+            return (T)Marshal.PtrToStructure(ptr, typeof(T));
+        }
+        finally
+        {
+            Marshal.FreeHGlobal(ptr);
         }
     }
     #endregion

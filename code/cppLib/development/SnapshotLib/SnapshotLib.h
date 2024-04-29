@@ -16,26 +16,6 @@
 #define SNAPSHOT_API __declspec(dllimport)
 #endif
 
-/*
-@TODO: Summary
-*/
-struct DataContainer
-{
-	int _DataSize;
-	unsigned int _Smri;
-	unsigned char* _Data;
-
-	template<class T>
-	void pack(T& pack) {
-		std::vector<unsigned char> temp;
-		for (int i = 0; i < _DataSize; ++i) {
-			temp.push_back(_Data[i]);
-		}
-
-		pack(_Smri, _DataSize, temp);
-	}
-};
-
 //Save path
 extern "C" SNAPSHOT_API short setSavePath(const char* _savePath);
 extern "C" SNAPSHOT_API const char* getSavePath();
@@ -46,13 +26,14 @@ extern "C" SNAPSHOT_API void decreaseSmri();
 extern "C" SNAPSHOT_API unsigned int getCurrentSmri();
 
 //Data caching and packing
-extern "C" SNAPSHOT_API short cacheData(DataContainer _model);
+extern "C" SNAPSHOT_API short cacheData(unsigned int _smri, int _dataSize, unsigned char* _data);
 extern "C" SNAPSHOT_API unsigned char* getData(unsigned int _smri, int* _size);
 extern "C" SNAPSHOT_API short packData();
 
 //Load from file
 extern "C" SNAPSHOT_API short setLoadFileName(const char* _loadFileName);
 extern "C" SNAPSHOT_API const char* getLoadFileName();
+extern "C" SNAPSHOT_API short unpackData();
 
 //DLL Cleanup
 extern "C" SNAPSHOT_API short resetSmri();

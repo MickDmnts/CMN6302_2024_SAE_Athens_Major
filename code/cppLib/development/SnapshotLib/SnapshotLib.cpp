@@ -11,9 +11,24 @@
 /*
 @TODO: Summary
 */
+struct DataContainer
+{
+	unsigned int _Smri;
+	int _DataSize;
+	std::vector<unsigned char> _DataValues;
+
+	template<class T>
+	void pack(T& pack) {
+		pack(_Smri, _DataSize, _DataValues);
+	}
+};
+
+/*
+@TODO: Summary
+*/
 struct Data
 {
-	std::unordered_map<unsigned int, DataContainer> _ModelsCache;
+	std::map<unsigned int, DataContainer> _ModelsCache;
 
 	template<class T>
 	void pack(T& pack) {
@@ -38,7 +53,7 @@ int _GlobalSmriValue = -1;
 /*
 TODO: Summary - SMRI, (Size of data, Data)
 */
-std::unordered_map<unsigned int, DataContainer> _ModelsCache;
+std::map<unsigned int, DataContainer> _ModelsCache;
 /*
 @TODO: Summary
 */
@@ -49,6 +64,7 @@ std::string _SavePath = "";
 std::string _LoadFile = "";
 #pragma endregion
 
+#pragma region SavePath
 /*
 @TODO: Summary
 */
@@ -80,7 +96,9 @@ const char* getSavePath() {
 		return nullptr;
 	}
 }
+#pragma endregion
 
+#pragma region SMRI_Handling
 /*
 Increases and returns the current global SMRI.
 @return The current SMRI value incremented by 1
@@ -107,19 +125,23 @@ void decreaseSmri() {
 unsigned int getCurrentSmri() {
 	return _GlobalSmriValue;
 }
+#pragma endregion
 
+#pragma region DataCaching_Packing
 /*
 @TODO: Summary
 */
-short cacheData(DataContainer _model) {
+short cacheData(unsigned int _smri, int _dataSize, unsigned char* _data) {
 	try {
 		DataContainer data = DataContainer();
-		data._Smri = _model._Smri;
-		data._DataSize = _model._DataSize;
-		data._Data = new unsigned char[data._DataSize];
-		std::memcpy(data._Data, _model._Data, data._DataSize);
+		data._Smri = _smri;
+		data._DataSize = _dataSize;
+		//Data copying
+		for (int i = 0; i < data._DataSize; ++i) {
+			data._DataValues.push_back(_data[i]);
+		}
 
-		_ModelsCache[_model._Smri] = data;
+		_ModelsCache[_smri] = data;
 
 		return 0;
 	}
@@ -133,8 +155,8 @@ short cacheData(DataContainer _model) {
 */
 unsigned char* getData(unsigned int _smri, int* _size) {
 	try {
-		*_size = _ModelsCache[_smri]._DataSize;
-		return _ModelsCache[_smri]._Data;
+		*_size = _ModelsCache.at(_smri)._DataSize;
+		return _ModelsCache.at(_smri)._DataValues.data();
 	}
 	catch (...) {
 		return nullptr;
@@ -147,15 +169,15 @@ unsigned char* getData(unsigned int _smri, int* _size) {
 short packData() {
 	try {
 		Data container = Data();
-		container._ModelsCache = _ModelsCache;
-		std::vector<uint8_t> serData = msgpack::pack(container);
+		container._ModelsCache = std::map<unsigned int, DataContainer>(_ModelsCache);
+		std::vector<uint8_t> serData = msgpack::nvp_pack(container); //Serialization
 
 		int cnt = getFileCount(_SavePath);
 		std::string dt = getCurrentDate();
 		std::string finalSaveName = formatSaveString(SAVE_FORMAT, dt, cnt);
 
 		std::string saveStr = combinePath(_SavePath, finalSaveName) + SAVE_EXTENSION;
-		std::ofstream outfile(saveStr, std::ios::out);
+		std::ofstream outfile(saveStr, std::ios::out | std::ios::binary);
 		outfile.write(reinterpret_cast<const char*>(serData.data()), serData.size());
 		outfile.close();
 		return 0;
@@ -164,7 +186,9 @@ short packData() {
 		return 1;
 	}
 }
+#pragma endregion
 
+#pragma region LoadFromFile_Unpacking
 /*
 @TODO: Summary
 */
@@ -199,6 +223,46 @@ const char* getLoadFileName() {
 }
 
 /*
+@TODO: Summary
+*/
+short unpackData() {
+	try {
+
+		std::ifstream dataFile(combinePath(_SavePath, _LoadFile), std::ios::binary);
+		if (!dataFile.is_open()) {
+			//Could not open file
+			return 2;
+		}
+
+		//Sizing
+		dataFile.seekg(0, std::ios::end);
+		std::streampos fileSize = dataFile.tellg();
+		dataFile.seekg(0, std::ios::beg);
+
+		//File read
+		std::vector<uint8_t> bytes(fileSize);
+		dataFile.read(reinterpret_cast<char*>(bytes.data()), fileSize);
+
+		if (!dataFile) {
+			//Could not read file correctly
+			return 3;
+		}
+
+		Data container = msgpack::nvp_unpack<Data>(bytes); //Deserialization
+		for (const std::pair<unsigned int, DataContainer>& pair : container._ModelsCache) {
+			_ModelsCache[pair.first] = pair.second;
+		}
+
+		return 0;
+	}
+	catch (...) {
+		return 1;
+	}
+}
+#pragma endregion
+
+#pragma region DLL_Cleanup
+/*
 Resets the global SMRI back to its default value: -1
 @return 0 if the operation was successful, 1 otherwise.
 */
@@ -226,3 +290,4 @@ short resetCache() {
 		return 1;
 	}
 }
+#pragma endregion
