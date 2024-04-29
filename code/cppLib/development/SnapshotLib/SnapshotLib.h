@@ -1,12 +1,20 @@
+/*
+* Developed by Michael-Evangelos Diamantis Aug-2024
+* for SAE Athens CMN6302 - Major.
+* Source: https://github.com/MichaelEvangelosD/cmn6302_majorSAE
+*/
 #pragma once
+
+#include <unordered_map>
+#include <iostream>
+#include <fstream>
+#include <stdexcept>
 
 #ifdef SNAPSHOT_EXPORTS
 #define SNAPSHOT_API __declspec(dllexport)
 #else
 #define SNAPSHOT_API __declspec(dllimport)
 #endif
-
-#include <string>
 
 struct DataContainer
 {
@@ -25,4 +33,5 @@ extern "C" SNAPSHOT_API unsigned int getCurrentSmri();
 extern "C" SNAPSHOT_API short resetSmri();
 extern "C" SNAPSHOT_API short cacheData(DataContainer _model, int _dataSize);
 extern "C" SNAPSHOT_API unsigned char* getData(unsigned int _smri, int* _size);
+extern "C" SNAPSHOT_API short packData();
 extern "C" SNAPSHOT_API short resetCache();

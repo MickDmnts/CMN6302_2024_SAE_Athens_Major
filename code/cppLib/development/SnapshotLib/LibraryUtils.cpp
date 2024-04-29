@@ -1,10 +1,10 @@
+/*
+* Developed by Michael-Evangelos Diamantis Aug-2024
+* for SAE Athens CMN6302 - Major.
+* Source: https://github.com/MichaelEvangelosD/cmn6302_majorSAE
+*/
 #include "pch.h"
-#include <filesystem>
 #include "LibraryUtils.h"
-#include <iostream>
-#include <ctime>
-#include <iomanip>
-#include <sstream>
 
 /*
 @TODO: Summary

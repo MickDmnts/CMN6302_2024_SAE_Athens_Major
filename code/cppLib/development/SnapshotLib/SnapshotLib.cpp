@@ -1,11 +1,33 @@
+/*
+* Developed by Michael-Evangelos Diamantis Aug-2024
+* for SAE Athens CMN6302 - Major.
+* Source: https://github.com/MichaelEvangelosD/cmn6302_majorSAE
+*/
+
 #include "pch.h"
 #include "SnapshotLib.h"
 #include "LibraryUtils.h"
-#include <unordered_map>
-#include <iostream>
-#include <fstream>
-#include <stdexcept>
 
+/*
+@TODO: Summary
+*/
+struct Data
+{
+public:
+	/*
+	@TODO: Summary
+	*/
+	std::unordered_map<unsigned int, std::tuple<int, unsigned char*>> _Data;
+
+	template<class T>
+	void pack(T& pack) {
+		pack(_Data);
+	}
+};
+
+/*
+@TODO: Summary
+*/
 DataContainer::DataContainer(unsigned int _smri, unsigned char* _data, int _dataSize) {
 	_Smri = _smri;
 	_Data = new unsigned char[_dataSize];
@@ -17,27 +39,23 @@ DataContainer::DataContainer(unsigned int _smri, unsigned char* _data, int _data
 @TODO: Summary
 */
 const std::string SAVE_FORMAT = "{date}_{cnt}";
-
 /*
 @TODO: Summary
 */
 const std::string SAVE_EXTENSION = ".sav";
-
 /*
 The global SMRI value used in data storage and reference preservation.
 Default value is -1
 */
 int _GlobalSmriValue = -1;
 /*
-TODO: Summary
+TODO: Summary - SMRI, (Size of data, Data)
 */
 std::unordered_map<unsigned int, std::tuple<int, unsigned char*>> _ModelCache;
-
 /*
 @TODO: Summary
 */
 std::string _SavePath = "";
-
 #pragma endregion
 
 /*
@@ -119,17 +137,6 @@ short cacheData(DataContainer _model, int _dataSize) {
 	try {
 		DataContainer temp(_model._Smri, _model._Data, _dataSize);
 
-		//DEBUG========================================
-		int cnt = getFileCount(_SavePath);
-		std::string dt = getCurrentDate();
-		std::string finalSaveName = formatSaveString(SAVE_FORMAT, dt, cnt);
-
-		std::string saveStr = combinePath(_SavePath, finalSaveName) + SAVE_EXTENSION;
-		std::ofstream outfile(saveStr, std::ios::out | std::ios::binary);
-		outfile.write(reinterpret_cast<char*>(temp._Data), _dataSize);
-		outfile.close();
-		//=====================================================================
-
 		_ModelCache.insert(std::make_pair(temp._Smri, std::tuple<int, unsigned char*>(_dataSize, temp._Data)));
 
 		return 0;
@@ -149,6 +156,29 @@ unsigned char* getData(unsigned int _smri, int* _size) {
 	}
 	catch (...) {
 		return nullptr;
+	}
+}
+
+/*
+@TODO: Summary
+*/
+short packData() {
+	try {
+		Data container = Data{ _ModelCache };
+		std::vector<uint8_t> data = msgpack::pack(container);
+
+		int cnt = getFileCount(_SavePath);
+		std::string dt = getCurrentDate();
+		std::string finalSaveName = formatSaveString(SAVE_FORMAT, dt, cnt);
+
+		std::string saveStr = combinePath(_SavePath, finalSaveName) + SAVE_EXTENSION;
+		std::ofstream outfile(saveStr, std::ios::out | std::ios::binary);
+		outfile.write(reinterpret_cast<const char*>(data.data()), data.size());
+		outfile.close();
+		return 0;
+	}
+	catch (...) {
+		return 1;
 	}
 }
 

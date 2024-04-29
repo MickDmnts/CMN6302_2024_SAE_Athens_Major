@@ -17,7 +17,7 @@ public struct DataContainer {
 public static class SnapshotWrapper {
 
     /// <summary>
-    /// 
+    /// @TODO: Summary
     /// </summary>
     enum ErrorCodes{
         OperationSuccessful = 0,
