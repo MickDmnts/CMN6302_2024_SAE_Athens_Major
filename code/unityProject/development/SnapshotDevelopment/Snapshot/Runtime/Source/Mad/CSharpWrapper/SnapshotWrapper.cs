@@ -5,11 +5,10 @@ using UnityEngine;
 
 namespace Snapshot {
 
+    /// <summary>
+    /// @TODO: Summary
+    /// </summary>
     public static class SnapshotWrapper {
-
-        ///<summary>@TODO: Summary</summary>
-        public delegate void EventHandler();
-
         /// <summary>
         /// @TODO: Summary
         /// </summary>
@@ -277,52 +276,6 @@ namespace Snapshot {
             } catch (Exception exception) {
                 Debug.LogError($"Could not reset the cache of the DLL:\n{exception}");
                 return false;
-            }
-        }
-        #endregion
-
-        #region Utils
-        /// <summary>
-        /// @TODO: Summary
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="_struct"></param>
-        /// <returns></returns>
-        public static byte[] StructToByteArray<T>(T _struct) where T : struct {
-            int size = Marshal.SizeOf(_struct);
-            byte[] byteArray = new byte[size];
-            IntPtr ptr = Marshal.AllocHGlobal(size);
-
-            try {
-                Marshal.StructureToPtr(_struct, ptr, false);
-                Marshal.Copy(ptr, byteArray, 0, size);
-            } finally {
-                Marshal.FreeHGlobal(ptr);
-            }
-
-            return byteArray;
-        }
-
-        /// <summary>
-        /// @TODO: Summary
-        /// </summary>
-        /// <typeparam name="T"></typeparam>
-        /// <param name="_bytes"></param>
-        /// <returns></returns>
-        /// <exception cref="ArgumentException"></exception>
-        public static T ByteArrayToStruct<T>(byte[] _bytes) where T : struct {
-            int size = Marshal.SizeOf(typeof(T));
-
-            if (_bytes.Length < size)
-                throw new ArgumentException("Byte array is too small to convert to the struct.");
-
-            IntPtr ptr = Marshal.AllocHGlobal(size);
-
-            try {
-                Marshal.Copy(_bytes, 0, ptr, size);
-                return (T)Marshal.PtrToStructure(ptr, typeof(T));
-            } finally {
-                Marshal.FreeHGlobal(ptr);
             }
         }
         #endregion

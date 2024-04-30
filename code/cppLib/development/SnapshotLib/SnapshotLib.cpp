@@ -76,13 +76,13 @@ short setSavePath(const char* _savePath) {
 		}
 
 		_SavePath = _savePath;
-		return 0;
+		return OperationSuccessful;
 	}
 	catch (std::runtime_error) {
-		return 76;
+		return DirectoryNotFound;
 	}
 	catch (...) {
-		return 1;
+		return OperationFailed;
 	}
 }
 
@@ -121,6 +121,19 @@ void decreaseSmri() {
 }
 
 /*
+@TODO: Summary
+*/
+short deleteSmriData(unsigned int _smri) {
+	try {
+		_ModelsCache.erase(_smri);
+		return OperationSuccessful;
+	}
+	catch (...) {
+		return OperationFailed;
+	}
+}
+
+/*
 @return The current global SMRI without incrementing it.
 */
 unsigned int getCurrentSmri() {
@@ -148,10 +161,10 @@ short cacheData(unsigned int _smri, int _dataSize, unsigned char* _data, int* _r
 
 		_ModelsCache[_smri] = data;
 
-		return 0;
+		return OperationSuccessful;
 	}
 	catch (...) {
-		return 1;
+		return OperationFailed;
 	}
 }
 
@@ -198,10 +211,10 @@ short packData() {
 		std::ofstream outfile(saveStr, std::ios::out | std::ios::binary);
 		outfile.write(reinterpret_cast<const char*>(serData.data()), serData.size());
 		outfile.close();
-		return 0;
+		return OperationSuccessful;
 	}
 	catch (...) {
-		return 1;
+		return OperationFailed;
 	}
 }
 #pragma endregion
@@ -218,13 +231,13 @@ short setLoadFileName(const char* _loadFileName) {
 		}
 
 		_LoadFile = _loadFileName;
-		return 0;
+		return OperationSuccessful;
 	}
 	catch (std::runtime_error) {
-		return 404;
+		return FileNotFound;
 	}
 	catch (...) {
-		return 1;
+		return OperationFailed;
 	}
 }
 
@@ -249,7 +262,7 @@ short unpackData() {
 		std::ifstream dataFile(combinePath(_SavePath, _LoadFile), std::ios::binary);
 		if (!dataFile.is_open()) {
 			//Could not open file
-			return 2;
+			return CouldNotOpenFile;
 		}
 
 		//Sizing
@@ -263,7 +276,7 @@ short unpackData() {
 
 		if (!dataFile) {
 			//Could not read file correctly
-			return 3;
+			return ReadNotSuccessful;
 		}
 
 		Data container = msgpack::nvp_unpack<Data>(bytes); //Deserialization
@@ -271,10 +284,10 @@ short unpackData() {
 			_ModelsCache[pair.first] = pair.second;
 		}
 
-		return 0;
+		return OperationSuccessful;
 	}
 	catch (...) {
-		return 1;
+		return OperationFailed;
 	}
 }
 #pragma endregion
@@ -287,10 +300,10 @@ Resets the global SMRI back to its default value: -1
 short resetSmri() {
 	try {
 		_GlobalSmriValue = -1;
-		return 0;
+		return OperationSuccessful;
 	}
 	catch (...) {
-		return 1;
+		return OperationFailed;
 	}
 }
 
@@ -302,10 +315,10 @@ short resetCache() {
 		_ModelsCache.clear();
 		_SavePath = "";
 		_LoadFile = "";
-		return 0;
+		return OperationSuccessful;
 	}
 	catch (...) {
-		return 1;
+		return OperationFailed;
 	}
 }
 #pragma endregion

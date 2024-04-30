@@ -67,7 +67,7 @@ public class DummySaveManager : MonoBehaviour {
                 _State = !_GetSmri
             };
 
-            byte[] bytes = SnapshotWrapper.StructToByteArray(data);
+            byte[] bytes = null;//SnapshotWrapper.StructToByteArray(data);
 
             SnapshotWrapper.CacheData(data._Smri, bytes.Length, bytes, new int[] { -1, -1, -1 }, 3);
         }
@@ -77,7 +77,7 @@ public class DummySaveManager : MonoBehaviour {
 
             byte[] data = SnapshotWrapper.GetData(_Smri);
 
-            ModelDummy model = SnapshotWrapper.ByteArrayToStruct<ModelDummy>(data);
+            ModelDummy model = new ModelDummy();//SnapshotWrapper.ByteArrayToStruct<ModelDummy>(data);
             Debug.Log($"Deserialized Smri:\n{model._Smri}\n" +
             $"Deserialized Sentence:\n{model._Sentence}\n" +
             $"Deserialized State:\n{model._State}");
@@ -97,7 +97,7 @@ public class DummySaveManager : MonoBehaviour {
 
         if (_Pack) {
             _Pack = false;
-            
+
             //@TODO: To be replaced from event
             GetComponent<DummySavedClass>().OnPackStart();
             Debug.Log($"Pack data: {SnapshotWrapper.PackData()}");
