@@ -35,6 +35,8 @@ namespace Snapshot {
         private static extern void decreaseSmri();
         [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
         private static extern Int32 getCurrentSmri();
+        [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
+        private static extern Int16 deleteSmriData(UInt32 _smri);
 
         //Data caching and packing
         [DllImport("SnapshotLib.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.Cdecl)]
@@ -128,6 +130,20 @@ namespace Snapshot {
         public static int GetCurrentSmri() {
             try {
                 return getCurrentSmri();
+            } catch (Exception exception) {
+                throw new Exception("Could not retrieve current smri due to:\n{0}", exception);
+            }
+        }
+
+        /// <summary>
+        /// @TODO: Summary
+        /// </summary>
+        /// <param name="_smri"></param>
+        /// <returns></returns>
+        /// <exception cref="Exception"></exception>
+        public static bool DeleteSmriData(uint _smri){
+            try {
+                return deleteSmriData(_smri) == (Int16)ErrorCodes.OperationSuccessful;
             } catch (Exception exception) {
                 throw new Exception("Could not retrieve current smri due to:\n{0}", exception);
             }
