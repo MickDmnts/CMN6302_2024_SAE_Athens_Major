@@ -1,0 +1,22 @@
+{
+  "name": "com.mad.snapshot",
+  "version": "1.0.0",
+  "displayName": "Snapshot",
+  "description": "This is the first implementation of the Snapshot mechanism for SAE Athens Major 2024 CMN6302 - Diamantis Michael Evangelos (MAD).",
+  "author": {
+    "name": "Michael \"MAD\" Evangelos Diamantis",
+    "email": "michaeldiamantis17@gmail.com",
+    "url": "https://github.com/MichaelEvangelosD/cmn6302_majorSAE",
+    "github": "https://github.com/MickDmnts"
+  },
+  "keywords": [
+    "save",
+    "savemanager",
+    "snap",
+    "snapshot",
+    "lib",
+    "major",
+    "sae",
+    "cpp"
+  ]
+}

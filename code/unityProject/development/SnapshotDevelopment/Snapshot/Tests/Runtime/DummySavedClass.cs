@@ -3,6 +3,8 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+using Snapshot;
+
 struct ChildClassModel {
     public uint _Smri;
     public bool _State;

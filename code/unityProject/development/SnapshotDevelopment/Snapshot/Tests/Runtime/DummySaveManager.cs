@@ -3,6 +3,8 @@ using UnityEngine;
 using System.ComponentModel;
 using System.IO;
 
+using Snapshot;
+
 public struct ModelDummy {
     public uint _Smri;
     public bool _State;
