@@ -27,7 +27,7 @@ Take a look on what I'm [currently working](https://github.com/MichaelEvangelosD
 
 ## Special Thanks
 
-@TODO
+To [Mike Loomis](https://github.com/mikeloomisgg) for his implementation of MsgPack for C++ 17 which is used internally. [Source](https://github.com/mikeloomisgg/cppack/tree/feature/nvp_packing)
 
 ## References and Tools
 
