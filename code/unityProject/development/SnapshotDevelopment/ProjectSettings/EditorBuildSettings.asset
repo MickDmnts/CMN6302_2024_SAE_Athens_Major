@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/_LibraryTests.unity
+    path: Packages/com.mad.snapshot/Tests/Scenes/_LibraryTests.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/ProposedUsage.unity
+    path: Packages/com.mad.snapshot/Tests/Scenes/ProposedUsage.unity
     guid: dea7ea914827d7646bebe0cfc581a192
   m_configObjects: {}

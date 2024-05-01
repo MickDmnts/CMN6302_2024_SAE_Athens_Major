@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 722215410}
   - component: {fileID: 722215412}
-  - component: {fileID: 722215411}
   m_Layer: 0
   m_Name: Tester
   m_TagString: Untagged
@@ -156,22 +155,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &722215411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 722215409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbfe11bcdfa169543b867d6d84887381, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _OwnSmri: 0
-  _RefInstances: 0
-  _Refs: []
-  _Sentence: 
 --- !u!114 &722215412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,6 +170,7 @@ MonoBehaviour:
   _GetSmri: 0
   _DecreaseSmri: 0
   _ResetSmri: 0
+  _DeleteDataOnSmri: 0
   _CacheModel: 0
   _Smri: 0
   _RetrieveOnSmri: 0
@@ -194,10 +178,10 @@ MonoBehaviour:
   _SetPath: 1
   _GetPath: 0
   _Pack: 0
-  _SaveFileName: 
-  _SetLoadFromFile: 0
+  _SaveFileName: 01_05_2024_0.sav
+  _SetLoadFromFile: 1
   _GetLoadFromFile: 0
-  _Unpack: 0
+  _Unpack: 1
   _CurrentSmri: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

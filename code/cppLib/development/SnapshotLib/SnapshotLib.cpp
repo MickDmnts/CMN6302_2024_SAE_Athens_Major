@@ -284,6 +284,9 @@ short unpackData() {
 			_ModelsCache[pair.first] = pair.second;
 		}
 
+		//Size must be set here in case we unpack a cache so the rest SMRIs register correctly.
+		_GlobalSmriValue = _ModelsCache.size() - 1 < 0 ? 0 : _ModelsCache.size() - 1;
+
 		return OperationSuccessful;
 	}
 	catch (...) {

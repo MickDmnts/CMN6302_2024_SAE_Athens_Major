@@ -90,6 +90,8 @@ namespace ProposedArchitecture {
                 SnapshotWrapper.CacheData(_Models[i].Smri, bytes.Length, bytes, refSmris, _Models[i].RefSmris.Length);
             }
 
+            _Models = new List<ISnapshotModel>();
+
             SnapshotWrapper.PackData();
         }
 
