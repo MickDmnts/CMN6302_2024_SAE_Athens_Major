@@ -30,20 +30,7 @@ namespace ProposedArchitecture {
             this._Common = _common;
             this._Models = new List<ISnapshotModel>();
 
-            SnapshotWrapper.SetSavePath(CreateSavesFolder());
-        }
-
-        /// <summary>
-        /// @TODO: Summary
-        /// </summary>
-        /// <returns></returns>
-        string CreateSavesFolder() {
-            string combPath = Path.Combine(GlobalProperties.SavePath, GlobalProperties.SaveFolderName);
-            if (!Directory.Exists(combPath)) {
-                Directory.CreateDirectory(combPath);
-            }
-
-            return combPath;
+            SnapshotWrapper.SetSavePath(Path.Combine(GlobalProperties.SavePath, GlobalProperties.SaveFolderName));
         }
 
         /// <summary>
@@ -60,8 +47,6 @@ namespace ProposedArchitecture {
         /// <param name="_snapshot"></param>
         public void UnregisterFromSnapshot(ISnapshot _snapshot) {
             OnSnapshotStart -= _snapshot.CacheModel;
-
-            SnapshotWrapper.DecreaseSmri();
         }
 
         /// <summary>
@@ -90,6 +75,8 @@ namespace ProposedArchitecture {
             }
 
             _Models = new List<ISnapshotModel>();
+
+            SnapshotWrapper.PackData();
         }
 
         /// <summary>

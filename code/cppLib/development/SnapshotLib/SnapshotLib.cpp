@@ -71,9 +71,7 @@ std::string _LoadFile = "";
 */
 short setSavePath(const char* _savePath) {
 	try {
-		if (!directoryExists(_savePath)) {
-			throw std::runtime_error("Passed _SavePath does not exist.");
-		}
+		handleSaveDirectory(_savePath);
 
 		_SavePath = _savePath;
 		return OperationSuccessful;
