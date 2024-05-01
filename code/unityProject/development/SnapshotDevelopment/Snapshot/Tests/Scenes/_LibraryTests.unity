@@ -177,11 +177,12 @@ MonoBehaviour:
   _SavePath: C:\SnapSaves
   _SetPath: 1
   _GetPath: 0
+  _ExportDebugLog: 1
   _Pack: 0
-  _SaveFileName: 01_05_2024_0.sav
-  _SetLoadFromFile: 1
+  _SaveFileName: 
+  _SetLoadFromFile: 0
   _GetLoadFromFile: 0
-  _Unpack: 1
+  _Unpack: 0
   _CurrentSmri: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

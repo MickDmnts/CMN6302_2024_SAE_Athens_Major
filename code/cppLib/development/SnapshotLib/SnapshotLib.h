@@ -19,7 +19,7 @@
 /*
 @TODO: Summary
 */
-enum ErrorCodes
+enum SnapshotReturnCodes
 {
 	OperationSuccessful = 0,
 	OperationFailed = 1,

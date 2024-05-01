@@ -20,7 +20,7 @@ struct DataContainer
 
 	template<class T>
 	void pack(T& pack) {
-		pack(_Smri, _DataSize, _DataValues);
+		pack(_Smri, _DataSize, _DataValues, _RefSmris);
 	}
 };
 
@@ -159,7 +159,7 @@ short cacheData(unsigned int _smri, int _dataSize, unsigned char* _data, int* _r
 			data._RefSmris.push_back(_refSmris[i]);
 		}
 
-		_ModelsCache[_smri] = data;
+		_ModelsCache[data._Smri] = data;
 
 		return OperationSuccessful;
 	}
@@ -211,6 +211,7 @@ short packData() {
 		std::ofstream outfile(saveStr, std::ios::out | std::ios::binary);
 		outfile.write(reinterpret_cast<const char*>(serData.data()), serData.size());
 		outfile.close();
+
 		return OperationSuccessful;
 	}
 	catch (...) {
@@ -285,7 +286,8 @@ short unpackData() {
 		}
 
 		//Size must be set here in case we unpack a cache so the rest SMRIs register correctly.
-		_GlobalSmriValue = _ModelsCache.size() - 1 < 0 ? 0 : _ModelsCache.size() - 1;
+		int sz = _ModelsCache.size() - 1;
+		_GlobalSmriValue = sz <= 0 ? resetSmri() : sz;
 
 		return OperationSuccessful;
 	}

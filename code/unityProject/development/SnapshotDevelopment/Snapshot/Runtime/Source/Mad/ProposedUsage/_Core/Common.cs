@@ -22,7 +22,7 @@ namespace ProposedArchitecture {
         }
 
         void OnDestroy() {
-            SaveManager.Cleanup();
+            Debug.Log($"Save Manager cleanup result: {SaveManager.Cleanup()}");
         }
     }
 }

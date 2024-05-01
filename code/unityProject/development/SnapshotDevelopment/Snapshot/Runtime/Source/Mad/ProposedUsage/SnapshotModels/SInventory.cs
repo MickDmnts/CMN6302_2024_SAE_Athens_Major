@@ -8,5 +8,7 @@ namespace ProposedArchitecture {
         public uint Smri { get; set; }
         [Key(1)]
         public int[] RefSmris { get; set; }
+        [Key(2)]
+        public int _ItemCount;
     }
 }
