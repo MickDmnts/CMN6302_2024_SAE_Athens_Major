@@ -1,3 +1,4 @@
+using UnityEngine;
 using MessagePack;
 
 namespace ProposedArchitecture {
@@ -15,5 +16,9 @@ namespace ProposedArchitecture {
         public float _Shield;
         [Key(5)]
         public bool _IsAlive;
+        [Key(6)]
+        public Vector3 _Position;
+        [Key(7)]
+        public Quaternion _Rotation;
     }
 }
