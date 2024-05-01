@@ -13,7 +13,13 @@ namespace ProposedArchitecture {
         Common _Common;
 
         ///<summary>@TODO: Summary</summary>
+        List<ISnapshot> _Snapshots;
+
+        ///<summary>@TODO: Summary</summary>
         List<ISnapshotModel> _Models;
+
+        ///<summary>@TODO: Summary</summary>
+        public IReadOnlyList<ISnapshot> Snapshots => _Snapshots;
 
         ///<summary>@TODO: Summary</summary>
         event Action OnSnapshotStart;
@@ -28,22 +34,10 @@ namespace ProposedArchitecture {
         /// <param name="_common"></param>
         public SaveManager(Common _common) {
             this._Common = _common;
+            this._Snapshots = new List<ISnapshot>();
             this._Models = new List<ISnapshotModel>();
 
-            SnapshotWrapper.SetSavePath(CreateSavesFolder());
-        }
-
-        /// <summary>
-        /// @TODO: Summary
-        /// </summary>
-        /// <returns></returns>
-        string CreateSavesFolder() {
-            string combPath = Path.Combine(GlobalProperties.SavePath, GlobalProperties.SaveFolderName);
-            if (!Directory.Exists(combPath)) {
-                Directory.CreateDirectory(combPath);
-            }
-
-            return combPath;
+            SnapshotWrapper.SetSavePath(Path.Combine(GlobalProperties.SavePath, GlobalProperties.SaveFolderName));
         }
 
         /// <summary>
@@ -60,8 +54,7 @@ namespace ProposedArchitecture {
         /// <param name="_snapshot"></param>
         public void UnregisterFromSnapshot(ISnapshot _snapshot) {
             OnSnapshotStart -= _snapshot.CacheModel;
-
-            SnapshotWrapper.DecreaseSmri();
+            _Snapshots.Remove(_snapshot);
         }
 
         /// <summary>
@@ -70,6 +63,7 @@ namespace ProposedArchitecture {
         /// <param name="_snapshot"></param>
         /// <returns></returns>
         public uint RegisterModel(ISnapshot _snapshot) {
+            _Snapshots.Add(_snapshot);
             RegisterToSnapshot(_snapshot);
 
             return SnapshotWrapper.GetSmri();
@@ -90,6 +84,8 @@ namespace ProposedArchitecture {
             }
 
             _Models = new List<ISnapshotModel>();
+
+            SnapshotWrapper.PackData();
         }
 
         /// <summary>
@@ -98,6 +94,25 @@ namespace ProposedArchitecture {
         /// <param name="_model"></param>
         public void CacheModel(ISnapshotModel _model) {
             _Models.Add(_model);
+        }
+
+        /// <summary>
+        /// @TODO: Summary
+        /// </summary>
+        /// <param name="_fileName"></param>
+        public void LoadSaveFile(string _fileName) {
+            if (SnapshotWrapper.SetLoadFileName(_fileName)) {
+                SnapshotWrapper.UnpackData();
+
+                byte[] bytes;
+                ISnapshotModel model;
+                foreach (ISnapshot snapshot in _Snapshots) {
+                    bytes = SnapshotWrapper.GetData(snapshot.Smri);
+                    model = (ISnapshotModel)MessagePack.MessagePackSerializer.Deserialize(snapshot.GetSnapshotModelType(), bytes);
+                    snapshot.LoadModel(model);
+                    snapshot.RetrieveReferences(SnapshotWrapper.GetRefSmris(snapshot.Smri));
+                }
+            }
         }
 
         /// <summary>

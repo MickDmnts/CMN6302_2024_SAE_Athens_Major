@@ -1,3 +1,5 @@
+using System;
+
 namespace ProposedArchitecture {
 
     /// <summary>
@@ -5,7 +7,7 @@ namespace ProposedArchitecture {
     /// </summary>
     public interface ISnapshot {
         ///<summary>@TODO: Summary</summary>
-        public uint Smri {get;}
+        public uint Smri { get; }
 
         ///<summary>@TODO: Summary</summary>
         public void RegisterToSaveManager();
@@ -19,5 +21,13 @@ namespace ProposedArchitecture {
         ///<summary>@TODO: Summary</summary>
         public void UnregisterToSaveManager();
 
+        ///<summary>@TODO: Summary</summary>
+        public void LoadModel(ISnapshotModel _model);
+
+        ///<summary>@TODO: Summary</summary>
+        public void RetrieveReferences(int[] _refSmris);
+
+        ///<summary>@TODO: Summary</summary>
+        public Type GetSnapshotModelType();
     }
 }

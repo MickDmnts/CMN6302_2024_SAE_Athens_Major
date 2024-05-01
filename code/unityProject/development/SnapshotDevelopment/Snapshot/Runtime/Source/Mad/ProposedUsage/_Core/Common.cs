@@ -11,14 +11,19 @@ namespace ProposedArchitecture {
         public static Common Instance;
 
         ///<summary>@TODO: Summary</summary>
+        WorldLoader _WorldLoader;
+        ///<summary>@TODO: Summary</summary>
         SaveManager _SaveManager;
 
+        ///<summary>@TODO: Summary</summary>
+        public WorldLoader WorldLoader => _WorldLoader;
         ///<summary>@TODO: Summary</summary>
         public SaveManager SaveManager => _SaveManager;
 
         void Awake() {
             Instance = this;
-            _SaveManager = new SaveManager(this);
+            _WorldLoader = GetComponent<WorldLoader>();
+            _SaveManager = new SaveManager(Instance);
         }
 
         void OnDestroy() {

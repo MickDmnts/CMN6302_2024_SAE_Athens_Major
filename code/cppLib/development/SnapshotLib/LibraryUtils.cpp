@@ -63,10 +63,12 @@ std::string combinePath(const std::string _base, const  std::string _exte) {
 /*
 @TODO: Summary
 */
-bool directoryExists(const std::string& path) {
+void handleSaveDirectory(const std::string& path) {
 	fs::path directoryPath(path);
 
-	return fs::exists(directoryPath) && fs::is_directory(directoryPath);
+	if (!fs::exists(directoryPath)) {
+		fs::create_directory(directoryPath);
+	}
 }
 
 /*

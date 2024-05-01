@@ -19,5 +19,5 @@ int getFileCount(std::string _path);
 std::string getCurrentDate();
 std::string formatSaveString(const std::string& _format, const std::string& date, const int cnt);
 std::string combinePath(const std::string _base, const  std::string _exte);
-bool directoryExists(const std::string& path);
+void handleSaveDirectory(const std::string& path);
 bool fileExists(const std::string& path);
