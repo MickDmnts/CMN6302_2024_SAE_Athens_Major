@@ -11,14 +11,17 @@ namespace ProposedArchitecture {
         [SerializeField] float _Shield;
         [SerializeField] bool _IsAlive;
 
-        Weapon _Weapon;
         Inventory _Inventory;
 
         void Awake() {
             RegisterToSaveManager();
 
-            _Weapon = GetComponent<Weapon>();
             _Inventory = GetComponent<Inventory>();
+            Weapon[] temp = GetComponents<Weapon>();
+            for (int i = 0; i < temp.Length; i++) {
+                temp[i].SetInventory(_Inventory);
+                _Inventory.AddWeapon(temp[i]);
+            }
         }
 
         public void RegisterToSaveManager() {
@@ -33,7 +36,6 @@ namespace ProposedArchitecture {
             SPlayer temp = new SPlayer() {
                 Smri = this.Smri,
                 RefSmris = new int[]{
-                    (int)_Weapon.Smri,
                     (int)_Inventory.Smri,
                 },
                 _Health = this._Health,

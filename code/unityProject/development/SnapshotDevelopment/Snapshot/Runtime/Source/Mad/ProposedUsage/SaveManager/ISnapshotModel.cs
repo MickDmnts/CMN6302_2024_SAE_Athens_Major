@@ -4,7 +4,6 @@ namespace ProposedArchitecture {
     /// @TODO: Summary
     /// </summary>
     public interface ISnapshotModel{
-
         ///<summary>@TODO: Summary</summary>
         public uint Smri {get; set;}
         ///<summary>@TODO: Summary</summary>

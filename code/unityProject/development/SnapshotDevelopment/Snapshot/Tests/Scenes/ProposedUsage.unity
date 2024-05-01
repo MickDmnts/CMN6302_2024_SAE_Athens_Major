@@ -279,6 +279,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c05983004b894944084df16c4d294d61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Ammo: 0
+  _Loaded: 0
 --- !u!114 &775942458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,6 +293,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa92b9737dd3adb4daa9f0dd11d7cc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _ItemCount: 0
+  _Weapons: []
 --- !u!114 &775942459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -319,6 +323,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c05983004b894944084df16c4d294d61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Ammo: 0
+  _Loaded: 0
 --- !u!114 &775942461
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -331,6 +337,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c05983004b894944084df16c4d294d61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Ammo: 0
+  _Loaded: 0
 --- !u!1 &1966982054
 GameObject:
   m_ObjectHideFlags: 0
@@ -342,7 +350,6 @@ GameObject:
   - component: {fileID: 1966982055}
   - component: {fileID: 1966982057}
   - component: {fileID: 1966982056}
-  - component: {fileID: 1966982058}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -392,33 +399,6 @@ MonoBehaviour:
   _Save: 0
   _RetrieveOnSmri: 0
   _Smri: 0
---- !u!114 &1966982058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1966982054}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84cefb3ee1a5e344c82683c51ef3b040, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _GetSmri: 0
-  _DecreaseSmri: 0
-  _ResetSmri: 0
-  _CacheModel: 0
-  _Smri: 0
-  _RetrieveOnSmri: 0
-  _SavePath: 
-  _SetPath: 0
-  _GetPath: 0
-  _Pack: 0
-  _SaveFileName: 
-  _SetLoadFromFile: 0
-  _GetLoadFromFile: 0
-  _Unpack: 0
-  _CurrentSmri: 0
 --- !u!1 &2016897064
 GameObject:
   m_ObjectHideFlags: 0

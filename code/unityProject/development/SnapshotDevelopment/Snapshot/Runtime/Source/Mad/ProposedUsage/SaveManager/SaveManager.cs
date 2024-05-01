@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using Snapshot;
-using UnityEngine;
 
 namespace ProposedArchitecture {
 
@@ -91,8 +90,6 @@ namespace ProposedArchitecture {
             }
 
             _Models = new List<ISnapshotModel>();
-
-            SnapshotWrapper.PackData();
         }
 
         /// <summary>
@@ -106,9 +103,8 @@ namespace ProposedArchitecture {
         /// <summary>
         /// @TODO: Summary
         /// </summary>
-        public void Cleanup() {
-            Debug.Log("Reset cache: " + SnapshotWrapper.ResetCache());
-            Debug.Log("Reset SMRI: " + SnapshotWrapper.ResetSmri());
+        public bool Cleanup() {
+            return SnapshotWrapper.ResetCache() && SnapshotWrapper.ResetSmri();
         }
     }
 }

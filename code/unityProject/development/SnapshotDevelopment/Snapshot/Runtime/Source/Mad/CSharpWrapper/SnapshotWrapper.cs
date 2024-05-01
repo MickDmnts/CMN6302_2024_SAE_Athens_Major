@@ -12,7 +12,7 @@ namespace Snapshot {
         /// <summary>
         /// @TODO: Summary
         /// </summary>
-        enum ErrorCodes {
+        enum SnapshotReturnCodes {
             OperationSuccessful = 0,
             OperationFailed = 1,
             DirectoryNotFound = 76,
@@ -72,10 +72,10 @@ namespace Snapshot {
         public static bool SetSavePath(string _path) {
             try {
                 Int16 ec = setSavePath(_path);
-                if (ec == (Int16)ErrorCodes.DirectoryNotFound) {
+                if (ec == (Int16)SnapshotReturnCodes.DirectoryNotFound) {
                     throw new DirectoryNotFoundException($"Passed path {_path} does not exist.");
                 }
-                return ec == (Int16)ErrorCodes.OperationSuccessful;
+                return ec == (Int16)SnapshotReturnCodes.OperationSuccessful;
             } catch (Exception exception) {
                 Debug.LogError($"Could not set the DLL save path:\n{exception}");
                 return false;
@@ -143,7 +143,7 @@ namespace Snapshot {
         /// <exception cref="Exception"></exception>
         public static bool DeleteSmriData(uint _smri){
             try {
-                return deleteSmriData(_smri) == (Int16)ErrorCodes.OperationSuccessful;
+                return deleteSmriData(_smri) == (Int16)SnapshotReturnCodes.OperationSuccessful;
             } catch (Exception exception) {
                 throw new Exception("Could not retrieve current smri due to:\n{0}", exception);
             }
@@ -158,7 +158,7 @@ namespace Snapshot {
         /// <returns>True if caching was succesful, false otherwise.</returns>
         public static bool CacheData(uint _smri, int _dataSize, byte[] _data, int[] _refSmris, int _refSmrisSize) {
             try {
-                return cacheData(_smri, _dataSize, _data, _refSmris, _refSmrisSize) == (Int16)ErrorCodes.OperationSuccessful;
+                return cacheData(_smri, _dataSize, _data, _refSmris, _refSmrisSize) == (Int16)SnapshotReturnCodes.OperationSuccessful;
             } catch (Exception exception) {
                 Debug.LogError($"Could not cache the passed (SMRI: {_smri}) to the DLL:\n{exception}");
                 return false;
@@ -213,7 +213,7 @@ namespace Snapshot {
         /// <returns></returns>
         public static bool PackData() {
             try {
-                return packData() == (Int16)ErrorCodes.OperationSuccessful;
+                return packData() == (Int16)SnapshotReturnCodes.OperationSuccessful;
             } catch (Exception exception) {
                 Debug.LogError($"Could not pack data in the DLL:\n{exception}");
                 return false;
@@ -230,10 +230,10 @@ namespace Snapshot {
         public static bool SetLoadFileName(string _loadFromFileName) {
             try {
                 Int16 ec = setLoadFileName(_loadFromFileName);
-                if (ec == (Int16)ErrorCodes.FileNotFound) {
+                if (ec == (Int16)SnapshotReturnCodes.FileNotFound) {
                     throw new DirectoryNotFoundException($"Passed filename {_loadFromFileName} does not exist inside the save path: {GetSavePath()}.");
                 }
-                return ec == (Int16)ErrorCodes.OperationSuccessful;
+                return ec == (Int16)SnapshotReturnCodes.OperationSuccessful;
             } catch (Exception exception) {
                 Debug.LogError($"Could not set the DLL load from filename:\n{exception}");
                 return false;
@@ -260,7 +260,7 @@ namespace Snapshot {
         /// <returns></returns>
         public static bool UnpackData() {
             try {
-                return unpackData() == (Int16)ErrorCodes.OperationSuccessful;
+                return unpackData() == (Int16)SnapshotReturnCodes.OperationSuccessful;
             } catch (Exception exception) {
                 Debug.LogError($"Could not pack data in the DLL:\n{exception}");
                 return false;
@@ -275,7 +275,7 @@ namespace Snapshot {
         /// <returns>True if the reset was succesfull, false otherwise with an error log.</returns>
         public static bool ResetSmri() {
             try {
-                return resetSmri() == (Int16)ErrorCodes.OperationSuccessful;
+                return resetSmri() == (Int16)SnapshotReturnCodes.OperationSuccessful;
             } catch (Exception exception) {
                 Debug.LogError($"Could not reset the DLL SMRI:\n{exception}");
                 return false;
@@ -288,7 +288,7 @@ namespace Snapshot {
         /// <returns></returns>
         public static bool ResetCache() {
             try {
-                return resetCache() == (Int16)ErrorCodes.OperationSuccessful;
+                return resetCache() == (Int16)SnapshotReturnCodes.OperationSuccessful;
             } catch (Exception exception) {
                 Debug.LogError($"Could not reset the cache of the DLL:\n{exception}");
                 return false;
