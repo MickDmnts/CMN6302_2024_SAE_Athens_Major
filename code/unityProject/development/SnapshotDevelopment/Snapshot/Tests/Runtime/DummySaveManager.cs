@@ -4,11 +4,18 @@ using System.ComponentModel;
 using System.IO;
 
 using Snapshot;
+using MessagePack;
 
+[MessagePackObject]
 public struct ModelDummy {
+    [Key(0)]
     public uint _Smri;
+    [Key(1)]
     public bool _State;
+    [Key(2)]
     public string _Sentence;
+    [Key(3)]
+    public int[] _RefSmris;
 }
 
 public class DummySaveManager : MonoBehaviour {
@@ -16,6 +23,7 @@ public class DummySaveManager : MonoBehaviour {
     public bool _GetSmri;
     public bool _DecreaseSmri;
     public bool _ResetSmri;
+    public bool _DeleteDataOnSmri;
     [Header("Model tests")]
     public bool _CacheModel;
     public uint _Smri;
@@ -64,12 +72,14 @@ public class DummySaveManager : MonoBehaviour {
             ModelDummy data = new ModelDummy() {
                 _Smri = smri,
                 _Sentence = "Hello from Unity" + smri,
-                _State = !_GetSmri
+                _State = !_GetSmri,
+                _RefSmris = new int[] { 0, 1, 2, 3 }
             };
 
-            byte[] bytes = SnapshotWrapper.StructToByteArray(data);
+            byte[] bytes = MessagePackSerializer.Serialize<ModelDummy>(data);
+            int[] refSmris = data._RefSmris;
 
-            SnapshotWrapper.CacheData(data._Smri, bytes.Length, bytes, new int[] { -1, -1, -1 }, 3);
+            SnapshotWrapper.CacheData(data._Smri, bytes.Length, bytes, refSmris, refSmris.Length);
         }
 
         if (_RetrieveOnSmri) {
@@ -77,10 +87,21 @@ public class DummySaveManager : MonoBehaviour {
 
             byte[] data = SnapshotWrapper.GetData(_Smri);
 
-            ModelDummy model = SnapshotWrapper.ByteArrayToStruct<ModelDummy>(data);
+            ModelDummy model = (ModelDummy)MessagePackSerializer.Deserialize(typeof(ModelDummy), data);
             Debug.Log($"Deserialized Smri:\n{model._Smri}\n" +
             $"Deserialized Sentence:\n{model._Sentence}\n" +
-            $"Deserialized State:\n{model._State}");
+            $"Deserialized State:\n{model._State}\n" +
+            $"Deserialized refs:\n{model._RefSmris}");
+
+            for (int i = 0; i < model._RefSmris.Length; i++) {
+                Debug.Log(model._RefSmris[i]);
+            }
+        }
+
+        if (_DeleteDataOnSmri) {
+            _DeleteDataOnSmri = false;
+
+            Debug.Log($"Delete smri data of SMRI {_Smri}:{SnapshotWrapper.DeleteSmriData(_Smri)}");
         }
 
         if (_SetPath) {
@@ -97,9 +118,9 @@ public class DummySaveManager : MonoBehaviour {
 
         if (_Pack) {
             _Pack = false;
-            
+
             //@TODO: To be replaced from event
-            GetComponent<DummySavedClass>().OnPackStart();
+            //GetComponent<DummySavedClass>().OnPackStart();
             Debug.Log($"Pack data: {SnapshotWrapper.PackData()}");
         }
 

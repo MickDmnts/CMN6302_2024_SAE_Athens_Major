@@ -28,7 +28,7 @@ public class ChildClass {
             _State = _State
         };
 
-        byte[] bytes = SnapshotWrapper.StructToByteArray(data);
+        byte[] bytes = null;//SnapshotWrapper.StructToByteArray(data);
         SnapshotWrapper.CacheData(_OwnSmri, bytes.Length, bytes, null, 0);
     }
 }
@@ -64,7 +64,7 @@ public class DummySavedClass : MonoBehaviour {
             _Sentence = _Sentence,
         };
 
-        byte[] bytes = SnapshotWrapper.StructToByteArray(data);
+        byte[] bytes = null; //SnapshotWrapper.StructToByteArray(data);
         int[] refSmris = new int[_Refs.Count];
         for (int i = 0; i < refSmris.Length; i++) {
             _Refs[i].OnPackStart();
