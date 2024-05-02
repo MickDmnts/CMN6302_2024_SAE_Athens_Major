@@ -4,15 +4,21 @@
 * Source: https://github.com/MichaelEvangelosD/cmn6302_majorSAE
 */
 #include "pch.h"
-#include "LibraryUtils.h"
 
 /*
-@TODO: Summary
+Returns the file count from inside the passed  path.
+@param const std::string _path: A string containing the absolute path to a directory.
+@throw fs::filesystem_error: Passed _path does not exist.
+@return The file count from inside the passed _path.
 */
-int getFileCount(const std::string path) {
+int getFileCount(const std::string _path) {
 	int fileCount = 0;
 
-	for (const auto& entry : fs::directory_iterator(path)) {
+	if (!fs::exists(_path)) {
+		throw fs::filesystem_error("Passed _path does not exist.", std::filesystem::directory_entry(), std::make_error_code(std::errc::no_such_file_or_directory));
+	}
+
+	for (const auto& entry : fs::directory_iterator(_path)) {
 		//Count only files
 		if (entry.is_regular_file()) {
 			fileCount++;
@@ -23,7 +29,7 @@ int getFileCount(const std::string path) {
 }
 
 /*
-@TODO: Summary
+@return The current date in a DD_MM_YYYY format as a string.
 */
 std::string getCurrentDate() {
 	time_t now;
@@ -41,7 +47,11 @@ std::string getCurrentDate() {
 }
 
 /*
-@TODO: Summary
+@param const std::string& _format: The format to replace the values from.
+@param const std::string& date: The date value to replace the {date}.
+@param const int cnt: The count value to replace the {count}.
+@return Replaces the date and count from the passed format and returns it.
+e.g.: {date}_{count} - 02_03_2024_1
 */
 std::string formatSaveString(const std::string& _format, const std::string& date, const int cnt) {
 	std::string result = _format;
@@ -53,15 +63,20 @@ std::string formatSaveString(const std::string& _format, const std::string& date
 }
 
 /*
-@TODO: Summary
+Combines the passed strings with the corresponding system-relative path combination symbol.
+No checking takes place.
+@param const std::string _base: The base absolute path.
+@param const std::string _exte: The extension relative path.
+@return The combined path string.
 */
-std::string combinePath(const std::string _base, const  std::string _exte) {
+std::string combinePath(const std::string _base, const std::string _exte) {
 	fs::path _comb = fs::path(_base) / fs::path(_exte);
 	return _comb.string();
 }
 
 /*
-@TODO: Summary
+Creates the passed directory if it does not exist.
+@param const std::string& path: The directory absolute path.
 */
 void handleSaveDirectory(const std::string& path) {
 	fs::path directoryPath(path);
@@ -72,7 +87,8 @@ void handleSaveDirectory(const std::string& path) {
 }
 
 /*
-@TODO: Summary
+@param const std::string& path: Absolute path to the file.
+@return True if the file exists, false otherwise.
 */
 bool fileExists(const std::string& path) {
 	fs::path directoryPath(path);

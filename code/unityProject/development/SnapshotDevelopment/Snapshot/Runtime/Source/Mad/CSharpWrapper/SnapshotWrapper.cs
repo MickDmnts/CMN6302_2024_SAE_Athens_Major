@@ -15,10 +15,10 @@ namespace Snapshot {
         enum SnapshotReturnCodes {
             OperationSuccessful = 0,
             OperationFailed = 1,
-            DirectoryNotFound = 76,
-            FileNotFound = 404,
             CouldNotOpenFile = 2,
             ReadNotSuccessful = 3,
+            DirectoryNotFound = 76,
+            FileNotFound = 404,
         }
 
         #region DLL Invokes
@@ -40,7 +40,7 @@ namespace Snapshot {
 
         //Data caching and packing
         [DllImport("SnapshotLib.dll", CharSet = CharSet.Auto, CallingConvention = CallingConvention.Cdecl)]
-        private static extern Int16 cacheData(UInt32 _smri, Int32 _dataSize, byte[] _data, Int32[] _refSmris, int _refSmrisSize);
+        private static extern Int16 cacheData(UInt32 _smri, Int32 _dataSize, byte[] _data, int _refSmrisSize, Int32[] _refSmris);
         [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
         private static extern IntPtr getData(UInt32 _smri, out Int32 _arraySize);
         [DllImport("SnapshotLib.dll", CallingConvention = CallingConvention.Cdecl)]
@@ -141,7 +141,7 @@ namespace Snapshot {
         /// <param name="_smri"></param>
         /// <returns></returns>
         /// <exception cref="Exception"></exception>
-        public static bool DeleteSmriData(uint _smri){
+        public static bool DeleteSmriData(uint _smri) {
             try {
                 return deleteSmriData(_smri) == (Int16)SnapshotReturnCodes.OperationSuccessful;
             } catch (Exception exception) {
@@ -156,9 +156,9 @@ namespace Snapshot {
         /// </summary>
         /// <param name="_container">The container instance to cache</param>
         /// <returns>True if caching was succesful, false otherwise.</returns>
-        public static bool CacheData(uint _smri, int _dataSize, byte[] _data, int[] _refSmris, int _refSmrisSize) {
+        public static bool CacheData(uint _smri, int _dataSize, byte[] _data, int _refSmrisSize, int[] _refSmris) {
             try {
-                return cacheData(_smri, _dataSize, _data, _refSmris, _refSmrisSize) == (Int16)SnapshotReturnCodes.OperationSuccessful;
+                return cacheData(_smri, _dataSize, _data, _refSmrisSize, _refSmris) == (Int16)SnapshotReturnCodes.OperationSuccessful;
             } catch (Exception exception) {
                 Debug.LogError($"Could not cache the passed (SMRI: {_smri}) to the DLL:\n{exception}");
                 return false;

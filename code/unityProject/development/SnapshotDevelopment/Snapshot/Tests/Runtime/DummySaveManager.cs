@@ -79,7 +79,7 @@ public class DummySaveManager : MonoBehaviour {
             byte[] bytes = MessagePackSerializer.Serialize<ModelDummy>(data);
             int[] refSmris = data._RefSmris;
 
-            SnapshotWrapper.CacheData(data._Smri, bytes.Length, bytes, refSmris, refSmris.Length);
+            SnapshotWrapper.CacheData(data._Smri, bytes.Length, bytes, refSmris.Length, refSmris);
         }
 
         if (_RetrieveOnSmri) {

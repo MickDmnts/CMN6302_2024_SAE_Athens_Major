@@ -8,6 +8,14 @@
 #include <iostream>
 #include <fstream>
 #include <stdexcept>
+//Utils imports
+#include <string>
+#include <filesystem>
+#include <sstream>
+#include <ctime>
+#include <iomanip>
+#include <sstream>
+//Base header imports
 #include "SnapshotLib.h"
 #include "LibraryUtils.h"
 
