@@ -5,19 +5,23 @@
 */
 
 #include "pch.h"
-#include "SnapshotLib.h"
-#include "LibraryUtils.h"
 
 /*
-@TODO: Summary
+A struct for incoming data handling.
+Used solemly for data caching, packing and unpacking.
 */
 struct DataContainer
 {
+	/*The saved data cache parent SMRI*/
 	unsigned int _Smri;
+	/*The cached data array size*/
 	int _DataSize;
+	/*The cached data converted in unsigned char for serialization*/
 	std::vector<unsigned char> _DataValues;
+	/*The referenced SMRI values this SMRI has.*/
 	std::vector<int> _RefSmris;
 
+	/*Packing msgpack::cppack method*/
 	template<class T>
 	void pack(T& pack) {
 		pack(_Smri, _DataSize, _DataValues, _RefSmris);
@@ -25,12 +29,15 @@ struct DataContainer
 };
 
 /*
-@TODO: Summary
+A struct used solemly for packing and unpacking purposes.
+Helps in making DataContainer serialization and deserialization easier.
 */
 struct Data
 {
+	/*The map containing the smri-data pairs meant for serialization and deserialization.*/
 	std::map<unsigned int, DataContainer> _ModelsCache;
 
+	/*Packing msgpack::cppack method*/
 	template<class T>
 	void pack(T& pack) {
 		pack(_ModelsCache);
@@ -38,36 +45,33 @@ struct Data
 };
 
 #pragma region GlobalVariables
-/*
-@TODO: Summary
-*/
+/*The save format of the saved files.*/
 const std::string SAVE_FORMAT = "{date}_{cnt}";
-/*
-@TODO: Summary
-*/
+/*The save file extension*/
 const std::string SAVE_EXTENSION = ".sav";
 /*
 The global SMRI value used in data storage and reference preservation.
 Default value is -1
 */
 int _GlobalSmriValue = -1;
-/*
-TODO: Summary - SMRI, (Size of data, Data)
-*/
+/*A map storing SMRI-Data pairs. Used in serialization and deserialization.*/
 std::map<unsigned int, DataContainer> _ModelsCache;
-/*
-@TODO: Summary
-*/
+/*The externally-set absolute save path.*/
 std::string _SavePath = "";
-/*
-@TODO: Summary
-*/
+/*The externally-set file name to unpack from.*/
 std::string _LoadFile = "";
 #pragma endregion
 
 #pragma region SavePath
 /*
-@TODO: Summary
+Sets the library save path variable.
+The final directory gets created if it does not already exist.
+
+@param const char* _savePath:
+	A string containing the absolute save path to a directory.
+@return	OperationSuccessful: Successful set of the path
+@return	DirectoryNotFound: If the directory is not found
+@return	OperationFailed: In case of any other error
 */
 short setSavePath(const char* _savePath) {
 	try {
@@ -85,7 +89,9 @@ short setSavePath(const char* _savePath) {
 }
 
 /*
-@TODO: Summary
+Returns the stored save directory absolute path.
+@return The stored save path as a C string.
+@return Nullptr in any other case
 */
 const char* getSavePath() {
 	try {
@@ -100,7 +106,8 @@ const char* getSavePath() {
 #pragma region SMRI_Handling
 /*
 Increases and returns the current global SMRI.
-@return The current SMRI value incremented by 1
+In case of any error, call decreaseSmri().
+@return The current SMRI value incremented by 1.
 */
 unsigned int getSmri() {
 	_GlobalSmriValue += 1;
@@ -119,7 +126,11 @@ void decreaseSmri() {
 }
 
 /*
-@TODO: Summary
+Deletes the associated SMRI Data Container from the ModelCache.
+@param unsigned int _smri
+	The SMRI to delete
+@return OperationSuccessful: Deletion was successful
+@return OperationFailed: Any other error.
 */
 short deleteSmriData(unsigned int _smri) {
 	try {
@@ -141,9 +152,18 @@ unsigned int getCurrentSmri() {
 
 #pragma region DataCaching_Packing
 /*
-@TODO: Summary
+That's the main data caching function of the library.
+Creates and caches the DataContainer with the passed parameters and saves it in the ModelCache.
+Passed _data are converted into unsigned char values.
+@param unsigned int _smri: The smri to associate with the data.
+@param int _dataSize: The size of the marshalled data.
+@param unsigned char* _data: Pointer to the marshalled data array (byte array)
+@param int _refsSize: The int ref smri array size
+@param int* _refSmris: Pointer to the marshalled int array containing the ref SMRIs of this SMRI.
+@return OperationSuccessful: If the caching and convertion were successful
+@return OperationFailed: If any error occurs.
 */
-short cacheData(unsigned int _smri, int _dataSize, unsigned char* _data, int* _refSmris, int _refsSize) {
+short cacheData(unsigned int _smri, int _dataSize, unsigned char* _data, int _refsSize, int* _refSmris) {
 	try {
 		DataContainer data = DataContainer();
 		data._Smri = _smri;
@@ -167,7 +187,11 @@ short cacheData(unsigned int _smri, int _dataSize, unsigned char* _data, int* _r
 }
 
 /*
-@TODO: Summary
+Returns a pointer to the passed _smri associated data array.
+@param unsigned int _smri: The SMRI to retrieve data from
+@param int* _size: Is an output parameter and will be set with the array size of the returned data.
+@return A pointer to the beginning of the SMRI associated data.
+@return A nullptr in any other case.
 */
 unsigned char* getData(unsigned int _smri, int* _size) {
 	try {
@@ -180,7 +204,11 @@ unsigned char* getData(unsigned int _smri, int* _size) {
 }
 
 /*
-@TODO: Summary
+Returns a pointer to the referenced SMRI values of the passed _parentSmri;
+@param unsigned int _parentSmri: The SMRI to retrieve the referenced SMRIs array from.
+@param  int* _size: Is an output parameter and will be set with the array size of the returned data.
+@return int* A pointer to the beginning of the Reference SMRI int array.
+@return A nullptr in any other case.
 */
 int* getRefSmris(unsigned int _parentSmri, int* _size) {
 	try {
@@ -193,7 +221,11 @@ int* getRefSmris(unsigned int _parentSmri, int* _size) {
 }
 
 /*
-@TODO: Summary
+The main serialization of the library.
+The whole _ModelCache serialized and stored in the set save path along with a dynamically created name controlled from the SAVE_FORMAT variable.
+The serialization is handled from the msgpack hpp library.
+@return OperationSuccessful: If the serialization was successful
+@return OperationFailed: If any error occurs.
 */
 short packData() {
 	try {
@@ -220,7 +252,13 @@ short packData() {
 
 #pragma region LoadFromFile_Unpacking
 /*
-@TODO: Summary
+Sets the file name to read data to unpack from which must reside inside the set _SavePath.
+The name gets validated for its existance inside the _SavePath every time it is set.
+@param const char* _loadFileName: A string containing the file name to load from.
+@throw std::runtime_error: Passed _LoadFile does not exist in the saves folder.
+@return OperationSuccessful: If the name was successfully set
+@return FileNotFound: If the file was not found inside the _SavePath directory.
+@return OperationFailed: If any other error occurs.
 */
 short setLoadFileName(const char* _loadFileName) {
 	try {
@@ -241,7 +279,9 @@ short setLoadFileName(const char* _loadFileName) {
 }
 
 /*
-@TODO: Summary
+Returns the library cached _LoadFile value containing the file name to unpack data from.
+@return A C string with the value of the _LoadFile
+@return A nullptr in any other case.
 */
 const char* getLoadFileName() {
 	try {
@@ -253,7 +293,14 @@ const char* getLoadFileName() {
 }
 
 /*
-@TODO: Summary
+The deserialization function of the library.
+The serialized data are read directly from the save path and file name, get deserialized and
+cached inside the _ModelsCache library map.
+The GlobalSMRI is set to be equal to the size of the deserialized data map.
+@return CouldNotOpenFile: In case the file could not be opened.
+@return ReadNotSuccessful: In case the file could not be read.
+@return OperationSuccessful: In case the whole process was successful.
+@return OperationFailed: In any other error.
 */
 short unpackData() {
 	try {
@@ -298,7 +345,8 @@ short unpackData() {
 #pragma region DLL_Cleanup
 /*
 Resets the global SMRI back to its default value: -1
-@return 0 if the operation was successful, 1 otherwise.
+@return OperationSuccessful if the operation was successful.
+@return OperationFailed: In any other error.
 */
 short resetSmri() {
 	try {
@@ -311,7 +359,9 @@ short resetSmri() {
 }
 
 /*
-@TODO: Summary
+Clears the ModelsCache, _SavePath and _LoadFile memory.
+@return OperationSuccessful If the operation was successful.
+@return OperationFailed: In any other error.
 */
 short resetCache() {
 	try {
