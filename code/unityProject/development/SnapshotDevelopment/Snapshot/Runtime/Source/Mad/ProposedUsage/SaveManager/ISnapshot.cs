@@ -3,31 +3,18 @@ using System;
 namespace ProposedArchitecture {
 
     /// <summary>
-    /// @TODO: Summary
+    /// Marks a class as ISnapshot-able
     /// </summary>
     public interface ISnapshot {
-        ///<summary>@TODO: Summary</summary>
+        ///<summary>The class should have an SMRI field</summary>
         public uint Smri { get; }
 
-        ///<summary>@TODO: Summary</summary>
         public void RegisterToSaveManager();
-
-        ///<summary>@TODO: Summary</summary>
         public void CacheModel();
-
-        ///<summary>@TODO: Summary</summary>
         public ISnapshotModel ConstructModel();
-
-        ///<summary>@TODO: Summary</summary>
         public void UnregisterToSaveManager();
-
-        ///<summary>@TODO: Summary</summary>
         public void LoadModel(ISnapshotModel _model);
-
-        ///<summary>@TODO: Summary</summary>
         public void RetrieveReferences(int[] _refSmris);
-
-        ///<summary>@TODO: Summary</summary>
         public Type GetSnapshotModelType();
     }
 }

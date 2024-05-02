@@ -1,12 +1,9 @@
 namespace ProposedArchitecture {
 
-    /// <summary>
-    /// @TODO: Summary
-    /// </summary>
     public interface ISnapshotModel{
-        ///<summary>@TODO: Summary</summary>
+        ///<summary>The class/struct should have an SMRI field</summary>
         public uint Smri {get; set;}
-        ///<summary>@TODO: Summary</summary>
+        ///<summary>The class/struct should have an int array to store its references SMRIs</summary>
         public int[] RefSmris {get; set;}
     }
 }

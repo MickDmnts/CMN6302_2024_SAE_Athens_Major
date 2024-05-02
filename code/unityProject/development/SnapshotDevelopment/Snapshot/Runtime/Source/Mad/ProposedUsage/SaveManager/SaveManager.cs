@@ -6,50 +6,51 @@ using Snapshot;
 namespace ProposedArchitecture {
 
     /// <summary>
-    /// @TODO: Summary
+    /// Responsible for handling the SnapshotWrapper, ISnapshot and ISnapshotModel instances.
+    /// Hands out SMRIs.
     /// </summary>
     public class SaveManager {
-        ///<summary>@TODO: Summary</summary>
+        ///<summary>Reference to the Common instance</summary>
         Common _Common;
-
-        ///<summary>@TODO: Summary</summary>
+        ///<summary>Caches the ISnapshot references of the game</summary>
         List<ISnapshot> _Snapshots;
-
-        ///<summary>@TODO: Summary</summary>
+        ///<summary>Caches the ISnapshotModel references of the ISnapshots</summary>
         List<ISnapshotModel> _Models;
 
-        ///<summary>@TODO: Summary</summary>
+        ///<summary>Returns a read only collection of the Snapshot reference cache.</summary>
         public IReadOnlyList<ISnapshot> Snapshots => _Snapshots;
 
-        ///<summary>@TODO: Summary</summary>
+        ///<summary>Register to this event to get notified before the packing sequence starts.</summary>
         event Action OnSnapshotStart;
-        ///<summary>@TODO: Summary</summary>
+        ///<summary>Raises the OnSnapshotStart event</summary>
         void RaiseOnSnapshotStart() {
             OnSnapshotStart?.Invoke();
         }
 
         /// <summary>
-        /// @TODO: Summary
+        /// Creates a SaveManager instance
         /// </summary>
-        /// <param name="_common"></param>
+        /// <param name="_common">Reference to the Common instance</param>
         public SaveManager(Common _common) {
             this._Common = _common;
             this._Snapshots = new List<ISnapshot>();
             this._Models = new List<ISnapshotModel>();
-
+            
+            //Set the initial save directory
             SnapshotWrapper.SetSavePath(Path.Combine(GlobalProperties.SavePath, GlobalProperties.SaveFolderName));
         }
 
         /// <summary>
-        /// @TODO: Summary
+        /// Registers the passed ISnapshot for data caching upon packing.
         /// </summary>
-        /// <param name="_snapshot"></param>
+        /// <param name="_snapshot">The snapshot instance</param>
         void RegisterToSnapshot(ISnapshot _snapshot) {
             OnSnapshotStart += _snapshot.CacheModel;
         }
 
         /// <summary>
-        /// @TODO: Summary
+        /// Unregisters the passed ISnapshot from data caching upon packing.
+        /// The passed snapshot is also removed from the Snapshot list.
         /// </summary>
         /// <param name="_snapshot"></param>
         public void UnregisterFromSnapshot(ISnapshot _snapshot) {
@@ -58,10 +59,10 @@ namespace ProposedArchitecture {
         }
 
         /// <summary>
-        /// @TODO: Summary
+        /// Registers the passed ISnapshot instance to the serialization event handler and adds it to the ISnapshot reference list.
         /// </summary>
-        /// <param name="_snapshot"></param>
-        /// <returns></returns>
+        /// <param name="_snapshot">The snapshot instance</param>
+        /// <returns>The SMRI of the registered model.</returns>
         public uint RegisterModel(ISnapshot _snapshot) {
             _Snapshots.Add(_snapshot);
             RegisterToSnapshot(_snapshot);
@@ -69,7 +70,10 @@ namespace ProposedArchitecture {
             return SnapshotWrapper.GetSmri();
         }
 
-        ///<summary>@TODO: Summary</summary>
+        ///<summary>
+        /// Kicks off the packing sequence. All the cached ISnapshot.CacheData methods get called and their data are serialized and passed to the internal DLL library cache.
+        /// The cached SaveManager models list gets cleared afterwards.
+        ///</summary>
         public void Save() {
             RaiseOnSnapshotStart();
 
@@ -89,15 +93,17 @@ namespace ProposedArchitecture {
         }
 
         /// <summary>
-        /// @TODO: Summary
+        /// Stores the passed model to the SaveManager data container list.
         /// </summary>
-        /// <param name="_model"></param>
+        /// <param name="_model">The snapshot data container instance</param>
         public void CacheModel(ISnapshotModel _model) {
             _Models.Add(_model);
         }
 
         /// <summary>
-        /// @TODO: Summary
+        /// Kicks off the Unpacking mechanism contained in the passed fileName.
+        /// The deserialized data are stored inside the SaveManager ISnapshotModel cache for accessing.
+        /// Each cached ISnapshot.LoadModel and ISnapshot.RetrieveReferences method gets called after each data retrieval from the dll cache. 
         /// </summary>
         /// <param name="_fileName"></param>
         public void LoadSaveFile(string _fileName) {
@@ -116,7 +122,7 @@ namespace ProposedArchitecture {
         }
 
         /// <summary>
-        /// @TODO: Summary
+        /// Resets the dll library caches and SMRI.
         /// </summary>
         public bool Cleanup() {
             return SnapshotWrapper.ResetCache() && SnapshotWrapper.ResetSmri();

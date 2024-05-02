@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Snapshot {
 
     /// <summary>
-    /// C# library wrapper of SnapshotLib dll.
+    /// C# library wrapper of SnapshotLib x64-bit dll.
     /// </summary>
     public static class SnapshotWrapper {
         /// <summary>

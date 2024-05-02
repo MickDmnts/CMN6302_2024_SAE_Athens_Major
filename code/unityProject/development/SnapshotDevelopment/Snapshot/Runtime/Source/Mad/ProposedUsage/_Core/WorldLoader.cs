@@ -1,19 +1,20 @@
 using UnityEngine;
 
 namespace ProposedArchitecture {
-    
+
     /// <summary>
-    /// @TODO: Summary
+    /// Handles the world creation and order of SMRIs simultaneously.
     /// </summary>
     [DefaultExecutionOrder(-250)]
     public class WorldLoader : MonoBehaviour {
-        ///<summary>@TODO: Summary</summary>
-        [SerializeField] string _SaveFileName;
-        ///<summary>@TODO: Summary</summary>
-        [SerializeField] bool _FromLoad;
-        ///<summary>@TODO: Summary</summary>
-        [SerializeField] GameObject[] _Objects;
+        ///<summary>The save file name to load from</summary>
+        [SerializeField, Tooltip("The save file name to load from")] string _SaveFileName;
+        ///<summary>Is the start-up a load procedure?</summary>
+        [SerializeField, Tooltip("Is the start-up a load procedure?")] bool _FromLoad;
+        ///<summary>The objects to load everytime</summary>
+        [SerializeField, Tooltip("The objects to load everytime")] GameObject[] _Objects;
 
+        ///<summary>Is the start-up a load procedure?</summary>
         public bool FromLoad => _FromLoad;
 
         void Start() {
@@ -24,7 +25,7 @@ namespace ProposedArchitecture {
             }
         }
 
-        ///<summary>@TODO: Summary</summary>
+        ///<summary>Loads the game objects normally</summary>
         void DefaultStart() {
             GameObject temp;
             for (int i = 0; i < _Objects.Length; i++) {
@@ -35,7 +36,7 @@ namespace ProposedArchitecture {
             }
         }
 
-        ///<summary>@TODO: Summary</summary>
+        ///<summary>Loads the objects and then calls the SaveManager unpacking method.</summary>
         void FromLoadStart() {
             GameObject temp;
             for (int i = 0; i < _Objects.Length; i++) {

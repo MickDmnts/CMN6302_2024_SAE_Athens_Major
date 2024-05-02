@@ -182,8 +182,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Save: 0
-  _RetrieveOnSmri: 0
-  _Smri: 0
 --- !u!114 &1966982058
 MonoBehaviour:
   m_ObjectHideFlags: 0

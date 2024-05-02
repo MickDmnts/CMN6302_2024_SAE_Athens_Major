@@ -3,12 +3,12 @@ using System;
 namespace ProposedArchitecture {
     
     /// <summary>
-    /// @TODO: Summary
+    /// Stores global game values and constants
     /// </summary>
     public static class GlobalProperties {
-        ///<summary>@TODO: Summary</summary>
+        ///<summary>The save directory absolute path</summary>
         public static readonly string SavePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-        ///<summary>@TODO: Summary</summary>
+        ///<summary>The save folder name.</summary>
         public const string SaveFolderName = "SnapshotSaves";
     }
 }

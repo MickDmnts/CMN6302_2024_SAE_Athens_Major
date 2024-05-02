@@ -18,6 +18,9 @@ public struct ModelDummy {
     public int[] _RefSmris;
 }
 
+/// <summary>
+/// Test class from early stages.
+/// </summary>
 public class DummySaveManager : MonoBehaviour {
     [Header("Smris tests")]
     public bool _GetSmri;
