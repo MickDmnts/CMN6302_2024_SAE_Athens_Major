@@ -80,7 +80,7 @@ namespace ProposedArchitecture {
                 bytes = MessagePack.MessagePackSerializer.Serialize<object>(_Models[i]);
                 refSmris = _Models[i].RefSmris;
 
-                SnapshotWrapper.CacheData(_Models[i].Smri, bytes.Length, bytes, _Models[i].RefSmris.Length, refSmris);
+                SnapshotWrapper.CacheData(_Models[i].Smri, bytes, refSmris);
             }
 
             _Models = new List<ISnapshotModel>();

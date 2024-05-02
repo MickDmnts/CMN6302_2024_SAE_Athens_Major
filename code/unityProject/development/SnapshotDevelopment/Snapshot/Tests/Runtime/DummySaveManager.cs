@@ -79,7 +79,7 @@ public class DummySaveManager : MonoBehaviour {
             byte[] bytes = MessagePackSerializer.Serialize<ModelDummy>(data);
             int[] refSmris = data._RefSmris;
 
-            SnapshotWrapper.CacheData(data._Smri, bytes.Length, bytes, refSmris.Length, refSmris);
+            SnapshotWrapper.CacheData(data._Smri, bytes, refSmris);
         }
 
         if (_RetrieveOnSmri) {
@@ -119,8 +119,6 @@ public class DummySaveManager : MonoBehaviour {
         if (_Pack) {
             _Pack = false;
 
-            //@TODO: To be replaced from event
-            //GetComponent<DummySavedClass>().OnPackStart();
             Debug.Log($"Pack data: {SnapshotWrapper.PackData()}");
         }
 

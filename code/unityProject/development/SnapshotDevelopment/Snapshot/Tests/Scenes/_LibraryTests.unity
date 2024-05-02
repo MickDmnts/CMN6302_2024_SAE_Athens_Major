@@ -174,10 +174,9 @@ MonoBehaviour:
   _CacheModel: 0
   _Smri: 0
   _RetrieveOnSmri: 0
-  _SavePath: C:\SnapSaves
-  _SetPath: 1
+  _SavePath: 
+  _SetPath: 0
   _GetPath: 0
-  _ExportDebugLog: 1
   _Pack: 0
   _SaveFileName: 
   _SetLoadFromFile: 0

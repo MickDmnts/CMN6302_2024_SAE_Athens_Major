@@ -221,8 +221,8 @@ int* getRefSmris(unsigned int _parentSmri, int* _size) {
 }
 
 /*
-The main serialization of the library.
-The whole _ModelCache serialized and stored in the set save path along with a dynamically created name controlled from the SAVE_FORMAT variable.
+The main serialization method of the library.
+The whole _ModelCache gets serialized and stored in the set save path along with a dynamically created name controlled from the SAVE_FORMAT variable.
 The serialization is handled from the msgpack hpp library.
 @return OperationSuccessful: If the serialization was successful
 @return OperationFailed: If any error occurs.
