@@ -61,10 +61,10 @@
 3.5.3 Χαρακτηριστικά Wrapper~~
 ~~3.6 Διατήρηση των references μεταξύ των instances μετα το serialization (SMRI)~~
 ~~3.7 Test environment στη Unity~~
-3.8 Σχεδιασμός λύσης
-3.8.1 Σχεδιασμός βασικής βιβλιοθήκης σε C/C++
-3.8.2 Σχεδιασμός Foreign Function Interface
-3.8.3 Σχεδιασμός C# Wrapper
+~~3.8 Σχεδιασμός λύσης~~
+~~3.8.1 Σχεδιασμός βασικής βιβλιοθήκης σε C/C++~~
+~~3.8.2 Σχεδιασμός Foreign Function Interface~~
+~~3.8.3 Σχεδιασμός C# Wrapper~~
 3.9 Σχεδιασμός test environment στη Unity
 3.9.1 Δεδομένα και αντικέιμενα
 3.9.2 Αρχιτεκτονική χρήσης SMRI
