@@ -35,7 +35,7 @@ namespace ProposedArchitecture {
             this._Common = _common;
             this._Snapshots = new List<ISnapshot>();
             this._Models = new List<ISnapshotModel>();
-            
+
             //Set the initial save directory
             SnapshotWrapper.SetSavePath(Path.Combine(GlobalProperties.SavePath, GlobalProperties.SaveFolderName));
         }
@@ -71,7 +71,8 @@ namespace ProposedArchitecture {
         }
 
         ///<summary>
-        /// Kicks off the packing sequence. All the cached ISnapshot.CacheData methods get called and their data are serialized and passed to the internal DLL library cache.
+        /// Kicks off the packing sequence. All the cached ISnapshot.CacheData methods get called and 
+        /// their data are serialized and passed to the internal DLL library cache.
         /// The cached SaveManager models list gets cleared afterwards.
         ///</summary>
         public void Save() {
@@ -116,6 +117,9 @@ namespace ProposedArchitecture {
                     bytes = SnapshotWrapper.GetData(snapshot.Smri);
                     model = (ISnapshotModel)MessagePack.MessagePackSerializer.Deserialize(snapshot.GetSnapshotModelType(), bytes);
                     snapshot.LoadModel(model);
+                }
+
+                foreach (ISnapshot snapshot in _Snapshots) {
                     snapshot.RetrieveReferences(SnapshotWrapper.GetRefSmris(snapshot.Smri));
                 }
             }

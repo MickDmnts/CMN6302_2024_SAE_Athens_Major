@@ -194,8 +194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0264575e8389dc246a1fee8bd35824a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _SaveFileName: 16_05_2024_0.sav
-  _FromLoad: 0
+  _SaveFileName: 26_05_2024_23.sav
+  _FromLoad: 1
   _Objects:
   - {fileID: 7392158878285279582, guid: c7ef501fb7e5f23498f19e4a2514f754, type: 3}
   - {fileID: 8525495553009353839, guid: 567a2dd77249c764fa313c54abff8c64, type: 3}
