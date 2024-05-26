@@ -27,6 +27,7 @@ Take a look on what I'm [currently working](https://github.com/MichaelEvangelosD
 
 ## Special Thanks
 
+To [George Anastasakis](https://github.com/ganast) as my supervisor while taking my Major course for his valuable help and insights he provided throughout the whole semester.</br>
 To [Mike Loomis](https://github.com/mikeloomisgg) for his implementation of MsgPack for C++ 17 which is used internally. [Source](https://github.com/mikeloomisgg/cppack/tree/feature/nvp_packing)
 
 ## References and Tools
