@@ -139,7 +139,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1637894613
 Transform:
   m_ObjectHideFlags: 0
@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ab98ec592fce2f4a96effabdda90946, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _InstancesToCreate: 5000
+  _InstancesToCreate: 10
   _InventoryPrefab: {fileID: 8525495553009353839, guid: 567a2dd77249c764fa313c54abff8c64, type: 3}
   _Inventory: {fileID: 0}
   _GameObject: {fileID: 5428105654899384111, guid: c6f540fffe6f5b747b7062857b2873dd, type: 3}
