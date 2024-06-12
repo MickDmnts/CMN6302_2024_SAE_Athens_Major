@@ -25,6 +25,11 @@ The Major Project is based on the following [Major Project Proposal](https://git
 
 Take a look on what I'm [currently working](https://github.com/MichaelEvangelosD/cmn6302_majorSAE/issues) on!
 
+## Important Information
+
+The open-source repository that will be further developed after the submission of this paper, can be found at:</br>
+[Snapshot C++ Serialization Library](https://github.com/MickDmnts/Snapshot_CPP_Serialization_Library)
+
 ## Special Thanks
 
 To [George Anastasakis](https://github.com/ganast) as my supervisor while taking my Major course for his valuable help and insights he provided throughout the whole semester.</br>
