@@ -1,0 +1,860 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class HorizontalLayoutGroup </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class HorizontalLayoutGroup ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/new/mad/apiSpec/new?filename=UnityEngine_UI_HorizontalLayoutGroup.md&amp;value=---%0Auid%3A%20UnityEngine.UI.HorizontalLayoutGroup%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UnityEngine.UI.HorizontalLayoutGroup">
+
+
+
+  <h1 id="UnityEngine_UI_HorizontalLayoutGroup" data-uid="UnityEngine.UI.HorizontalLayoutGroup" class="text-break">
+Class HorizontalLayoutGroup  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/HorizontalLayoutGroup.cs/#L3"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UnityEngine.html">UnityEngine</a>.<a class="xref" href="UnityEngine.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UnityEngine.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Layout/Horizontal Layout Group&quot;, 150)]
+public class HorizontalLayoutGroup : HorizontalOrVerticalLayoutGroup, ILayoutElement, ILayoutGroup, ILayoutController</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html">UIBehaviour</a></div>
+      <div><a class="xref" href="UnityEngine.UI.LayoutGroup.html">LayoutGroup</a></div>
+      <div><a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html">HorizontalOrVerticalLayoutGroup</a></div>
+      <div><span class="xref">HorizontalLayoutGroup</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="UnityEngine.UI.ILayoutElement.html">ILayoutElement</a></div>
+      <div><a class="xref" href="UnityEngine.UI.ILayoutGroup.html">ILayoutGroup</a></div>
+      <div><a class="xref" href="UnityEngine.UI.ILayoutController.html">ILayoutController</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html#UnityEngine_UI_HorizontalOrVerticalLayoutGroup_m_Spacing">HorizontalOrVerticalLayoutGroup.m_Spacing</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html#UnityEngine_UI_HorizontalOrVerticalLayoutGroup_spacing">HorizontalOrVerticalLayoutGroup.spacing</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html#UnityEngine_UI_HorizontalOrVerticalLayoutGroup_m_ChildForceExpandWidth">HorizontalOrVerticalLayoutGroup.m_ChildForceExpandWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html#UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childForceExpandWidth">HorizontalOrVerticalLayoutGroup.childForceExpandWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html#UnityEngine_UI_HorizontalOrVerticalLayoutGroup_m_ChildForceExpandHeight">HorizontalOrVerticalLayoutGroup.m_ChildForceExpandHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html#UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childForceExpandHeight">HorizontalOrVerticalLayoutGroup.childForceExpandHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html#UnityEngine_UI_HorizontalOrVerticalLayoutGroup_m_ChildControlWidth">HorizontalOrVerticalLayoutGroup.m_ChildControlWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html#UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childControlWidth">HorizontalOrVerticalLayoutGroup.childControlWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html#UnityEngine_UI_HorizontalOrVerticalLayoutGroup_m_ChildControlHeight">HorizontalOrVerticalLayoutGroup.m_ChildControlHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html#UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childControlHeight">HorizontalOrVerticalLayoutGroup.childControlHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html#UnityEngine_UI_HorizontalOrVerticalLayoutGroup_m_ChildScaleWidth">HorizontalOrVerticalLayoutGroup.m_ChildScaleWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html#UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childScaleWidth">HorizontalOrVerticalLayoutGroup.childScaleWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html#UnityEngine_UI_HorizontalOrVerticalLayoutGroup_m_ChildScaleHeight">HorizontalOrVerticalLayoutGroup.m_ChildScaleHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html#UnityEngine_UI_HorizontalOrVerticalLayoutGroup_childScaleHeight">HorizontalOrVerticalLayoutGroup.childScaleHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html#UnityEngine_UI_HorizontalOrVerticalLayoutGroup_reverseArrangement">HorizontalOrVerticalLayoutGroup.reverseArrangement</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html#UnityEngine_UI_HorizontalOrVerticalLayoutGroup_m_ReverseArrangement">HorizontalOrVerticalLayoutGroup.m_ReverseArrangement</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html#UnityEngine_UI_HorizontalOrVerticalLayoutGroup_CalcAlongAxis_System_Int32_System_Boolean_">HorizontalOrVerticalLayoutGroup.CalcAlongAxis(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html#UnityEngine_UI_HorizontalOrVerticalLayoutGroup_SetChildrenAlongAxis_System_Int32_System_Boolean_">HorizontalOrVerticalLayoutGroup.SetChildrenAlongAxis(int, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_m_Padding">LayoutGroup.m_Padding</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_padding">LayoutGroup.padding</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_m_ChildAlignment">LayoutGroup.m_ChildAlignment</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_childAlignment">LayoutGroup.childAlignment</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_rectTransform">LayoutGroup.rectTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_m_Tracker">LayoutGroup.m_Tracker</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_rectChildren">LayoutGroup.rectChildren</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_minWidth">LayoutGroup.minWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_preferredWidth">LayoutGroup.preferredWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_flexibleWidth">LayoutGroup.flexibleWidth</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_minHeight">LayoutGroup.minHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_preferredHeight">LayoutGroup.preferredHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_flexibleHeight">LayoutGroup.flexibleHeight</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_layoutPriority">LayoutGroup.layoutPriority</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_OnEnable">LayoutGroup.OnEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_OnDisable">LayoutGroup.OnDisable()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_OnDidApplyAnimationProperties">LayoutGroup.OnDidApplyAnimationProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_GetTotalMinSize_System_Int32_">LayoutGroup.GetTotalMinSize(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_GetTotalPreferredSize_System_Int32_">LayoutGroup.GetTotalPreferredSize(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_GetTotalFlexibleSize_System_Int32_">LayoutGroup.GetTotalFlexibleSize(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_GetStartOffset_System_Int32_System_Single_">LayoutGroup.GetStartOffset(int, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_GetAlignmentOnAxis_System_Int32_">LayoutGroup.GetAlignmentOnAxis(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_SetLayoutInputForAxis_System_Single_System_Single_System_Single_System_Int32_">LayoutGroup.SetLayoutInputForAxis(float, float, float, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_SetChildAlongAxis_UnityEngine_RectTransform_System_Int32_System_Single_">LayoutGroup.SetChildAlongAxis(RectTransform, int, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_SetChildAlongAxisWithScale_UnityEngine_RectTransform_System_Int32_System_Single_System_Single_">LayoutGroup.SetChildAlongAxisWithScale(RectTransform, int, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_SetChildAlongAxis_UnityEngine_RectTransform_System_Int32_System_Single_System_Single_">LayoutGroup.SetChildAlongAxis(RectTransform, int, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_SetChildAlongAxisWithScale_UnityEngine_RectTransform_System_Int32_System_Single_System_Single_System_Single_">LayoutGroup.SetChildAlongAxisWithScale(RectTransform, int, float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_OnRectTransformDimensionsChange">LayoutGroup.OnRectTransformDimensionsChange()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_OnTransformChildrenChanged">LayoutGroup.OnTransformChildrenChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_SetProperty__1___0____0_">LayoutGroup.SetProperty&lt;T&gt;(ref T, T)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.LayoutGroup.html#UnityEngine_UI_LayoutGroup_SetDirty">LayoutGroup.SetDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_Awake">UIBehaviour.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_Start">UIBehaviour.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnDestroy">UIBehaviour.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_IsActive">UIBehaviour.IsActive()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnBeforeTransformParentChanged">UIBehaviour.OnBeforeTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnTransformParentChanged">UIBehaviour.OnTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnCanvasGroupChanged">UIBehaviour.OnCanvasGroupChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnCanvasHierarchyChanged">UIBehaviour.OnCanvasHierarchyChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_IsDestroyed">UIBehaviour.IsDestroyed()</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.Invoke(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.InvokeRepeating(string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.CancelInvoke(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.IsInvoking(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine_Auto(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StopCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(Coroutine)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StopCoroutine(string)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">MonoBehaviour.print(object)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.destroyCancellationToken</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponent(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.TryGetComponent(Type, out Component)</a>
+    </div>
+    <div>
+      <span class="xref">Component.TryGetComponent&lt;T&gt;(out T)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.GetComponent(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type, List&lt;Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentIndex()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.CompareTag(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <span class="xref">Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Scene)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate(Object, Transform, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate&lt;T&gt;(T, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.Destroy(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Destroy(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.DestroyImmediate(Object, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyImmediate(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DontDestroyOnLoad(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.DestroyObject(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyObject(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <span class="xref">Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Object.name</span>
+    </div>
+    <div>
+      <span class="xref">Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UnityEngine_UI_HorizontalLayoutGroup__ctor_" data-uid="UnityEngine.UI.HorizontalLayoutGroup.#ctor*"></a>
+
+  <h3 id="UnityEngine_UI_HorizontalLayoutGroup__ctor" data-uid="UnityEngine.UI.HorizontalLayoutGroup.#ctor">
+  HorizontalLayoutGroup()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/HorizontalLayoutGroup.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected HorizontalLayoutGroup()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UnityEngine_UI_HorizontalLayoutGroup_CalculateLayoutInputHorizontal_" data-uid="UnityEngine.UI.HorizontalLayoutGroup.CalculateLayoutInputHorizontal*"></a>
+
+  <h3 id="UnityEngine_UI_HorizontalLayoutGroup_CalculateLayoutInputHorizontal" data-uid="UnityEngine.UI.HorizontalLayoutGroup.CalculateLayoutInputHorizontal">
+  CalculateLayoutInputHorizontal()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/HorizontalLayoutGroup.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by the layout system. Also see ILayoutElement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CalculateLayoutInputHorizontal()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_HorizontalLayoutGroup_CalculateLayoutInputVertical_" data-uid="UnityEngine.UI.HorizontalLayoutGroup.CalculateLayoutInputVertical*"></a>
+
+  <h3 id="UnityEngine_UI_HorizontalLayoutGroup_CalculateLayoutInputVertical" data-uid="UnityEngine.UI.HorizontalLayoutGroup.CalculateLayoutInputVertical">
+  CalculateLayoutInputVertical()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/HorizontalLayoutGroup.cs/#L24"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by the layout system. Also see ILayoutElement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void CalculateLayoutInputVertical()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_HorizontalLayoutGroup_SetLayoutHorizontal_" data-uid="UnityEngine.UI.HorizontalLayoutGroup.SetLayoutHorizontal*"></a>
+
+  <h3 id="UnityEngine_UI_HorizontalLayoutGroup_SetLayoutHorizontal" data-uid="UnityEngine.UI.HorizontalLayoutGroup.SetLayoutHorizontal">
+  SetLayoutHorizontal()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/HorizontalLayoutGroup.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by the layout system. Also see ILayoutElement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetLayoutHorizontal()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_HorizontalLayoutGroup_SetLayoutVertical_" data-uid="UnityEngine.UI.HorizontalLayoutGroup.SetLayoutVertical*"></a>
+
+  <h3 id="UnityEngine_UI_HorizontalLayoutGroup_SetLayoutVertical" data-uid="UnityEngine.UI.HorizontalLayoutGroup.SetLayoutVertical">
+  SetLayoutVertical()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/HorizontalLayoutGroup.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by the layout system. Also see ILayoutElement</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetLayoutVertical()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/HorizontalLayoutGroup.cs/#L3" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.IInitializePotentialDragHandler
+  commentId: T:UnityEngine.EventSystems.IInitializePotentialDragHandler
+  id: IInitializePotentialDragHandler
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.IInitializePotentialDragHandler.OnInitializePotentialDrag(UnityEngine.EventSystems.PointerEventData)
+  langs:
+  - csharp
+  - vb
+  name: IInitializePotentialDragHandler
+  nameWithType: IInitializePotentialDragHandler
+  fullName: UnityEngine.EventSystems.IInitializePotentialDragHandler
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IInitializePotentialDragHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 136
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Interface to implement if you wish to receive OnInitializePotentialDrag callbacks.
+  remarks: Criteria for this event is implementation dependent. For example see StandAloneInputModule.
+  example: []
+  syntax:
+    content: 'public interface IInitializePotentialDragHandler : IEventSystemHandler'
+    content.vb: Public Interface IInitializePotentialDragHandler Inherits IEventSystemHandler
+- uid: UnityEngine.EventSystems.IInitializePotentialDragHandler.OnInitializePotentialDrag(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:UnityEngine.EventSystems.IInitializePotentialDragHandler.OnInitializePotentialDrag(UnityEngine.EventSystems.PointerEventData)
+  id: OnInitializePotentialDrag(UnityEngine.EventSystems.PointerEventData)
+  parent: UnityEngine.EventSystems.IInitializePotentialDragHandler
+  langs:
+  - csharp
+  - vb
+  name: OnInitializePotentialDrag(PointerEventData)
+  nameWithType: IInitializePotentialDragHandler.OnInitializePotentialDrag(PointerEventData)
+  fullName: UnityEngine.EventSystems.IInitializePotentialDragHandler.OnInitializePotentialDrag(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OnInitializePotentialDrag
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 141
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Called by a BaseInputModule when a drag has been found but before it is valid to begin the drag.
+  example: []
+  syntax:
+    content: void OnInitializePotentialDrag(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Sub OnInitializePotentialDrag(eventData As PointerEventData)
+  overload: UnityEngine.EventSystems.IInitializePotentialDragHandler.OnInitializePotentialDrag*
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.IInitializePotentialDragHandler.OnInitializePotentialDrag*
+  commentId: Overload:UnityEngine.EventSystems.IInitializePotentialDragHandler.OnInitializePotentialDrag
+  href: UnityEngine.EventSystems.IInitializePotentialDragHandler.html#UnityEngine_EventSystems_IInitializePotentialDragHandler_OnInitializePotentialDrag_UnityEngine_EventSystems_PointerEventData_
+  name: OnInitializePotentialDrag
+  nameWithType: IInitializePotentialDragHandler.OnInitializePotentialDrag
+  fullName: UnityEngine.EventSystems.IInitializePotentialDragHandler.OnInitializePotentialDrag
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerEventData.html
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData

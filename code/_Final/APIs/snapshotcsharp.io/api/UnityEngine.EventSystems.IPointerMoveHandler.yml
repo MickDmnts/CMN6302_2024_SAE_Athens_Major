@@ -1,0 +1,99 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.IPointerMoveHandler
+  commentId: T:UnityEngine.EventSystems.IPointerMoveHandler
+  id: IPointerMoveHandler
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.IPointerMoveHandler.OnPointerMove(UnityEngine.EventSystems.PointerEventData)
+  langs:
+  - csharp
+  - vb
+  name: IPointerMoveHandler
+  nameWithType: IPointerMoveHandler
+  fullName: UnityEngine.EventSystems.IPointerMoveHandler
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IPointerMoveHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 15
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Interface to implement if you wish to receive OnPointerMove callbacks.
+  remarks: Criteria for this event is implementation dependent. For example see StandAloneInputModule.
+  example: []
+  syntax:
+    content: 'public interface IPointerMoveHandler : IEventSystemHandler'
+    content.vb: Public Interface IPointerMoveHandler Inherits IEventSystemHandler
+- uid: UnityEngine.EventSystems.IPointerMoveHandler.OnPointerMove(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:UnityEngine.EventSystems.IPointerMoveHandler.OnPointerMove(UnityEngine.EventSystems.PointerEventData)
+  id: OnPointerMove(UnityEngine.EventSystems.PointerEventData)
+  parent: UnityEngine.EventSystems.IPointerMoveHandler
+  langs:
+  - csharp
+  - vb
+  name: OnPointerMove(PointerEventData)
+  nameWithType: IPointerMoveHandler.OnPointerMove(PointerEventData)
+  fullName: UnityEngine.EventSystems.IPointerMoveHandler.OnPointerMove(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OnPointerMove
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 20
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Use this callback to detect pointer move events
+  example: []
+  syntax:
+    content: void OnPointerMove(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Sub OnPointerMove(eventData As PointerEventData)
+  overload: UnityEngine.EventSystems.IPointerMoveHandler.OnPointerMove*
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.IPointerMoveHandler.OnPointerMove*
+  commentId: Overload:UnityEngine.EventSystems.IPointerMoveHandler.OnPointerMove
+  href: UnityEngine.EventSystems.IPointerMoveHandler.html#UnityEngine_EventSystems_IPointerMoveHandler_OnPointerMove_UnityEngine_EventSystems_PointerEventData_
+  name: OnPointerMove
+  nameWithType: IPointerMoveHandler.OnPointerMove
+  fullName: UnityEngine.EventSystems.IPointerMoveHandler.OnPointerMove
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerEventData.html
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData

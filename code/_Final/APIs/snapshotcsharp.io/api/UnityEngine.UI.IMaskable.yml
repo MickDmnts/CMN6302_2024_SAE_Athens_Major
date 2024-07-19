@@ -1,0 +1,89 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.IMaskable
+  commentId: T:UnityEngine.UI.IMaskable
+  id: IMaskable
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.IMaskable.RecalculateMasking
+  langs:
+  - csharp
+  - vb
+  name: IMaskable
+  nameWithType: IMaskable
+  fullName: UnityEngine.UI.IMaskable
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/IMaskable.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IMaskable
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/IMaskable.cs
+    startLine: 7
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: This element is capable of being masked out.
+  example: []
+  syntax:
+    content: public interface IMaskable
+    content.vb: Public Interface IMaskable
+- uid: UnityEngine.UI.IMaskable.RecalculateMasking
+  commentId: M:UnityEngine.UI.IMaskable.RecalculateMasking
+  id: RecalculateMasking
+  parent: UnityEngine.UI.IMaskable
+  langs:
+  - csharp
+  - vb
+  name: RecalculateMasking()
+  nameWithType: IMaskable.RecalculateMasking()
+  fullName: UnityEngine.UI.IMaskable.RecalculateMasking()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/IMaskable.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: RecalculateMasking
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/IMaskable.cs
+    startLine: 15
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Recalculate masking for this element and all children elements.
+  remarks: Use this to update the internal state (recreate materials etc).
+  example: []
+  syntax:
+    content: void RecalculateMasking()
+    content.vb: Sub RecalculateMasking()
+  overload: UnityEngine.UI.IMaskable.RecalculateMasking*
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.IMaskable.RecalculateMasking*
+  commentId: Overload:UnityEngine.UI.IMaskable.RecalculateMasking
+  href: UnityEngine.UI.IMaskable.html#UnityEngine_UI_IMaskable_RecalculateMasking
+  name: RecalculateMasking
+  nameWithType: IMaskable.RecalculateMasking
+  fullName: UnityEngine.UI.IMaskable.RecalculateMasking

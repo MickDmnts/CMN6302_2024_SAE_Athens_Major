@@ -1,0 +1,558 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.EventTriggerType
+  commentId: T:UnityEngine.EventSystems.EventTriggerType
+  id: EventTriggerType
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.EventTriggerType.BeginDrag
+  - UnityEngine.EventSystems.EventTriggerType.Cancel
+  - UnityEngine.EventSystems.EventTriggerType.Deselect
+  - UnityEngine.EventSystems.EventTriggerType.Drag
+  - UnityEngine.EventSystems.EventTriggerType.Drop
+  - UnityEngine.EventSystems.EventTriggerType.EndDrag
+  - UnityEngine.EventSystems.EventTriggerType.InitializePotentialDrag
+  - UnityEngine.EventSystems.EventTriggerType.Move
+  - UnityEngine.EventSystems.EventTriggerType.PointerClick
+  - UnityEngine.EventSystems.EventTriggerType.PointerDown
+  - UnityEngine.EventSystems.EventTriggerType.PointerEnter
+  - UnityEngine.EventSystems.EventTriggerType.PointerExit
+  - UnityEngine.EventSystems.EventTriggerType.PointerUp
+  - UnityEngine.EventSystems.EventTriggerType.Scroll
+  - UnityEngine.EventSystems.EventTriggerType.Select
+  - UnityEngine.EventSystems.EventTriggerType.Submit
+  - UnityEngine.EventSystems.EventTriggerType.UpdateSelected
+  langs:
+  - csharp
+  - vb
+  name: EventTriggerType
+  nameWithType: EventTriggerType
+  fullName: UnityEngine.EventSystems.EventTriggerType
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: EventTriggerType
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+    startLine: 8
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: >-
+    This class is capable of triggering one or more remote functions from a specified event.
+
+    Usage: Attach it to an object with a collider, or to a GUI Graphic of your choice.
+
+    NOTE: Doing this will make this object intercept ALL events, and no event bubbling will occur from this object!
+  example: []
+  syntax:
+    content: public enum EventTriggerType
+    content.vb: Public Enum EventTriggerType
+- uid: UnityEngine.EventSystems.EventTriggerType.PointerEnter
+  commentId: F:UnityEngine.EventSystems.EventTriggerType.PointerEnter
+  id: PointerEnter
+  parent: UnityEngine.EventSystems.EventTriggerType
+  langs:
+  - csharp
+  - vb
+  name: PointerEnter
+  nameWithType: EventTriggerType.PointerEnter
+  fullName: UnityEngine.EventSystems.EventTriggerType.PointerEnter
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: PointerEnter
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+    startLine: 13
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Intercepts a IPointerEnterHandler.OnPointerEnter.
+  example: []
+  syntax:
+    content: PointerEnter = 0
+    return:
+      type: UnityEngine.EventSystems.EventTriggerType
+- uid: UnityEngine.EventSystems.EventTriggerType.PointerExit
+  commentId: F:UnityEngine.EventSystems.EventTriggerType.PointerExit
+  id: PointerExit
+  parent: UnityEngine.EventSystems.EventTriggerType
+  langs:
+  - csharp
+  - vb
+  name: PointerExit
+  nameWithType: EventTriggerType.PointerExit
+  fullName: UnityEngine.EventSystems.EventTriggerType.PointerExit
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: PointerExit
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+    startLine: 18
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Intercepts a IPointerExitHandler.OnPointerExit.
+  example: []
+  syntax:
+    content: PointerExit = 1
+    return:
+      type: UnityEngine.EventSystems.EventTriggerType
+- uid: UnityEngine.EventSystems.EventTriggerType.PointerDown
+  commentId: F:UnityEngine.EventSystems.EventTriggerType.PointerDown
+  id: PointerDown
+  parent: UnityEngine.EventSystems.EventTriggerType
+  langs:
+  - csharp
+  - vb
+  name: PointerDown
+  nameWithType: EventTriggerType.PointerDown
+  fullName: UnityEngine.EventSystems.EventTriggerType.PointerDown
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: PointerDown
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+    startLine: 23
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Intercepts a IPointerDownHandler.OnPointerDown.
+  example: []
+  syntax:
+    content: PointerDown = 2
+    return:
+      type: UnityEngine.EventSystems.EventTriggerType
+- uid: UnityEngine.EventSystems.EventTriggerType.PointerUp
+  commentId: F:UnityEngine.EventSystems.EventTriggerType.PointerUp
+  id: PointerUp
+  parent: UnityEngine.EventSystems.EventTriggerType
+  langs:
+  - csharp
+  - vb
+  name: PointerUp
+  nameWithType: EventTriggerType.PointerUp
+  fullName: UnityEngine.EventSystems.EventTriggerType.PointerUp
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: PointerUp
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+    startLine: 28
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Intercepts a IPointerUpHandler.OnPointerUp.
+  example: []
+  syntax:
+    content: PointerUp = 3
+    return:
+      type: UnityEngine.EventSystems.EventTriggerType
+- uid: UnityEngine.EventSystems.EventTriggerType.PointerClick
+  commentId: F:UnityEngine.EventSystems.EventTriggerType.PointerClick
+  id: PointerClick
+  parent: UnityEngine.EventSystems.EventTriggerType
+  langs:
+  - csharp
+  - vb
+  name: PointerClick
+  nameWithType: EventTriggerType.PointerClick
+  fullName: UnityEngine.EventSystems.EventTriggerType.PointerClick
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: PointerClick
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+    startLine: 33
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Intercepts a IPointerClickHandler.OnPointerClick.
+  example: []
+  syntax:
+    content: PointerClick = 4
+    return:
+      type: UnityEngine.EventSystems.EventTriggerType
+- uid: UnityEngine.EventSystems.EventTriggerType.Drag
+  commentId: F:UnityEngine.EventSystems.EventTriggerType.Drag
+  id: Drag
+  parent: UnityEngine.EventSystems.EventTriggerType
+  langs:
+  - csharp
+  - vb
+  name: Drag
+  nameWithType: EventTriggerType.Drag
+  fullName: UnityEngine.EventSystems.EventTriggerType.Drag
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Drag
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+    startLine: 38
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Intercepts a IDragHandler.OnDrag.
+  example: []
+  syntax:
+    content: Drag = 5
+    return:
+      type: UnityEngine.EventSystems.EventTriggerType
+- uid: UnityEngine.EventSystems.EventTriggerType.Drop
+  commentId: F:UnityEngine.EventSystems.EventTriggerType.Drop
+  id: Drop
+  parent: UnityEngine.EventSystems.EventTriggerType
+  langs:
+  - csharp
+  - vb
+  name: Drop
+  nameWithType: EventTriggerType.Drop
+  fullName: UnityEngine.EventSystems.EventTriggerType.Drop
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Drop
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+    startLine: 43
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Intercepts a IDropHandler.OnDrop.
+  example: []
+  syntax:
+    content: Drop = 6
+    return:
+      type: UnityEngine.EventSystems.EventTriggerType
+- uid: UnityEngine.EventSystems.EventTriggerType.Scroll
+  commentId: F:UnityEngine.EventSystems.EventTriggerType.Scroll
+  id: Scroll
+  parent: UnityEngine.EventSystems.EventTriggerType
+  langs:
+  - csharp
+  - vb
+  name: Scroll
+  nameWithType: EventTriggerType.Scroll
+  fullName: UnityEngine.EventSystems.EventTriggerType.Scroll
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Scroll
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+    startLine: 48
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Intercepts a IScrollHandler.OnScroll.
+  example: []
+  syntax:
+    content: Scroll = 7
+    return:
+      type: UnityEngine.EventSystems.EventTriggerType
+- uid: UnityEngine.EventSystems.EventTriggerType.UpdateSelected
+  commentId: F:UnityEngine.EventSystems.EventTriggerType.UpdateSelected
+  id: UpdateSelected
+  parent: UnityEngine.EventSystems.EventTriggerType
+  langs:
+  - csharp
+  - vb
+  name: UpdateSelected
+  nameWithType: EventTriggerType.UpdateSelected
+  fullName: UnityEngine.EventSystems.EventTriggerType.UpdateSelected
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: UpdateSelected
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+    startLine: 53
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Intercepts a IUpdateSelectedHandler.OnUpdateSelected.
+  example: []
+  syntax:
+    content: UpdateSelected = 8
+    return:
+      type: UnityEngine.EventSystems.EventTriggerType
+- uid: UnityEngine.EventSystems.EventTriggerType.Select
+  commentId: F:UnityEngine.EventSystems.EventTriggerType.Select
+  id: Select
+  parent: UnityEngine.EventSystems.EventTriggerType
+  langs:
+  - csharp
+  - vb
+  name: Select
+  nameWithType: EventTriggerType.Select
+  fullName: UnityEngine.EventSystems.EventTriggerType.Select
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Select
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+    startLine: 58
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Intercepts a ISelectHandler.OnSelect.
+  example: []
+  syntax:
+    content: Select = 9
+    return:
+      type: UnityEngine.EventSystems.EventTriggerType
+- uid: UnityEngine.EventSystems.EventTriggerType.Deselect
+  commentId: F:UnityEngine.EventSystems.EventTriggerType.Deselect
+  id: Deselect
+  parent: UnityEngine.EventSystems.EventTriggerType
+  langs:
+  - csharp
+  - vb
+  name: Deselect
+  nameWithType: EventTriggerType.Deselect
+  fullName: UnityEngine.EventSystems.EventTriggerType.Deselect
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Deselect
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+    startLine: 63
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Intercepts a IDeselectHandler.OnDeselect.
+  example: []
+  syntax:
+    content: Deselect = 10
+    return:
+      type: UnityEngine.EventSystems.EventTriggerType
+- uid: UnityEngine.EventSystems.EventTriggerType.Move
+  commentId: F:UnityEngine.EventSystems.EventTriggerType.Move
+  id: Move
+  parent: UnityEngine.EventSystems.EventTriggerType
+  langs:
+  - csharp
+  - vb
+  name: Move
+  nameWithType: EventTriggerType.Move
+  fullName: UnityEngine.EventSystems.EventTriggerType.Move
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Move
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+    startLine: 68
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Intercepts a IMoveHandler.OnMove.
+  example: []
+  syntax:
+    content: Move = 11
+    return:
+      type: UnityEngine.EventSystems.EventTriggerType
+- uid: UnityEngine.EventSystems.EventTriggerType.InitializePotentialDrag
+  commentId: F:UnityEngine.EventSystems.EventTriggerType.InitializePotentialDrag
+  id: InitializePotentialDrag
+  parent: UnityEngine.EventSystems.EventTriggerType
+  langs:
+  - csharp
+  - vb
+  name: InitializePotentialDrag
+  nameWithType: EventTriggerType.InitializePotentialDrag
+  fullName: UnityEngine.EventSystems.EventTriggerType.InitializePotentialDrag
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: InitializePotentialDrag
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+    startLine: 73
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Intercepts IInitializePotentialDrag.InitializePotentialDrag.
+  example: []
+  syntax:
+    content: InitializePotentialDrag = 12
+    return:
+      type: UnityEngine.EventSystems.EventTriggerType
+- uid: UnityEngine.EventSystems.EventTriggerType.BeginDrag
+  commentId: F:UnityEngine.EventSystems.EventTriggerType.BeginDrag
+  id: BeginDrag
+  parent: UnityEngine.EventSystems.EventTriggerType
+  langs:
+  - csharp
+  - vb
+  name: BeginDrag
+  nameWithType: EventTriggerType.BeginDrag
+  fullName: UnityEngine.EventSystems.EventTriggerType.BeginDrag
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: BeginDrag
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+    startLine: 78
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Intercepts IBeginDragHandler.OnBeginDrag.
+  example: []
+  syntax:
+    content: BeginDrag = 13
+    return:
+      type: UnityEngine.EventSystems.EventTriggerType
+- uid: UnityEngine.EventSystems.EventTriggerType.EndDrag
+  commentId: F:UnityEngine.EventSystems.EventTriggerType.EndDrag
+  id: EndDrag
+  parent: UnityEngine.EventSystems.EventTriggerType
+  langs:
+  - csharp
+  - vb
+  name: EndDrag
+  nameWithType: EventTriggerType.EndDrag
+  fullName: UnityEngine.EventSystems.EventTriggerType.EndDrag
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: EndDrag
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+    startLine: 83
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Intercepts IEndDragHandler.OnEndDrag.
+  example: []
+  syntax:
+    content: EndDrag = 14
+    return:
+      type: UnityEngine.EventSystems.EventTriggerType
+- uid: UnityEngine.EventSystems.EventTriggerType.Submit
+  commentId: F:UnityEngine.EventSystems.EventTriggerType.Submit
+  id: Submit
+  parent: UnityEngine.EventSystems.EventTriggerType
+  langs:
+  - csharp
+  - vb
+  name: Submit
+  nameWithType: EventTriggerType.Submit
+  fullName: UnityEngine.EventSystems.EventTriggerType.Submit
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Submit
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+    startLine: 88
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Intercepts ISubmitHandler.Submit.
+  example: []
+  syntax:
+    content: Submit = 15
+    return:
+      type: UnityEngine.EventSystems.EventTriggerType
+- uid: UnityEngine.EventSystems.EventTriggerType.Cancel
+  commentId: F:UnityEngine.EventSystems.EventTriggerType.Cancel
+  id: Cancel
+  parent: UnityEngine.EventSystems.EventTriggerType
+  langs:
+  - csharp
+  - vb
+  name: Cancel
+  nameWithType: EventTriggerType.Cancel
+  fullName: UnityEngine.EventSystems.EventTriggerType.Cancel
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Cancel
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventTriggerType.cs
+    startLine: 93
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Intercepts ICancelHandler.OnCancel.
+  example: []
+  syntax:
+    content: Cancel = 16
+    return:
+      type: UnityEngine.EventSystems.EventTriggerType
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.EventTriggerType
+  commentId: T:UnityEngine.EventSystems.EventTriggerType
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.EventTriggerType.html
+  name: EventTriggerType
+  nameWithType: EventTriggerType
+  fullName: UnityEngine.EventSystems.EventTriggerType

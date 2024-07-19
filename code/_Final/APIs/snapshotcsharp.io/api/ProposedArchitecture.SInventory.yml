@@ -1,0 +1,583 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProposedArchitecture.SInventory
+  commentId: T:ProposedArchitecture.SInventory
+  id: SInventory
+  parent: ProposedArchitecture
+  children:
+  - ProposedArchitecture.SInventory.RefSmris
+  - ProposedArchitecture.SInventory.Smri
+  - ProposedArchitecture.SInventory._MaxItems
+  - ProposedArchitecture.SInventory._Position
+  - ProposedArchitecture.SInventory._Rotation
+  langs:
+  - csharp
+  - vb
+  name: SInventory
+  nameWithType: SInventory
+  fullName: ProposedArchitecture.SInventory
+  type: Struct
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SnapshotModels/SInventory.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: SInventory
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SnapshotModels/SInventory.cs
+    startLine: 5
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  syntax:
+    content: >-
+      [MessagePackObject(false)]
+
+      public struct SInventory : ISnapshotModel
+    content.vb: >-
+      <MessagePackObject(False)>
+
+      Public Structure SInventory Implements ISnapshotModel
+  implements:
+  - ProposedArchitecture.ISnapshotModel
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: MessagePack.MessagePackObjectAttribute
+    ctor: MessagePack.MessagePackObjectAttribute.#ctor(System.Boolean)
+    arguments:
+    - type: System.Boolean
+      value: false
+- uid: ProposedArchitecture.SInventory.Smri
+  commentId: P:ProposedArchitecture.SInventory.Smri
+  id: Smri
+  parent: ProposedArchitecture.SInventory
+  langs:
+  - csharp
+  - vb
+  name: Smri
+  nameWithType: SInventory.Smri
+  fullName: ProposedArchitecture.SInventory.Smri
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SnapshotModels/SInventory.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Smri
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SnapshotModels/SInventory.cs
+    startLine: 7
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  summary: The class/struct should have an SMRI field
+  example: []
+  syntax:
+    content: >-
+      [Key(0)]
+
+      public uint Smri { readonly get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: >-
+      <Key(0)>
+
+      Public Property Smri As UInteger
+  overload: ProposedArchitecture.SInventory.Smri*
+  implements:
+  - ProposedArchitecture.ISnapshotModel.Smri
+  attributes:
+  - type: MessagePack.KeyAttribute
+    ctor: MessagePack.KeyAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 0
+- uid: ProposedArchitecture.SInventory.RefSmris
+  commentId: P:ProposedArchitecture.SInventory.RefSmris
+  id: RefSmris
+  parent: ProposedArchitecture.SInventory
+  langs:
+  - csharp
+  - vb
+  name: RefSmris
+  nameWithType: SInventory.RefSmris
+  fullName: ProposedArchitecture.SInventory.RefSmris
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SnapshotModels/SInventory.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: RefSmris
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SnapshotModels/SInventory.cs
+    startLine: 9
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  summary: The class/struct should have an int array to store its references SMRIs
+  example: []
+  syntax:
+    content: >-
+      [Key(1)]
+
+      public int[] RefSmris { readonly get; set; }
+    parameters: []
+    return:
+      type: System.Int32[]
+    content.vb: >-
+      <Key(1)>
+
+      Public Property RefSmris As Integer()
+  overload: ProposedArchitecture.SInventory.RefSmris*
+  implements:
+  - ProposedArchitecture.ISnapshotModel.RefSmris
+  attributes:
+  - type: MessagePack.KeyAttribute
+    ctor: MessagePack.KeyAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 1
+- uid: ProposedArchitecture.SInventory._MaxItems
+  commentId: F:ProposedArchitecture.SInventory._MaxItems
+  id: _MaxItems
+  parent: ProposedArchitecture.SInventory
+  langs:
+  - csharp
+  - vb
+  name: _MaxItems
+  nameWithType: SInventory._MaxItems
+  fullName: ProposedArchitecture.SInventory._MaxItems
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SnapshotModels/SInventory.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: _MaxItems
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SnapshotModels/SInventory.cs
+    startLine: 12
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  syntax:
+    content: >-
+      [Key(2)]
+
+      public int _MaxItems
+    return:
+      type: System.Int32
+    content.vb: >-
+      <Key(2)>
+
+      Public _MaxItems As Integer
+  attributes:
+  - type: MessagePack.KeyAttribute
+    ctor: MessagePack.KeyAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 2
+- uid: ProposedArchitecture.SInventory._Position
+  commentId: F:ProposedArchitecture.SInventory._Position
+  id: _Position
+  parent: ProposedArchitecture.SInventory
+  langs:
+  - csharp
+  - vb
+  name: _Position
+  nameWithType: SInventory._Position
+  fullName: ProposedArchitecture.SInventory._Position
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SnapshotModels/SInventory.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: _Position
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SnapshotModels/SInventory.cs
+    startLine: 14
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  syntax:
+    content: >-
+      [Key(3)]
+
+      public Vector3 _Position
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <Key(3)>
+
+      Public _Position As Vector3
+  attributes:
+  - type: MessagePack.KeyAttribute
+    ctor: MessagePack.KeyAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 3
+- uid: ProposedArchitecture.SInventory._Rotation
+  commentId: F:ProposedArchitecture.SInventory._Rotation
+  id: _Rotation
+  parent: ProposedArchitecture.SInventory
+  langs:
+  - csharp
+  - vb
+  name: _Rotation
+  nameWithType: SInventory._Rotation
+  fullName: ProposedArchitecture.SInventory._Rotation
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SnapshotModels/SInventory.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: _Rotation
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SnapshotModels/SInventory.cs
+    startLine: 16
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  syntax:
+    content: >-
+      [Key(4)]
+
+      public Quaternion _Rotation
+    return:
+      type: UnityEngine.Quaternion
+    content.vb: >-
+      <Key(4)>
+
+      Public _Rotation As Quaternion
+  attributes:
+  - type: MessagePack.KeyAttribute
+    ctor: MessagePack.KeyAttribute.#ctor(System.Int32)
+    arguments:
+    - type: System.Int32
+      value: 4
+references:
+- uid: ProposedArchitecture
+  commentId: N:ProposedArchitecture
+  href: ProposedArchitecture.html
+  name: ProposedArchitecture
+  nameWithType: ProposedArchitecture
+  fullName: ProposedArchitecture
+- uid: ProposedArchitecture.ISnapshotModel
+  commentId: T:ProposedArchitecture.ISnapshotModel
+  parent: ProposedArchitecture
+  href: ProposedArchitecture.ISnapshotModel.html
+  name: ISnapshotModel
+  nameWithType: ISnapshotModel
+  fullName: ProposedArchitecture.ISnapshotModel
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProposedArchitecture.SInventory.Smri*
+  commentId: Overload:ProposedArchitecture.SInventory.Smri
+  href: ProposedArchitecture.SInventory.html#ProposedArchitecture_SInventory_Smri
+  name: Smri
+  nameWithType: SInventory.Smri
+  fullName: ProposedArchitecture.SInventory.Smri
+- uid: ProposedArchitecture.ISnapshotModel.Smri
+  commentId: P:ProposedArchitecture.ISnapshotModel.Smri
+  parent: ProposedArchitecture.ISnapshotModel
+  href: ProposedArchitecture.ISnapshotModel.html#ProposedArchitecture_ISnapshotModel_Smri
+  name: Smri
+  nameWithType: ISnapshotModel.Smri
+  fullName: ProposedArchitecture.ISnapshotModel.Smri
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: ProposedArchitecture.SInventory.RefSmris*
+  commentId: Overload:ProposedArchitecture.SInventory.RefSmris
+  href: ProposedArchitecture.SInventory.html#ProposedArchitecture_SInventory_RefSmris
+  name: RefSmris
+  nameWithType: SInventory.RefSmris
+  fullName: ProposedArchitecture.SInventory.RefSmris
+- uid: ProposedArchitecture.ISnapshotModel.RefSmris
+  commentId: P:ProposedArchitecture.ISnapshotModel.RefSmris
+  parent: ProposedArchitecture.ISnapshotModel
+  href: ProposedArchitecture.ISnapshotModel.html#ProposedArchitecture_ISnapshotModel_RefSmris
+  name: RefSmris
+  nameWithType: ISnapshotModel.RefSmris
+  fullName: ProposedArchitecture.ISnapshotModel.RefSmris
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Quaternion
+  commentId: T:UnityEngine.Quaternion
+  parent: UnityEngine
+  isExternal: true
+  name: Quaternion
+  nameWithType: Quaternion
+  fullName: UnityEngine.Quaternion

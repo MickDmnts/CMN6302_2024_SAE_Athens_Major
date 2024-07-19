@@ -1,0 +1,223 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.Image.Type
+  commentId: T:UnityEngine.UI.Image.Type
+  id: Image.Type
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.Image.Type.Filled
+  - UnityEngine.UI.Image.Type.Simple
+  - UnityEngine.UI.Image.Type.Sliced
+  - UnityEngine.UI.Image.Type.Tiled
+  langs:
+  - csharp
+  - vb
+  name: Image.Type
+  nameWithType: Image.Type
+  fullName: UnityEngine.UI.Image.Type
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Type
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 26
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Image fill type controls how to display the image.
+  example: []
+  syntax:
+    content: public enum Image.Type
+    content.vb: Public Enum Image.Type
+- uid: UnityEngine.UI.Image.Type.Simple
+  commentId: F:UnityEngine.UI.Image.Type.Simple
+  id: Simple
+  parent: UnityEngine.UI.Image.Type
+  langs:
+  - csharp
+  - vb
+  name: Simple
+  nameWithType: Image.Type.Simple
+  fullName: UnityEngine.UI.Image.Type.Simple
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Simple
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 34
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Displays the full Image
+  remarks: This setting shows the entire image stretched across the Image's RectTransform
+  example: []
+  syntax:
+    content: Simple = 0
+    return:
+      type: UnityEngine.UI.Image.Type
+- uid: UnityEngine.UI.Image.Type.Sliced
+  commentId: F:UnityEngine.UI.Image.Type.Sliced
+  id: Sliced
+  parent: UnityEngine.UI.Image.Type
+  langs:
+  - csharp
+  - vb
+  name: Sliced
+  nameWithType: Image.Type.Sliced
+  fullName: UnityEngine.UI.Image.Type.Sliced
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Sliced
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 46
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Displays the Image as a 9-sliced graphic.
+  remarks: >-
+    A 9-sliced image displays a central area stretched across the image surrounded by a border comprising of 4 corners and 4 stretched edges.
+
+
+    This has the effect of creating a resizable skinned rectangular element suitable for dialog boxes, windows, and general UI elements.
+
+
+    Note: For this method to work properly the Sprite assigned to Image.sprite needs to have Sprite.border defined.
+  example: []
+  syntax:
+    content: Sliced = 1
+    return:
+      type: UnityEngine.UI.Image.Type
+- uid: UnityEngine.UI.Image.Type.Tiled
+  commentId: F:UnityEngine.UI.Image.Type.Tiled
+  id: Tiled
+  parent: UnityEngine.UI.Image.Type
+  langs:
+  - csharp
+  - vb
+  name: Tiled
+  nameWithType: Image.Type.Tiled
+  fullName: UnityEngine.UI.Image.Type.Tiled
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Tiled
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 64
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Displays a sliced Sprite with its resizable sections tiled instead of stretched.
+  remarks: >-
+    A Tiled image behaves similarly to a UI.Image.Type.Sliced|Sliced image, except that the resizable sections of the image are repeated instead of being stretched. This can be useful for detailed UI graphics that do not look good when stretched.
+
+
+    It uses the Sprite.border value to determine how each part (border and center) should be tiled.
+
+
+    The Image sections will repeat the corresponding section in the Sprite until the whole section is filled. The corner sections will be unaffected and will draw in the same way as a Sliced Image. The edges will repeat along their lengths. The center section will repeat across the whole central part of the Image.
+
+
+    The Image section will repeat the corresponding section in the Sprite until the whole section is filled.
+
+
+    Be aware that if you are tiling a Sprite with borders or a packed sprite, a mesh will be generated to create the tiles. The size of the mesh will be limited to 16250 quads; if your tiling would require more tiles, the size of the tiles will be enlarged to ensure that the number of generated quads stays below this limit.
+
+
+    For optimum efficiency, use a Sprite with no borders and with no packing, and make sure the Sprite.texture wrap mode is set to TextureWrapMode.Repeat.These settings will prevent the generation of additional geometry.If this is not possible, limit the number of tiles in your Image.
+  example: []
+  syntax:
+    content: Tiled = 2
+    return:
+      type: UnityEngine.UI.Image.Type
+- uid: UnityEngine.UI.Image.Type.Filled
+  commentId: F:UnityEngine.UI.Image.Type.Filled
+  id: Filled
+  parent: UnityEngine.UI.Image.Type
+  langs:
+  - csharp
+  - vb
+  name: Filled
+  nameWithType: Image.Type.Filled
+  fullName: UnityEngine.UI.Image.Type.Filled
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Filled
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 74
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Displays only a portion of the Image.
+  remarks: >-
+    A Filled Image will display a section of the Sprite, with the rest of the RectTransform left transparent. The Image.fillAmount determines how much of the Image to show, and Image.fillMethod controls the shape in which the Image will be cut.
+
+
+    This can be used for example to display circular or linear status information such as timers, health bars, and loading bars.
+  example: []
+  syntax:
+    content: Filled = 3
+    return:
+      type: UnityEngine.UI.Image.Type
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.Image.Type
+  commentId: T:UnityEngine.UI.Image.Type
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Image.html
+  name: Image.Type
+  nameWithType: Image.Type
+  fullName: UnityEngine.UI.Image.Type
+  spec.csharp:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.Type
+    name: Type
+    href: UnityEngine.UI.Image.Type.html
+  spec.vb:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.Type
+    name: Type
+    href: UnityEngine.UI.Image.Type.html

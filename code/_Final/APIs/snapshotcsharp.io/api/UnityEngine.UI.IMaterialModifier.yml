@@ -1,0 +1,109 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.IMaterialModifier
+  commentId: T:UnityEngine.UI.IMaterialModifier
+  id: IMaterialModifier
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.IMaterialModifier.GetModifiedMaterial(UnityEngine.Material)
+  langs:
+  - csharp
+  - vb
+  name: IMaterialModifier
+  nameWithType: IMaterialModifier
+  fullName: UnityEngine.UI.IMaterialModifier
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/MaterialModifiers/IMaterialModifier.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IMaterialModifier
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/MaterialModifiers/IMaterialModifier.cs
+    startLine: 8
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Use this interface to modify a Material that renders a Graphic. The Material is modified before the it is passed to the CanvasRenderer.
+  remarks: When a Graphic sets a material that is passed (in order) to any components on the GameObject that implement IMaterialModifier. This component can modify the material to be used for rendering.
+  example: []
+  syntax:
+    content: public interface IMaterialModifier
+    content.vb: Public Interface IMaterialModifier
+- uid: UnityEngine.UI.IMaterialModifier.GetModifiedMaterial(UnityEngine.Material)
+  commentId: M:UnityEngine.UI.IMaterialModifier.GetModifiedMaterial(UnityEngine.Material)
+  id: GetModifiedMaterial(UnityEngine.Material)
+  parent: UnityEngine.UI.IMaterialModifier
+  langs:
+  - csharp
+  - vb
+  name: GetModifiedMaterial(Material)
+  nameWithType: IMaterialModifier.GetModifiedMaterial(Material)
+  fullName: UnityEngine.UI.IMaterialModifier.GetModifiedMaterial(UnityEngine.Material)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/MaterialModifiers/IMaterialModifier.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetModifiedMaterial
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/MaterialModifiers/IMaterialModifier.cs
+    startLine: 15
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Perform material modification in this function.
+  example: []
+  syntax:
+    content: Material GetModifiedMaterial(Material baseMaterial)
+    parameters:
+    - id: baseMaterial
+      type: UnityEngine.Material
+      description: The material that is to be modified
+    return:
+      type: UnityEngine.Material
+      description: The modified material.
+    content.vb: Function GetModifiedMaterial(baseMaterial As Material) As Material
+  overload: UnityEngine.UI.IMaterialModifier.GetModifiedMaterial*
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.IMaterialModifier.GetModifiedMaterial*
+  commentId: Overload:UnityEngine.UI.IMaterialModifier.GetModifiedMaterial
+  href: UnityEngine.UI.IMaterialModifier.html#UnityEngine_UI_IMaterialModifier_GetModifiedMaterial_UnityEngine_Material_
+  name: GetModifiedMaterial
+  nameWithType: IMaterialModifier.GetModifiedMaterial
+  fullName: UnityEngine.UI.IMaterialModifier.GetModifiedMaterial
+- uid: UnityEngine.Material
+  commentId: T:UnityEngine.Material
+  parent: UnityEngine
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

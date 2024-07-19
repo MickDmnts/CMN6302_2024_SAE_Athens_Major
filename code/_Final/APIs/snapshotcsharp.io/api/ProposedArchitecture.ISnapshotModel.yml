@@ -1,0 +1,152 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProposedArchitecture.ISnapshotModel
+  commentId: T:ProposedArchitecture.ISnapshotModel
+  id: ISnapshotModel
+  parent: ProposedArchitecture
+  children:
+  - ProposedArchitecture.ISnapshotModel.RefSmris
+  - ProposedArchitecture.ISnapshotModel.Smri
+  langs:
+  - csharp
+  - vb
+  name: ISnapshotModel
+  nameWithType: ISnapshotModel
+  fullName: ProposedArchitecture.ISnapshotModel
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshotModel.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ISnapshotModel
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshotModel.cs
+    startLine: 2
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  syntax:
+    content: public interface ISnapshotModel
+    content.vb: Public Interface ISnapshotModel
+- uid: ProposedArchitecture.ISnapshotModel.Smri
+  commentId: P:ProposedArchitecture.ISnapshotModel.Smri
+  id: Smri
+  parent: ProposedArchitecture.ISnapshotModel
+  langs:
+  - csharp
+  - vb
+  name: Smri
+  nameWithType: ISnapshotModel.Smri
+  fullName: ProposedArchitecture.ISnapshotModel.Smri
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshotModel.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Smri
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshotModel.cs
+    startLine: 4
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  summary: The class/struct should have an SMRI field
+  example: []
+  syntax:
+    content: uint Smri { get; set; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: Property Smri As UInteger
+  overload: ProposedArchitecture.ISnapshotModel.Smri*
+- uid: ProposedArchitecture.ISnapshotModel.RefSmris
+  commentId: P:ProposedArchitecture.ISnapshotModel.RefSmris
+  id: RefSmris
+  parent: ProposedArchitecture.ISnapshotModel
+  langs:
+  - csharp
+  - vb
+  name: RefSmris
+  nameWithType: ISnapshotModel.RefSmris
+  fullName: ProposedArchitecture.ISnapshotModel.RefSmris
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshotModel.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: RefSmris
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshotModel.cs
+    startLine: 6
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  summary: The class/struct should have an int array to store its references SMRIs
+  example: []
+  syntax:
+    content: int[] RefSmris { get; set; }
+    parameters: []
+    return:
+      type: System.Int32[]
+    content.vb: Property RefSmris As Integer()
+  overload: ProposedArchitecture.ISnapshotModel.RefSmris*
+references:
+- uid: ProposedArchitecture
+  commentId: N:ProposedArchitecture
+  href: ProposedArchitecture.html
+  name: ProposedArchitecture
+  nameWithType: ProposedArchitecture
+  fullName: ProposedArchitecture
+- uid: ProposedArchitecture.ISnapshotModel.Smri*
+  commentId: Overload:ProposedArchitecture.ISnapshotModel.Smri
+  href: ProposedArchitecture.ISnapshotModel.html#ProposedArchitecture_ISnapshotModel_Smri
+  name: Smri
+  nameWithType: ISnapshotModel.Smri
+  fullName: ProposedArchitecture.ISnapshotModel.Smri
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProposedArchitecture.ISnapshotModel.RefSmris*
+  commentId: Overload:ProposedArchitecture.ISnapshotModel.RefSmris
+  href: ProposedArchitecture.ISnapshotModel.html#ProposedArchitecture_ISnapshotModel_RefSmris
+  name: RefSmris
+  nameWithType: ISnapshotModel.RefSmris
+  fullName: ProposedArchitecture.ISnapshotModel.RefSmris
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )

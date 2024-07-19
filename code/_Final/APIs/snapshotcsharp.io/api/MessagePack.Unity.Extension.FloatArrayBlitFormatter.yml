@@ -1,0 +1,842 @@
+### YamlMime:ManagedReference
+items:
+- uid: MessagePack.Unity.Extension.FloatArrayBlitFormatter
+  commentId: T:MessagePack.Unity.Extension.FloatArrayBlitFormatter
+  id: FloatArrayBlitFormatter
+  parent: MessagePack.Unity.Extension
+  children:
+  - MessagePack.Unity.Extension.FloatArrayBlitFormatter.TypeCode
+  langs:
+  - csharp
+  - vb
+  name: FloatArrayBlitFormatter
+  nameWithType: FloatArrayBlitFormatter
+  fullName: MessagePack.Unity.Extension.FloatArrayBlitFormatter
+  type: Class
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/Unity/Extension/UnsafeBlitFormatter.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: FloatArrayBlitFormatter
+    path: ../Snapshot/Runtime/Source/3rdParty/MessagePack/Unity/Extension/UnsafeBlitFormatter.cs
+    startLine: 164
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Unity.Extension
+  syntax:
+    content: 'public class FloatArrayBlitFormatter : UnsafeBlitFormatterBase<float>, IMessagePackFormatter<float[]?>'
+    content.vb: Public Class FloatArrayBlitFormatter Inherits UnsafeBlitFormatterBase(Of Single) Implements IMessagePackFormatter(Of Single())
+  inheritance:
+  - System.Object
+  - MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}
+  implements:
+  - MessagePack.Formatters.IMessagePackFormatter{System.Single[]}
+  inheritedMembers:
+  - MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}.CopyDeserializeUnsafe(System.ReadOnlySpan{System.Byte},System.Span{System.Single})
+  - MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}.Serialize(MessagePack.MessagePackWriter@,System.Single[],MessagePack.MessagePackSerializerOptions)
+  - MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: MessagePack.Unity.Extension.FloatArrayBlitFormatter.TypeCode
+  commentId: P:MessagePack.Unity.Extension.FloatArrayBlitFormatter.TypeCode
+  id: TypeCode
+  parent: MessagePack.Unity.Extension.FloatArrayBlitFormatter
+  langs:
+  - csharp
+  - vb
+  name: TypeCode
+  nameWithType: FloatArrayBlitFormatter.TypeCode
+  fullName: MessagePack.Unity.Extension.FloatArrayBlitFormatter.TypeCode
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/Unity/Extension/UnsafeBlitFormatter.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: TypeCode
+    path: ../Snapshot/Runtime/Source/3rdParty/MessagePack/Unity/Extension/UnsafeBlitFormatter.cs
+    startLine: 166
+  assemblies:
+  - MessagePack
+  namespace: MessagePack.Unity.Extension
+  example: []
+  syntax:
+    content: protected override sbyte TypeCode { get; }
+    parameters: []
+    return:
+      type: System.SByte
+    content.vb: Protected Overrides ReadOnly Property TypeCode As SByte
+  overridden: MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}.TypeCode
+  overload: MessagePack.Unity.Extension.FloatArrayBlitFormatter.TypeCode*
+references:
+- uid: MessagePack.Unity.Extension
+  commentId: N:MessagePack.Unity.Extension
+  href: MessagePack.html
+  name: MessagePack.Unity.Extension
+  nameWithType: MessagePack.Unity.Extension
+  fullName: MessagePack.Unity.Extension
+  spec.csharp:
+  - uid: MessagePack
+    name: MessagePack
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Unity
+    name: Unity
+    href: MessagePack.Unity.html
+  - name: .
+  - uid: MessagePack.Unity.Extension
+    name: Extension
+    href: MessagePack.Unity.Extension.html
+  spec.vb:
+  - uid: MessagePack
+    name: MessagePack
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Unity
+    name: Unity
+    href: MessagePack.Unity.html
+  - name: .
+  - uid: MessagePack.Unity.Extension
+    name: Extension
+    href: MessagePack.Unity.Extension.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}
+  commentId: T:MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}
+  parent: MessagePack.Unity.Extension
+  definition: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1
+  href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html
+  name: UnsafeBlitFormatterBase<float>
+  nameWithType: UnsafeBlitFormatterBase<float>
+  fullName: MessagePack.Unity.Extension.UnsafeBlitFormatterBase<float>
+  nameWithType.vb: UnsafeBlitFormatterBase(Of Single)
+  fullName.vb: MessagePack.Unity.Extension.UnsafeBlitFormatterBase(Of Single)
+  name.vb: UnsafeBlitFormatterBase(Of Single)
+  spec.csharp:
+  - uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1
+    name: UnsafeBlitFormatterBase
+    href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1
+    name: UnsafeBlitFormatterBase
+    href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: MessagePack.Formatters.IMessagePackFormatter{System.Single[]}
+  commentId: T:MessagePack.Formatters.IMessagePackFormatter{System.Single[]}
+  parent: MessagePack.Formatters
+  definition: MessagePack.Formatters.IMessagePackFormatter`1
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  name: IMessagePackFormatter<float[]>
+  nameWithType: IMessagePackFormatter<float[]>
+  fullName: MessagePack.Formatters.IMessagePackFormatter<float[]>
+  nameWithType.vb: IMessagePackFormatter(Of Single())
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of Single())
+  name.vb: IMessagePackFormatter(Of Single())
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+  - name: )
+- uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}.CopyDeserializeUnsafe(System.ReadOnlySpan{System.Byte},System.Span{System.Single})
+  commentId: M:MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}.CopyDeserializeUnsafe(System.ReadOnlySpan{System.Byte},System.Span{System.Single})
+  parent: MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}
+  definition: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1.CopyDeserializeUnsafe(System.ReadOnlySpan{System.Byte},System.Span{`0})
+  href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_CopyDeserializeUnsafe_System_ReadOnlySpan_System_Byte__System_Span__0__
+  name: CopyDeserializeUnsafe(ReadOnlySpan<byte>, Span<float>)
+  nameWithType: UnsafeBlitFormatterBase<float>.CopyDeserializeUnsafe(ReadOnlySpan<byte>, Span<float>)
+  fullName: MessagePack.Unity.Extension.UnsafeBlitFormatterBase<float>.CopyDeserializeUnsafe(System.ReadOnlySpan<byte>, System.Span<float>)
+  nameWithType.vb: UnsafeBlitFormatterBase(Of Single).CopyDeserializeUnsafe(ReadOnlySpan(Of Byte), Span(Of Single))
+  fullName.vb: MessagePack.Unity.Extension.UnsafeBlitFormatterBase(Of Single).CopyDeserializeUnsafe(System.ReadOnlySpan(Of Byte), System.Span(Of Single))
+  name.vb: CopyDeserializeUnsafe(ReadOnlySpan(Of Byte), Span(Of Single))
+  spec.csharp:
+  - uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}.CopyDeserializeUnsafe(System.ReadOnlySpan{System.Byte},System.Span{System.Single})
+    name: CopyDeserializeUnsafe
+    href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_CopyDeserializeUnsafe_System_ReadOnlySpan_System_Byte__System_Span__0__
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}.CopyDeserializeUnsafe(System.ReadOnlySpan{System.Byte},System.Span{System.Single})
+    name: CopyDeserializeUnsafe
+    href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_CopyDeserializeUnsafe_System_ReadOnlySpan_System_Byte__System_Span__0__
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  - name: )
+- uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}.Serialize(MessagePack.MessagePackWriter@,System.Single[],MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}.Serialize(MessagePack.MessagePackWriter@,System.Single[],MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}
+  definition: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1.Serialize(MessagePack.MessagePackWriter@,`0[],MessagePack.MessagePackSerializerOptions)
+  href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_Serialize_MessagePack_MessagePackWriter___0___MessagePack_MessagePackSerializerOptions_
+  name: Serialize(ref MessagePackWriter, float[], MessagePackSerializerOptions)
+  nameWithType: UnsafeBlitFormatterBase<float>.Serialize(ref MessagePackWriter, float[], MessagePackSerializerOptions)
+  fullName: MessagePack.Unity.Extension.UnsafeBlitFormatterBase<float>.Serialize(ref MessagePack.MessagePackWriter, float[], MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: UnsafeBlitFormatterBase(Of Single).Serialize(MessagePackWriter, Single(), MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Unity.Extension.UnsafeBlitFormatterBase(Of Single).Serialize(MessagePack.MessagePackWriter, Single(), MessagePack.MessagePackSerializerOptions)
+  name.vb: Serialize(MessagePackWriter, Single(), MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}.Serialize(MessagePack.MessagePackWriter@,System.Single[],MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_Serialize_MessagePack_MessagePackWriter___0___MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}.Serialize(MessagePack.MessagePackWriter@,System.Single[],MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_Serialize_MessagePack_MessagePackWriter___0___MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  parent: MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}
+  definition: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  name: Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  nameWithType: UnsafeBlitFormatterBase<float>.Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  fullName: MessagePack.Unity.Extension.UnsafeBlitFormatterBase<float>.Deserialize(ref MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: UnsafeBlitFormatterBase(Of Single).Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Unity.Extension.UnsafeBlitFormatterBase(Of Single).Deserialize(MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  name.vb: Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1
+  commentId: T:MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1
+  href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html
+  name: UnsafeBlitFormatterBase<T>
+  nameWithType: UnsafeBlitFormatterBase<T>
+  fullName: MessagePack.Unity.Extension.UnsafeBlitFormatterBase<T>
+  nameWithType.vb: UnsafeBlitFormatterBase(Of T)
+  fullName.vb: MessagePack.Unity.Extension.UnsafeBlitFormatterBase(Of T)
+  name.vb: UnsafeBlitFormatterBase(Of T)
+  spec.csharp:
+  - uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1
+    name: UnsafeBlitFormatterBase
+    href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1
+    name: UnsafeBlitFormatterBase
+    href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.Formatters.IMessagePackFormatter`1
+  commentId: T:MessagePack.Formatters.IMessagePackFormatter`1
+  href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  name: IMessagePackFormatter<T>
+  nameWithType: IMessagePackFormatter<T>
+  fullName: MessagePack.Formatters.IMessagePackFormatter<T>
+  nameWithType.vb: IMessagePackFormatter(Of T)
+  fullName.vb: MessagePack.Formatters.IMessagePackFormatter(Of T)
+  name.vb: IMessagePackFormatter(Of T)
+  spec.csharp:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Formatters.IMessagePackFormatter`1
+    name: IMessagePackFormatter
+    href: MessagePack.Formatters.IMessagePackFormatter-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.Formatters
+  commentId: N:MessagePack.Formatters
+  href: MessagePack.html
+  name: MessagePack.Formatters
+  nameWithType: MessagePack.Formatters
+  fullName: MessagePack.Formatters
+  spec.csharp:
+  - uid: MessagePack
+    name: MessagePack
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Formatters
+    name: Formatters
+    href: MessagePack.Formatters.html
+  spec.vb:
+  - uid: MessagePack
+    name: MessagePack
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Formatters
+    name: Formatters
+    href: MessagePack.Formatters.html
+- uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1.CopyDeserializeUnsafe(System.ReadOnlySpan{System.Byte},System.Span{`0})
+  commentId: M:MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1.CopyDeserializeUnsafe(System.ReadOnlySpan{System.Byte},System.Span{`0})
+  isExternal: true
+  href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_CopyDeserializeUnsafe_System_ReadOnlySpan_System_Byte__System_Span__0__
+  name: CopyDeserializeUnsafe(ReadOnlySpan<byte>, Span<T>)
+  nameWithType: UnsafeBlitFormatterBase<T>.CopyDeserializeUnsafe(ReadOnlySpan<byte>, Span<T>)
+  fullName: MessagePack.Unity.Extension.UnsafeBlitFormatterBase<T>.CopyDeserializeUnsafe(System.ReadOnlySpan<byte>, System.Span<T>)
+  nameWithType.vb: UnsafeBlitFormatterBase(Of T).CopyDeserializeUnsafe(ReadOnlySpan(Of Byte), Span(Of T))
+  fullName.vb: MessagePack.Unity.Extension.UnsafeBlitFormatterBase(Of T).CopyDeserializeUnsafe(System.ReadOnlySpan(Of Byte), System.Span(Of T))
+  name.vb: CopyDeserializeUnsafe(ReadOnlySpan(Of Byte), Span(Of T))
+  spec.csharp:
+  - uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1.CopyDeserializeUnsafe(System.ReadOnlySpan{System.Byte},System.Span{`0})
+    name: CopyDeserializeUnsafe
+    href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_CopyDeserializeUnsafe_System_ReadOnlySpan_System_Byte__System_Span__0__
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1.CopyDeserializeUnsafe(System.ReadOnlySpan{System.Byte},System.Span{`0})
+    name: CopyDeserializeUnsafe
+    href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_CopyDeserializeUnsafe_System_ReadOnlySpan_System_Byte__System_Span__0__
+  - name: (
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1.Serialize(MessagePack.MessagePackWriter@,`0[],MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1.Serialize(MessagePack.MessagePackWriter@,`0[],MessagePack.MessagePackSerializerOptions)
+  href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_Serialize_MessagePack_MessagePackWriter___0___MessagePack_MessagePackSerializerOptions_
+  name: Serialize(ref MessagePackWriter, T[], MessagePackSerializerOptions)
+  nameWithType: UnsafeBlitFormatterBase<T>.Serialize(ref MessagePackWriter, T[], MessagePackSerializerOptions)
+  fullName: MessagePack.Unity.Extension.UnsafeBlitFormatterBase<T>.Serialize(ref MessagePack.MessagePackWriter, T[], MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: UnsafeBlitFormatterBase(Of T).Serialize(MessagePackWriter, T(), MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Unity.Extension.UnsafeBlitFormatterBase(Of T).Serialize(MessagePack.MessagePackWriter, T(), MessagePack.MessagePackSerializerOptions)
+  name.vb: Serialize(MessagePackWriter, T(), MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1.Serialize(MessagePack.MessagePackWriter@,`0[],MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_Serialize_MessagePack_MessagePackWriter___0___MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1.Serialize(MessagePack.MessagePackWriter@,`0[],MessagePack.MessagePackSerializerOptions)
+    name: Serialize
+    href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_Serialize_MessagePack_MessagePackWriter___0___MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackWriter
+    name: MessagePackWriter
+    href: MessagePack.MessagePackWriter.html
+  - name: ','
+  - name: " "
+  - name: T
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  commentId: M:MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+  href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  name: Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  nameWithType: UnsafeBlitFormatterBase<T>.Deserialize(ref MessagePackReader, MessagePackSerializerOptions)
+  fullName: MessagePack.Unity.Extension.UnsafeBlitFormatterBase<T>.Deserialize(ref MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  nameWithType.vb: UnsafeBlitFormatterBase(Of T).Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  fullName.vb: MessagePack.Unity.Extension.UnsafeBlitFormatterBase(Of T).Deserialize(MessagePack.MessagePackReader, MessagePack.MessagePackSerializerOptions)
+  name.vb: Deserialize(MessagePackReader, MessagePackSerializerOptions)
+  spec.csharp:
+  - uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - name: ref
+  - name: " "
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+  spec.vb:
+  - uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1.Deserialize(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)
+    name: Deserialize
+    href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_Deserialize_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_
+  - name: (
+  - uid: MessagePack.MessagePackReader
+    name: MessagePackReader
+    href: MessagePack.MessagePackReader.html
+  - name: ','
+  - name: " "
+  - uid: MessagePack.MessagePackSerializerOptions
+    name: MessagePackSerializerOptions
+    href: MessagePack.MessagePackSerializerOptions.html
+  - name: )
+- uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}.TypeCode
+  commentId: P:MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}.TypeCode
+  parent: MessagePack.Unity.Extension.UnsafeBlitFormatterBase{System.Single}
+  definition: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1.TypeCode
+  href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_TypeCode
+  name: TypeCode
+  nameWithType: UnsafeBlitFormatterBase<float>.TypeCode
+  fullName: MessagePack.Unity.Extension.UnsafeBlitFormatterBase<float>.TypeCode
+  nameWithType.vb: UnsafeBlitFormatterBase(Of Single).TypeCode
+  fullName.vb: MessagePack.Unity.Extension.UnsafeBlitFormatterBase(Of Single).TypeCode
+- uid: MessagePack.Unity.Extension.FloatArrayBlitFormatter.TypeCode*
+  commentId: Overload:MessagePack.Unity.Extension.FloatArrayBlitFormatter.TypeCode
+  href: MessagePack.Unity.Extension.FloatArrayBlitFormatter.html#MessagePack_Unity_Extension_FloatArrayBlitFormatter_TypeCode
+  name: TypeCode
+  nameWithType: FloatArrayBlitFormatter.TypeCode
+  fullName: MessagePack.Unity.Extension.FloatArrayBlitFormatter.TypeCode
+- uid: System.SByte
+  commentId: T:System.SByte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  name: sbyte
+  nameWithType: sbyte
+  fullName: sbyte
+  nameWithType.vb: SByte
+  fullName.vb: SByte
+  name.vb: SByte
+- uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1.TypeCode
+  commentId: P:MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1.TypeCode
+  href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html#MessagePack_Unity_Extension_UnsafeBlitFormatterBase_1_TypeCode
+  name: TypeCode
+  nameWithType: UnsafeBlitFormatterBase<T>.TypeCode
+  fullName: MessagePack.Unity.Extension.UnsafeBlitFormatterBase<T>.TypeCode
+  nameWithType.vb: UnsafeBlitFormatterBase(Of T).TypeCode
+  fullName.vb: MessagePack.Unity.Extension.UnsafeBlitFormatterBase(Of T).TypeCode

@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.ILayoutGroup
+  commentId: T:UnityEngine.UI.ILayoutGroup
+  id: ILayoutGroup
+  parent: UnityEngine.UI
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ILayoutGroup
+  nameWithType: ILayoutGroup
+  fullName: UnityEngine.UI.ILayoutGroup
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ILayoutGroup
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+    startLine: 167
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: ILayoutGroup is an ILayoutController that should drive the RectTransforms of its children.
+  remarks: ILayoutGroup derives from ILayoutController and requires the same members to be implemented.
+  example: []
+  syntax:
+    content: 'public interface ILayoutGroup : ILayoutController'
+    content.vb: Public Interface ILayoutGroup Inherits ILayoutController
+  inheritedMembers:
+  - UnityEngine.UI.ILayoutController.SetLayoutHorizontal
+  - UnityEngine.UI.ILayoutController.SetLayoutVertical
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.ILayoutController.SetLayoutHorizontal
+  commentId: M:UnityEngine.UI.ILayoutController.SetLayoutHorizontal
+  parent: UnityEngine.UI.ILayoutController
+  href: UnityEngine.UI.ILayoutController.html#UnityEngine_UI_ILayoutController_SetLayoutHorizontal
+  name: SetLayoutHorizontal()
+  nameWithType: ILayoutController.SetLayoutHorizontal()
+  fullName: UnityEngine.UI.ILayoutController.SetLayoutHorizontal()
+  spec.csharp:
+  - uid: UnityEngine.UI.ILayoutController.SetLayoutHorizontal
+    name: SetLayoutHorizontal
+    href: UnityEngine.UI.ILayoutController.html#UnityEngine_UI_ILayoutController_SetLayoutHorizontal
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UI.ILayoutController.SetLayoutHorizontal
+    name: SetLayoutHorizontal
+    href: UnityEngine.UI.ILayoutController.html#UnityEngine_UI_ILayoutController_SetLayoutHorizontal
+  - name: (
+  - name: )
+- uid: UnityEngine.UI.ILayoutController.SetLayoutVertical
+  commentId: M:UnityEngine.UI.ILayoutController.SetLayoutVertical
+  parent: UnityEngine.UI.ILayoutController
+  href: UnityEngine.UI.ILayoutController.html#UnityEngine_UI_ILayoutController_SetLayoutVertical
+  name: SetLayoutVertical()
+  nameWithType: ILayoutController.SetLayoutVertical()
+  fullName: UnityEngine.UI.ILayoutController.SetLayoutVertical()
+  spec.csharp:
+  - uid: UnityEngine.UI.ILayoutController.SetLayoutVertical
+    name: SetLayoutVertical
+    href: UnityEngine.UI.ILayoutController.html#UnityEngine_UI_ILayoutController_SetLayoutVertical
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UI.ILayoutController.SetLayoutVertical
+    name: SetLayoutVertical
+    href: UnityEngine.UI.ILayoutController.html#UnityEngine_UI_ILayoutController_SetLayoutVertical
+  - name: (
+  - name: )
+- uid: UnityEngine.UI.ILayoutController
+  commentId: T:UnityEngine.UI.ILayoutController
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ILayoutController.html
+  name: ILayoutController
+  nameWithType: ILayoutController
+  fullName: UnityEngine.UI.ILayoutController

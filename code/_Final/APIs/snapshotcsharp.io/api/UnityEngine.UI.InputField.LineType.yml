@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.InputField.LineType
+  commentId: T:UnityEngine.UI.InputField.LineType
+  id: InputField.LineType
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.InputField.LineType.MultiLineNewline
+  - UnityEngine.UI.InputField.LineType.MultiLineSubmit
+  - UnityEngine.UI.InputField.LineType.SingleLine
+  langs:
+  - csharp
+  - vb
+  name: InputField.LineType
+  nameWithType: InputField.LineType
+  fullName: UnityEngine.UI.InputField.LineType
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: LineType
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 161
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The LineType is used to describe the behavior of the InputField.
+  example: []
+  syntax:
+    content: public enum InputField.LineType
+    content.vb: Public Enum InputField.LineType
+- uid: UnityEngine.UI.InputField.LineType.SingleLine
+  commentId: F:UnityEngine.UI.InputField.LineType.SingleLine
+  id: SingleLine
+  parent: UnityEngine.UI.InputField.LineType
+  langs:
+  - csharp
+  - vb
+  name: SingleLine
+  nameWithType: InputField.LineType.SingleLine
+  fullName: UnityEngine.UI.InputField.LineType.SingleLine
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: SingleLine
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 166
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Only allows 1 line to be entered. Has horizontal scrolling and no word wrap. Pressing enter will submit the InputField.
+  example: []
+  syntax:
+    content: SingleLine = 0
+    return:
+      type: UnityEngine.UI.InputField.LineType
+- uid: UnityEngine.UI.InputField.LineType.MultiLineSubmit
+  commentId: F:UnityEngine.UI.InputField.LineType.MultiLineSubmit
+  id: MultiLineSubmit
+  parent: UnityEngine.UI.InputField.LineType
+  langs:
+  - csharp
+  - vb
+  name: MultiLineSubmit
+  nameWithType: InputField.LineType.MultiLineSubmit
+  fullName: UnityEngine.UI.InputField.LineType.MultiLineSubmit
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: MultiLineSubmit
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 171
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Is a multiline InputField with vertical scrolling and overflow. Pressing the return key will submit.
+  example: []
+  syntax:
+    content: MultiLineSubmit = 1
+    return:
+      type: UnityEngine.UI.InputField.LineType
+- uid: UnityEngine.UI.InputField.LineType.MultiLineNewline
+  commentId: F:UnityEngine.UI.InputField.LineType.MultiLineNewline
+  id: MultiLineNewline
+  parent: UnityEngine.UI.InputField.LineType
+  langs:
+  - csharp
+  - vb
+  name: MultiLineNewline
+  nameWithType: InputField.LineType.MultiLineNewline
+  fullName: UnityEngine.UI.InputField.LineType.MultiLineNewline
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: MultiLineNewline
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 176
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Is a multiline InputField with vertical scrolling and overflow. Pressing the return key will insert a new line character.
+  example: []
+  syntax:
+    content: MultiLineNewline = 2
+    return:
+      type: UnityEngine.UI.InputField.LineType
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.InputField.LineType
+  commentId: T:UnityEngine.UI.InputField.LineType
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.InputField.html
+  name: InputField.LineType
+  nameWithType: InputField.LineType
+  fullName: UnityEngine.UI.InputField.LineType
+  spec.csharp:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.LineType
+    name: LineType
+    href: UnityEngine.UI.InputField.LineType.html
+  spec.vb:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.LineType
+    name: LineType
+    href: UnityEngine.UI.InputField.LineType.html

@@ -1,0 +1,99 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.IPointerExitHandler
+  commentId: T:UnityEngine.EventSystems.IPointerExitHandler
+  id: IPointerExitHandler
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.IPointerExitHandler.OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+  langs:
+  - csharp
+  - vb
+  name: IPointerExitHandler
+  nameWithType: IPointerExitHandler
+  fullName: UnityEngine.EventSystems.IPointerExitHandler
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IPointerExitHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 43
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Interface to implement if you wish to receive OnPointerExit callbacks.
+  remarks: Criteria for this event is implementation dependent. For example see StandAloneInputModule.
+  example: []
+  syntax:
+    content: 'public interface IPointerExitHandler : IEventSystemHandler'
+    content.vb: Public Interface IPointerExitHandler Inherits IEventSystemHandler
+- uid: UnityEngine.EventSystems.IPointerExitHandler.OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:UnityEngine.EventSystems.IPointerExitHandler.OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+  id: OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+  parent: UnityEngine.EventSystems.IPointerExitHandler
+  langs:
+  - csharp
+  - vb
+  name: OnPointerExit(PointerEventData)
+  nameWithType: IPointerExitHandler.OnPointerExit(PointerEventData)
+  fullName: UnityEngine.EventSystems.IPointerExitHandler.OnPointerExit(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OnPointerExit
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 48
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Use this callback to detect pointer exit events
+  example: []
+  syntax:
+    content: void OnPointerExit(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Sub OnPointerExit(eventData As PointerEventData)
+  overload: UnityEngine.EventSystems.IPointerExitHandler.OnPointerExit*
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.IPointerExitHandler.OnPointerExit*
+  commentId: Overload:UnityEngine.EventSystems.IPointerExitHandler.OnPointerExit
+  href: UnityEngine.EventSystems.IPointerExitHandler.html#UnityEngine_EventSystems_IPointerExitHandler_OnPointerExit_UnityEngine_EventSystems_PointerEventData_
+  name: OnPointerExit
+  nameWithType: IPointerExitHandler.OnPointerExit
+  fullName: UnityEngine.EventSystems.IPointerExitHandler.OnPointerExit
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerEventData.html
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData

@@ -1,0 +1,730 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.CanvasUpdateRegistry
+  commentId: T:UnityEngine.UI.CanvasUpdateRegistry
+  id: CanvasUpdateRegistry
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.CanvasUpdateRegistry.#ctor
+  - UnityEngine.UI.CanvasUpdateRegistry.DisableCanvasElementForRebuild(UnityEngine.UI.ICanvasElement)
+  - UnityEngine.UI.CanvasUpdateRegistry.IsRebuildingGraphics
+  - UnityEngine.UI.CanvasUpdateRegistry.IsRebuildingLayout
+  - UnityEngine.UI.CanvasUpdateRegistry.RegisterCanvasElementForGraphicRebuild(UnityEngine.UI.ICanvasElement)
+  - UnityEngine.UI.CanvasUpdateRegistry.RegisterCanvasElementForLayoutRebuild(UnityEngine.UI.ICanvasElement)
+  - UnityEngine.UI.CanvasUpdateRegistry.TryRegisterCanvasElementForGraphicRebuild(UnityEngine.UI.ICanvasElement)
+  - UnityEngine.UI.CanvasUpdateRegistry.TryRegisterCanvasElementForLayoutRebuild(UnityEngine.UI.ICanvasElement)
+  - UnityEngine.UI.CanvasUpdateRegistry.UnRegisterCanvasElementForRebuild(UnityEngine.UI.ICanvasElement)
+  - UnityEngine.UI.CanvasUpdateRegistry.instance
+  langs:
+  - csharp
+  - vb
+  name: CanvasUpdateRegistry
+  nameWithType: CanvasUpdateRegistry
+  fullName: UnityEngine.UI.CanvasUpdateRegistry
+  type: Class
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: CanvasUpdateRegistry
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 74
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: A place where CanvasElements can register themselves for rebuilding.
+  example: []
+  syntax:
+    content: public class CanvasUpdateRegistry
+    content.vb: Public Class CanvasUpdateRegistry
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UnityEngine.UI.CanvasUpdateRegistry.#ctor
+  commentId: M:UnityEngine.UI.CanvasUpdateRegistry.#ctor
+  id: '#ctor'
+  parent: UnityEngine.UI.CanvasUpdateRegistry
+  langs:
+  - csharp
+  - vb
+  name: CanvasUpdateRegistry()
+  nameWithType: CanvasUpdateRegistry.CanvasUpdateRegistry()
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.CanvasUpdateRegistry()
+  type: Constructor
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: .ctor
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 88
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  syntax:
+    content: protected CanvasUpdateRegistry()
+    content.vb: Protected Sub New()
+  overload: UnityEngine.UI.CanvasUpdateRegistry.#ctor*
+  nameWithType.vb: CanvasUpdateRegistry.New()
+  fullName.vb: UnityEngine.UI.CanvasUpdateRegistry.New()
+  name.vb: New()
+- uid: UnityEngine.UI.CanvasUpdateRegistry.instance
+  commentId: P:UnityEngine.UI.CanvasUpdateRegistry.instance
+  id: instance
+  parent: UnityEngine.UI.CanvasUpdateRegistry
+  langs:
+  - csharp
+  - vb
+  name: instance
+  nameWithType: CanvasUpdateRegistry.instance
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.instance
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: instance
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 96
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Get the singleton registry instance.
+  example: []
+  syntax:
+    content: public static CanvasUpdateRegistry instance { get; }
+    parameters: []
+    return:
+      type: UnityEngine.UI.CanvasUpdateRegistry
+    content.vb: Public Shared ReadOnly Property instance As CanvasUpdateRegistry
+  overload: UnityEngine.UI.CanvasUpdateRegistry.instance*
+- uid: UnityEngine.UI.CanvasUpdateRegistry.RegisterCanvasElementForLayoutRebuild(UnityEngine.UI.ICanvasElement)
+  commentId: M:UnityEngine.UI.CanvasUpdateRegistry.RegisterCanvasElementForLayoutRebuild(UnityEngine.UI.ICanvasElement)
+  id: RegisterCanvasElementForLayoutRebuild(UnityEngine.UI.ICanvasElement)
+  parent: UnityEngine.UI.CanvasUpdateRegistry
+  langs:
+  - csharp
+  - vb
+  name: RegisterCanvasElementForLayoutRebuild(ICanvasElement)
+  nameWithType: CanvasUpdateRegistry.RegisterCanvasElementForLayoutRebuild(ICanvasElement)
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.RegisterCanvasElementForLayoutRebuild(UnityEngine.UI.ICanvasElement)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: RegisterCanvasElementForLayoutRebuild
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 260
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: >-
+    Try and add the given element to the layout rebuild list.
+
+    Will not return if successfully added.
+  example: []
+  syntax:
+    content: public static void RegisterCanvasElementForLayoutRebuild(ICanvasElement element)
+    parameters:
+    - id: element
+      type: UnityEngine.UI.ICanvasElement
+      description: The element that is needing rebuilt.
+    content.vb: Public Shared Sub RegisterCanvasElementForLayoutRebuild(element As ICanvasElement)
+  overload: UnityEngine.UI.CanvasUpdateRegistry.RegisterCanvasElementForLayoutRebuild*
+- uid: UnityEngine.UI.CanvasUpdateRegistry.TryRegisterCanvasElementForLayoutRebuild(UnityEngine.UI.ICanvasElement)
+  commentId: M:UnityEngine.UI.CanvasUpdateRegistry.TryRegisterCanvasElementForLayoutRebuild(UnityEngine.UI.ICanvasElement)
+  id: TryRegisterCanvasElementForLayoutRebuild(UnityEngine.UI.ICanvasElement)
+  parent: UnityEngine.UI.CanvasUpdateRegistry
+  langs:
+  - csharp
+  - vb
+  name: TryRegisterCanvasElementForLayoutRebuild(ICanvasElement)
+  nameWithType: CanvasUpdateRegistry.TryRegisterCanvasElementForLayoutRebuild(ICanvasElement)
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.TryRegisterCanvasElementForLayoutRebuild(UnityEngine.UI.ICanvasElement)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: TryRegisterCanvasElementForLayoutRebuild
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 273
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Try and add the given element to the layout rebuild list.
+  example: []
+  syntax:
+    content: public static bool TryRegisterCanvasElementForLayoutRebuild(ICanvasElement element)
+    parameters:
+    - id: element
+      type: UnityEngine.UI.ICanvasElement
+      description: The element that is needing rebuilt.
+    return:
+      type: System.Boolean
+      description: >-
+        True if the element was successfully added to the rebuilt list.
+
+        False if either already inside a Graphic Update loop OR has already been added to the list.
+    content.vb: Public Shared Function TryRegisterCanvasElementForLayoutRebuild(element As ICanvasElement) As Boolean
+  overload: UnityEngine.UI.CanvasUpdateRegistry.TryRegisterCanvasElementForLayoutRebuild*
+- uid: UnityEngine.UI.CanvasUpdateRegistry.RegisterCanvasElementForGraphicRebuild(UnityEngine.UI.ICanvasElement)
+  commentId: M:UnityEngine.UI.CanvasUpdateRegistry.RegisterCanvasElementForGraphicRebuild(UnityEngine.UI.ICanvasElement)
+  id: RegisterCanvasElementForGraphicRebuild(UnityEngine.UI.ICanvasElement)
+  parent: UnityEngine.UI.CanvasUpdateRegistry
+  langs:
+  - csharp
+  - vb
+  name: RegisterCanvasElementForGraphicRebuild(ICanvasElement)
+  nameWithType: CanvasUpdateRegistry.RegisterCanvasElementForGraphicRebuild(ICanvasElement)
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.RegisterCanvasElementForGraphicRebuild(UnityEngine.UI.ICanvasElement)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: RegisterCanvasElementForGraphicRebuild
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 298
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: >-
+    Try and add the given element to the rebuild list.
+
+    Will not return if successfully added.
+  example: []
+  syntax:
+    content: public static void RegisterCanvasElementForGraphicRebuild(ICanvasElement element)
+    parameters:
+    - id: element
+      type: UnityEngine.UI.ICanvasElement
+      description: The element that is needing rebuilt.
+    content.vb: Public Shared Sub RegisterCanvasElementForGraphicRebuild(element As ICanvasElement)
+  overload: UnityEngine.UI.CanvasUpdateRegistry.RegisterCanvasElementForGraphicRebuild*
+- uid: UnityEngine.UI.CanvasUpdateRegistry.TryRegisterCanvasElementForGraphicRebuild(UnityEngine.UI.ICanvasElement)
+  commentId: M:UnityEngine.UI.CanvasUpdateRegistry.TryRegisterCanvasElementForGraphicRebuild(UnityEngine.UI.ICanvasElement)
+  id: TryRegisterCanvasElementForGraphicRebuild(UnityEngine.UI.ICanvasElement)
+  parent: UnityEngine.UI.CanvasUpdateRegistry
+  langs:
+  - csharp
+  - vb
+  name: TryRegisterCanvasElementForGraphicRebuild(ICanvasElement)
+  nameWithType: CanvasUpdateRegistry.TryRegisterCanvasElementForGraphicRebuild(ICanvasElement)
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.TryRegisterCanvasElementForGraphicRebuild(UnityEngine.UI.ICanvasElement)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: TryRegisterCanvasElementForGraphicRebuild
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 311
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Try and add the given element to the rebuild list.
+  example: []
+  syntax:
+    content: public static bool TryRegisterCanvasElementForGraphicRebuild(ICanvasElement element)
+    parameters:
+    - id: element
+      type: UnityEngine.UI.ICanvasElement
+      description: The element that is needing rebuilt.
+    return:
+      type: System.Boolean
+      description: >-
+        True if the element was successfully added to the rebuilt list.
+
+        False if either already inside a Graphic Update loop OR has already been added to the list.
+    content.vb: Public Shared Function TryRegisterCanvasElementForGraphicRebuild(element As ICanvasElement) As Boolean
+  overload: UnityEngine.UI.CanvasUpdateRegistry.TryRegisterCanvasElementForGraphicRebuild*
+- uid: UnityEngine.UI.CanvasUpdateRegistry.UnRegisterCanvasElementForRebuild(UnityEngine.UI.ICanvasElement)
+  commentId: M:UnityEngine.UI.CanvasUpdateRegistry.UnRegisterCanvasElementForRebuild(UnityEngine.UI.ICanvasElement)
+  id: UnRegisterCanvasElementForRebuild(UnityEngine.UI.ICanvasElement)
+  parent: UnityEngine.UI.CanvasUpdateRegistry
+  langs:
+  - csharp
+  - vb
+  name: UnRegisterCanvasElementForRebuild(ICanvasElement)
+  nameWithType: CanvasUpdateRegistry.UnRegisterCanvasElementForRebuild(ICanvasElement)
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.UnRegisterCanvasElementForRebuild(UnityEngine.UI.ICanvasElement)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: UnRegisterCanvasElementForRebuild
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 331
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Remove the given element from both the graphic and the layout rebuild lists.
+  example: []
+  syntax:
+    content: public static void UnRegisterCanvasElementForRebuild(ICanvasElement element)
+    parameters:
+    - id: element
+      type: UnityEngine.UI.ICanvasElement
+      description: ''
+    content.vb: Public Shared Sub UnRegisterCanvasElementForRebuild(element As ICanvasElement)
+  overload: UnityEngine.UI.CanvasUpdateRegistry.UnRegisterCanvasElementForRebuild*
+- uid: UnityEngine.UI.CanvasUpdateRegistry.DisableCanvasElementForRebuild(UnityEngine.UI.ICanvasElement)
+  commentId: M:UnityEngine.UI.CanvasUpdateRegistry.DisableCanvasElementForRebuild(UnityEngine.UI.ICanvasElement)
+  id: DisableCanvasElementForRebuild(UnityEngine.UI.ICanvasElement)
+  parent: UnityEngine.UI.CanvasUpdateRegistry
+  langs:
+  - csharp
+  - vb
+  name: DisableCanvasElementForRebuild(ICanvasElement)
+  nameWithType: CanvasUpdateRegistry.DisableCanvasElementForRebuild(ICanvasElement)
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.DisableCanvasElementForRebuild(UnityEngine.UI.ICanvasElement)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: DisableCanvasElementForRebuild
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 341
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Disable the given element from both the graphic and the layout rebuild lists.
+  example: []
+  syntax:
+    content: public static void DisableCanvasElementForRebuild(ICanvasElement element)
+    parameters:
+    - id: element
+      type: UnityEngine.UI.ICanvasElement
+      description: ''
+    content.vb: Public Shared Sub DisableCanvasElementForRebuild(element As ICanvasElement)
+  overload: UnityEngine.UI.CanvasUpdateRegistry.DisableCanvasElementForRebuild*
+- uid: UnityEngine.UI.CanvasUpdateRegistry.IsRebuildingLayout
+  commentId: M:UnityEngine.UI.CanvasUpdateRegistry.IsRebuildingLayout
+  id: IsRebuildingLayout
+  parent: UnityEngine.UI.CanvasUpdateRegistry
+  langs:
+  - csharp
+  - vb
+  name: IsRebuildingLayout()
+  nameWithType: CanvasUpdateRegistry.IsRebuildingLayout()
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.IsRebuildingLayout()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IsRebuildingLayout
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 397
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Are graphics layouts currently being calculated..
+  example: []
+  syntax:
+    content: public static bool IsRebuildingLayout()
+    return:
+      type: System.Boolean
+      description: True if the rebuild loop is CanvasUpdate.Prelayout, CanvasUpdate.Layout or CanvasUpdate.Postlayout
+    content.vb: Public Shared Function IsRebuildingLayout() As Boolean
+  overload: UnityEngine.UI.CanvasUpdateRegistry.IsRebuildingLayout*
+- uid: UnityEngine.UI.CanvasUpdateRegistry.IsRebuildingGraphics
+  commentId: M:UnityEngine.UI.CanvasUpdateRegistry.IsRebuildingGraphics
+  id: IsRebuildingGraphics
+  parent: UnityEngine.UI.CanvasUpdateRegistry
+  langs:
+  - csharp
+  - vb
+  name: IsRebuildingGraphics()
+  nameWithType: CanvasUpdateRegistry.IsRebuildingGraphics()
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.IsRebuildingGraphics()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IsRebuildingGraphics
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 406
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Are graphics currently being rebuild.
+  example: []
+  syntax:
+    content: public static bool IsRebuildingGraphics()
+    return:
+      type: System.Boolean
+      description: True if the rebuild loop is CanvasUpdate.PreRender or CanvasUpdate.Render
+    content.vb: Public Shared Function IsRebuildingGraphics() As Boolean
+  overload: UnityEngine.UI.CanvasUpdateRegistry.IsRebuildingGraphics*
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.UI.CanvasUpdateRegistry.#ctor*
+  commentId: Overload:UnityEngine.UI.CanvasUpdateRegistry.#ctor
+  href: UnityEngine.UI.CanvasUpdateRegistry.html#UnityEngine_UI_CanvasUpdateRegistry__ctor
+  name: CanvasUpdateRegistry
+  nameWithType: CanvasUpdateRegistry.CanvasUpdateRegistry
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.CanvasUpdateRegistry
+  nameWithType.vb: CanvasUpdateRegistry.New
+  fullName.vb: UnityEngine.UI.CanvasUpdateRegistry.New
+  name.vb: New
+- uid: UnityEngine.UI.CanvasUpdateRegistry.instance*
+  commentId: Overload:UnityEngine.UI.CanvasUpdateRegistry.instance
+  href: UnityEngine.UI.CanvasUpdateRegistry.html#UnityEngine_UI_CanvasUpdateRegistry_instance
+  name: instance
+  nameWithType: CanvasUpdateRegistry.instance
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.instance
+- uid: UnityEngine.UI.CanvasUpdateRegistry
+  commentId: T:UnityEngine.UI.CanvasUpdateRegistry
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.CanvasUpdateRegistry.html
+  name: CanvasUpdateRegistry
+  nameWithType: CanvasUpdateRegistry
+  fullName: UnityEngine.UI.CanvasUpdateRegistry
+- uid: UnityEngine.UI.CanvasUpdateRegistry.RegisterCanvasElementForLayoutRebuild*
+  commentId: Overload:UnityEngine.UI.CanvasUpdateRegistry.RegisterCanvasElementForLayoutRebuild
+  href: UnityEngine.UI.CanvasUpdateRegistry.html#UnityEngine_UI_CanvasUpdateRegistry_RegisterCanvasElementForLayoutRebuild_UnityEngine_UI_ICanvasElement_
+  name: RegisterCanvasElementForLayoutRebuild
+  nameWithType: CanvasUpdateRegistry.RegisterCanvasElementForLayoutRebuild
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.RegisterCanvasElementForLayoutRebuild
+- uid: UnityEngine.UI.ICanvasElement
+  commentId: T:UnityEngine.UI.ICanvasElement
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ICanvasElement.html
+  name: ICanvasElement
+  nameWithType: ICanvasElement
+  fullName: UnityEngine.UI.ICanvasElement
+- uid: UnityEngine.UI.CanvasUpdateRegistry.TryRegisterCanvasElementForLayoutRebuild*
+  commentId: Overload:UnityEngine.UI.CanvasUpdateRegistry.TryRegisterCanvasElementForLayoutRebuild
+  href: UnityEngine.UI.CanvasUpdateRegistry.html#UnityEngine_UI_CanvasUpdateRegistry_TryRegisterCanvasElementForLayoutRebuild_UnityEngine_UI_ICanvasElement_
+  name: TryRegisterCanvasElementForLayoutRebuild
+  nameWithType: CanvasUpdateRegistry.TryRegisterCanvasElementForLayoutRebuild
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.TryRegisterCanvasElementForLayoutRebuild
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.UI.CanvasUpdateRegistry.RegisterCanvasElementForGraphicRebuild*
+  commentId: Overload:UnityEngine.UI.CanvasUpdateRegistry.RegisterCanvasElementForGraphicRebuild
+  href: UnityEngine.UI.CanvasUpdateRegistry.html#UnityEngine_UI_CanvasUpdateRegistry_RegisterCanvasElementForGraphicRebuild_UnityEngine_UI_ICanvasElement_
+  name: RegisterCanvasElementForGraphicRebuild
+  nameWithType: CanvasUpdateRegistry.RegisterCanvasElementForGraphicRebuild
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.RegisterCanvasElementForGraphicRebuild
+- uid: UnityEngine.UI.CanvasUpdateRegistry.TryRegisterCanvasElementForGraphicRebuild*
+  commentId: Overload:UnityEngine.UI.CanvasUpdateRegistry.TryRegisterCanvasElementForGraphicRebuild
+  href: UnityEngine.UI.CanvasUpdateRegistry.html#UnityEngine_UI_CanvasUpdateRegistry_TryRegisterCanvasElementForGraphicRebuild_UnityEngine_UI_ICanvasElement_
+  name: TryRegisterCanvasElementForGraphicRebuild
+  nameWithType: CanvasUpdateRegistry.TryRegisterCanvasElementForGraphicRebuild
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.TryRegisterCanvasElementForGraphicRebuild
+- uid: UnityEngine.UI.CanvasUpdateRegistry.UnRegisterCanvasElementForRebuild*
+  commentId: Overload:UnityEngine.UI.CanvasUpdateRegistry.UnRegisterCanvasElementForRebuild
+  href: UnityEngine.UI.CanvasUpdateRegistry.html#UnityEngine_UI_CanvasUpdateRegistry_UnRegisterCanvasElementForRebuild_UnityEngine_UI_ICanvasElement_
+  name: UnRegisterCanvasElementForRebuild
+  nameWithType: CanvasUpdateRegistry.UnRegisterCanvasElementForRebuild
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.UnRegisterCanvasElementForRebuild
+- uid: UnityEngine.UI.CanvasUpdateRegistry.DisableCanvasElementForRebuild*
+  commentId: Overload:UnityEngine.UI.CanvasUpdateRegistry.DisableCanvasElementForRebuild
+  href: UnityEngine.UI.CanvasUpdateRegistry.html#UnityEngine_UI_CanvasUpdateRegistry_DisableCanvasElementForRebuild_UnityEngine_UI_ICanvasElement_
+  name: DisableCanvasElementForRebuild
+  nameWithType: CanvasUpdateRegistry.DisableCanvasElementForRebuild
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.DisableCanvasElementForRebuild
+- uid: UnityEngine.UI.CanvasUpdateRegistry.IsRebuildingLayout*
+  commentId: Overload:UnityEngine.UI.CanvasUpdateRegistry.IsRebuildingLayout
+  href: UnityEngine.UI.CanvasUpdateRegistry.html#UnityEngine_UI_CanvasUpdateRegistry_IsRebuildingLayout
+  name: IsRebuildingLayout
+  nameWithType: CanvasUpdateRegistry.IsRebuildingLayout
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.IsRebuildingLayout
+- uid: UnityEngine.UI.CanvasUpdateRegistry.IsRebuildingGraphics*
+  commentId: Overload:UnityEngine.UI.CanvasUpdateRegistry.IsRebuildingGraphics
+  href: UnityEngine.UI.CanvasUpdateRegistry.html#UnityEngine_UI_CanvasUpdateRegistry_IsRebuildingGraphics
+  name: IsRebuildingGraphics
+  nameWithType: CanvasUpdateRegistry.IsRebuildingGraphics
+  fullName: UnityEngine.UI.CanvasUpdateRegistry.IsRebuildingGraphics

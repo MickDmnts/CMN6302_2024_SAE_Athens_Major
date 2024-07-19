@@ -1,0 +1,19 @@
+var NAVTREEINDEX1 =
+{
+"structmsgpack_1_1is__container_3_01std_1_1vector_3_01_t_00_01_alloc_01_4_01_4.html":[0,0,0,5],
+"structmsgpack_1_1is__container_3_01std_1_1vector_3_01_t_00_01_alloc_01_4_01_4.html":[1,0,0,5],
+"structmsgpack_1_1is__map.html":[0,0,0,6],
+"structmsgpack_1_1is__map.html":[1,0,0,6],
+"structmsgpack_1_1is__map_3_01std_1_1map_3_01_t_00_01_alloc_01_4_01_4.html":[0,0,0,7],
+"structmsgpack_1_1is__map_3_01std_1_1map_3_01_t_00_01_alloc_01_4_01_4.html":[1,0,0,7],
+"structmsgpack_1_1is__map_3_01std_1_1unordered__map_3_01_t_00_01_alloc_01_4_01_4.html":[0,0,0,8],
+"structmsgpack_1_1is__map_3_01std_1_1unordered__map_3_01_t_00_01_alloc_01_4_01_4.html":[1,0,0,8],
+"structmsgpack_1_1is__stdarray.html":[0,0,0,9],
+"structmsgpack_1_1is__stdarray.html":[1,0,0,9],
+"structmsgpack_1_1is__stdarray_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html":[0,0,0,10],
+"structmsgpack_1_1is__stdarray_3_01std_1_1array_3_01_t_00_01_n_01_4_01_4.html":[1,0,0,10],
+"structmsgpack_1_1skip.html":[0,0,0,12],
+"structmsgpack_1_1skip.html":[1,0,0,12],
+"structstd_1_1is__error__code__enum_3_01msgpack_1_1_unpacker_error_01_4.html":[0,0,1,0],
+"structstd_1_1is__error__code__enum_3_01msgpack_1_1_unpacker_error_01_4.html":[1,0,1,0]
+};

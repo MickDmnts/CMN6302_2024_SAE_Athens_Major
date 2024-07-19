@@ -1,0 +1,99 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.IPointerDownHandler
+  commentId: T:UnityEngine.EventSystems.IPointerDownHandler
+  id: IPointerDownHandler
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.IPointerDownHandler.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  langs:
+  - csharp
+  - vb
+  name: IPointerDownHandler
+  nameWithType: IPointerDownHandler
+  fullName: UnityEngine.EventSystems.IPointerDownHandler
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IPointerDownHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 57
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Interface to implement if you wish to receive OnPointerDown callbacks.
+  remarks: Criteria for this event is implementation dependent. For example see StandAloneInputModule.
+  example: []
+  syntax:
+    content: 'public interface IPointerDownHandler : IEventSystemHandler'
+    content.vb: Public Interface IPointerDownHandler Inherits IEventSystemHandler
+- uid: UnityEngine.EventSystems.IPointerDownHandler.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:UnityEngine.EventSystems.IPointerDownHandler.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  id: OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  parent: UnityEngine.EventSystems.IPointerDownHandler
+  langs:
+  - csharp
+  - vb
+  name: OnPointerDown(PointerEventData)
+  nameWithType: IPointerDownHandler.OnPointerDown(PointerEventData)
+  fullName: UnityEngine.EventSystems.IPointerDownHandler.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OnPointerDown
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 62
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Use this callback to detect pointer down events.
+  example: []
+  syntax:
+    content: void OnPointerDown(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Sub OnPointerDown(eventData As PointerEventData)
+  overload: UnityEngine.EventSystems.IPointerDownHandler.OnPointerDown*
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.IPointerDownHandler.OnPointerDown*
+  commentId: Overload:UnityEngine.EventSystems.IPointerDownHandler.OnPointerDown
+  href: UnityEngine.EventSystems.IPointerDownHandler.html#UnityEngine_EventSystems_IPointerDownHandler_OnPointerDown_UnityEngine_EventSystems_PointerEventData_
+  name: OnPointerDown
+  nameWithType: IPointerDownHandler.OnPointerDown
+  fullName: UnityEngine.EventSystems.IPointerDownHandler.OnPointerDown
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerEventData.html
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData

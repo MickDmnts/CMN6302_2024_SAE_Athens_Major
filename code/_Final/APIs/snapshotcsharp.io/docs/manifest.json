@@ -1,0 +1,4687 @@
+{
+  "source_base_path": "C:/Users/micha/Desktop/Repos/CMN6302_2024_SAE_Athens_Major/code/unityProject/development/SnapshotDevelopment/apiDocs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.ExtensionHeader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.ExtensionHeader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.ExtensionResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.ExtensionResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.FormatterNotRegisteredException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.FormatterNotRegisteredException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.FormatterResolverExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.FormatterResolverExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ArrayFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ArrayFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ArraySegmentFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ArraySegmentFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.BigIntegerFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.BigIntegerFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.BitArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.BitArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.BooleanArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.BooleanArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.BooleanFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.BooleanFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ByteArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ByteArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ByteArraySegmentFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ByteArraySegmentFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ByteFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ByteFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ByteMemoryFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ByteMemoryFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ByteReadOnlyMemoryFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ByteReadOnlyMemoryFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ByteReadOnlySequenceFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ByteReadOnlySequenceFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.CharArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.CharArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.CharFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.CharFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.CollectionFormatterBase-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.CollectionFormatterBase-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.CollectionFormatterBase-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.CollectionFormatterBase-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.CollectionFormatterBase-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.CollectionFormatterBase-4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ComplexFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ComplexFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ConcurrentBagFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ConcurrentBagFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ConcurrentDictionaryFormatter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ConcurrentDictionaryFormatter-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ConcurrentQueueFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ConcurrentQueueFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ConcurrentStackFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ConcurrentStackFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.DateTimeArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.DateTimeArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.DateTimeFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.DateTimeFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.DateTimeOffsetFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.DateTimeOffsetFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.DecimalFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.DecimalFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.DictionaryFormatter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.DictionaryFormatter-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.DictionaryFormatterBase-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.DictionaryFormatterBase-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.DictionaryFormatterBase-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.DictionaryFormatterBase-4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.DictionaryFormatterBase-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.DictionaryFormatterBase-5.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.DoubleArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.DoubleArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.DoubleFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.DoubleFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.DynamicObjectTypeFallbackFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.DynamicObjectTypeFallbackFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.EnumAsStringFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.EnumAsStringFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ExpandoObjectFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ExpandoObjectFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ForceByteBlockFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ForceByteBlockFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ForceInt16BlockArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ForceInt16BlockArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ForceInt16BlockFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ForceInt16BlockFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ForceInt32BlockArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ForceInt32BlockArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ForceInt32BlockFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ForceInt32BlockFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ForceInt64BlockArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ForceInt64BlockArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ForceInt64BlockFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ForceInt64BlockFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ForceSByteBlockArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ForceSByteBlockArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ForceSByteBlockFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ForceSByteBlockFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ForceTypelessFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ForceTypelessFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ForceUInt16BlockArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ForceUInt16BlockArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ForceUInt16BlockFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ForceUInt16BlockFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ForceUInt32BlockArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ForceUInt32BlockArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ForceUInt32BlockFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ForceUInt32BlockFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ForceUInt64BlockArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ForceUInt64BlockArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ForceUInt64BlockFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ForceUInt64BlockFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.FourDimensionalArrayFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.FourDimensionalArrayFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.GenericCollectionFormatter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.GenericCollectionFormatter-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.GenericDictionaryFormatter-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.GenericDictionaryFormatter-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.GenericEnumFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.GenericEnumFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.GenericEnumerableFormatter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.GenericEnumerableFormatter-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.GenericReadOnlyDictionaryFormatter-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.GenericReadOnlyDictionaryFormatter-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.GuidFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.GuidFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.HashSetFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.HashSetFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.IMessagePackFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.IMessagePackFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.IgnoreFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.IgnoreFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.Int16ArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.Int16ArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.Int16Formatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.Int16Formatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.Int32ArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.Int32ArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.Int32Formatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.Int32Formatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.Int64ArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.Int64ArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.Int64Formatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.Int64Formatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.InterfaceCollectionFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.InterfaceCollectionFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.InterfaceCollectionFormatter2-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.InterfaceCollectionFormatter2-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.InterfaceDictionaryFormatter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.InterfaceDictionaryFormatter-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.InterfaceEnumerableFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.InterfaceEnumerableFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.InterfaceGroupingFormatter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.InterfaceGroupingFormatter-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.InterfaceListFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.InterfaceListFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.InterfaceListFormatter2-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.InterfaceListFormatter2-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.InterfaceLookupFormatter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.InterfaceLookupFormatter-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.InterfaceReadOnlyCollectionFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.InterfaceReadOnlyCollectionFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.InterfaceReadOnlyDictionaryFormatter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.InterfaceReadOnlyDictionaryFormatter-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.InterfaceReadOnlyListFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.InterfaceReadOnlyListFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.InterfaceSetFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.InterfaceSetFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.KeyValuePairFormatter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.KeyValuePairFormatter-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.LazyFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.LazyFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.LinkedListFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.LinkedListFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ListFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ListFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.MemoryFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.MemoryFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NativeDateTimeArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NativeDateTimeArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NativeDateTimeFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NativeDateTimeFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NativeDecimalFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NativeDecimalFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NativeGuidFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NativeGuidFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NilFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NilFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NonGenericDictionaryFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NonGenericDictionaryFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NonGenericInterfaceCollectionFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NonGenericInterfaceCollectionFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NonGenericInterfaceDictionaryFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NonGenericInterfaceDictionaryFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NonGenericInterfaceEnumerableFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NonGenericInterfaceEnumerableFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NonGenericInterfaceListFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NonGenericInterfaceListFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NonGenericListFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NonGenericListFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableBooleanFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableBooleanFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableByteFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableByteFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableCharFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableCharFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableDateTimeFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableDateTimeFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableDoubleFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableDoubleFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableForceByteBlockFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableForceByteBlockFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableForceInt16BlockFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableForceInt16BlockFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableForceInt32BlockFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableForceInt32BlockFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableForceInt64BlockFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableForceInt64BlockFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableForceSByteBlockFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableForceSByteBlockFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableForceUInt16BlockFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableForceUInt16BlockFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableForceUInt32BlockFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableForceUInt32BlockFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableForceUInt64BlockFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableForceUInt64BlockFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableInt16Formatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableInt16Formatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableInt32Formatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableInt32Formatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableInt64Formatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableInt64Formatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableNilFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableNilFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableSByteFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableSByteFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableSingleFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableSingleFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableStringArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableStringArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableStringFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableStringFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableUInt16Formatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableUInt16Formatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableUInt32Formatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableUInt32Formatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.NullableUInt64Formatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.NullableUInt64Formatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ObservableCollectionFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ObservableCollectionFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.PrimitiveObjectFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.PrimitiveObjectFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.QueueFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.QueueFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ReadOnlyCollectionFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ReadOnlyCollectionFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ReadOnlyDictionaryFormatter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ReadOnlyDictionaryFormatter-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ReadOnlyMemoryFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ReadOnlyMemoryFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ReadOnlyObservableCollectionFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ReadOnlyObservableCollectionFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ReadOnlySequenceFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ReadOnlySequenceFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.SByteArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.SByteArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.SByteFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.SByteFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.SingleArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.SingleArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.SingleFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.SingleFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.SortedDictionaryFormatter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.SortedDictionaryFormatter-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.SortedListFormatter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.SortedListFormatter-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.StackFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.StackFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.StaticNullableFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.StaticNullableFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.StringBuilderFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.StringBuilderFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.StringInterningFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.StringInterningFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ThreeDimensionalArrayFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ThreeDimensionalArrayFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.TimeSpanFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.TimeSpanFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.TupleFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.TupleFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.TupleFormatter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.TupleFormatter-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.TupleFormatter-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.TupleFormatter-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.TupleFormatter-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.TupleFormatter-4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.TupleFormatter-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.TupleFormatter-5.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.TupleFormatter-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.TupleFormatter-6.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.TupleFormatter-7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.TupleFormatter-7.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.TupleFormatter-8.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.TupleFormatter-8.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.TwoDimensionalArrayFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.TwoDimensionalArrayFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.TypeFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.TypeFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.TypelessFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.TypelessFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.UInt16ArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.UInt16ArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.UInt16Formatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.UInt16Formatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.UInt32ArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.UInt32ArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.UInt32Formatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.UInt32Formatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.UInt64ArrayFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.UInt64ArrayFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.UInt64Formatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.UInt64Formatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.UriFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.UriFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ValueTupleFormatter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ValueTupleFormatter-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ValueTupleFormatter-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ValueTupleFormatter-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ValueTupleFormatter-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ValueTupleFormatter-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ValueTupleFormatter-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ValueTupleFormatter-4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ValueTupleFormatter-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ValueTupleFormatter-5.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ValueTupleFormatter-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ValueTupleFormatter-6.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ValueTupleFormatter-7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ValueTupleFormatter-7.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.ValueTupleFormatter-8.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.ValueTupleFormatter-8.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.VersionFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.VersionFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Formatters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Formatters.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.IFormatterResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.IFormatterResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.IMessagePackSerializationCallbackReceiver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.IMessagePackSerializationCallbackReceiver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.IgnoreMemberAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.IgnoreMemberAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Internal.AutomataDictionary.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Internal.AutomataDictionary.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Internal.AutomataKeyGen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Internal.AutomataKeyGen.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Internal.ByteArrayStringHashTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Internal.ByteArrayStringHashTable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Internal.RuntimeTypeHandleEqualityComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Internal.RuntimeTypeHandleEqualityComparer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Internal.UnsafeMemory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Internal.UnsafeMemory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Internal.UnsafeMemory32.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Internal.UnsafeMemory32.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Internal.UnsafeMemory64.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Internal.UnsafeMemory64.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Internal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Internal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.KeyAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.KeyAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.MessagePackCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.MessagePackCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.MessagePackCompression.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.MessagePackCompression.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.MessagePackFormatterAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.MessagePackFormatterAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.MessagePackObjectAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.MessagePackObjectAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.MessagePackRange.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.MessagePackRange.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.MessagePackReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.MessagePackReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.MessagePackSecurity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.MessagePackSecurity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.MessagePackSerializationException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.MessagePackSerializationException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.MessagePackSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.MessagePackSerializer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.MessagePackSerializerOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.MessagePackSerializerOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.MessagePackStreamReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.MessagePackStreamReader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.MessagePackType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.MessagePackType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.MessagePackWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.MessagePackWriter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Nil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Nil.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.ReservedMessagePackExtensionTypeCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.ReservedMessagePackExtensionTypeCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.AttributeFormatterResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.AttributeFormatterResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.BuiltinResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.BuiltinResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.CompositeResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.CompositeResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.ContractlessStandardResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.ContractlessStandardResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.ContractlessStandardResolverAllowPrivate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.ContractlessStandardResolverAllowPrivate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.DynamicContractlessObjectResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.DynamicContractlessObjectResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.DynamicContractlessObjectResolverAllowPrivate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.DynamicContractlessObjectResolverAllowPrivate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.DynamicEnumAsStringResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.DynamicEnumAsStringResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.DynamicEnumResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.DynamicEnumResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.DynamicGenericResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.DynamicGenericResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.DynamicObjectResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.DynamicObjectResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.DynamicObjectResolverAllowPrivate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.DynamicObjectResolverAllowPrivate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.DynamicUnionResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.DynamicUnionResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.ExpandoObjectResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.ExpandoObjectResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.NativeDateTimeResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.NativeDateTimeResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.NativeDecimalResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.NativeDecimalResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.NativeGuidResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.NativeGuidResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.PrimitiveObjectResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.PrimitiveObjectResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.StandardResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.StandardResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.StandardResolverAllowPrivate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.StandardResolverAllowPrivate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.StaticCompositeResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.StaticCompositeResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.TypelessContractlessStandardResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.TypelessContractlessStandardResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.TypelessObjectResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.TypelessObjectResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Resolvers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Resolvers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.SequencePool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.SequencePool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.SerializationConstructorAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.SerializationConstructorAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.TinyJsonException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.TinyJsonException.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.UnionAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.UnionAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.AnimationCurveFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.AnimationCurveFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.BoundsFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.BoundsFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.Color32Formatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.Color32Formatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.ColorFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.ColorFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.Extension.BoundsArrayBlitFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.Extension.BoundsArrayBlitFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.Extension.ColorArrayBlitFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.Extension.ColorArrayBlitFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.Extension.DoubleArrayBlitFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.Extension.DoubleArrayBlitFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.Extension.FloatArrayBlitFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.Extension.FloatArrayBlitFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.Extension.IntArrayBlitFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.Extension.IntArrayBlitFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.Extension.QuaternionArrayBlitFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.Extension.QuaternionArrayBlitFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.Extension.RectArrayBlitFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.Extension.RectArrayBlitFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.Extension.UnityBlitResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.Extension.UnityBlitResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.Extension.UnityBlitWithPrimitiveArrayResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.Extension.UnityBlitWithPrimitiveArrayResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.Extension.Vector2ArrayBlitFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.Extension.Vector2ArrayBlitFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.Extension.Vector3ArrayBlitFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.Extension.Vector3ArrayBlitFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.Extension.Vector4ArrayBlitFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.Extension.Vector4ArrayBlitFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.Extension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.Extension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.GradientAlphaKeyFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.GradientAlphaKeyFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.GradientColorKeyFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.GradientColorKeyFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.GradientFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.GradientFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.GradientModeFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.GradientModeFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.KeyframeFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.KeyframeFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.LayerMaskFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.LayerMaskFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.Matrix4x4Formatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.Matrix4x4Formatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.QuaternionFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.QuaternionFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.RectFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.RectFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.RectOffsetFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.RectOffsetFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.UnityResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.UnityResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.Vector2Formatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.Vector2Formatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.Vector3Formatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.Vector3Formatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.Vector4Formatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.Vector4Formatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.WrapModeFormatter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.WrapModeFormatter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.Unity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.Unity.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/MessagePack.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/MessagePack.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProposedArchitecture.Common.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProposedArchitecture.Common.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProposedArchitecture.GlobalProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProposedArchitecture.GlobalProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProposedArchitecture.ISnapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProposedArchitecture.ISnapshot.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProposedArchitecture.ISnapshotModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProposedArchitecture.ISnapshotModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProposedArchitecture.Inventory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProposedArchitecture.Inventory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProposedArchitecture.Player.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProposedArchitecture.Player.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProposedArchitecture.SInventory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProposedArchitecture.SInventory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProposedArchitecture.SPlayer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProposedArchitecture.SPlayer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProposedArchitecture.SWeapon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProposedArchitecture.SWeapon.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProposedArchitecture.SaveManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProposedArchitecture.SaveManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProposedArchitecture.Weapon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProposedArchitecture.Weapon.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProposedArchitecture.WorldLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProposedArchitecture.WorldLoader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProposedArchitecture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProposedArchitecture.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snapshot.SnapshotWrapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snapshot.SnapshotWrapper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Snapshot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Snapshot.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.EventSystems.EventSystemEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.EventSystems.EventSystemEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.EventSystems.EventTriggerEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.EventSystems.EventTriggerEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.EventSystems.Physics2DRaycasterEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.EventSystems.Physics2DRaycasterEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.EventSystems.PhysicsRaycasterEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.EventSystems.PhysicsRaycasterEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.EventSystems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.EventSystems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.AnimationTriggersDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.AnimationTriggersDrawer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.AspectRatioFitterEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.AspectRatioFitterEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.ButtonEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.ButtonEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.CanvasScalerEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.CanvasScalerEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.ColorBlockDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.ColorBlockDrawer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.ContentSizeFitterEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.ContentSizeFitterEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.DropdownEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.DropdownEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.FontDataDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.FontDataDrawer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.GraphicEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.GraphicEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.GridLayoutGroupEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.GridLayoutGroupEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.HorizontalOrVerticalLayoutGroupEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.HorizontalOrVerticalLayoutGroupEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.ImageEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.ImageEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.InputFieldEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.InputFieldEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.LayoutElementEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.LayoutElementEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.MaskEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.MaskEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.NavigationDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.NavigationDrawer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.RawImageEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.RawImageEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.RectMask2DEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.RectMask2DEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.ScrollRectEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.ScrollRectEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.ScrollbarEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.ScrollbarEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.SelectableEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.SelectableEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.SelfControllerEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.SelfControllerEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.SliderEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.SliderEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.SpriteStateDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.SpriteStateDrawer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.TextEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.TextEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.ToggleEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.ToggleEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEditor.UI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEditor.UI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.AbstractEventData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.AbstractEventData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.AxisEventData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.AxisEventData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.BaseEventData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.BaseEventData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.BaseInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.BaseInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.BaseInputModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.BaseInputModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.BaseRaycaster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.BaseRaycaster.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.EventHandle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.EventHandle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.EventSystem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.EventSystem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.EventTrigger.Entry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.EventTrigger.Entry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.EventTrigger.TriggerEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.EventTrigger.TriggerEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.EventTrigger.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.EventTrigger.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.EventTriggerType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.EventTriggerType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.ExecuteEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.ExecuteEvents.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.IBeginDragHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.IBeginDragHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.ICancelHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.ICancelHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.IDeselectHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.IDeselectHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.IDragHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.IDragHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.IDropHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.IDropHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.IEndDragHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.IEndDragHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.IEventSystemHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.IEventSystemHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.IInitializePotentialDragHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.IInitializePotentialDragHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.IMoveHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.IMoveHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.IPointerClickHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.IPointerClickHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.IPointerDownHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.IPointerDownHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.IPointerEnterHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.IPointerEnterHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.IPointerExitHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.IPointerExitHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.IPointerMoveHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.IPointerMoveHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.IPointerUpHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.IPointerUpHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.IScrollHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.IScrollHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.ISelectHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.ISelectHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.ISubmitHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.ISubmitHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.IUpdateSelectedHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.IUpdateSelectedHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.MoveDirection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.MoveDirection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.Physics2DRaycaster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.Physics2DRaycaster.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.PhysicsRaycaster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.PhysicsRaycaster.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.PointerEventData.FramePressState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.PointerEventData.FramePressState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.PointerEventData.InputButton.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.PointerEventData.InputButton.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.PointerEventData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.PointerEventData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.PointerInputModule.ButtonState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.PointerInputModule.ButtonState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.PointerInputModule.MouseButtonEventData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.PointerInputModule.MouseButtonEventData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.PointerInputModule.MouseState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.PointerInputModule.MouseState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.PointerInputModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.PointerInputModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.RaycastResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.RaycastResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.RaycasterManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.RaycasterManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.StandaloneInputModule.InputMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.StandaloneInputModule.InputMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.StandaloneInputModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.StandaloneInputModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.TouchInputModule.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.TouchInputModule.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.UIBehaviour.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.UIBehaviour.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.EventSystems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.EventSystems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.AnimationTriggers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.AnimationTriggers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.AspectRatioFitter.AspectMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.AspectRatioFitter.AspectMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.AspectRatioFitter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.AspectRatioFitter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.BaseMeshEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.BaseMeshEffect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.BaseVertexEffect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.BaseVertexEffect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Button.ButtonClickedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Button.ButtonClickedEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Button.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Button.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.CanvasScaler.ScaleMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.CanvasScaler.ScaleMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.CanvasScaler.ScreenMatchMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.CanvasScaler.ScreenMatchMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.CanvasScaler.Unit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.CanvasScaler.Unit.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.CanvasScaler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.CanvasScaler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.CanvasUpdate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.CanvasUpdate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.CanvasUpdateRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.CanvasUpdateRegistry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.ClipperRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.ClipperRegistry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Clipping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Clipping.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.ColorBlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.ColorBlock.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.ContentSizeFitter.FitMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.ContentSizeFitter.FitMode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.ContentSizeFitter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.ContentSizeFitter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.DefaultControls.IFactoryControls.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.DefaultControls.IFactoryControls.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.DefaultControls.Resources.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.DefaultControls.Resources.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.DefaultControls.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.DefaultControls.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Dropdown.DropdownEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Dropdown.DropdownEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Dropdown.DropdownItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Dropdown.DropdownItem.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Dropdown.OptionData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Dropdown.OptionData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Dropdown.OptionDataList.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Dropdown.OptionDataList.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Dropdown.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Dropdown.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.FontData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.FontData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.FontUpdateTracker.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.FontUpdateTracker.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Graphic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Graphic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.GraphicRaycaster.BlockingObjects.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.GraphicRaycaster.BlockingObjects.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.GraphicRaycaster.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.GraphicRaycaster.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.GraphicRegistry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.GraphicRegistry.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.GridLayoutGroup.Axis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.GridLayoutGroup.Axis.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.GridLayoutGroup.Constraint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.GridLayoutGroup.Constraint.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.GridLayoutGroup.Corner.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.GridLayoutGroup.Corner.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.GridLayoutGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.GridLayoutGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.HorizontalLayoutGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.HorizontalLayoutGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.HorizontalOrVerticalLayoutGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.ICanvasElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.ICanvasElement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.IClippable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.IClippable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.IClipper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.IClipper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.ILayoutController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.ILayoutController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.ILayoutElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.ILayoutElement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.ILayoutGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.ILayoutGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.ILayoutIgnorer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.ILayoutIgnorer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.ILayoutSelfController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.ILayoutSelfController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.IMaskable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.IMaskable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.IMaterialModifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.IMaterialModifier.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.IMeshModifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.IMeshModifier.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Image.FillMethod.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Image.FillMethod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Image.Origin180.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Image.Origin180.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Image.Origin360.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Image.Origin360.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Image.Origin90.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Image.Origin90.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Image.OriginHorizontal.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Image.OriginHorizontal.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Image.OriginVertical.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Image.OriginVertical.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Image.Type.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Image.Type.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Image.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.InputField.CharacterValidation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.InputField.CharacterValidation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.InputField.ContentType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.InputField.ContentType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.InputField.EditState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.InputField.EditState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.InputField.EndEditEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.InputField.EndEditEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.InputField.InputType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.InputField.InputType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.InputField.LineType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.InputField.LineType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.InputField.OnChangeEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.InputField.OnChangeEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.InputField.OnValidateInput.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.InputField.OnValidateInput.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.InputField.SubmitEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.InputField.SubmitEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.InputField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.InputField.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.LayoutElement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.LayoutElement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.LayoutGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.LayoutGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.LayoutRebuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.LayoutRebuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.LayoutUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.LayoutUtility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Mask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Mask.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.MaskUtilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.MaskUtilities.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.MaskableGraphic.CullStateChangedEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.MaskableGraphic.CullStateChangedEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.MaskableGraphic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.MaskableGraphic.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Navigation.Mode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Navigation.Mode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Navigation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Navigation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Outline.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Outline.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.PositionAsUV1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.PositionAsUV1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.RawImage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.RawImage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.RectMask2D.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.RectMask2D.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.ScrollRect.MovementType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.ScrollRect.MovementType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.ScrollRect.ScrollRectEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.ScrollRect.ScrollRectEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.ScrollRect.ScrollbarVisibility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.ScrollRect.ScrollbarVisibility.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.ScrollRect.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.ScrollRect.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Scrollbar.Direction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Scrollbar.Direction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Scrollbar.ScrollEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Scrollbar.ScrollEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Scrollbar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Scrollbar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Selectable.SelectionState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Selectable.SelectionState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Selectable.Transition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Selectable.Transition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Selectable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Selectable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Shadow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Shadow.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Slider.Direction.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Slider.Direction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Slider.SliderEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Slider.SliderEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Slider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Slider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.SpriteState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.SpriteState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.StencilMaterial.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.StencilMaterial.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Text.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Text.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Toggle.ToggleEvent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Toggle.ToggleEvent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Toggle.ToggleTransition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Toggle.ToggleTransition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.Toggle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.Toggle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.ToggleGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.ToggleGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.VertexHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.VertexHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.VerticalLayoutGroup.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.VerticalLayoutGroup.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UnityEngine.UI.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UnityEngine.UI.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,2261 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Image </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Image ">
+      
+      <meta name="description" content="Image is a textured element in the UI hierarchy.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/new/mad/apiSpec/new?filename=UnityEngine_UI_Image.md&amp;value=---%0Auid%3A%20UnityEngine.UI.Image%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UnityEngine.UI.Image">
+
+
+
+  <h1 id="UnityEngine_UI_Image" data-uid="UnityEngine.UI.Image" class="text-break">
+Class Image  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L17"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UnityEngine.html">UnityEngine</a>.<a class="xref" href="UnityEngine.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UnityEngine.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Image is a textured element in the UI hierarchy.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RequireComponent(typeof(CanvasRenderer))]
+[AddComponentMenu(&quot;UI/Image&quot;, 11)]
+public class Image : MaskableGraphic, ICanvasElement, IClippable, IMaskable, IMaterialModifier, ISerializationCallbackReceiver, ILayoutElement, ICanvasRaycastFilter</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html">UIBehaviour</a></div>
+      <div><a class="xref" href="UnityEngine.UI.Graphic.html">Graphic</a></div>
+      <div><a class="xref" href="UnityEngine.UI.MaskableGraphic.html">MaskableGraphic</a></div>
+      <div><span class="xref">Image</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="UnityEngine.UI.ICanvasElement.html">ICanvasElement</a></div>
+      <div><a class="xref" href="UnityEngine.UI.IClippable.html">IClippable</a></div>
+      <div><a class="xref" href="UnityEngine.UI.IMaskable.html">IMaskable</a></div>
+      <div><a class="xref" href="UnityEngine.UI.IMaterialModifier.html">IMaterialModifier</a></div>
+      <div><span class="xref">ISerializationCallbackReceiver</span></div>
+      <div><a class="xref" href="UnityEngine.UI.ILayoutElement.html">ILayoutElement</a></div>
+      <div><span class="xref">ICanvasRaycastFilter</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_m_ShouldRecalculateStencil">MaskableGraphic.m_ShouldRecalculateStencil</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_m_MaskMaterial">MaskableGraphic.m_MaskMaterial</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_onCullStateChanged">MaskableGraphic.onCullStateChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_maskable">MaskableGraphic.maskable</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_isMaskingGraphic">MaskableGraphic.isMaskingGraphic</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_m_StencilValue">MaskableGraphic.m_StencilValue</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_GetModifiedMaterial_UnityEngine_Material_">MaskableGraphic.GetModifiedMaterial(Material)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_Cull_UnityEngine_Rect_System_Boolean_">MaskableGraphic.Cull(Rect, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_SetClipRect_UnityEngine_Rect_System_Boolean_">MaskableGraphic.SetClipRect(Rect, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_SetClipSoftness_UnityEngine_Vector2_">MaskableGraphic.SetClipSoftness(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_OnTransformParentChanged">MaskableGraphic.OnTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_RecalculateClipping">MaskableGraphic.RecalculateClipping()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_RecalculateMasking">MaskableGraphic.RecalculateMasking()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_s_DefaultUI">Graphic.s_DefaultUI</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_s_WhiteTexture">Graphic.s_WhiteTexture</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_defaultGraphicMaterial">Graphic.defaultGraphicMaterial</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_Material">Graphic.m_Material</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_SkipLayoutUpdate">Graphic.m_SkipLayoutUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_SkipMaterialUpdate">Graphic.m_SkipMaterialUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_color">Graphic.color</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_raycastTarget">Graphic.raycastTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_raycastPadding">Graphic.raycastPadding</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_OnDirtyLayoutCallback">Graphic.m_OnDirtyLayoutCallback</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_OnDirtyVertsCallback">Graphic.m_OnDirtyVertsCallback</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_OnDirtyMaterialCallback">Graphic.m_OnDirtyMaterialCallback</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_s_Mesh">Graphic.s_Mesh</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_CachedMesh">Graphic.m_CachedMesh</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_CachedUvs">Graphic.m_CachedUvs</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_useLegacyMeshGeneration">Graphic.useLegacyMeshGeneration</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_SetAllDirty">Graphic.SetAllDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_SetLayoutDirty">Graphic.SetLayoutDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_SetVerticesDirty">Graphic.SetVerticesDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_SetMaterialDirty">Graphic.SetMaterialDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_SetRaycastDirty">Graphic.SetRaycastDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnRectTransformDimensionsChange">Graphic.OnRectTransformDimensionsChange()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnBeforeTransformParentChanged">Graphic.OnBeforeTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_depth">Graphic.depth</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_rectTransform">Graphic.rectTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_canvas">Graphic.canvas</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_canvasRenderer">Graphic.canvasRenderer</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_defaultMaterial">Graphic.defaultMaterial</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_materialForRendering">Graphic.materialForRendering</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnDestroy">Graphic.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnCullingChanged">Graphic.OnCullingChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_Rebuild_UnityEngine_UI_CanvasUpdate_">Graphic.Rebuild(CanvasUpdate)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_LayoutComplete">Graphic.LayoutComplete()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_GraphicUpdateComplete">Graphic.GraphicUpdateComplete()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_UpdateGeometry">Graphic.UpdateGeometry()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_workerMesh">Graphic.workerMesh</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnPopulateMesh_UnityEngine_Mesh_">Graphic.OnPopulateMesh(Mesh)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_Raycast_UnityEngine_Vector2_UnityEngine_Camera_">Graphic.Raycast(Vector2, Camera)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_PixelAdjustPoint_UnityEngine_Vector2_">Graphic.PixelAdjustPoint(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_GetPixelAdjustedRect">Graphic.GetPixelAdjustedRect()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_CrossFadeColor_UnityEngine_Color_System_Single_System_Boolean_System_Boolean_">Graphic.CrossFadeColor(Color, float, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_CrossFadeColor_UnityEngine_Color_System_Single_System_Boolean_System_Boolean_System_Boolean_">Graphic.CrossFadeColor(Color, float, bool, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_CrossFadeAlpha_System_Single_System_Single_System_Boolean_">Graphic.CrossFadeAlpha(float, float, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_RegisterDirtyLayoutCallback_UnityEngine_Events_UnityAction_">Graphic.RegisterDirtyLayoutCallback(UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_UnregisterDirtyLayoutCallback_UnityEngine_Events_UnityAction_">Graphic.UnregisterDirtyLayoutCallback(UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_RegisterDirtyVerticesCallback_UnityEngine_Events_UnityAction_">Graphic.RegisterDirtyVerticesCallback(UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_UnregisterDirtyVerticesCallback_UnityEngine_Events_UnityAction_">Graphic.UnregisterDirtyVerticesCallback(UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_RegisterDirtyMaterialCallback_UnityEngine_Events_UnityAction_">Graphic.RegisterDirtyMaterialCallback(UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_UnregisterDirtyMaterialCallback_UnityEngine_Events_UnityAction_">Graphic.UnregisterDirtyMaterialCallback(UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_Awake">UIBehaviour.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_Start">UIBehaviour.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_IsActive">UIBehaviour.IsActive()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnCanvasGroupChanged">UIBehaviour.OnCanvasGroupChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_IsDestroyed">UIBehaviour.IsDestroyed()</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.Invoke(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.InvokeRepeating(string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.CancelInvoke(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.IsInvoking(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine_Auto(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StopCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(Coroutine)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StopCoroutine(string)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">MonoBehaviour.print(object)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.destroyCancellationToken</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponent(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.TryGetComponent(Type, out Component)</a>
+    </div>
+    <div>
+      <span class="xref">Component.TryGetComponent&lt;T&gt;(out T)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.GetComponent(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type, List&lt;Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentIndex()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.CompareTag(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <span class="xref">Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Scene)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate(Object, Transform, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate&lt;T&gt;(T, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.Destroy(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Destroy(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.DestroyImmediate(Object, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyImmediate(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DontDestroyOnLoad(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.DestroyObject(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyObject(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <span class="xref">Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Object.name</span>
+    </div>
+    <div>
+      <span class="xref">Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UnityEngine_UI_Image__ctor_" data-uid="UnityEngine.UI.Image.#ctor*"></a>
+
+  <h3 id="UnityEngine_UI_Image__ctor" data-uid="UnityEngine.UI.Image.#ctor">
+  Image()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L664"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Image()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="UnityEngine_UI_Image_s_ETC1DefaultUI" data-uid="UnityEngine.UI.Image.s_ETC1DefaultUI">
+  s_ETC1DefaultUI
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static Material s_ETC1DefaultUI</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Material</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UnityEngine_UI_Image_alphaHitTestMinimumThreshold_" data-uid="UnityEngine.UI.Image.alphaHitTestMinimumThreshold*"></a>
+
+  <h3 id="UnityEngine_UI_Image_alphaHitTestMinimumThreshold" data-uid="UnityEngine.UI.Image.alphaHitTestMinimumThreshold">
+  alphaHitTestMinimumThreshold
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L641"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The alpha threshold specifies the minimum alpha a pixel must have for the event to considered a &quot;hit&quot; on the Image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float alphaHitTestMinimumThreshold { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_alphaHitTestMinimumThreshold_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class ExampleClass : MonoBehaviour
+{
+    public Image theButton;
+
+    // Use this for initialization
+    void Start()
+    {
+        theButton.alphaHitTestMinimumThreshold = 0.5f;
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_alphaHitTestMinimumThreshold_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Alpha values less than the threshold will cause raycast events to pass through the Image. An value of 1 would cause only fully opaque pixels to register raycast events on the Image. The alpha tested is retrieved from the image sprite only, while the alpha of the Image [[UI.Graphic.color]] is disregarded.</p>
+<p>alphaHitTestMinimumThreshold defaults to 0; all raycast events inside the Image rectangle are considered a hit. In order for greater than 0 to values to work, the sprite used by the Image must have readable pixels. This can be achieved by enabling Read/Write enabled in the advanced Texture Import Settings for the sprite and disabling atlassing for the sprite.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Image_defaultETC1GraphicMaterial_" data-uid="UnityEngine.UI.Image.defaultETC1GraphicMaterial*"></a>
+
+  <h3 id="UnityEngine_UI_Image_defaultETC1GraphicMaterial" data-uid="UnityEngine.UI.Image.defaultETC1GraphicMaterial">
+  defaultETC1GraphicMaterial
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L676"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Cache of the default Canvas Ericsson Texture Compression 1 (ETC1) and alpha Material.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Material defaultETC1GraphicMaterial { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Material</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_defaultETC1GraphicMaterial_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Stores the ETC1 supported Canvas Material that is returned from GetETC1SupportedCanvasMaterial().
+Note: Always specify the UI/DefaultETC1 Shader in the Always Included Shader list, to use the ETC1 and alpha Material.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Image_eventAlphaThreshold_" data-uid="UnityEngine.UI.Image.eventAlphaThreshold*"></a>
+
+  <h3 id="UnityEngine_UI_Image_eventAlphaThreshold" data-uid="UnityEngine.UI.Image.eventAlphaThreshold">
+  eventAlphaThreshold
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L605"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;eventAlphaThreshold has been deprecated. Use eventMinimumAlphaThreshold instead (UnityUpgradable) -&gt; alphaHitTestMinimumThreshold&quot;)]
+public float eventAlphaThreshold { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_fillAmount_" data-uid="UnityEngine.UI.Image.fillAmount*"></a>
+
+  <h3 id="UnityEngine_UI_Image_fillAmount" data-uid="UnityEngine.UI.Image.fillAmount">
+  fillAmount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L505"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Amount of the Image shown when the Image.type is set to Image.Type.Filled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float fillAmount { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_fillAmount_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Cooldown : MonoBehaviour
+{
+    public Image cooldown;
+    public bool coolingDown;
+    public float waitTime = 30.0f;
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (coolingDown == true)
+        {
+            //Reduce fill amount over 30 seconds
+            cooldown.fillAmount -= 1.0f / waitTime * Time.deltaTime;
+        }
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_fillAmount_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>0-1 range with 0 being nothing shown, and 1 being the full Image.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Image_fillCenter_" data-uid="UnityEngine.UI.Image.fillCenter*"></a>
+
+  <h3 id="UnityEngine_UI_Image_fillCenter" data-uid="UnityEngine.UI.Image.fillCenter">
+  fillCenter
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L462"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether or not to render the center of a Tiled or Sliced image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool fillCenter { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_fillCenter_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+
+public class FillCenterScript : MonoBehaviour
+{
+    public Image xmasCalenderDoor;
+
+    // removes the center of the image to reveal the image behind it
+    void OpenCalendarDoor()
+    {
+        xmasCalenderDoor.fillCenter = false;
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_fillCenter_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This will only have any effect if the Image.sprite has borders.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Image_fillClockwise_" data-uid="UnityEngine.UI.Image.fillClockwise*"></a>
+
+  <h3 id="UnityEngine_UI_Image_fillClockwise" data-uid="UnityEngine.UI.Image.fillClockwise">
+  fillClockwise
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L544"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the Image should be filled clockwise (true) or counter-clockwise (false).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool fillClockwise { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_fillClockwise_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class FillClockwiseScript : MonoBehaviour
+{
+    public Image healthCircle;
+
+    // This method sets the direction of the health circle.
+    // Clockwise for the Player, Counter Clockwise for the opponent.
+    void SetHealthDirection(GameObject target)
+    {
+        if (target.tag == "Player")
+        {
+            healthCircle.fillClockwise = true;
+        }
+        else if (target.tag == "Opponent")
+        {
+            healthCircle.fillClockwise = false;
+        }
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_fillClockwise_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This will only have any effect if the Image.type is set to Image.Type.Filled and Image.fillMethod is set to any of the Radial methods.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Image_fillMethod_" data-uid="UnityEngine.UI.Image.fillMethod*"></a>
+
+  <h3 id="UnityEngine_UI_Image_fillMethod" data-uid="UnityEngine.UI.Image.fillMethod">
+  fillMethod
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L466"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image.FillMethod fillMethod { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Image.html">Image</a>.<a class="xref" href="UnityEngine.UI.Image.FillMethod.html">FillMethod</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_fillOrigin_" data-uid="UnityEngine.UI.Image.fillOrigin*"></a>
+
+  <h3 id="UnityEngine_UI_Image_fillOrigin" data-uid="UnityEngine.UI.Image.fillOrigin">
+  fillOrigin
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L597"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Controls the origin point of the Fill process. Value means different things with each fill method.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int fillOrigin { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_fillOrigin_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
+
+[RequireComponent(typeof(Image))]
+public class ImageOriginCycle : MonoBehaviour
+{
+    void OnEnable()
+    {
+        Image image = GetComponent&lt;Image&gt;();
+        string fillOriginName = "";
+
+        switch ((Image.FillMethod)image.fillMethod)
+        {
+            case Image.FillMethod.Horizontal:
+                fillOriginName = ((Image.OriginHorizontal)image.fillOrigin).ToString();
+                break;
+            case Image.FillMethod.Vertical:
+                fillOriginName = ((Image.OriginVertical)image.fillOrigin).ToString();
+                break;
+            case Image.FillMethod.Radial90:
+
+                fillOriginName = ((Image.Origin90)image.fillOrigin).ToString();
+                break;
+            case Image.FillMethod.Radial180:
+
+                fillOriginName = ((Image.Origin180)image.fillOrigin).ToString();
+                break;
+            case Image.FillMethod.Radial360:
+                fillOriginName = ((Image.Origin360)image.fillOrigin).ToString();
+                break;
+        }
+        Debug.Log(string.Format("{0} is using {1} fill method with the origin on {2}", name, image.fillMethod, fillOriginName));
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_fillOrigin_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>You should cast to the appropriate origin type: Image.OriginHorizontal, Image.OriginVertical, Image.Origin90, Image.Origin180 or Image.Origin360 depending on the Image.Fillmethod.
+Note: This will only have any effect if the Image.type is set to Image.Type.Filled.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Image_flexibleHeight_" data-uid="UnityEngine.UI.Image.flexibleHeight*"></a>
+
+  <h3 id="UnityEngine_UI_Image_flexibleHeight" data-uid="UnityEngine.UI.Image.flexibleHeight">
+  flexibleHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L1797"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ILayoutElement.flexibleHeight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float flexibleHeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_flexibleWidth_" data-uid="UnityEngine.UI.Image.flexibleWidth*"></a>
+
+  <h3 id="UnityEngine_UI_Image_flexibleWidth" data-uid="UnityEngine.UI.Image.flexibleWidth">
+  flexibleWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L1771"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ILayoutElement.flexibleWidth.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float flexibleWidth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_hasBorder_" data-uid="UnityEngine.UI.Image.hasBorder*"></a>
+
+  <h3 id="UnityEngine_UI_Image_hasBorder" data-uid="UnityEngine.UI.Image.hasBorder">
+  hasBorder
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L710"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the Sprite of the image has a border to work with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool hasBorder { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_layoutPriority_" data-uid="UnityEngine.UI.Image.layoutPriority*"></a>
+
+  <h3 id="UnityEngine_UI_Image_layoutPriority" data-uid="UnityEngine.UI.Image.layoutPriority">
+  layoutPriority
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L1802"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ILayoutElement.layoutPriority.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int layoutPriority { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_mainTexture_" data-uid="UnityEngine.UI.Image.mainTexture*"></a>
+
+  <h3 id="UnityEngine_UI_Image_mainTexture" data-uid="UnityEngine.UI.Image.mainTexture">
+  mainTexture
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L689"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Image's texture comes from the UnityEngine.Image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Texture mainTexture { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Texture</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_material_" data-uid="UnityEngine.UI.Image.material*"></a>
+
+  <h3 id="UnityEngine_UI_Image_material" data-uid="UnityEngine.UI.Image.material">
+  material
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L766"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The specified Material used by this Image. The default Material is used instead if one wasn't specified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Material material { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Material</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_minHeight_" data-uid="UnityEngine.UI.Image.minHeight*"></a>
+
+  <h3 id="UnityEngine_UI_Image_minHeight" data-uid="UnityEngine.UI.Image.minHeight">
+  minHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L1776"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ILayoutElement.minHeight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float minHeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_minWidth_" data-uid="UnityEngine.UI.Image.minWidth*"></a>
+
+  <h3 id="UnityEngine_UI_Image_minWidth" data-uid="UnityEngine.UI.Image.minWidth">
+  minWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L1750"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ILayoutElement.minWidth.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float minWidth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_multipliedPixelsPerUnit_" data-uid="UnityEngine.UI.Image.multipliedPixelsPerUnit*"></a>
+
+  <h3 id="UnityEngine_UI_Image_multipliedPixelsPerUnit" data-uid="UnityEngine.UI.Image.multipliedPixelsPerUnit">
+  multipliedPixelsPerUnit
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L758"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected float multipliedPixelsPerUnit { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_overrideSprite_" data-uid="UnityEngine.UI.Image.overrideSprite*"></a>
+
+  <h3 id="UnityEngine_UI_Image_overrideSprite" data-uid="UnityEngine.UI.Image.overrideSprite">
+  overrideSprite
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L397"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set an override sprite to be used for rendering.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sprite overrideSprite { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Sprite</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_overrideSprite_examples">Examples</h4>
+  <p>Note: The script example below has two buttons.  The button textures are loaded from the
+/Resources/ folder.  (They are not used in the shown example).  Two sprites are added to
+the example code.  /Example1/ and /Example2/ are functions called by the button OnClick
+functions.  Example1 calls overrideSprite and Example2 sets overrideSprite to null.</p>
+<pre><code class="lang-csharp">using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class ExampleClass : MonoBehaviour
+{
+    private Sprite sprite1;
+    private Sprite sprite2;
+    private Image i;
+
+    public void Start()
+    {
+        i = GetComponent&lt;Image&gt;();
+        sprite1 = Resources.Load&lt;Sprite&gt;("texture1");
+        sprite2 = Resources.Load&lt;Sprite&gt;("texture2");
+
+        i.sprite = sprite1;
+    }
+
+    // Called by a Button OnClick() with ExampleClass.Example1
+    // Uses overrideSprite to make this change temporary
+    public void Example1()
+    {
+        i.overrideSprite = sprite2;
+    }
+
+    // Called by a Button OnClick() with ExampleClass.Example2
+    // Removes the overrideSprite which causes the original sprite to be used again.
+    public void Example2()
+    {
+        i.overrideSprite = null;
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_overrideSprite_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The UI.Image-overrideSprite|overrideSprite variable allows a sprite to have the
+sprite changed.This change happens immediately.When the changed
+sprite is no longer needed the sprite can be reverted back to the
+original version.This happens when the overrideSprite
+is set to /null/.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Image_pixelsPerUnit_" data-uid="UnityEngine.UI.Image.pixelsPerUnit*"></a>
+
+  <h3 id="UnityEngine_UI_Image_pixelsPerUnit" data-uid="UnityEngine.UI.Image.pixelsPerUnit">
+  pixelsPerUnit
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L743"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float pixelsPerUnit { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_pixelsPerUnitMultiplier_" data-uid="UnityEngine.UI.Image.pixelsPerUnitMultiplier*"></a>
+
+  <h3 id="UnityEngine_UI_Image_pixelsPerUnitMultiplier" data-uid="UnityEngine.UI.Image.pixelsPerUnitMultiplier">
+  pixelsPerUnitMultiplier
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L730"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Pixel per unit modifier to change how sliced sprites are generated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float pixelsPerUnitMultiplier { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_preferredHeight_" data-uid="UnityEngine.UI.Image.preferredHeight*"></a>
+
+  <h3 id="UnityEngine_UI_Image_preferredHeight" data-uid="UnityEngine.UI.Image.preferredHeight">
+  preferredHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L1782"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>If there is a sprite being rendered returns the size of that sprite.
+In the case of a slided or tiled sprite will return the calculated minimum size possible</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float preferredHeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_preferredWidth_" data-uid="UnityEngine.UI.Image.preferredWidth*"></a>
+
+  <h3 id="UnityEngine_UI_Image_preferredWidth" data-uid="UnityEngine.UI.Image.preferredWidth">
+  preferredWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L1756"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>If there is a sprite being rendered returns the size of that sprite.
+In the case of a slided or tiled sprite will return the calculated minimum size possible</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float preferredWidth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_preserveAspect_" data-uid="UnityEngine.UI.Image.preserveAspect*"></a>
+
+  <h3 id="UnityEngine_UI_Image_preserveAspect" data-uid="UnityEngine.UI.Image.preserveAspect">
+  preserveAspect
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L432"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether this image should preserve its Sprite aspect ratio.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool preserveAspect { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_sprite_" data-uid="UnityEngine.UI.Image.sprite*"></a>
+
+  <h3 id="UnityEngine_UI_Image_sprite" data-uid="UnityEngine.UI.Image.sprite">
+  sprite
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L281"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The sprite that is used to render this image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Sprite sprite { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Sprite</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_sprite_examples">Examples</h4>
+  <pre><code class="lang-csharp">//Attach this script to an Image GameObject and set its Source Image to the Sprite you would like.
+//Press the space key to change the Sprite. Remember to assign a second Sprite in this script's section of the Inspector.
+
+using UnityEngine;
+using UnityEngine.UI;
+
+public class Example : MonoBehaviour
+{
+    Image m_Image;
+    //Set this in the Inspector
+    public Sprite m_Sprite;
+
+    void Start()
+    {
+        //Fetch the Image from the GameObject
+        m_Image = GetComponent&lt;Image&gt;();
+    }
+
+    void Update()
+    {
+        //Press space to change the Sprite of the Image
+        if (Input.GetKey(KeyCode.Space))
+        {
+            m_Image.sprite = m_Sprite;
+        }
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_sprite_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This returns the source Sprite of an Image. This Sprite can also be viewed and changed in the Inspector as part of an Image component. This can also be used to change the Sprite using a script.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Image_type_" data-uid="UnityEngine.UI.Image.type*"></a>
+
+  <h3 id="UnityEngine_UI_Image_type" data-uid="UnityEngine.UI.Image.type">
+  type
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L425"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>How to display the image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image.Type type { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Image.html">Image</a>.<a class="xref" href="UnityEngine.UI.Image.Type.html">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_type_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Unity can interpret an Image in various different ways depending on the intended purpose. This can be used to display:</p>
+<ul>
+<li>Whole images stretched to fit the RectTransform of the Image.</li>
+<li>A 9-sliced image useful for various decorated UI boxes and other rectangular elements.</li>
+<li>A tiled image with sections of the sprite repeated.</li>
+<li>As a partial image, useful for wipes, fades, timers, status bars etc.</li>
+</ul>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Image_useSpriteMesh_" data-uid="UnityEngine.UI.Image.useSpriteMesh*"></a>
+
+  <h3 id="UnityEngine_UI_Image_useSpriteMesh" data-uid="UnityEngine.UI.Image.useSpriteMesh">
+  useSpriteMesh
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L661"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Allows you to specify whether the UI Image should be displayed using the mesh generated by the TextureImporter, or by a simple quad mesh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool useSpriteMesh { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_useSpriteMesh_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When this property is set to false, the UI Image uses a simple quad. When set to true, the UI Image uses the sprite mesh generated by the [[TextureImporter]]. You should set this to true if you want to use a tightly fitted sprite mesh based on the alpha values in your image.
+Note: If the texture importer's SpriteMeshType property is set to SpriteMeshType.FullRect, it will only generate a quad, and not a tightly fitted sprite mesh, which means this UI image will be drawn using a quad regardless of the value of this property. Therefore, when enabling this property to use a tightly fitted sprite mesh, you must also ensure the texture importer's SpriteMeshType property is set to Tight.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UnityEngine_UI_Image_CalculateLayoutInputHorizontal_" data-uid="UnityEngine.UI.Image.CalculateLayoutInputHorizontal*"></a>
+
+  <h3 id="UnityEngine_UI_Image_CalculateLayoutInputHorizontal" data-uid="UnityEngine.UI.Image.CalculateLayoutInputHorizontal">
+  CalculateLayoutInputHorizontal()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L1740"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ILayoutElement.CalculateLayoutInputHorizontal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CalculateLayoutInputHorizontal()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_CalculateLayoutInputVertical_" data-uid="UnityEngine.UI.Image.CalculateLayoutInputVertical*"></a>
+
+  <h3 id="UnityEngine_UI_Image_CalculateLayoutInputVertical" data-uid="UnityEngine.UI.Image.CalculateLayoutInputVertical">
+  CalculateLayoutInputVertical()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L1745"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ILayoutElement.CalculateLayoutInputVertical.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CalculateLayoutInputVertical()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_DisableSpriteOptimizations_" data-uid="UnityEngine.UI.Image.DisableSpriteOptimizations*"></a>
+
+  <h3 id="UnityEngine_UI_Image_DisableSpriteOptimizations" data-uid="UnityEngine.UI.Image.DisableSpriteOptimizations">
+  DisableSpriteOptimizations()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L334"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Disable all automatic sprite optimizations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DisableSpriteOptimizations()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_DisableSpriteOptimizations_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When a new Sprite is assigned update optimizations are automatically applied.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Image_IsRaycastLocationValid_" data-uid="UnityEngine.UI.Image.IsRaycastLocationValid*"></a>
+
+  <h3 id="UnityEngine_UI_Image_IsRaycastLocationValid_UnityEngine_Vector2_UnityEngine_Camera_" data-uid="UnityEngine.UI.Image.IsRaycastLocationValid(UnityEngine.Vector2,UnityEngine.Camera)">
+  IsRaycastLocationValid(Vector2, Camera)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L1811"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate if the ray location for this image is a valid hit location. Takes into account a Alpha test threshold.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool IsRaycastLocationValid(Vector2 screenPoint, Camera eventCamera)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>screenPoint</code> <span class="xref">Vector2</span></dt>
+    <dd><p>The screen point to check against</p>
+</dd>
+    <dt><code>eventCamera</code> <span class="xref">Camera</span></dt>
+    <dd><p>The camera in which to use to calculate the coordinating position</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If the location is a valid hit or not.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_IsRaycastLocationValid_UnityEngine_Vector2_UnityEngine_Camera__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Also see See:ICanvasRaycastFilter.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Image_OnAfterDeserialize_" data-uid="UnityEngine.UI.Image.OnAfterDeserialize*"></a>
+
+  <h3 id="UnityEngine_UI_Image_OnAfterDeserialize" data-uid="UnityEngine.UI.Image.OnAfterDeserialize">
+  OnAfterDeserialize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L803"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ISerializationCallbackReceiver.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnAfterDeserialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_OnBeforeSerialize_" data-uid="UnityEngine.UI.Image.OnBeforeSerialize*"></a>
+
+  <h3 id="UnityEngine_UI_Image_OnBeforeSerialize" data-uid="UnityEngine.UI.Image.OnBeforeSerialize">
+  OnBeforeSerialize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L798"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ISerializationCallbackReceiver.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnBeforeSerialize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_OnCanvasHierarchyChanged_" data-uid="UnityEngine.UI.Image.OnCanvasHierarchyChanged*"></a>
+
+  <h3 id="UnityEngine_UI_Image_OnCanvasHierarchyChanged" data-uid="UnityEngine.UI.Image.OnCanvasHierarchyChanged">
+  OnCanvasHierarchyChanged()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L965"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called when the state of the parent Canvas is changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnCanvasHierarchyChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_OnDidApplyAnimationProperties_" data-uid="UnityEngine.UI.Image.OnDidApplyAnimationProperties*"></a>
+
+  <h3 id="UnityEngine_UI_Image_OnDidApplyAnimationProperties" data-uid="UnityEngine.UI.Image.OnDidApplyAnimationProperties">
+  OnDidApplyAnimationProperties()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L1921"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDidApplyAnimationProperties()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_OnDisable_" data-uid="UnityEngine.UI.Image.OnDisable*"></a>
+
+  <h3 id="UnityEngine_UI_Image_OnDisable" data-uid="UnityEngine.UI.Image.OnDisable">
+  OnDisable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L933"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clear references.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDisable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_OnEnable_" data-uid="UnityEngine.UI.Image.OnEnable*"></a>
+
+  <h3 id="UnityEngine_UI_Image_OnEnable" data-uid="UnityEngine.UI.Image.OnEnable">
+  OnEnable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L927"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Mark the Graphic and the canvas as having been changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_OnPopulateMesh_" data-uid="UnityEngine.UI.Image.OnPopulateMesh*"></a>
+
+  <h3 id="UnityEngine_UI_Image_OnPopulateMesh_UnityEngine_UI_VertexHelper_" data-uid="UnityEngine.UI.Image.OnPopulateMesh(UnityEngine.UI.VertexHelper)">
+  OnPopulateMesh(VertexHelper)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L890"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Update the UI renderer mesh.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnPopulateMesh(VertexHelper toFill)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toFill</code> <a class="xref" href="UnityEngine.UI.VertexHelper.html">VertexHelper</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Image_SetNativeSize_" data-uid="UnityEngine.UI.Image.SetNativeSize*"></a>
+
+  <h3 id="UnityEngine_UI_Image_SetNativeSize" data-uid="UnityEngine.UI.Image.SetNativeSize">
+  SetNativeSize()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L875"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adjusts the image size to make it pixel-perfect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetNativeSize()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Image_SetNativeSize_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This means setting the Images RectTransform.sizeDelta to be equal to the Sprite dimensions.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Image_UpdateMaterial_" data-uid="UnityEngine.UI.Image.UpdateMaterial*"></a>
+
+  <h3 id="UnityEngine_UI_Image_UpdateMaterial" data-uid="UnityEngine.UI.Image.UpdateMaterial">
+  UpdateMaterial()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L945"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Update the renderer's material.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void UpdateMaterial()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs/#L17" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

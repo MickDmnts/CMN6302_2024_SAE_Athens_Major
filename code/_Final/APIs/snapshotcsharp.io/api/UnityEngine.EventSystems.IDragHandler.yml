@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.IDragHandler
+  commentId: T:UnityEngine.EventSystems.IDragHandler
+  id: IDragHandler
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.IDragHandler.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  langs:
+  - csharp
+  - vb
+  name: IDragHandler
+  nameWithType: IDragHandler
+  fullName: UnityEngine.EventSystems.IDragHandler
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IDragHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 237
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Interface to implement if you wish to receive OnDrag callbacks.
+  remarks: Criteria for this event is implementation dependent. For example see StandAloneInputModule.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using UnityEngine;
+
+    using UnityEngine.EventSystems;
+
+    using UnityEngine.UI;
+
+
+    [RequireComponent(typeof(Image))]
+
+    public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+
+    {
+        public bool dragOnSurfaces = true;
+
+        private GameObject m_DraggingIcon;
+        private RectTransform m_DraggingPlane;
+
+        public void OnBeginDrag(PointerEventData eventData)
+        {
+            var canvas = FindInParents&lt;Canvas&gt;(gameObject);
+            if (canvas == null)
+                return;
+
+            // We have clicked something that can be dragged.
+            // What we want to do is create an icon for this.
+            m_DraggingIcon = new GameObject("icon");
+
+            m_DraggingIcon.transform.SetParent(canvas.transform, false);
+            m_DraggingIcon.transform.SetAsLastSibling();
+
+            var image = m_DraggingIcon.AddComponent&lt;Image&gt;();
+
+            image.sprite = GetComponent&lt;Image&gt;().sprite;
+            image.SetNativeSize();
+
+            if (dragOnSurfaces)
+                m_DraggingPlane = transform as RectTransform;
+            else
+                m_DraggingPlane = canvas.transform as RectTransform;
+
+            SetDraggedPosition(eventData);
+        }
+
+        public void OnDrag(PointerEventData data)
+        {
+            if (m_DraggingIcon != null)
+                SetDraggedPosition(data);
+        }
+
+        private void SetDraggedPosition(PointerEventData data)
+        {
+            if (dragOnSurfaces &amp;&amp; data.pointerEnter != null &amp;&amp; data.pointerEnter.transform as RectTransform != null)
+                m_DraggingPlane = data.pointerEnter.transform as RectTransform;
+
+            var rt = m_DraggingIcon.GetComponent&lt;RectTransform&gt;();
+            Vector3 globalMousePos;
+            if (RectTransformUtility.ScreenPointToWorldPointInRectangle(m_DraggingPlane, data.position, data.pressEventCamera, out globalMousePos))
+            {
+                rt.position = globalMousePos;
+                rt.rotation = m_DraggingPlane.rotation;
+            }
+        }
+
+        public void OnEndDrag(PointerEventData eventData)
+        {
+            if (m_DraggingIcon != null)
+                Destroy(m_DraggingIcon);
+        }
+
+        static public T FindInParents&lt;T&gt;(GameObject go) where T : Component
+        {
+            if (go == null) return null;
+            var comp = go.GetComponent&lt;T&gt;();
+
+            if (comp != null)
+                return comp;
+
+            Transform t = go.transform.parent;
+            while (t != null &amp;&amp; comp == null)
+            {
+                comp = t.gameObject.GetComponent&lt;T&gt;();
+                t = t.parent;
+            }
+            return comp;
+        }
+    }</code></pre>
+  syntax:
+    content: 'public interface IDragHandler : IEventSystemHandler'
+    content.vb: Public Interface IDragHandler Inherits IEventSystemHandler
+- uid: UnityEngine.EventSystems.IDragHandler.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:UnityEngine.EventSystems.IDragHandler.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  id: OnDrag(UnityEngine.EventSystems.PointerEventData)
+  parent: UnityEngine.EventSystems.IDragHandler
+  langs:
+  - csharp
+  - vb
+  name: OnDrag(PointerEventData)
+  nameWithType: IDragHandler.OnDrag(PointerEventData)
+  fullName: UnityEngine.EventSystems.IDragHandler.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OnDrag
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 242
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: When dragging is occurring this will be called every time the cursor is moved.
+  example: []
+  syntax:
+    content: void OnDrag(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Sub OnDrag(eventData As PointerEventData)
+  overload: UnityEngine.EventSystems.IDragHandler.OnDrag*
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.IDragHandler.OnDrag*
+  commentId: Overload:UnityEngine.EventSystems.IDragHandler.OnDrag
+  href: UnityEngine.EventSystems.IDragHandler.html#UnityEngine_EventSystems_IDragHandler_OnDrag_UnityEngine_EventSystems_PointerEventData_
+  name: OnDrag
+  nameWithType: IDragHandler.OnDrag
+  fullName: UnityEngine.EventSystems.IDragHandler.OnDrag
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerEventData.html
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData

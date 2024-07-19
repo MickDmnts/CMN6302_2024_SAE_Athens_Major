@@ -1,0 +1,851 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.LayoutRebuilder
+  commentId: T:UnityEngine.UI.LayoutRebuilder
+  id: LayoutRebuilder
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.LayoutRebuilder.Equals(System.Object)
+  - UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(UnityEngine.RectTransform)
+  - UnityEngine.UI.LayoutRebuilder.GetHashCode
+  - UnityEngine.UI.LayoutRebuilder.GraphicUpdateComplete
+  - UnityEngine.UI.LayoutRebuilder.IsDestroyed
+  - UnityEngine.UI.LayoutRebuilder.LayoutComplete
+  - UnityEngine.UI.LayoutRebuilder.MarkLayoutForRebuild(UnityEngine.RectTransform)
+  - UnityEngine.UI.LayoutRebuilder.Rebuild(UnityEngine.UI.CanvasUpdate)
+  - UnityEngine.UI.LayoutRebuilder.ToString
+  - UnityEngine.UI.LayoutRebuilder.transform
+  langs:
+  - csharp
+  - vb
+  name: LayoutRebuilder
+  nameWithType: LayoutRebuilder
+  fullName: UnityEngine.UI.LayoutRebuilder
+  type: Class
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: LayoutRebuilder
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+    startLine: 9
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Wrapper class for managing layout rebuilding of CanvasElement.
+  example: []
+  syntax:
+    content: 'public class LayoutRebuilder : ICanvasElement'
+    content.vb: Public Class LayoutRebuilder Implements ICanvasElement
+  inheritance:
+  - System.Object
+  implements:
+  - UnityEngine.UI.ICanvasElement
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: UnityEngine.UI.LayoutRebuilder.transform
+  commentId: P:UnityEngine.UI.LayoutRebuilder.transform
+  id: transform
+  parent: UnityEngine.UI.LayoutRebuilder
+  langs:
+  - csharp
+  - vb
+  name: transform
+  nameWithType: LayoutRebuilder.transform
+  fullName: UnityEngine.UI.LayoutRebuilder.transform
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: transform
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+    startLine: 44
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Get the transform associated with the ICanvasElement.
+  example: []
+  syntax:
+    content: public Transform transform { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Transform
+    content.vb: Public ReadOnly Property transform As Transform
+  overload: UnityEngine.UI.LayoutRebuilder.transform*
+  implements:
+  - UnityEngine.UI.ICanvasElement.transform
+- uid: UnityEngine.UI.LayoutRebuilder.IsDestroyed
+  commentId: M:UnityEngine.UI.LayoutRebuilder.IsDestroyed
+  id: IsDestroyed
+  parent: UnityEngine.UI.LayoutRebuilder
+  langs:
+  - csharp
+  - vb
+  name: IsDestroyed()
+  nameWithType: LayoutRebuilder.IsDestroyed()
+  fullName: UnityEngine.UI.LayoutRebuilder.IsDestroyed()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IsDestroyed
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+    startLine: 49
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Has the native representation of this LayoutRebuilder been destroyed?
+  example: []
+  syntax:
+    content: public bool IsDestroyed()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsDestroyed() As Boolean
+  overload: UnityEngine.UI.LayoutRebuilder.IsDestroyed*
+  implements:
+  - UnityEngine.UI.ICanvasElement.IsDestroyed
+- uid: UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(UnityEngine.RectTransform)
+  commentId: M:UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(UnityEngine.RectTransform)
+  id: ForceRebuildLayoutImmediate(UnityEngine.RectTransform)
+  parent: UnityEngine.UI.LayoutRebuilder
+  langs:
+  - csharp
+  - vb
+  name: ForceRebuildLayoutImmediate(RectTransform)
+  nameWithType: LayoutRebuilder.ForceRebuildLayoutImmediate(RectTransform)
+  fullName: UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate(UnityEngine.RectTransform)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ForceRebuildLayoutImmediate
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+    startLine: 67
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Forces an immediate rebuild of the layout element and child layout elements affected by the calculations.
+  remarks: >-
+    Normal use of the layout system should not use this method. Instead MarkLayoutForRebuild should be used instead, which triggers a delayed layout rebuild during the next layout pass. The delayed rebuild automatically handles objects in the entire layout hierarchy in the correct order, and prevents multiple recalculations for the same layout elements.
+
+    However, for special layout calculation needs, ::ref::ForceRebuildLayoutImmediate can be used to get the layout of a sub-tree resolved immediately. This can even be done from inside layout calculation methods such as ILayoutController.SetLayoutHorizontal orILayoutController.SetLayoutVertical. Usage should be restricted to cases where multiple layout passes are unavaoidable despite the extra cost in performance.
+  example: []
+  syntax:
+    content: public static void ForceRebuildLayoutImmediate(RectTransform layoutRoot)
+    parameters:
+    - id: layoutRoot
+      type: UnityEngine.RectTransform
+      description: The layout element to perform the layout rebuild on.
+    content.vb: Public Shared Sub ForceRebuildLayoutImmediate(layoutRoot As RectTransform)
+  overload: UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate*
+- uid: UnityEngine.UI.LayoutRebuilder.Rebuild(UnityEngine.UI.CanvasUpdate)
+  commentId: M:UnityEngine.UI.LayoutRebuilder.Rebuild(UnityEngine.UI.CanvasUpdate)
+  id: Rebuild(UnityEngine.UI.CanvasUpdate)
+  parent: UnityEngine.UI.LayoutRebuilder
+  langs:
+  - csharp
+  - vb
+  name: Rebuild(CanvasUpdate)
+  nameWithType: LayoutRebuilder.Rebuild(CanvasUpdate)
+  fullName: UnityEngine.UI.LayoutRebuilder.Rebuild(UnityEngine.UI.CanvasUpdate)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Rebuild
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+    startLine: 75
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Rebuild the element for the given stage.
+  example: []
+  syntax:
+    content: public void Rebuild(CanvasUpdate executing)
+    parameters:
+    - id: executing
+      type: UnityEngine.UI.CanvasUpdate
+      description: The current CanvasUpdate stage being rebuild.
+    content.vb: Public Sub Rebuild(executing As CanvasUpdate)
+  overload: UnityEngine.UI.LayoutRebuilder.Rebuild*
+  implements:
+  - UnityEngine.UI.ICanvasElement.Rebuild(UnityEngine.UI.CanvasUpdate)
+- uid: UnityEngine.UI.LayoutRebuilder.MarkLayoutForRebuild(UnityEngine.RectTransform)
+  commentId: M:UnityEngine.UI.LayoutRebuilder.MarkLayoutForRebuild(UnityEngine.RectTransform)
+  id: MarkLayoutForRebuild(UnityEngine.RectTransform)
+  parent: UnityEngine.UI.LayoutRebuilder
+  langs:
+  - csharp
+  - vb
+  name: MarkLayoutForRebuild(RectTransform)
+  nameWithType: LayoutRebuilder.MarkLayoutForRebuild(RectTransform)
+  fullName: UnityEngine.UI.LayoutRebuilder.MarkLayoutForRebuild(UnityEngine.RectTransform)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: MarkLayoutForRebuild
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+    startLine: 169
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Mark the given RectTransform as needing it's layout to be recalculated during the next layout pass.
+  example: []
+  syntax:
+    content: public static void MarkLayoutForRebuild(RectTransform rect)
+    parameters:
+    - id: rect
+      type: UnityEngine.RectTransform
+      description: Rect to rebuild.
+    content.vb: Public Shared Sub MarkLayoutForRebuild(rect As RectTransform)
+  overload: UnityEngine.UI.LayoutRebuilder.MarkLayoutForRebuild*
+- uid: UnityEngine.UI.LayoutRebuilder.LayoutComplete
+  commentId: M:UnityEngine.UI.LayoutRebuilder.LayoutComplete
+  id: LayoutComplete
+  parent: UnityEngine.UI.LayoutRebuilder
+  langs:
+  - csharp
+  - vb
+  name: LayoutComplete()
+  nameWithType: LayoutRebuilder.LayoutComplete()
+  fullName: UnityEngine.UI.LayoutRebuilder.LayoutComplete()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: LayoutComplete
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+    startLine: 238
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Callback sent when this ICanvasElement has completed layout.
+  example: []
+  syntax:
+    content: public void LayoutComplete()
+    content.vb: Public Sub LayoutComplete()
+  overload: UnityEngine.UI.LayoutRebuilder.LayoutComplete*
+  implements:
+  - UnityEngine.UI.ICanvasElement.LayoutComplete
+- uid: UnityEngine.UI.LayoutRebuilder.GraphicUpdateComplete
+  commentId: M:UnityEngine.UI.LayoutRebuilder.GraphicUpdateComplete
+  id: GraphicUpdateComplete
+  parent: UnityEngine.UI.LayoutRebuilder
+  langs:
+  - csharp
+  - vb
+  name: GraphicUpdateComplete()
+  nameWithType: LayoutRebuilder.GraphicUpdateComplete()
+  fullName: UnityEngine.UI.LayoutRebuilder.GraphicUpdateComplete()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GraphicUpdateComplete
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+    startLine: 243
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Callback sent when this ICanvasElement has completed Graphic rebuild.
+  example: []
+  syntax:
+    content: public void GraphicUpdateComplete()
+    content.vb: Public Sub GraphicUpdateComplete()
+  overload: UnityEngine.UI.LayoutRebuilder.GraphicUpdateComplete*
+  implements:
+  - UnityEngine.UI.ICanvasElement.GraphicUpdateComplete
+- uid: UnityEngine.UI.LayoutRebuilder.GetHashCode
+  commentId: M:UnityEngine.UI.LayoutRebuilder.GetHashCode
+  id: GetHashCode
+  parent: UnityEngine.UI.LayoutRebuilder
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: LayoutRebuilder.GetHashCode()
+  fullName: UnityEngine.UI.LayoutRebuilder.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetHashCode
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+    startLine: 246
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: UnityEngine.UI.LayoutRebuilder.GetHashCode*
+- uid: UnityEngine.UI.LayoutRebuilder.Equals(System.Object)
+  commentId: M:UnityEngine.UI.LayoutRebuilder.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: UnityEngine.UI.LayoutRebuilder
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: LayoutRebuilder.Equals(object)
+  fullName: UnityEngine.UI.LayoutRebuilder.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Equals
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+    startLine: 256
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Does the passed rebuilder point to the same CanvasElement.
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+      description: The other object to compare
+    return:
+      type: System.Boolean
+      description: Are they equal
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: UnityEngine.UI.LayoutRebuilder.Equals*
+  nameWithType.vb: LayoutRebuilder.Equals(Object)
+  fullName.vb: UnityEngine.UI.LayoutRebuilder.Equals(Object)
+  name.vb: Equals(Object)
+- uid: UnityEngine.UI.LayoutRebuilder.ToString
+  commentId: M:UnityEngine.UI.LayoutRebuilder.ToString
+  id: ToString
+  parent: UnityEngine.UI.LayoutRebuilder
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: LayoutRebuilder.ToString()
+  fullName: UnityEngine.UI.LayoutRebuilder.ToString()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ToString
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutRebuilder.cs
+    startLine: 261
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: UnityEngine.UI.LayoutRebuilder.ToString*
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.UI.ICanvasElement
+  commentId: T:UnityEngine.UI.ICanvasElement
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ICanvasElement.html
+  name: ICanvasElement
+  nameWithType: ICanvasElement
+  fullName: UnityEngine.UI.ICanvasElement
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.UI.LayoutRebuilder.transform*
+  commentId: Overload:UnityEngine.UI.LayoutRebuilder.transform
+  href: UnityEngine.UI.LayoutRebuilder.html#UnityEngine_UI_LayoutRebuilder_transform
+  name: transform
+  nameWithType: LayoutRebuilder.transform
+  fullName: UnityEngine.UI.LayoutRebuilder.transform
+- uid: UnityEngine.UI.ICanvasElement.transform
+  commentId: P:UnityEngine.UI.ICanvasElement.transform
+  parent: UnityEngine.UI.ICanvasElement
+  href: UnityEngine.UI.ICanvasElement.html#UnityEngine_UI_ICanvasElement_transform
+  name: transform
+  nameWithType: ICanvasElement.transform
+  fullName: UnityEngine.UI.ICanvasElement.transform
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.UI.LayoutRebuilder.IsDestroyed*
+  commentId: Overload:UnityEngine.UI.LayoutRebuilder.IsDestroyed
+  href: UnityEngine.UI.LayoutRebuilder.html#UnityEngine_UI_LayoutRebuilder_IsDestroyed
+  name: IsDestroyed
+  nameWithType: LayoutRebuilder.IsDestroyed
+  fullName: UnityEngine.UI.LayoutRebuilder.IsDestroyed
+- uid: UnityEngine.UI.ICanvasElement.IsDestroyed
+  commentId: M:UnityEngine.UI.ICanvasElement.IsDestroyed
+  parent: UnityEngine.UI.ICanvasElement
+  href: UnityEngine.UI.ICanvasElement.html#UnityEngine_UI_ICanvasElement_IsDestroyed
+  name: IsDestroyed()
+  nameWithType: ICanvasElement.IsDestroyed()
+  fullName: UnityEngine.UI.ICanvasElement.IsDestroyed()
+  spec.csharp:
+  - uid: UnityEngine.UI.ICanvasElement.IsDestroyed
+    name: IsDestroyed
+    href: UnityEngine.UI.ICanvasElement.html#UnityEngine_UI_ICanvasElement_IsDestroyed
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UI.ICanvasElement.IsDestroyed
+    name: IsDestroyed
+    href: UnityEngine.UI.ICanvasElement.html#UnityEngine_UI_ICanvasElement_IsDestroyed
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate*
+  commentId: Overload:UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate
+  href: UnityEngine.UI.LayoutRebuilder.html#UnityEngine_UI_LayoutRebuilder_ForceRebuildLayoutImmediate_UnityEngine_RectTransform_
+  name: ForceRebuildLayoutImmediate
+  nameWithType: LayoutRebuilder.ForceRebuildLayoutImmediate
+  fullName: UnityEngine.UI.LayoutRebuilder.ForceRebuildLayoutImmediate
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: UnityEngine.UI.LayoutRebuilder.Rebuild*
+  commentId: Overload:UnityEngine.UI.LayoutRebuilder.Rebuild
+  href: UnityEngine.UI.LayoutRebuilder.html#UnityEngine_UI_LayoutRebuilder_Rebuild_UnityEngine_UI_CanvasUpdate_
+  name: Rebuild
+  nameWithType: LayoutRebuilder.Rebuild
+  fullName: UnityEngine.UI.LayoutRebuilder.Rebuild
+- uid: UnityEngine.UI.ICanvasElement.Rebuild(UnityEngine.UI.CanvasUpdate)
+  commentId: M:UnityEngine.UI.ICanvasElement.Rebuild(UnityEngine.UI.CanvasUpdate)
+  parent: UnityEngine.UI.ICanvasElement
+  href: UnityEngine.UI.ICanvasElement.html#UnityEngine_UI_ICanvasElement_Rebuild_UnityEngine_UI_CanvasUpdate_
+  name: Rebuild(CanvasUpdate)
+  nameWithType: ICanvasElement.Rebuild(CanvasUpdate)
+  fullName: UnityEngine.UI.ICanvasElement.Rebuild(UnityEngine.UI.CanvasUpdate)
+  spec.csharp:
+  - uid: UnityEngine.UI.ICanvasElement.Rebuild(UnityEngine.UI.CanvasUpdate)
+    name: Rebuild
+    href: UnityEngine.UI.ICanvasElement.html#UnityEngine_UI_ICanvasElement_Rebuild_UnityEngine_UI_CanvasUpdate_
+  - name: (
+  - uid: UnityEngine.UI.CanvasUpdate
+    name: CanvasUpdate
+    href: UnityEngine.UI.CanvasUpdate.html
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UI.ICanvasElement.Rebuild(UnityEngine.UI.CanvasUpdate)
+    name: Rebuild
+    href: UnityEngine.UI.ICanvasElement.html#UnityEngine_UI_ICanvasElement_Rebuild_UnityEngine_UI_CanvasUpdate_
+  - name: (
+  - uid: UnityEngine.UI.CanvasUpdate
+    name: CanvasUpdate
+    href: UnityEngine.UI.CanvasUpdate.html
+  - name: )
+- uid: UnityEngine.UI.CanvasUpdate
+  commentId: T:UnityEngine.UI.CanvasUpdate
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.CanvasUpdate.html
+  name: CanvasUpdate
+  nameWithType: CanvasUpdate
+  fullName: UnityEngine.UI.CanvasUpdate
+- uid: UnityEngine.UI.LayoutRebuilder.MarkLayoutForRebuild*
+  commentId: Overload:UnityEngine.UI.LayoutRebuilder.MarkLayoutForRebuild
+  href: UnityEngine.UI.LayoutRebuilder.html#UnityEngine_UI_LayoutRebuilder_MarkLayoutForRebuild_UnityEngine_RectTransform_
+  name: MarkLayoutForRebuild
+  nameWithType: LayoutRebuilder.MarkLayoutForRebuild
+  fullName: UnityEngine.UI.LayoutRebuilder.MarkLayoutForRebuild
+- uid: UnityEngine.UI.LayoutRebuilder.LayoutComplete*
+  commentId: Overload:UnityEngine.UI.LayoutRebuilder.LayoutComplete
+  href: UnityEngine.UI.LayoutRebuilder.html#UnityEngine_UI_LayoutRebuilder_LayoutComplete
+  name: LayoutComplete
+  nameWithType: LayoutRebuilder.LayoutComplete
+  fullName: UnityEngine.UI.LayoutRebuilder.LayoutComplete
+- uid: UnityEngine.UI.ICanvasElement.LayoutComplete
+  commentId: M:UnityEngine.UI.ICanvasElement.LayoutComplete
+  parent: UnityEngine.UI.ICanvasElement
+  href: UnityEngine.UI.ICanvasElement.html#UnityEngine_UI_ICanvasElement_LayoutComplete
+  name: LayoutComplete()
+  nameWithType: ICanvasElement.LayoutComplete()
+  fullName: UnityEngine.UI.ICanvasElement.LayoutComplete()
+  spec.csharp:
+  - uid: UnityEngine.UI.ICanvasElement.LayoutComplete
+    name: LayoutComplete
+    href: UnityEngine.UI.ICanvasElement.html#UnityEngine_UI_ICanvasElement_LayoutComplete
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UI.ICanvasElement.LayoutComplete
+    name: LayoutComplete
+    href: UnityEngine.UI.ICanvasElement.html#UnityEngine_UI_ICanvasElement_LayoutComplete
+  - name: (
+  - name: )
+- uid: UnityEngine.UI.LayoutRebuilder.GraphicUpdateComplete*
+  commentId: Overload:UnityEngine.UI.LayoutRebuilder.GraphicUpdateComplete
+  href: UnityEngine.UI.LayoutRebuilder.html#UnityEngine_UI_LayoutRebuilder_GraphicUpdateComplete
+  name: GraphicUpdateComplete
+  nameWithType: LayoutRebuilder.GraphicUpdateComplete
+  fullName: UnityEngine.UI.LayoutRebuilder.GraphicUpdateComplete
+- uid: UnityEngine.UI.ICanvasElement.GraphicUpdateComplete
+  commentId: M:UnityEngine.UI.ICanvasElement.GraphicUpdateComplete
+  parent: UnityEngine.UI.ICanvasElement
+  href: UnityEngine.UI.ICanvasElement.html#UnityEngine_UI_ICanvasElement_GraphicUpdateComplete
+  name: GraphicUpdateComplete()
+  nameWithType: ICanvasElement.GraphicUpdateComplete()
+  fullName: UnityEngine.UI.ICanvasElement.GraphicUpdateComplete()
+  spec.csharp:
+  - uid: UnityEngine.UI.ICanvasElement.GraphicUpdateComplete
+    name: GraphicUpdateComplete
+    href: UnityEngine.UI.ICanvasElement.html#UnityEngine_UI_ICanvasElement_GraphicUpdateComplete
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.UI.ICanvasElement.GraphicUpdateComplete
+    name: GraphicUpdateComplete
+    href: UnityEngine.UI.ICanvasElement.html#UnityEngine_UI_ICanvasElement_GraphicUpdateComplete
+  - name: (
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: UnityEngine.UI.LayoutRebuilder.GetHashCode*
+  commentId: Overload:UnityEngine.UI.LayoutRebuilder.GetHashCode
+  href: UnityEngine.UI.LayoutRebuilder.html#UnityEngine_UI_LayoutRebuilder_GetHashCode
+  name: GetHashCode
+  nameWithType: LayoutRebuilder.GetHashCode
+  fullName: UnityEngine.UI.LayoutRebuilder.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UnityEngine.UI.LayoutRebuilder.Equals*
+  commentId: Overload:UnityEngine.UI.LayoutRebuilder.Equals
+  href: UnityEngine.UI.LayoutRebuilder.html#UnityEngine_UI_LayoutRebuilder_Equals_System_Object_
+  name: Equals
+  nameWithType: LayoutRebuilder.Equals
+  fullName: UnityEngine.UI.LayoutRebuilder.Equals
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: UnityEngine.UI.LayoutRebuilder.ToString*
+  commentId: Overload:UnityEngine.UI.LayoutRebuilder.ToString
+  href: UnityEngine.UI.LayoutRebuilder.html#UnityEngine_UI_LayoutRebuilder_ToString
+  name: ToString
+  nameWithType: LayoutRebuilder.ToString
+  fullName: UnityEngine.UI.LayoutRebuilder.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

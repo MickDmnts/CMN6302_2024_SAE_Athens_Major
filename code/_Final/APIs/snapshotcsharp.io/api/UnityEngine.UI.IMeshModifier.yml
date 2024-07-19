@@ -1,0 +1,161 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.IMeshModifier
+  commentId: T:UnityEngine.UI.IMeshModifier
+  id: IMeshModifier
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.IMeshModifier.ModifyMesh(UnityEngine.Mesh)
+  - UnityEngine.UI.IMeshModifier.ModifyMesh(UnityEngine.UI.VertexHelper)
+  langs:
+  - csharp
+  - vb
+  name: IMeshModifier
+  nameWithType: IMeshModifier
+  fullName: UnityEngine.UI.IMeshModifier
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/VertexModifiers/IMeshModifier.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IMeshModifier
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/VertexModifiers/IMeshModifier.cs
+    startLine: 18
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: >-
+    Interface which allows for the modification of verticies in a Graphic before they are passed to the CanvasRenderer.
+
+    When a Graphic generates a list of vertices they are passed (in order) to any components on the GameObject that implement IMeshModifier. This component can modify the given Mesh.
+  example: []
+  syntax:
+    content: public interface IMeshModifier
+    content.vb: Public Interface IMeshModifier
+- uid: UnityEngine.UI.IMeshModifier.ModifyMesh(UnityEngine.Mesh)
+  commentId: M:UnityEngine.UI.IMeshModifier.ModifyMesh(UnityEngine.Mesh)
+  id: ModifyMesh(UnityEngine.Mesh)
+  parent: UnityEngine.UI.IMeshModifier
+  langs:
+  - csharp
+  - vb
+  name: ModifyMesh(Mesh)
+  nameWithType: IMeshModifier.ModifyMesh(Mesh)
+  fullName: UnityEngine.UI.IMeshModifier.ModifyMesh(UnityEngine.Mesh)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/VertexModifiers/IMeshModifier.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ModifyMesh
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/VertexModifiers/IMeshModifier.cs
+    startLine: 20
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  syntax:
+    content: >-
+      [Obsolete("use IMeshModifier.ModifyMesh (VertexHelper verts) instead", false)]
+
+      void ModifyMesh(Mesh mesh)
+    parameters:
+    - id: mesh
+      type: UnityEngine.Mesh
+    content.vb: >-
+      <Obsolete("use IMeshModifier.ModifyMesh (VertexHelper verts) instead", False)>
+
+      Sub ModifyMesh(mesh As Mesh)
+  overload: UnityEngine.UI.IMeshModifier.ModifyMesh*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: use IMeshModifier.ModifyMesh (VertexHelper verts) instead
+    - type: System.Boolean
+      value: false
+- uid: UnityEngine.UI.IMeshModifier.ModifyMesh(UnityEngine.UI.VertexHelper)
+  commentId: M:UnityEngine.UI.IMeshModifier.ModifyMesh(UnityEngine.UI.VertexHelper)
+  id: ModifyMesh(UnityEngine.UI.VertexHelper)
+  parent: UnityEngine.UI.IMeshModifier
+  langs:
+  - csharp
+  - vb
+  name: ModifyMesh(VertexHelper)
+  nameWithType: IMeshModifier.ModifyMesh(VertexHelper)
+  fullName: UnityEngine.UI.IMeshModifier.ModifyMesh(UnityEngine.UI.VertexHelper)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/VertexModifiers/IMeshModifier.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ModifyMesh
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/VertexModifiers/IMeshModifier.cs
+    startLine: 26
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: >-
+    Call used to modify mesh.
+
+    Place any custom mesh processing in this function.
+  example: []
+  syntax:
+    content: void ModifyMesh(VertexHelper verts)
+    parameters:
+    - id: verts
+      type: UnityEngine.UI.VertexHelper
+    content.vb: Sub ModifyMesh(verts As VertexHelper)
+  overload: UnityEngine.UI.IMeshModifier.ModifyMesh*
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.IMeshModifier.ModifyMesh*
+  commentId: Overload:UnityEngine.UI.IMeshModifier.ModifyMesh
+  href: UnityEngine.UI.IMeshModifier.html#UnityEngine_UI_IMeshModifier_ModifyMesh_UnityEngine_Mesh_
+  name: ModifyMesh
+  nameWithType: IMeshModifier.ModifyMesh
+  fullName: UnityEngine.UI.IMeshModifier.ModifyMesh
+- uid: UnityEngine.Mesh
+  commentId: T:UnityEngine.Mesh
+  parent: UnityEngine
+  isExternal: true
+  name: Mesh
+  nameWithType: Mesh
+  fullName: UnityEngine.Mesh
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.UI.VertexHelper
+  commentId: T:UnityEngine.UI.VertexHelper
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.VertexHelper.html
+  name: VertexHelper
+  nameWithType: VertexHelper
+  fullName: UnityEngine.UI.VertexHelper

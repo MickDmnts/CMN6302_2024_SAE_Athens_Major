@@ -1,0 +1,1984 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.ExecuteEvents
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents
+  id: ExecuteEvents
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.ExecuteEvents.CanHandleEvent``1(UnityEngine.GameObject)
+  - UnityEngine.EventSystems.ExecuteEvents.ExecuteHierarchy``1(UnityEngine.GameObject,UnityEngine.EventSystems.BaseEventData,UnityEngine.EventSystems.ExecuteEvents.EventFunction{``0})
+  - UnityEngine.EventSystems.ExecuteEvents.Execute``1(UnityEngine.GameObject,UnityEngine.EventSystems.BaseEventData,UnityEngine.EventSystems.ExecuteEvents.EventFunction{``0})
+  - UnityEngine.EventSystems.ExecuteEvents.GetEventHandler``1(UnityEngine.GameObject)
+  - UnityEngine.EventSystems.ExecuteEvents.ValidateEventData``1(UnityEngine.EventSystems.BaseEventData)
+  - UnityEngine.EventSystems.ExecuteEvents.beginDragHandler
+  - UnityEngine.EventSystems.ExecuteEvents.cancelHandler
+  - UnityEngine.EventSystems.ExecuteEvents.deselectHandler
+  - UnityEngine.EventSystems.ExecuteEvents.dragHandler
+  - UnityEngine.EventSystems.ExecuteEvents.dropHandler
+  - UnityEngine.EventSystems.ExecuteEvents.endDragHandler
+  - UnityEngine.EventSystems.ExecuteEvents.initializePotentialDrag
+  - UnityEngine.EventSystems.ExecuteEvents.moveHandler
+  - UnityEngine.EventSystems.ExecuteEvents.pointerClickHandler
+  - UnityEngine.EventSystems.ExecuteEvents.pointerDownHandler
+  - UnityEngine.EventSystems.ExecuteEvents.pointerEnterHandler
+  - UnityEngine.EventSystems.ExecuteEvents.pointerExitHandler
+  - UnityEngine.EventSystems.ExecuteEvents.pointerMoveHandler
+  - UnityEngine.EventSystems.ExecuteEvents.pointerUpHandler
+  - UnityEngine.EventSystems.ExecuteEvents.scrollHandler
+  - UnityEngine.EventSystems.ExecuteEvents.selectHandler
+  - UnityEngine.EventSystems.ExecuteEvents.submitHandler
+  - UnityEngine.EventSystems.ExecuteEvents.updateSelectedHandler
+  langs:
+  - csharp
+  - vb
+  name: ExecuteEvents
+  nameWithType: ExecuteEvents
+  fullName: UnityEngine.EventSystems.ExecuteEvents
+  type: Class
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ExecuteEvents
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 6
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public static class ExecuteEvents
+    content.vb: Public Module ExecuteEvents
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UnityEngine.EventSystems.ExecuteEvents.ValidateEventData``1(UnityEngine.EventSystems.BaseEventData)
+  commentId: M:UnityEngine.EventSystems.ExecuteEvents.ValidateEventData``1(UnityEngine.EventSystems.BaseEventData)
+  id: ValidateEventData``1(UnityEngine.EventSystems.BaseEventData)
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: ValidateEventData<T>(BaseEventData)
+  nameWithType: ExecuteEvents.ValidateEventData<T>(BaseEventData)
+  fullName: UnityEngine.EventSystems.ExecuteEvents.ValidateEventData<T>(UnityEngine.EventSystems.BaseEventData)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ValidateEventData
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 10
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: 'public static T ValidateEventData<T>(BaseEventData data) where T : class'
+    parameters:
+    - id: data
+      type: UnityEngine.EventSystems.BaseEventData
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function ValidateEventData(Of T As Class)(data As BaseEventData) As T
+  overload: UnityEngine.EventSystems.ExecuteEvents.ValidateEventData*
+  nameWithType.vb: ExecuteEvents.ValidateEventData(Of T)(BaseEventData)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.ValidateEventData(Of T)(UnityEngine.EventSystems.BaseEventData)
+  name.vb: ValidateEventData(Of T)(BaseEventData)
+- uid: UnityEngine.EventSystems.ExecuteEvents.pointerMoveHandler
+  commentId: P:UnityEngine.EventSystems.ExecuteEvents.pointerMoveHandler
+  id: pointerMoveHandler
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: pointerMoveHandler
+  nameWithType: ExecuteEvents.pointerMoveHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.pointerMoveHandler
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: pointerMoveHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 143
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public static ExecuteEvents.EventFunction<IPointerMoveHandler> pointerMoveHandler { get; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IPointerMoveHandler}
+    content.vb: Public Shared ReadOnly Property pointerMoveHandler As ExecuteEvents.EventFunction(Of IPointerMoveHandler)
+  overload: UnityEngine.EventSystems.ExecuteEvents.pointerMoveHandler*
+- uid: UnityEngine.EventSystems.ExecuteEvents.pointerEnterHandler
+  commentId: P:UnityEngine.EventSystems.ExecuteEvents.pointerEnterHandler
+  id: pointerEnterHandler
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: pointerEnterHandler
+  nameWithType: ExecuteEvents.pointerEnterHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.pointerEnterHandler
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: pointerEnterHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 148
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public static ExecuteEvents.EventFunction<IPointerEnterHandler> pointerEnterHandler { get; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IPointerEnterHandler}
+    content.vb: Public Shared ReadOnly Property pointerEnterHandler As ExecuteEvents.EventFunction(Of IPointerEnterHandler)
+  overload: UnityEngine.EventSystems.ExecuteEvents.pointerEnterHandler*
+- uid: UnityEngine.EventSystems.ExecuteEvents.pointerExitHandler
+  commentId: P:UnityEngine.EventSystems.ExecuteEvents.pointerExitHandler
+  id: pointerExitHandler
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: pointerExitHandler
+  nameWithType: ExecuteEvents.pointerExitHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.pointerExitHandler
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: pointerExitHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 153
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public static ExecuteEvents.EventFunction<IPointerExitHandler> pointerExitHandler { get; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IPointerExitHandler}
+    content.vb: Public Shared ReadOnly Property pointerExitHandler As ExecuteEvents.EventFunction(Of IPointerExitHandler)
+  overload: UnityEngine.EventSystems.ExecuteEvents.pointerExitHandler*
+- uid: UnityEngine.EventSystems.ExecuteEvents.pointerDownHandler
+  commentId: P:UnityEngine.EventSystems.ExecuteEvents.pointerDownHandler
+  id: pointerDownHandler
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: pointerDownHandler
+  nameWithType: ExecuteEvents.pointerDownHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.pointerDownHandler
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: pointerDownHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 158
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public static ExecuteEvents.EventFunction<IPointerDownHandler> pointerDownHandler { get; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IPointerDownHandler}
+    content.vb: Public Shared ReadOnly Property pointerDownHandler As ExecuteEvents.EventFunction(Of IPointerDownHandler)
+  overload: UnityEngine.EventSystems.ExecuteEvents.pointerDownHandler*
+- uid: UnityEngine.EventSystems.ExecuteEvents.pointerUpHandler
+  commentId: P:UnityEngine.EventSystems.ExecuteEvents.pointerUpHandler
+  id: pointerUpHandler
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: pointerUpHandler
+  nameWithType: ExecuteEvents.pointerUpHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.pointerUpHandler
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: pointerUpHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 163
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public static ExecuteEvents.EventFunction<IPointerUpHandler> pointerUpHandler { get; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IPointerUpHandler}
+    content.vb: Public Shared ReadOnly Property pointerUpHandler As ExecuteEvents.EventFunction(Of IPointerUpHandler)
+  overload: UnityEngine.EventSystems.ExecuteEvents.pointerUpHandler*
+- uid: UnityEngine.EventSystems.ExecuteEvents.pointerClickHandler
+  commentId: P:UnityEngine.EventSystems.ExecuteEvents.pointerClickHandler
+  id: pointerClickHandler
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: pointerClickHandler
+  nameWithType: ExecuteEvents.pointerClickHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.pointerClickHandler
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: pointerClickHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 168
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public static ExecuteEvents.EventFunction<IPointerClickHandler> pointerClickHandler { get; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IPointerClickHandler}
+    content.vb: Public Shared ReadOnly Property pointerClickHandler As ExecuteEvents.EventFunction(Of IPointerClickHandler)
+  overload: UnityEngine.EventSystems.ExecuteEvents.pointerClickHandler*
+- uid: UnityEngine.EventSystems.ExecuteEvents.initializePotentialDrag
+  commentId: P:UnityEngine.EventSystems.ExecuteEvents.initializePotentialDrag
+  id: initializePotentialDrag
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: initializePotentialDrag
+  nameWithType: ExecuteEvents.initializePotentialDrag
+  fullName: UnityEngine.EventSystems.ExecuteEvents.initializePotentialDrag
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: initializePotentialDrag
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 173
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public static ExecuteEvents.EventFunction<IInitializePotentialDragHandler> initializePotentialDrag { get; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IInitializePotentialDragHandler}
+    content.vb: Public Shared ReadOnly Property initializePotentialDrag As ExecuteEvents.EventFunction(Of IInitializePotentialDragHandler)
+  overload: UnityEngine.EventSystems.ExecuteEvents.initializePotentialDrag*
+- uid: UnityEngine.EventSystems.ExecuteEvents.beginDragHandler
+  commentId: P:UnityEngine.EventSystems.ExecuteEvents.beginDragHandler
+  id: beginDragHandler
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: beginDragHandler
+  nameWithType: ExecuteEvents.beginDragHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.beginDragHandler
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: beginDragHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 178
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public static ExecuteEvents.EventFunction<IBeginDragHandler> beginDragHandler { get; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IBeginDragHandler}
+    content.vb: Public Shared ReadOnly Property beginDragHandler As ExecuteEvents.EventFunction(Of IBeginDragHandler)
+  overload: UnityEngine.EventSystems.ExecuteEvents.beginDragHandler*
+- uid: UnityEngine.EventSystems.ExecuteEvents.dragHandler
+  commentId: P:UnityEngine.EventSystems.ExecuteEvents.dragHandler
+  id: dragHandler
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: dragHandler
+  nameWithType: ExecuteEvents.dragHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.dragHandler
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: dragHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 183
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public static ExecuteEvents.EventFunction<IDragHandler> dragHandler { get; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IDragHandler}
+    content.vb: Public Shared ReadOnly Property dragHandler As ExecuteEvents.EventFunction(Of IDragHandler)
+  overload: UnityEngine.EventSystems.ExecuteEvents.dragHandler*
+- uid: UnityEngine.EventSystems.ExecuteEvents.endDragHandler
+  commentId: P:UnityEngine.EventSystems.ExecuteEvents.endDragHandler
+  id: endDragHandler
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: endDragHandler
+  nameWithType: ExecuteEvents.endDragHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.endDragHandler
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: endDragHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 188
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public static ExecuteEvents.EventFunction<IEndDragHandler> endDragHandler { get; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IEndDragHandler}
+    content.vb: Public Shared ReadOnly Property endDragHandler As ExecuteEvents.EventFunction(Of IEndDragHandler)
+  overload: UnityEngine.EventSystems.ExecuteEvents.endDragHandler*
+- uid: UnityEngine.EventSystems.ExecuteEvents.dropHandler
+  commentId: P:UnityEngine.EventSystems.ExecuteEvents.dropHandler
+  id: dropHandler
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: dropHandler
+  nameWithType: ExecuteEvents.dropHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.dropHandler
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: dropHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 193
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public static ExecuteEvents.EventFunction<IDropHandler> dropHandler { get; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IDropHandler}
+    content.vb: Public Shared ReadOnly Property dropHandler As ExecuteEvents.EventFunction(Of IDropHandler)
+  overload: UnityEngine.EventSystems.ExecuteEvents.dropHandler*
+- uid: UnityEngine.EventSystems.ExecuteEvents.scrollHandler
+  commentId: P:UnityEngine.EventSystems.ExecuteEvents.scrollHandler
+  id: scrollHandler
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: scrollHandler
+  nameWithType: ExecuteEvents.scrollHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.scrollHandler
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: scrollHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 198
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public static ExecuteEvents.EventFunction<IScrollHandler> scrollHandler { get; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IScrollHandler}
+    content.vb: Public Shared ReadOnly Property scrollHandler As ExecuteEvents.EventFunction(Of IScrollHandler)
+  overload: UnityEngine.EventSystems.ExecuteEvents.scrollHandler*
+- uid: UnityEngine.EventSystems.ExecuteEvents.updateSelectedHandler
+  commentId: P:UnityEngine.EventSystems.ExecuteEvents.updateSelectedHandler
+  id: updateSelectedHandler
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: updateSelectedHandler
+  nameWithType: ExecuteEvents.updateSelectedHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.updateSelectedHandler
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: updateSelectedHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 203
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public static ExecuteEvents.EventFunction<IUpdateSelectedHandler> updateSelectedHandler { get; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IUpdateSelectedHandler}
+    content.vb: Public Shared ReadOnly Property updateSelectedHandler As ExecuteEvents.EventFunction(Of IUpdateSelectedHandler)
+  overload: UnityEngine.EventSystems.ExecuteEvents.updateSelectedHandler*
+- uid: UnityEngine.EventSystems.ExecuteEvents.selectHandler
+  commentId: P:UnityEngine.EventSystems.ExecuteEvents.selectHandler
+  id: selectHandler
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: selectHandler
+  nameWithType: ExecuteEvents.selectHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.selectHandler
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: selectHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 208
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public static ExecuteEvents.EventFunction<ISelectHandler> selectHandler { get; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.ISelectHandler}
+    content.vb: Public Shared ReadOnly Property selectHandler As ExecuteEvents.EventFunction(Of ISelectHandler)
+  overload: UnityEngine.EventSystems.ExecuteEvents.selectHandler*
+- uid: UnityEngine.EventSystems.ExecuteEvents.deselectHandler
+  commentId: P:UnityEngine.EventSystems.ExecuteEvents.deselectHandler
+  id: deselectHandler
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: deselectHandler
+  nameWithType: ExecuteEvents.deselectHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.deselectHandler
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: deselectHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 213
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public static ExecuteEvents.EventFunction<IDeselectHandler> deselectHandler { get; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IDeselectHandler}
+    content.vb: Public Shared ReadOnly Property deselectHandler As ExecuteEvents.EventFunction(Of IDeselectHandler)
+  overload: UnityEngine.EventSystems.ExecuteEvents.deselectHandler*
+- uid: UnityEngine.EventSystems.ExecuteEvents.moveHandler
+  commentId: P:UnityEngine.EventSystems.ExecuteEvents.moveHandler
+  id: moveHandler
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: moveHandler
+  nameWithType: ExecuteEvents.moveHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.moveHandler
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: moveHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 218
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public static ExecuteEvents.EventFunction<IMoveHandler> moveHandler { get; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IMoveHandler}
+    content.vb: Public Shared ReadOnly Property moveHandler As ExecuteEvents.EventFunction(Of IMoveHandler)
+  overload: UnityEngine.EventSystems.ExecuteEvents.moveHandler*
+- uid: UnityEngine.EventSystems.ExecuteEvents.submitHandler
+  commentId: P:UnityEngine.EventSystems.ExecuteEvents.submitHandler
+  id: submitHandler
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: submitHandler
+  nameWithType: ExecuteEvents.submitHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.submitHandler
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: submitHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 223
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public static ExecuteEvents.EventFunction<ISubmitHandler> submitHandler { get; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.ISubmitHandler}
+    content.vb: Public Shared ReadOnly Property submitHandler As ExecuteEvents.EventFunction(Of ISubmitHandler)
+  overload: UnityEngine.EventSystems.ExecuteEvents.submitHandler*
+- uid: UnityEngine.EventSystems.ExecuteEvents.cancelHandler
+  commentId: P:UnityEngine.EventSystems.ExecuteEvents.cancelHandler
+  id: cancelHandler
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: cancelHandler
+  nameWithType: ExecuteEvents.cancelHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.cancelHandler
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: cancelHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 228
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public static ExecuteEvents.EventFunction<ICancelHandler> cancelHandler { get; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.ICancelHandler}
+    content.vb: Public Shared ReadOnly Property cancelHandler As ExecuteEvents.EventFunction(Of ICancelHandler)
+  overload: UnityEngine.EventSystems.ExecuteEvents.cancelHandler*
+- uid: UnityEngine.EventSystems.ExecuteEvents.Execute``1(UnityEngine.GameObject,UnityEngine.EventSystems.BaseEventData,UnityEngine.EventSystems.ExecuteEvents.EventFunction{``0})
+  commentId: M:UnityEngine.EventSystems.ExecuteEvents.Execute``1(UnityEngine.GameObject,UnityEngine.EventSystems.BaseEventData,UnityEngine.EventSystems.ExecuteEvents.EventFunction{``0})
+  id: Execute``1(UnityEngine.GameObject,UnityEngine.EventSystems.BaseEventData,UnityEngine.EventSystems.ExecuteEvents.EventFunction{``0})
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: Execute<T>(GameObject, BaseEventData, EventFunction<T>)
+  nameWithType: ExecuteEvents.Execute<T>(GameObject, BaseEventData, ExecuteEvents.EventFunction<T>)
+  fullName: UnityEngine.EventSystems.ExecuteEvents.Execute<T>(UnityEngine.GameObject, UnityEngine.EventSystems.BaseEventData, UnityEngine.EventSystems.ExecuteEvents.EventFunction<T>)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Execute
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 247
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: 'public static bool Execute<T>(GameObject target, BaseEventData eventData, ExecuteEvents.EventFunction<T> functor) where T : IEventSystemHandler'
+    parameters:
+    - id: target
+      type: UnityEngine.GameObject
+    - id: eventData
+      type: UnityEngine.EventSystems.BaseEventData
+    - id: functor
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function Execute(Of T As IEventSystemHandler)(target As GameObject, eventData As BaseEventData, functor As ExecuteEvents.EventFunction(Of T)) As Boolean
+  overload: UnityEngine.EventSystems.ExecuteEvents.Execute*
+  nameWithType.vb: ExecuteEvents.Execute(Of T)(GameObject, BaseEventData, ExecuteEvents.EventFunction(Of T))
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.Execute(Of T)(UnityEngine.GameObject, UnityEngine.EventSystems.BaseEventData, UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of T))
+  name.vb: Execute(Of T)(GameObject, BaseEventData, EventFunction(Of T))
+- uid: UnityEngine.EventSystems.ExecuteEvents.ExecuteHierarchy``1(UnityEngine.GameObject,UnityEngine.EventSystems.BaseEventData,UnityEngine.EventSystems.ExecuteEvents.EventFunction{``0})
+  commentId: M:UnityEngine.EventSystems.ExecuteEvents.ExecuteHierarchy``1(UnityEngine.GameObject,UnityEngine.EventSystems.BaseEventData,UnityEngine.EventSystems.ExecuteEvents.EventFunction{``0})
+  id: ExecuteHierarchy``1(UnityEngine.GameObject,UnityEngine.EventSystems.BaseEventData,UnityEngine.EventSystems.ExecuteEvents.EventFunction{``0})
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: ExecuteHierarchy<T>(GameObject, BaseEventData, EventFunction<T>)
+  nameWithType: ExecuteEvents.ExecuteHierarchy<T>(GameObject, BaseEventData, ExecuteEvents.EventFunction<T>)
+  fullName: UnityEngine.EventSystems.ExecuteEvents.ExecuteHierarchy<T>(UnityEngine.GameObject, UnityEngine.EventSystems.BaseEventData, UnityEngine.EventSystems.ExecuteEvents.EventFunction<T>)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ExecuteHierarchy
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 289
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: 'public static GameObject ExecuteHierarchy<T>(GameObject root, BaseEventData eventData, ExecuteEvents.EventFunction<T> callbackFunction) where T : IEventSystemHandler'
+    parameters:
+    - id: root
+      type: UnityEngine.GameObject
+    - id: eventData
+      type: UnityEngine.EventSystems.BaseEventData
+    - id: callbackFunction
+      type: UnityEngine.EventSystems.ExecuteEvents.EventFunction{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public Shared Function ExecuteHierarchy(Of T As IEventSystemHandler)(root As GameObject, eventData As BaseEventData, callbackFunction As ExecuteEvents.EventFunction(Of T)) As GameObject
+  overload: UnityEngine.EventSystems.ExecuteEvents.ExecuteHierarchy*
+  nameWithType.vb: ExecuteEvents.ExecuteHierarchy(Of T)(GameObject, BaseEventData, ExecuteEvents.EventFunction(Of T))
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.ExecuteHierarchy(Of T)(UnityEngine.GameObject, UnityEngine.EventSystems.BaseEventData, UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of T))
+  name.vb: ExecuteHierarchy(Of T)(GameObject, BaseEventData, EventFunction(Of T))
+- uid: UnityEngine.EventSystems.ExecuteEvents.CanHandleEvent``1(UnityEngine.GameObject)
+  commentId: M:UnityEngine.EventSystems.ExecuteEvents.CanHandleEvent``1(UnityEngine.GameObject)
+  id: CanHandleEvent``1(UnityEngine.GameObject)
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: CanHandleEvent<T>(GameObject)
+  nameWithType: ExecuteEvents.CanHandleEvent<T>(GameObject)
+  fullName: UnityEngine.EventSystems.ExecuteEvents.CanHandleEvent<T>(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: CanHandleEvent
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 346
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Whether the specified game object will be able to handle the specified event.
+  example: []
+  syntax:
+    content: 'public static bool CanHandleEvent<T>(GameObject go) where T : IEventSystemHandler'
+    parameters:
+    - id: go
+      type: UnityEngine.GameObject
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function CanHandleEvent(Of T As IEventSystemHandler)(go As GameObject) As Boolean
+  overload: UnityEngine.EventSystems.ExecuteEvents.CanHandleEvent*
+  nameWithType.vb: ExecuteEvents.CanHandleEvent(Of T)(GameObject)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.CanHandleEvent(Of T)(UnityEngine.GameObject)
+  name.vb: CanHandleEvent(Of T)(GameObject)
+- uid: UnityEngine.EventSystems.ExecuteEvents.GetEventHandler``1(UnityEngine.GameObject)
+  commentId: M:UnityEngine.EventSystems.ExecuteEvents.GetEventHandler``1(UnityEngine.GameObject)
+  id: GetEventHandler``1(UnityEngine.GameObject)
+  parent: UnityEngine.EventSystems.ExecuteEvents
+  langs:
+  - csharp
+  - vb
+  name: GetEventHandler<T>(GameObject)
+  nameWithType: ExecuteEvents.GetEventHandler<T>(GameObject)
+  fullName: UnityEngine.EventSystems.ExecuteEvents.GetEventHandler<T>(UnityEngine.GameObject)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetEventHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 358
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Bubble the specified event on the game object, figuring out which object will actually receive the event.
+  example: []
+  syntax:
+    content: 'public static GameObject GetEventHandler<T>(GameObject root) where T : IEventSystemHandler'
+    parameters:
+    - id: root
+      type: UnityEngine.GameObject
+    typeParameters:
+    - id: T
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public Shared Function GetEventHandler(Of T As IEventSystemHandler)(root As GameObject) As GameObject
+  overload: UnityEngine.EventSystems.ExecuteEvents.GetEventHandler*
+  nameWithType.vb: ExecuteEvents.GetEventHandler(Of T)(GameObject)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.GetEventHandler(Of T)(UnityEngine.GameObject)
+  name.vb: GetEventHandler(Of T)(GameObject)
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.EventSystems.ExecuteEvents.ValidateEventData*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.ValidateEventData
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_ValidateEventData__1_UnityEngine_EventSystems_BaseEventData_
+  name: ValidateEventData
+  nameWithType: ExecuteEvents.ValidateEventData
+  fullName: UnityEngine.EventSystems.ExecuteEvents.ValidateEventData
+- uid: UnityEngine.EventSystems.BaseEventData
+  commentId: T:UnityEngine.EventSystems.BaseEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.BaseEventData.html
+  name: BaseEventData
+  nameWithType: BaseEventData
+  fullName: UnityEngine.EventSystems.BaseEventData
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: UnityEngine.EventSystems.ExecuteEvents.pointerMoveHandler*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.pointerMoveHandler
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_pointerMoveHandler
+  name: pointerMoveHandler
+  nameWithType: ExecuteEvents.pointerMoveHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.pointerMoveHandler
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IPointerMoveHandler}
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IPointerMoveHandler}
+  parent: UnityEngine.EventSystems
+  definition: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<IPointerMoveHandler>
+  nameWithType: ExecuteEvents.EventFunction<IPointerMoveHandler>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<UnityEngine.EventSystems.IPointerMoveHandler>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of IPointerMoveHandler)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of UnityEngine.EventSystems.IPointerMoveHandler)
+  name.vb: ExecuteEvents.EventFunction(Of IPointerMoveHandler)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - uid: UnityEngine.EventSystems.IPointerMoveHandler
+    name: IPointerMoveHandler
+    href: UnityEngine.EventSystems.IPointerMoveHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.EventSystems.IPointerMoveHandler
+    name: IPointerMoveHandler
+    href: UnityEngine.EventSystems.IPointerMoveHandler.html
+  - name: )
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<T1>
+  nameWithType: ExecuteEvents.EventFunction<T1>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<T1>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of T1)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of T1)
+  name.vb: ExecuteEvents.EventFunction(Of T1)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - name: T1
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: )
+- uid: UnityEngine.EventSystems.ExecuteEvents.pointerEnterHandler*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.pointerEnterHandler
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_pointerEnterHandler
+  name: pointerEnterHandler
+  nameWithType: ExecuteEvents.pointerEnterHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.pointerEnterHandler
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IPointerEnterHandler}
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IPointerEnterHandler}
+  parent: UnityEngine.EventSystems
+  definition: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<IPointerEnterHandler>
+  nameWithType: ExecuteEvents.EventFunction<IPointerEnterHandler>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<UnityEngine.EventSystems.IPointerEnterHandler>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of IPointerEnterHandler)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of UnityEngine.EventSystems.IPointerEnterHandler)
+  name.vb: ExecuteEvents.EventFunction(Of IPointerEnterHandler)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - uid: UnityEngine.EventSystems.IPointerEnterHandler
+    name: IPointerEnterHandler
+    href: UnityEngine.EventSystems.IPointerEnterHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.EventSystems.IPointerEnterHandler
+    name: IPointerEnterHandler
+    href: UnityEngine.EventSystems.IPointerEnterHandler.html
+  - name: )
+- uid: UnityEngine.EventSystems.ExecuteEvents.pointerExitHandler*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.pointerExitHandler
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_pointerExitHandler
+  name: pointerExitHandler
+  nameWithType: ExecuteEvents.pointerExitHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.pointerExitHandler
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IPointerExitHandler}
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IPointerExitHandler}
+  parent: UnityEngine.EventSystems
+  definition: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<IPointerExitHandler>
+  nameWithType: ExecuteEvents.EventFunction<IPointerExitHandler>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<UnityEngine.EventSystems.IPointerExitHandler>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of IPointerExitHandler)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of UnityEngine.EventSystems.IPointerExitHandler)
+  name.vb: ExecuteEvents.EventFunction(Of IPointerExitHandler)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - uid: UnityEngine.EventSystems.IPointerExitHandler
+    name: IPointerExitHandler
+    href: UnityEngine.EventSystems.IPointerExitHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.EventSystems.IPointerExitHandler
+    name: IPointerExitHandler
+    href: UnityEngine.EventSystems.IPointerExitHandler.html
+  - name: )
+- uid: UnityEngine.EventSystems.ExecuteEvents.pointerDownHandler*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.pointerDownHandler
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_pointerDownHandler
+  name: pointerDownHandler
+  nameWithType: ExecuteEvents.pointerDownHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.pointerDownHandler
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IPointerDownHandler}
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IPointerDownHandler}
+  parent: UnityEngine.EventSystems
+  definition: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<IPointerDownHandler>
+  nameWithType: ExecuteEvents.EventFunction<IPointerDownHandler>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<UnityEngine.EventSystems.IPointerDownHandler>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of IPointerDownHandler)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of UnityEngine.EventSystems.IPointerDownHandler)
+  name.vb: ExecuteEvents.EventFunction(Of IPointerDownHandler)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - uid: UnityEngine.EventSystems.IPointerDownHandler
+    name: IPointerDownHandler
+    href: UnityEngine.EventSystems.IPointerDownHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.EventSystems.IPointerDownHandler
+    name: IPointerDownHandler
+    href: UnityEngine.EventSystems.IPointerDownHandler.html
+  - name: )
+- uid: UnityEngine.EventSystems.ExecuteEvents.pointerUpHandler*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.pointerUpHandler
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_pointerUpHandler
+  name: pointerUpHandler
+  nameWithType: ExecuteEvents.pointerUpHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.pointerUpHandler
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IPointerUpHandler}
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IPointerUpHandler}
+  parent: UnityEngine.EventSystems
+  definition: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<IPointerUpHandler>
+  nameWithType: ExecuteEvents.EventFunction<IPointerUpHandler>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<UnityEngine.EventSystems.IPointerUpHandler>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of IPointerUpHandler)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of UnityEngine.EventSystems.IPointerUpHandler)
+  name.vb: ExecuteEvents.EventFunction(Of IPointerUpHandler)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - uid: UnityEngine.EventSystems.IPointerUpHandler
+    name: IPointerUpHandler
+    href: UnityEngine.EventSystems.IPointerUpHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.EventSystems.IPointerUpHandler
+    name: IPointerUpHandler
+    href: UnityEngine.EventSystems.IPointerUpHandler.html
+  - name: )
+- uid: UnityEngine.EventSystems.ExecuteEvents.pointerClickHandler*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.pointerClickHandler
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_pointerClickHandler
+  name: pointerClickHandler
+  nameWithType: ExecuteEvents.pointerClickHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.pointerClickHandler
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IPointerClickHandler}
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IPointerClickHandler}
+  parent: UnityEngine.EventSystems
+  definition: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<IPointerClickHandler>
+  nameWithType: ExecuteEvents.EventFunction<IPointerClickHandler>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<UnityEngine.EventSystems.IPointerClickHandler>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of IPointerClickHandler)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of UnityEngine.EventSystems.IPointerClickHandler)
+  name.vb: ExecuteEvents.EventFunction(Of IPointerClickHandler)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - uid: UnityEngine.EventSystems.IPointerClickHandler
+    name: IPointerClickHandler
+    href: UnityEngine.EventSystems.IPointerClickHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.EventSystems.IPointerClickHandler
+    name: IPointerClickHandler
+    href: UnityEngine.EventSystems.IPointerClickHandler.html
+  - name: )
+- uid: UnityEngine.EventSystems.ExecuteEvents.initializePotentialDrag*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.initializePotentialDrag
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_initializePotentialDrag
+  name: initializePotentialDrag
+  nameWithType: ExecuteEvents.initializePotentialDrag
+  fullName: UnityEngine.EventSystems.ExecuteEvents.initializePotentialDrag
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IInitializePotentialDragHandler}
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IInitializePotentialDragHandler}
+  parent: UnityEngine.EventSystems
+  definition: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<IInitializePotentialDragHandler>
+  nameWithType: ExecuteEvents.EventFunction<IInitializePotentialDragHandler>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<UnityEngine.EventSystems.IInitializePotentialDragHandler>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of IInitializePotentialDragHandler)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of UnityEngine.EventSystems.IInitializePotentialDragHandler)
+  name.vb: ExecuteEvents.EventFunction(Of IInitializePotentialDragHandler)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - uid: UnityEngine.EventSystems.IInitializePotentialDragHandler
+    name: IInitializePotentialDragHandler
+    href: UnityEngine.EventSystems.IInitializePotentialDragHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.EventSystems.IInitializePotentialDragHandler
+    name: IInitializePotentialDragHandler
+    href: UnityEngine.EventSystems.IInitializePotentialDragHandler.html
+  - name: )
+- uid: UnityEngine.EventSystems.ExecuteEvents.beginDragHandler*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.beginDragHandler
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_beginDragHandler
+  name: beginDragHandler
+  nameWithType: ExecuteEvents.beginDragHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.beginDragHandler
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IBeginDragHandler}
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IBeginDragHandler}
+  parent: UnityEngine.EventSystems
+  definition: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<IBeginDragHandler>
+  nameWithType: ExecuteEvents.EventFunction<IBeginDragHandler>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<UnityEngine.EventSystems.IBeginDragHandler>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of IBeginDragHandler)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of UnityEngine.EventSystems.IBeginDragHandler)
+  name.vb: ExecuteEvents.EventFunction(Of IBeginDragHandler)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - uid: UnityEngine.EventSystems.IBeginDragHandler
+    name: IBeginDragHandler
+    href: UnityEngine.EventSystems.IBeginDragHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.EventSystems.IBeginDragHandler
+    name: IBeginDragHandler
+    href: UnityEngine.EventSystems.IBeginDragHandler.html
+  - name: )
+- uid: UnityEngine.EventSystems.ExecuteEvents.dragHandler*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.dragHandler
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_dragHandler
+  name: dragHandler
+  nameWithType: ExecuteEvents.dragHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.dragHandler
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IDragHandler}
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IDragHandler}
+  parent: UnityEngine.EventSystems
+  definition: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<IDragHandler>
+  nameWithType: ExecuteEvents.EventFunction<IDragHandler>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<UnityEngine.EventSystems.IDragHandler>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of IDragHandler)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of UnityEngine.EventSystems.IDragHandler)
+  name.vb: ExecuteEvents.EventFunction(Of IDragHandler)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - uid: UnityEngine.EventSystems.IDragHandler
+    name: IDragHandler
+    href: UnityEngine.EventSystems.IDragHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.EventSystems.IDragHandler
+    name: IDragHandler
+    href: UnityEngine.EventSystems.IDragHandler.html
+  - name: )
+- uid: UnityEngine.EventSystems.ExecuteEvents.endDragHandler*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.endDragHandler
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_endDragHandler
+  name: endDragHandler
+  nameWithType: ExecuteEvents.endDragHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.endDragHandler
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IEndDragHandler}
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IEndDragHandler}
+  parent: UnityEngine.EventSystems
+  definition: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<IEndDragHandler>
+  nameWithType: ExecuteEvents.EventFunction<IEndDragHandler>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<UnityEngine.EventSystems.IEndDragHandler>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of IEndDragHandler)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of UnityEngine.EventSystems.IEndDragHandler)
+  name.vb: ExecuteEvents.EventFunction(Of IEndDragHandler)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - uid: UnityEngine.EventSystems.IEndDragHandler
+    name: IEndDragHandler
+    href: UnityEngine.EventSystems.IEndDragHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.EventSystems.IEndDragHandler
+    name: IEndDragHandler
+    href: UnityEngine.EventSystems.IEndDragHandler.html
+  - name: )
+- uid: UnityEngine.EventSystems.ExecuteEvents.dropHandler*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.dropHandler
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_dropHandler
+  name: dropHandler
+  nameWithType: ExecuteEvents.dropHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.dropHandler
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IDropHandler}
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IDropHandler}
+  parent: UnityEngine.EventSystems
+  definition: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<IDropHandler>
+  nameWithType: ExecuteEvents.EventFunction<IDropHandler>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<UnityEngine.EventSystems.IDropHandler>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of IDropHandler)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of UnityEngine.EventSystems.IDropHandler)
+  name.vb: ExecuteEvents.EventFunction(Of IDropHandler)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - uid: UnityEngine.EventSystems.IDropHandler
+    name: IDropHandler
+    href: UnityEngine.EventSystems.IDropHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.EventSystems.IDropHandler
+    name: IDropHandler
+    href: UnityEngine.EventSystems.IDropHandler.html
+  - name: )
+- uid: UnityEngine.EventSystems.ExecuteEvents.scrollHandler*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.scrollHandler
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_scrollHandler
+  name: scrollHandler
+  nameWithType: ExecuteEvents.scrollHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.scrollHandler
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IScrollHandler}
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IScrollHandler}
+  parent: UnityEngine.EventSystems
+  definition: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<IScrollHandler>
+  nameWithType: ExecuteEvents.EventFunction<IScrollHandler>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<UnityEngine.EventSystems.IScrollHandler>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of IScrollHandler)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of UnityEngine.EventSystems.IScrollHandler)
+  name.vb: ExecuteEvents.EventFunction(Of IScrollHandler)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - uid: UnityEngine.EventSystems.IScrollHandler
+    name: IScrollHandler
+    href: UnityEngine.EventSystems.IScrollHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.EventSystems.IScrollHandler
+    name: IScrollHandler
+    href: UnityEngine.EventSystems.IScrollHandler.html
+  - name: )
+- uid: UnityEngine.EventSystems.ExecuteEvents.updateSelectedHandler*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.updateSelectedHandler
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_updateSelectedHandler
+  name: updateSelectedHandler
+  nameWithType: ExecuteEvents.updateSelectedHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.updateSelectedHandler
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IUpdateSelectedHandler}
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IUpdateSelectedHandler}
+  parent: UnityEngine.EventSystems
+  definition: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<IUpdateSelectedHandler>
+  nameWithType: ExecuteEvents.EventFunction<IUpdateSelectedHandler>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<UnityEngine.EventSystems.IUpdateSelectedHandler>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of IUpdateSelectedHandler)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of UnityEngine.EventSystems.IUpdateSelectedHandler)
+  name.vb: ExecuteEvents.EventFunction(Of IUpdateSelectedHandler)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - uid: UnityEngine.EventSystems.IUpdateSelectedHandler
+    name: IUpdateSelectedHandler
+    href: UnityEngine.EventSystems.IUpdateSelectedHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.EventSystems.IUpdateSelectedHandler
+    name: IUpdateSelectedHandler
+    href: UnityEngine.EventSystems.IUpdateSelectedHandler.html
+  - name: )
+- uid: UnityEngine.EventSystems.ExecuteEvents.selectHandler*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.selectHandler
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_selectHandler
+  name: selectHandler
+  nameWithType: ExecuteEvents.selectHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.selectHandler
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.ISelectHandler}
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.ISelectHandler}
+  parent: UnityEngine.EventSystems
+  definition: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<ISelectHandler>
+  nameWithType: ExecuteEvents.EventFunction<ISelectHandler>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<UnityEngine.EventSystems.ISelectHandler>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of ISelectHandler)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of UnityEngine.EventSystems.ISelectHandler)
+  name.vb: ExecuteEvents.EventFunction(Of ISelectHandler)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - uid: UnityEngine.EventSystems.ISelectHandler
+    name: ISelectHandler
+    href: UnityEngine.EventSystems.ISelectHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.EventSystems.ISelectHandler
+    name: ISelectHandler
+    href: UnityEngine.EventSystems.ISelectHandler.html
+  - name: )
+- uid: UnityEngine.EventSystems.ExecuteEvents.deselectHandler*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.deselectHandler
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_deselectHandler
+  name: deselectHandler
+  nameWithType: ExecuteEvents.deselectHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.deselectHandler
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IDeselectHandler}
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IDeselectHandler}
+  parent: UnityEngine.EventSystems
+  definition: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<IDeselectHandler>
+  nameWithType: ExecuteEvents.EventFunction<IDeselectHandler>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<UnityEngine.EventSystems.IDeselectHandler>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of IDeselectHandler)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of UnityEngine.EventSystems.IDeselectHandler)
+  name.vb: ExecuteEvents.EventFunction(Of IDeselectHandler)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - uid: UnityEngine.EventSystems.IDeselectHandler
+    name: IDeselectHandler
+    href: UnityEngine.EventSystems.IDeselectHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.EventSystems.IDeselectHandler
+    name: IDeselectHandler
+    href: UnityEngine.EventSystems.IDeselectHandler.html
+  - name: )
+- uid: UnityEngine.EventSystems.ExecuteEvents.moveHandler*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.moveHandler
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_moveHandler
+  name: moveHandler
+  nameWithType: ExecuteEvents.moveHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.moveHandler
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IMoveHandler}
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.IMoveHandler}
+  parent: UnityEngine.EventSystems
+  definition: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<IMoveHandler>
+  nameWithType: ExecuteEvents.EventFunction<IMoveHandler>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<UnityEngine.EventSystems.IMoveHandler>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of IMoveHandler)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of UnityEngine.EventSystems.IMoveHandler)
+  name.vb: ExecuteEvents.EventFunction(Of IMoveHandler)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - uid: UnityEngine.EventSystems.IMoveHandler
+    name: IMoveHandler
+    href: UnityEngine.EventSystems.IMoveHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.EventSystems.IMoveHandler
+    name: IMoveHandler
+    href: UnityEngine.EventSystems.IMoveHandler.html
+  - name: )
+- uid: UnityEngine.EventSystems.ExecuteEvents.submitHandler*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.submitHandler
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_submitHandler
+  name: submitHandler
+  nameWithType: ExecuteEvents.submitHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.submitHandler
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.ISubmitHandler}
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.ISubmitHandler}
+  parent: UnityEngine.EventSystems
+  definition: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<ISubmitHandler>
+  nameWithType: ExecuteEvents.EventFunction<ISubmitHandler>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<UnityEngine.EventSystems.ISubmitHandler>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of ISubmitHandler)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of UnityEngine.EventSystems.ISubmitHandler)
+  name.vb: ExecuteEvents.EventFunction(Of ISubmitHandler)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - uid: UnityEngine.EventSystems.ISubmitHandler
+    name: ISubmitHandler
+    href: UnityEngine.EventSystems.ISubmitHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.EventSystems.ISubmitHandler
+    name: ISubmitHandler
+    href: UnityEngine.EventSystems.ISubmitHandler.html
+  - name: )
+- uid: UnityEngine.EventSystems.ExecuteEvents.cancelHandler*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.cancelHandler
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_cancelHandler
+  name: cancelHandler
+  nameWithType: ExecuteEvents.cancelHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.cancelHandler
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.ICancelHandler}
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction{UnityEngine.EventSystems.ICancelHandler}
+  parent: UnityEngine.EventSystems
+  definition: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<ICancelHandler>
+  nameWithType: ExecuteEvents.EventFunction<ICancelHandler>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<UnityEngine.EventSystems.ICancelHandler>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of ICancelHandler)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of UnityEngine.EventSystems.ICancelHandler)
+  name.vb: ExecuteEvents.EventFunction(Of ICancelHandler)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - uid: UnityEngine.EventSystems.ICancelHandler
+    name: ICancelHandler
+    href: UnityEngine.EventSystems.ICancelHandler.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.EventSystems.ICancelHandler
+    name: ICancelHandler
+    href: UnityEngine.EventSystems.ICancelHandler.html
+  - name: )
+- uid: UnityEngine.EventSystems.ExecuteEvents.Execute*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.Execute
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_Execute__1_UnityEngine_GameObject_UnityEngine_EventSystems_BaseEventData_UnityEngine_EventSystems_ExecuteEvents_EventFunction___0__
+  name: Execute
+  nameWithType: ExecuteEvents.Execute
+  fullName: UnityEngine.EventSystems.ExecuteEvents.Execute
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction{{T}}
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction{``0}
+  parent: UnityEngine.EventSystems
+  definition: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<T>
+  nameWithType: ExecuteEvents.EventFunction<T>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<T>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of T)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of T)
+  name.vb: ExecuteEvents.EventFunction(Of T)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.EventSystems.ExecuteEvents.ExecuteHierarchy*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.ExecuteHierarchy
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_ExecuteHierarchy__1_UnityEngine_GameObject_UnityEngine_EventSystems_BaseEventData_UnityEngine_EventSystems_ExecuteEvents_EventFunction___0__
+  name: ExecuteHierarchy
+  nameWithType: ExecuteEvents.ExecuteHierarchy
+  fullName: UnityEngine.EventSystems.ExecuteEvents.ExecuteHierarchy
+- uid: UnityEngine.EventSystems.ExecuteEvents.CanHandleEvent*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.CanHandleEvent
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_CanHandleEvent__1_UnityEngine_GameObject_
+  name: CanHandleEvent
+  nameWithType: ExecuteEvents.CanHandleEvent
+  fullName: UnityEngine.EventSystems.ExecuteEvents.CanHandleEvent
+- uid: UnityEngine.EventSystems.ExecuteEvents.GetEventHandler*
+  commentId: Overload:UnityEngine.EventSystems.ExecuteEvents.GetEventHandler
+  href: UnityEngine.EventSystems.ExecuteEvents.html#UnityEngine_EventSystems_ExecuteEvents_GetEventHandler__1_UnityEngine_GameObject_
+  name: GetEventHandler
+  nameWithType: ExecuteEvents.GetEventHandler
+  fullName: UnityEngine.EventSystems.ExecuteEvents.GetEventHandler

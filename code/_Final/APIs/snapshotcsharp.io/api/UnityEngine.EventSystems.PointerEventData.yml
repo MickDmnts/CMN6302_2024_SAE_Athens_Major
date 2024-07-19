@@ -1,0 +1,2198 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  id: PointerEventData
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.PointerEventData.#ctor(UnityEngine.EventSystems.EventSystem)
+  - UnityEngine.EventSystems.PointerEventData.IsPointerMoving
+  - UnityEngine.EventSystems.PointerEventData.IsScrolling
+  - UnityEngine.EventSystems.PointerEventData.ToString
+  - UnityEngine.EventSystems.PointerEventData.altitudeAngle
+  - UnityEngine.EventSystems.PointerEventData.azimuthAngle
+  - UnityEngine.EventSystems.PointerEventData.button
+  - UnityEngine.EventSystems.PointerEventData.clickCount
+  - UnityEngine.EventSystems.PointerEventData.clickTime
+  - UnityEngine.EventSystems.PointerEventData.delta
+  - UnityEngine.EventSystems.PointerEventData.displayIndex
+  - UnityEngine.EventSystems.PointerEventData.dragging
+  - UnityEngine.EventSystems.PointerEventData.eligibleForClick
+  - UnityEngine.EventSystems.PointerEventData.enterEventCamera
+  - UnityEngine.EventSystems.PointerEventData.fullyExited
+  - UnityEngine.EventSystems.PointerEventData.hovered
+  - UnityEngine.EventSystems.PointerEventData.lastPress
+  - UnityEngine.EventSystems.PointerEventData.penStatus
+  - UnityEngine.EventSystems.PointerEventData.pointerClick
+  - UnityEngine.EventSystems.PointerEventData.pointerCurrentRaycast
+  - UnityEngine.EventSystems.PointerEventData.pointerDrag
+  - UnityEngine.EventSystems.PointerEventData.pointerEnter
+  - UnityEngine.EventSystems.PointerEventData.pointerId
+  - UnityEngine.EventSystems.PointerEventData.pointerPress
+  - UnityEngine.EventSystems.PointerEventData.pointerPressRaycast
+  - UnityEngine.EventSystems.PointerEventData.position
+  - UnityEngine.EventSystems.PointerEventData.pressEventCamera
+  - UnityEngine.EventSystems.PointerEventData.pressPosition
+  - UnityEngine.EventSystems.PointerEventData.pressure
+  - UnityEngine.EventSystems.PointerEventData.radius
+  - UnityEngine.EventSystems.PointerEventData.radiusVariance
+  - UnityEngine.EventSystems.PointerEventData.rawPointerPress
+  - UnityEngine.EventSystems.PointerEventData.reentered
+  - UnityEngine.EventSystems.PointerEventData.scrollDelta
+  - UnityEngine.EventSystems.PointerEventData.tangentialPressure
+  - UnityEngine.EventSystems.PointerEventData.tilt
+  - UnityEngine.EventSystems.PointerEventData.twist
+  - UnityEngine.EventSystems.PointerEventData.useDragThreshold
+  - UnityEngine.EventSystems.PointerEventData.worldNormal
+  - UnityEngine.EventSystems.PointerEventData.worldPosition
+  langs:
+  - csharp
+  - vb
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData
+  type: Class
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: PointerEventData
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 9
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Each touch event creates one of these containing all the relevant information.
+  example: []
+  syntax:
+    content: 'public class PointerEventData : BaseEventData'
+    content.vb: Public Class PointerEventData Inherits BaseEventData
+  inheritance:
+  - System.Object
+  - UnityEngine.EventSystems.AbstractEventData
+  - UnityEngine.EventSystems.BaseEventData
+  inheritedMembers:
+  - UnityEngine.EventSystems.BaseEventData.currentInputModule
+  - UnityEngine.EventSystems.BaseEventData.selectedObject
+  - UnityEngine.EventSystems.AbstractEventData.m_Used
+  - UnityEngine.EventSystems.AbstractEventData.Reset
+  - UnityEngine.EventSystems.AbstractEventData.Use
+  - UnityEngine.EventSystems.AbstractEventData.used
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: UnityEngine.EventSystems.PointerEventData.pointerEnter
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pointerEnter
+  id: pointerEnter
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: pointerEnter
+  nameWithType: PointerEventData.pointerEnter
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerEnter
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: pointerEnter
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 61
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: The object that received 'OnPointerEnter'.
+  example: []
+  syntax:
+    content: public GameObject pointerEnter { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public Property pointerEnter As GameObject
+  overload: UnityEngine.EventSystems.PointerEventData.pointerEnter*
+- uid: UnityEngine.EventSystems.PointerEventData.lastPress
+  commentId: P:UnityEngine.EventSystems.PointerEventData.lastPress
+  id: lastPress
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: lastPress
+  nameWithType: PointerEventData.lastPress
+  fullName: UnityEngine.EventSystems.PointerEventData.lastPress
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: lastPress
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 69
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: The raw GameObject for the last press event. This means that it is the 'pressed' GameObject even if it can not receive the press event itself.
+  example: []
+  syntax:
+    content: public GameObject lastPress { get; }
+    parameters: []
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public Property lastPress As GameObject
+  overload: UnityEngine.EventSystems.PointerEventData.lastPress*
+- uid: UnityEngine.EventSystems.PointerEventData.rawPointerPress
+  commentId: P:UnityEngine.EventSystems.PointerEventData.rawPointerPress
+  id: rawPointerPress
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: rawPointerPress
+  nameWithType: PointerEventData.rawPointerPress
+  fullName: UnityEngine.EventSystems.PointerEventData.rawPointerPress
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: rawPointerPress
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 74
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: The object that the press happened on even if it can not handle the press event.
+  example: []
+  syntax:
+    content: public GameObject rawPointerPress { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public Property rawPointerPress As GameObject
+  overload: UnityEngine.EventSystems.PointerEventData.rawPointerPress*
+- uid: UnityEngine.EventSystems.PointerEventData.pointerDrag
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pointerDrag
+  id: pointerDrag
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: pointerDrag
+  nameWithType: PointerEventData.pointerDrag
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerDrag
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: pointerDrag
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 79
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: The object that is receiving 'OnDrag'.
+  example: []
+  syntax:
+    content: public GameObject pointerDrag { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public Property pointerDrag As GameObject
+  overload: UnityEngine.EventSystems.PointerEventData.pointerDrag*
+- uid: UnityEngine.EventSystems.PointerEventData.pointerClick
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pointerClick
+  id: pointerClick
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: pointerClick
+  nameWithType: PointerEventData.pointerClick
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerClick
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: pointerClick
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 84
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: The object that should receive the 'OnPointerClick' event.
+  example: []
+  syntax:
+    content: public GameObject pointerClick { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public Property pointerClick As GameObject
+  overload: UnityEngine.EventSystems.PointerEventData.pointerClick*
+- uid: UnityEngine.EventSystems.PointerEventData.pointerCurrentRaycast
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pointerCurrentRaycast
+  id: pointerCurrentRaycast
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: pointerCurrentRaycast
+  nameWithType: PointerEventData.pointerCurrentRaycast
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerCurrentRaycast
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: pointerCurrentRaycast
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 89
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: RaycastResult associated with the current event.
+  example: []
+  syntax:
+    content: public RaycastResult pointerCurrentRaycast { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.RaycastResult
+    content.vb: Public Property pointerCurrentRaycast As RaycastResult
+  overload: UnityEngine.EventSystems.PointerEventData.pointerCurrentRaycast*
+- uid: UnityEngine.EventSystems.PointerEventData.pointerPressRaycast
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pointerPressRaycast
+  id: pointerPressRaycast
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: pointerPressRaycast
+  nameWithType: PointerEventData.pointerPressRaycast
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerPressRaycast
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: pointerPressRaycast
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 94
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: RaycastResult associated with the pointer press.
+  example: []
+  syntax:
+    content: public RaycastResult pointerPressRaycast { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.RaycastResult
+    content.vb: Public Property pointerPressRaycast As RaycastResult
+  overload: UnityEngine.EventSystems.PointerEventData.pointerPressRaycast*
+- uid: UnityEngine.EventSystems.PointerEventData.hovered
+  commentId: F:UnityEngine.EventSystems.PointerEventData.hovered
+  id: hovered
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: hovered
+  nameWithType: PointerEventData.hovered
+  fullName: UnityEngine.EventSystems.PointerEventData.hovered
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: hovered
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 96
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public List<GameObject> hovered
+    return:
+      type: System.Collections.Generic.List{UnityEngine.GameObject}
+    content.vb: Public hovered As List(Of GameObject)
+- uid: UnityEngine.EventSystems.PointerEventData.eligibleForClick
+  commentId: P:UnityEngine.EventSystems.PointerEventData.eligibleForClick
+  id: eligibleForClick
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: eligibleForClick
+  nameWithType: PointerEventData.eligibleForClick
+  fullName: UnityEngine.EventSystems.PointerEventData.eligibleForClick
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: eligibleForClick
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 101
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Is it possible to click this frame
+  example: []
+  syntax:
+    content: public bool eligibleForClick { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property eligibleForClick As Boolean
+  overload: UnityEngine.EventSystems.PointerEventData.eligibleForClick*
+- uid: UnityEngine.EventSystems.PointerEventData.displayIndex
+  commentId: P:UnityEngine.EventSystems.PointerEventData.displayIndex
+  id: displayIndex
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: displayIndex
+  nameWithType: PointerEventData.displayIndex
+  fullName: UnityEngine.EventSystems.PointerEventData.displayIndex
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: displayIndex
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 106
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: The index of the display that this pointer event comes from.
+  example: []
+  syntax:
+    content: public int displayIndex { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property displayIndex As Integer
+  overload: UnityEngine.EventSystems.PointerEventData.displayIndex*
+- uid: UnityEngine.EventSystems.PointerEventData.pointerId
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pointerId
+  id: pointerId
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: pointerId
+  nameWithType: PointerEventData.pointerId
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerId
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: pointerId
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 111
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Id of the pointer (touch id).
+  example: []
+  syntax:
+    content: public int pointerId { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property pointerId As Integer
+  overload: UnityEngine.EventSystems.PointerEventData.pointerId*
+- uid: UnityEngine.EventSystems.PointerEventData.position
+  commentId: P:UnityEngine.EventSystems.PointerEventData.position
+  id: position
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: position
+  nameWithType: PointerEventData.position
+  fullName: UnityEngine.EventSystems.PointerEventData.position
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: position
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 116
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Current pointer position.
+  example: []
+  syntax:
+    content: public Vector2 position { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Property position As Vector2
+  overload: UnityEngine.EventSystems.PointerEventData.position*
+- uid: UnityEngine.EventSystems.PointerEventData.delta
+  commentId: P:UnityEngine.EventSystems.PointerEventData.delta
+  id: delta
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: delta
+  nameWithType: PointerEventData.delta
+  fullName: UnityEngine.EventSystems.PointerEventData.delta
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: delta
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 121
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Pointer delta since last update.
+  example: []
+  syntax:
+    content: public Vector2 delta { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Property delta As Vector2
+  overload: UnityEngine.EventSystems.PointerEventData.delta*
+- uid: UnityEngine.EventSystems.PointerEventData.pressPosition
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pressPosition
+  id: pressPosition
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: pressPosition
+  nameWithType: PointerEventData.pressPosition
+  fullName: UnityEngine.EventSystems.PointerEventData.pressPosition
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: pressPosition
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 126
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Position of the press.
+  example: []
+  syntax:
+    content: public Vector2 pressPosition { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Property pressPosition As Vector2
+  overload: UnityEngine.EventSystems.PointerEventData.pressPosition*
+- uid: UnityEngine.EventSystems.PointerEventData.worldPosition
+  commentId: P:UnityEngine.EventSystems.PointerEventData.worldPosition
+  id: worldPosition
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: worldPosition
+  nameWithType: PointerEventData.worldPosition
+  fullName: UnityEngine.EventSystems.PointerEventData.worldPosition
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: worldPosition
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 132
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: World-space position where a ray cast into the screen hits something
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Use either pointerCurrentRaycast.worldPosition or pointerPressRaycast.worldPosition")]
+
+      public Vector3 worldPosition { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <Obsolete("Use either pointerCurrentRaycast.worldPosition or pointerPressRaycast.worldPosition")>
+
+      Public Property worldPosition As Vector3
+  overload: UnityEngine.EventSystems.PointerEventData.worldPosition*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use either pointerCurrentRaycast.worldPosition or pointerPressRaycast.worldPosition
+- uid: UnityEngine.EventSystems.PointerEventData.worldNormal
+  commentId: P:UnityEngine.EventSystems.PointerEventData.worldNormal
+  id: worldNormal
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: worldNormal
+  nameWithType: PointerEventData.worldNormal
+  fullName: UnityEngine.EventSystems.PointerEventData.worldNormal
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: worldNormal
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 138
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: World-space normal where a ray cast into the screen hits something
+  example: []
+  syntax:
+    content: >-
+      [Obsolete("Use either pointerCurrentRaycast.worldNormal or pointerPressRaycast.worldNormal")]
+
+      public Vector3 worldNormal { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector3
+    content.vb: >-
+      <Obsolete("Use either pointerCurrentRaycast.worldNormal or pointerPressRaycast.worldNormal")>
+
+      Public Property worldNormal As Vector3
+  overload: UnityEngine.EventSystems.PointerEventData.worldNormal*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use either pointerCurrentRaycast.worldNormal or pointerPressRaycast.worldNormal
+- uid: UnityEngine.EventSystems.PointerEventData.clickTime
+  commentId: P:UnityEngine.EventSystems.PointerEventData.clickTime
+  id: clickTime
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: clickTime
+  nameWithType: PointerEventData.clickTime
+  fullName: UnityEngine.EventSystems.PointerEventData.clickTime
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: clickTime
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 144
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: The last time a click event was sent. Used for double click
+  example: []
+  syntax:
+    content: public float clickTime { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property clickTime As Single
+  overload: UnityEngine.EventSystems.PointerEventData.clickTime*
+- uid: UnityEngine.EventSystems.PointerEventData.clickCount
+  commentId: P:UnityEngine.EventSystems.PointerEventData.clickCount
+  id: clickCount
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: clickCount
+  nameWithType: PointerEventData.clickCount
+  fullName: UnityEngine.EventSystems.PointerEventData.clickCount
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: clickCount
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 170
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Number of clicks in a row.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using UnityEngine;
+
+    using System.Collections;
+
+    using UnityEngine.UI;
+
+    using UnityEngine.EventSystems;// Required when using Event data.
+
+
+    public class ExampleClass : MonoBehaviour, IPointerDownHandler
+
+    {
+        public void OnPointerDown(PointerEventData eventData)
+        {
+            //Grab the number of consecutive clicks and assign it to an integer varible.
+            int i = eventData.clickCount;
+            //Display the click count.
+            Debug.Log(i);
+        }
+    }</code></pre>
+  syntax:
+    content: public int clickCount { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property clickCount As Integer
+  overload: UnityEngine.EventSystems.PointerEventData.clickCount*
+- uid: UnityEngine.EventSystems.PointerEventData.scrollDelta
+  commentId: P:UnityEngine.EventSystems.PointerEventData.scrollDelta
+  id: scrollDelta
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: scrollDelta
+  nameWithType: PointerEventData.scrollDelta
+  fullName: UnityEngine.EventSystems.PointerEventData.scrollDelta
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: scrollDelta
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 175
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: The amount of scroll since the last update.
+  example: []
+  syntax:
+    content: public Vector2 scrollDelta { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Property scrollDelta As Vector2
+  overload: UnityEngine.EventSystems.PointerEventData.scrollDelta*
+- uid: UnityEngine.EventSystems.PointerEventData.useDragThreshold
+  commentId: P:UnityEngine.EventSystems.PointerEventData.useDragThreshold
+  id: useDragThreshold
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: useDragThreshold
+  nameWithType: PointerEventData.useDragThreshold
+  fullName: UnityEngine.EventSystems.PointerEventData.useDragThreshold
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: useDragThreshold
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 183
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Should a drag threshold be used?
+  remarks: If you do not want a drag threshold set this to false in IInitializePotentialDragHandler.OnInitializePotentialDrag.
+  example: []
+  syntax:
+    content: public bool useDragThreshold { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property useDragThreshold As Boolean
+  overload: UnityEngine.EventSystems.PointerEventData.useDragThreshold*
+- uid: UnityEngine.EventSystems.PointerEventData.dragging
+  commentId: P:UnityEngine.EventSystems.PointerEventData.dragging
+  id: dragging
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: dragging
+  nameWithType: PointerEventData.dragging
+  fullName: UnityEngine.EventSystems.PointerEventData.dragging
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: dragging
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 188
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Is a drag operation currently occuring.
+  example: []
+  syntax:
+    content: public bool dragging { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property dragging As Boolean
+  overload: UnityEngine.EventSystems.PointerEventData.dragging*
+- uid: UnityEngine.EventSystems.PointerEventData.button
+  commentId: P:UnityEngine.EventSystems.PointerEventData.button
+  id: button
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: button
+  nameWithType: PointerEventData.button
+  fullName: UnityEngine.EventSystems.PointerEventData.button
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: button
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 193
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: The EventSystems.PointerEventData.InputButton for this event.
+  example: []
+  syntax:
+    content: public PointerEventData.InputButton button { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.EventSystems.PointerEventData.InputButton
+    content.vb: Public Property button As PointerEventData.InputButton
+  overload: UnityEngine.EventSystems.PointerEventData.button*
+- uid: UnityEngine.EventSystems.PointerEventData.pressure
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pressure
+  id: pressure
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: pressure
+  nameWithType: PointerEventData.pressure
+  fullName: UnityEngine.EventSystems.PointerEventData.pressure
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: pressure
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 203
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: The amount of pressure currently applied by a touch.
+  remarks: If the device does not report pressure, the value of this property is 1.0f.
+  example: []
+  syntax:
+    content: public float pressure { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property pressure As Single
+  overload: UnityEngine.EventSystems.PointerEventData.pressure*
+  seealso:
+  - linkId: UnityEngine.UIElements.IPointerEvent
+    commentId: T:UnityEngine.UIElements.IPointerEvent
+- uid: UnityEngine.EventSystems.PointerEventData.tangentialPressure
+  commentId: P:UnityEngine.EventSystems.PointerEventData.tangentialPressure
+  id: tangentialPressure
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: tangentialPressure
+  nameWithType: PointerEventData.tangentialPressure
+  fullName: UnityEngine.EventSystems.PointerEventData.tangentialPressure
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: tangentialPressure
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 208
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: The pressure applied to an additional pressure-sensitive control on the stylus.
+  example: []
+  syntax:
+    content: public float tangentialPressure { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property tangentialPressure As Single
+  overload: UnityEngine.EventSystems.PointerEventData.tangentialPressure*
+  seealso:
+  - linkId: UnityEngine.UIElements.IPointerEvent
+    commentId: T:UnityEngine.UIElements.IPointerEvent
+- uid: UnityEngine.EventSystems.PointerEventData.altitudeAngle
+  commentId: P:UnityEngine.EventSystems.PointerEventData.altitudeAngle
+  id: altitudeAngle
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: altitudeAngle
+  nameWithType: PointerEventData.altitudeAngle
+  fullName: UnityEngine.EventSystems.PointerEventData.altitudeAngle
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: altitudeAngle
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 216
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: The angle of the stylus relative to the surface, in radians
+  remarks: A value of 0 indicates that the stylus is parallel to the surface. A value of pi/2 indicates that it is perpendicular to the surface.
+  example: []
+  syntax:
+    content: public float altitudeAngle { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property altitudeAngle As Single
+  overload: UnityEngine.EventSystems.PointerEventData.altitudeAngle*
+  seealso:
+  - linkId: UnityEngine.UIElements.IPointerEvent
+    commentId: T:UnityEngine.UIElements.IPointerEvent
+- uid: UnityEngine.EventSystems.PointerEventData.azimuthAngle
+  commentId: P:UnityEngine.EventSystems.PointerEventData.azimuthAngle
+  id: azimuthAngle
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: azimuthAngle
+  nameWithType: PointerEventData.azimuthAngle
+  fullName: UnityEngine.EventSystems.PointerEventData.azimuthAngle
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: azimuthAngle
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 224
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: The angle of the stylus relative to the x-axis, in radians.
+  remarks: A value of 0 indicates that the stylus is pointed along the x-axis of the device.
+  example: []
+  syntax:
+    content: public float azimuthAngle { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property azimuthAngle As Single
+  overload: UnityEngine.EventSystems.PointerEventData.azimuthAngle*
+  seealso:
+  - linkId: UnityEngine.UIElements.IPointerEvent
+    commentId: T:UnityEngine.UIElements.IPointerEvent
+- uid: UnityEngine.EventSystems.PointerEventData.twist
+  commentId: P:UnityEngine.EventSystems.PointerEventData.twist
+  id: twist
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: twist
+  nameWithType: PointerEventData.twist
+  fullName: UnityEngine.EventSystems.PointerEventData.twist
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: twist
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 229
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: The rotation of the stylus around its axis, in radians.
+  example: []
+  syntax:
+    content: public float twist { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property twist As Single
+  overload: UnityEngine.EventSystems.PointerEventData.twist*
+  seealso:
+  - linkId: UnityEngine.UIElements.IPointerEvent
+    commentId: T:UnityEngine.UIElements.IPointerEvent
+- uid: UnityEngine.EventSystems.PointerEventData.tilt
+  commentId: P:UnityEngine.EventSystems.PointerEventData.tilt
+  id: tilt
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: tilt
+  nameWithType: PointerEventData.tilt
+  fullName: UnityEngine.EventSystems.PointerEventData.tilt
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: tilt
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 234
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public Vector2 tilt { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Property tilt As Vector2
+  overload: UnityEngine.EventSystems.PointerEventData.tilt*
+- uid: UnityEngine.EventSystems.PointerEventData.penStatus
+  commentId: P:UnityEngine.EventSystems.PointerEventData.penStatus
+  id: penStatus
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: penStatus
+  nameWithType: PointerEventData.penStatus
+  fullName: UnityEngine.EventSystems.PointerEventData.penStatus
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: penStatus
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 239
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Specifies the state of the pen. For example, whether the pen is in contact with the screen or tablet, whether the pen is inverted, and whether buttons are pressed.
+  example: []
+  syntax:
+    content: public PenStatus penStatus { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.PenStatus
+    content.vb: Public Property penStatus As PenStatus
+  overload: UnityEngine.EventSystems.PointerEventData.penStatus*
+  seealso:
+  - linkId: UnityEngine.UIElements.IPointerEvent
+    commentId: T:UnityEngine.UIElements.IPointerEvent
+- uid: UnityEngine.EventSystems.PointerEventData.radius
+  commentId: P:UnityEngine.EventSystems.PointerEventData.radius
+  id: radius
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: radius
+  nameWithType: PointerEventData.radius
+  fullName: UnityEngine.EventSystems.PointerEventData.radius
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: radius
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 247
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: An estimate of the radius of a touch.
+  remarks: Add `radiusVariance` to get the maximum touch radius, subtract it to get the minimum touch radius.
+  example: []
+  syntax:
+    content: public Vector2 radius { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Property radius As Vector2
+  overload: UnityEngine.EventSystems.PointerEventData.radius*
+  seealso:
+  - linkId: UnityEngine.UIElements.IPointerEvent
+    commentId: T:UnityEngine.UIElements.IPointerEvent
+- uid: UnityEngine.EventSystems.PointerEventData.radiusVariance
+  commentId: P:UnityEngine.EventSystems.PointerEventData.radiusVariance
+  id: radiusVariance
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: radiusVariance
+  nameWithType: PointerEventData.radiusVariance
+  fullName: UnityEngine.EventSystems.PointerEventData.radiusVariance
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: radiusVariance
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 254
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: The accuracy of the touch radius.
+  remarks: Add this value to the radius to get the maximum touch radius, subtract it to get the minimum touch radius.
+  example: []
+  syntax:
+    content: public Vector2 radiusVariance { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Property radiusVariance As Vector2
+  overload: UnityEngine.EventSystems.PointerEventData.radiusVariance*
+- uid: UnityEngine.EventSystems.PointerEventData.fullyExited
+  commentId: P:UnityEngine.EventSystems.PointerEventData.fullyExited
+  id: fullyExited
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: fullyExited
+  nameWithType: PointerEventData.fullyExited
+  fullName: UnityEngine.EventSystems.PointerEventData.fullyExited
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: fullyExited
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 258
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Specifies in the case of a pointer exit if the pointer has fully exited the area or if it has just entered a child.
+  example: []
+  syntax:
+    content: public bool fullyExited { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property fullyExited As Boolean
+  overload: UnityEngine.EventSystems.PointerEventData.fullyExited*
+- uid: UnityEngine.EventSystems.PointerEventData.reentered
+  commentId: P:UnityEngine.EventSystems.PointerEventData.reentered
+  id: reentered
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: reentered
+  nameWithType: PointerEventData.reentered
+  fullName: UnityEngine.EventSystems.PointerEventData.reentered
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: reentered
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 262
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Specifies in the case of a pointer enter if the pointer has entered a new area or if it has just reentered a parent after leaving a child.
+  example: []
+  syntax:
+    content: public bool reentered { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property reentered As Boolean
+  overload: UnityEngine.EventSystems.PointerEventData.reentered*
+- uid: UnityEngine.EventSystems.PointerEventData.#ctor(UnityEngine.EventSystems.EventSystem)
+  commentId: M:UnityEngine.EventSystems.PointerEventData.#ctor(UnityEngine.EventSystems.EventSystem)
+  id: '#ctor(UnityEngine.EventSystems.EventSystem)'
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: PointerEventData(EventSystem)
+  nameWithType: PointerEventData.PointerEventData(EventSystem)
+  fullName: UnityEngine.EventSystems.PointerEventData.PointerEventData(UnityEngine.EventSystems.EventSystem)
+  type: Constructor
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: .ctor
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 265
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  example: []
+  syntax:
+    content: public PointerEventData(EventSystem eventSystem)
+    parameters:
+    - id: eventSystem
+      type: UnityEngine.EventSystems.EventSystem
+    content.vb: Public Sub New(eventSystem As EventSystem)
+  overload: UnityEngine.EventSystems.PointerEventData.#ctor*
+  seealso:
+  - linkId: UnityEngine.UIElements.IPointerEvent
+    commentId: T:UnityEngine.UIElements.IPointerEvent
+  nameWithType.vb: PointerEventData.New(EventSystem)
+  fullName.vb: UnityEngine.EventSystems.PointerEventData.New(UnityEngine.EventSystems.EventSystem)
+  name.vb: New(EventSystem)
+- uid: UnityEngine.EventSystems.PointerEventData.IsPointerMoving
+  commentId: M:UnityEngine.EventSystems.PointerEventData.IsPointerMoving
+  id: IsPointerMoving
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: IsPointerMoving()
+  nameWithType: PointerEventData.IsPointerMoving()
+  fullName: UnityEngine.EventSystems.PointerEventData.IsPointerMoving()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IsPointerMoving
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 296
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Is the pointer moving.
+  example: []
+  syntax:
+    content: public bool IsPointerMoving()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsPointerMoving() As Boolean
+  overload: UnityEngine.EventSystems.PointerEventData.IsPointerMoving*
+- uid: UnityEngine.EventSystems.PointerEventData.IsScrolling
+  commentId: M:UnityEngine.EventSystems.PointerEventData.IsScrolling
+  id: IsScrolling
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: IsScrolling()
+  nameWithType: PointerEventData.IsScrolling()
+  fullName: UnityEngine.EventSystems.PointerEventData.IsScrolling()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IsScrolling
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 304
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Is scroll being used on the input device.
+  example: []
+  syntax:
+    content: public bool IsScrolling()
+    return:
+      type: System.Boolean
+    content.vb: Public Function IsScrolling() As Boolean
+  overload: UnityEngine.EventSystems.PointerEventData.IsScrolling*
+- uid: UnityEngine.EventSystems.PointerEventData.enterEventCamera
+  commentId: P:UnityEngine.EventSystems.PointerEventData.enterEventCamera
+  id: enterEventCamera
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: enterEventCamera
+  nameWithType: PointerEventData.enterEventCamera
+  fullName: UnityEngine.EventSystems.PointerEventData.enterEventCamera
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: enterEventCamera
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 312
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: The camera associated with the last OnPointerEnter event.
+  example: []
+  syntax:
+    content: public Camera enterEventCamera { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Camera
+    content.vb: Public ReadOnly Property enterEventCamera As Camera
+  overload: UnityEngine.EventSystems.PointerEventData.enterEventCamera*
+- uid: UnityEngine.EventSystems.PointerEventData.pressEventCamera
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pressEventCamera
+  id: pressEventCamera
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: pressEventCamera
+  nameWithType: PointerEventData.pressEventCamera
+  fullName: UnityEngine.EventSystems.PointerEventData.pressEventCamera
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: pressEventCamera
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 320
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: The camera associated with the last OnPointerPress event.
+  example: []
+  syntax:
+    content: public Camera pressEventCamera { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Camera
+    content.vb: Public ReadOnly Property pressEventCamera As Camera
+  overload: UnityEngine.EventSystems.PointerEventData.pressEventCamera*
+- uid: UnityEngine.EventSystems.PointerEventData.pointerPress
+  commentId: P:UnityEngine.EventSystems.PointerEventData.pointerPress
+  id: pointerPress
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: pointerPress
+  nameWithType: PointerEventData.pointerPress
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerPress
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: pointerPress
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 328
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: The GameObject that received the OnPointerDown.
+  example: []
+  syntax:
+    content: public GameObject pointerPress { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.GameObject
+    content.vb: Public Property pointerPress As GameObject
+  overload: UnityEngine.EventSystems.PointerEventData.pointerPress*
+- uid: UnityEngine.EventSystems.PointerEventData.ToString
+  commentId: M:UnityEngine.EventSystems.PointerEventData.ToString
+  id: ToString
+  parent: UnityEngine.EventSystems.PointerEventData
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: PointerEventData.ToString()
+  fullName: UnityEngine.EventSystems.PointerEventData.ToString()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ToString
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 341
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: UnityEngine.EventSystems.PointerEventData.ToString*
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.EventSystems.AbstractEventData
+  commentId: T:UnityEngine.EventSystems.AbstractEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.AbstractEventData.html
+  name: AbstractEventData
+  nameWithType: AbstractEventData
+  fullName: UnityEngine.EventSystems.AbstractEventData
+- uid: UnityEngine.EventSystems.BaseEventData
+  commentId: T:UnityEngine.EventSystems.BaseEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.BaseEventData.html
+  name: BaseEventData
+  nameWithType: BaseEventData
+  fullName: UnityEngine.EventSystems.BaseEventData
+- uid: UnityEngine.EventSystems.BaseEventData.currentInputModule
+  commentId: P:UnityEngine.EventSystems.BaseEventData.currentInputModule
+  parent: UnityEngine.EventSystems.BaseEventData
+  href: UnityEngine.EventSystems.BaseEventData.html#UnityEngine_EventSystems_BaseEventData_currentInputModule
+  name: currentInputModule
+  nameWithType: BaseEventData.currentInputModule
+  fullName: UnityEngine.EventSystems.BaseEventData.currentInputModule
+- uid: UnityEngine.EventSystems.BaseEventData.selectedObject
+  commentId: P:UnityEngine.EventSystems.BaseEventData.selectedObject
+  parent: UnityEngine.EventSystems.BaseEventData
+  href: UnityEngine.EventSystems.BaseEventData.html#UnityEngine_EventSystems_BaseEventData_selectedObject
+  name: selectedObject
+  nameWithType: BaseEventData.selectedObject
+  fullName: UnityEngine.EventSystems.BaseEventData.selectedObject
+- uid: UnityEngine.EventSystems.AbstractEventData.m_Used
+  commentId: F:UnityEngine.EventSystems.AbstractEventData.m_Used
+  parent: UnityEngine.EventSystems.AbstractEventData
+  href: UnityEngine.EventSystems.AbstractEventData.html#UnityEngine_EventSystems_AbstractEventData_m_Used
+  name: m_Used
+  nameWithType: AbstractEventData.m_Used
+  fullName: UnityEngine.EventSystems.AbstractEventData.m_Used
+- uid: UnityEngine.EventSystems.AbstractEventData.Reset
+  commentId: M:UnityEngine.EventSystems.AbstractEventData.Reset
+  parent: UnityEngine.EventSystems.AbstractEventData
+  href: UnityEngine.EventSystems.AbstractEventData.html#UnityEngine_EventSystems_AbstractEventData_Reset
+  name: Reset()
+  nameWithType: AbstractEventData.Reset()
+  fullName: UnityEngine.EventSystems.AbstractEventData.Reset()
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.AbstractEventData.Reset
+    name: Reset
+    href: UnityEngine.EventSystems.AbstractEventData.html#UnityEngine_EventSystems_AbstractEventData_Reset
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.EventSystems.AbstractEventData.Reset
+    name: Reset
+    href: UnityEngine.EventSystems.AbstractEventData.html#UnityEngine_EventSystems_AbstractEventData_Reset
+  - name: (
+  - name: )
+- uid: UnityEngine.EventSystems.AbstractEventData.Use
+  commentId: M:UnityEngine.EventSystems.AbstractEventData.Use
+  parent: UnityEngine.EventSystems.AbstractEventData
+  href: UnityEngine.EventSystems.AbstractEventData.html#UnityEngine_EventSystems_AbstractEventData_Use
+  name: Use()
+  nameWithType: AbstractEventData.Use()
+  fullName: UnityEngine.EventSystems.AbstractEventData.Use()
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.AbstractEventData.Use
+    name: Use
+    href: UnityEngine.EventSystems.AbstractEventData.html#UnityEngine_EventSystems_AbstractEventData_Use
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEngine.EventSystems.AbstractEventData.Use
+    name: Use
+    href: UnityEngine.EventSystems.AbstractEventData.html#UnityEngine_EventSystems_AbstractEventData_Use
+  - name: (
+  - name: )
+- uid: UnityEngine.EventSystems.AbstractEventData.used
+  commentId: P:UnityEngine.EventSystems.AbstractEventData.used
+  parent: UnityEngine.EventSystems.AbstractEventData
+  href: UnityEngine.EventSystems.AbstractEventData.html#UnityEngine_EventSystems_AbstractEventData_used
+  name: used
+  nameWithType: AbstractEventData.used
+  fullName: UnityEngine.EventSystems.AbstractEventData.used
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.EventSystems.PointerEventData.pointerEnter*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.pointerEnter
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_pointerEnter
+  name: pointerEnter
+  nameWithType: PointerEventData.pointerEnter
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerEnter
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.EventSystems.PointerEventData.lastPress*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.lastPress
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_lastPress
+  name: lastPress
+  nameWithType: PointerEventData.lastPress
+  fullName: UnityEngine.EventSystems.PointerEventData.lastPress
+- uid: UnityEngine.EventSystems.PointerEventData.rawPointerPress*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.rawPointerPress
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_rawPointerPress
+  name: rawPointerPress
+  nameWithType: PointerEventData.rawPointerPress
+  fullName: UnityEngine.EventSystems.PointerEventData.rawPointerPress
+- uid: UnityEngine.EventSystems.PointerEventData.pointerDrag*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.pointerDrag
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_pointerDrag
+  name: pointerDrag
+  nameWithType: PointerEventData.pointerDrag
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerDrag
+- uid: UnityEngine.EventSystems.PointerEventData.pointerClick*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.pointerClick
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_pointerClick
+  name: pointerClick
+  nameWithType: PointerEventData.pointerClick
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerClick
+- uid: UnityEngine.EventSystems.PointerEventData.pointerCurrentRaycast*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.pointerCurrentRaycast
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_pointerCurrentRaycast
+  name: pointerCurrentRaycast
+  nameWithType: PointerEventData.pointerCurrentRaycast
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerCurrentRaycast
+- uid: UnityEngine.EventSystems.RaycastResult
+  commentId: T:UnityEngine.EventSystems.RaycastResult
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.RaycastResult.html
+  name: RaycastResult
+  nameWithType: RaycastResult
+  fullName: UnityEngine.EventSystems.RaycastResult
+- uid: UnityEngine.EventSystems.PointerEventData.pointerPressRaycast*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.pointerPressRaycast
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_pointerPressRaycast
+  name: pointerPressRaycast
+  nameWithType: PointerEventData.pointerPressRaycast
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerPressRaycast
+- uid: System.Collections.Generic.List{UnityEngine.GameObject}
+  commentId: T:System.Collections.Generic.List{UnityEngine.GameObject}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<GameObject>
+  nameWithType: List<GameObject>
+  fullName: System.Collections.Generic.List<UnityEngine.GameObject>
+  nameWithType.vb: List(Of GameObject)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.GameObject)
+  name.vb: List(Of GameObject)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.GameObject
+    name: GameObject
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: UnityEngine.EventSystems.PointerEventData.eligibleForClick*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.eligibleForClick
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_eligibleForClick
+  name: eligibleForClick
+  nameWithType: PointerEventData.eligibleForClick
+  fullName: UnityEngine.EventSystems.PointerEventData.eligibleForClick
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.EventSystems.PointerEventData.displayIndex*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.displayIndex
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_displayIndex
+  name: displayIndex
+  nameWithType: PointerEventData.displayIndex
+  fullName: UnityEngine.EventSystems.PointerEventData.displayIndex
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.EventSystems.PointerEventData.pointerId*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.pointerId
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_pointerId
+  name: pointerId
+  nameWithType: PointerEventData.pointerId
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerId
+- uid: UnityEngine.EventSystems.PointerEventData.position*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.position
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_position
+  name: position
+  nameWithType: PointerEventData.position
+  fullName: UnityEngine.EventSystems.PointerEventData.position
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine.EventSystems.PointerEventData.delta*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.delta
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_delta
+  name: delta
+  nameWithType: PointerEventData.delta
+  fullName: UnityEngine.EventSystems.PointerEventData.delta
+- uid: UnityEngine.EventSystems.PointerEventData.pressPosition*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.pressPosition
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_pressPosition
+  name: pressPosition
+  nameWithType: PointerEventData.pressPosition
+  fullName: UnityEngine.EventSystems.PointerEventData.pressPosition
+- uid: UnityEngine.EventSystems.PointerEventData.worldPosition*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.worldPosition
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_worldPosition
+  name: worldPosition
+  nameWithType: PointerEventData.worldPosition
+  fullName: UnityEngine.EventSystems.PointerEventData.worldPosition
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: UnityEngine.EventSystems.PointerEventData.worldNormal*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.worldNormal
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_worldNormal
+  name: worldNormal
+  nameWithType: PointerEventData.worldNormal
+  fullName: UnityEngine.EventSystems.PointerEventData.worldNormal
+- uid: UnityEngine.EventSystems.PointerEventData.clickTime*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.clickTime
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_clickTime
+  name: clickTime
+  nameWithType: PointerEventData.clickTime
+  fullName: UnityEngine.EventSystems.PointerEventData.clickTime
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.EventSystems.PointerEventData.clickCount*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.clickCount
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_clickCount
+  name: clickCount
+  nameWithType: PointerEventData.clickCount
+  fullName: UnityEngine.EventSystems.PointerEventData.clickCount
+- uid: UnityEngine.EventSystems.PointerEventData.scrollDelta*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.scrollDelta
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_scrollDelta
+  name: scrollDelta
+  nameWithType: PointerEventData.scrollDelta
+  fullName: UnityEngine.EventSystems.PointerEventData.scrollDelta
+- uid: UnityEngine.EventSystems.PointerEventData.useDragThreshold*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.useDragThreshold
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_useDragThreshold
+  name: useDragThreshold
+  nameWithType: PointerEventData.useDragThreshold
+  fullName: UnityEngine.EventSystems.PointerEventData.useDragThreshold
+- uid: UnityEngine.EventSystems.PointerEventData.dragging*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.dragging
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_dragging
+  name: dragging
+  nameWithType: PointerEventData.dragging
+  fullName: UnityEngine.EventSystems.PointerEventData.dragging
+- uid: UnityEngine.EventSystems.PointerEventData.button*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.button
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_button
+  name: button
+  nameWithType: PointerEventData.button
+  fullName: UnityEngine.EventSystems.PointerEventData.button
+- uid: UnityEngine.EventSystems.PointerEventData.InputButton
+  commentId: T:UnityEngine.EventSystems.PointerEventData.InputButton
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerEventData.html
+  name: PointerEventData.InputButton
+  nameWithType: PointerEventData.InputButton
+  fullName: UnityEngine.EventSystems.PointerEventData.InputButton
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.PointerEventData
+    name: PointerEventData
+    href: UnityEngine.EventSystems.PointerEventData.html
+  - name: .
+  - uid: UnityEngine.EventSystems.PointerEventData.InputButton
+    name: InputButton
+    href: UnityEngine.EventSystems.PointerEventData.InputButton.html
+  spec.vb:
+  - uid: UnityEngine.EventSystems.PointerEventData
+    name: PointerEventData
+    href: UnityEngine.EventSystems.PointerEventData.html
+  - name: .
+  - uid: UnityEngine.EventSystems.PointerEventData.InputButton
+    name: InputButton
+    href: UnityEngine.EventSystems.PointerEventData.InputButton.html
+- uid: UnityEngine.UIElements.IPointerEvent
+  commentId: T:UnityEngine.UIElements.IPointerEvent
+  isExternal: true
+  name: IPointerEvent
+  nameWithType: IPointerEvent
+  fullName: UnityEngine.UIElements.IPointerEvent
+- uid: UnityEngine.EventSystems.PointerEventData.pressure*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.pressure
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_pressure
+  name: pressure
+  nameWithType: PointerEventData.pressure
+  fullName: UnityEngine.EventSystems.PointerEventData.pressure
+- uid: UnityEngine.EventSystems.PointerEventData.tangentialPressure*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.tangentialPressure
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_tangentialPressure
+  name: tangentialPressure
+  nameWithType: PointerEventData.tangentialPressure
+  fullName: UnityEngine.EventSystems.PointerEventData.tangentialPressure
+- uid: UnityEngine.EventSystems.PointerEventData.altitudeAngle*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.altitudeAngle
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_altitudeAngle
+  name: altitudeAngle
+  nameWithType: PointerEventData.altitudeAngle
+  fullName: UnityEngine.EventSystems.PointerEventData.altitudeAngle
+- uid: UnityEngine.EventSystems.PointerEventData.azimuthAngle*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.azimuthAngle
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_azimuthAngle
+  name: azimuthAngle
+  nameWithType: PointerEventData.azimuthAngle
+  fullName: UnityEngine.EventSystems.PointerEventData.azimuthAngle
+- uid: UnityEngine.EventSystems.PointerEventData.twist*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.twist
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_twist
+  name: twist
+  nameWithType: PointerEventData.twist
+  fullName: UnityEngine.EventSystems.PointerEventData.twist
+- uid: UnityEngine.EventSystems.PointerEventData.tilt*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.tilt
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_tilt
+  name: tilt
+  nameWithType: PointerEventData.tilt
+  fullName: UnityEngine.EventSystems.PointerEventData.tilt
+- uid: UnityEngine.EventSystems.PointerEventData.penStatus*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.penStatus
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_penStatus
+  name: penStatus
+  nameWithType: PointerEventData.penStatus
+  fullName: UnityEngine.EventSystems.PointerEventData.penStatus
+- uid: UnityEngine.PenStatus
+  commentId: T:UnityEngine.PenStatus
+  parent: UnityEngine
+  isExternal: true
+  name: PenStatus
+  nameWithType: PenStatus
+  fullName: UnityEngine.PenStatus
+- uid: UnityEngine.EventSystems.PointerEventData.radius*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.radius
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_radius
+  name: radius
+  nameWithType: PointerEventData.radius
+  fullName: UnityEngine.EventSystems.PointerEventData.radius
+- uid: UnityEngine.EventSystems.PointerEventData.radiusVariance*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.radiusVariance
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_radiusVariance
+  name: radiusVariance
+  nameWithType: PointerEventData.radiusVariance
+  fullName: UnityEngine.EventSystems.PointerEventData.radiusVariance
+- uid: UnityEngine.EventSystems.PointerEventData.fullyExited*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.fullyExited
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_fullyExited
+  name: fullyExited
+  nameWithType: PointerEventData.fullyExited
+  fullName: UnityEngine.EventSystems.PointerEventData.fullyExited
+- uid: UnityEngine.EventSystems.PointerEventData.reentered*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.reentered
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_reentered
+  name: reentered
+  nameWithType: PointerEventData.reentered
+  fullName: UnityEngine.EventSystems.PointerEventData.reentered
+- uid: UnityEngine.EventSystems.PointerEventData.#ctor*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.#ctor
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData__ctor_UnityEngine_EventSystems_EventSystem_
+  name: PointerEventData
+  nameWithType: PointerEventData.PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData.PointerEventData
+  nameWithType.vb: PointerEventData.New
+  fullName.vb: UnityEngine.EventSystems.PointerEventData.New
+  name.vb: New
+- uid: UnityEngine.EventSystems.EventSystem
+  commentId: T:UnityEngine.EventSystems.EventSystem
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.EventSystem.html
+  name: EventSystem
+  nameWithType: EventSystem
+  fullName: UnityEngine.EventSystems.EventSystem
+- uid: UnityEngine.EventSystems.PointerEventData.IsPointerMoving*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.IsPointerMoving
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_IsPointerMoving
+  name: IsPointerMoving
+  nameWithType: PointerEventData.IsPointerMoving
+  fullName: UnityEngine.EventSystems.PointerEventData.IsPointerMoving
+- uid: UnityEngine.EventSystems.PointerEventData.IsScrolling*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.IsScrolling
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_IsScrolling
+  name: IsScrolling
+  nameWithType: PointerEventData.IsScrolling
+  fullName: UnityEngine.EventSystems.PointerEventData.IsScrolling
+- uid: UnityEngine.EventSystems.PointerEventData.enterEventCamera*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.enterEventCamera
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_enterEventCamera
+  name: enterEventCamera
+  nameWithType: PointerEventData.enterEventCamera
+  fullName: UnityEngine.EventSystems.PointerEventData.enterEventCamera
+- uid: UnityEngine.Camera
+  commentId: T:UnityEngine.Camera
+  parent: UnityEngine
+  isExternal: true
+  name: Camera
+  nameWithType: Camera
+  fullName: UnityEngine.Camera
+- uid: UnityEngine.EventSystems.PointerEventData.pressEventCamera*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.pressEventCamera
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_pressEventCamera
+  name: pressEventCamera
+  nameWithType: PointerEventData.pressEventCamera
+  fullName: UnityEngine.EventSystems.PointerEventData.pressEventCamera
+- uid: UnityEngine.EventSystems.PointerEventData.pointerPress*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.pointerPress
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_pointerPress
+  name: pointerPress
+  nameWithType: PointerEventData.pointerPress
+  fullName: UnityEngine.EventSystems.PointerEventData.pointerPress
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: UnityEngine.EventSystems.PointerEventData.ToString*
+  commentId: Overload:UnityEngine.EventSystems.PointerEventData.ToString
+  href: UnityEngine.EventSystems.PointerEventData.html#UnityEngine_EventSystems_PointerEventData_ToString
+  name: ToString
+  nameWithType: PointerEventData.ToString
+  fullName: UnityEngine.EventSystems.PointerEventData.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,122 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.EventHandle
+  commentId: T:UnityEngine.EventSystems.EventHandle
+  id: EventHandle
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.EventHandle.Unused
+  - UnityEngine.EventSystems.EventHandle.Used
+  langs:
+  - csharp
+  - vb
+  name: EventHandle
+  nameWithType: EventHandle
+  fullName: UnityEngine.EventSystems.EventHandle
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventHandle.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: EventHandle
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventHandle.cs
+    startLine: 4
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum EventHandle
+    content.vb: >-
+      <Flags>
+
+      Public Enum EventHandle
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: UnityEngine.EventSystems.EventHandle.Unused
+  commentId: F:UnityEngine.EventSystems.EventHandle.Unused
+  id: Unused
+  parent: UnityEngine.EventSystems.EventHandle
+  langs:
+  - csharp
+  - vb
+  name: Unused
+  nameWithType: EventHandle.Unused
+  fullName: UnityEngine.EventSystems.EventHandle.Unused
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventHandle.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Unused
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventHandle.cs
+    startLine: 10
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: Unused = 0
+    return:
+      type: UnityEngine.EventSystems.EventHandle
+- uid: UnityEngine.EventSystems.EventHandle.Used
+  commentId: F:UnityEngine.EventSystems.EventHandle.Used
+  id: Used
+  parent: UnityEngine.EventSystems.EventHandle
+  langs:
+  - csharp
+  - vb
+  name: Used
+  nameWithType: EventHandle.Used
+  fullName: UnityEngine.EventSystems.EventHandle.Used
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventHandle.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Used
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventHandle.cs
+    startLine: 11
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: Used = 1
+    return:
+      type: UnityEngine.EventSystems.EventHandle
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.EventHandle
+  commentId: T:UnityEngine.EventSystems.EventHandle
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.EventHandle.html
+  name: EventHandle
+  nameWithType: EventHandle
+  fullName: UnityEngine.EventSystems.EventHandle

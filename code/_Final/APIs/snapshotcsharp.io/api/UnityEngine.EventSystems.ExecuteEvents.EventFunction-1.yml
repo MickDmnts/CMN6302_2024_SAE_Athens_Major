@@ -1,0 +1,79 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  id: ExecuteEvents.EventFunction`1
+  parent: UnityEngine.EventSystems
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ExecuteEvents.EventFunction<T1>
+  nameWithType: ExecuteEvents.EventFunction<T1>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<T1>
+  type: Delegate
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: EventFunction
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs
+    startLine: 8
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: public delegate void ExecuteEvents.EventFunction<T1>(T1 handler, BaseEventData eventData)
+    parameters:
+    - id: handler
+      type: '{T1}'
+    - id: eventData
+      type: UnityEngine.EventSystems.BaseEventData
+    typeParameters:
+    - id: T1
+    content.vb: Public Delegate Sub ExecuteEvents.EventFunction(Of T1)(handler As T1, eventData As BaseEventData)
+  nameWithType.vb: ExecuteEvents.EventFunction(Of T1)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of T1)
+  name.vb: ExecuteEvents.EventFunction(Of T1)
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: '{T1}'
+  commentId: '!:T1'
+  definition: T1
+  name: T1
+  nameWithType: T1
+  fullName: T1
+- uid: UnityEngine.EventSystems.BaseEventData
+  commentId: T:UnityEngine.EventSystems.BaseEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.BaseEventData.html
+  name: BaseEventData
+  nameWithType: BaseEventData
+  fullName: UnityEngine.EventSystems.BaseEventData
+- uid: T1
+  commentId: '!:T1'
+  name: T1
+  nameWithType: T1
+  fullName: T1

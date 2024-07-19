@@ -1,0 +1,99 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.IDeselectHandler
+  commentId: T:UnityEngine.EventSystems.IDeselectHandler
+  id: IDeselectHandler
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.IDeselectHandler.OnDeselect(UnityEngine.EventSystems.BaseEventData)
+  langs:
+  - csharp
+  - vb
+  name: IDeselectHandler
+  nameWithType: IDeselectHandler
+  fullName: UnityEngine.EventSystems.IDeselectHandler
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IDeselectHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 354
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Interface to implement if you wish to receive OnDeselect callbacks.
+  remarks: Criteria for this event is implementation dependent. For example see StandAloneInputModule.
+  example: []
+  syntax:
+    content: 'public interface IDeselectHandler : IEventSystemHandler'
+    content.vb: Public Interface IDeselectHandler Inherits IEventSystemHandler
+- uid: UnityEngine.EventSystems.IDeselectHandler.OnDeselect(UnityEngine.EventSystems.BaseEventData)
+  commentId: M:UnityEngine.EventSystems.IDeselectHandler.OnDeselect(UnityEngine.EventSystems.BaseEventData)
+  id: OnDeselect(UnityEngine.EventSystems.BaseEventData)
+  parent: UnityEngine.EventSystems.IDeselectHandler
+  langs:
+  - csharp
+  - vb
+  name: OnDeselect(BaseEventData)
+  nameWithType: IDeselectHandler.OnDeselect(BaseEventData)
+  fullName: UnityEngine.EventSystems.IDeselectHandler.OnDeselect(UnityEngine.EventSystems.BaseEventData)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OnDeselect
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 359
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Called by the EventSystem when a new object is being selected.
+  example: []
+  syntax:
+    content: void OnDeselect(BaseEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.BaseEventData
+    content.vb: Sub OnDeselect(eventData As BaseEventData)
+  overload: UnityEngine.EventSystems.IDeselectHandler.OnDeselect*
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.IDeselectHandler.OnDeselect*
+  commentId: Overload:UnityEngine.EventSystems.IDeselectHandler.OnDeselect
+  href: UnityEngine.EventSystems.IDeselectHandler.html#UnityEngine_EventSystems_IDeselectHandler_OnDeselect_UnityEngine_EventSystems_BaseEventData_
+  name: OnDeselect
+  nameWithType: IDeselectHandler.OnDeselect
+  fullName: UnityEngine.EventSystems.IDeselectHandler.OnDeselect
+- uid: UnityEngine.EventSystems.BaseEventData
+  commentId: T:UnityEngine.EventSystems.BaseEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.BaseEventData.html
+  name: BaseEventData
+  nameWithType: BaseEventData
+  fullName: UnityEngine.EventSystems.BaseEventData

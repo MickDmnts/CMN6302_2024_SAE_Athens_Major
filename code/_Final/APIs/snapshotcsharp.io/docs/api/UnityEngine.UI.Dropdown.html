@@ -1,0 +1,1883 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Dropdown </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Dropdown ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/new/mad/apiSpec/new?filename=UnityEngine_UI_Dropdown.md&amp;value=---%0Auid%3A%20UnityEngine.UI.Dropdown%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UnityEngine.UI.Dropdown">
+
+
+
+  <h1 id="UnityEngine_UI_Dropdown" data-uid="UnityEngine.UI.Dropdown" class="text-break">
+Class Dropdown  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L11"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UnityEngine.html">UnityEngine</a>.<a class="xref" href="UnityEngine.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UnityEngine.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;UI/Legacy/Dropdown&quot;, 102)]
+[RequireComponent(typeof(RectTransform))]
+public class Dropdown : Selectable, IMoveHandler, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler, ISelectHandler, IDeselectHandler, IPointerClickHandler, ISubmitHandler, ICancelHandler, IEventSystemHandler</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html">UIBehaviour</a></div>
+      <div><a class="xref" href="UnityEngine.UI.Selectable.html">Selectable</a></div>
+      <div><span class="xref">Dropdown</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="UnityEngine.EventSystems.IMoveHandler.html">IMoveHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IPointerDownHandler.html">IPointerDownHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IPointerUpHandler.html">IPointerUpHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IPointerEnterHandler.html">IPointerEnterHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IPointerExitHandler.html">IPointerExitHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.ISelectHandler.html">ISelectHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IDeselectHandler.html">IDeselectHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IPointerClickHandler.html">IPointerClickHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.ISubmitHandler.html">ISubmitHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.ICancelHandler.html">ICancelHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IEventSystemHandler.html">IEventSystemHandler</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_s_Selectables">Selectable.s_Selectables</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_s_SelectableCount">Selectable.s_SelectableCount</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_allSelectablesArray">Selectable.allSelectablesArray</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_allSelectableCount">Selectable.allSelectableCount</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_allSelectables">Selectable.allSelectables</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_AllSelectablesNoAlloc_UnityEngine_UI_Selectable___">Selectable.AllSelectablesNoAlloc(Selectable[])</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_m_CurrentIndex">Selectable.m_CurrentIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_navigation">Selectable.navigation</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_transition">Selectable.transition</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_colors">Selectable.colors</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_spriteState">Selectable.spriteState</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_animationTriggers">Selectable.animationTriggers</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_targetGraphic">Selectable.targetGraphic</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_interactable">Selectable.interactable</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_image">Selectable.image</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnCanvasGroupChanged">Selectable.OnCanvasGroupChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_IsInteractable">Selectable.IsInteractable()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnDidApplyAnimationProperties">Selectable.OnDidApplyAnimationProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnEnable">Selectable.OnEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnTransformParentChanged">Selectable.OnTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_currentSelectionState">Selectable.currentSelectionState</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_InstantClearState">Selectable.InstantClearState()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_DoStateTransition_UnityEngine_UI_Selectable_SelectionState_System_Boolean_">Selectable.DoStateTransition(Selectable.SelectionState, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectable_UnityEngine_Vector3_">Selectable.FindSelectable(Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectableOnLeft">Selectable.FindSelectableOnLeft()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectableOnRight">Selectable.FindSelectableOnRight()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectableOnUp">Selectable.FindSelectableOnUp()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectableOnDown">Selectable.FindSelectableOnDown()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnMove_UnityEngine_EventSystems_AxisEventData_">Selectable.OnMove(AxisEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_IsHighlighted">Selectable.IsHighlighted()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_IsPressed">Selectable.IsPressed()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnPointerDown_UnityEngine_EventSystems_PointerEventData_">Selectable.OnPointerDown(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnPointerUp_UnityEngine_EventSystems_PointerEventData_">Selectable.OnPointerUp(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnPointerEnter_UnityEngine_EventSystems_PointerEventData_">Selectable.OnPointerEnter(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnPointerExit_UnityEngine_EventSystems_PointerEventData_">Selectable.OnPointerExit(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnSelect_UnityEngine_EventSystems_BaseEventData_">Selectable.OnSelect(BaseEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnDeselect_UnityEngine_EventSystems_BaseEventData_">Selectable.OnDeselect(BaseEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_Select">Selectable.Select()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnDestroy">UIBehaviour.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_IsActive">UIBehaviour.IsActive()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnRectTransformDimensionsChange">UIBehaviour.OnRectTransformDimensionsChange()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnBeforeTransformParentChanged">UIBehaviour.OnBeforeTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnCanvasHierarchyChanged">UIBehaviour.OnCanvasHierarchyChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_IsDestroyed">UIBehaviour.IsDestroyed()</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.Invoke(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.InvokeRepeating(string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.CancelInvoke(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.IsInvoking(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine_Auto(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StopCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(Coroutine)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StopCoroutine(string)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">MonoBehaviour.print(object)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.destroyCancellationToken</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponent(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.TryGetComponent(Type, out Component)</a>
+    </div>
+    <div>
+      <span class="xref">Component.TryGetComponent&lt;T&gt;(out T)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.GetComponent(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type, List&lt;Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentIndex()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.CompareTag(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <span class="xref">Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Scene)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate(Object, Transform, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate&lt;T&gt;(T, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.Destroy(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Destroy(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.DestroyImmediate(Object, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyImmediate(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DontDestroyOnLoad(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.DestroyObject(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyObject(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <span class="xref">Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Object.name</span>
+    </div>
+    <div>
+      <span class="xref">Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UnityEngine_UI_Dropdown__ctor_" data-uid="UnityEngine.UI.Dropdown.#ctor*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown__ctor" data-uid="UnityEngine.UI.Dropdown.#ctor">
+  Dropdown()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L430"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Dropdown()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UnityEngine_UI_Dropdown_alphaFadeSpeed_" data-uid="UnityEngine.UI.Dropdown.alphaFadeSpeed*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_alphaFadeSpeed" data-uid="UnityEngine.UI.Dropdown.alphaFadeSpeed">
+  alphaFadeSpeed
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The time interval at which a drop down will appear and disappear</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float alphaFadeSpeed { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_captionImage_" data-uid="UnityEngine.UI.Dropdown.captionImage*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_captionImage" data-uid="UnityEngine.UI.Dropdown.captionImage">
+  captionImage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The Image component to hold the image of the currently selected option.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image captionImage { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_captionText_" data-uid="UnityEngine.UI.Dropdown.captionText*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_captionText" data-uid="UnityEngine.UI.Dropdown.captionText">
+  captionText
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L145"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The Text component to hold the text of the currently selected option.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Text captionText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Text.html">Text</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_itemImage_" data-uid="UnityEngine.UI.Dropdown.itemImage*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_itemImage" data-uid="UnityEngine.UI.Dropdown.itemImage">
+  itemImage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The Image component to hold the image of the item</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Image itemImage { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Image.html">Image</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_itemText_" data-uid="UnityEngine.UI.Dropdown.itemText*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_itemText" data-uid="UnityEngine.UI.Dropdown.itemText">
+  itemText
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L163"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The Text component to hold the text of the item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Text itemText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Text.html">Text</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_onValueChanged_" data-uid="UnityEngine.UI.Dropdown.onValueChanged*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_onValueChanged" data-uid="UnityEngine.UI.Dropdown.onValueChanged">
+  onValueChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A UnityEvent that is invoked when when a user has clicked one of the options in the dropdown list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dropdown.DropdownEvent onValueChanged { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Dropdown.html">Dropdown</a>.<a class="xref" href="UnityEngine.UI.Dropdown.DropdownEvent.html">DropdownEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Dropdown_onValueChanged_examples">Examples</h4>
+  <pre><code class="lang-csharp">//Create a new Dropdown GameObject by going to the Hierarchy and clicking Create&gt;UI&gt;Dropdown. Attach this script to the Dropdown GameObject.
+//Set your own Text in the Inspector window
+
+using UnityEngine;
+using UnityEngine.UI;
+
+public class Example : MonoBehaviour
+{
+    Dropdown m_Dropdown;
+    public Text m_Text;
+
+    void Start()
+    {
+        //Fetch the Dropdown GameObject
+        m_Dropdown = GetComponent&lt;Dropdown&gt;();
+        //Add listener for when the value of the Dropdown changes, to take action
+        m_Dropdown.onValueChanged.AddListener(delegate {
+                DropdownValueChanged(m_Dropdown);
+            });
+
+        //Initialise the Text to say the first value of the Dropdown
+        m_Text.text = "First Value : " + m_Dropdown.value;
+    }
+
+    //Ouput the new value of the Dropdown into Text
+    void DropdownValueChanged(Dropdown change)
+    {
+        m_Text.text =  "New Value : " + change.value;
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_Dropdown_onValueChanged_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Use this to detect when a user selects one or more options in the Dropdown. Add a listener to perform an action when this UnityEvent detects a selection by the user. See <a href="https://unity3d.com/learn/tutorials/topics/scripting/delegates">https://unity3d.com/learn/tutorials/topics/scripting/delegates</a> for more information on delegates.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_options_" data-uid="UnityEngine.UI.Dropdown.options*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_options" data-uid="UnityEngine.UI.Dropdown.options">
+  options
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The list of possible options. A text string and an image can be specified for each option.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Dropdown.OptionData&gt; options { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="UnityEngine.UI.Dropdown.html">Dropdown</a>.<a class="xref" href="UnityEngine.UI.Dropdown.OptionData.html">OptionData</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Dropdown_options_examples">Examples</h4>
+  <pre><code class="lang-csharp">//Create a new Dropdown GameObject by going to the Hierarchy and clicking __Create__&gt;__UI__&gt;__Dropdown__. Attach this script to the Dropdown GameObject.
+
+using UnityEngine;
+using UnityEngine.UI;
+using System.Collections.Generic;
+
+public class Example : MonoBehaviour
+{
+    //Use these for adding options to the Dropdown List
+    Dropdown.OptionData m_NewData, m_NewData2;
+    //The list of messages for the Dropdown
+    List&lt;Dropdown.OptionData&gt; m_Messages = new List&lt;Dropdown.OptionData&gt;();
+
+
+    //This is the Dropdown
+    Dropdown m_Dropdown;
+    string m_MyString;
+    int m_Index;
+
+    void Start()
+    {
+        //Fetch the Dropdown GameObject the script is attached to
+        m_Dropdown = GetComponent&lt;Dropdown&gt;();
+        //Clear the old options of the Dropdown menu
+        m_Dropdown.ClearOptions();
+
+        //Create a new option for the Dropdown menu which reads "Option 1" and add to messages List
+        m_NewData = new Dropdown.OptionData();
+        m_NewData.text = "Option 1";
+        m_Messages.Add(m_NewData);
+
+        //Create a new option for the Dropdown menu which reads "Option 2" and add to messages List
+        m_NewData2 = new Dropdown.OptionData();
+        m_NewData2.text = "Option 2";
+        m_Messages.Add(m_NewData2);
+
+        //Take each entry in the message List
+        foreach (Dropdown.OptionData message in m_Messages)
+        {
+            //Add each entry to the Dropdown
+            m_Dropdown.options.Add(message);
+            //Make the index equal to the total number of entries
+            m_Index = m_Messages.Count - 1;
+        }
+    }
+
+    //This OnGUI function is used here for a quick demonstration. See the [[wiki:UISystem|UI Section]] for more information about setting up your own UI.
+    void OnGUI()
+    {
+        //TextField for user to type new entry to add to Dropdown
+        m_MyString = GUI.TextField(new Rect(0, 40, 100, 40), m_MyString);
+
+        //Press the "Add" Button to add a new entry to the Dropdown
+        if (GUI.Button(new Rect(0, 0, 100, 40), "Add"))
+        {
+            //Make the index the last number of entries
+            m_Index = m_Messages.Count;
+            //Create a temporary option
+            Dropdown.OptionData temp = new Dropdown.OptionData();
+            //Make the option the data from the TextField
+            temp.text = m_MyString;
+
+            //Update the messages list with the TextField data
+            m_Messages.Add(temp);
+
+            //Add the Textfield data to the Dropdown
+            m_Dropdown.options.Insert(m_Index, temp);
+        }
+
+        //Press the "Remove" button to delete the selected option
+        if (GUI.Button(new Rect(110, 0, 100, 40), "Remove"))
+        {
+            //Remove the current selected item from the Dropdown from the messages List
+            m_Messages.RemoveAt(m_Dropdown.value);
+            //Remove the current selection from the Dropdown
+            m_Dropdown.options.RemoveAt(m_Dropdown.value);
+        }
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_Dropdown_options_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is the list of options within the Dropdown. Each option contains Text and/or image data that you can specify using UI.Dropdown.OptionData before adding to the Dropdown list.
+This also unlocks the ability to edit the Dropdown, including the insertion, removal, and finding of options, as well as other useful tools</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_template_" data-uid="UnityEngine.UI.Dropdown.template*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_template" data-uid="UnityEngine.UI.Dropdown.template">
+  template
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The Rect Transform of the template for the dropdown list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform template { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectTransform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_value_" data-uid="UnityEngine.UI.Dropdown.value*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_value" data-uid="UnityEngine.UI.Dropdown.value">
+  value
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The Value is the index number of the current selection in the Dropdown. 0 is the first option in the Dropdown, 1 is the second, and so on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int value { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Dropdown_value_examples">Examples</h4>
+  <pre><code class="lang-csharp">//Create a new Dropdown GameObject by going to the Hierarchy and clicking __Create__&gt;__UI__&gt;__Dropdown__. Attach this script to the Dropdown GameObject.
+//Set your own Text in the Inspector window
+
+using UnityEngine;
+using UnityEngine.UI;
+
+public class Example : MonoBehaviour
+{
+    //Attach this script to a Dropdown GameObject
+    Dropdown m_Dropdown;
+    //This is the string that stores the current selection m_Text of the Dropdown
+    string m_Message;
+    //This Text outputs the current selection to the screen
+    public Text m_Text;
+    //This is the index value of the Dropdown
+    int m_DropdownValue;
+
+    void Start()
+    {
+        //Fetch the DropDown component from the GameObject
+        m_Dropdown = GetComponent&lt;Dropdown&gt;();
+        //Output the first Dropdown index value
+        Debug.Log("Starting Dropdown Value : " + m_Dropdown.value);
+    }
+
+    void Update()
+    {
+        //Keep the current index of the Dropdown in a variable
+        m_DropdownValue = m_Dropdown.value;
+        //Change the message to say the name of the current Dropdown selection using the value
+        m_Message = m_Dropdown.options[m_DropdownValue].text;
+        //Change the onscreen Text to reflect the current Dropdown selection
+        m_Text.text = m_Message;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UnityEngine_UI_Dropdown_AddOptions_" data-uid="UnityEngine.UI.Dropdown.AddOptions*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_AddOptions_System_Collections_Generic_List_System_String__" data-uid="UnityEngine.UI.Dropdown.AddOptions(System.Collections.Generic.List{System.String})">
+  AddOptions(List&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L562"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add multiple text-only options to the options of the Dropdown based on a list of strings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOptions(List&lt;string&gt; options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>The list of text strings to add.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Dropdown_AddOptions_System_Collections_Generic_List_System_String___examples">Examples</h4>
+  <pre><code class="lang-csharp">//Create a new Dropdown GameObject by going to the Hierarchy and clicking Create&gt;UI&gt;Dropdown. Attach this script to the Dropdown GameObject.
+
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+public class Example : MonoBehaviour
+{
+    //Create a List of new Dropdown options
+    List&lt;string&gt; m_DropOptions = new List&lt;string&gt; { "Option 1", "Option 2"};
+    //This is the Dropdown
+    Dropdown m_Dropdown;
+
+    void Start()
+    {
+        //Fetch the Dropdown GameObject the script is attached to
+        m_Dropdown = GetComponent&lt;Dropdown&gt;();
+        //Clear the old options of the Dropdown menu
+        m_Dropdown.ClearOptions();
+        //Add the options created in the List above
+        m_Dropdown.AddOptions(m_DropOptions);
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_Dropdown_AddOptions_System_Collections_Generic_List_System_String___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Add a List of string messages to the Dropdown. The Dropdown shows each member of the list as a separate option.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_AddOptions_" data-uid="UnityEngine.UI.Dropdown.AddOptions*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_AddOptions_System_Collections_Generic_List_UnityEngine_Sprite__" data-uid="UnityEngine.UI.Dropdown.AddOptions(System.Collections.Generic.List{UnityEngine.Sprite})">
+  AddOptions(List&lt;Sprite&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L579"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add multiple image-only options to the options of the Dropdown based on a list of Sprites.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOptions(List&lt;Sprite&gt; options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Sprite</span>&gt;</dt>
+    <dd><p>The list of Sprites to add.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Dropdown_AddOptions_System_Collections_Generic_List_UnityEngine_Sprite___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>See AddOptions(List&lt;string&gt; options) for code example of usages.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_AddOptions_" data-uid="UnityEngine.UI.Dropdown.AddOptions*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_AddOptions_System_Collections_Generic_List_UnityEngine_UI_Dropdown_OptionData__" data-uid="UnityEngine.UI.Dropdown.AddOptions(System.Collections.Generic.List{UnityEngine.UI.Dropdown.OptionData})">
+  AddOptions(List&lt;OptionData&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L520"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add multiple options to the options of the Dropdown based on a list of OptionData objects.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddOptions(List&lt;Dropdown.OptionData&gt; options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="UnityEngine.UI.Dropdown.html">Dropdown</a>.<a class="xref" href="UnityEngine.UI.Dropdown.OptionData.html">OptionData</a>&gt;</dt>
+    <dd><p>The list of OptionData to add.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Dropdown_AddOptions_System_Collections_Generic_List_UnityEngine_UI_Dropdown_OptionData___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>See AddOptions(List&lt;string&gt; options) for code example of usages.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_Awake_" data-uid="UnityEngine.UI.Dropdown.Awake*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_Awake" data-uid="UnityEngine.UI.Dropdown.Awake">
+  Awake()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convenience function to get the Animator component on the GameObject.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Awake()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Dropdown_Awake_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class ExampleClass : MonoBehaviour
+{
+    private Animator buttonAnimator;
+    public Button button;
+
+    void Start()
+    {
+        //Assigns the "buttonAnimator" with the button's animator.
+        buttonAnimator = button.animator;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_ClearOptions_" data-uid="UnityEngine.UI.Dropdown.ClearOptions*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_ClearOptions" data-uid="UnityEngine.UI.Dropdown.ClearOptions">
+  ClearOptions()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L590"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clear the list of options in the Dropdown.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearOptions()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_CreateBlocker_" data-uid="UnityEngine.UI.Dropdown.CreateBlocker*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_CreateBlocker_UnityEngine_Canvas_" data-uid="UnityEngine.UI.Dropdown.CreateBlocker(UnityEngine.Canvas)">
+  CreateBlocker(Canvas)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L901"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a blocker that blocks clicks to other controls while the dropdown list is open.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual GameObject CreateBlocker(Canvas rootCanvas)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>rootCanvas</code> <span class="xref">Canvas</span></dt>
+    <dd><p>The root canvas the dropdown is under.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd><p>The created blocker object</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Dropdown_CreateBlocker_UnityEngine_Canvas__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Override this method to implement a different way to obtain a blocker GameObject.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_CreateDropdownList_" data-uid="UnityEngine.UI.Dropdown.CreateDropdownList*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_CreateDropdownList_UnityEngine_GameObject_" data-uid="UnityEngine.UI.Dropdown.CreateDropdownList(UnityEngine.GameObject)">
+  CreateDropdownList(GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L991"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create the dropdown list to be shown when the dropdown is clicked. The dropdown list should correspond to the provided template GameObject, equivalent to instantiating a copy of it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual GameObject CreateDropdownList(GameObject template)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>template</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The template to create the dropdown list from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd><p>The created drop down list gameobject.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Dropdown_CreateDropdownList_UnityEngine_GameObject__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Override this method to implement a different way to obtain a dropdown list GameObject.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_CreateItem_" data-uid="UnityEngine.UI.Dropdown.CreateItem*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_CreateItem_UnityEngine_UI_Dropdown_DropdownItem_" data-uid="UnityEngine.UI.Dropdown.CreateItem(UnityEngine.UI.Dropdown.DropdownItem)">
+  CreateItem(DropdownItem)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L1017"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a dropdown item based upon the item template.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Dropdown.DropdownItem CreateItem(Dropdown.DropdownItem itemTemplate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>itemTemplate</code> <a class="xref" href="UnityEngine.UI.Dropdown.html">Dropdown</a>.<a class="xref" href="UnityEngine.UI.Dropdown.DropdownItem.html">DropdownItem</a></dt>
+    <dd><p>e template to create the option item from.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Dropdown.html">Dropdown</a>.<a class="xref" href="UnityEngine.UI.Dropdown.DropdownItem.html">DropdownItem</a></dt>
+    <dd><p>The created dropdown item component</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Dropdown_CreateItem_UnityEngine_UI_Dropdown_DropdownItem__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Override this method to implement a different way to obtain an option item.
+The option item should correspond to the provided template DropdownItem and its GameObject, equivalent to instantiating a copy of it.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_DestroyBlocker_" data-uid="UnityEngine.UI.Dropdown.DestroyBlocker*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_DestroyBlocker_UnityEngine_GameObject_" data-uid="UnityEngine.UI.Dropdown.DestroyBlocker(UnityEngine.GameObject)">
+  DestroyBlocker(GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L978"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convenience method to explicitly destroy the previously generated blocker object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DestroyBlocker(GameObject blocker)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blocker</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The blocker object to destroy.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Dropdown_DestroyBlocker_UnityEngine_GameObject__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Override this method to implement a different way to dispose of a blocker GameObject that blocks clicks to other controls while the dropdown list is open.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_DestroyDropdownList_" data-uid="UnityEngine.UI.Dropdown.DestroyDropdownList*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_DestroyDropdownList_UnityEngine_GameObject_" data-uid="UnityEngine.UI.Dropdown.DestroyDropdownList(UnityEngine.GameObject)">
+  DestroyDropdownList(GameObject)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L1003"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convenience method to explicitly destroy the previously generated dropdown list</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DestroyDropdownList(GameObject dropdownList)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>dropdownList</code> <span class="xref">GameObject</span></dt>
+    <dd><p>The dropdown list GameObject to destroy</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Dropdown_DestroyDropdownList_UnityEngine_GameObject__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Override this method to implement a different way to dispose of a dropdown list GameObject.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_DestroyItem_" data-uid="UnityEngine.UI.Dropdown.DestroyItem*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_DestroyItem_UnityEngine_UI_Dropdown_DropdownItem_" data-uid="UnityEngine.UI.Dropdown.DestroyItem(UnityEngine.UI.Dropdown.DropdownItem)">
+  DestroyItem(DropdownItem)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L1030"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convenience method to explicitly destroy the previously generated Items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void DestroyItem(Dropdown.DropdownItem item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="UnityEngine.UI.Dropdown.html">Dropdown</a>.<a class="xref" href="UnityEngine.UI.Dropdown.DropdownItem.html">DropdownItem</a></dt>
+    <dd><p>The Item to destroy.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Dropdown_DestroyItem_UnityEngine_UI_Dropdown_DropdownItem__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Override this method to implement a different way to dispose of an option item.
+Likely no action needed since destroying the dropdown list destroys all contained items as well.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_Hide_" data-uid="UnityEngine.UI.Dropdown.Hide*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_Hide" data-uid="UnityEngine.UI.Dropdown.Hide">
+  Hide()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L1089"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Hide the dropdown list. I.e. close it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Hide()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_OnCancel_" data-uid="UnityEngine.UI.Dropdown.OnCancel*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_OnCancel_UnityEngine_EventSystems_BaseEventData_" data-uid="UnityEngine.UI.Dropdown.OnCancel(UnityEngine.EventSystems.BaseEventData)">
+  OnCancel(BaseEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L724"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This will hide the dropdown list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnCancel(BaseEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.BaseEventData.html">BaseEventData</a></dt>
+    <dd><p>The asocciated event data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Dropdown_OnCancel_UnityEngine_EventSystems_BaseEventData__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Called by a BaseInputModule when a Cancel event occurs.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_OnDisable_" data-uid="UnityEngine.UI.Dropdown.OnDisable*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_OnDisable" data-uid="UnityEngine.UI.Dropdown.OnDisable">
+  OnDisable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L468"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDisable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_OnPointerClick_" data-uid="UnityEngine.UI.Dropdown.OnPointerClick*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_OnPointerClick_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.UI.Dropdown.OnPointerClick(UnityEngine.EventSystems.PointerEventData)">
+  OnPointerClick(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L703"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handling for when the dropdown is initially 'clicked'. Typically shows the dropdown</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPointerClick(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></dt>
+    <dd><p>The asocciated event data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_OnSubmit_" data-uid="UnityEngine.UI.Dropdown.OnSubmit*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_OnSubmit_UnityEngine_EventSystems_BaseEventData_" data-uid="UnityEngine.UI.Dropdown.OnSubmit(UnityEngine.EventSystems.BaseEventData)">
+  OnSubmit(BaseEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L712"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handling for when the dropdown is selected and a submit event is processed. Typically shows the dropdown</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSubmit(BaseEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.BaseEventData.html">BaseEventData</a></dt>
+    <dd><p>The asocciated event data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_RefreshShownValue_" data-uid="UnityEngine.UI.Dropdown.RefreshShownValue*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_RefreshShownValue" data-uid="UnityEngine.UI.Dropdown.RefreshShownValue">
+  RefreshShownValue()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L486"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Refreshes the text and image (if available) of the currently selected option.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RefreshShownValue()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Dropdown_RefreshShownValue_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If you have modified the list of options, you should call this method afterwards to ensure that the visual state of the dropdown corresponds to the updated options.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_SetValueWithoutNotify_" data-uid="UnityEngine.UI.Dropdown.SetValueWithoutNotify*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_SetValueWithoutNotify_System_Int32_" data-uid="UnityEngine.UI.Dropdown.SetValueWithoutNotify(System.Int32)">
+  SetValueWithoutNotify(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L409"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set index number of the current selection in the Dropdown without invoking onValueChanged callback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValueWithoutNotify(int input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The new index for the current selection.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_Show_" data-uid="UnityEngine.UI.Dropdown.Show*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_Show" data-uid="UnityEngine.UI.Dropdown.Show">
+  Show()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L739"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Show the dropdown.</p>
+<p>Plan for dropdown scrolling to ensure dropdown is contained within screen.</p>
+<p>We assume the Canvas is the screen that the dropdown must be kept inside.
+This is always valid for screen space canvas modes.
+For world space canvases we don't know how it's used, but it could be e.g. for an in-game monitor.
+We consider it a fair constraint that the canvas must be big enough to contain dropdowns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Show()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Dropdown_Start_" data-uid="UnityEngine.UI.Dropdown.Start*"></a>
+
+  <h3 id="UnityEngine_UI_Dropdown_Start" data-uid="UnityEngine.UI.Dropdown.Start">
+  Start()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L447"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Dropdown.cs/#L11" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

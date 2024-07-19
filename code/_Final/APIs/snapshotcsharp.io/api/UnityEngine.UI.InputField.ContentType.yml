@@ -1,0 +1,367 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.InputField.ContentType
+  commentId: T:UnityEngine.UI.InputField.ContentType
+  id: InputField.ContentType
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.InputField.ContentType.Alphanumeric
+  - UnityEngine.UI.InputField.ContentType.Autocorrected
+  - UnityEngine.UI.InputField.ContentType.Custom
+  - UnityEngine.UI.InputField.ContentType.DecimalNumber
+  - UnityEngine.UI.InputField.ContentType.EmailAddress
+  - UnityEngine.UI.InputField.ContentType.IntegerNumber
+  - UnityEngine.UI.InputField.ContentType.Name
+  - UnityEngine.UI.InputField.ContentType.Password
+  - UnityEngine.UI.InputField.ContentType.Pin
+  - UnityEngine.UI.InputField.ContentType.Standard
+  langs:
+  - csharp
+  - vb
+  name: InputField.ContentType
+  nameWithType: InputField.ContentType
+  fullName: UnityEngine.UI.InputField.ContentType
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ContentType
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 33
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Setting the content type acts as a shortcut for setting a combination of InputType, CharacterValidation, LineType, and TouchScreenKeyboardType
+  remarks: The ContentType affects character validation, keyboard type used (on platforms with on-screen keyboards), whether the InputField accepts multiple lines, and whether the text is autocorrected (on platforms that offer input auto-correction) or is treated as a password where the characters are not shown directly.
+  example: []
+  syntax:
+    content: public enum InputField.ContentType
+    content.vb: Public Enum InputField.ContentType
+- uid: UnityEngine.UI.InputField.ContentType.Standard
+  commentId: F:UnityEngine.UI.InputField.ContentType.Standard
+  id: Standard
+  parent: UnityEngine.UI.InputField.ContentType
+  langs:
+  - csharp
+  - vb
+  name: Standard
+  nameWithType: InputField.ContentType.Standard
+  fullName: UnityEngine.UI.InputField.ContentType.Standard
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Standard
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 38
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Allows all input.
+  example: []
+  syntax:
+    content: Standard = 0
+    return:
+      type: UnityEngine.UI.InputField.ContentType
+- uid: UnityEngine.UI.InputField.ContentType.Autocorrected
+  commentId: F:UnityEngine.UI.InputField.ContentType.Autocorrected
+  id: Autocorrected
+  parent: UnityEngine.UI.InputField.ContentType
+  langs:
+  - csharp
+  - vb
+  name: Autocorrected
+  nameWithType: InputField.ContentType.Autocorrected
+  fullName: UnityEngine.UI.InputField.ContentType.Autocorrected
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Autocorrected
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 43
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Allows all input and performs auto-correction on platforms that support it.
+  example: []
+  syntax:
+    content: Autocorrected = 1
+    return:
+      type: UnityEngine.UI.InputField.ContentType
+- uid: UnityEngine.UI.InputField.ContentType.IntegerNumber
+  commentId: F:UnityEngine.UI.InputField.ContentType.IntegerNumber
+  id: IntegerNumber
+  parent: UnityEngine.UI.InputField.ContentType
+  langs:
+  - csharp
+  - vb
+  name: IntegerNumber
+  nameWithType: InputField.ContentType.IntegerNumber
+  fullName: UnityEngine.UI.InputField.ContentType.IntegerNumber
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IntegerNumber
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 47
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Allow whole numbers (positive or negative).
+  example: []
+  syntax:
+    content: IntegerNumber = 2
+    return:
+      type: UnityEngine.UI.InputField.ContentType
+- uid: UnityEngine.UI.InputField.ContentType.DecimalNumber
+  commentId: F:UnityEngine.UI.InputField.ContentType.DecimalNumber
+  id: DecimalNumber
+  parent: UnityEngine.UI.InputField.ContentType
+  langs:
+  - csharp
+  - vb
+  name: DecimalNumber
+  nameWithType: InputField.ContentType.DecimalNumber
+  fullName: UnityEngine.UI.InputField.ContentType.DecimalNumber
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: DecimalNumber
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 52
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Allows decimal numbers (positive or negative).
+  example: []
+  syntax:
+    content: DecimalNumber = 3
+    return:
+      type: UnityEngine.UI.InputField.ContentType
+- uid: UnityEngine.UI.InputField.ContentType.Alphanumeric
+  commentId: F:UnityEngine.UI.InputField.ContentType.Alphanumeric
+  id: Alphanumeric
+  parent: UnityEngine.UI.InputField.ContentType
+  langs:
+  - csharp
+  - vb
+  name: Alphanumeric
+  nameWithType: InputField.ContentType.Alphanumeric
+  fullName: UnityEngine.UI.InputField.ContentType.Alphanumeric
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Alphanumeric
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 57
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Allows letters A-Z, a-z and numbers 0-9.
+  example: []
+  syntax:
+    content: Alphanumeric = 4
+    return:
+      type: UnityEngine.UI.InputField.ContentType
+- uid: UnityEngine.UI.InputField.ContentType.Name
+  commentId: F:UnityEngine.UI.InputField.ContentType.Name
+  id: Name
+  parent: UnityEngine.UI.InputField.ContentType
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: InputField.ContentType.Name
+  fullName: UnityEngine.UI.InputField.ContentType.Name
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Name
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 62
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The InputField is used for typing in a name, and enforces capitalization of the first letter of each word. Note that the user can circumvent the first letter capitalization rules by deleting automatically-capitalized letters.
+  example: []
+  syntax:
+    content: Name = 5
+    return:
+      type: UnityEngine.UI.InputField.ContentType
+- uid: UnityEngine.UI.InputField.ContentType.EmailAddress
+  commentId: F:UnityEngine.UI.InputField.ContentType.EmailAddress
+  id: EmailAddress
+  parent: UnityEngine.UI.InputField.ContentType
+  langs:
+  - csharp
+  - vb
+  name: EmailAddress
+  nameWithType: InputField.ContentType.EmailAddress
+  fullName: UnityEngine.UI.InputField.ContentType.EmailAddress
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: EmailAddress
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 67
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The input is used for typing in an email address.
+  example: []
+  syntax:
+    content: EmailAddress = 6
+    return:
+      type: UnityEngine.UI.InputField.ContentType
+- uid: UnityEngine.UI.InputField.ContentType.Password
+  commentId: F:UnityEngine.UI.InputField.ContentType.Password
+  id: Password
+  parent: UnityEngine.UI.InputField.ContentType
+  langs:
+  - csharp
+  - vb
+  name: Password
+  nameWithType: InputField.ContentType.Password
+  fullName: UnityEngine.UI.InputField.ContentType.Password
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Password
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 72
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Allows all input and hides the typed characters by showing them as asterisks characters.
+  example: []
+  syntax:
+    content: Password = 7
+    return:
+      type: UnityEngine.UI.InputField.ContentType
+- uid: UnityEngine.UI.InputField.ContentType.Pin
+  commentId: F:UnityEngine.UI.InputField.ContentType.Pin
+  id: Pin
+  parent: UnityEngine.UI.InputField.ContentType
+  langs:
+  - csharp
+  - vb
+  name: Pin
+  nameWithType: InputField.ContentType.Pin
+  fullName: UnityEngine.UI.InputField.ContentType.Pin
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Pin
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 77
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Allows integer numbers and hides the typed characters by showing them as asterisks characters.
+  example: []
+  syntax:
+    content: Pin = 8
+    return:
+      type: UnityEngine.UI.InputField.ContentType
+- uid: UnityEngine.UI.InputField.ContentType.Custom
+  commentId: F:UnityEngine.UI.InputField.ContentType.Custom
+  id: Custom
+  parent: UnityEngine.UI.InputField.ContentType
+  langs:
+  - csharp
+  - vb
+  name: Custom
+  nameWithType: InputField.ContentType.Custom
+  fullName: UnityEngine.UI.InputField.ContentType.Custom
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Custom
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 82
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Custom types that allows user-defined settings.
+  example: []
+  syntax:
+    content: Custom = 9
+    return:
+      type: UnityEngine.UI.InputField.ContentType
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.InputField.ContentType
+  commentId: T:UnityEngine.UI.InputField.ContentType
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.InputField.html
+  name: InputField.ContentType
+  nameWithType: InputField.ContentType
+  fullName: UnityEngine.UI.InputField.ContentType
+  spec.csharp:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.ContentType
+    name: ContentType
+    href: UnityEngine.UI.InputField.ContentType.html
+  spec.vb:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.ContentType
+    name: ContentType
+    href: UnityEngine.UI.InputField.ContentType.html

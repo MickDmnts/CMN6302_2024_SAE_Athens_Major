@@ -1,0 +1,113 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.IUpdateSelectedHandler
+  commentId: T:UnityEngine.EventSystems.IUpdateSelectedHandler
+  id: IUpdateSelectedHandler
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.IUpdateSelectedHandler.OnUpdateSelected(UnityEngine.EventSystems.BaseEventData)
+  langs:
+  - csharp
+  - vb
+  name: IUpdateSelectedHandler
+  nameWithType: IUpdateSelectedHandler
+  fullName: UnityEngine.EventSystems.IUpdateSelectedHandler
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IUpdateSelectedHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 313
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Interface to implement if you wish to receive OnUpdateSelected callbacks.
+  remarks: Criteria for this event is implementation dependent. For example see StandAloneInputModule.
+  example: []
+  syntax:
+    content: 'public interface IUpdateSelectedHandler : IEventSystemHandler'
+    content.vb: Public Interface IUpdateSelectedHandler Inherits IEventSystemHandler
+- uid: UnityEngine.EventSystems.IUpdateSelectedHandler.OnUpdateSelected(UnityEngine.EventSystems.BaseEventData)
+  commentId: M:UnityEngine.EventSystems.IUpdateSelectedHandler.OnUpdateSelected(UnityEngine.EventSystems.BaseEventData)
+  id: OnUpdateSelected(UnityEngine.EventSystems.BaseEventData)
+  parent: UnityEngine.EventSystems.IUpdateSelectedHandler
+  langs:
+  - csharp
+  - vb
+  name: OnUpdateSelected(BaseEventData)
+  nameWithType: IUpdateSelectedHandler.OnUpdateSelected(BaseEventData)
+  fullName: UnityEngine.EventSystems.IUpdateSelectedHandler.OnUpdateSelected(UnityEngine.EventSystems.BaseEventData)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OnUpdateSelected
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 334
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Called by the EventSystem when the object associated with this EventTrigger is updated.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using UnityEngine;
+
+    using UnityEngine.EventSystems;
+
+
+    public class UpdateSelectedExample : MonoBehaviour, IUpdateSelectedHandler
+
+    {
+        public void OnUpdateSelected(BaseEventData data)
+        {
+            Debug.Log("OnUpdateSelected called.");
+        }
+    }</code></pre>
+  syntax:
+    content: void OnUpdateSelected(BaseEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.BaseEventData
+    content.vb: Sub OnUpdateSelected(eventData As BaseEventData)
+  overload: UnityEngine.EventSystems.IUpdateSelectedHandler.OnUpdateSelected*
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.IUpdateSelectedHandler.OnUpdateSelected*
+  commentId: Overload:UnityEngine.EventSystems.IUpdateSelectedHandler.OnUpdateSelected
+  href: UnityEngine.EventSystems.IUpdateSelectedHandler.html#UnityEngine_EventSystems_IUpdateSelectedHandler_OnUpdateSelected_UnityEngine_EventSystems_BaseEventData_
+  name: OnUpdateSelected
+  nameWithType: IUpdateSelectedHandler.OnUpdateSelected
+  fullName: UnityEngine.EventSystems.IUpdateSelectedHandler.OnUpdateSelected
+- uid: UnityEngine.EventSystems.BaseEventData
+  commentId: T:UnityEngine.EventSystems.BaseEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.BaseEventData.html
+  name: BaseEventData
+  nameWithType: BaseEventData
+  fullName: UnityEngine.EventSystems.BaseEventData

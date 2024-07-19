@@ -1,0 +1,1198 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UnsafeMemory32 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UnsafeMemory32 ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/new/mad/apiSpec/new?filename=MessagePack_Internal_UnsafeMemory32.md&amp;value=---%0Auid%3A%20MessagePack.Internal.UnsafeMemory32%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MessagePack.Internal.UnsafeMemory32">
+
+
+
+  <h1 id="MessagePack_Internal_UnsafeMemory32" data-uid="MessagePack.Internal.UnsafeMemory32" class="text-break">
+Class UnsafeMemory32  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/Internal/UnsafeMemory.Low.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MessagePack.html">MessagePack</a>.<a class="xref" href="MessagePack.Internal.html">Internal</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MessagePack.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class UnsafeMemory32</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UnsafeMemory32</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw1_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw1*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw1_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw1(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw1(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/Internal/UnsafeMemory.Low.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw1(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw10_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw10*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw10_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw10(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw10(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw10(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw11_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw11*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw11_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw11(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw11(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw11(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw12_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw12*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw12_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw12(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw12(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw12(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw13_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw13*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw13_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw13(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw13(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw13(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw14_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw14*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw14_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw14(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw14(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw14(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw15_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw15*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw15_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw15(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw15(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L192"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw15(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw16_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw16*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw16_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw16(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw16(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw16(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw17_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw17*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw17_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw17(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw17(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L226"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw17(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw18_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw18*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw18_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw18(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw18(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L244"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw18(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw19_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw19*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw19_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw19(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw19(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw19(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw2_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw2*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw2_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw2(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw2(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/Internal/UnsafeMemory.Low.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw2(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw20_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw20*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw20_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw20(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw20(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw20(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw21_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw21*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw21_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw21(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw21(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw21(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw22_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw22*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw22_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw22(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw22(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw22(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw23_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw23*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw23_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw23(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw23(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L336"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw23(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw24_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw24*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw24_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw24(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw24(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw24(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw25_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw25*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw25_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw25(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw25(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw25(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw26_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw26*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw26_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw26(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw26(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L394"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw26(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw27_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw27*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw27_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw27(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw27(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L414"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw27(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw28_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw28*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw28_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw28(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw28(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L434"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw28(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw29_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw29*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw29_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw29(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw29(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L454"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw29(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw3_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw3*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw3_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw3(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw3(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/Internal/UnsafeMemory.Low.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw3(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw30_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw30*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw30_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw30(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw30(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L475"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw30(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw31_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw31*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw31_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw31(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw31(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L496"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw31(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw4_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw4*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw4_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw4(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw4(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw4(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw5_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw5*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw5_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw5(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw5(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L34"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw5(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw6_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw6*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw6_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw6(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw6(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw6(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw7_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw7*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw7_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw7(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw7(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw7(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw8_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw8*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw8_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw8(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw8(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw8(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_Internal_UnsafeMemory32_WriteRaw9_" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw9*"></a>
+
+  <h3 id="MessagePack_Internal_UnsafeMemory32_WriteRaw9_MessagePack_MessagePackWriter__System_ReadOnlySpan_System_Byte__" data-uid="MessagePack.Internal.UnsafeMemory32.WriteRaw9(MessagePack.MessagePackWriter@,System.ReadOnlySpan{System.Byte})">
+  WriteRaw9(ref MessagePackWriter, ReadOnlySpan&lt;byte&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/T4/UnsafeMemory.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void WriteRaw9(ref MessagePackWriter writer, ReadOnlySpan&lt;byte&gt; src)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>src</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/Internal/UnsafeMemory.Low.cs/#L20" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

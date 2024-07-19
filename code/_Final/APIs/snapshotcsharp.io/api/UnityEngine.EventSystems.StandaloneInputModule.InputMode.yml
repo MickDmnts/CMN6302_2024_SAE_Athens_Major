@@ -1,0 +1,142 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.StandaloneInputModule.InputMode
+  commentId: T:UnityEngine.EventSystems.StandaloneInputModule.InputMode
+  id: StandaloneInputModule.InputMode
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.StandaloneInputModule.InputMode.Buttons
+  - UnityEngine.EventSystems.StandaloneInputModule.InputMode.Mouse
+  langs:
+  - csharp
+  - vb
+  name: StandaloneInputModule.InputMode
+  nameWithType: StandaloneInputModule.InputMode
+  fullName: UnityEngine.EventSystems.StandaloneInputModule.InputMode
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: InputMode
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs
+    startLine: 32
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: >-
+      [Obsolete("Mode is no longer needed on input module as it handles both mouse and keyboard simultaneously.", false)]
+
+      public enum StandaloneInputModule.InputMode
+    content.vb: >-
+      <Obsolete("Mode is no longer needed on input module as it handles both mouse and keyboard simultaneously.", False)>
+
+      Public Enum StandaloneInputModule.InputMode
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
+    arguments:
+    - type: System.String
+      value: Mode is no longer needed on input module as it handles both mouse and keyboard simultaneously.
+    - type: System.Boolean
+      value: false
+- uid: UnityEngine.EventSystems.StandaloneInputModule.InputMode.Mouse
+  commentId: F:UnityEngine.EventSystems.StandaloneInputModule.InputMode.Mouse
+  id: Mouse
+  parent: UnityEngine.EventSystems.StandaloneInputModule.InputMode
+  langs:
+  - csharp
+  - vb
+  name: Mouse
+  nameWithType: StandaloneInputModule.InputMode.Mouse
+  fullName: UnityEngine.EventSystems.StandaloneInputModule.InputMode.Mouse
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Mouse
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs
+    startLine: 35
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: Mouse = 0
+    return:
+      type: UnityEngine.EventSystems.StandaloneInputModule.InputMode
+- uid: UnityEngine.EventSystems.StandaloneInputModule.InputMode.Buttons
+  commentId: F:UnityEngine.EventSystems.StandaloneInputModule.InputMode.Buttons
+  id: Buttons
+  parent: UnityEngine.EventSystems.StandaloneInputModule.InputMode
+  langs:
+  - csharp
+  - vb
+  name: Buttons
+  nameWithType: StandaloneInputModule.InputMode.Buttons
+  fullName: UnityEngine.EventSystems.StandaloneInputModule.InputMode.Buttons
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Buttons
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs
+    startLine: 36
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: Buttons = 1
+    return:
+      type: UnityEngine.EventSystems.StandaloneInputModule.InputMode
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.StandaloneInputModule.InputMode
+  commentId: T:UnityEngine.EventSystems.StandaloneInputModule.InputMode
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.StandaloneInputModule.html
+  name: StandaloneInputModule.InputMode
+  nameWithType: StandaloneInputModule.InputMode
+  fullName: UnityEngine.EventSystems.StandaloneInputModule.InputMode
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.StandaloneInputModule
+    name: StandaloneInputModule
+    href: UnityEngine.EventSystems.StandaloneInputModule.html
+  - name: .
+  - uid: UnityEngine.EventSystems.StandaloneInputModule.InputMode
+    name: InputMode
+    href: UnityEngine.EventSystems.StandaloneInputModule.InputMode.html
+  spec.vb:
+  - uid: UnityEngine.EventSystems.StandaloneInputModule
+    name: StandaloneInputModule
+    href: UnityEngine.EventSystems.StandaloneInputModule.html
+  - name: .
+  - uid: UnityEngine.EventSystems.StandaloneInputModule.InputMode
+    name: InputMode
+    href: UnityEngine.EventSystems.StandaloneInputModule.InputMode.html

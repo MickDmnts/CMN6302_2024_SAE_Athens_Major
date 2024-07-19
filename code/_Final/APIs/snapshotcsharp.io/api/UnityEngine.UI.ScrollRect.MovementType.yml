@@ -1,0 +1,194 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.ScrollRect.MovementType
+  commentId: T:UnityEngine.UI.ScrollRect.MovementType
+  id: ScrollRect.MovementType
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.ScrollRect.MovementType.Clamped
+  - UnityEngine.UI.ScrollRect.MovementType.Elastic
+  - UnityEngine.UI.ScrollRect.MovementType.Unrestricted
+  langs:
+  - csharp
+  - vb
+  name: ScrollRect.MovementType
+  nameWithType: ScrollRect.MovementType
+  fullName: UnityEngine.UI.ScrollRect.MovementType
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: MovementType
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs
+    startLine: 54
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: A setting for which behavior to use when content moves beyond the confines of its container.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using UnityEngine;
+
+    using System.Collections;
+
+    using UnityEngine.UI;  // Required when Using UI elements.
+
+
+    public class ExampleClass : MonoBehaviour
+
+    {
+        public ScrollRect myScrollRect;
+        public Scrollbar newScrollBar;
+
+        //Called when a button is pressed
+        public void Example(int option)
+        {
+            if (option == 0)
+            {
+                myScrollRect.movementType = ScrollRect.MovementType.Clamped;
+            }
+            else if (option == 1)
+            {
+                myScrollRect.movementType = ScrollRect.MovementType.Elastic;
+            }
+            else if (option == 2)
+            {
+                myScrollRect.movementType = ScrollRect.MovementType.Unrestricted;
+            }
+        }
+    }</code></pre>
+  syntax:
+    content: public enum ScrollRect.MovementType
+    content.vb: Public Enum ScrollRect.MovementType
+- uid: UnityEngine.UI.ScrollRect.MovementType.Unrestricted
+  commentId: F:UnityEngine.UI.ScrollRect.MovementType.Unrestricted
+  id: Unrestricted
+  parent: UnityEngine.UI.ScrollRect.MovementType
+  langs:
+  - csharp
+  - vb
+  name: Unrestricted
+  nameWithType: ScrollRect.MovementType.Unrestricted
+  fullName: UnityEngine.UI.ScrollRect.MovementType.Unrestricted
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Unrestricted
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs
+    startLine: 59
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Unrestricted movement. The content can move forever.
+  example: []
+  syntax:
+    content: Unrestricted = 0
+    return:
+      type: UnityEngine.UI.ScrollRect.MovementType
+- uid: UnityEngine.UI.ScrollRect.MovementType.Elastic
+  commentId: F:UnityEngine.UI.ScrollRect.MovementType.Elastic
+  id: Elastic
+  parent: UnityEngine.UI.ScrollRect.MovementType
+  langs:
+  - csharp
+  - vb
+  name: Elastic
+  nameWithType: ScrollRect.MovementType.Elastic
+  fullName: UnityEngine.UI.ScrollRect.MovementType.Elastic
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Elastic
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs
+    startLine: 64
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Elastic movement. The content is allowed to temporarily move beyond the container, but is pulled back elastically.
+  example: []
+  syntax:
+    content: Elastic = 1
+    return:
+      type: UnityEngine.UI.ScrollRect.MovementType
+- uid: UnityEngine.UI.ScrollRect.MovementType.Clamped
+  commentId: F:UnityEngine.UI.ScrollRect.MovementType.Clamped
+  id: Clamped
+  parent: UnityEngine.UI.ScrollRect.MovementType
+  langs:
+  - csharp
+  - vb
+  name: Clamped
+  nameWithType: ScrollRect.MovementType.Clamped
+  fullName: UnityEngine.UI.ScrollRect.MovementType.Clamped
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Clamped
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs
+    startLine: 69
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Clamped movement. The content can not be moved beyond its container.
+  example: []
+  syntax:
+    content: Clamped = 2
+    return:
+      type: UnityEngine.UI.ScrollRect.MovementType
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.ScrollRect.MovementType
+  commentId: T:UnityEngine.UI.ScrollRect.MovementType
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ScrollRect.html
+  name: ScrollRect.MovementType
+  nameWithType: ScrollRect.MovementType
+  fullName: UnityEngine.UI.ScrollRect.MovementType
+  spec.csharp:
+  - uid: UnityEngine.UI.ScrollRect
+    name: ScrollRect
+    href: UnityEngine.UI.ScrollRect.html
+  - name: .
+  - uid: UnityEngine.UI.ScrollRect.MovementType
+    name: MovementType
+    href: UnityEngine.UI.ScrollRect.MovementType.html
+  spec.vb:
+  - uid: UnityEngine.UI.ScrollRect
+    name: ScrollRect
+    href: UnityEngine.UI.ScrollRect.html
+  - name: .
+  - uid: UnityEngine.UI.ScrollRect.MovementType
+    name: MovementType
+    href: UnityEngine.UI.ScrollRect.MovementType.html

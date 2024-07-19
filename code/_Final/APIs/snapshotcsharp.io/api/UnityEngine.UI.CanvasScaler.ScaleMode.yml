@@ -1,0 +1,166 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.CanvasScaler.ScaleMode
+  commentId: T:UnityEngine.UI.CanvasScaler.ScaleMode
+  id: CanvasScaler.ScaleMode
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.CanvasScaler.ScaleMode.ConstantPhysicalSize
+  - UnityEngine.UI.CanvasScaler.ScaleMode.ConstantPixelSize
+  - UnityEngine.UI.CanvasScaler.ScaleMode.ScaleWithScreenSize
+  langs:
+  - csharp
+  - vb
+  name: CanvasScaler.ScaleMode
+  nameWithType: CanvasScaler.ScaleMode
+  fullName: UnityEngine.UI.CanvasScaler.ScaleMode
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ScaleMode
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+    startLine: 29
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Determines how UI elements in the Canvas are scaled.
+  example: []
+  syntax:
+    content: public enum CanvasScaler.ScaleMode
+    content.vb: Public Enum CanvasScaler.ScaleMode
+- uid: UnityEngine.UI.CanvasScaler.ScaleMode.ConstantPixelSize
+  commentId: F:UnityEngine.UI.CanvasScaler.ScaleMode.ConstantPixelSize
+  id: ConstantPixelSize
+  parent: UnityEngine.UI.CanvasScaler.ScaleMode
+  langs:
+  - csharp
+  - vb
+  name: ConstantPixelSize
+  nameWithType: CanvasScaler.ScaleMode.ConstantPixelSize
+  fullName: UnityEngine.UI.CanvasScaler.ScaleMode.ConstantPixelSize
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ConstantPixelSize
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+    startLine: 34
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Using the Constant Pixel Size mode, positions and sizes of UI elements are specified in pixels on the screen.
+  example: []
+  syntax:
+    content: ConstantPixelSize = 0
+    return:
+      type: UnityEngine.UI.CanvasScaler.ScaleMode
+- uid: UnityEngine.UI.CanvasScaler.ScaleMode.ScaleWithScreenSize
+  commentId: F:UnityEngine.UI.CanvasScaler.ScaleMode.ScaleWithScreenSize
+  id: ScaleWithScreenSize
+  parent: UnityEngine.UI.CanvasScaler.ScaleMode
+  langs:
+  - csharp
+  - vb
+  name: ScaleWithScreenSize
+  nameWithType: CanvasScaler.ScaleMode.ScaleWithScreenSize
+  fullName: UnityEngine.UI.CanvasScaler.ScaleMode.ScaleWithScreenSize
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ScaleWithScreenSize
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+    startLine: 39
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: >-
+    Using the Scale With Screen Size mode, positions and sizes can be specified according to the pixels of a specified reference resolution.
+
+    If the current screen resolution is larger than the reference resolution, the Canvas will keep having only the resolution of the reference resolution, but will scale up in order to fit the screen. If the current screen resolution is smaller than the reference resolution, the Canvas will similarly be scaled down to fit.
+  example: []
+  syntax:
+    content: ScaleWithScreenSize = 1
+    return:
+      type: UnityEngine.UI.CanvasScaler.ScaleMode
+- uid: UnityEngine.UI.CanvasScaler.ScaleMode.ConstantPhysicalSize
+  commentId: F:UnityEngine.UI.CanvasScaler.ScaleMode.ConstantPhysicalSize
+  id: ConstantPhysicalSize
+  parent: UnityEngine.UI.CanvasScaler.ScaleMode
+  langs:
+  - csharp
+  - vb
+  name: ConstantPhysicalSize
+  nameWithType: CanvasScaler.ScaleMode.ConstantPhysicalSize
+  fullName: UnityEngine.UI.CanvasScaler.ScaleMode.ConstantPhysicalSize
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ConstantPhysicalSize
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+    startLine: 43
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Using the Constant Physical Size mode, positions and sizes of UI elements are specified in physical units, such as millimeters, points, or picas.
+  example: []
+  syntax:
+    content: ConstantPhysicalSize = 2
+    return:
+      type: UnityEngine.UI.CanvasScaler.ScaleMode
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.CanvasScaler.ScaleMode
+  commentId: T:UnityEngine.UI.CanvasScaler.ScaleMode
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.CanvasScaler.html
+  name: CanvasScaler.ScaleMode
+  nameWithType: CanvasScaler.ScaleMode
+  fullName: UnityEngine.UI.CanvasScaler.ScaleMode
+  spec.csharp:
+  - uid: UnityEngine.UI.CanvasScaler
+    name: CanvasScaler
+    href: UnityEngine.UI.CanvasScaler.html
+  - name: .
+  - uid: UnityEngine.UI.CanvasScaler.ScaleMode
+    name: ScaleMode
+    href: UnityEngine.UI.CanvasScaler.ScaleMode.html
+  spec.vb:
+  - uid: UnityEngine.UI.CanvasScaler
+    name: CanvasScaler
+    href: UnityEngine.UI.CanvasScaler.html
+  - name: .
+  - uid: UnityEngine.UI.CanvasScaler.ScaleMode
+    name: ScaleMode
+    href: UnityEngine.UI.CanvasScaler.ScaleMode.html

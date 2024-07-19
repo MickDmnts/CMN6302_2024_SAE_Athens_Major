@@ -1,0 +1,99 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.IMoveHandler
+  commentId: T:UnityEngine.EventSystems.IMoveHandler
+  id: IMoveHandler
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.IMoveHandler.OnMove(UnityEngine.EventSystems.AxisEventData)
+  langs:
+  - csharp
+  - vb
+  name: IMoveHandler
+  nameWithType: IMoveHandler
+  fullName: UnityEngine.EventSystems.IMoveHandler
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IMoveHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 368
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Interface to implement if you wish to receive OnMove callbacks.
+  remarks: Criteria for this event is implementation dependent. For example see StandAloneInputModule.
+  example: []
+  syntax:
+    content: 'public interface IMoveHandler : IEventSystemHandler'
+    content.vb: Public Interface IMoveHandler Inherits IEventSystemHandler
+- uid: UnityEngine.EventSystems.IMoveHandler.OnMove(UnityEngine.EventSystems.AxisEventData)
+  commentId: M:UnityEngine.EventSystems.IMoveHandler.OnMove(UnityEngine.EventSystems.AxisEventData)
+  id: OnMove(UnityEngine.EventSystems.AxisEventData)
+  parent: UnityEngine.EventSystems.IMoveHandler
+  langs:
+  - csharp
+  - vb
+  name: OnMove(AxisEventData)
+  nameWithType: IMoveHandler.OnMove(AxisEventData)
+  fullName: UnityEngine.EventSystems.IMoveHandler.OnMove(UnityEngine.EventSystems.AxisEventData)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OnMove
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 373
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Called by a BaseInputModule when a move event occurs.
+  example: []
+  syntax:
+    content: void OnMove(AxisEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.AxisEventData
+    content.vb: Sub OnMove(eventData As AxisEventData)
+  overload: UnityEngine.EventSystems.IMoveHandler.OnMove*
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.IMoveHandler.OnMove*
+  commentId: Overload:UnityEngine.EventSystems.IMoveHandler.OnMove
+  href: UnityEngine.EventSystems.IMoveHandler.html#UnityEngine_EventSystems_IMoveHandler_OnMove_UnityEngine_EventSystems_AxisEventData_
+  name: OnMove
+  nameWithType: IMoveHandler.OnMove
+  fullName: UnityEngine.EventSystems.IMoveHandler.OnMove
+- uid: UnityEngine.EventSystems.AxisEventData
+  commentId: T:UnityEngine.EventSystems.AxisEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.AxisEventData.html
+  name: AxisEventData
+  nameWithType: AxisEventData
+  fullName: UnityEngine.EventSystems.AxisEventData

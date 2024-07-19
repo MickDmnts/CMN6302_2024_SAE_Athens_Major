@@ -1,0 +1,1436 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class StandaloneInputModule </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class StandaloneInputModule ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/new/mad/apiSpec/new?filename=UnityEngine_EventSystems_StandaloneInputModule.md&amp;value=---%0Auid%3A%20UnityEngine.EventSystems.StandaloneInputModule%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UnityEngine.EventSystems.StandaloneInputModule">
+
+
+
+  <h1 id="UnityEngine_EventSystems_StandaloneInputModule" data-uid="UnityEngine.EventSystems.StandaloneInputModule" class="text-break">
+Class StandaloneInputModule  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UnityEngine.html">UnityEngine</a>.<a class="xref" href="UnityEngine.EventSystems.html">EventSystems</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UnityEngine.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;Event/Standalone Input Module&quot;)]
+public class StandaloneInputModule : PointerInputModule</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html">UIBehaviour</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.BaseInputModule.html">BaseInputModule</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html">PointerInputModule</a></div>
+      <div><span class="xref">StandaloneInputModule</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html#UnityEngine_EventSystems_PointerInputModule_kMouseLeftId">PointerInputModule.kMouseLeftId</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html#UnityEngine_EventSystems_PointerInputModule_kMouseRightId">PointerInputModule.kMouseRightId</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html#UnityEngine_EventSystems_PointerInputModule_kMouseMiddleId">PointerInputModule.kMouseMiddleId</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html#UnityEngine_EventSystems_PointerInputModule_kFakeTouchesId">PointerInputModule.kFakeTouchesId</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html#UnityEngine_EventSystems_PointerInputModule_m_PointerData">PointerInputModule.m_PointerData</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html#UnityEngine_EventSystems_PointerInputModule_GetPointerData_System_Int32_UnityEngine_EventSystems_PointerEventData__System_Boolean_">PointerInputModule.GetPointerData(int, out PointerEventData, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html#UnityEngine_EventSystems_PointerInputModule_RemovePointerData_UnityEngine_EventSystems_PointerEventData_">PointerInputModule.RemovePointerData(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html#UnityEngine_EventSystems_PointerInputModule_GetTouchPointerEventData_UnityEngine_Touch_System_Boolean__System_Boolean__">PointerInputModule.GetTouchPointerEventData(Touch, out bool, out bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html#UnityEngine_EventSystems_PointerInputModule_CopyFromTo_UnityEngine_EventSystems_PointerEventData_UnityEngine_EventSystems_PointerEventData_">PointerInputModule.CopyFromTo(PointerEventData, PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html#UnityEngine_EventSystems_PointerInputModule_StateForMouseButton_System_Int32_">PointerInputModule.StateForMouseButton(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html#UnityEngine_EventSystems_PointerInputModule_GetMousePointerEventData">PointerInputModule.GetMousePointerEventData()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html#UnityEngine_EventSystems_PointerInputModule_GetMousePointerEventData_System_Int32_">PointerInputModule.GetMousePointerEventData(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html#UnityEngine_EventSystems_PointerInputModule_GetLastPointerEventData_System_Int32_">PointerInputModule.GetLastPointerEventData(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html#UnityEngine_EventSystems_PointerInputModule_ProcessMove_UnityEngine_EventSystems_PointerEventData_">PointerInputModule.ProcessMove(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html#UnityEngine_EventSystems_PointerInputModule_ProcessDrag_UnityEngine_EventSystems_PointerEventData_">PointerInputModule.ProcessDrag(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html#UnityEngine_EventSystems_PointerInputModule_IsPointerOverGameObject_System_Int32_">PointerInputModule.IsPointerOverGameObject(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html#UnityEngine_EventSystems_PointerInputModule_ClearSelection">PointerInputModule.ClearSelection()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html#UnityEngine_EventSystems_PointerInputModule_ToString">PointerInputModule.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html#UnityEngine_EventSystems_PointerInputModule_DeselectIfSelectionChanged_UnityEngine_GameObject_UnityEngine_EventSystems_BaseEventData_">PointerInputModule.DeselectIfSelectionChanged(GameObject, BaseEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.BaseInputModule.html#UnityEngine_EventSystems_BaseInputModule_m_RaycastResultCache">BaseInputModule.m_RaycastResultCache</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.BaseInputModule.html#UnityEngine_EventSystems_BaseInputModule_m_InputOverride">BaseInputModule.m_InputOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.BaseInputModule.html#UnityEngine_EventSystems_BaseInputModule_input">BaseInputModule.input</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.BaseInputModule.html#UnityEngine_EventSystems_BaseInputModule_inputOverride">BaseInputModule.inputOverride</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.BaseInputModule.html#UnityEngine_EventSystems_BaseInputModule_eventSystem">BaseInputModule.eventSystem</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.BaseInputModule.html#UnityEngine_EventSystems_BaseInputModule_OnEnable">BaseInputModule.OnEnable()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.BaseInputModule.html#UnityEngine_EventSystems_BaseInputModule_OnDisable">BaseInputModule.OnDisable()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.BaseInputModule.html#UnityEngine_EventSystems_BaseInputModule_FindFirstRaycast_System_Collections_Generic_List_UnityEngine_EventSystems_RaycastResult__">BaseInputModule.FindFirstRaycast(List&lt;RaycastResult&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.BaseInputModule.html#UnityEngine_EventSystems_BaseInputModule_DetermineMoveDirection_System_Single_System_Single_">BaseInputModule.DetermineMoveDirection(float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.BaseInputModule.html#UnityEngine_EventSystems_BaseInputModule_DetermineMoveDirection_System_Single_System_Single_System_Single_">BaseInputModule.DetermineMoveDirection(float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.BaseInputModule.html#UnityEngine_EventSystems_BaseInputModule_FindCommonRoot_UnityEngine_GameObject_UnityEngine_GameObject_">BaseInputModule.FindCommonRoot(GameObject, GameObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.BaseInputModule.html#UnityEngine_EventSystems_BaseInputModule_HandlePointerExitAndEnter_UnityEngine_EventSystems_PointerEventData_UnityEngine_GameObject_">BaseInputModule.HandlePointerExitAndEnter(PointerEventData, GameObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.BaseInputModule.html#UnityEngine_EventSystems_BaseInputModule_GetAxisEventData_System_Single_System_Single_System_Single_">BaseInputModule.GetAxisEventData(float, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.BaseInputModule.html#UnityEngine_EventSystems_BaseInputModule_GetBaseEventData">BaseInputModule.GetBaseEventData()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.BaseInputModule.html#UnityEngine_EventSystems_BaseInputModule_IsModuleSupported">BaseInputModule.IsModuleSupported()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.BaseInputModule.html#UnityEngine_EventSystems_BaseInputModule_ConvertUIToolkitPointerId_UnityEngine_EventSystems_PointerEventData_">BaseInputModule.ConvertUIToolkitPointerId(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_Awake">UIBehaviour.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_Start">UIBehaviour.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnDestroy">UIBehaviour.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_IsActive">UIBehaviour.IsActive()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnRectTransformDimensionsChange">UIBehaviour.OnRectTransformDimensionsChange()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnBeforeTransformParentChanged">UIBehaviour.OnBeforeTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnTransformParentChanged">UIBehaviour.OnTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnDidApplyAnimationProperties">UIBehaviour.OnDidApplyAnimationProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnCanvasGroupChanged">UIBehaviour.OnCanvasGroupChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnCanvasHierarchyChanged">UIBehaviour.OnCanvasHierarchyChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_IsDestroyed">UIBehaviour.IsDestroyed()</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.Invoke(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.InvokeRepeating(string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.CancelInvoke(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.IsInvoking(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine_Auto(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StopCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(Coroutine)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StopCoroutine(string)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">MonoBehaviour.print(object)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.destroyCancellationToken</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponent(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.TryGetComponent(Type, out Component)</a>
+    </div>
+    <div>
+      <span class="xref">Component.TryGetComponent&lt;T&gt;(out T)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.GetComponent(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type, List&lt;Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentIndex()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.CompareTag(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <span class="xref">Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Scene)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate(Object, Transform, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate&lt;T&gt;(T, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.Destroy(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Destroy(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.DestroyImmediate(Object, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyImmediate(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DontDestroyOnLoad(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.DestroyObject(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyObject(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <span class="xref">Object.name</span>
+    </div>
+    <div>
+      <span class="xref">Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule__ctor_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.#ctor*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule__ctor" data-uid="UnityEngine.EventSystems.StandaloneInputModule.#ctor">
+  StandaloneInputModule()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected StandaloneInputModule()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_allowActivationOnMobileDevice_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.allowActivationOnMobileDevice*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_allowActivationOnMobileDevice" data-uid="UnityEngine.EventSystems.StandaloneInputModule.allowActivationOnMobileDevice">
+  allowActivationOnMobileDevice
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;allowActivationOnMobileDevice has been deprecated. Use forceModuleActive instead (UnityUpgradable) -&gt; forceModuleActive&quot;)]
+public bool allowActivationOnMobileDevice { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_cancelButton_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.cancelButton*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_cancelButton" data-uid="UnityEngine.EventSystems.StandaloneInputModule.cancelButton">
+  cancelButton
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Input manager name for the 'cancel' button.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string cancelButton { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_forceModuleActive_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.forceModuleActive*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_forceModuleActive" data-uid="UnityEngine.EventSystems.StandaloneInputModule.forceModuleActive">
+  forceModuleActive
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Force this module to be active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;forceModuleActive has been deprecated. There is no need to force the module awake as StandaloneInputModule works for all platforms&quot;)]
+public bool forceModuleActive { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="UnityEngine_EventSystems_StandaloneInputModule_forceModuleActive_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If there is no module active with higher priority (ordered in the inspector) this module will be forced active even if valid enabling conditions are not met.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_horizontalAxis_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.horizontalAxis*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_horizontalAxis" data-uid="UnityEngine.EventSystems.StandaloneInputModule.horizontalAxis">
+  horizontalAxis
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Name of the horizontal axis for movement (if axis events are used).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string horizontalAxis { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_inputActionsPerSecond_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.inputActionsPerSecond*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_inputActionsPerSecond" data-uid="UnityEngine.EventSystems.StandaloneInputModule.inputActionsPerSecond">
+  inputActionsPerSecond
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Number of keyboard / controller inputs allowed per second.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float inputActionsPerSecond { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_inputMode_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.inputMode*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_inputMode" data-uid="UnityEngine.EventSystems.StandaloneInputModule.inputMode">
+  inputMode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Mode is no longer needed on input module as it handles both mouse and keyboard simultaneously.&quot;, false)]
+public StandaloneInputModule.InputMode inputMode { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.EventSystems.StandaloneInputModule.html">StandaloneInputModule</a>.<a class="xref" href="UnityEngine.EventSystems.StandaloneInputModule.InputMode.html">InputMode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_repeatDelay_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.repeatDelay*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_repeatDelay" data-uid="UnityEngine.EventSystems.StandaloneInputModule.repeatDelay">
+  repeatDelay
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Delay in seconds before the input actions per second repeat rate takes effect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float repeatDelay { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="UnityEngine_EventSystems_StandaloneInputModule_repeatDelay_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If the same direction is sustained, the inputActionsPerSecond property can be used to control the rate at which events are fired. However, it can be desirable that the first repetition is delayed, so the user doesn't get repeated actions by accident.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_submitButton_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.submitButton*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_submitButton" data-uid="UnityEngine.EventSystems.StandaloneInputModule.submitButton">
+  submitButton
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum number of input events handled per second.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string submitButton { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_verticalAxis_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.verticalAxis*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_verticalAxis" data-uid="UnityEngine.EventSystems.StandaloneInputModule.verticalAxis">
+  verticalAxis
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Name of the vertical axis for movement (if axis events are used).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string verticalAxis { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_ActivateModule_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.ActivateModule*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_ActivateModule" data-uid="UnityEngine.EventSystems.StandaloneInputModule.ActivateModule">
+  ActivateModule()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L245"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See BaseInputModule.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void ActivateModule()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_DeactivateModule_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.DeactivateModule*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_DeactivateModule" data-uid="UnityEngine.EventSystems.StandaloneInputModule.DeactivateModule">
+  DeactivateModule()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L264"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See BaseInputModule.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DeactivateModule()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_ForceAutoSelect_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.ForceAutoSelect*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_ForceAutoSelect" data-uid="UnityEngine.EventSystems.StandaloneInputModule.ForceAutoSelect">
+  ForceAutoSelect()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L537"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This method is no longer checked, overriding it with return true does nothing!&quot;)]
+protected virtual bool ForceAutoSelect()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_GetCurrentFocusedGameObject_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.GetCurrentFocusedGameObject*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_GetCurrentFocusedGameObject" data-uid="UnityEngine.EventSystems.StandaloneInputModule.GetCurrentFocusedGameObject">
+  GetCurrentFocusedGameObject()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L658"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GameObject GetCurrentFocusedGameObject()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">GameObject</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_Process_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.Process*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_Process" data-uid="UnityEngine.EventSystems.StandaloneInputModule.Process">
+  Process()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Process the current tick for the module.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Process()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_ProcessMouseEvent_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.ProcessMouseEvent*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_ProcessMouseEvent" data-uid="UnityEngine.EventSystems.StandaloneInputModule.ProcessMouseEvent">
+  ProcessMouseEvent()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L532"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ProcessMouseEvent()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_ProcessMouseEvent_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.ProcessMouseEvent*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_ProcessMouseEvent_System_Int32_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.ProcessMouseEvent(System.Int32)">
+  ProcessMouseEvent(int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L546"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Process all mouse events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ProcessMouseEvent(int id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_ProcessMousePress_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.ProcessMousePress*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_ProcessMousePress_UnityEngine_EventSystems_PointerInputModule_MouseButtonEventData_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.ProcessMousePress(UnityEngine.EventSystems.PointerInputModule.MouseButtonEventData)">
+  ProcessMousePress(MouseButtonEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L584"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate and process any mouse button state changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ProcessMousePress(PointerInputModule.MouseButtonEventData data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="UnityEngine.EventSystems.PointerInputModule.html">PointerInputModule</a>.<a class="xref" href="UnityEngine.EventSystems.PointerInputModule.MouseButtonEventData.html">MouseButtonEventData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_ProcessTouchPress_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.ProcessTouchPress*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_ProcessTouchPress_UnityEngine_EventSystems_PointerEventData_System_Boolean_System_Boolean_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.ProcessTouchPress(UnityEngine.EventSystems.PointerEventData,System.Boolean,System.Boolean)">
+  ProcessTouchPress(PointerEventData, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L329"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is called by Unity whenever a touch event is processed. Override this method with a custom implementation to process touch events yourself.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ProcessTouchPress(PointerEventData pointerEvent, bool pressed, bool released)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pointerEvent</code> <a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></dt>
+    <dd><p>Event data relating to the touch event, such as position and ID to be passed to the touch event destination object.</p>
+</dd>
+    <dt><code>pressed</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>This is true for the first frame of a touch event, and false thereafter. This can therefore be used to determine the instant a touch event occurred.</p>
+</dd>
+    <dt><code>released</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>This is true only for the last frame of a touch event.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_EventSystems_StandaloneInputModule_ProcessTouchPress_UnityEngine_EventSystems_PointerEventData_System_Boolean_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method can be overridden in derived classes to change how touch press events are handled.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_SendMoveEventToSelectedObject_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.SendMoveEventToSelectedObject*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_SendMoveEventToSelectedObject" data-uid="UnityEngine.EventSystems.StandaloneInputModule.SendMoveEventToSelectedObject">
+  SendMoveEventToSelectedObject()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L487"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate and send a move event to the current selected object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool SendMoveEventToSelectedObject()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If the move event was used by the selected object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_SendSubmitEventToSelectedObject_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.SendSubmitEventToSelectedObject*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_SendSubmitEventToSelectedObject" data-uid="UnityEngine.EventSystems.StandaloneInputModule.SendSubmitEventToSelectedObject">
+  SendSubmitEventToSelectedObject()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L446"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate and send a submit event to the current selected object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool SendSubmitEventToSelectedObject()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If the submit event was used by the selected object.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_SendUpdateEventToSelectedObject_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.SendUpdateEventToSelectedObject*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_SendUpdateEventToSelectedObject" data-uid="UnityEngine.EventSystems.StandaloneInputModule.SendUpdateEventToSelectedObject">
+  SendUpdateEventToSelectedObject()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L571"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool SendUpdateEventToSelectedObject()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_ShouldActivateModule_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.ShouldActivateModule*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_ShouldActivateModule" data-uid="UnityEngine.EventSystems.StandaloneInputModule.ShouldActivateModule">
+  ShouldActivateModule()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Should the module be activated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool ShouldActivateModule()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_EventSystems_StandaloneInputModule_UpdateModule_" data-uid="UnityEngine.EventSystems.StandaloneInputModule.UpdateModule*"></a>
+
+  <h3 id="UnityEngine_EventSystems_StandaloneInputModule_UpdateModule" data-uid="UnityEngine.EventSystems.StandaloneInputModule.UpdateModule">
+  UpdateModule()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Update the internal state of the Module.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UpdateModule()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs/#L7" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

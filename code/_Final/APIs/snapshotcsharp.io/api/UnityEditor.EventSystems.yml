@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEditor.EventSystems
+  commentId: N:UnityEditor.EventSystems
+  id: UnityEditor.EventSystems
+  children:
+  - UnityEditor.EventSystems.EventSystemEditor
+  - UnityEditor.EventSystems.EventTriggerEditor
+  - UnityEditor.EventSystems.Physics2DRaycasterEditor
+  - UnityEditor.EventSystems.PhysicsRaycasterEditor
+  langs:
+  - csharp
+  - vb
+  name: UnityEditor.EventSystems
+  nameWithType: UnityEditor.EventSystems
+  fullName: UnityEditor.EventSystems
+  type: Namespace
+  assemblies:
+  - UnityEditor.UI
+references:
+- uid: UnityEditor.EventSystems.EventSystemEditor
+  commentId: T:UnityEditor.EventSystems.EventSystemEditor
+  href: UnityEditor.EventSystems.EventSystemEditor.html
+  name: EventSystemEditor
+  nameWithType: EventSystemEditor
+  fullName: UnityEditor.EventSystems.EventSystemEditor
+- uid: UnityEditor.EventSystems.PhysicsRaycasterEditor
+  commentId: T:UnityEditor.EventSystems.PhysicsRaycasterEditor
+  href: UnityEditor.EventSystems.PhysicsRaycasterEditor.html
+  name: PhysicsRaycasterEditor
+  nameWithType: PhysicsRaycasterEditor
+  fullName: UnityEditor.EventSystems.PhysicsRaycasterEditor
+- uid: UnityEditor.EventSystems.EventTriggerEditor
+  commentId: T:UnityEditor.EventSystems.EventTriggerEditor
+  href: UnityEditor.EventSystems.EventTriggerEditor.html
+  name: EventTriggerEditor
+  nameWithType: EventTriggerEditor
+  fullName: UnityEditor.EventSystems.EventTriggerEditor
+- uid: UnityEditor.EventSystems.Physics2DRaycasterEditor
+  commentId: T:UnityEditor.EventSystems.Physics2DRaycasterEditor
+  href: UnityEditor.EventSystems.Physics2DRaycasterEditor.html
+  name: Physics2DRaycasterEditor
+  nameWithType: Physics2DRaycasterEditor
+  fullName: UnityEditor.EventSystems.Physics2DRaycasterEditor

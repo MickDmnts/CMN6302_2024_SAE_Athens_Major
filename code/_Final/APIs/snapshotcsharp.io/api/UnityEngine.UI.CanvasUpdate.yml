@@ -1,0 +1,235 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.CanvasUpdate
+  commentId: T:UnityEngine.UI.CanvasUpdate
+  id: CanvasUpdate
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.CanvasUpdate.LatePreRender
+  - UnityEngine.UI.CanvasUpdate.Layout
+  - UnityEngine.UI.CanvasUpdate.MaxUpdateValue
+  - UnityEngine.UI.CanvasUpdate.PostLayout
+  - UnityEngine.UI.CanvasUpdate.PreRender
+  - UnityEngine.UI.CanvasUpdate.Prelayout
+  langs:
+  - csharp
+  - vb
+  name: CanvasUpdate
+  nameWithType: CanvasUpdate
+  fullName: UnityEngine.UI.CanvasUpdate
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: CanvasUpdate
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 10
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Values of 'update' called on a Canvas update.
+  remarks: If modifying also modify m_CanvasUpdateProfilerStrings to match.
+  example: []
+  syntax:
+    content: public enum CanvasUpdate
+    content.vb: Public Enum CanvasUpdate
+- uid: UnityEngine.UI.CanvasUpdate.Prelayout
+  commentId: F:UnityEngine.UI.CanvasUpdate.Prelayout
+  id: Prelayout
+  parent: UnityEngine.UI.CanvasUpdate
+  langs:
+  - csharp
+  - vb
+  name: Prelayout
+  nameWithType: CanvasUpdate.Prelayout
+  fullName: UnityEngine.UI.CanvasUpdate.Prelayout
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Prelayout
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 15
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Called before layout.
+  example: []
+  syntax:
+    content: Prelayout = 0
+    return:
+      type: UnityEngine.UI.CanvasUpdate
+- uid: UnityEngine.UI.CanvasUpdate.Layout
+  commentId: F:UnityEngine.UI.CanvasUpdate.Layout
+  id: Layout
+  parent: UnityEngine.UI.CanvasUpdate
+  langs:
+  - csharp
+  - vb
+  name: Layout
+  nameWithType: CanvasUpdate.Layout
+  fullName: UnityEngine.UI.CanvasUpdate.Layout
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Layout
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 19
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Called for layout.
+  example: []
+  syntax:
+    content: Layout = 1
+    return:
+      type: UnityEngine.UI.CanvasUpdate
+- uid: UnityEngine.UI.CanvasUpdate.PostLayout
+  commentId: F:UnityEngine.UI.CanvasUpdate.PostLayout
+  id: PostLayout
+  parent: UnityEngine.UI.CanvasUpdate
+  langs:
+  - csharp
+  - vb
+  name: PostLayout
+  nameWithType: CanvasUpdate.PostLayout
+  fullName: UnityEngine.UI.CanvasUpdate.PostLayout
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: PostLayout
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 23
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Called after layout.
+  example: []
+  syntax:
+    content: PostLayout = 2
+    return:
+      type: UnityEngine.UI.CanvasUpdate
+- uid: UnityEngine.UI.CanvasUpdate.PreRender
+  commentId: F:UnityEngine.UI.CanvasUpdate.PreRender
+  id: PreRender
+  parent: UnityEngine.UI.CanvasUpdate
+  langs:
+  - csharp
+  - vb
+  name: PreRender
+  nameWithType: CanvasUpdate.PreRender
+  fullName: UnityEngine.UI.CanvasUpdate.PreRender
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: PreRender
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 27
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Called before rendering.
+  example: []
+  syntax:
+    content: PreRender = 3
+    return:
+      type: UnityEngine.UI.CanvasUpdate
+- uid: UnityEngine.UI.CanvasUpdate.LatePreRender
+  commentId: F:UnityEngine.UI.CanvasUpdate.LatePreRender
+  id: LatePreRender
+  parent: UnityEngine.UI.CanvasUpdate
+  langs:
+  - csharp
+  - vb
+  name: LatePreRender
+  nameWithType: CanvasUpdate.LatePreRender
+  fullName: UnityEngine.UI.CanvasUpdate.LatePreRender
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: LatePreRender
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 31
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Called late, before render.
+  example: []
+  syntax:
+    content: LatePreRender = 4
+    return:
+      type: UnityEngine.UI.CanvasUpdate
+- uid: UnityEngine.UI.CanvasUpdate.MaxUpdateValue
+  commentId: F:UnityEngine.UI.CanvasUpdate.MaxUpdateValue
+  id: MaxUpdateValue
+  parent: UnityEngine.UI.CanvasUpdate
+  langs:
+  - csharp
+  - vb
+  name: MaxUpdateValue
+  nameWithType: CanvasUpdate.MaxUpdateValue
+  fullName: UnityEngine.UI.CanvasUpdate.MaxUpdateValue
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: MaxUpdateValue
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 35
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Max enum value. Always last.
+  example: []
+  syntax:
+    content: MaxUpdateValue = 5
+    return:
+      type: UnityEngine.UI.CanvasUpdate
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.CanvasUpdate
+  commentId: T:UnityEngine.UI.CanvasUpdate
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.CanvasUpdate.html
+  name: CanvasUpdate
+  nameWithType: CanvasUpdate
+  fullName: UnityEngine.UI.CanvasUpdate

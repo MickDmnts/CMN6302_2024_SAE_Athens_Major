@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snapshot
+  commentId: N:Snapshot
+  id: Snapshot
+  children:
+  - Snapshot.SnapshotWrapper
+  langs:
+  - csharp
+  - vb
+  name: Snapshot
+  nameWithType: Snapshot
+  fullName: Snapshot
+  type: Namespace
+  assemblies:
+  - com.mad.snapshot
+references:
+- uid: Snapshot.SnapshotWrapper
+  commentId: T:Snapshot.SnapshotWrapper
+  href: Snapshot.SnapshotWrapper.html
+  name: SnapshotWrapper
+  nameWithType: SnapshotWrapper
+  fullName: Snapshot.SnapshotWrapper

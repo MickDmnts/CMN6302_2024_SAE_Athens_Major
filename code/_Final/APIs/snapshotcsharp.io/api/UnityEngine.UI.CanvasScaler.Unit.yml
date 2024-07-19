@@ -1,0 +1,233 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.CanvasScaler.Unit
+  commentId: T:UnityEngine.UI.CanvasScaler.Unit
+  id: CanvasScaler.Unit
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.CanvasScaler.Unit.Centimeters
+  - UnityEngine.UI.CanvasScaler.Unit.Inches
+  - UnityEngine.UI.CanvasScaler.Unit.Millimeters
+  - UnityEngine.UI.CanvasScaler.Unit.Picas
+  - UnityEngine.UI.CanvasScaler.Unit.Points
+  langs:
+  - csharp
+  - vb
+  name: CanvasScaler.Unit
+  nameWithType: CanvasScaler.Unit
+  fullName: UnityEngine.UI.CanvasScaler.Unit
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Unit
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+    startLine: 160
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The possible physical unit types
+  example: []
+  syntax:
+    content: public enum CanvasScaler.Unit
+    content.vb: Public Enum CanvasScaler.Unit
+- uid: UnityEngine.UI.CanvasScaler.Unit.Centimeters
+  commentId: F:UnityEngine.UI.CanvasScaler.Unit.Centimeters
+  id: Centimeters
+  parent: UnityEngine.UI.CanvasScaler.Unit
+  langs:
+  - csharp
+  - vb
+  name: Centimeters
+  nameWithType: CanvasScaler.Unit.Centimeters
+  fullName: UnityEngine.UI.CanvasScaler.Unit.Centimeters
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Centimeters
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+    startLine: 166
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: >-
+    Use centimeters.
+
+    A centimeter is 1/100 of a meter
+  example: []
+  syntax:
+    content: Centimeters = 0
+    return:
+      type: UnityEngine.UI.CanvasScaler.Unit
+- uid: UnityEngine.UI.CanvasScaler.Unit.Millimeters
+  commentId: F:UnityEngine.UI.CanvasScaler.Unit.Millimeters
+  id: Millimeters
+  parent: UnityEngine.UI.CanvasScaler.Unit
+  langs:
+  - csharp
+  - vb
+  name: Millimeters
+  nameWithType: CanvasScaler.Unit.Millimeters
+  fullName: UnityEngine.UI.CanvasScaler.Unit.Millimeters
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Millimeters
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+    startLine: 171
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: >-
+    Use millimeters.
+
+    A millimeter is 1/10 of a centimeter, and 1/1000 of a meter.
+  example: []
+  syntax:
+    content: Millimeters = 1
+    return:
+      type: UnityEngine.UI.CanvasScaler.Unit
+- uid: UnityEngine.UI.CanvasScaler.Unit.Inches
+  commentId: F:UnityEngine.UI.CanvasScaler.Unit.Inches
+  id: Inches
+  parent: UnityEngine.UI.CanvasScaler.Unit
+  langs:
+  - csharp
+  - vb
+  name: Inches
+  nameWithType: CanvasScaler.Unit.Inches
+  fullName: UnityEngine.UI.CanvasScaler.Unit.Inches
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Inches
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+    startLine: 175
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Use inches.
+  example: []
+  syntax:
+    content: Inches = 2
+    return:
+      type: UnityEngine.UI.CanvasScaler.Unit
+- uid: UnityEngine.UI.CanvasScaler.Unit.Points
+  commentId: F:UnityEngine.UI.CanvasScaler.Unit.Points
+  id: Points
+  parent: UnityEngine.UI.CanvasScaler.Unit
+  langs:
+  - csharp
+  - vb
+  name: Points
+  nameWithType: CanvasScaler.Unit.Points
+  fullName: UnityEngine.UI.CanvasScaler.Unit.Points
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Points
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+    startLine: 180
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: >-
+    Use points.
+
+    One point is 1/12 of a pica, and 1/72 of an inch.
+  example: []
+  syntax:
+    content: Points = 3
+    return:
+      type: UnityEngine.UI.CanvasScaler.Unit
+- uid: UnityEngine.UI.CanvasScaler.Unit.Picas
+  commentId: F:UnityEngine.UI.CanvasScaler.Unit.Picas
+  id: Picas
+  parent: UnityEngine.UI.CanvasScaler.Unit
+  langs:
+  - csharp
+  - vb
+  name: Picas
+  nameWithType: CanvasScaler.Unit.Picas
+  fullName: UnityEngine.UI.CanvasScaler.Unit.Picas
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Picas
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+    startLine: 185
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: >-
+    Use picas.
+
+    One pica is 1/6 of an inch.
+  example: []
+  syntax:
+    content: Picas = 4
+    return:
+      type: UnityEngine.UI.CanvasScaler.Unit
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.CanvasScaler.Unit
+  commentId: T:UnityEngine.UI.CanvasScaler.Unit
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.CanvasScaler.html
+  name: CanvasScaler.Unit
+  nameWithType: CanvasScaler.Unit
+  fullName: UnityEngine.UI.CanvasScaler.Unit
+  spec.csharp:
+  - uid: UnityEngine.UI.CanvasScaler
+    name: CanvasScaler
+    href: UnityEngine.UI.CanvasScaler.html
+  - name: .
+  - uid: UnityEngine.UI.CanvasScaler.Unit
+    name: Unit
+    href: UnityEngine.UI.CanvasScaler.Unit.html
+  spec.vb:
+  - uid: UnityEngine.UI.CanvasScaler
+    name: CanvasScaler
+    href: UnityEngine.UI.CanvasScaler.html
+  - name: .
+  - uid: UnityEngine.UI.CanvasScaler.Unit
+    name: Unit
+    href: UnityEngine.UI.CanvasScaler.Unit.html

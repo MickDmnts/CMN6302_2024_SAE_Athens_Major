@@ -1,0 +1,97 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.ICancelHandler
+  commentId: T:UnityEngine.EventSystems.ICancelHandler
+  id: ICancelHandler
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.ICancelHandler.OnCancel(UnityEngine.EventSystems.BaseEventData)
+  langs:
+  - csharp
+  - vb
+  name: ICancelHandler
+  nameWithType: ICancelHandler
+  fullName: UnityEngine.EventSystems.ICancelHandler
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ICancelHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 393
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Interface to implement if you wish to receive OnCancel callbacks.
+  remarks: Criteria for this event is implementation dependent. For example see StandAloneInputModule.
+  example: []
+  syntax:
+    content: 'public interface ICancelHandler : IEventSystemHandler'
+    content.vb: Public Interface ICancelHandler Inherits IEventSystemHandler
+- uid: UnityEngine.EventSystems.ICancelHandler.OnCancel(UnityEngine.EventSystems.BaseEventData)
+  commentId: M:UnityEngine.EventSystems.ICancelHandler.OnCancel(UnityEngine.EventSystems.BaseEventData)
+  id: OnCancel(UnityEngine.EventSystems.BaseEventData)
+  parent: UnityEngine.EventSystems.ICancelHandler
+  langs:
+  - csharp
+  - vb
+  name: OnCancel(BaseEventData)
+  nameWithType: ICancelHandler.OnCancel(BaseEventData)
+  fullName: UnityEngine.EventSystems.ICancelHandler.OnCancel(UnityEngine.EventSystems.BaseEventData)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OnCancel
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 395
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: void OnCancel(BaseEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.BaseEventData
+    content.vb: Sub OnCancel(eventData As BaseEventData)
+  overload: UnityEngine.EventSystems.ICancelHandler.OnCancel*
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.ICancelHandler.OnCancel*
+  commentId: Overload:UnityEngine.EventSystems.ICancelHandler.OnCancel
+  href: UnityEngine.EventSystems.ICancelHandler.html#UnityEngine_EventSystems_ICancelHandler_OnCancel_UnityEngine_EventSystems_BaseEventData_
+  name: OnCancel
+  nameWithType: ICancelHandler.OnCancel
+  fullName: UnityEngine.EventSystems.ICancelHandler.OnCancel
+- uid: UnityEngine.EventSystems.BaseEventData
+  commentId: T:UnityEngine.EventSystems.BaseEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.BaseEventData.html
+  name: BaseEventData
+  nameWithType: BaseEventData
+  fullName: UnityEngine.EventSystems.BaseEventData

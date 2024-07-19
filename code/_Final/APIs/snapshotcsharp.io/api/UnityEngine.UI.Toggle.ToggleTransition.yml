@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.Toggle.ToggleTransition
+  commentId: T:UnityEngine.UI.Toggle.ToggleTransition
+  id: Toggle.ToggleTransition
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.Toggle.ToggleTransition.Fade
+  - UnityEngine.UI.Toggle.ToggleTransition.None
+  langs:
+  - csharp
+  - vb
+  name: Toggle.ToggleTransition
+  nameWithType: Toggle.ToggleTransition
+  fullName: UnityEngine.UI.Toggle.ToggleTransition
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ToggleTransition
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs
+    startLine: 21
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Display settings for when a toggle is activated or deactivated.
+  example: []
+  syntax:
+    content: public enum Toggle.ToggleTransition
+    content.vb: Public Enum Toggle.ToggleTransition
+- uid: UnityEngine.UI.Toggle.ToggleTransition.None
+  commentId: F:UnityEngine.UI.Toggle.ToggleTransition.None
+  id: None
+  parent: UnityEngine.UI.Toggle.ToggleTransition
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: Toggle.ToggleTransition.None
+  fullName: UnityEngine.UI.Toggle.ToggleTransition.None
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: None
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs
+    startLine: 26
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Show / hide the toggle instantly
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: UnityEngine.UI.Toggle.ToggleTransition
+- uid: UnityEngine.UI.Toggle.ToggleTransition.Fade
+  commentId: F:UnityEngine.UI.Toggle.ToggleTransition.Fade
+  id: Fade
+  parent: UnityEngine.UI.Toggle.ToggleTransition
+  langs:
+  - csharp
+  - vb
+  name: Fade
+  nameWithType: Toggle.ToggleTransition.Fade
+  fullName: UnityEngine.UI.Toggle.ToggleTransition.Fade
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Fade
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs
+    startLine: 31
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Fade the toggle in / out smoothly.
+  example: []
+  syntax:
+    content: Fade = 1
+    return:
+      type: UnityEngine.UI.Toggle.ToggleTransition
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.Toggle.ToggleTransition
+  commentId: T:UnityEngine.UI.Toggle.ToggleTransition
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Toggle.html
+  name: Toggle.ToggleTransition
+  nameWithType: Toggle.ToggleTransition
+  fullName: UnityEngine.UI.Toggle.ToggleTransition
+  spec.csharp:
+  - uid: UnityEngine.UI.Toggle
+    name: Toggle
+    href: UnityEngine.UI.Toggle.html
+  - name: .
+  - uid: UnityEngine.UI.Toggle.ToggleTransition
+    name: ToggleTransition
+    href: UnityEngine.UI.Toggle.ToggleTransition.html
+  spec.vb:
+  - uid: UnityEngine.UI.Toggle
+    name: Toggle
+    href: UnityEngine.UI.Toggle.html
+  - name: .
+  - uid: UnityEngine.UI.Toggle.ToggleTransition
+    name: ToggleTransition
+    href: UnityEngine.UI.Toggle.ToggleTransition.html

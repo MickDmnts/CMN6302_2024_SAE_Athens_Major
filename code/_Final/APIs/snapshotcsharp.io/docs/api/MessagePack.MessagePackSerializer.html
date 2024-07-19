@@ -1,0 +1,1720 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class MessagePackSerializer </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class MessagePackSerializer ">
+      
+      <meta name="description" content="High-Level API of MessagePack for C#.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/new/mad/apiSpec/new?filename=MessagePack_MessagePackSerializer.md&amp;value=---%0Auid%3A%20MessagePack.MessagePackSerializer%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MessagePack.MessagePackSerializer">
+
+
+
+  <h1 id="MessagePack_MessagePackSerializer" data-uid="MessagePack.MessagePackSerializer" class="text-break">
+Class MessagePackSerializer  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="MessagePack.html">MessagePack</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>MessagePack.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>High-Level API of MessagePack for C#.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class MessagePackSerializer</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">MessagePackSerializer</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="MessagePack_MessagePackSerializer_DefaultOptions_" data-uid="MessagePack.MessagePackSerializer.DefaultOptions*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_DefaultOptions" data-uid="MessagePack.MessagePackSerializer.DefaultOptions">
+  DefaultOptions
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets or sets the default set of options to use when not explicitly specified for a method call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static MessagePackSerializerOptions DefaultOptions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd><p>The default value is <a class="xref" href="MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_Standard">Standard</a>.</p>
+</dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="MessagePack_MessagePackSerializer_DefaultOptions_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is an AppDomain or process-wide setting.
+If you're writing a library, you should NOT set or rely on this property but should instead pass
+in <a class="xref" href="MessagePack.MessagePackSerializerOptions.html#MessagePack_MessagePackSerializerOptions_Standard">Standard</a> (or the required options) explicitly to every method call
+to guarantee appropriate behavior in any application.
+If you are an app author, realize that setting this property impacts the entire application so it should only be
+set once, and before any use of <a class="xref" href="MessagePack.MessagePackSerializer.html">MessagePackSerializer</a> occurs.</p>
+</div>
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="MessagePack_MessagePackSerializer_ConvertFromJson_" data-uid="MessagePack.MessagePackSerializer.ConvertFromJson*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_ConvertFromJson_System_IO_TextReader_MessagePack_MessagePackWriter__MessagePack_MessagePackSerializerOptions_" data-uid="MessagePack.MessagePackSerializer.ConvertFromJson(System.IO.TextReader,MessagePack.MessagePackWriter@,MessagePack.MessagePackSerializerOptions)">
+  ConvertFromJson(TextReader, ref MessagePackWriter, MessagePackSerializerOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.Json.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Translates the given JSON to MessagePack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ConvertFromJson(TextReader reader, ref MessagePackWriter writer, MessagePackSerializerOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reader</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textreader">TextReader</a></dt>
+    <dd></dd>
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_MessagePackSerializer_ConvertFromJson_" data-uid="MessagePack.MessagePackSerializer.ConvertFromJson*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_ConvertFromJson_System_String_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.ConvertFromJson(System.String,MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  ConvertFromJson(string, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.Json.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Translates the given JSON to MessagePack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ConvertFromJson(string str, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_MessagePackSerializer_ConvertFromJson_" data-uid="MessagePack.MessagePackSerializer.ConvertFromJson*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_ConvertFromJson_System_String_MessagePack_MessagePackWriter__MessagePack_MessagePackSerializerOptions_" data-uid="MessagePack.MessagePackSerializer.ConvertFromJson(System.String,MessagePack.MessagePackWriter@,MessagePack.MessagePackSerializerOptions)">
+  ConvertFromJson(string, ref MessagePackWriter, MessagePackSerializerOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.Json.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Translates the given JSON to MessagePack.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ConvertFromJson(string str, ref MessagePackWriter writer, MessagePackSerializerOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>str</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="MessagePack_MessagePackSerializer_ConvertToJson_" data-uid="MessagePack.MessagePackSerializer.ConvertToJson*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_ConvertToJson_MessagePack_MessagePackReader__System_IO_TextWriter_MessagePack_MessagePackSerializerOptions_" data-uid="MessagePack.MessagePackSerializer.ConvertToJson(MessagePack.MessagePackReader@,System.IO.TextWriter,MessagePack.MessagePackSerializerOptions)">
+  ConvertToJson(ref MessagePackReader, TextWriter, MessagePackSerializerOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.Json.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convert a message-pack binary to a JSON string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ConvertToJson(ref MessagePackReader reader, TextWriter jsonWriter, MessagePackSerializerOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reader</code> <a class="xref" href="MessagePack.MessagePackReader.html">MessagePackReader</a></dt>
+    <dd></dd>
+    <dt><code>jsonWriter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MessagePack.MessagePackSerializationException.html">MessagePackSerializationException</a></dt>
+    <dd><p>Thrown if an error occurs while reading the messagepack data or writing out the JSON.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MessagePack_MessagePackSerializer_ConvertToJson_" data-uid="MessagePack.MessagePackSerializer.ConvertToJson*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_ConvertToJson_System_Buffers_ReadOnlySequence_System_Byte___MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.ConvertToJson(System.Buffers.ReadOnlySequence{System.Byte}@,MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  ConvertToJson(in ReadOnlySequence&lt;byte&gt;, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.Json.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convert a message-pack binary to a JSON string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ConvertToJson(in ReadOnlySequence&lt;byte&gt; bytes, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1">ReadOnlySequence</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MessagePack.MessagePackSerializationException.html">MessagePackSerializationException</a></dt>
+    <dd><p>Thrown if an error occurs while reading the messagepack data or writing out the JSON.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MessagePack_MessagePackSerializer_ConvertToJson_" data-uid="MessagePack.MessagePackSerializer.ConvertToJson*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_ConvertToJson_System_ReadOnlyMemory_System_Byte__MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.ConvertToJson(System.ReadOnlyMemory{System.Byte},MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  ConvertToJson(ReadOnlyMemory&lt;byte&gt;, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.Json.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convert a message-pack binary to a JSON string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ConvertToJson(ReadOnlyMemory&lt;byte&gt; bytes, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlymemory-1">ReadOnlyMemory</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MessagePack.MessagePackSerializationException.html">MessagePackSerializationException</a></dt>
+    <dd><p>Thrown if an error occurs while reading the messagepack data or writing out the JSON.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MessagePack_MessagePackSerializer_Deserialize_" data-uid="MessagePack.MessagePackSerializer.Deserialize*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_Deserialize_System_Type_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_" data-uid="MessagePack.MessagePackSerializer.Deserialize(System.Type,MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)">
+  Deserialize(Type, ref MessagePackReader, MessagePackSerializerOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.NonGeneric.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object? Deserialize(Type type, ref MessagePackReader reader, MessagePackSerializerOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>reader</code> <a class="xref" href="MessagePack.MessagePackReader.html">MessagePackReader</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="MessagePack.MessagePackSerializer.html#MessagePack_MessagePackSerializer_Deserialize__1_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_">Deserialize&lt;T&gt;(ref MessagePackReader, MessagePackSerializerOptions?)</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="MessagePack_MessagePackSerializer_Deserialize_" data-uid="MessagePack.MessagePackSerializer.Deserialize*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_Deserialize_System_Type_System_Buffers_ReadOnlySequence_System_Byte__MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.Deserialize(System.Type,System.Buffers.ReadOnlySequence{System.Byte},MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  Deserialize(Type, ReadOnlySequence&lt;byte&gt;, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.NonGeneric.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object? Deserialize(Type type, ReadOnlySequence&lt;byte&gt; bytes, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1">ReadOnlySequence</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="MessagePack.MessagePackSerializer.html#MessagePack_MessagePackSerializer_Deserialize__1_System_Buffers_ReadOnlySequence_System_Byte___MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_">Deserialize&lt;T&gt;(in ReadOnlySequence&lt;byte&gt;, MessagePackSerializerOptions?, CancellationToken)</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="MessagePack_MessagePackSerializer_Deserialize_" data-uid="MessagePack.MessagePackSerializer.Deserialize*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_Deserialize_System_Type_System_IO_Stream_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.Deserialize(System.Type,System.IO.Stream,MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  Deserialize(Type, Stream, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.NonGeneric.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object? Deserialize(Type type, Stream stream, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="MessagePack.MessagePackSerializer.html#MessagePack_MessagePackSerializer_Deserialize__1_System_IO_Stream_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_">Deserialize&lt;T&gt;(Stream, MessagePackSerializerOptions?, CancellationToken)</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="MessagePack_MessagePackSerializer_Deserialize_" data-uid="MessagePack.MessagePackSerializer.Deserialize*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_Deserialize_System_Type_System_ReadOnlyMemory_System_Byte__MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.Deserialize(System.Type,System.ReadOnlyMemory{System.Byte},MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  Deserialize(Type, ReadOnlyMemory&lt;byte&gt;, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.NonGeneric.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static object? Deserialize(Type type, ReadOnlyMemory&lt;byte&gt; bytes, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlymemory-1">ReadOnlyMemory</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="MessagePack.MessagePackSerializer.html#MessagePack_MessagePackSerializer_Deserialize__1_System_ReadOnlyMemory_System_Byte__MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_">Deserialize&lt;T&gt;(ReadOnlyMemory&lt;byte&gt;, MessagePackSerializerOptions?, CancellationToken)</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="MessagePack_MessagePackSerializer_DeserializeAsync_" data-uid="MessagePack.MessagePackSerializer.DeserializeAsync*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_DeserializeAsync_System_Type_System_IO_Stream_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.DeserializeAsync(System.Type,System.IO.Stream,MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  DeserializeAsync(Type, Stream, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.NonGeneric.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValueTask&lt;object?&gt; DeserializeAsync(Type type, Stream stream, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="MessagePack.MessagePackSerializer.html#MessagePack_MessagePackSerializer_DeserializeAsync__1_System_IO_Stream_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_">DeserializeAsync&lt;T&gt;(Stream, MessagePackSerializerOptions?, CancellationToken)</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="MessagePack_MessagePackSerializer_DeserializeAsync_" data-uid="MessagePack.MessagePackSerializer.DeserializeAsync*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_DeserializeAsync__1_System_IO_Stream_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.DeserializeAsync``1(System.IO.Stream,MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  DeserializeAsync&lt;T&gt;(Stream, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.cs/#L373"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deserializes the entire content of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ValueTask&lt;T&gt; DeserializeAsync&lt;T&gt;(Stream stream, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>The stream to deserialize from.
+The entire stream will be read, and the first msgpack token deserialized will be returned.
+If <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream.canseek">CanSeek</a> is true on the stream, its position will be set to just after the last deserialized byte.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd><p>The options. Use <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use default options.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask-1">ValueTask</a>&lt;T&gt;</dt>
+    <dd><p>The deserialized value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of value to deserialize.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MessagePack_MessagePackSerializer_DeserializeAsync__1_System_IO_Stream_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If multiple top-level msgpack data structures are expected on the stream, use <a class="xref" href="MessagePack.MessagePackStreamReader.html">MessagePackStreamReader</a> instead.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MessagePack.MessagePackSerializationException.html">MessagePackSerializationException</a></dt>
+    <dd><p>Thrown when any error occurs during deserialization.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MessagePack_MessagePackSerializer_Deserialize_" data-uid="MessagePack.MessagePackSerializer.Deserialize*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_Deserialize__1_MessagePack_MessagePackReader__MessagePack_MessagePackSerializerOptions_" data-uid="MessagePack.MessagePackSerializer.Deserialize``1(MessagePack.MessagePackReader@,MessagePack.MessagePackSerializerOptions)">
+  Deserialize&lt;T&gt;(ref MessagePackReader, MessagePackSerializerOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deserializes a value of a given type from a sequence of bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Deserialize&lt;T&gt;(ref MessagePackReader reader, MessagePackSerializerOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>reader</code> <a class="xref" href="MessagePack.MessagePackReader.html">MessagePackReader</a></dt>
+    <dd><p>The reader to deserialize from.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd><p>The options. Use <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use default options.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>The deserialized value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of value to deserialize.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MessagePack.MessagePackSerializationException.html">MessagePackSerializationException</a></dt>
+    <dd><p>Thrown when any error occurs during deserialization.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MessagePack_MessagePackSerializer_Deserialize_" data-uid="MessagePack.MessagePackSerializer.Deserialize*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_Deserialize__1_System_Buffers_ReadOnlySequence_System_Byte___MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.Deserialize``1(System.Buffers.ReadOnlySequence{System.Byte}@,MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  Deserialize&lt;T&gt;(in ReadOnlySequence&lt;byte&gt;, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.cs/#L208"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deserializes a value of a given type from a sequence of bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Deserialize&lt;T&gt;(in ReadOnlySequence&lt;byte&gt; byteSequence, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>byteSequence</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1">ReadOnlySequence</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>The sequence to deserialize from.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd><p>The options. Use <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use default options.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>The deserialized value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of value to deserialize.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MessagePack.MessagePackSerializationException.html">MessagePackSerializationException</a></dt>
+    <dd><p>Thrown when any error occurs during deserialization.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MessagePack_MessagePackSerializer_Deserialize_" data-uid="MessagePack.MessagePackSerializer.Deserialize*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_Deserialize__1_System_IO_Stream_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.Deserialize``1(System.IO.Stream,MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  Deserialize&lt;T&gt;(Stream, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.cs/#L324"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deserializes the entire content of a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Deserialize&lt;T&gt;(Stream stream, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>The stream to deserialize from.
+The entire stream will be read, and the first msgpack token deserialized will be returned.
+If <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream.canseek">CanSeek</a> is true on the stream, its position will be set to just after the last deserialized byte.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd><p>The options. Use <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use default options.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>The deserialized value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of value to deserialize.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="MessagePack_MessagePackSerializer_Deserialize__1_System_IO_Stream_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If multiple top-level msgpack data structures are expected on the stream, use <a class="xref" href="MessagePack.MessagePackStreamReader.html">MessagePackStreamReader</a> instead.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MessagePack.MessagePackSerializationException.html">MessagePackSerializationException</a></dt>
+    <dd><p>Thrown when any error occurs during deserialization.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MessagePack_MessagePackSerializer_Deserialize_" data-uid="MessagePack.MessagePackSerializer.Deserialize*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_Deserialize__1_System_ReadOnlyMemory_System_Byte__MessagePack_MessagePackSerializerOptions_System_Int32__System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.Deserialize``1(System.ReadOnlyMemory{System.Byte},MessagePack.MessagePackSerializerOptions,System.Int32@,System.Threading.CancellationToken)">
+  Deserialize&lt;T&gt;(ReadOnlyMemory&lt;byte&gt;, MessagePackSerializerOptions?, out int, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.cs/#L297"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deserializes a value of a given type from a sequence of bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Deserialize&lt;T&gt;(ReadOnlyMemory&lt;byte&gt; buffer, MessagePackSerializerOptions? options, out int bytesRead, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlymemory-1">ReadOnlyMemory</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>The memory to deserialize from.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd><p>The options. Use <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use default options.</p>
+</dd>
+    <dt><code>bytesRead</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of bytes read.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>The deserialized value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of value to deserialize.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MessagePack.MessagePackSerializationException.html">MessagePackSerializationException</a></dt>
+    <dd><p>Thrown when any error occurs during deserialization.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MessagePack_MessagePackSerializer_Deserialize_" data-uid="MessagePack.MessagePackSerializer.Deserialize*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_Deserialize__1_System_ReadOnlyMemory_System_Byte__MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.Deserialize``1(System.ReadOnlyMemory{System.Byte},MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  Deserialize&lt;T&gt;(ReadOnlyMemory&lt;byte&gt;, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deserializes a value of a given type from a sequence of bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Deserialize&lt;T&gt;(ReadOnlyMemory&lt;byte&gt; buffer, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlymemory-1">ReadOnlyMemory</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>The buffer to deserialize from.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd><p>The options. Use <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use default options.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>The deserialized value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of value to deserialize.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MessagePack.MessagePackSerializationException.html">MessagePackSerializationException</a></dt>
+    <dd><p>Thrown when any error occurs during deserialization.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MessagePack_MessagePackSerializer_Deserialize_" data-uid="MessagePack.MessagePackSerializer.Deserialize*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_Deserialize__1_System_ReadOnlyMemory_System_Byte__System_Int32__System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.Deserialize``1(System.ReadOnlyMemory{System.Byte},System.Int32@,System.Threading.CancellationToken)">
+  Deserialize&lt;T&gt;(ReadOnlyMemory&lt;byte&gt;, out int, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.cs/#L285"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deserializes a value of a given type from a sequence of bytes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Deserialize&lt;T&gt;(ReadOnlyMemory&lt;byte&gt; buffer, out int bytesRead, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>buffer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlymemory-1">ReadOnlyMemory</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>The memory to deserialize from.</p>
+</dd>
+    <dt><code>bytesRead</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of bytes read.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">T</span></dt>
+    <dd><p>The deserialized value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>The type of value to deserialize.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MessagePack.MessagePackSerializationException.html">MessagePackSerializationException</a></dt>
+    <dd><p>Thrown when any error occurs during deserialization.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MessagePack_MessagePackSerializer_Serialize_" data-uid="MessagePack.MessagePackSerializer.Serialize*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_Serialize_System_Type_MessagePack_MessagePackWriter__System_Object_MessagePack_MessagePackSerializerOptions_" data-uid="MessagePack.MessagePackSerializer.Serialize(System.Type,MessagePack.MessagePackWriter@,System.Object,MessagePack.MessagePackSerializerOptions)">
+  Serialize(Type, ref MessagePackWriter, object?, MessagePackSerializerOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.NonGeneric.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Serialize(Type type, ref MessagePackWriter writer, object? obj, MessagePackSerializerOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd></dd>
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="MessagePack.MessagePackSerializer.html#MessagePack_MessagePackSerializer_Serialize__1_MessagePack_MessagePackWriter____0_MessagePack_MessagePackSerializerOptions_">Serialize&lt;T&gt;(ref MessagePackWriter, T, MessagePackSerializerOptions?)</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="MessagePack_MessagePackSerializer_Serialize_" data-uid="MessagePack.MessagePackSerializer.Serialize*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_Serialize_System_Type_System_Buffers_IBufferWriter_System_Byte__System_Object_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.Serialize(System.Type,System.Buffers.IBufferWriter{System.Byte},System.Object,MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  Serialize(Type, IBufferWriter&lt;byte&gt;, object?, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.NonGeneric.cs/#L32"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Serialize(Type type, IBufferWriter&lt;byte&gt; writer, object? obj, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>writer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.buffers.ibufferwriter-1">IBufferWriter</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="MessagePack.MessagePackSerializer.html#MessagePack_MessagePackSerializer_Serialize__1_System_Buffers_IBufferWriter_System_Byte____0_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_">Serialize&lt;T&gt;(IBufferWriter&lt;byte&gt;, T, MessagePackSerializerOptions?, CancellationToken)</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="MessagePack_MessagePackSerializer_Serialize_" data-uid="MessagePack.MessagePackSerializer.Serialize*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_Serialize_System_Type_System_IO_Stream_System_Object_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.Serialize(System.Type,System.IO.Stream,System.Object,MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  Serialize(Type, Stream, object?, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.NonGeneric.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Serialize(Type type, Stream stream, object? obj, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="MessagePack.MessagePackSerializer.html#MessagePack_MessagePackSerializer_Serialize__1_System_IO_Stream___0_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_">Serialize&lt;T&gt;(Stream, T, MessagePackSerializerOptions?, CancellationToken)</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="MessagePack_MessagePackSerializer_Serialize_" data-uid="MessagePack.MessagePackSerializer.Serialize*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_Serialize_System_Type_System_Object_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.Serialize(System.Type,System.Object,MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  Serialize(Type, object?, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.NonGeneric.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] Serialize(Type type, object? obj, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="MessagePack.MessagePackSerializer.html#MessagePack_MessagePackSerializer_Serialize__1___0_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_">Serialize&lt;T&gt;(T, MessagePackSerializerOptions?, CancellationToken)</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="MessagePack_MessagePackSerializer_SerializeAsync_" data-uid="MessagePack.MessagePackSerializer.SerializeAsync*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_SerializeAsync_System_Type_System_IO_Stream_System_Object_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.SerializeAsync(System.Type,System.IO.Stream,System.Object,MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  SerializeAsync(Type, Stream, object?, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.NonGeneric.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task SerializeAsync(Type type, Stream stream, object? obj, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+    <dt><code>obj</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <dl class="typelist seealso">
+    <dt>See Also</dt>
+    <dd>
+    <div><a class="xref" href="MessagePack.MessagePackSerializer.html#MessagePack_MessagePackSerializer_SerializeAsync__1_System_IO_Stream___0_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_">SerializeAsync&lt;T&gt;(Stream, T, MessagePackSerializerOptions?, CancellationToken)</a></div>
+    </dd>
+  </dl>
+
+
+  <a id="MessagePack_MessagePackSerializer_SerializeAsync_" data-uid="MessagePack.MessagePackSerializer.SerializeAsync*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_SerializeAsync__1_System_IO_Stream___0_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.SerializeAsync``1(System.IO.Stream,``0,MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  SerializeAsync&lt;T&gt;(Stream, T, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serializes a given value to the specified stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task SerializeAsync&lt;T&gt;(Stream stream, T value, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>The stream to serialize to.</p>
+</dd>
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd><p>The value to serialize.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd><p>The options. Use <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use default options.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A task that completes with the result of the async serialization operation.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MessagePack.MessagePackSerializationException.html">MessagePackSerializationException</a></dt>
+    <dd><p>Thrown when any error occurs during serialization.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MessagePack_MessagePackSerializer_SerializeToJson_" data-uid="MessagePack.MessagePackSerializer.SerializeToJson*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_SerializeToJson__1_System_IO_TextWriter___0_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.SerializeToJson``1(System.IO.TextWriter,``0,MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  SerializeToJson&lt;T&gt;(TextWriter, T, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.Json.cs/#L22"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serialize an object to JSON string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SerializeToJson&lt;T&gt;(TextWriter textWriter, T obj, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>textWriter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.textwriter">TextWriter</a></dt>
+    <dd></dd>
+    <dt><code>obj</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MessagePack.MessagePackSerializationException.html">MessagePackSerializationException</a></dt>
+    <dd><p>Thrown if an error occurs during serialization.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MessagePack_MessagePackSerializer_SerializeToJson_" data-uid="MessagePack.MessagePackSerializer.SerializeToJson*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_SerializeToJson__1___0_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.SerializeToJson``1(``0,MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  SerializeToJson&lt;T&gt;(T, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.Json.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serialize an object to JSON string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string SerializeToJson&lt;T&gt;(T obj, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>obj</code> <span class="xref">T</span></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MessagePack.MessagePackSerializationException.html">MessagePackSerializationException</a></dt>
+    <dd><p>Thrown if an error occurs during serialization.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MessagePack_MessagePackSerializer_Serialize_" data-uid="MessagePack.MessagePackSerializer.Serialize*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_Serialize__1_MessagePack_MessagePackWriter____0_MessagePack_MessagePackSerializerOptions_" data-uid="MessagePack.MessagePackSerializer.Serialize``1(MessagePack.MessagePackWriter@,``0,MessagePack.MessagePackSerializerOptions)">
+  Serialize&lt;T&gt;(ref MessagePackWriter, T, MessagePackSerializerOptions?)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serializes a given value with the specified buffer writer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Serialize&lt;T&gt;(ref MessagePackWriter writer, T value, MessagePackSerializerOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="MessagePack.MessagePackWriter.html">MessagePackWriter</a></dt>
+    <dd><p>The buffer writer to serialize with.</p>
+</dd>
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd><p>The value to serialize.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd><p>The options. Use <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use default options.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MessagePack.MessagePackSerializationException.html">MessagePackSerializationException</a></dt>
+    <dd><p>Thrown when any error occurs during serialization.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MessagePack_MessagePackSerializer_Serialize_" data-uid="MessagePack.MessagePackSerializer.Serialize*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_Serialize__1_System_Buffers_IBufferWriter_System_Byte____0_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.Serialize``1(System.Buffers.IBufferWriter{System.Byte},``0,MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  Serialize&lt;T&gt;(IBufferWriter&lt;byte&gt;, T, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serializes a given value with the specified buffer writer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Serialize&lt;T&gt;(IBufferWriter&lt;byte&gt; writer, T value, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.buffers.ibufferwriter-1">IBufferWriter</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd><p>The buffer writer to serialize with.</p>
+</dd>
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd><p>The value to serialize.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd><p>The options. Use <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use default options.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MessagePack.MessagePackSerializationException.html">MessagePackSerializationException</a></dt>
+    <dd><p>Thrown when any error occurs during serialization.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MessagePack_MessagePackSerializer_Serialize_" data-uid="MessagePack.MessagePackSerializer.Serialize*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_Serialize__1_System_IO_Stream___0_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.Serialize``1(System.IO.Stream,``0,MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  Serialize&lt;T&gt;(Stream, T, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serializes a given value to the specified stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Serialize&lt;T&gt;(Stream stream, T value, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>The stream to serialize to.</p>
+</dd>
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd><p>The value to serialize.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd><p>The options. Use <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use default options.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MessagePack.MessagePackSerializationException.html">MessagePackSerializationException</a></dt>
+    <dd><p>Thrown when any error occurs during serialization.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="MessagePack_MessagePackSerializer_Serialize_" data-uid="MessagePack.MessagePackSerializer.Serialize*"></a>
+
+  <h3 id="MessagePack_MessagePackSerializer_Serialize__1___0_MessagePack_MessagePackSerializerOptions_System_Threading_CancellationToken_" data-uid="MessagePack.MessagePackSerializer.Serialize``1(``0,MessagePack.MessagePackSerializerOptions,System.Threading.CancellationToken)">
+  Serialize&lt;T&gt;(T, MessagePackSerializerOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serializes a given value with the specified buffer writer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] Serialize&lt;T&gt;(T value, MessagePackSerializerOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd><p>The value to serialize.</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="MessagePack.MessagePackSerializerOptions.html">MessagePackSerializerOptions</a></dt>
+    <dd><p>The options. Use <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> to use default options.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>A cancellation token.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</dt>
+    <dd><p>A byte array with the serialized value.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="MessagePack.MessagePackSerializationException.html">MessagePackSerializationException</a></dt>
+    <dd><p>Thrown when any error occurs during serialization.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/3rdParty/MessagePack/MessagePackSerializer.cs/#L18" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
