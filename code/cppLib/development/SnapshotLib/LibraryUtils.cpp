@@ -1,11 +1,11 @@
-/*
+/**
 * Developed by Michael-Evangelos Diamantis Aug-2024
 * for SAE Athens CMN6302 - Major.
 * Source: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major
 */
 #include "pch.h"
 
-/*
+/**
 Returns the file count from inside the passed  path.
 @param const std::string _path: A string containing the absolute path to a directory.
 @throw fs::filesystem_error: Passed _path does not exist.
@@ -28,7 +28,7 @@ int getFileCount(const std::string _path) {
 	return fileCount;
 }
 
-/*
+/**
 @return The current date in a DD_MM_YYYY format as a string.
 */
 std::string getCurrentDate() {
@@ -46,7 +46,7 @@ std::string getCurrentDate() {
 	return ss.str();
 }
 
-/*
+/**
 @param const std::string& _format: The format to replace the values from.
 @param const std::string& date: The date value to replace the {date}.
 @param const int cnt: The count value to replace the {count}.
@@ -62,7 +62,7 @@ std::string formatSaveString(const std::string& _format, const std::string& date
 	return result;
 }
 
-/*
+/**
 Combines the passed strings with the corresponding system-relative path combination symbol.
 No checking takes place.
 @param const std::string _base: The base absolute path.
@@ -74,7 +74,7 @@ std::string combinePath(const std::string _base, const std::string _exte) {
 	return _comb.string();
 }
 
-/*
+/**
 Creates the passed directory if it does not exist.
 @param const std::string& path: The directory absolute path.
 */
@@ -86,7 +86,7 @@ void handleSaveDirectory(const std::string& path) {
 	}
 }
 
-/*
+/**
 @param const std::string& path: Absolute path to the file.
 @return True if the file exists, false otherwise.
 */
