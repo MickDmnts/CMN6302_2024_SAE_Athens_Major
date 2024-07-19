@@ -41,6 +41,5 @@
 # Doxygen
 **/[Hh]tml/
 **/[Ll]atex/
-**/Doxyfile
 
 # End of https://www.toptal.com/developers/gitignore/api/c++
