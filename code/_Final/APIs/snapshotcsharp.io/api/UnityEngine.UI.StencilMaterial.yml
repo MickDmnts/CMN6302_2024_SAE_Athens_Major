@@ -1,0 +1,541 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.StencilMaterial
+  commentId: T:UnityEngine.UI.StencilMaterial
+  id: StencilMaterial
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.StencilMaterial.Add(UnityEngine.Material,System.Int32,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.CompareFunction,UnityEngine.Rendering.ColorWriteMask)
+  - UnityEngine.UI.StencilMaterial.Add(UnityEngine.Material,System.Int32,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.CompareFunction,UnityEngine.Rendering.ColorWriteMask,System.Int32,System.Int32)
+  - UnityEngine.UI.StencilMaterial.ClearAll
+  - UnityEngine.UI.StencilMaterial.Remove(UnityEngine.Material)
+  langs:
+  - csharp
+  - vb
+  name: StencilMaterial
+  nameWithType: StencilMaterial
+  fullName: UnityEngine.UI.StencilMaterial
+  type: Class
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/StencilMaterial.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: StencilMaterial
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/StencilMaterial.cs
+    startLine: 10
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: >-
+    Dynamic material class makes it possible to create custom materials on the fly on a per-Graphic basis,
+
+    and still have them get cleaned up correctly.
+  example: []
+  syntax:
+    content: public static class StencilMaterial
+    content.vb: Public Module StencilMaterial
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UnityEngine.UI.StencilMaterial.Add(UnityEngine.Material,System.Int32,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.CompareFunction,UnityEngine.Rendering.ColorWriteMask)
+  commentId: M:UnityEngine.UI.StencilMaterial.Add(UnityEngine.Material,System.Int32,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.CompareFunction,UnityEngine.Rendering.ColorWriteMask)
+  id: Add(UnityEngine.Material,System.Int32,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.CompareFunction,UnityEngine.Rendering.ColorWriteMask)
+  parent: UnityEngine.UI.StencilMaterial
+  langs:
+  - csharp
+  - vb
+  name: Add(Material, int, StencilOp, CompareFunction, ColorWriteMask)
+  nameWithType: StencilMaterial.Add(Material, int, StencilOp, CompareFunction, ColorWriteMask)
+  fullName: UnityEngine.UI.StencilMaterial.Add(UnityEngine.Material, int, UnityEngine.Rendering.StencilOp, UnityEngine.Rendering.CompareFunction, UnityEngine.Rendering.ColorWriteMask)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/StencilMaterial.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Add
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/StencilMaterial.cs
+    startLine: 36
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Add a new material using the specified base and stencil ID.
+  example: []
+  syntax:
+    content: public static Material Add(Material baseMat, int stencilID, StencilOp operation, CompareFunction compareFunction, ColorWriteMask colorWriteMask)
+    parameters:
+    - id: baseMat
+      type: UnityEngine.Material
+    - id: stencilID
+      type: System.Int32
+    - id: operation
+      type: UnityEngine.Rendering.StencilOp
+    - id: compareFunction
+      type: UnityEngine.Rendering.CompareFunction
+    - id: colorWriteMask
+      type: UnityEngine.Rendering.ColorWriteMask
+    return:
+      type: UnityEngine.Material
+    content.vb: Public Shared Function Add(baseMat As Material, stencilID As Integer, operation As StencilOp, compareFunction As CompareFunction, colorWriteMask As ColorWriteMask) As Material
+  overload: UnityEngine.UI.StencilMaterial.Add*
+  nameWithType.vb: StencilMaterial.Add(Material, Integer, StencilOp, CompareFunction, ColorWriteMask)
+  fullName.vb: UnityEngine.UI.StencilMaterial.Add(UnityEngine.Material, Integer, UnityEngine.Rendering.StencilOp, UnityEngine.Rendering.CompareFunction, UnityEngine.Rendering.ColorWriteMask)
+  name.vb: Add(Material, Integer, StencilOp, CompareFunction, ColorWriteMask)
+- uid: UnityEngine.UI.StencilMaterial.Add(UnityEngine.Material,System.Int32,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.CompareFunction,UnityEngine.Rendering.ColorWriteMask,System.Int32,System.Int32)
+  commentId: M:UnityEngine.UI.StencilMaterial.Add(UnityEngine.Material,System.Int32,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.CompareFunction,UnityEngine.Rendering.ColorWriteMask,System.Int32,System.Int32)
+  id: Add(UnityEngine.Material,System.Int32,UnityEngine.Rendering.StencilOp,UnityEngine.Rendering.CompareFunction,UnityEngine.Rendering.ColorWriteMask,System.Int32,System.Int32)
+  parent: UnityEngine.UI.StencilMaterial
+  langs:
+  - csharp
+  - vb
+  name: Add(Material, int, StencilOp, CompareFunction, ColorWriteMask, int, int)
+  nameWithType: StencilMaterial.Add(Material, int, StencilOp, CompareFunction, ColorWriteMask, int, int)
+  fullName: UnityEngine.UI.StencilMaterial.Add(UnityEngine.Material, int, UnityEngine.Rendering.StencilOp, UnityEngine.Rendering.CompareFunction, UnityEngine.Rendering.ColorWriteMask, int, int)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/StencilMaterial.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Add
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/StencilMaterial.cs
+    startLine: 51
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Add a new material using the specified base and stencil ID.
+  example: []
+  syntax:
+    content: public static Material Add(Material baseMat, int stencilID, StencilOp operation, CompareFunction compareFunction, ColorWriteMask colorWriteMask, int readMask, int writeMask)
+    parameters:
+    - id: baseMat
+      type: UnityEngine.Material
+    - id: stencilID
+      type: System.Int32
+    - id: operation
+      type: UnityEngine.Rendering.StencilOp
+    - id: compareFunction
+      type: UnityEngine.Rendering.CompareFunction
+    - id: colorWriteMask
+      type: UnityEngine.Rendering.ColorWriteMask
+    - id: readMask
+      type: System.Int32
+    - id: writeMask
+      type: System.Int32
+    return:
+      type: UnityEngine.Material
+    content.vb: Public Shared Function Add(baseMat As Material, stencilID As Integer, operation As StencilOp, compareFunction As CompareFunction, colorWriteMask As ColorWriteMask, readMask As Integer, writeMask As Integer) As Material
+  overload: UnityEngine.UI.StencilMaterial.Add*
+  nameWithType.vb: StencilMaterial.Add(Material, Integer, StencilOp, CompareFunction, ColorWriteMask, Integer, Integer)
+  fullName.vb: UnityEngine.UI.StencilMaterial.Add(UnityEngine.Material, Integer, UnityEngine.Rendering.StencilOp, UnityEngine.Rendering.CompareFunction, UnityEngine.Rendering.ColorWriteMask, Integer, Integer)
+  name.vb: Add(Material, Integer, StencilOp, CompareFunction, ColorWriteMask, Integer, Integer)
+- uid: UnityEngine.UI.StencilMaterial.Remove(UnityEngine.Material)
+  commentId: M:UnityEngine.UI.StencilMaterial.Remove(UnityEngine.Material)
+  id: Remove(UnityEngine.Material)
+  parent: UnityEngine.UI.StencilMaterial
+  langs:
+  - csharp
+  - vb
+  name: Remove(Material)
+  nameWithType: StencilMaterial.Remove(Material)
+  fullName: UnityEngine.UI.StencilMaterial.Remove(UnityEngine.Material)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/StencilMaterial.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Remove
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/StencilMaterial.cs
+    startLine: 140
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Remove an existing material, automatically cleaning it up if it's no longer in use.
+  example: []
+  syntax:
+    content: public static void Remove(Material customMat)
+    parameters:
+    - id: customMat
+      type: UnityEngine.Material
+    content.vb: Public Shared Sub Remove(customMat As Material)
+  overload: UnityEngine.UI.StencilMaterial.Remove*
+- uid: UnityEngine.UI.StencilMaterial.ClearAll
+  commentId: M:UnityEngine.UI.StencilMaterial.ClearAll
+  id: ClearAll
+  parent: UnityEngine.UI.StencilMaterial
+  langs:
+  - csharp
+  - vb
+  name: ClearAll()
+  nameWithType: StencilMaterial.ClearAll()
+  fullName: UnityEngine.UI.StencilMaterial.ClearAll()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/StencilMaterial.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ClearAll
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/StencilMaterial.cs
+    startLine: 163
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  syntax:
+    content: public static void ClearAll()
+    content.vb: Public Shared Sub ClearAll()
+  overload: UnityEngine.UI.StencilMaterial.ClearAll*
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.UI.StencilMaterial.Add*
+  commentId: Overload:UnityEngine.UI.StencilMaterial.Add
+  href: UnityEngine.UI.StencilMaterial.html#UnityEngine_UI_StencilMaterial_Add_UnityEngine_Material_System_Int32_UnityEngine_Rendering_StencilOp_UnityEngine_Rendering_CompareFunction_UnityEngine_Rendering_ColorWriteMask_
+  name: Add
+  nameWithType: StencilMaterial.Add
+  fullName: UnityEngine.UI.StencilMaterial.Add
+- uid: UnityEngine.Material
+  commentId: T:UnityEngine.Material
+  parent: UnityEngine
+  isExternal: true
+  name: Material
+  nameWithType: Material
+  fullName: UnityEngine.Material
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.Rendering.StencilOp
+  commentId: T:UnityEngine.Rendering.StencilOp
+  parent: UnityEngine.Rendering
+  isExternal: true
+  name: StencilOp
+  nameWithType: StencilOp
+  fullName: UnityEngine.Rendering.StencilOp
+- uid: UnityEngine.Rendering.CompareFunction
+  commentId: T:UnityEngine.Rendering.CompareFunction
+  parent: UnityEngine.Rendering
+  isExternal: true
+  name: CompareFunction
+  nameWithType: CompareFunction
+  fullName: UnityEngine.Rendering.CompareFunction
+- uid: UnityEngine.Rendering.ColorWriteMask
+  commentId: T:UnityEngine.Rendering.ColorWriteMask
+  parent: UnityEngine.Rendering
+  isExternal: true
+  name: ColorWriteMask
+  nameWithType: ColorWriteMask
+  fullName: UnityEngine.Rendering.ColorWriteMask
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.Rendering
+  commentId: N:UnityEngine.Rendering
+  isExternal: true
+  name: UnityEngine.Rendering
+  nameWithType: UnityEngine.Rendering
+  fullName: UnityEngine.Rendering
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Rendering
+    name: Rendering
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Rendering
+    name: Rendering
+    isExternal: true
+- uid: UnityEngine.UI.StencilMaterial.Remove*
+  commentId: Overload:UnityEngine.UI.StencilMaterial.Remove
+  href: UnityEngine.UI.StencilMaterial.html#UnityEngine_UI_StencilMaterial_Remove_UnityEngine_Material_
+  name: Remove
+  nameWithType: StencilMaterial.Remove
+  fullName: UnityEngine.UI.StencilMaterial.Remove
+- uid: UnityEngine.UI.StencilMaterial.ClearAll*
+  commentId: Overload:UnityEngine.UI.StencilMaterial.ClearAll
+  href: UnityEngine.UI.StencilMaterial.html#UnityEngine_UI_StencilMaterial_ClearAll
+  name: ClearAll
+  nameWithType: StencilMaterial.ClearAll
+  fullName: UnityEngine.UI.StencilMaterial.ClearAll

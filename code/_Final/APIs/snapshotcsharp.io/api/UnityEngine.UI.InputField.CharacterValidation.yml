@@ -1,0 +1,265 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.InputField.CharacterValidation
+  commentId: T:UnityEngine.UI.InputField.CharacterValidation
+  id: InputField.CharacterValidation
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.InputField.CharacterValidation.Alphanumeric
+  - UnityEngine.UI.InputField.CharacterValidation.Decimal
+  - UnityEngine.UI.InputField.CharacterValidation.EmailAddress
+  - UnityEngine.UI.InputField.CharacterValidation.Integer
+  - UnityEngine.UI.InputField.CharacterValidation.Name
+  - UnityEngine.UI.InputField.CharacterValidation.None
+  langs:
+  - csharp
+  - vb
+  name: InputField.CharacterValidation
+  nameWithType: InputField.CharacterValidation
+  fullName: UnityEngine.UI.InputField.CharacterValidation
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: CharacterValidation
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 112
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The type of characters that are allowed to be added to the string.
+  remarks: Note that the character validation does not validate the entire string as being valid or not. It only does validation on a per-character level, resulting in the typed character either being added to the string or not
+  example: []
+  syntax:
+    content: public enum InputField.CharacterValidation
+    content.vb: Public Enum InputField.CharacterValidation
+- uid: UnityEngine.UI.InputField.CharacterValidation.None
+  commentId: F:UnityEngine.UI.InputField.CharacterValidation.None
+  id: None
+  parent: UnityEngine.UI.InputField.CharacterValidation
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: InputField.CharacterValidation.None
+  fullName: UnityEngine.UI.InputField.CharacterValidation.None
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: None
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 117
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: No validation. Any input is valid.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: UnityEngine.UI.InputField.CharacterValidation
+- uid: UnityEngine.UI.InputField.CharacterValidation.Integer
+  commentId: F:UnityEngine.UI.InputField.CharacterValidation.Integer
+  id: Integer
+  parent: UnityEngine.UI.InputField.CharacterValidation
+  langs:
+  - csharp
+  - vb
+  name: Integer
+  nameWithType: InputField.CharacterValidation.Integer
+  fullName: UnityEngine.UI.InputField.CharacterValidation.Integer
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Integer
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 123
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: >-
+    Allow whole numbers (positive or negative).
+
+    Characters 0-9 and - (dash / minus sign) are allowed. The dash is only allowed as the first character.
+  example: []
+  syntax:
+    content: Integer = 1
+    return:
+      type: UnityEngine.UI.InputField.CharacterValidation
+- uid: UnityEngine.UI.InputField.CharacterValidation.Decimal
+  commentId: F:UnityEngine.UI.InputField.CharacterValidation.Decimal
+  id: Decimal
+  parent: UnityEngine.UI.InputField.CharacterValidation
+  langs:
+  - csharp
+  - vb
+  name: Decimal
+  nameWithType: InputField.CharacterValidation.Decimal
+  fullName: UnityEngine.UI.InputField.CharacterValidation.Decimal
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Decimal
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 130
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Allows decimal numbers (positive or negative).
+  remarks: Characters 0-9, . (dot), and - (dash / minus sign) are allowed. The dash is only allowed as the first character. Only one dot in the string is allowed.
+  example: []
+  syntax:
+    content: Decimal = 2
+    return:
+      type: UnityEngine.UI.InputField.CharacterValidation
+- uid: UnityEngine.UI.InputField.CharacterValidation.Alphanumeric
+  commentId: F:UnityEngine.UI.InputField.CharacterValidation.Alphanumeric
+  id: Alphanumeric
+  parent: UnityEngine.UI.InputField.CharacterValidation
+  langs:
+  - csharp
+  - vb
+  name: Alphanumeric
+  nameWithType: InputField.CharacterValidation.Alphanumeric
+  fullName: UnityEngine.UI.InputField.CharacterValidation.Alphanumeric
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Alphanumeric
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 135
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Allows letters A-Z, a-z and numbers 0-9.
+  example: []
+  syntax:
+    content: Alphanumeric = 3
+    return:
+      type: UnityEngine.UI.InputField.CharacterValidation
+- uid: UnityEngine.UI.InputField.CharacterValidation.Name
+  commentId: F:UnityEngine.UI.InputField.CharacterValidation.Name
+  id: Name
+  parent: UnityEngine.UI.InputField.CharacterValidation
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: InputField.CharacterValidation.Name
+  fullName: UnityEngine.UI.InputField.CharacterValidation.Name
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Name
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 145
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Only allow names and enforces capitalization.
+  remarks: >-
+    Allows letters, spaces, and ' (apostrophe). A character after a space is automatically made upper case. A character not after a space is automatically made lowercase. A character after an apostrophe can be either upper or lower case. Only one apostrophe in the string is allowed. More than one space in a row is not allowed.
+
+
+    A characters is considered a letter if it is categorized as a Unicode letter, as implemented by the Char.Isletter method in .Net.
+  example: []
+  syntax:
+    content: Name = 4
+    return:
+      type: UnityEngine.UI.InputField.CharacterValidation
+- uid: UnityEngine.UI.InputField.CharacterValidation.EmailAddress
+  commentId: F:UnityEngine.UI.InputField.CharacterValidation.EmailAddress
+  id: EmailAddress
+  parent: UnityEngine.UI.InputField.CharacterValidation
+  langs:
+  - csharp
+  - vb
+  name: EmailAddress
+  nameWithType: InputField.CharacterValidation.EmailAddress
+  fullName: UnityEngine.UI.InputField.CharacterValidation.EmailAddress
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: EmailAddress
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 155
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Allows the characters that are allowed in an email address.
+  remarks: >-
+    Allows characters A-Z, a.z, 0-9, @, . (dot), !, #, $, %, &amp;, ', *, +, -, /, =, ?, ^, _, `, {, |, }, and ~.
+
+
+    Only one @ is allowed in the string and more than one dot in a row are not allowed. Note that the character validation does not validate the entire string as being a valid email address since it only does validation on a per-character level, resulting in the typed character either being added to the string or not.
+  example: []
+  syntax:
+    content: EmailAddress = 5
+    return:
+      type: UnityEngine.UI.InputField.CharacterValidation
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.InputField.CharacterValidation
+  commentId: T:UnityEngine.UI.InputField.CharacterValidation
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.InputField.html
+  name: InputField.CharacterValidation
+  nameWithType: InputField.CharacterValidation
+  fullName: UnityEngine.UI.InputField.CharacterValidation
+  spec.csharp:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.CharacterValidation
+    name: CharacterValidation
+    href: UnityEngine.UI.InputField.CharacterValidation.html
+  spec.vb:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.CharacterValidation
+    name: CharacterValidation
+    href: UnityEngine.UI.InputField.CharacterValidation.html

@@ -1,0 +1,128 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.InputField.EditState
+  commentId: T:UnityEngine.UI.InputField.EditState
+  id: InputField.EditState
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.InputField.EditState.Continue
+  - UnityEngine.UI.InputField.EditState.Finish
+  langs:
+  - csharp
+  - vb
+  name: InputField.EditState
+  nameWithType: InputField.EditState
+  fullName: UnityEngine.UI.InputField.EditState
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: EditState
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 1802
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  syntax:
+    content: protected enum InputField.EditState
+    content.vb: Protected Enum InputField.EditState
+- uid: UnityEngine.UI.InputField.EditState.Continue
+  commentId: F:UnityEngine.UI.InputField.EditState.Continue
+  id: Continue
+  parent: UnityEngine.UI.InputField.EditState
+  langs:
+  - csharp
+  - vb
+  name: Continue
+  nameWithType: InputField.EditState.Continue
+  fullName: UnityEngine.UI.InputField.EditState.Continue
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Continue
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 1804
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  syntax:
+    content: Continue = 0
+    return:
+      type: UnityEngine.UI.InputField.EditState
+- uid: UnityEngine.UI.InputField.EditState.Finish
+  commentId: F:UnityEngine.UI.InputField.EditState.Finish
+  id: Finish
+  parent: UnityEngine.UI.InputField.EditState
+  langs:
+  - csharp
+  - vb
+  name: Finish
+  nameWithType: InputField.EditState.Finish
+  fullName: UnityEngine.UI.InputField.EditState.Finish
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Finish
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 1805
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  syntax:
+    content: Finish = 1
+    return:
+      type: UnityEngine.UI.InputField.EditState
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.InputField.EditState
+  commentId: T:UnityEngine.UI.InputField.EditState
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.InputField.html
+  name: InputField.EditState
+  nameWithType: InputField.EditState
+  fullName: UnityEngine.UI.InputField.EditState
+  spec.csharp:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.EditState
+    name: EditState
+    href: UnityEngine.UI.InputField.EditState.html
+  spec.vb:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.EditState
+    name: EditState
+    href: UnityEngine.UI.InputField.EditState.html

@@ -1,0 +1,1079 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.ColorBlock
+  commentId: T:UnityEngine.UI.ColorBlock
+  id: ColorBlock
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.ColorBlock.Equals(System.Object)
+  - UnityEngine.UI.ColorBlock.Equals(UnityEngine.UI.ColorBlock)
+  - UnityEngine.UI.ColorBlock.GetHashCode
+  - UnityEngine.UI.ColorBlock.colorMultiplier
+  - UnityEngine.UI.ColorBlock.defaultColorBlock
+  - UnityEngine.UI.ColorBlock.disabledColor
+  - UnityEngine.UI.ColorBlock.fadeDuration
+  - UnityEngine.UI.ColorBlock.highlightedColor
+  - UnityEngine.UI.ColorBlock.normalColor
+  - UnityEngine.UI.ColorBlock.op_Equality(UnityEngine.UI.ColorBlock,UnityEngine.UI.ColorBlock)
+  - UnityEngine.UI.ColorBlock.op_Inequality(UnityEngine.UI.ColorBlock,UnityEngine.UI.ColorBlock)
+  - UnityEngine.UI.ColorBlock.pressedColor
+  - UnityEngine.UI.ColorBlock.selectedColor
+  langs:
+  - csharp
+  - vb
+  name: ColorBlock
+  nameWithType: ColorBlock
+  fullName: UnityEngine.UI.ColorBlock
+  type: Struct
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ColorBlock
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+    startLine: 5
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct ColorBlock : IEquatable<ColorBlock>
+    content.vb: >-
+      <Serializable>
+
+      Public Structure ColorBlock Implements IEquatable(Of ColorBlock)
+  implements:
+  - System.IEquatable{UnityEngine.UI.ColorBlock}
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: UnityEngine.UI.ColorBlock.normalColor
+  commentId: P:UnityEngine.UI.ColorBlock.normalColor
+  id: normalColor
+  parent: UnityEngine.UI.ColorBlock
+  langs:
+  - csharp
+  - vb
+  name: normalColor
+  nameWithType: ColorBlock.normalColor
+  fullName: UnityEngine.UI.ColorBlock.normalColor
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: normalColor
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+    startLine: 65
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The normal color for this color block.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using UnityEngine;
+
+    using System.Collections;
+
+    using UnityEngine.UI; // Required when Using UI elements.
+
+
+    public class ExampleClass : MonoBehaviour
+
+    {
+        public Button button;
+        public Color newColor;
+
+        void Start()
+        {
+            //Changes the button's Normal color to the new color.
+            ColorBlock cb = button.colors;
+            cb.normalColor = newColor;
+            button.colors = cb;
+        }
+    }</code></pre>
+  syntax:
+    content: public Color normalColor { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Property normalColor As Color
+  overload: UnityEngine.UI.ColorBlock.normalColor*
+- uid: UnityEngine.UI.ColorBlock.highlightedColor
+  commentId: P:UnityEngine.UI.ColorBlock.highlightedColor
+  id: highlightedColor
+  parent: UnityEngine.UI.ColorBlock
+  langs:
+  - csharp
+  - vb
+  name: highlightedColor
+  nameWithType: ColorBlock.highlightedColor
+  fullName: UnityEngine.UI.ColorBlock.highlightedColor
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: highlightedColor
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+    startLine: 93
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The highlight color for this color block.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using UnityEngine;
+
+    using System.Collections;
+
+    using UnityEngine.UI; // Required when Using UI elements.
+
+
+    public class ExampleClass : MonoBehaviour
+
+    {
+        public Button button;
+        public Color newColor;
+
+        void Start()
+        {
+            //Changes the button's Highlighted color to the new color.
+            ColorBlock cb = button.colors;
+            cb.highlightedColor = newColor;
+            button.colors = cb;
+        }
+    }</code></pre>
+  syntax:
+    content: public Color highlightedColor { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Property highlightedColor As Color
+  overload: UnityEngine.UI.ColorBlock.highlightedColor*
+- uid: UnityEngine.UI.ColorBlock.pressedColor
+  commentId: P:UnityEngine.UI.ColorBlock.pressedColor
+  id: pressedColor
+  parent: UnityEngine.UI.ColorBlock
+  langs:
+  - csharp
+  - vb
+  name: pressedColor
+  nameWithType: ColorBlock.pressedColor
+  fullName: UnityEngine.UI.ColorBlock.pressedColor
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: pressedColor
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+    startLine: 121
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The pressed color for this color block.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using UnityEngine;
+
+    using System.Collections;
+
+    using UnityEngine.UI; // Required when Using UI elements.
+
+
+    public class ExampleClass : MonoBehaviour
+
+    {
+        public Button button;
+        public Color newColor;
+
+        void Start()
+        {
+            //Changes the button's Pressed color to the new color.
+            ColorBlock cb = button.colors;
+            cb.pressedColor = newColor;
+            button.colors = cb;
+        }
+    }</code></pre>
+  syntax:
+    content: public Color pressedColor { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Property pressedColor As Color
+  overload: UnityEngine.UI.ColorBlock.pressedColor*
+- uid: UnityEngine.UI.ColorBlock.selectedColor
+  commentId: P:UnityEngine.UI.ColorBlock.selectedColor
+  id: selectedColor
+  parent: UnityEngine.UI.ColorBlock
+  langs:
+  - csharp
+  - vb
+  name: selectedColor
+  nameWithType: ColorBlock.selectedColor
+  fullName: UnityEngine.UI.ColorBlock.selectedColor
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: selectedColor
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+    startLine: 149
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The selected color for this color block.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using UnityEngine;
+
+    using System.Collections;
+
+    using UnityEngine.UI; // Required when Using UI elements.
+
+
+    public class ExampleClass : MonoBehaviour
+
+    {
+        public Button button;
+        public Color newColor;
+
+        void Start()
+        {
+            //Changes the button's Selected color to the new color.
+            ColorBlock cb = button.colors;
+            cb.selectedColor = newColor;
+            button.colors = cb;
+        }
+    }</code></pre>
+  syntax:
+    content: public Color selectedColor { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Property selectedColor As Color
+  overload: UnityEngine.UI.ColorBlock.selectedColor*
+- uid: UnityEngine.UI.ColorBlock.disabledColor
+  commentId: P:UnityEngine.UI.ColorBlock.disabledColor
+  id: disabledColor
+  parent: UnityEngine.UI.ColorBlock
+  langs:
+  - csharp
+  - vb
+  name: disabledColor
+  nameWithType: ColorBlock.disabledColor
+  fullName: UnityEngine.UI.ColorBlock.disabledColor
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: disabledColor
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+    startLine: 177
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The disabled color for this color block.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using UnityEngine;
+
+    using System.Collections;
+
+    using UnityEngine.UI; // Required when Using UI elements.
+
+
+    public class ExampleClass : MonoBehaviour
+
+    {
+        public Button button;
+        public Color newColor;
+
+        void Start()
+        {
+            //Changes the button's Disabled color to the new color.
+            ColorBlock cb = button.colors;
+            cb.disabledColor = newColor;
+            button.colors = cb;
+        }
+    }</code></pre>
+  syntax:
+    content: public Color disabledColor { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Property disabledColor As Color
+  overload: UnityEngine.UI.ColorBlock.disabledColor*
+- uid: UnityEngine.UI.ColorBlock.colorMultiplier
+  commentId: P:UnityEngine.UI.ColorBlock.colorMultiplier
+  id: colorMultiplier
+  parent: UnityEngine.UI.ColorBlock
+  langs:
+  - csharp
+  - vb
+  name: colorMultiplier
+  nameWithType: ColorBlock.colorMultiplier
+  fullName: UnityEngine.UI.ColorBlock.colorMultiplier
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: colorMultiplier
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+    startLine: 182
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Multiplier applied to colors (allows brightening greater then base color).
+  example: []
+  syntax:
+    content: public float colorMultiplier { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property colorMultiplier As Single
+  overload: UnityEngine.UI.ColorBlock.colorMultiplier*
+- uid: UnityEngine.UI.ColorBlock.fadeDuration
+  commentId: P:UnityEngine.UI.ColorBlock.fadeDuration
+  id: fadeDuration
+  parent: UnityEngine.UI.ColorBlock
+  langs:
+  - csharp
+  - vb
+  name: fadeDuration
+  nameWithType: ColorBlock.fadeDuration
+  fullName: UnityEngine.UI.ColorBlock.fadeDuration
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: fadeDuration
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+    startLine: 187
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: How long a color transition between states should take.
+  example: []
+  syntax:
+    content: public float fadeDuration { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property fadeDuration As Single
+  overload: UnityEngine.UI.ColorBlock.fadeDuration*
+- uid: UnityEngine.UI.ColorBlock.defaultColorBlock
+  commentId: F:UnityEngine.UI.ColorBlock.defaultColorBlock
+  id: defaultColorBlock
+  parent: UnityEngine.UI.ColorBlock
+  langs:
+  - csharp
+  - vb
+  name: defaultColorBlock
+  nameWithType: ColorBlock.defaultColorBlock
+  fullName: UnityEngine.UI.ColorBlock.defaultColorBlock
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: defaultColorBlock
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+    startLine: 192
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Simple getter for a code generated default ColorBlock.
+  example: []
+  syntax:
+    content: public static ColorBlock defaultColorBlock
+    return:
+      type: UnityEngine.UI.ColorBlock
+    content.vb: Public Shared defaultColorBlock As ColorBlock
+- uid: UnityEngine.UI.ColorBlock.Equals(System.Object)
+  commentId: M:UnityEngine.UI.ColorBlock.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: UnityEngine.UI.ColorBlock
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: ColorBlock.Equals(object)
+  fullName: UnityEngine.UI.ColorBlock.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Equals
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+    startLine: 208
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  example: []
+  syntax:
+    content: public override bool Equals(object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: UnityEngine.UI.ColorBlock.Equals*
+  nameWithType.vb: ColorBlock.Equals(Object)
+  fullName.vb: UnityEngine.UI.ColorBlock.Equals(Object)
+  name.vb: Equals(Object)
+- uid: UnityEngine.UI.ColorBlock.Equals(UnityEngine.UI.ColorBlock)
+  commentId: M:UnityEngine.UI.ColorBlock.Equals(UnityEngine.UI.ColorBlock)
+  id: Equals(UnityEngine.UI.ColorBlock)
+  parent: UnityEngine.UI.ColorBlock
+  langs:
+  - csharp
+  - vb
+  name: Equals(ColorBlock)
+  nameWithType: ColorBlock.Equals(ColorBlock)
+  fullName: UnityEngine.UI.ColorBlock.Equals(UnityEngine.UI.ColorBlock)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Equals
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+    startLine: 216
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  example: []
+  syntax:
+    content: public bool Equals(ColorBlock other)
+    parameters:
+    - id: other
+      type: UnityEngine.UI.ColorBlock
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As ColorBlock) As Boolean
+  overload: UnityEngine.UI.ColorBlock.Equals*
+  implements:
+  - System.IEquatable{UnityEngine.UI.ColorBlock}.Equals(UnityEngine.UI.ColorBlock)
+- uid: UnityEngine.UI.ColorBlock.op_Equality(UnityEngine.UI.ColorBlock,UnityEngine.UI.ColorBlock)
+  commentId: M:UnityEngine.UI.ColorBlock.op_Equality(UnityEngine.UI.ColorBlock,UnityEngine.UI.ColorBlock)
+  id: op_Equality(UnityEngine.UI.ColorBlock,UnityEngine.UI.ColorBlock)
+  parent: UnityEngine.UI.ColorBlock
+  langs:
+  - csharp
+  - vb
+  name: operator ==(ColorBlock, ColorBlock)
+  nameWithType: ColorBlock.operator ==(ColorBlock, ColorBlock)
+  fullName: UnityEngine.UI.ColorBlock.operator ==(UnityEngine.UI.ColorBlock, UnityEngine.UI.ColorBlock)
+  type: Operator
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: op_Equality
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+    startLine: 227
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  syntax:
+    content: public static bool operator ==(ColorBlock point1, ColorBlock point2)
+    parameters:
+    - id: point1
+      type: UnityEngine.UI.ColorBlock
+    - id: point2
+      type: UnityEngine.UI.ColorBlock
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(point1 As ColorBlock, point2 As ColorBlock) As Boolean
+  overload: UnityEngine.UI.ColorBlock.op_Equality*
+  nameWithType.vb: ColorBlock.=(ColorBlock, ColorBlock)
+  fullName.vb: UnityEngine.UI.ColorBlock.=(UnityEngine.UI.ColorBlock, UnityEngine.UI.ColorBlock)
+  name.vb: =(ColorBlock, ColorBlock)
+- uid: UnityEngine.UI.ColorBlock.op_Inequality(UnityEngine.UI.ColorBlock,UnityEngine.UI.ColorBlock)
+  commentId: M:UnityEngine.UI.ColorBlock.op_Inequality(UnityEngine.UI.ColorBlock,UnityEngine.UI.ColorBlock)
+  id: op_Inequality(UnityEngine.UI.ColorBlock,UnityEngine.UI.ColorBlock)
+  parent: UnityEngine.UI.ColorBlock
+  langs:
+  - csharp
+  - vb
+  name: operator !=(ColorBlock, ColorBlock)
+  nameWithType: ColorBlock.operator !=(ColorBlock, ColorBlock)
+  fullName: UnityEngine.UI.ColorBlock.operator !=(UnityEngine.UI.ColorBlock, UnityEngine.UI.ColorBlock)
+  type: Operator
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: op_Inequality
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+    startLine: 232
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  syntax:
+    content: public static bool operator !=(ColorBlock point1, ColorBlock point2)
+    parameters:
+    - id: point1
+      type: UnityEngine.UI.ColorBlock
+    - id: point2
+      type: UnityEngine.UI.ColorBlock
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(point1 As ColorBlock, point2 As ColorBlock) As Boolean
+  overload: UnityEngine.UI.ColorBlock.op_Inequality*
+  nameWithType.vb: ColorBlock.<>(ColorBlock, ColorBlock)
+  fullName.vb: UnityEngine.UI.ColorBlock.<>(UnityEngine.UI.ColorBlock, UnityEngine.UI.ColorBlock)
+  name.vb: <>(ColorBlock, ColorBlock)
+- uid: UnityEngine.UI.ColorBlock.GetHashCode
+  commentId: M:UnityEngine.UI.ColorBlock.GetHashCode
+  id: GetHashCode
+  parent: UnityEngine.UI.ColorBlock
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: ColorBlock.GetHashCode()
+  fullName: UnityEngine.UI.ColorBlock.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetHashCode
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ColorBlock.cs
+    startLine: 237
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: UnityEngine.UI.ColorBlock.GetHashCode*
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: System.IEquatable{UnityEngine.UI.ColorBlock}
+  commentId: T:System.IEquatable{UnityEngine.UI.ColorBlock}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ColorBlock>
+  nameWithType: IEquatable<ColorBlock>
+  fullName: System.IEquatable<UnityEngine.UI.ColorBlock>
+  nameWithType.vb: IEquatable(Of ColorBlock)
+  fullName.vb: System.IEquatable(Of UnityEngine.UI.ColorBlock)
+  name.vb: IEquatable(Of ColorBlock)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: UnityEngine.UI.ColorBlock
+    name: ColorBlock
+    href: UnityEngine.UI.ColorBlock.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.UI.ColorBlock
+    name: ColorBlock
+    href: UnityEngine.UI.ColorBlock.html
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.UI.ColorBlock.normalColor*
+  commentId: Overload:UnityEngine.UI.ColorBlock.normalColor
+  href: UnityEngine.UI.ColorBlock.html#UnityEngine_UI_ColorBlock_normalColor
+  name: normalColor
+  nameWithType: ColorBlock.normalColor
+  fullName: UnityEngine.UI.ColorBlock.normalColor
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.UI.ColorBlock.highlightedColor*
+  commentId: Overload:UnityEngine.UI.ColorBlock.highlightedColor
+  href: UnityEngine.UI.ColorBlock.html#UnityEngine_UI_ColorBlock_highlightedColor
+  name: highlightedColor
+  nameWithType: ColorBlock.highlightedColor
+  fullName: UnityEngine.UI.ColorBlock.highlightedColor
+- uid: UnityEngine.UI.ColorBlock.pressedColor*
+  commentId: Overload:UnityEngine.UI.ColorBlock.pressedColor
+  href: UnityEngine.UI.ColorBlock.html#UnityEngine_UI_ColorBlock_pressedColor
+  name: pressedColor
+  nameWithType: ColorBlock.pressedColor
+  fullName: UnityEngine.UI.ColorBlock.pressedColor
+- uid: UnityEngine.UI.ColorBlock.selectedColor*
+  commentId: Overload:UnityEngine.UI.ColorBlock.selectedColor
+  href: UnityEngine.UI.ColorBlock.html#UnityEngine_UI_ColorBlock_selectedColor
+  name: selectedColor
+  nameWithType: ColorBlock.selectedColor
+  fullName: UnityEngine.UI.ColorBlock.selectedColor
+- uid: UnityEngine.UI.ColorBlock.disabledColor*
+  commentId: Overload:UnityEngine.UI.ColorBlock.disabledColor
+  href: UnityEngine.UI.ColorBlock.html#UnityEngine_UI_ColorBlock_disabledColor
+  name: disabledColor
+  nameWithType: ColorBlock.disabledColor
+  fullName: UnityEngine.UI.ColorBlock.disabledColor
+- uid: UnityEngine.UI.ColorBlock.colorMultiplier*
+  commentId: Overload:UnityEngine.UI.ColorBlock.colorMultiplier
+  href: UnityEngine.UI.ColorBlock.html#UnityEngine_UI_ColorBlock_colorMultiplier
+  name: colorMultiplier
+  nameWithType: ColorBlock.colorMultiplier
+  fullName: UnityEngine.UI.ColorBlock.colorMultiplier
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine.UI.ColorBlock.fadeDuration*
+  commentId: Overload:UnityEngine.UI.ColorBlock.fadeDuration
+  href: UnityEngine.UI.ColorBlock.html#UnityEngine_UI_ColorBlock_fadeDuration
+  name: fadeDuration
+  nameWithType: ColorBlock.fadeDuration
+  fullName: UnityEngine.UI.ColorBlock.fadeDuration
+- uid: UnityEngine.UI.ColorBlock
+  commentId: T:UnityEngine.UI.ColorBlock
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ColorBlock.html
+  name: ColorBlock
+  nameWithType: ColorBlock
+  fullName: UnityEngine.UI.ColorBlock
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UnityEngine.UI.ColorBlock.Equals*
+  commentId: Overload:UnityEngine.UI.ColorBlock.Equals
+  href: UnityEngine.UI.ColorBlock.html#UnityEngine_UI_ColorBlock_Equals_System_Object_
+  name: Equals
+  nameWithType: ColorBlock.Equals
+  fullName: UnityEngine.UI.ColorBlock.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable{UnityEngine.UI.ColorBlock}.Equals(UnityEngine.UI.ColorBlock)
+  commentId: M:System.IEquatable{UnityEngine.UI.ColorBlock}.Equals(UnityEngine.UI.ColorBlock)
+  parent: System.IEquatable{UnityEngine.UI.ColorBlock}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(ColorBlock)
+  nameWithType: IEquatable<ColorBlock>.Equals(ColorBlock)
+  fullName: System.IEquatable<UnityEngine.UI.ColorBlock>.Equals(UnityEngine.UI.ColorBlock)
+  nameWithType.vb: IEquatable(Of ColorBlock).Equals(ColorBlock)
+  fullName.vb: System.IEquatable(Of UnityEngine.UI.ColorBlock).Equals(UnityEngine.UI.ColorBlock)
+  spec.csharp:
+  - uid: System.IEquatable{UnityEngine.UI.ColorBlock}.Equals(UnityEngine.UI.ColorBlock)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: UnityEngine.UI.ColorBlock
+    name: ColorBlock
+    href: UnityEngine.UI.ColorBlock.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{UnityEngine.UI.ColorBlock}.Equals(UnityEngine.UI.ColorBlock)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: UnityEngine.UI.ColorBlock
+    name: ColorBlock
+    href: UnityEngine.UI.ColorBlock.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: UnityEngine.UI.ColorBlock.op_Equality*
+  commentId: Overload:UnityEngine.UI.ColorBlock.op_Equality
+  href: UnityEngine.UI.ColorBlock.html#UnityEngine_UI_ColorBlock_op_Equality_UnityEngine_UI_ColorBlock_UnityEngine_UI_ColorBlock_
+  name: operator ==
+  nameWithType: ColorBlock.operator ==
+  fullName: UnityEngine.UI.ColorBlock.operator ==
+  nameWithType.vb: ColorBlock.=
+  fullName.vb: UnityEngine.UI.ColorBlock.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: UnityEngine.UI.ColorBlock.op_Equality*
+    name: ==
+    href: UnityEngine.UI.ColorBlock.html#UnityEngine_UI_ColorBlock_op_Equality_UnityEngine_UI_ColorBlock_UnityEngine_UI_ColorBlock_
+- uid: UnityEngine.UI.ColorBlock.op_Inequality*
+  commentId: Overload:UnityEngine.UI.ColorBlock.op_Inequality
+  href: UnityEngine.UI.ColorBlock.html#UnityEngine_UI_ColorBlock_op_Inequality_UnityEngine_UI_ColorBlock_UnityEngine_UI_ColorBlock_
+  name: operator !=
+  nameWithType: ColorBlock.operator !=
+  fullName: UnityEngine.UI.ColorBlock.operator !=
+  nameWithType.vb: ColorBlock.<>
+  fullName.vb: UnityEngine.UI.ColorBlock.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: UnityEngine.UI.ColorBlock.op_Inequality*
+    name: '!='
+    href: UnityEngine.UI.ColorBlock.html#UnityEngine_UI_ColorBlock_op_Inequality_UnityEngine_UI_ColorBlock_UnityEngine_UI_ColorBlock_
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: UnityEngine.UI.ColorBlock.GetHashCode*
+  commentId: Overload:UnityEngine.UI.ColorBlock.GetHashCode
+  href: UnityEngine.UI.ColorBlock.html#UnityEngine_UI_ColorBlock_GetHashCode
+  name: GetHashCode
+  nameWithType: ColorBlock.GetHashCode
+  fullName: UnityEngine.UI.ColorBlock.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

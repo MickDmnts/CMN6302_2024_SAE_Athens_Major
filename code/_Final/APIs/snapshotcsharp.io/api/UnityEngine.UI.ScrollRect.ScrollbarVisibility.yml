@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.ScrollRect.ScrollbarVisibility
+  commentId: T:UnityEngine.UI.ScrollRect.ScrollbarVisibility
+  id: ScrollRect.ScrollbarVisibility
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.ScrollRect.ScrollbarVisibility.AutoHide
+  - UnityEngine.UI.ScrollRect.ScrollbarVisibility.AutoHideAndExpandViewport
+  - UnityEngine.UI.ScrollRect.ScrollbarVisibility.Permanent
+  langs:
+  - csharp
+  - vb
+  name: ScrollRect.ScrollbarVisibility
+  nameWithType: ScrollRect.ScrollbarVisibility
+  fullName: UnityEngine.UI.ScrollRect.ScrollbarVisibility
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ScrollbarVisibility
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs
+    startLine: 75
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Enum for which behavior to use for scrollbar visibility.
+  example: []
+  syntax:
+    content: public enum ScrollRect.ScrollbarVisibility
+    content.vb: Public Enum ScrollRect.ScrollbarVisibility
+- uid: UnityEngine.UI.ScrollRect.ScrollbarVisibility.Permanent
+  commentId: F:UnityEngine.UI.ScrollRect.ScrollbarVisibility.Permanent
+  id: Permanent
+  parent: UnityEngine.UI.ScrollRect.ScrollbarVisibility
+  langs:
+  - csharp
+  - vb
+  name: Permanent
+  nameWithType: ScrollRect.ScrollbarVisibility.Permanent
+  fullName: UnityEngine.UI.ScrollRect.ScrollbarVisibility.Permanent
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Permanent
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs
+    startLine: 80
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Always show the scrollbar.
+  example: []
+  syntax:
+    content: Permanent = 0
+    return:
+      type: UnityEngine.UI.ScrollRect.ScrollbarVisibility
+- uid: UnityEngine.UI.ScrollRect.ScrollbarVisibility.AutoHide
+  commentId: F:UnityEngine.UI.ScrollRect.ScrollbarVisibility.AutoHide
+  id: AutoHide
+  parent: UnityEngine.UI.ScrollRect.ScrollbarVisibility
+  langs:
+  - csharp
+  - vb
+  name: AutoHide
+  nameWithType: ScrollRect.ScrollbarVisibility.AutoHide
+  fullName: UnityEngine.UI.ScrollRect.ScrollbarVisibility.AutoHide
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: AutoHide
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs
+    startLine: 85
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Automatically hide the scrollbar when no scrolling is needed on this axis. The viewport rect will not be changed.
+  example: []
+  syntax:
+    content: AutoHide = 1
+    return:
+      type: UnityEngine.UI.ScrollRect.ScrollbarVisibility
+- uid: UnityEngine.UI.ScrollRect.ScrollbarVisibility.AutoHideAndExpandViewport
+  commentId: F:UnityEngine.UI.ScrollRect.ScrollbarVisibility.AutoHideAndExpandViewport
+  id: AutoHideAndExpandViewport
+  parent: UnityEngine.UI.ScrollRect.ScrollbarVisibility
+  langs:
+  - csharp
+  - vb
+  name: AutoHideAndExpandViewport
+  nameWithType: ScrollRect.ScrollbarVisibility.AutoHideAndExpandViewport
+  fullName: UnityEngine.UI.ScrollRect.ScrollbarVisibility.AutoHideAndExpandViewport
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: AutoHideAndExpandViewport
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs
+    startLine: 93
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Automatically hide the scrollbar when no scrolling is needed on this axis, and expand the viewport rect accordingly.
+  remarks: When this setting is used, the scrollbar and the viewport rect become driven, meaning that values in the RectTransform are calculated automatically and can't be manually edited.
+  example: []
+  syntax:
+    content: AutoHideAndExpandViewport = 2
+    return:
+      type: UnityEngine.UI.ScrollRect.ScrollbarVisibility
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.ScrollRect.ScrollbarVisibility
+  commentId: T:UnityEngine.UI.ScrollRect.ScrollbarVisibility
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ScrollRect.html
+  name: ScrollRect.ScrollbarVisibility
+  nameWithType: ScrollRect.ScrollbarVisibility
+  fullName: UnityEngine.UI.ScrollRect.ScrollbarVisibility
+  spec.csharp:
+  - uid: UnityEngine.UI.ScrollRect
+    name: ScrollRect
+    href: UnityEngine.UI.ScrollRect.html
+  - name: .
+  - uid: UnityEngine.UI.ScrollRect.ScrollbarVisibility
+    name: ScrollbarVisibility
+    href: UnityEngine.UI.ScrollRect.ScrollbarVisibility.html
+  spec.vb:
+  - uid: UnityEngine.UI.ScrollRect
+    name: ScrollRect
+    href: UnityEngine.UI.ScrollRect.html
+  - name: .
+  - uid: UnityEngine.UI.ScrollRect.ScrollbarVisibility
+    name: ScrollbarVisibility
+    href: UnityEngine.UI.ScrollRect.ScrollbarVisibility.html

@@ -1,0 +1,221 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.AspectRatioFitter.AspectMode
+  commentId: T:UnityEngine.UI.AspectRatioFitter.AspectMode
+  id: AspectRatioFitter.AspectMode
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.AspectRatioFitter.AspectMode.EnvelopeParent
+  - UnityEngine.UI.AspectRatioFitter.AspectMode.FitInParent
+  - UnityEngine.UI.AspectRatioFitter.AspectMode.HeightControlsWidth
+  - UnityEngine.UI.AspectRatioFitter.AspectMode.None
+  - UnityEngine.UI.AspectRatioFitter.AspectMode.WidthControlsHeight
+  langs:
+  - csharp
+  - vb
+  name: AspectRatioFitter.AspectMode
+  nameWithType: AspectRatioFitter.AspectMode
+  fullName: UnityEngine.UI.AspectRatioFitter.AspectMode
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/AspectRatioFitter.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: AspectMode
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/AspectRatioFitter.cs
+    startLine: 16
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Specifies a mode to use to enforce an aspect ratio.
+  example: []
+  syntax:
+    content: public enum AspectRatioFitter.AspectMode
+    content.vb: Public Enum AspectRatioFitter.AspectMode
+- uid: UnityEngine.UI.AspectRatioFitter.AspectMode.None
+  commentId: F:UnityEngine.UI.AspectRatioFitter.AspectMode.None
+  id: None
+  parent: UnityEngine.UI.AspectRatioFitter.AspectMode
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: AspectRatioFitter.AspectMode.None
+  fullName: UnityEngine.UI.AspectRatioFitter.AspectMode.None
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/AspectRatioFitter.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: None
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/AspectRatioFitter.cs
+    startLine: 21
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The aspect ratio is not enforced
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: UnityEngine.UI.AspectRatioFitter.AspectMode
+- uid: UnityEngine.UI.AspectRatioFitter.AspectMode.WidthControlsHeight
+  commentId: F:UnityEngine.UI.AspectRatioFitter.AspectMode.WidthControlsHeight
+  id: WidthControlsHeight
+  parent: UnityEngine.UI.AspectRatioFitter.AspectMode
+  langs:
+  - csharp
+  - vb
+  name: WidthControlsHeight
+  nameWithType: AspectRatioFitter.AspectMode.WidthControlsHeight
+  fullName: UnityEngine.UI.AspectRatioFitter.AspectMode.WidthControlsHeight
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/AspectRatioFitter.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: WidthControlsHeight
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/AspectRatioFitter.cs
+    startLine: 25
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Changes the height of the rectangle to match the aspect ratio.
+  example: []
+  syntax:
+    content: WidthControlsHeight = 1
+    return:
+      type: UnityEngine.UI.AspectRatioFitter.AspectMode
+- uid: UnityEngine.UI.AspectRatioFitter.AspectMode.HeightControlsWidth
+  commentId: F:UnityEngine.UI.AspectRatioFitter.AspectMode.HeightControlsWidth
+  id: HeightControlsWidth
+  parent: UnityEngine.UI.AspectRatioFitter.AspectMode
+  langs:
+  - csharp
+  - vb
+  name: HeightControlsWidth
+  nameWithType: AspectRatioFitter.AspectMode.HeightControlsWidth
+  fullName: UnityEngine.UI.AspectRatioFitter.AspectMode.HeightControlsWidth
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/AspectRatioFitter.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: HeightControlsWidth
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/AspectRatioFitter.cs
+    startLine: 29
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Changes the width of the rectangle to match the aspect ratio.
+  example: []
+  syntax:
+    content: HeightControlsWidth = 2
+    return:
+      type: UnityEngine.UI.AspectRatioFitter.AspectMode
+- uid: UnityEngine.UI.AspectRatioFitter.AspectMode.FitInParent
+  commentId: F:UnityEngine.UI.AspectRatioFitter.AspectMode.FitInParent
+  id: FitInParent
+  parent: UnityEngine.UI.AspectRatioFitter.AspectMode
+  langs:
+  - csharp
+  - vb
+  name: FitInParent
+  nameWithType: AspectRatioFitter.AspectMode.FitInParent
+  fullName: UnityEngine.UI.AspectRatioFitter.AspectMode.FitInParent
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/AspectRatioFitter.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: FitInParent
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/AspectRatioFitter.cs
+    startLine: 33
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Sizes the rectangle such that it's fully contained within the parent rectangle.
+  example: []
+  syntax:
+    content: FitInParent = 3
+    return:
+      type: UnityEngine.UI.AspectRatioFitter.AspectMode
+- uid: UnityEngine.UI.AspectRatioFitter.AspectMode.EnvelopeParent
+  commentId: F:UnityEngine.UI.AspectRatioFitter.AspectMode.EnvelopeParent
+  id: EnvelopeParent
+  parent: UnityEngine.UI.AspectRatioFitter.AspectMode
+  langs:
+  - csharp
+  - vb
+  name: EnvelopeParent
+  nameWithType: AspectRatioFitter.AspectMode.EnvelopeParent
+  fullName: UnityEngine.UI.AspectRatioFitter.AspectMode.EnvelopeParent
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/AspectRatioFitter.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: EnvelopeParent
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/AspectRatioFitter.cs
+    startLine: 37
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Sizes the rectangle such that the parent rectangle is fully contained within.
+  example: []
+  syntax:
+    content: EnvelopeParent = 4
+    return:
+      type: UnityEngine.UI.AspectRatioFitter.AspectMode
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.AspectRatioFitter.AspectMode
+  commentId: T:UnityEngine.UI.AspectRatioFitter.AspectMode
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.AspectRatioFitter.html
+  name: AspectRatioFitter.AspectMode
+  nameWithType: AspectRatioFitter.AspectMode
+  fullName: UnityEngine.UI.AspectRatioFitter.AspectMode
+  spec.csharp:
+  - uid: UnityEngine.UI.AspectRatioFitter
+    name: AspectRatioFitter
+    href: UnityEngine.UI.AspectRatioFitter.html
+  - name: .
+  - uid: UnityEngine.UI.AspectRatioFitter.AspectMode
+    name: AspectMode
+    href: UnityEngine.UI.AspectRatioFitter.AspectMode.html
+  spec.vb:
+  - uid: UnityEngine.UI.AspectRatioFitter
+    name: AspectRatioFitter
+    href: UnityEngine.UI.AspectRatioFitter.html
+  - name: .
+  - uid: UnityEngine.UI.AspectRatioFitter.AspectMode
+    name: AspectMode
+    href: UnityEngine.UI.AspectRatioFitter.AspectMode.html

@@ -1,0 +1,1821 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Slider </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Slider ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/new/mad/apiSpec/new?filename=UnityEngine_UI_Slider.md&amp;value=---%0Auid%3A%20UnityEngine.UI.Slider%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UnityEngine.UI.Slider">
+
+
+
+  <h1 id="UnityEngine_UI_Slider" data-uid="UnityEngine.UI.Slider" class="text-break">
+Class Slider  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UnityEngine.html">UnityEngine</a>.<a class="xref" href="UnityEngine.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UnityEngine.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;UI/Slider&quot;, 34)]
+[ExecuteAlways]
+[RequireComponent(typeof(RectTransform))]
+public class Slider : Selectable, IMoveHandler, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler, ISelectHandler, IDeselectHandler, IDragHandler, IInitializePotentialDragHandler, IEventSystemHandler, ICanvasElement</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html">UIBehaviour</a></div>
+      <div><a class="xref" href="UnityEngine.UI.Selectable.html">Selectable</a></div>
+      <div><span class="xref">Slider</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="UnityEngine.EventSystems.IMoveHandler.html">IMoveHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IPointerDownHandler.html">IPointerDownHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IPointerUpHandler.html">IPointerUpHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IPointerEnterHandler.html">IPointerEnterHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IPointerExitHandler.html">IPointerExitHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.ISelectHandler.html">ISelectHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IDeselectHandler.html">IDeselectHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IDragHandler.html">IDragHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IInitializePotentialDragHandler.html">IInitializePotentialDragHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IEventSystemHandler.html">IEventSystemHandler</a></div>
+      <div><a class="xref" href="UnityEngine.UI.ICanvasElement.html">ICanvasElement</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_s_Selectables">Selectable.s_Selectables</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_s_SelectableCount">Selectable.s_SelectableCount</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_allSelectablesArray">Selectable.allSelectablesArray</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_allSelectableCount">Selectable.allSelectableCount</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_allSelectables">Selectable.allSelectables</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_AllSelectablesNoAlloc_UnityEngine_UI_Selectable___">Selectable.AllSelectablesNoAlloc(Selectable[])</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_m_CurrentIndex">Selectable.m_CurrentIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_navigation">Selectable.navigation</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_transition">Selectable.transition</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_colors">Selectable.colors</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_spriteState">Selectable.spriteState</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_animationTriggers">Selectable.animationTriggers</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_targetGraphic">Selectable.targetGraphic</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_interactable">Selectable.interactable</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_image">Selectable.image</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_Awake">Selectable.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnCanvasGroupChanged">Selectable.OnCanvasGroupChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_IsInteractable">Selectable.IsInteractable()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnTransformParentChanged">Selectable.OnTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_currentSelectionState">Selectable.currentSelectionState</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_InstantClearState">Selectable.InstantClearState()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_DoStateTransition_UnityEngine_UI_Selectable_SelectionState_System_Boolean_">Selectable.DoStateTransition(Selectable.SelectionState, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectable_UnityEngine_Vector3_">Selectable.FindSelectable(Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_IsHighlighted">Selectable.IsHighlighted()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_IsPressed">Selectable.IsPressed()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnPointerUp_UnityEngine_EventSystems_PointerEventData_">Selectable.OnPointerUp(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnPointerEnter_UnityEngine_EventSystems_PointerEventData_">Selectable.OnPointerEnter(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnPointerExit_UnityEngine_EventSystems_PointerEventData_">Selectable.OnPointerExit(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnSelect_UnityEngine_EventSystems_BaseEventData_">Selectable.OnSelect(BaseEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnDeselect_UnityEngine_EventSystems_BaseEventData_">Selectable.OnDeselect(BaseEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_Select">Selectable.Select()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_Start">UIBehaviour.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnDestroy">UIBehaviour.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_IsActive">UIBehaviour.IsActive()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnBeforeTransformParentChanged">UIBehaviour.OnBeforeTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnCanvasHierarchyChanged">UIBehaviour.OnCanvasHierarchyChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_IsDestroyed">UIBehaviour.IsDestroyed()</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.Invoke(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.InvokeRepeating(string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.CancelInvoke(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.IsInvoking(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine_Auto(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StopCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(Coroutine)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StopCoroutine(string)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">MonoBehaviour.print(object)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.destroyCancellationToken</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponent(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.TryGetComponent(Type, out Component)</a>
+    </div>
+    <div>
+      <span class="xref">Component.TryGetComponent&lt;T&gt;(out T)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.GetComponent(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type, List&lt;Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentIndex()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.CompareTag(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <span class="xref">Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Scene)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate(Object, Transform, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate&lt;T&gt;(T, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.Destroy(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Destroy(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.DestroyImmediate(Object, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyImmediate(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DontDestroyOnLoad(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.DestroyObject(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyObject(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <span class="xref">Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Object.name</span>
+    </div>
+    <div>
+      <span class="xref">Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UnityEngine_UI_Slider__ctor_" data-uid="UnityEngine.UI.Slider.#ctor*"></a>
+
+  <h3 id="UnityEngine_UI_Slider__ctor" data-uid="UnityEngine.UI.Slider.#ctor">
+  Slider()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L376"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Slider()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="UnityEngine_UI_Slider_m_Value" data-uid="UnityEngine.UI.Slider.m_Value">
+  m_Value
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected float m_Value</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UnityEngine_UI_Slider_direction_" data-uid="UnityEngine.UI.Slider.direction*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_direction" data-uid="UnityEngine.UI.Slider.direction">
+  direction
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The direction of the slider, from minimum to maximum value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Slider.Direction direction { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Slider.html">Slider</a>.<a class="xref" href="UnityEngine.UI.Slider.Direction.html">Direction</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Slider_direction_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public Slider mainSlider;
+
+    public void Start()
+    {
+        //Changes the direction of the slider.
+        if (mainSlider.direction == Slider.Direction.BottomToTop)
+        {
+            mainSlider.direction = Slider.Direction.TopToBottom;
+        }
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_fillRect_" data-uid="UnityEngine.UI.Slider.fillRect*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_fillRect" data-uid="UnityEngine.UI.Slider.fillRect">
+  fillRect
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L81"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional RectTransform to use as fill for the slider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform fillRect { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectTransform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Slider_fillRect_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;  // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public Slider mainSlider;
+    //Reference to new "RectTransform"(Child of FillArea).
+    public RectTransform newFillRect;
+
+    //Deactivates the old FillRect and assigns a new one.
+    void Start()
+    {
+        mainSlider.fillRect.gameObject.SetActive(false);
+        mainSlider.fillRect = newFillRect;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_handleRect_" data-uid="UnityEngine.UI.Slider.handleRect*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_handleRect" data-uid="UnityEngine.UI.Slider.handleRect">
+  handleRect
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional RectTransform to use as a handle for the slider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform handleRect { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectTransform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Slider_handleRect_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public Slider mainSlider;
+    //Reference to new "RectTransform" (Child of "Handle Slide Area").
+    public RectTransform handleHighlighted;
+
+    //Deactivates the old Handle, then assigns and enables the new one.
+    void Start()
+    {
+        mainSlider.handleRect.gameObject.SetActive(false);
+        mainSlider.handleRect = handleHighlighted;
+        mainSlider.handleRect.gameObject.SetActive(true);
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_maxValue_" data-uid="UnityEngine.UI.Slider.maxValue*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_maxValue" data-uid="UnityEngine.UI.Slider.maxValue">
+  maxValue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The maximum allowed value of the slider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float maxValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Slider_maxValue_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public Slider mainSlider;
+
+    void Start()
+    {
+        // Changes the max value of the slider to 20;
+        mainSlider.maxValue = 20;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_minValue_" data-uid="UnityEngine.UI.Slider.minValue*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_minValue" data-uid="UnityEngine.UI.Slider.minValue">
+  minValue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The minimum allowed value of the slider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float minValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Slider_minValue_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public Slider mainSlider;
+
+    void Start()
+    {
+        // Changes the minimum value of the slider to 10;
+        mainSlider.minValue = 10;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_normalizedValue_" data-uid="UnityEngine.UI.Slider.normalizedValue*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_normalizedValue" data-uid="UnityEngine.UI.Slider.normalizedValue">
+  normalizedValue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L304"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The current value of the slider normalized into a value between 0 and 1.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float normalizedValue { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Slider_normalizedValue_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public Slider mainSlider;
+
+    //Set to invoke when "OnValueChanged" method is called.
+    void CheckNormalisedValue()
+    {
+        //Displays the normalised value of the slider everytime the value changes.
+        Debug.Log(mainSlider.normalizedValue);
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_onValueChanged_" data-uid="UnityEngine.UI.Slider.onValueChanged*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_onValueChanged" data-uid="UnityEngine.UI.Slider.onValueChanged">
+  onValueChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L352"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Callback executed when the value of the slider is changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Slider.SliderEvent onValueChanged { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Slider.html">Slider</a>.<a class="xref" href="UnityEngine.UI.Slider.SliderEvent.html">SliderEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Slider_onValueChanged_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public Slider mainSlider;
+
+    public void Start()
+    {
+        //Adds a listener to the main slider and invokes a method when the value changes.
+        mainSlider.onValueChanged.AddListener(delegate {ValueChangeCheck(); });
+    }
+
+    // Invoked when the value of the slider changes.
+    public void ValueChangeCheck()
+    {
+        Debug.Log(mainSlider.value);
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_value_" data-uid="UnityEngine.UI.Slider.value*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_value" data-uid="UnityEngine.UI.Slider.value">
+  value
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L259"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The current value of the slider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float value { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Slider_value_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public Slider mainSlider;
+
+    //Invoked when a submit button is clicked.
+    public void SubmitSliderSetting()
+    {
+        //Displays the value of the slider in the console.
+        Debug.Log(mainSlider.value);
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_wholeNumbers_" data-uid="UnityEngine.UI.Slider.wholeNumbers*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_wholeNumbers" data-uid="UnityEngine.UI.Slider.wholeNumbers">
+  wholeNumbers
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Should the value only be allowed to be whole numbers?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool wholeNumbers { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Slider_wholeNumbers_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public Slider mainSlider;
+
+    public void Start()
+    {
+        //sets the slider's value to accept whole numbers only.
+        mainSlider.wholeNumbers = true;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UnityEngine_UI_Slider_FindSelectableOnDown_" data-uid="UnityEngine.UI.Slider.FindSelectableOnDown*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_FindSelectableOnDown" data-uid="UnityEngine.UI.Slider.FindSelectableOnDown">
+  FindSelectableOnDown()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L730"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See Selectable.FindSelectableOnDown</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Selectable FindSelectableOnDown()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Selectable.html">Selectable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_FindSelectableOnLeft_" data-uid="UnityEngine.UI.Slider.FindSelectableOnLeft*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_FindSelectableOnLeft" data-uid="UnityEngine.UI.Slider.FindSelectableOnLeft">
+  FindSelectableOnLeft()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L700"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See Selectable.FindSelectableOnLeft</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Selectable FindSelectableOnLeft()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Selectable.html">Selectable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_FindSelectableOnRight_" data-uid="UnityEngine.UI.Slider.FindSelectableOnRight*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_FindSelectableOnRight" data-uid="UnityEngine.UI.Slider.FindSelectableOnRight">
+  FindSelectableOnRight()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L710"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See Selectable.FindSelectableOnRight</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Selectable FindSelectableOnRight()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Selectable.html">Selectable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_FindSelectableOnUp_" data-uid="UnityEngine.UI.Slider.FindSelectableOnUp*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_FindSelectableOnUp" data-uid="UnityEngine.UI.Slider.FindSelectableOnUp">
+  FindSelectableOnUp()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L720"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See Selectable.FindSelectableOnUp</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Selectable FindSelectableOnUp()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Selectable.html">Selectable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_GraphicUpdateComplete_" data-uid="UnityEngine.UI.Slider.GraphicUpdateComplete*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_GraphicUpdateComplete" data-uid="UnityEngine.UI.Slider.GraphicUpdateComplete">
+  GraphicUpdateComplete()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ICanvasElement.GraphicUpdateComplete</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GraphicUpdateComplete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_LayoutComplete_" data-uid="UnityEngine.UI.Slider.LayoutComplete*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_LayoutComplete" data-uid="UnityEngine.UI.Slider.LayoutComplete">
+  LayoutComplete()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L415"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ICanvasElement.LayoutComplete</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LayoutComplete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_OnDidApplyAnimationProperties_" data-uid="UnityEngine.UI.Slider.OnDidApplyAnimationProperties*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_OnDidApplyAnimationProperties" data-uid="UnityEngine.UI.Slider.OnDidApplyAnimationProperties">
+  OnDidApplyAnimationProperties()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L453"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDidApplyAnimationProperties()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_OnDisable_" data-uid="UnityEngine.UI.Slider.OnDisable*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_OnDisable" data-uid="UnityEngine.UI.Slider.OnDisable">
+  OnDisable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L433"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDisable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_OnDrag_" data-uid="UnityEngine.UI.Slider.OnDrag*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_OnDrag_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.UI.Slider.OnDrag(UnityEngine.EventSystems.PointerEventData)">
+  OnDrag(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L653"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>When dragging is occurring this will be called every time the cursor is moved.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDrag(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_OnEnable_" data-uid="UnityEngine.UI.Slider.OnEnable*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_OnEnable" data-uid="UnityEngine.UI.Slider.OnEnable">
+  OnEnable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L424"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_OnInitializePotentialDrag_" data-uid="UnityEngine.UI.Slider.OnInitializePotentialDrag*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_OnInitializePotentialDrag_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.UI.Slider.OnInitializePotentialDrag(UnityEngine.EventSystems.PointerEventData)">
+  OnInitializePotentialDrag(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L737"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by a BaseInputModule when a drag has been found but before it is valid to begin the drag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnInitializePotentialDrag(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_OnMove_" data-uid="UnityEngine.UI.Slider.OnMove*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_OnMove_UnityEngine_EventSystems_AxisEventData_" data-uid="UnityEngine.UI.Slider.OnMove(UnityEngine.EventSystems.AxisEventData)">
+  OnMove(AxisEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L660"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Determine in which of the 4 move directions the next selectable object should be found.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnMove(AxisEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.AxisEventData.html">AxisEventData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Slider_OnMove_UnityEngine_EventSystems_AxisEventData__examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;// Required when using Event data.
+
+public class ExampleClass : MonoBehaviour, IMoveHandler
+{
+    //When the focus moves to another selectable object, Invoke this Method.
+    public void OnMove(AxisEventData eventData)
+    {
+        //Assigns the move direction and the raw input vector representing the direction from the event data.
+        MoveDirection moveDir = eventData.moveDir;
+        Vector2 moveVector = eventData.moveVector;
+
+        //Displays the information in the console
+        Debug.Log(moveDir + ", " + moveVector);
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_OnPointerDown_" data-uid="UnityEngine.UI.Slider.OnPointerDown*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_OnPointerDown_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.UI.Slider.OnPointerDown(UnityEngine.EventSystems.PointerEventData)">
+  OnPointerDown(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L632"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Evaluate current state and transition to pressed state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPointerDown(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Slider_OnPointerDown_UnityEngine_EventSystems_PointerEventData__examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;// Required when using Event data.
+
+public class ExampleClass : MonoBehaviour, IPointerDownHandler// required interface when using the OnPointerDown method.
+{
+    //Do this when the mouse is clicked over the selectable object this script is attached to.
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        Debug.Log(this.gameObject.name + " Was Clicked.");
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_OnRectTransformDimensionsChange_" data-uid="UnityEngine.UI.Slider.OnRectTransformDimensionsChange*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_OnRectTransformDimensionsChange" data-uid="UnityEngine.UI.Slider.OnRectTransformDimensionsChange">
+  OnRectTransformDimensionsChange()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L544"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This callback is called when the dimensions of an associated RectTransform change. It is always called before Awake, OnEnable, or Start. The call is also made to all child RectTransforms, regardless of whether their dimensions change (which depends on how they are anchored).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnRectTransformDimensionsChange()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_Rebuild_" data-uid="UnityEngine.UI.Slider.Rebuild*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_Rebuild_UnityEngine_UI_CanvasUpdate_" data-uid="UnityEngine.UI.Slider.Rebuild(UnityEngine.UI.CanvasUpdate)">
+  Rebuild(CanvasUpdate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L404"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuild the element for the given stage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Rebuild(CanvasUpdate executing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>executing</code> <a class="xref" href="UnityEngine.UI.CanvasUpdate.html">CanvasUpdate</a></dt>
+    <dd><p>The current CanvasUpdate stage being rebuild.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_Set_" data-uid="UnityEngine.UI.Slider.Set*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_Set_System_Single_System_Boolean_" data-uid="UnityEngine.UI.Slider.Set(System.Single,System.Boolean)">
+  Set(float, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L526"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the value of the slider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Set(float input, bool sendCallback = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The new value for the slider.</p>
+</dd>
+    <dt><code>sendCallback</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>If the OnValueChanged callback should be invoked.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Slider_Set_System_Single_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Process the input to ensure the value is between min and max value. If the input is different set the value and send the callback is required.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Slider_SetDirection_" data-uid="UnityEngine.UI.Slider.SetDirection*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_SetDirection_UnityEngine_UI_Slider_Direction_System_Boolean_" data-uid="UnityEngine.UI.Slider.SetDirection(UnityEngine.UI.Slider.Direction,System.Boolean)">
+  SetDirection(Direction, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L766"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the direction of this slider, optionally changing the layout as well.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetDirection(Slider.Direction direction, bool includeRectLayouts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>direction</code> <a class="xref" href="UnityEngine.UI.Slider.html">Slider</a>.<a class="xref" href="UnityEngine.UI.Slider.Direction.html">Direction</a></dt>
+    <dd><p>The direction of the slider</p>
+</dd>
+    <dt><code>includeRectLayouts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Should the layout be flipped together with the slider direction</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Slider_SetDirection_UnityEngine_UI_Slider_Direction_System_Boolean__examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public Slider mainSlider;
+
+    public void Start()
+    {
+        mainSlider.SetDirection(Slider.Direction.LeftToRight, false);
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_SetValueWithoutNotify_" data-uid="UnityEngine.UI.Slider.SetValueWithoutNotify*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_SetValueWithoutNotify_System_Single_" data-uid="UnityEngine.UI.Slider.SetValueWithoutNotify(System.Single)">
+  SetValueWithoutNotify(float)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L275"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the value of the slider without invoking onValueChanged callback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetValueWithoutNotify(float input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The new value for the slider.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Slider_Update_" data-uid="UnityEngine.UI.Slider.Update*"></a>
+
+  <h3 id="UnityEngine_UI_Slider_Update" data-uid="UnityEngine.UI.Slider.Update">
+  Update()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L443"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Update the rect based on the delayed update visuals.
+Got around issue of calling sendMessage from onValidate.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Update()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs/#L7" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

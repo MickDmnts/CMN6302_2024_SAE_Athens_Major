@@ -1,0 +1,2553 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ScrollRect </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ScrollRect ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/new/mad/apiSpec/new?filename=UnityEngine_UI_ScrollRect.md&amp;value=---%0Auid%3A%20UnityEngine.UI.ScrollRect%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UnityEngine.UI.ScrollRect">
+
+
+
+  <h1 id="UnityEngine_UI_ScrollRect" data-uid="UnityEngine.UI.ScrollRect" class="text-break">
+Class ScrollRect  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L7"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UnityEngine.html">UnityEngine</a>.<a class="xref" href="UnityEngine.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UnityEngine.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;UI/Scroll Rect&quot;, 37)]
+[SelectionBase]
+[ExecuteAlways]
+[DisallowMultipleComponent]
+[RequireComponent(typeof(RectTransform))]
+public class ScrollRect : UIBehaviour, IInitializePotentialDragHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IScrollHandler, IEventSystemHandler, ICanvasElement, ILayoutElement, ILayoutGroup, ILayoutController</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html">UIBehaviour</a></div>
+      <div><span class="xref">ScrollRect</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="UnityEngine.EventSystems.IInitializePotentialDragHandler.html">IInitializePotentialDragHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IBeginDragHandler.html">IBeginDragHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IEndDragHandler.html">IEndDragHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IDragHandler.html">IDragHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IScrollHandler.html">IScrollHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IEventSystemHandler.html">IEventSystemHandler</a></div>
+      <div><a class="xref" href="UnityEngine.UI.ICanvasElement.html">ICanvasElement</a></div>
+      <div><a class="xref" href="UnityEngine.UI.ILayoutElement.html">ILayoutElement</a></div>
+      <div><a class="xref" href="UnityEngine.UI.ILayoutGroup.html">ILayoutGroup</a></div>
+      <div><a class="xref" href="UnityEngine.UI.ILayoutController.html">ILayoutController</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_Awake">UIBehaviour.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_Start">UIBehaviour.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnDestroy">UIBehaviour.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnBeforeTransformParentChanged">UIBehaviour.OnBeforeTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnTransformParentChanged">UIBehaviour.OnTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnDidApplyAnimationProperties">UIBehaviour.OnDidApplyAnimationProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnCanvasGroupChanged">UIBehaviour.OnCanvasGroupChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnCanvasHierarchyChanged">UIBehaviour.OnCanvasHierarchyChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_IsDestroyed">UIBehaviour.IsDestroyed()</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.Invoke(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.InvokeRepeating(string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.CancelInvoke(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.IsInvoking(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine_Auto(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StopCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(Coroutine)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StopCoroutine(string)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">MonoBehaviour.print(object)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.destroyCancellationToken</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponent(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.TryGetComponent(Type, out Component)</a>
+    </div>
+    <div>
+      <span class="xref">Component.TryGetComponent&lt;T&gt;(out T)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.GetComponent(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type, List&lt;Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentIndex()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.CompareTag(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <span class="xref">Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Scene)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate(Object, Transform, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate&lt;T&gt;(T, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.Destroy(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Destroy(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.DestroyImmediate(Object, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyImmediate(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DontDestroyOnLoad(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.DestroyObject(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyObject(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <span class="xref">Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Object.name</span>
+    </div>
+    <div>
+      <span class="xref">Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UnityEngine_UI_ScrollRect__ctor_" data-uid="UnityEngine.UI.ScrollRect.#ctor*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect__ctor" data-uid="UnityEngine.UI.ScrollRect.#ctor">
+  ScrollRect()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ScrollRect()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="UnityEngine_UI_ScrollRect_m_ContentBounds" data-uid="UnityEngine.UI.ScrollRect.m_ContentBounds">
+  m_ContentBounds
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L477"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Bounds m_ContentBounds</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Bounds</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="UnityEngine_UI_ScrollRect_m_ContentStartPosition" data-uid="UnityEngine.UI.ScrollRect.m_ContentStartPosition">
+  m_ContentStartPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L461"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Vector2 m_ContentStartPosition</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UnityEngine_UI_ScrollRect_content_" data-uid="UnityEngine.UI.ScrollRect.content*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_content" data-uid="UnityEngine.UI.ScrollRect.content">
+  content
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The content that can be scrolled. It should be a child of the GameObject with ScrollRect on it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform content { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectTransform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_content_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class ExampleClass : MonoBehaviour
+{
+    public ScrollRect myScrollRect;
+    public RectTransform scrollableContent;
+
+    //Do this when the Save button is selected.
+    public void Start()
+    {
+        // assigns the contect that can be scrolled using the ScrollRect.
+        myScrollRect.content = scrollableContent;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_decelerationRate_" data-uid="UnityEngine.UI.ScrollRect.decelerationRate*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_decelerationRate" data-uid="UnityEngine.UI.ScrollRect.decelerationRate">
+  decelerationRate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The rate at which movement slows down.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float decelerationRate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_decelerationRate_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class ExampleClass : MonoBehaviour
+{
+    public ScrollRect myScrollRect;
+
+    public void Start()
+    {
+        // assigns a new value to the decelerationRate of the scroll rect.
+        // The higher the number the longer it takes to decelerate.
+        myScrollRect.decelerationRate = 5.0f;
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_decelerationRate_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The deceleration rate is the speed reduction per second. A value of 0.5 halves the speed each second. The default is 0.135. The deceleration rate is only used when inertia is enabled.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_elasticity_" data-uid="UnityEngine.UI.ScrollRect.elasticity*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_elasticity" data-uid="UnityEngine.UI.ScrollRect.elasticity">
+  elasticity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L230"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The amount of elasticity to use when the content moves beyond the scroll rect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float elasticity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_elasticity_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+
+public class ExampleClass : MonoBehaviour
+{
+    public ScrollRect myScrollRect;
+
+    public void Start()
+    {
+        // assigns a new value to the elasticity of the scroll rect.
+        // The higher the number the longer it takes to snap back.
+        myScrollRect.elasticity = 3.0f;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_flexibleHeight_" data-uid="UnityEngine.UI.ScrollRect.flexibleHeight*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_flexibleHeight" data-uid="UnityEngine.UI.ScrollRect.flexibleHeight">
+  flexibleHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L1146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by the layout system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float flexibleHeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_flexibleWidth_" data-uid="UnityEngine.UI.ScrollRect.flexibleWidth*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_flexibleWidth" data-uid="UnityEngine.UI.ScrollRect.flexibleWidth">
+  flexibleWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L1133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by the layout system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float flexibleWidth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_horizontal_" data-uid="UnityEngine.UI.ScrollRect.horizontal*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_horizontal" data-uid="UnityEngine.UI.ScrollRect.horizontal">
+  horizontal
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Should horizontal scrolling be enabled?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool horizontal { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_horizontal_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class ExampleClass : MonoBehaviour
+{
+    public ScrollRect myScrollRect;
+
+    public void Start()
+    {
+        // Is horizontal scrolling enabled?
+        if (myScrollRect.horizontal == true)
+        {
+            Debug.Log("Horizontal Scrolling is Enabled!");
+        }
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_horizontalNormalizedPosition_" data-uid="UnityEngine.UI.ScrollRect.horizontalNormalizedPosition*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_horizontalNormalizedPosition" data-uid="UnityEngine.UI.ScrollRect.horizontalNormalizedPosition">
+  horizontalNormalizedPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L998"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The horizontal scroll position as a value between 0 and 1, with 0 being at the left.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float horizontalNormalizedPosition { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_horizontalNormalizedPosition_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;  // Required when Using UI elements.
+
+public class ExampleClass : MonoBehaviour
+{
+    public ScrollRect myScrollRect;
+    public Scrollbar newScrollBar;
+
+    public void Start()
+    {
+        //Change the current horizontal scroll position.
+        myScrollRect.horizontalNormalizedPosition = 0.5f;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_horizontalScrollbar_" data-uid="UnityEngine.UI.ScrollRect.horizontalScrollbar*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_horizontalScrollbar" data-uid="UnityEngine.UI.ScrollRect.horizontalScrollbar">
+  horizontalScrollbar
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L321"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional Scrollbar object linked to the horizontal scrolling of the ScrollRect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scrollbar horizontalScrollbar { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Scrollbar.html">Scrollbar</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_horizontalScrollbar_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;  // Required when Using UI elements.
+
+public class ExampleClass : MonoBehaviour
+{
+    public ScrollRect myScrollRect;
+    public Scrollbar newScrollBar;
+
+    public void Start()
+    {
+        // Assigns a scroll bar element to the ScrollRect, allowing you to scroll in the horizontal axis.
+        myScrollRect.horizontalScrollbar = newScrollBar;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_horizontalScrollbarSpacing_" data-uid="UnityEngine.UI.ScrollRect.horizontalScrollbarSpacing*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_horizontalScrollbarSpacing" data-uid="UnityEngine.UI.ScrollRect.horizontalScrollbarSpacing">
+  horizontalScrollbarSpacing
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L404"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The space between the scrollbar and the viewport.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float horizontalScrollbarSpacing { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_horizontalScrollbarVisibility_" data-uid="UnityEngine.UI.ScrollRect.horizontalScrollbarVisibility*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_horizontalScrollbarVisibility" data-uid="UnityEngine.UI.ScrollRect.horizontalScrollbarVisibility">
+  horizontalScrollbarVisibility
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The mode of visibility for the horizontal scrollbar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScrollRect.ScrollbarVisibility horizontalScrollbarVisibility { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.ScrollRect.html">ScrollRect</a>.<a class="xref" href="UnityEngine.UI.ScrollRect.ScrollbarVisibility.html">ScrollbarVisibility</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_inertia_" data-uid="UnityEngine.UI.ScrollRect.inertia*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_inertia" data-uid="UnityEngine.UI.ScrollRect.inertia">
+  inertia
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Should movement inertia be enabled?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool inertia { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_inertia_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Inertia means that the scrollrect content will keep scrolling for a while after being dragged. It gradually slows down according to the decelerationRate.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_layoutPriority_" data-uid="UnityEngine.UI.ScrollRect.layoutPriority*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_layoutPriority" data-uid="UnityEngine.UI.ScrollRect.layoutPriority">
+  layoutPriority
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L1151"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by the layout system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int layoutPriority { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_minHeight_" data-uid="UnityEngine.UI.ScrollRect.minHeight*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_minHeight" data-uid="UnityEngine.UI.ScrollRect.minHeight">
+  minHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L1138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by the layout system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float minHeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_minWidth_" data-uid="UnityEngine.UI.ScrollRect.minWidth*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_minWidth" data-uid="UnityEngine.UI.ScrollRect.minWidth">
+  minWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L1125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by the layout system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float minWidth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_movementType_" data-uid="UnityEngine.UI.ScrollRect.movementType*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_movementType" data-uid="UnityEngine.UI.ScrollRect.movementType">
+  movementType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The behavior to use when the content moves beyond the scroll rect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScrollRect.MovementType movementType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.ScrollRect.html">ScrollRect</a>.<a class="xref" href="UnityEngine.UI.ScrollRect.MovementType.html">MovementType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_normalizedPosition_" data-uid="UnityEngine.UI.ScrollRect.normalizedPosition*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_normalizedPosition" data-uid="UnityEngine.UI.ScrollRect.normalizedPosition">
+  normalizedPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L961"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The scroll position as a Vector2 between (0,0) and (1,1) with (0,0) being the lower left corner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 normalizedPosition { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_normalizedPosition_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;  // Required when Using UI elements.
+
+public class ExampleClass : MonoBehaviour
+{
+    public ScrollRect myScrollRect;
+    public Vector2 myPosition = new Vector2(0.5f, 0.5f);
+
+    public void Start()
+    {
+        //Change the current scroll position.
+        myScrollRect.normalizedPosition = myPosition;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_onValueChanged_" data-uid="UnityEngine.UI.ScrollRect.onValueChanged*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_onValueChanged" data-uid="UnityEngine.UI.ScrollRect.onValueChanged">
+  onValueChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L457"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Callback executed when the position of the child changes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScrollRect.ScrollRectEvent onValueChanged { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.ScrollRect.html">ScrollRect</a>.<a class="xref" href="UnityEngine.UI.ScrollRect.ScrollRectEvent.html">ScrollRectEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_onValueChanged_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using UnityEngine.UI;
+
+public class ExampleScript : MonoBehaviour
+{
+    static ScrollRect scrollRect;
+
+    void Start()
+    {
+        scrollRect = GetComponent&lt;ScrollRect&gt;();
+        scrollRect.onValueChanged.AddListener(ListenerMethod);
+    }
+
+    public void ListenerMethod(Vector2 value)
+    {
+        Debug.Log("ListenerMethod: " + value);
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_onValueChanged_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>onValueChanged is used to watch for changes in the ScrollRect object.
+The onValueChanged call will use the UnityEvent.AddListener API to watch for
+changes.  When changes happen script code provided by the user will be called.
+The UnityEvent.AddListener API for UI.ScrollRect._onValueChanged takes a Vector2.</p>
+<p>Note: The editor allows the onValueChanged value to be set up manually.For example the
+value can be set to run only a runtime.  The object and script function to call are also
+provided here.</p>
+<p>The onValueChanged variable can be alternatively set-up at runtime.The script example below
+shows how this can be done.The script is attached to the ScrollRect object.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_preferredHeight_" data-uid="UnityEngine.UI.ScrollRect.preferredHeight*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_preferredHeight" data-uid="UnityEngine.UI.ScrollRect.preferredHeight">
+  preferredHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L1142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by the layout system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float preferredHeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_preferredWidth_" data-uid="UnityEngine.UI.ScrollRect.preferredWidth*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_preferredWidth" data-uid="UnityEngine.UI.ScrollRect.preferredWidth">
+  preferredWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L1129"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by the layout system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float preferredWidth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_scrollSensitivity_" data-uid="UnityEngine.UI.ScrollRect.scrollSensitivity*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_scrollSensitivity" data-uid="UnityEngine.UI.ScrollRect.scrollSensitivity">
+  scrollSensitivity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L284"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The sensitivity to scroll wheel and track pad scroll events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float scrollSensitivity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_scrollSensitivity_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Higher values indicate higher sensitivity.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_velocity_" data-uid="UnityEngine.UI.ScrollRect.velocity*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_velocity" data-uid="UnityEngine.UI.ScrollRect.velocity">
+  velocity
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L488"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The current velocity of the content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Vector2 velocity { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_velocity_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The velocity is defined in units per second.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_vertical_" data-uid="UnityEngine.UI.ScrollRect.vertical*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_vertical" data-uid="UnityEngine.UI.ScrollRect.vertical">
+  vertical
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Should vertical scrolling be enabled?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool vertical { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_vertical_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;  // Required when Using UI elements.
+
+public class ExampleClass : MonoBehaviour
+{
+    public ScrollRect myScrollRect;
+
+    public void Start()
+    {
+        // Is Vertical scrolling enabled?
+        if (myScrollRect.vertical == true)
+        {
+            Debug.Log("Vertical Scrolling is Enabled!");
+        }
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_verticalNormalizedPosition_" data-uid="UnityEngine.UI.ScrollRect.verticalNormalizedPosition*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_verticalNormalizedPosition" data-uid="UnityEngine.UI.ScrollRect.verticalNormalizedPosition">
+  verticalNormalizedPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L1038"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The vertical scroll position as a value between 0 and 1, with 0 being at the bottom.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float verticalNormalizedPosition { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_verticalNormalizedPosition_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;  // Required when Using UI elements.
+
+public class ExampleClass : MonoBehaviour
+{
+    public ScrollRect myScrollRect;
+    public Scrollbar newScrollBar;
+
+    public void Start()
+    {
+        //Change the current vertical scroll position.
+        myScrollRect.verticalNormalizedPosition = 0.5f;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_verticalScrollbar_" data-uid="UnityEngine.UI.ScrollRect.verticalScrollbar*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_verticalScrollbar" data-uid="UnityEngine.UI.ScrollRect.verticalScrollbar">
+  verticalScrollbar
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L365"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Optional Scrollbar object linked to the vertical scrolling of the ScrollRect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scrollbar verticalScrollbar { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Scrollbar.html">Scrollbar</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_verticalScrollbar_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;  // Required when Using UI elements.
+
+public class ExampleClass : MonoBehaviour
+{
+    public ScrollRect myScrollRect;
+    public Scrollbar newScrollBar;
+
+    public void Start()
+    {
+        // Assigns a scroll bar element to the ScrollRect, allowing you to scroll in the vertical axis.
+        myScrollRect.verticalScrollbar = newScrollBar;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_verticalScrollbarSpacing_" data-uid="UnityEngine.UI.ScrollRect.verticalScrollbarSpacing*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_verticalScrollbarSpacing" data-uid="UnityEngine.UI.ScrollRect.verticalScrollbarSpacing">
+  verticalScrollbarSpacing
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L412"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The space between the scrollbar and the viewport.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float verticalScrollbarSpacing { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_verticalScrollbarVisibility_" data-uid="UnityEngine.UI.ScrollRect.verticalScrollbarVisibility*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_verticalScrollbarVisibility" data-uid="UnityEngine.UI.ScrollRect.verticalScrollbarVisibility">
+  verticalScrollbarVisibility
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L396"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The mode of visibility for the vertical scrollbar.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ScrollRect.ScrollbarVisibility verticalScrollbarVisibility { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.ScrollRect.html">ScrollRect</a>.<a class="xref" href="UnityEngine.UI.ScrollRect.ScrollbarVisibility.html">ScrollbarVisibility</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_viewRect_" data-uid="UnityEngine.UI.ScrollRect.viewRect*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_viewRect" data-uid="UnityEngine.UI.ScrollRect.viewRect">
+  viewRect
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L465"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected RectTransform viewRect { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectTransform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_viewport_" data-uid="UnityEngine.UI.ScrollRect.viewport*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_viewport" data-uid="UnityEngine.UI.ScrollRect.viewport">
+  viewport
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L292"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reference to the viewport RectTransform that is the parent of the content RectTransform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RectTransform viewport { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">RectTransform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UnityEngine_UI_ScrollRect_CalculateLayoutInputHorizontal_" data-uid="UnityEngine.UI.ScrollRect.CalculateLayoutInputHorizontal*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_CalculateLayoutInputHorizontal" data-uid="UnityEngine.UI.ScrollRect.CalculateLayoutInputHorizontal">
+  CalculateLayoutInputHorizontal()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L1115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by the layout system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CalculateLayoutInputHorizontal()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_CalculateLayoutInputVertical_" data-uid="UnityEngine.UI.ScrollRect.CalculateLayoutInputVertical*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_CalculateLayoutInputVertical" data-uid="UnityEngine.UI.ScrollRect.CalculateLayoutInputVertical">
+  CalculateLayoutInputVertical()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L1120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by the layout system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CalculateLayoutInputVertical()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_GraphicUpdateComplete_" data-uid="UnityEngine.UI.ScrollRect.GraphicUpdateComplete*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_GraphicUpdateComplete" data-uid="UnityEngine.UI.ScrollRect.GraphicUpdateComplete">
+  GraphicUpdateComplete()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L550"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Callback sent when this ICanvasElement has completed Graphic rebuild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GraphicUpdateComplete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_IsActive_" data-uid="UnityEngine.UI.ScrollRect.IsActive*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_IsActive" data-uid="UnityEngine.UI.ScrollRect.IsActive">
+  IsActive()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L628"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See member in base class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool IsActive()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_IsActive_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;  // Required when Using UI elements.
+
+public class ExampleClass : MonoBehaviour
+{
+    public ScrollRect myScrollRect;
+
+    public void Start()
+    {
+        //Checks if the ScrollRect called "myScrollRect" is active.
+        if (myScrollRect.IsActive())
+        {
+            Debug.Log("The Scroll Rect is active!");
+        }
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_LateUpdate_" data-uid="UnityEngine.UI.ScrollRect.LateUpdate*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_LateUpdate" data-uid="UnityEngine.UI.ScrollRect.LateUpdate">
+  LateUpdate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L829"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void LateUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_LayoutComplete_" data-uid="UnityEngine.UI.ScrollRect.LayoutComplete*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_LayoutComplete" data-uid="UnityEngine.UI.ScrollRect.LayoutComplete">
+  LayoutComplete()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L547"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Callback sent when this ICanvasElement has completed layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LayoutComplete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_OnBeginDrag_" data-uid="UnityEngine.UI.ScrollRect.OnBeginDrag*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_OnBeginDrag_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.UI.ScrollRect.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)">
+  OnBeginDrag(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L712"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handling for when the content is beging being dragged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnBeginDrag(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_OnBeginDrag_UnityEngine_EventSystems_PointerEventData__examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.EventSystems; // Required when using event data
+
+public class ExampleClass : MonoBehaviour, IBeginDragHandler // required interface when using the OnBeginDrag method.
+{
+    //Do this when the user starts dragging the element this script is attached to..
+    public void OnBeginDrag(PointerEventData data)
+    {
+        Debug.Log("They started dragging " + this.name);
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_OnDisable_" data-uid="UnityEngine.UI.ScrollRect.OnDisable*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_OnDisable" data-uid="UnityEngine.UI.ScrollRect.OnDisable">
+  OnDisable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L584"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDisable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_OnDrag_" data-uid="UnityEngine.UI.ScrollRect.OnDrag*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_OnDrag_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.UI.ScrollRect.OnDrag(UnityEngine.EventSystems.PointerEventData)">
+  OnDrag(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L778"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handling for when the content is dragged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDrag(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_OnDrag_UnityEngine_EventSystems_PointerEventData__examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.EventSystems; // Required when using event data
+
+public class ExampleClass : MonoBehaviour, IDragHandler // required interface when using the OnDrag method.
+{
+    //Do this while the user is dragging this UI Element.
+    public void OnDrag(PointerEventData data)
+    {
+        Debug.Log("Currently dragging " + this.name);
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_OnEnable_" data-uid="UnityEngine.UI.ScrollRect.OnEnable*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_OnEnable" data-uid="UnityEngine.UI.ScrollRect.OnEnable">
+  OnEnable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L571"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_OnEndDrag_" data-uid="UnityEngine.UI.ScrollRect.OnEndDrag*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_OnEndDrag_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.UI.ScrollRect.OnEndDrag(UnityEngine.EventSystems.PointerEventData)">
+  OnEndDrag(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L749"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Handling for when the content has finished being dragged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnEndDrag(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_ScrollRect_OnEndDrag_UnityEngine_EventSystems_PointerEventData__examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.EventSystems; // Required when using event data
+
+public class ExampleClass : MonoBehaviour, IEndDragHandler // required interface when using the OnEndDrag method.
+{
+    //Do this when the user stops dragging this UI Element.
+    public void OnEndDrag(PointerEventData data)
+    {
+        Debug.Log("Stopped dragging " + this.name + "!");
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_OnInitializePotentialDrag_" data-uid="UnityEngine.UI.ScrollRect.OnInitializePotentialDrag*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_OnInitializePotentialDrag_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.UI.ScrollRect.OnInitializePotentialDrag(UnityEngine.EventSystems.PointerEventData)">
+  OnInitializePotentialDrag(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L683"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by a BaseInputModule when a drag has been found but before it is valid to begin the drag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnInitializePotentialDrag(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_OnRectTransformDimensionsChange_" data-uid="UnityEngine.UI.ScrollRect.OnRectTransformDimensionsChange*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_OnRectTransformDimensionsChange" data-uid="UnityEngine.UI.ScrollRect.OnRectTransformDimensionsChange">
+  OnRectTransformDimensionsChange()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L1088"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This callback is called when the dimensions of an associated RectTransform change. It is always called before Awake, OnEnable, or Start. The call is also made to all child RectTransforms, regardless of whether their dimensions change (which depends on how they are anchored).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnRectTransformDimensionsChange()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_OnScroll_" data-uid="UnityEngine.UI.ScrollRect.OnScroll*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_OnScroll_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.UI.ScrollRect.OnScroll(UnityEngine.EventSystems.PointerEventData)">
+  OnScroll(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L647"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Use this callback to detect scroll events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnScroll(PointerEventData data)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_Rebuild_" data-uid="UnityEngine.UI.ScrollRect.Rebuild*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_Rebuild_UnityEngine_UI_CanvasUpdate_" data-uid="UnityEngine.UI.ScrollRect.Rebuild(UnityEngine.UI.CanvasUpdate)">
+  Rebuild(CanvasUpdate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L530"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuilds the scroll rect data after initialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Rebuild(CanvasUpdate executing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>executing</code> <a class="xref" href="UnityEngine.UI.CanvasUpdate.html">CanvasUpdate</a></dt>
+    <dd><p>The current step in the rendering CanvasUpdate cycle.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_SetContentAnchoredPosition_" data-uid="UnityEngine.UI.ScrollRect.SetContentAnchoredPosition*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_SetContentAnchoredPosition_UnityEngine_Vector2_" data-uid="UnityEngine.UI.ScrollRect.SetContentAnchoredPosition(UnityEngine.Vector2)">
+  SetContentAnchoredPosition(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L815"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the anchored position of the content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetContentAnchoredPosition(Vector2 position)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_SetDirty_" data-uid="UnityEngine.UI.ScrollRect.SetDirty*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_SetDirty" data-uid="UnityEngine.UI.ScrollRect.SetDirty">
+  SetDirty()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L1430"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Override to alter or add to the code that keeps the appearance of the scroll rect synced with its data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetDirty()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_SetDirtyCaching_" data-uid="UnityEngine.UI.ScrollRect.SetDirtyCaching*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_SetDirtyCaching" data-uid="UnityEngine.UI.ScrollRect.SetDirtyCaching">
+  SetDirtyCaching()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L1441"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Override to alter or add to the code that caches data to avoid repeated heavy operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetDirtyCaching()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_SetLayoutHorizontal_" data-uid="UnityEngine.UI.ScrollRect.SetLayoutHorizontal*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_SetLayoutHorizontal" data-uid="UnityEngine.UI.ScrollRect.SetLayoutHorizontal">
+  SetLayoutHorizontal()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L1156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by the layout system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetLayoutHorizontal()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_SetLayoutVertical_" data-uid="UnityEngine.UI.ScrollRect.SetLayoutVertical*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_SetLayoutVertical" data-uid="UnityEngine.UI.ScrollRect.SetLayoutVertical">
+  SetLayoutVertical()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L1212"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by the layout system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void SetLayoutVertical()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_SetNormalizedPosition_" data-uid="UnityEngine.UI.ScrollRect.SetNormalizedPosition*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_SetNormalizedPosition_System_Single_System_Int32_" data-uid="UnityEngine.UI.ScrollRect.SetNormalizedPosition(System.Single,System.Int32)">
+  SetNormalizedPosition(float, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L1062"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><blockquote>
+<p>Set the horizontal or vertical scroll position as a value between 0 and 1, with 0 being at the left or at the bottom.</p>
+</blockquote>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetNormalizedPosition(float value, int axis)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd><p>The position to set, between 0 and 1.</p>
+</dd>
+    <dt><code>axis</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The axis to set: 0 for horizontal, 1 for vertical.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_StopMovement_" data-uid="UnityEngine.UI.ScrollRect.StopMovement*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_StopMovement" data-uid="UnityEngine.UI.ScrollRect.StopMovement">
+  StopMovement()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L642"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the velocity to zero on both axes so the content stops moving.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void StopMovement()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_UpdateBounds_" data-uid="UnityEngine.UI.ScrollRect.UpdateBounds*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_UpdateBounds" data-uid="UnityEngine.UI.ScrollRect.UpdateBounds">
+  UpdateBounds()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L1280"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Calculate the bounds the ScrollRect should be using.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpdateBounds()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_ScrollRect_UpdatePrevData_" data-uid="UnityEngine.UI.ScrollRect.UpdatePrevData*"></a>
+
+  <h3 id="UnityEngine_UI_ScrollRect_UpdatePrevData" data-uid="UnityEngine.UI.ScrollRect.UpdatePrevData">
+  UpdatePrevData()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L904"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Helper function to update the previous data fields on a ScrollRect. Call this before you change data in the ScrollRect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpdatePrevData()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/ScrollRect.cs/#L7" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

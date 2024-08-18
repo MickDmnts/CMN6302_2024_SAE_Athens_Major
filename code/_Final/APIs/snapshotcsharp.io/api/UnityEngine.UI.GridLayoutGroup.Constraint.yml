@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.GridLayoutGroup.Constraint
+  commentId: T:UnityEngine.UI.GridLayoutGroup.Constraint
+  id: GridLayoutGroup.Constraint
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.GridLayoutGroup.Constraint.FixedColumnCount
+  - UnityEngine.UI.GridLayoutGroup.Constraint.FixedRowCount
+  - UnityEngine.UI.GridLayoutGroup.Constraint.Flexible
+  langs:
+  - csharp
+  - vb
+  name: GridLayoutGroup.Constraint
+  nameWithType: GridLayoutGroup.Constraint
+  fullName: UnityEngine.UI.GridLayoutGroup.Constraint
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Constraint
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs
+    startLine: 58
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Constraint type on either the number of columns or rows.
+  example: []
+  syntax:
+    content: public enum GridLayoutGroup.Constraint
+    content.vb: Public Enum GridLayoutGroup.Constraint
+- uid: UnityEngine.UI.GridLayoutGroup.Constraint.Flexible
+  commentId: F:UnityEngine.UI.GridLayoutGroup.Constraint.Flexible
+  id: Flexible
+  parent: UnityEngine.UI.GridLayoutGroup.Constraint
+  langs:
+  - csharp
+  - vb
+  name: Flexible
+  nameWithType: GridLayoutGroup.Constraint.Flexible
+  fullName: UnityEngine.UI.GridLayoutGroup.Constraint.Flexible
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Flexible
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs
+    startLine: 63
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Don't constrain the number of rows or columns.
+  example: []
+  syntax:
+    content: Flexible = 0
+    return:
+      type: UnityEngine.UI.GridLayoutGroup.Constraint
+- uid: UnityEngine.UI.GridLayoutGroup.Constraint.FixedColumnCount
+  commentId: F:UnityEngine.UI.GridLayoutGroup.Constraint.FixedColumnCount
+  id: FixedColumnCount
+  parent: UnityEngine.UI.GridLayoutGroup.Constraint
+  langs:
+  - csharp
+  - vb
+  name: FixedColumnCount
+  nameWithType: GridLayoutGroup.Constraint.FixedColumnCount
+  fullName: UnityEngine.UI.GridLayoutGroup.Constraint.FixedColumnCount
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: FixedColumnCount
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs
+    startLine: 67
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Constrain the number of columns to a specified number.
+  example: []
+  syntax:
+    content: FixedColumnCount = 1
+    return:
+      type: UnityEngine.UI.GridLayoutGroup.Constraint
+- uid: UnityEngine.UI.GridLayoutGroup.Constraint.FixedRowCount
+  commentId: F:UnityEngine.UI.GridLayoutGroup.Constraint.FixedRowCount
+  id: FixedRowCount
+  parent: UnityEngine.UI.GridLayoutGroup.Constraint
+  langs:
+  - csharp
+  - vb
+  name: FixedRowCount
+  nameWithType: GridLayoutGroup.Constraint.FixedRowCount
+  fullName: UnityEngine.UI.GridLayoutGroup.Constraint.FixedRowCount
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: FixedRowCount
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs
+    startLine: 71
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Constraint the number of rows to a specified number.
+  example: []
+  syntax:
+    content: FixedRowCount = 2
+    return:
+      type: UnityEngine.UI.GridLayoutGroup.Constraint
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.GridLayoutGroup.Constraint
+  commentId: T:UnityEngine.UI.GridLayoutGroup.Constraint
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.GridLayoutGroup.html
+  name: GridLayoutGroup.Constraint
+  nameWithType: GridLayoutGroup.Constraint
+  fullName: UnityEngine.UI.GridLayoutGroup.Constraint
+  spec.csharp:
+  - uid: UnityEngine.UI.GridLayoutGroup
+    name: GridLayoutGroup
+    href: UnityEngine.UI.GridLayoutGroup.html
+  - name: .
+  - uid: UnityEngine.UI.GridLayoutGroup.Constraint
+    name: Constraint
+    href: UnityEngine.UI.GridLayoutGroup.Constraint.html
+  spec.vb:
+  - uid: UnityEngine.UI.GridLayoutGroup
+    name: GridLayoutGroup
+    href: UnityEngine.UI.GridLayoutGroup.html
+  - name: .
+  - uid: UnityEngine.UI.GridLayoutGroup.Constraint
+    name: Constraint
+    href: UnityEngine.UI.GridLayoutGroup.Constraint.html

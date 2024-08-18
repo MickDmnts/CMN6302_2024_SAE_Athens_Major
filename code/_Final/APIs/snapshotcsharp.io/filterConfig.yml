@@ -1,0 +1,16 @@
+apiRules:
+- include:
+    uidRegex: ^Snapshot
+    type: Namespace
+- include:
+    uidRegex: ^ProposedArchitecture
+    type: Namespace
+- exclude:
+    uidRegex: .*
+    type: Namespace
+- exclude:
+    - inherited: true 
+attributeRules:
+- exclude:
+    uidRegex: .*
+    type: Namespace

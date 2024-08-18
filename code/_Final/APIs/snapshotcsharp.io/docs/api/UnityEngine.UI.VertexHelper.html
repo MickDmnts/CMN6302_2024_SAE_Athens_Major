@@ -1,0 +1,844 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class VertexHelper </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class VertexHelper ">
+      
+      <meta name="description" content="A utility class that can aid in the generation of meshes for the UI.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/new/mad/apiSpec/new?filename=UnityEngine_UI_VertexHelper.md&amp;value=---%0Auid%3A%20UnityEngine.UI.VertexHelper%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UnityEngine.UI.VertexHelper">
+
+
+
+  <h1 id="UnityEngine_UI_VertexHelper" data-uid="UnityEngine.UI.VertexHelper" class="text-break">
+Class VertexHelper  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UnityEngine.html">UnityEngine</a>.<a class="xref" href="UnityEngine.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UnityEngine.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A utility class that can aid in the generation of meshes for the UI.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VertexHelper : IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">VertexHelper</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+  <h2 id="UnityEngine_UI_VertexHelper_examples">Examples</h2>
+  <pre><code class="lang-csharp">using UnityEngine;
+using UnityEngine.UI;
+
+public class ExampleClass : MonoBehaviour
+{
+    Mesh m;
+
+    void Start()
+    {
+        Color32 color32 = Color.red;
+        using (var vh = new VertexHelper())
+        {
+            vh.AddVert(new Vector3(0, 0), color32, new Vector2(0f, 0f));
+            vh.AddVert(new Vector3(0, 100), color32, new Vector2(0f, 1f));
+            vh.AddVert(new Vector3(100, 100), color32, new Vector2(1f, 1f));
+            vh.AddVert(new Vector3(100, 0), color32, new Vector2(1f, 0f));
+
+            vh.AddTriangle(0, 1, 2);
+            vh.AddTriangle(2, 3, 0);
+            vh.FillMesh(m);
+        }
+    }
+}</code></pre>
+
+
+  <h2 id="UnityEngine_UI_VertexHelper_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>This class implements IDisposable to aid with memory management.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UnityEngine_UI_VertexHelper__ctor_" data-uid="UnityEngine.UI.VertexHelper.#ctor*"></a>
+
+  <h3 id="UnityEngine_UI_VertexHelper__ctor" data-uid="UnityEngine.UI.VertexHelper.#ctor">
+  VertexHelper()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VertexHelper()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_VertexHelper__ctor_" data-uid="UnityEngine.UI.VertexHelper.#ctor*"></a>
+
+  <h3 id="UnityEngine_UI_VertexHelper__ctor_UnityEngine_Mesh_" data-uid="UnityEngine.UI.VertexHelper.#ctor(UnityEngine.Mesh)">
+  VertexHelper(Mesh)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VertexHelper(Mesh m)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>m</code> <span class="xref">Mesh</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UnityEngine_UI_VertexHelper_currentIndexCount_" data-uid="UnityEngine.UI.VertexHelper.currentIndexCount*"></a>
+
+  <h3 id="UnityEngine_UI_VertexHelper_currentIndexCount" data-uid="UnityEngine.UI.VertexHelper.currentIndexCount">
+  currentIndexCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get the number of indices set on the VertexHelper.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int currentIndexCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_VertexHelper_currentVertCount_" data-uid="UnityEngine.UI.VertexHelper.currentVertCount*"></a>
+
+  <h3 id="UnityEngine_UI_VertexHelper_currentVertCount" data-uid="UnityEngine.UI.VertexHelper.currentVertCount">
+  currentVertCount
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L153"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Current number of vertices in the buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int currentVertCount { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UnityEngine_UI_VertexHelper_AddTriangle_" data-uid="UnityEngine.UI.VertexHelper.AddTriangle*"></a>
+
+  <h3 id="UnityEngine_UI_VertexHelper_AddTriangle_System_Int32_System_Int32_System_Int32_" data-uid="UnityEngine.UI.VertexHelper.AddTriangle(System.Int32,System.Int32,System.Int32)">
+  AddTriangle(int, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a triangle to the buffer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddTriangle(int idx0, int idx1, int idx2)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>idx0</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>index 0</p>
+</dd>
+    <dt><code>idx1</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>index 1</p>
+</dd>
+    <dt><code>idx2</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>index 2</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_VertexHelper_AddUIVertexQuad_" data-uid="UnityEngine.UI.VertexHelper.AddUIVertexQuad*"></a>
+
+  <h3 id="UnityEngine_UI_VertexHelper_AddUIVertexQuad_UnityEngine_UIVertex___" data-uid="UnityEngine.UI.VertexHelper.AddUIVertexQuad(UnityEngine.UIVertex[])">
+  AddUIVertexQuad(UIVertex[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L306"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a quad to the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddUIVertexQuad(UIVertex[] verts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>verts</code> <span class="xref">UIVertex</span>[]</dt>
+    <dd><p>4 Vertices representing the quad.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_VertexHelper_AddUIVertexStream_" data-uid="UnityEngine.UI.VertexHelper.AddUIVertexStream*"></a>
+
+  <h3 id="UnityEngine_UI_VertexHelper_AddUIVertexStream_System_Collections_Generic_List_UnityEngine_UIVertex__System_Collections_Generic_List_System_Int32__" data-uid="UnityEngine.UI.VertexHelper.AddUIVertexStream(System.Collections.Generic.List{UnityEngine.UIVertex},System.Collections.Generic.List{System.Int32})">
+  AddUIVertexStream(List&lt;UIVertex&gt;, List&lt;int&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L322"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a stream of custom UIVertex and corresponding indices.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddUIVertexStream(List&lt;UIVertex&gt; verts, List&lt;int&gt; indices)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>verts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">UIVertex</span>&gt;</dt>
+    <dd><p>The custom stream of verts to add to the helpers internal data.</p>
+</dd>
+    <dt><code>indices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd><p>The custom stream of indices to add to the helpers internal data.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_VertexHelper_AddUIVertexTriangleStream_" data-uid="UnityEngine.UI.VertexHelper.AddUIVertexTriangleStream*"></a>
+
+  <h3 id="UnityEngine_UI_VertexHelper_AddUIVertexTriangleStream_System_Collections_Generic_List_UnityEngine_UIVertex__" data-uid="UnityEngine.UI.VertexHelper.AddUIVertexTriangleStream(System.Collections.Generic.List{UnityEngine.UIVertex})">
+  AddUIVertexTriangleStream(List&lt;UIVertex&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L341"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a list of triangles to the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddUIVertexTriangleStream(List&lt;UIVertex&gt; verts)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>verts</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">UIVertex</span>&gt;</dt>
+    <dd><p>Vertices to add. Length should be divisible by 3.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_VertexHelper_AddVert_" data-uid="UnityEngine.UI.VertexHelper.AddVert*"></a>
+
+  <h3 id="UnityEngine_UI_VertexHelper_AddVert_UnityEngine_UIVertex_" data-uid="UnityEngine.UI.VertexHelper.AddVert(UnityEngine.UIVertex)">
+  AddVert(UIVertex)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a single vertex to the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddVert(UIVertex v)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>v</code> <span class="xref">UIVertex</span></dt>
+    <dd><p>The vertex to add</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_VertexHelper_AddVert_" data-uid="UnityEngine.UI.VertexHelper.AddVert*"></a>
+
+  <h3 id="UnityEngine_UI_VertexHelper_AddVert_UnityEngine_Vector3_UnityEngine_Color32_UnityEngine_Vector4_" data-uid="UnityEngine.UI.VertexHelper.AddVert(UnityEngine.Vector3,UnityEngine.Color32,UnityEngine.Vector4)">
+  AddVert(Vector3, Color32, Vector4)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a single vertex to the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddVert(Vector3 position, Color32 color, Vector4 uv0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <span class="xref">Vector3</span></dt>
+    <dd><p>Position of the vert</p>
+</dd>
+    <dt><code>color</code> <span class="xref">Color32</span></dt>
+    <dd><p>Color of the vert</p>
+</dd>
+    <dt><code>uv0</code> <span class="xref">Vector4</span></dt>
+    <dd><p>UV of the vert</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_VertexHelper_AddVert_" data-uid="UnityEngine.UI.VertexHelper.AddVert*"></a>
+
+  <h3 id="UnityEngine_UI_VertexHelper_AddVert_UnityEngine_Vector3_UnityEngine_Color32_UnityEngine_Vector4_UnityEngine_Vector4_UnityEngine_Vector3_UnityEngine_Vector4_" data-uid="UnityEngine.UI.VertexHelper.AddVert(UnityEngine.Vector3,UnityEngine.Color32,UnityEngine.Vector4,UnityEngine.Vector4,UnityEngine.Vector3,UnityEngine.Vector4)">
+  AddVert(Vector3, Color32, Vector4, Vector4, Vector3, Vector4)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L262"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a single vertex to the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddVert(Vector3 position, Color32 color, Vector4 uv0, Vector4 uv1, Vector3 normal, Vector4 tangent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <span class="xref">Vector3</span></dt>
+    <dd><p>Position of the vert</p>
+</dd>
+    <dt><code>color</code> <span class="xref">Color32</span></dt>
+    <dd><p>Color of the vert</p>
+</dd>
+    <dt><code>uv0</code> <span class="xref">Vector4</span></dt>
+    <dd><p>UV of the vert</p>
+</dd>
+    <dt><code>uv1</code> <span class="xref">Vector4</span></dt>
+    <dd><p>UV1 of the vert</p>
+</dd>
+    <dt><code>normal</code> <span class="xref">Vector3</span></dt>
+    <dd><p>Normal of the vert.</p>
+</dd>
+    <dt><code>tangent</code> <span class="xref">Vector4</span></dt>
+    <dd><p>Tangent of the vert</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_VertexHelper_AddVert_" data-uid="UnityEngine.UI.VertexHelper.AddVert*"></a>
+
+  <h3 id="UnityEngine_UI_VertexHelper_AddVert_UnityEngine_Vector3_UnityEngine_Color32_UnityEngine_Vector4_UnityEngine_Vector4_UnityEngine_Vector4_UnityEngine_Vector4_UnityEngine_Vector3_UnityEngine_Vector4_" data-uid="UnityEngine.UI.VertexHelper.AddVert(UnityEngine.Vector3,UnityEngine.Color32,UnityEngine.Vector4,UnityEngine.Vector4,UnityEngine.Vector4,UnityEngine.Vector4,UnityEngine.Vector3,UnityEngine.Vector4)">
+  AddVert(Vector3, Color32, Vector4, Vector4, Vector4, Vector4, Vector3, Vector4)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Add a single vertex to the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddVert(Vector3 position, Color32 color, Vector4 uv0, Vector4 uv1, Vector4 uv2, Vector4 uv3, Vector3 normal, Vector4 tangent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>position</code> <span class="xref">Vector3</span></dt>
+    <dd><p>Position of the vert</p>
+</dd>
+    <dt><code>color</code> <span class="xref">Color32</span></dt>
+    <dd><p>Color of the vert</p>
+</dd>
+    <dt><code>uv0</code> <span class="xref">Vector4</span></dt>
+    <dd><p>UV of the vert</p>
+</dd>
+    <dt><code>uv1</code> <span class="xref">Vector4</span></dt>
+    <dd><p>UV1 of the vert</p>
+</dd>
+    <dt><code>uv2</code> <span class="xref">Vector4</span></dt>
+    <dd><p>UV2 of the vert</p>
+</dd>
+    <dt><code>uv3</code> <span class="xref">Vector4</span></dt>
+    <dd><p>UV3 of the vert</p>
+</dd>
+    <dt><code>normal</code> <span class="xref">Vector3</span></dt>
+    <dd><p>Normal of the vert.</p>
+</dd>
+    <dt><code>tangent</code> <span class="xref">Vector4</span></dt>
+    <dd><p>Tangent of the vert</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_VertexHelper_Clear_" data-uid="UnityEngine.UI.VertexHelper.Clear*"></a>
+
+  <h3 id="UnityEngine_UI_VertexHelper_Clear" data-uid="UnityEngine.UI.VertexHelper.Clear">
+  Clear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clear all vertices from the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_VertexHelper_Dispose_" data-uid="UnityEngine.UI.VertexHelper.Dispose*"></a>
+
+  <h3 id="UnityEngine_UI_VertexHelper_Dispose" data-uid="UnityEngine.UI.VertexHelper.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L102"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Cleanup allocated memory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_VertexHelper_FillMesh_" data-uid="UnityEngine.UI.VertexHelper.FillMesh*"></a>
+
+  <h3 id="UnityEngine_UI_VertexHelper_FillMesh_UnityEngine_Mesh_" data-uid="UnityEngine.UI.VertexHelper.FillMesh(UnityEngine.Mesh)">
+  FillMesh(Mesh)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L207"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fill the given mesh with the stream data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FillMesh(Mesh mesh)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>mesh</code> <span class="xref">Mesh</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_VertexHelper_GetUIVertexStream_" data-uid="UnityEngine.UI.VertexHelper.GetUIVertexStream*"></a>
+
+  <h3 id="UnityEngine_UI_VertexHelper_GetUIVertexStream_System_Collections_Generic_List_UnityEngine_UIVertex__" data-uid="UnityEngine.UI.VertexHelper.GetUIVertexStream(System.Collections.Generic.List{UnityEngine.UIVertex})">
+  GetUIVertexStream(List&lt;UIVertex&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L354"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Create a stream of UI vertex (in triangles) from the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void GetUIVertexStream(List&lt;UIVertex&gt; stream)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>stream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">UIVertex</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_VertexHelper_PopulateUIVertex_" data-uid="UnityEngine.UI.VertexHelper.PopulateUIVertex*"></a>
+
+  <h3 id="UnityEngine_UI_VertexHelper_PopulateUIVertex_UnityEngine_UIVertex__System_Int32_" data-uid="UnityEngine.UI.VertexHelper.PopulateUIVertex(UnityEngine.UIVertex@,System.Int32)">
+  PopulateUIVertex(ref UIVertex, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L171"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fill a UIVertex with data from index i of the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PopulateUIVertex(ref UIVertex vertex, int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vertex</code> <span class="xref">UIVertex</span></dt>
+    <dd><p>Vertex to populate</p>
+</dd>
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Index to populate.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_VertexHelper_SetUIVertex_" data-uid="UnityEngine.UI.VertexHelper.SetUIVertex*"></a>
+
+  <h3 id="UnityEngine_UI_VertexHelper_SetUIVertex_UnityEngine_UIVertex_System_Int32_" data-uid="UnityEngine.UI.VertexHelper.SetUIVertex(UnityEngine.UIVertex,System.Int32)">
+  SetUIVertex(UIVertex, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set a UIVertex at the given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetUIVertex(UIVertex vertex, int i)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>vertex</code> <span class="xref">UIVertex</span></dt>
+    <dd><p>The vertex to fill</p>
+</dd>
+    <dt><code>i</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>the position in the current list to fill.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Utility/VertexHelper.cs/#L42" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

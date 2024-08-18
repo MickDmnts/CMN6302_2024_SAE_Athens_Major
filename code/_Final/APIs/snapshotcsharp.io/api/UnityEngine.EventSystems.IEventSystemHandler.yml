@@ -1,0 +1,53 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.IEventSystemHandler
+  commentId: T:UnityEngine.EventSystems.IEventSystemHandler
+  id: IEventSystemHandler
+  parent: UnityEngine.EventSystems
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: IEventSystemHandler
+  nameWithType: IEventSystemHandler
+  fullName: UnityEngine.EventSystems.IEventSystemHandler
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IEventSystemHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 5
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Base class that all EventSystem events inherit from.
+  example: []
+  syntax:
+    content: public interface IEventSystemHandler
+    content.vb: Public Interface IEventSystemHandler
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html

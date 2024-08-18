@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.Image.Origin180
+  commentId: T:UnityEngine.UI.Image.Origin180
+  id: Image.Origin180
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.Image.Origin180.Bottom
+  - UnityEngine.UI.Image.Origin180.Left
+  - UnityEngine.UI.Image.Origin180.Right
+  - UnityEngine.UI.Image.Origin180.Top
+  langs:
+  - csharp
+  - vb
+  name: Image.Origin180
+  nameWithType: Image.Origin180
+  fullName: UnityEngine.UI.Image.Origin180
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Origin180
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 185
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Origin for the Image.FillMethod.Radial180.
+  example: []
+  syntax:
+    content: public enum Image.Origin180
+    content.vb: Public Enum Image.Origin180
+- uid: UnityEngine.UI.Image.Origin180.Bottom
+  commentId: F:UnityEngine.UI.Image.Origin180.Bottom
+  id: Bottom
+  parent: UnityEngine.UI.Image.Origin180
+  langs:
+  - csharp
+  - vb
+  name: Bottom
+  nameWithType: Image.Origin180.Bottom
+  fullName: UnityEngine.UI.Image.Origin180.Bottom
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Bottom
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 190
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Center of the radial at the center of the Bottom edge.
+  example: []
+  syntax:
+    content: Bottom = 0
+    return:
+      type: UnityEngine.UI.Image.Origin180
+- uid: UnityEngine.UI.Image.Origin180.Left
+  commentId: F:UnityEngine.UI.Image.Origin180.Left
+  id: Left
+  parent: UnityEngine.UI.Image.Origin180
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: Image.Origin180.Left
+  fullName: UnityEngine.UI.Image.Origin180.Left
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Left
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 195
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Center of the radial at the center of the Left edge.
+  example: []
+  syntax:
+    content: Left = 1
+    return:
+      type: UnityEngine.UI.Image.Origin180
+- uid: UnityEngine.UI.Image.Origin180.Top
+  commentId: F:UnityEngine.UI.Image.Origin180.Top
+  id: Top
+  parent: UnityEngine.UI.Image.Origin180
+  langs:
+  - csharp
+  - vb
+  name: Top
+  nameWithType: Image.Origin180.Top
+  fullName: UnityEngine.UI.Image.Origin180.Top
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Top
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 200
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Center of the radial at the center of the Top edge.
+  example: []
+  syntax:
+    content: Top = 2
+    return:
+      type: UnityEngine.UI.Image.Origin180
+- uid: UnityEngine.UI.Image.Origin180.Right
+  commentId: F:UnityEngine.UI.Image.Origin180.Right
+  id: Right
+  parent: UnityEngine.UI.Image.Origin180
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: Image.Origin180.Right
+  fullName: UnityEngine.UI.Image.Origin180.Right
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Right
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 205
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Center of the radial at the center of the Right edge.
+  example: []
+  syntax:
+    content: Right = 3
+    return:
+      type: UnityEngine.UI.Image.Origin180
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.Image.Origin180
+  commentId: T:UnityEngine.UI.Image.Origin180
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Image.html
+  name: Image.Origin180
+  nameWithType: Image.Origin180
+  fullName: UnityEngine.UI.Image.Origin180
+  spec.csharp:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.Origin180
+    name: Origin180
+    href: UnityEngine.UI.Image.Origin180.html
+  spec.vb:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.Origin180
+    name: Origin180
+    href: UnityEngine.UI.Image.Origin180.html

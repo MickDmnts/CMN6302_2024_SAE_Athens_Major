@@ -1,0 +1,3922 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class InputField </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class InputField ">
+      
+      <meta name="description" content="Turn a simple label into a interactable input field.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/new/mad/apiSpec/new?filename=UnityEngine_UI_InputField.md&amp;value=---%0Auid%3A%20UnityEngine.UI.InputField%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UnityEngine.UI.InputField">
+
+
+
+  <h1 id="UnityEngine_UI_InputField" data-uid="UnityEngine.UI.InputField" class="text-break">
+Class InputField  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UnityEngine.html">UnityEngine</a>.<a class="xref" href="UnityEngine.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UnityEngine.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Turn a simple label into a interactable input field.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;UI/Legacy/Input Field&quot;, 103)]
+public class InputField : Selectable, IMoveHandler, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler, ISelectHandler, IDeselectHandler, IUpdateSelectedHandler, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerClickHandler, ISubmitHandler, IEventSystemHandler, ICanvasElement, ILayoutElement</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html">UIBehaviour</a></div>
+      <div><a class="xref" href="UnityEngine.UI.Selectable.html">Selectable</a></div>
+      <div><span class="xref">InputField</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="UnityEngine.EventSystems.IMoveHandler.html">IMoveHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IPointerDownHandler.html">IPointerDownHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IPointerUpHandler.html">IPointerUpHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IPointerEnterHandler.html">IPointerEnterHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IPointerExitHandler.html">IPointerExitHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.ISelectHandler.html">ISelectHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IDeselectHandler.html">IDeselectHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IUpdateSelectedHandler.html">IUpdateSelectedHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IBeginDragHandler.html">IBeginDragHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IDragHandler.html">IDragHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IEndDragHandler.html">IEndDragHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IPointerClickHandler.html">IPointerClickHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.ISubmitHandler.html">ISubmitHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IEventSystemHandler.html">IEventSystemHandler</a></div>
+      <div><a class="xref" href="UnityEngine.UI.ICanvasElement.html">ICanvasElement</a></div>
+      <div><a class="xref" href="UnityEngine.UI.ILayoutElement.html">ILayoutElement</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_s_Selectables">Selectable.s_Selectables</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_s_SelectableCount">Selectable.s_SelectableCount</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_allSelectablesArray">Selectable.allSelectablesArray</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_allSelectableCount">Selectable.allSelectableCount</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_allSelectables">Selectable.allSelectables</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_AllSelectablesNoAlloc_UnityEngine_UI_Selectable___">Selectable.AllSelectablesNoAlloc(Selectable[])</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_m_CurrentIndex">Selectable.m_CurrentIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_navigation">Selectable.navigation</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_transition">Selectable.transition</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_colors">Selectable.colors</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_spriteState">Selectable.spriteState</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_animationTriggers">Selectable.animationTriggers</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_targetGraphic">Selectable.targetGraphic</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_interactable">Selectable.interactable</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_image">Selectable.image</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_Awake">Selectable.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnCanvasGroupChanged">Selectable.OnCanvasGroupChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_IsInteractable">Selectable.IsInteractable()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnDidApplyAnimationProperties">Selectable.OnDidApplyAnimationProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnTransformParentChanged">Selectable.OnTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_currentSelectionState">Selectable.currentSelectionState</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_InstantClearState">Selectable.InstantClearState()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectable_UnityEngine_Vector3_">Selectable.FindSelectable(Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectableOnLeft">Selectable.FindSelectableOnLeft()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectableOnRight">Selectable.FindSelectableOnRight()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectableOnUp">Selectable.FindSelectableOnUp()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectableOnDown">Selectable.FindSelectableOnDown()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnMove_UnityEngine_EventSystems_AxisEventData_">Selectable.OnMove(AxisEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_IsHighlighted">Selectable.IsHighlighted()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_IsPressed">Selectable.IsPressed()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnPointerUp_UnityEngine_EventSystems_PointerEventData_">Selectable.OnPointerUp(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnPointerEnter_UnityEngine_EventSystems_PointerEventData_">Selectable.OnPointerEnter(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnPointerExit_UnityEngine_EventSystems_PointerEventData_">Selectable.OnPointerExit(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_Select">Selectable.Select()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_Start">UIBehaviour.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_IsActive">UIBehaviour.IsActive()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnRectTransformDimensionsChange">UIBehaviour.OnRectTransformDimensionsChange()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnBeforeTransformParentChanged">UIBehaviour.OnBeforeTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnCanvasHierarchyChanged">UIBehaviour.OnCanvasHierarchyChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_IsDestroyed">UIBehaviour.IsDestroyed()</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.Invoke(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.InvokeRepeating(string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.CancelInvoke(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.IsInvoking(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine_Auto(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StopCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(Coroutine)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StopCoroutine(string)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">MonoBehaviour.print(object)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.destroyCancellationToken</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponent(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.TryGetComponent(Type, out Component)</a>
+    </div>
+    <div>
+      <span class="xref">Component.TryGetComponent&lt;T&gt;(out T)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.GetComponent(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type, List&lt;Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentIndex()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.CompareTag(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <span class="xref">Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Scene)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate(Object, Transform, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate&lt;T&gt;(T, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.Destroy(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Destroy(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.DestroyImmediate(Object, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyImmediate(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DontDestroyOnLoad(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.DestroyObject(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyObject(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <span class="xref">Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Object.name</span>
+    </div>
+    <div>
+      <span class="xref">Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UnityEngine_UI_InputField__ctor_" data-uid="UnityEngine.UI.InputField.#ctor*"></a>
+
+  <h3 id="UnityEngine_UI_InputField__ctor" data-uid="UnityEngine.UI.InputField.#ctor">
+  InputField()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L344"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected InputField()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="UnityEngine_UI_InputField_m_CaretPosition" data-uid="UnityEngine.UI.InputField.m_CaretPosition">
+  m_CaretPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L298"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int m_CaretPosition</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="UnityEngine_UI_InputField_m_CaretSelectPosition" data-uid="UnityEngine.UI.InputField.m_CaretSelectPosition">
+  m_CaretSelectPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int m_CaretSelectPosition</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="UnityEngine_UI_InputField_m_CaretVisible" data-uid="UnityEngine.UI.InputField.m_CaretVisible">
+  m_CaretVisible
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L312"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool m_CaretVisible</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="UnityEngine_UI_InputField_m_CursorVerts" data-uid="UnityEngine.UI.InputField.m_CursorVerts">
+  m_CursorVerts
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L301"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UIVertex[] m_CursorVerts</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UIVertex</span>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="UnityEngine_UI_InputField_m_DrawEnd" data-uid="UnityEngine.UI.InputField.m_DrawEnd">
+  m_DrawEnd
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L316"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int m_DrawEnd</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="UnityEngine_UI_InputField_m_DrawStart" data-uid="UnityEngine.UI.InputField.m_DrawStart">
+  m_DrawStart
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int m_DrawStart</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="UnityEngine_UI_InputField_m_Keyboard" data-uid="UnityEngine.UI.InputField.m_Keyboard">
+  m_Keyboard
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TouchScreenKeyboard m_Keyboard</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TouchScreenKeyboard</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="UnityEngine_UI_InputField_m_Mesh" data-uid="UnityEngine.UI.InputField.m_Mesh">
+  m_Mesh
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L305"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+protected Mesh m_Mesh</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Mesh</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="UnityEngine_UI_InputField_m_Placeholder" data-uid="UnityEngine.UI.InputField.m_Placeholder">
+  m_Placeholder
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+protected Graphic m_Placeholder</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Graphic.html">Graphic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="UnityEngine_UI_InputField_m_Text" data-uid="UnityEngine.UI.InputField.m_Text">
+  m_Text
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[Multiline]
+[FormerlySerializedAs(&quot;mValue&quot;)]
+protected string m_Text</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="UnityEngine_UI_InputField_m_TextComponent" data-uid="UnityEngine.UI.InputField.m_TextComponent">
+  m_TextComponent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L215"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Text Text used to display the input's value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[SerializeField]
+[FormerlySerializedAs(&quot;text&quot;)]
+protected Text m_TextComponent</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Text.html">Text</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UnityEngine_UI_InputField_asteriskChar_" data-uid="UnityEngine.UI.InputField.asteriskChar*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_asteriskChar" data-uid="UnityEngine.UI.InputField.asteriskChar">
+  asteriskChar
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1010"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The character used to hide text in password field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public char asteriskChar { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_asteriskChar_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public InputField mainInputField;
+
+    void Start()
+    {
+        // changes the password symbol. 0 = $, 1 = ! 2 = £ and so on.
+        mainInputField.asteriskChar = "$!£%&amp;*"[0];
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_asteriskChar_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Not shown in the inspector.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_InputField_cachedInputTextGenerator_" data-uid="UnityEngine.UI.InputField.cachedInputTextGenerator*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_cachedInputTextGenerator" data-uid="UnityEngine.UI.InputField.cachedInputTextGenerator">
+  cachedInputTextGenerator
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L359"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected TextGenerator cachedInputTextGenerator { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TextGenerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_caretBlinkRate_" data-uid="UnityEngine.UI.InputField.caretBlinkRate*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_caretBlinkRate" data-uid="UnityEngine.UI.InputField.caretBlinkRate">
+  caretBlinkRate
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L562"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The blinking rate of the input caret, defined as the number of times the blink cycle occurs per second.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float caretBlinkRate { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_caretColor_" data-uid="UnityEngine.UI.InputField.caretColor*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_caretColor" data-uid="UnityEngine.UI.InputField.caretColor">
+  caretColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L620"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The custom caret color used if customCaretColor is set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color caretColor { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_caretPosition_" data-uid="UnityEngine.UI.InputField.caretPosition*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_caretPosition" data-uid="UnityEngine.UI.InputField.caretPosition">
+  caretPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1047"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get: Returns the focus position as thats the position that moves around even during selection.
+Set: Set both the anchor and focus position such that a selection doesn't happen</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int caretPosition { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_caretPositionInternal_" data-uid="UnityEngine.UI.InputField.caretPositionInternal*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_caretPositionInternal" data-uid="UnityEngine.UI.InputField.caretPositionInternal">
+  caretPositionInternal
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1032"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Current position of the cursor.
+Getters are public Setters are protected</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int caretPositionInternal { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_caretSelectPositionInternal_" data-uid="UnityEngine.UI.InputField.caretSelectPositionInternal*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_caretSelectPositionInternal" data-uid="UnityEngine.UI.InputField.caretSelectPositionInternal">
+  caretSelectPositionInternal
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1033"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int caretSelectPositionInternal { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_caretWidth_" data-uid="UnityEngine.UI.InputField.caretWidth*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_caretWidth" data-uid="UnityEngine.UI.InputField.caretWidth">
+  caretWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L578"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The width of the caret in pixels.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int caretWidth { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_characterLimit_" data-uid="UnityEngine.UI.InputField.characterLimit*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_characterLimit" data-uid="UnityEngine.UI.InputField.characterLimit">
+  characterLimit
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L824"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>How many characters the input field is limited to. 0 = infinite.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int characterLimit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_characterLimit_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public InputField mainInputField;
+    public string playerName;
+
+    void Start()
+    {
+        //Changes the character limit in the main input field.
+        mainInputField.characterLimit = playerName.Length;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_characterValidation_" data-uid="UnityEngine.UI.InputField.characterValidation*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_characterValidation" data-uid="UnityEngine.UI.InputField.characterValidation">
+  characterValidation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L943"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type of validation to perform on a character</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputField.CharacterValidation characterValidation { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.InputField.html">InputField</a>.<a class="xref" href="UnityEngine.UI.InputField.CharacterValidation.html">CharacterValidation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_contentType_" data-uid="UnityEngine.UI.InputField.contentType*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_contentType" data-uid="UnityEngine.UI.InputField.contentType">
+  contentType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L865"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specifies the type of the input text content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputField.ContentType contentType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.InputField.html">InputField</a>.<a class="xref" href="UnityEngine.UI.InputField.ContentType.html">ContentType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_contentType_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public InputField mainInputField;
+    public string playerName;
+
+    void Start()
+    {
+        //Changes the character limit in the main input field.
+        mainInputField.characterLimit = playerName.Length;
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_contentType_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The ContentType affects character validation, keyboard type used (on platforms with on-screen keyboards), whether the InputField accepts multiple lines, and whether the text is autocorrected (on platforms that offer input auto-correction) or is treated as a password where the characters are not shown directly.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_InputField_customCaretColor_" data-uid="UnityEngine.UI.InputField.customCaretColor*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_customCaretColor" data-uid="UnityEngine.UI.InputField.customCaretColor">
+  customCaretColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L625"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Should a custom caret color be used or should the textComponent.color be used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool customCaretColor { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_flexibleHeight_" data-uid="UnityEngine.UI.InputField.flexibleHeight*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_flexibleHeight" data-uid="UnityEngine.UI.InputField.flexibleHeight">
+  flexibleHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L3469"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ILayoutElement.flexibleHeight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float flexibleHeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_flexibleWidth_" data-uid="UnityEngine.UI.InputField.flexibleWidth*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_flexibleWidth" data-uid="UnityEngine.UI.InputField.flexibleWidth">
+  flexibleWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L3445"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ILayoutElement.flexibleWidth.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float flexibleWidth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_inputType_" data-uid="UnityEngine.UI.InputField.inputType*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_inputType" data-uid="UnityEngine.UI.InputField.inputType">
+  inputType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L920"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The type of input expected. See InputField.InputType.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputField.InputType inputType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.InputField.html">InputField</a>.<a class="xref" href="UnityEngine.UI.InputField.InputType.html">InputType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_isFocused_" data-uid="UnityEngine.UI.InputField.isFocused*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_isFocused" data-uid="UnityEngine.UI.InputField.isFocused">
+  isFocused
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L554"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the InputField has focus and whether it is able to process events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isFocused { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_isFocused_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public GameObject mainInputField;
+
+    void Update()
+    {
+        //If the input field is focused, change its color to green.
+        if (mainInputField.GetComponent&lt;InputField&gt;().isFocused == true)
+        {
+            mainInputField.GetComponent&lt;Image&gt;().color = Color.green;
+        }
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_keyboardType_" data-uid="UnityEngine.UI.InputField.keyboardType*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_keyboardType" data-uid="UnityEngine.UI.InputField.keyboardType">
+  keyboardType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L930"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>They type of mobile keyboard that will be used.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TouchScreenKeyboardType keyboardType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TouchScreenKeyboardType</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_layoutPriority_" data-uid="UnityEngine.UI.InputField.layoutPriority*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_layoutPriority" data-uid="UnityEngine.UI.InputField.layoutPriority">
+  layoutPriority
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L3474"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ILayoutElement.layoutPriority.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int layoutPriority { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_lineType_" data-uid="UnityEngine.UI.InputField.lineType*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_lineType" data-uid="UnityEngine.UI.InputField.lineType">
+  lineType
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L904"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The LineType used by the InputField.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputField.LineType lineType { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.InputField.html">InputField</a>.<a class="xref" href="UnityEngine.UI.InputField.LineType.html">LineType</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_lineType_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public GameObject mainInputField;
+
+    //When you press a button, this method is called.
+    public void ChangeInputField(int type)
+    {
+        if (type == 0)
+        {
+            //Change the input field to "Single Line" line type.
+            mainInputField.GetComponent&lt;InputField&gt;().lineType = InputField.LineType.SingleLine;
+        }
+        else if (type == 1)
+        {
+            //Change the input field to "MultiLine Newline" line type.
+            mainInputField.GetComponent&lt;InputField&gt;().lineType = InputField.LineType.MultiLineNewline;
+        }
+        else if (type == 2)
+        {
+            //Change the input field to "MultiLine Submit" line type.
+            mainInputField.GetComponent&lt;InputField&gt;().lineType = InputField.LineType.MultiLineSubmit;
+        }
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_mesh_" data-uid="UnityEngine.UI.InputField.mesh*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_mesh" data-uid="UnityEngine.UI.InputField.mesh">
+  mesh
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Mesh mesh { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Mesh</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_minHeight_" data-uid="UnityEngine.UI.InputField.minHeight*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_minHeight" data-uid="UnityEngine.UI.InputField.minHeight">
+  minHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L3450"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ILayoutElement.minHeight.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float minHeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_minWidth_" data-uid="UnityEngine.UI.InputField.minWidth*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_minWidth" data-uid="UnityEngine.UI.InputField.minWidth">
+  minWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L3426"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ILayoutElement.minWidth.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float minWidth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_multiLine_" data-uid="UnityEngine.UI.InputField.multiLine*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_multiLine" data-uid="UnityEngine.UI.InputField.multiLine">
+  multiLine
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L982"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>If the input field supports multiple lines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool multiLine { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_multiLine_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public InputField mainInputField;
+
+    public void Update()
+    {
+        //Check to see if the input field is set to allow multiple lines.
+        if (mainInputField.multiLine)
+        {
+            //Set the input field to only allow Single Lines, if it is currently set to allow Multiple lines.
+            mainInputField.lineType = InputField.LineType.SingleLine;
+            //Print to console
+            Debug.Log("The main input field is now set to allow single lines only!");
+        }
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_onEndEdit_" data-uid="UnityEngine.UI.InputField.onEndEdit*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_onEndEdit" data-uid="UnityEngine.UI.InputField.onEndEdit">
+  onEndEdit
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L689"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The Unity Event to call when editing has ended</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputField.EndEditEvent onEndEdit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.InputField.html">InputField</a>.<a class="xref" href="UnityEngine.UI.InputField.EndEditEvent.html">EndEditEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_onEndEdit_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public InputField mainInputField;
+
+    // Checks if there is anything entered into the input field.
+    void LockInput(InputField input)
+    {
+        if (input.text.Length &gt; 0)
+        {
+            Debug.Log("Text has been entered");
+        }
+        else if (input.text.Length == 0)
+        {
+            Debug.Log("Main Input Empty");
+        }
+    }
+
+    public void Start()
+    {
+        //Adds a listener that invokes the "LockInput" method when the player finishes editing the main input field.
+        //Passes the main input field into the method when "LockInput" is invoked
+        mainInputField.onEndEdit.AddListener(delegate {LockInput(mainInputField); });
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_onSubmit_" data-uid="UnityEngine.UI.InputField.onSubmit*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_onSubmit" data-uid="UnityEngine.UI.InputField.onSubmit">
+  onSubmit
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L728"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The Unity Event to call when editing has ended</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputField.SubmitEvent onSubmit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.InputField.html">InputField</a>.<a class="xref" href="UnityEngine.UI.InputField.SubmitEvent.html">SubmitEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_onSubmit_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public InputField mainInputField;
+
+    // Checks if there is anything entered into the input field.
+    void LockInput(InputField input)
+    {
+        if (input.text.Length &gt; 0)
+        {
+            Debug.Log("Text has been entered");
+        }
+        else if (input.text.Length == 0)
+        {
+            Debug.Log("Main Input Empty");
+        }
+    }
+
+    public void Start()
+    {
+        //Adds a listener that invokes the "LockInput" method when the player finishes editing the main input field.
+        //Passes the main input field into the method when "LockInput" is invoked
+        mainInputField.onSubmit.AddListener(delegate {LockInput(mainInputField); });
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_onValidateInput_" data-uid="UnityEngine.UI.InputField.onValidateInput*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_onValidateInput" data-uid="UnityEngine.UI.InputField.onValidateInput">
+  onValidateInput
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L798"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The function to call to validate the input characters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputField.OnValidateInput onValidateInput { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.InputField.html">InputField</a>.<a class="xref" href="UnityEngine.UI.InputField.OnValidateInput.html">OnValidateInput</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_onValidateInput_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public InputField mainInputField;
+
+    public void Start()
+    {
+        // Sets the MyValidate method to invoke after the input field's default input validation invoke (default validation happens every time a character is entered into the text field.)
+        mainInputField.onValidateInput += delegate(string input, int charIndex, char addedChar) { return MyValidate(addedChar); };
+    }
+
+    private char MyValidate(char charToValidate)
+    {
+        //Checks if a dollar sign is entered....
+        if (charToValidate == '$')
+        {
+            // ... if it is change it to an empty character.
+            charToValidate = '\0';
+        }
+        return charToValidate;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_onValueChange_" data-uid="UnityEngine.UI.InputField.onValueChange*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_onValueChange" data-uid="UnityEngine.UI.InputField.onValueChange">
+  onValueChange
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L730"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;onValueChange has been renamed to onValueChanged&quot;)]
+public InputField.OnChangeEvent onValueChange { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.InputField.html">InputField</a>.<a class="xref" href="UnityEngine.UI.InputField.OnChangeEvent.html">OnChangeEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_onValueChanged_" data-uid="UnityEngine.UI.InputField.onValueChanged*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_onValueChanged" data-uid="UnityEngine.UI.InputField.onValueChanged">
+  onValueChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L762"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Accessor to the OnChangeEvent.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InputField.OnChangeEvent onValueChanged { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.InputField.html">InputField</a>.<a class="xref" href="UnityEngine.UI.InputField.OnChangeEvent.html">OnChangeEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_onValueChanged_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public InputField mainInputField;
+
+    public void Start()
+    {
+        //Adds a listener to the main input field and invokes a method when the value changes.
+        mainInputField.onValueChange.AddListener(delegate {ValueChangeCheck(); });
+    }
+
+    // Invoked when the value of the text field changes.
+    public void ValueChangeCheck()
+    {
+        Debug.Log("Value Changed");
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_placeholder_" data-uid="UnityEngine.UI.InputField.placeholder*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_placeholder" data-uid="UnityEngine.UI.InputField.placeholder">
+  placeholder
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L615"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This is an optional ‘empty’ graphic to show that the InputField text field is empty. Note that this ‘empty' graphic still displays even when the InputField is selected (that is; when there is focus on it).
+A placeholder graphic can be used to show subtle hints or make it more obvious that the control is an InputField.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Graphic placeholder { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Graphic.html">Graphic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_placeholder_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If a Text component is used as the placeholder, it's recommended to make the placeholder text look different from the real text of the InputField so they are not easily confused. For example, the placeholder text might be a more subtle color or have lower alpha value.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_InputField_preferredHeight_" data-uid="UnityEngine.UI.InputField.preferredHeight*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_preferredHeight" data-uid="UnityEngine.UI.InputField.preferredHeight">
+  preferredHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L3455"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get the height of all the text if constrained to the height of the RectTransform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float preferredHeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_preferredWidth_" data-uid="UnityEngine.UI.InputField.preferredWidth*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_preferredWidth" data-uid="UnityEngine.UI.InputField.preferredWidth">
+  preferredWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L3431"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Get the displayed with of all input characters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float preferredWidth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_readOnly_" data-uid="UnityEngine.UI.InputField.readOnly*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_readOnly" data-uid="UnityEngine.UI.InputField.readOnly">
+  readOnly
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L951"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the InputField to be read only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool readOnly { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_readOnly_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Setting read only allows for highlighting of text without allowing modifications via keyboard.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_InputField_selectionAnchorPosition_" data-uid="UnityEngine.UI.InputField.selectionAnchorPosition*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_selectionAnchorPosition" data-uid="UnityEngine.UI.InputField.selectionAnchorPosition">
+  selectionAnchorPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1061"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The beginning point of the selection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int selectionAnchorPosition { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_selectionAnchorPosition_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When making a selection with a mouse, the anchor is where in the document the mouse button is initially pressed.
+Get: Returns the beginning position of selection
+Set: If Input.compositionString is 0 set the fixed position.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_InputField_selectionColor_" data-uid="UnityEngine.UI.InputField.selectionColor*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_selectionColor" data-uid="UnityEngine.UI.InputField.selectionColor">
+  selectionColor
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L650"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The color of the highlight to show which characters are selected.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Color selectionColor { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Color</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_selectionColor_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public InputField mainInputField;
+
+    // Changes the color of the highlight that shows what characters are selected.
+    void ChangeSelectionColor()
+    {
+        mainInputField.selectionColor = Color.red;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_selectionFocusPosition_" data-uid="UnityEngine.UI.InputField.selectionFocusPosition*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_selectionFocusPosition" data-uid="UnityEngine.UI.InputField.selectionFocusPosition">
+  selectionFocusPosition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1082"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The end point of the selection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int selectionFocusPosition { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_selectionFocusPosition_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When making a selection with a mouse, the focus is where in the document the mouse button is released.
+Get: Returns the end position of selection
+Set: If Input.compositionString is 0 set the variable position.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_InputField_shouldActivateOnSelect_" data-uid="UnityEngine.UI.InputField.shouldActivateOnSelect*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_shouldActivateOnSelect" data-uid="UnityEngine.UI.InputField.shouldActivateOnSelect">
+  shouldActivateOnSelect
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L417"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Should the inputfield be automatically activated upon selection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual bool shouldActivateOnSelect { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_shouldHideMobileInput_" data-uid="UnityEngine.UI.InputField.shouldHideMobileInput*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_shouldHideMobileInput" data-uid="UnityEngine.UI.InputField.shouldHideMobileInput">
+  shouldHideMobileInput
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L393"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Should the mobile keyboard input be hidden. This allows for input to happen with a caret in the InputField instead of a OS input box above the keyboard.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool shouldHideMobileInput { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_shouldHideMobileInput_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public InputField mainInputField;
+
+    public void Start()
+    {
+        //This setting can be toggled in the inspector.
+        mainInputField.shouldHideMobileInput = true;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_text_" data-uid="UnityEngine.UI.InputField.text*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_text" data-uid="UnityEngine.UI.InputField.text">
+  text
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L455"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Input field's current text value. This is not necessarily the same as what is visible on screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string text { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_text_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public InputField mainInputField;
+
+    public void Start()
+    {
+        mainInputField.text = "Enter Text Here...";
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_text_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Note that null is invalid value  for InputField.text.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_InputField_textComponent_" data-uid="UnityEngine.UI.InputField.textComponent*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_textComponent" data-uid="UnityEngine.UI.InputField.textComponent">
+  textComponent
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L583"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The Text component that is going to be used to render the text to screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Text textComponent { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Text.html">Text</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_touchScreenKeyboard_" data-uid="UnityEngine.UI.InputField.touchScreenKeyboard*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_touchScreenKeyboard" data-uid="UnityEngine.UI.InputField.touchScreenKeyboard">
+  touchScreenKeyboard
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L925"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The TouchScreenKeyboard being used to edit the Input Field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TouchScreenKeyboard touchScreenKeyboard { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TouchScreenKeyboard</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_wasCanceled_" data-uid="UnityEngine.UI.InputField.wasCanceled*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_wasCanceled" data-uid="UnityEngine.UI.InputField.wasCanceled">
+  wasCanceled
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1015"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>If the InputField was canceled and will revert back to the original text upon DeactivateInputField.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool wasCanceled { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UnityEngine_UI_InputField_ActivateInputField_" data-uid="UnityEngine.UI.InputField.ActivateInputField*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_ActivateInputField" data-uid="UnityEngine.UI.InputField.ActivateInputField">
+  ActivateInputField()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L3127"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Function to activate the InputField to begin processing Events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ActivateInputField()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_ActivateInputField_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;
+
+public class Example : MonoBehaviour
+{
+    public InputField mainInputField;
+
+    // Activate the main input field when the scene starts.
+    void Start()
+    {
+        mainInputField.ActivateInputField();
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_ActivateInputField_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Will only activate if deactivated.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_InputField_Append_" data-uid="UnityEngine.UI.InputField.Append*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_Append_System_Char_" data-uid="UnityEngine.UI.InputField.Append(System.Char)">
+  Append(char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L2440"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Append a character to the input field, taking into account the validation of each character.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Append(char input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>Character to append.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_Append_" data-uid="UnityEngine.UI.InputField.Append*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_Append_System_String_" data-uid="UnityEngine.UI.InputField.Append(System.String)">
+  Append(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L2414"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Append the specified text to the end of the current text string. Appends character by character testing validation criteria.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Append(string input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The String to append.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_CalculateLayoutInputHorizontal_" data-uid="UnityEngine.UI.InputField.CalculateLayoutInputHorizontal*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_CalculateLayoutInputHorizontal" data-uid="UnityEngine.UI.InputField.CalculateLayoutInputHorizontal">
+  CalculateLayoutInputHorizontal()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L3416"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ILayoutElement.CalculateLayoutInputHorizontal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CalculateLayoutInputHorizontal()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_CalculateLayoutInputVertical_" data-uid="UnityEngine.UI.InputField.CalculateLayoutInputVertical*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_CalculateLayoutInputVertical" data-uid="UnityEngine.UI.InputField.CalculateLayoutInputVertical">
+  CalculateLayoutInputVertical()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L3421"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ILayoutElement.CalculateLayoutInputVertical.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CalculateLayoutInputVertical()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_ClampPos_" data-uid="UnityEngine.UI.InputField.ClampPos*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_ClampPos_System_Int32__" data-uid="UnityEngine.UI.InputField.ClampPos(System.Int32@)">
+  ClampPos(ref int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1021"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clamp a value (by reference) between 0 and the current text length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void ClampPos(ref int pos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The input position to be clampped</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_DeactivateInputField_" data-uid="UnityEngine.UI.InputField.DeactivateInputField*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_DeactivateInputField" data-uid="UnityEngine.UI.InputField.DeactivateInputField">
+  DeactivateInputField()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L3236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Function to deactivate the InputField to stop the processing of Events and send OnSubmit if not canceled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void DeactivateInputField()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_DeactivateInputField_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class Example : MonoBehaviour
+{
+    public InputField mainInputField;
+
+    // Deactivates the main input field when the scene starts.
+    void Start()
+    {
+        mainInputField.DeactivateInputField();
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_DoStateTransition_" data-uid="UnityEngine.UI.InputField.DoStateTransition*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_DoStateTransition_UnityEngine_UI_Selectable_SelectionState_System_Boolean_" data-uid="UnityEngine.UI.InputField.DoStateTransition(UnityEngine.UI.Selectable.SelectionState,System.Boolean)">
+  DoStateTransition(SelectionState, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L3403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Transition the Selectable to the entered state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void DoStateTransition(Selectable.SelectionState state, bool instant)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>state</code> <a class="xref" href="UnityEngine.UI.Selectable.html">Selectable</a>.<a class="xref" href="UnityEngine.UI.Selectable.SelectionState.html">SelectionState</a></dt>
+    <dd><p>State to transition to</p>
+</dd>
+    <dt><code>instant</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Should the transition occur instantly.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_ForceLabelUpdate_" data-uid="UnityEngine.UI.InputField.ForceLabelUpdate*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_ForceLabelUpdate" data-uid="UnityEngine.UI.InputField.ForceLabelUpdate">
+  ForceLabelUpdate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L2713"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Force the label to update immediatly. This will recalculate the positioning of the caret and the visible text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ForceLabelUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_GetCharacterIndexFromPosition_" data-uid="UnityEngine.UI.InputField.GetCharacterIndexFromPosition*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_GetCharacterIndexFromPosition_UnityEngine_Vector2_" data-uid="UnityEngine.UI.InputField.GetCharacterIndexFromPosition(UnityEngine.Vector2)">
+  GetCharacterIndexFromPosition(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1635"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Given an input position in local space on the Text return the index for the selection cursor at this position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int GetCharacterIndexFromPosition(Vector2 pos)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>pos</code> <span class="xref">Vector2</span></dt>
+    <dd><p>Mouse position.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Character index with in value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_GraphicUpdateComplete_" data-uid="UnityEngine.UI.InputField.GraphicUpdateComplete*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_GraphicUpdateComplete" data-uid="UnityEngine.UI.InputField.GraphicUpdateComplete">
+  GraphicUpdateComplete()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L2751"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ICanvasElement.GraphicUpdateComplete. Does nothing by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GraphicUpdateComplete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_KeyPressed_" data-uid="UnityEngine.UI.InputField.KeyPressed*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_KeyPressed_UnityEngine_Event_" data-uid="UnityEngine.UI.InputField.KeyPressed(UnityEngine.Event)">
+  KeyPressed(Event)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1815"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Process the Event and perform the appropriate action for that key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected InputField.EditState KeyPressed(Event evt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>evt</code> <span class="xref">Event</span></dt>
+    <dd><p>The Event that is currently being processed.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.InputField.html">InputField</a>.<a class="xref" href="UnityEngine.UI.InputField.EditState.html">EditState</a></dt>
+    <dd><p>If we should continue processing events or we have hit an end condition.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_LateUpdate_" data-uid="UnityEngine.UI.InputField.LateUpdate*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_LateUpdate" data-uid="UnityEngine.UI.InputField.LateUpdate">
+  LateUpdate()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1439"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Update the text based on input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void LateUpdate()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_LayoutComplete_" data-uid="UnityEngine.UI.InputField.LayoutComplete*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_LayoutComplete" data-uid="UnityEngine.UI.InputField.LayoutComplete">
+  LayoutComplete()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L2745"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>See ICanvasElement.LayoutComplete. Does nothing by default.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LayoutComplete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_MoveTextEnd_" data-uid="UnityEngine.UI.InputField.MoveTextEnd*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_MoveTextEnd_System_Boolean_" data-uid="UnityEngine.UI.InputField.MoveTextEnd(System.Boolean)">
+  MoveTextEnd(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1306"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Move the caret index to end of text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveTextEnd(bool shift)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shift</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Only move the selection position to facilate selection</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_MoveTextStart_" data-uid="UnityEngine.UI.InputField.MoveTextStart*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_MoveTextStart_System_Boolean_" data-uid="UnityEngine.UI.InputField.MoveTextStart(System.Boolean)">
+  MoveTextStart(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1326"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Move the caret index to start of text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MoveTextStart(bool shift)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>shift</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Only move the selection position to facilate selection</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_OnBeginDrag_" data-uid="UnityEngine.UI.InputField.OnBeginDrag*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_OnBeginDrag_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.UI.InputField.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)">
+  OnBeginDrag(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1681"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Capture the OnBeginDrag callback from the EventSystem and ensure we should listen to the drag events to follow.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnBeginDrag(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></dt>
+    <dd><p>The data passed by the EventSystem</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_OnDeselect_" data-uid="UnityEngine.UI.InputField.OnDeselect*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_OnDeselect_UnityEngine_EventSystems_BaseEventData_" data-uid="UnityEngine.UI.InputField.OnDeselect(UnityEngine.EventSystems.BaseEventData)">
+  OnDeselect(BaseEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L3273"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>What to do when the event system sends a Deselect Event. Defaults to deactivating the inputfield.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnDeselect(BaseEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.BaseEventData.html">BaseEventData</a></dt>
+    <dd><p>The data sent by the EventSystem</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_OnDestroy_" data-uid="UnityEngine.UI.InputField.OnDestroy*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_OnDestroy" data-uid="UnityEngine.UI.InputField.OnDestroy">
+  OnDestroy()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1183"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDestroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_OnDisable_" data-uid="UnityEngine.UI.InputField.OnDisable*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_OnDisable" data-uid="UnityEngine.UI.InputField.OnDisable">
+  OnDisable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDisable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_OnDrag_" data-uid="UnityEngine.UI.InputField.OnDrag*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_OnDrag_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.UI.InputField.OnDrag(UnityEngine.EventSystems.PointerEventData)">
+  OnDrag(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1693"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>If we are able to drag, try and select the character range underneath the bounding rect.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnDrag(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_OnEnable_" data-uid="UnityEngine.UI.InputField.OnEnable*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_OnEnable" data-uid="UnityEngine.UI.InputField.OnEnable">
+  OnEnable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_OnEndDrag_" data-uid="UnityEngine.UI.InputField.OnEndDrag*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_OnEndDrag_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.UI.InputField.OnEndDrag(UnityEngine.EventSystems.PointerEventData)">
+  OnEndDrag(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1758"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Capture the OnEndDrag callback from the EventSystem and cancel the listening of drag events.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnEndDrag(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></dt>
+    <dd><p>The eventData sent by the EventSystem.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_OnFocus_" data-uid="UnityEngine.UI.InputField.OnFocus*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_OnFocus" data-uid="UnityEngine.UI.InputField.OnFocus">
+  OnFocus()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1285"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Focus the input field initializing properties.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void OnFocus()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_OnFocus_examples">Examples</h4>
+  <p>//Create an Input Field by going to <strong>Create</strong>&gt;<strong>UI</strong>&gt;<strong>Input Field</strong>. Attach this script to the Input Field GameObject</p>
+<pre><code class="lang-csharp">using UnityEngine;
+using UnityEngine.UI;
+
+public class Example : MonoBehaviour
+{
+    InputField m_InputField;
+    void Start()
+    {
+        //Fetch the Input Field component from the GameObject
+        m_InputField = GetComponent&lt;InputField&gt;();
+    }
+
+    void Update()
+    {
+        //Check if the Input Field is in focus and able to alter
+        if (m_InputField.isFocused)
+        {
+            //Change the Color of the Input Field's Image to green
+            m_InputField.GetComponent&lt;Image&gt;().color = Color.green;
+        }
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_OnFocus_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Handles what happens after a user selects an InputField. This is a protected property. To return the focus state use InputField.isFocused. To shift focus to another GameObject, use EventSystem.SetSelectedGameObject.
+A common use of this is allowing the user to type once focussed. Another way is outputting a message when the user clicks on a field(often seen when creating passwords).</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_InputField_OnPointerClick_" data-uid="UnityEngine.UI.InputField.OnPointerClick*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_OnPointerClick_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.UI.InputField.OnPointerClick(UnityEngine.EventSystems.PointerEventData)">
+  OnPointerClick(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L3205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>What to do when the event system sends a pointer click Event</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPointerClick(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></dt>
+    <dd><p>The data on which to process</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_OnPointerDown_" data-uid="UnityEngine.UI.InputField.OnPointerDown*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_OnPointerDown_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.UI.InputField.OnPointerDown(UnityEngine.EventSystems.PointerEventData)">
+  OnPointerDown(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1769"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The action to perform when the event system sends a pointer down Event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnPointerDown(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_OnSelect_" data-uid="UnityEngine.UI.InputField.OnSelect*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_OnSelect_UnityEngine_EventSystems_BaseEventData_" data-uid="UnityEngine.UI.InputField.OnSelect(UnityEngine.EventSystems.BaseEventData)">
+  OnSelect(BaseEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L3193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>What to do when the event system sends a submit Event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void OnSelect(BaseEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.BaseEventData.html">BaseEventData</a></dt>
+    <dd><p>The data on which to process</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_OnSubmit_" data-uid="UnityEngine.UI.InputField.OnSubmit*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_OnSubmit_UnityEngine_EventSystems_BaseEventData_" data-uid="UnityEngine.UI.InputField.OnSubmit(UnityEngine.EventSystems.BaseEventData)">
+  OnSubmit(BaseEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L3279"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSubmit(BaseEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.BaseEventData.html">BaseEventData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_OnUpdateSelected_" data-uid="UnityEngine.UI.InputField.OnUpdateSelected*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_OnUpdateSelected_UnityEngine_EventSystems_BaseEventData_" data-uid="UnityEngine.UI.InputField.OnUpdateSelected(UnityEngine.EventSystems.BaseEventData)">
+  OnUpdateSelected(BaseEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L2024"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>What to do when the event system sends a Update selected Event.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnUpdateSelected(BaseEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.BaseEventData.html">BaseEventData</a></dt>
+    <dd><p>The data on which to process.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_ProcessEvent_" data-uid="UnityEngine.UI.InputField.ProcessEvent*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_ProcessEvent_UnityEngine_Event_" data-uid="UnityEngine.UI.InputField.ProcessEvent(UnityEngine.Event)">
+  ProcessEvent(Event)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L2015"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Helper function to allow separate events to be processed by the InputField.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ProcessEvent(Event e)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>e</code> <span class="xref">Event</span></dt>
+    <dd><p>The Event to process</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_Rebuild_" data-uid="UnityEngine.UI.InputField.Rebuild*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_Rebuild_UnityEngine_UI_CanvasUpdate_" data-uid="UnityEngine.UI.InputField.Rebuild(UnityEngine.UI.CanvasUpdate)">
+  Rebuild(CanvasUpdate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L2732"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuild the input fields geometry. (caret and highlight).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Rebuild(CanvasUpdate update)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>update</code> <a class="xref" href="UnityEngine.UI.CanvasUpdate.html">CanvasUpdate</a></dt>
+    <dd><p>Which update loop we are in.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_ScreenToLocal_" data-uid="UnityEngine.UI.InputField.ScreenToLocal*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_ScreenToLocal_UnityEngine_Vector2_" data-uid="UnityEngine.UI.InputField.ScreenToLocal(UnityEngine.Vector2)">
+  ScreenToLocal(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1572"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Obsolete(&quot;This function is no longer used. Please use RectTransformUtility.ScreenPointToLocalPointInRectangle() instead.&quot;)]
+public Vector2 ScreenToLocal(Vector2 screen)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>screen</code> <span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_SelectAll_" data-uid="UnityEngine.UI.InputField.SelectAll*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_SelectAll" data-uid="UnityEngine.UI.InputField.SelectAll">
+  SelectAll()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L1296"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Highlight the whole InputField.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SelectAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_SelectAll_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Sets the caretPosition to the length of the text and caretSelectPos to 0.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_InputField_SendOnEndEdit_" data-uid="UnityEngine.UI.InputField.SendOnEndEdit*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_SendOnEndEdit" data-uid="UnityEngine.UI.InputField.SendOnEndEdit">
+  SendOnEndEdit()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L2393"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convenience function to make functionality to send the ::ref::EndEditEvent easier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SendOnEndEdit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_SendOnSubmit_" data-uid="UnityEngine.UI.InputField.SendOnSubmit*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_SendOnSubmit" data-uid="UnityEngine.UI.InputField.SendOnSubmit">
+  SendOnSubmit()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L2403"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convenience function to make functionality to send the ::ref::SubmitEvent easier.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SendOnSubmit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_SetTextWithoutNotify_" data-uid="UnityEngine.UI.InputField.SetTextWithoutNotify*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_SetTextWithoutNotify_System_String_" data-uid="UnityEngine.UI.InputField.SetTextWithoutNotify(System.String)">
+  SetTextWithoutNotify(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L473"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set the current text value of the Input field without invoking onValueChanged.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetTextWithoutNotify(string input)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>input</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_InputField_SetTextWithoutNotify_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is not necessarily the same as what is visible on screen.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_InputField_UpdateLabel_" data-uid="UnityEngine.UI.InputField.UpdateLabel*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_UpdateLabel" data-uid="UnityEngine.UI.InputField.UpdateLabel">
+  UpdateLabel()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L2485"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Update the Text associated with this input field.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void UpdateLabel()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_InputField_Validate_" data-uid="UnityEngine.UI.InputField.Validate*"></a>
+
+  <h3 id="UnityEngine_UI_InputField_Validate_System_String_System_Int32_System_Char_" data-uid="UnityEngine.UI.InputField.Validate(System.String,System.Int32,System.Char)">
+  Validate(string, int, char)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L2997"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Predefined validation functionality for different characterValidation types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected char Validate(string text, int pos, char ch)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>The whole text string to validate.</p>
+</dd>
+    <dt><code>pos</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The position at which the current character is being inserted.</p>
+</dd>
+    <dt><code>ch</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>The character that is being inserted</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a></dt>
+    <dd><p>The character that should be inserted.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs/#L16" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

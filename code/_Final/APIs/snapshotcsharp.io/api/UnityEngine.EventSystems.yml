@@ -1,0 +1,578 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  id: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.AbstractEventData
+  - UnityEngine.EventSystems.AxisEventData
+  - UnityEngine.EventSystems.BaseEventData
+  - UnityEngine.EventSystems.BaseInput
+  - UnityEngine.EventSystems.BaseInputModule
+  - UnityEngine.EventSystems.BaseRaycaster
+  - UnityEngine.EventSystems.EventHandle
+  - UnityEngine.EventSystems.EventSystem
+  - UnityEngine.EventSystems.EventTrigger
+  - UnityEngine.EventSystems.EventTrigger.Entry
+  - UnityEngine.EventSystems.EventTrigger.TriggerEvent
+  - UnityEngine.EventSystems.EventTriggerType
+  - UnityEngine.EventSystems.ExecuteEvents
+  - UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  - UnityEngine.EventSystems.IBeginDragHandler
+  - UnityEngine.EventSystems.ICancelHandler
+  - UnityEngine.EventSystems.IDeselectHandler
+  - UnityEngine.EventSystems.IDragHandler
+  - UnityEngine.EventSystems.IDropHandler
+  - UnityEngine.EventSystems.IEndDragHandler
+  - UnityEngine.EventSystems.IEventSystemHandler
+  - UnityEngine.EventSystems.IInitializePotentialDragHandler
+  - UnityEngine.EventSystems.IMoveHandler
+  - UnityEngine.EventSystems.IPointerClickHandler
+  - UnityEngine.EventSystems.IPointerDownHandler
+  - UnityEngine.EventSystems.IPointerEnterHandler
+  - UnityEngine.EventSystems.IPointerExitHandler
+  - UnityEngine.EventSystems.IPointerMoveHandler
+  - UnityEngine.EventSystems.IPointerUpHandler
+  - UnityEngine.EventSystems.IScrollHandler
+  - UnityEngine.EventSystems.ISelectHandler
+  - UnityEngine.EventSystems.ISubmitHandler
+  - UnityEngine.EventSystems.IUpdateSelectedHandler
+  - UnityEngine.EventSystems.MoveDirection
+  - UnityEngine.EventSystems.Physics2DRaycaster
+  - UnityEngine.EventSystems.PhysicsRaycaster
+  - UnityEngine.EventSystems.PointerEventData
+  - UnityEngine.EventSystems.PointerEventData.FramePressState
+  - UnityEngine.EventSystems.PointerEventData.InputButton
+  - UnityEngine.EventSystems.PointerInputModule
+  - UnityEngine.EventSystems.PointerInputModule.ButtonState
+  - UnityEngine.EventSystems.PointerInputModule.MouseButtonEventData
+  - UnityEngine.EventSystems.PointerInputModule.MouseState
+  - UnityEngine.EventSystems.RaycastResult
+  - UnityEngine.EventSystems.RaycasterManager
+  - UnityEngine.EventSystems.StandaloneInputModule
+  - UnityEngine.EventSystems.StandaloneInputModule.InputMode
+  - UnityEngine.EventSystems.TouchInputModule
+  - UnityEngine.EventSystems.UIBehaviour
+  langs:
+  - csharp
+  - vb
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  type: Namespace
+  assemblies:
+  - UnityEngine.UI
+references:
+- uid: UnityEngine.EventSystems.MoveDirection
+  commentId: T:UnityEngine.EventSystems.MoveDirection
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.MoveDirection.html
+  name: MoveDirection
+  nameWithType: MoveDirection
+  fullName: UnityEngine.EventSystems.MoveDirection
+- uid: UnityEngine.EventSystems.UIBehaviour
+  commentId: T:UnityEngine.EventSystems.UIBehaviour
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.UIBehaviour.html
+  name: UIBehaviour
+  nameWithType: UIBehaviour
+  fullName: UnityEngine.EventSystems.UIBehaviour
+- uid: UnityEngine.EventSystems.BaseInput
+  commentId: T:UnityEngine.EventSystems.BaseInput
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.BaseInput.html
+  name: BaseInput
+  nameWithType: BaseInput
+  fullName: UnityEngine.EventSystems.BaseInput
+- uid: UnityEngine.EventSystems.EventTrigger
+  commentId: T:UnityEngine.EventSystems.EventTrigger
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.EventTrigger.html
+  name: EventTrigger
+  nameWithType: EventTrigger
+  fullName: UnityEngine.EventSystems.EventTrigger
+- uid: UnityEngine.EventSystems.EventTrigger.TriggerEvent
+  commentId: T:UnityEngine.EventSystems.EventTrigger.TriggerEvent
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.EventTrigger.html
+  name: EventTrigger.TriggerEvent
+  nameWithType: EventTrigger.TriggerEvent
+  fullName: UnityEngine.EventSystems.EventTrigger.TriggerEvent
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.EventTrigger
+    name: EventTrigger
+    href: UnityEngine.EventSystems.EventTrigger.html
+  - name: .
+  - uid: UnityEngine.EventSystems.EventTrigger.TriggerEvent
+    name: TriggerEvent
+    href: UnityEngine.EventSystems.EventTrigger.TriggerEvent.html
+  spec.vb:
+  - uid: UnityEngine.EventSystems.EventTrigger
+    name: EventTrigger
+    href: UnityEngine.EventSystems.EventTrigger.html
+  - name: .
+  - uid: UnityEngine.EventSystems.EventTrigger.TriggerEvent
+    name: TriggerEvent
+    href: UnityEngine.EventSystems.EventTrigger.TriggerEvent.html
+- uid: UnityEngine.EventSystems.EventTrigger.Entry
+  commentId: T:UnityEngine.EventSystems.EventTrigger.Entry
+  href: UnityEngine.EventSystems.EventTrigger.html
+  name: EventTrigger.Entry
+  nameWithType: EventTrigger.Entry
+  fullName: UnityEngine.EventSystems.EventTrigger.Entry
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.EventTrigger
+    name: EventTrigger
+    href: UnityEngine.EventSystems.EventTrigger.html
+  - name: .
+  - uid: UnityEngine.EventSystems.EventTrigger.Entry
+    name: Entry
+    href: UnityEngine.EventSystems.EventTrigger.Entry.html
+  spec.vb:
+  - uid: UnityEngine.EventSystems.EventTrigger
+    name: EventTrigger
+    href: UnityEngine.EventSystems.EventTrigger.html
+  - name: .
+  - uid: UnityEngine.EventSystems.EventTrigger.Entry
+    name: Entry
+    href: UnityEngine.EventSystems.EventTrigger.Entry.html
+- uid: UnityEngine.EventSystems.IEventSystemHandler
+  commentId: T:UnityEngine.EventSystems.IEventSystemHandler
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.IEventSystemHandler.html
+  name: IEventSystemHandler
+  nameWithType: IEventSystemHandler
+  fullName: UnityEngine.EventSystems.IEventSystemHandler
+- uid: UnityEngine.EventSystems.IPointerMoveHandler
+  commentId: T:UnityEngine.EventSystems.IPointerMoveHandler
+  href: UnityEngine.EventSystems.IPointerMoveHandler.html
+  name: IPointerMoveHandler
+  nameWithType: IPointerMoveHandler
+  fullName: UnityEngine.EventSystems.IPointerMoveHandler
+- uid: UnityEngine.EventSystems.IPointerEnterHandler
+  commentId: T:UnityEngine.EventSystems.IPointerEnterHandler
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.IPointerEnterHandler.html
+  name: IPointerEnterHandler
+  nameWithType: IPointerEnterHandler
+  fullName: UnityEngine.EventSystems.IPointerEnterHandler
+- uid: UnityEngine.EventSystems.IPointerExitHandler
+  commentId: T:UnityEngine.EventSystems.IPointerExitHandler
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.IPointerExitHandler.html
+  name: IPointerExitHandler
+  nameWithType: IPointerExitHandler
+  fullName: UnityEngine.EventSystems.IPointerExitHandler
+- uid: UnityEngine.EventSystems.IPointerDownHandler
+  commentId: T:UnityEngine.EventSystems.IPointerDownHandler
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.IPointerDownHandler.html
+  name: IPointerDownHandler
+  nameWithType: IPointerDownHandler
+  fullName: UnityEngine.EventSystems.IPointerDownHandler
+- uid: UnityEngine.EventSystems.IPointerUpHandler
+  commentId: T:UnityEngine.EventSystems.IPointerUpHandler
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.IPointerUpHandler.html
+  name: IPointerUpHandler
+  nameWithType: IPointerUpHandler
+  fullName: UnityEngine.EventSystems.IPointerUpHandler
+- uid: UnityEngine.EventSystems.IPointerClickHandler
+  commentId: T:UnityEngine.EventSystems.IPointerClickHandler
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.IPointerClickHandler.html
+  name: IPointerClickHandler
+  nameWithType: IPointerClickHandler
+  fullName: UnityEngine.EventSystems.IPointerClickHandler
+- uid: UnityEngine.EventSystems.IBeginDragHandler
+  commentId: T:UnityEngine.EventSystems.IBeginDragHandler
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.IBeginDragHandler.html
+  name: IBeginDragHandler
+  nameWithType: IBeginDragHandler
+  fullName: UnityEngine.EventSystems.IBeginDragHandler
+- uid: UnityEngine.EventSystems.IInitializePotentialDragHandler
+  commentId: T:UnityEngine.EventSystems.IInitializePotentialDragHandler
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.IInitializePotentialDragHandler.html
+  name: IInitializePotentialDragHandler
+  nameWithType: IInitializePotentialDragHandler
+  fullName: UnityEngine.EventSystems.IInitializePotentialDragHandler
+- uid: UnityEngine.EventSystems.IDragHandler
+  commentId: T:UnityEngine.EventSystems.IDragHandler
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.IDragHandler.html
+  name: IDragHandler
+  nameWithType: IDragHandler
+  fullName: UnityEngine.EventSystems.IDragHandler
+- uid: UnityEngine.EventSystems.IEndDragHandler
+  commentId: T:UnityEngine.EventSystems.IEndDragHandler
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.IEndDragHandler.html
+  name: IEndDragHandler
+  nameWithType: IEndDragHandler
+  fullName: UnityEngine.EventSystems.IEndDragHandler
+- uid: UnityEngine.EventSystems.IDropHandler
+  commentId: T:UnityEngine.EventSystems.IDropHandler
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.IDropHandler.html
+  name: IDropHandler
+  nameWithType: IDropHandler
+  fullName: UnityEngine.EventSystems.IDropHandler
+- uid: UnityEngine.EventSystems.IScrollHandler
+  commentId: T:UnityEngine.EventSystems.IScrollHandler
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.IScrollHandler.html
+  name: IScrollHandler
+  nameWithType: IScrollHandler
+  fullName: UnityEngine.EventSystems.IScrollHandler
+- uid: UnityEngine.EventSystems.IUpdateSelectedHandler
+  commentId: T:UnityEngine.EventSystems.IUpdateSelectedHandler
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.IUpdateSelectedHandler.html
+  name: IUpdateSelectedHandler
+  nameWithType: IUpdateSelectedHandler
+  fullName: UnityEngine.EventSystems.IUpdateSelectedHandler
+- uid: UnityEngine.EventSystems.ISelectHandler
+  commentId: T:UnityEngine.EventSystems.ISelectHandler
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.ISelectHandler.html
+  name: ISelectHandler
+  nameWithType: ISelectHandler
+  fullName: UnityEngine.EventSystems.ISelectHandler
+- uid: UnityEngine.EventSystems.IDeselectHandler
+  commentId: T:UnityEngine.EventSystems.IDeselectHandler
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.IDeselectHandler.html
+  name: IDeselectHandler
+  nameWithType: IDeselectHandler
+  fullName: UnityEngine.EventSystems.IDeselectHandler
+- uid: UnityEngine.EventSystems.IMoveHandler
+  commentId: T:UnityEngine.EventSystems.IMoveHandler
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.IMoveHandler.html
+  name: IMoveHandler
+  nameWithType: IMoveHandler
+  fullName: UnityEngine.EventSystems.IMoveHandler
+- uid: UnityEngine.EventSystems.ISubmitHandler
+  commentId: T:UnityEngine.EventSystems.ISubmitHandler
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.ISubmitHandler.html
+  name: ISubmitHandler
+  nameWithType: ISubmitHandler
+  fullName: UnityEngine.EventSystems.ISubmitHandler
+- uid: UnityEngine.EventSystems.ICancelHandler
+  commentId: T:UnityEngine.EventSystems.ICancelHandler
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.ICancelHandler.html
+  name: ICancelHandler
+  nameWithType: ICancelHandler
+  fullName: UnityEngine.EventSystems.ICancelHandler
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerEventData.html
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData
+- uid: UnityEngine.EventSystems.PointerEventData.InputButton
+  commentId: T:UnityEngine.EventSystems.PointerEventData.InputButton
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerEventData.html
+  name: PointerEventData.InputButton
+  nameWithType: PointerEventData.InputButton
+  fullName: UnityEngine.EventSystems.PointerEventData.InputButton
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.PointerEventData
+    name: PointerEventData
+    href: UnityEngine.EventSystems.PointerEventData.html
+  - name: .
+  - uid: UnityEngine.EventSystems.PointerEventData.InputButton
+    name: InputButton
+    href: UnityEngine.EventSystems.PointerEventData.InputButton.html
+  spec.vb:
+  - uid: UnityEngine.EventSystems.PointerEventData
+    name: PointerEventData
+    href: UnityEngine.EventSystems.PointerEventData.html
+  - name: .
+  - uid: UnityEngine.EventSystems.PointerEventData.InputButton
+    name: InputButton
+    href: UnityEngine.EventSystems.PointerEventData.InputButton.html
+- uid: UnityEngine.EventSystems.PointerEventData.FramePressState
+  commentId: T:UnityEngine.EventSystems.PointerEventData.FramePressState
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerEventData.html
+  name: PointerEventData.FramePressState
+  nameWithType: PointerEventData.FramePressState
+  fullName: UnityEngine.EventSystems.PointerEventData.FramePressState
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.PointerEventData
+    name: PointerEventData
+    href: UnityEngine.EventSystems.PointerEventData.html
+  - name: .
+  - uid: UnityEngine.EventSystems.PointerEventData.FramePressState
+    name: FramePressState
+    href: UnityEngine.EventSystems.PointerEventData.FramePressState.html
+  spec.vb:
+  - uid: UnityEngine.EventSystems.PointerEventData
+    name: PointerEventData
+    href: UnityEngine.EventSystems.PointerEventData.html
+  - name: .
+  - uid: UnityEngine.EventSystems.PointerEventData.FramePressState
+    name: FramePressState
+    href: UnityEngine.EventSystems.PointerEventData.FramePressState.html
+- uid: UnityEngine.EventSystems.EventTriggerType
+  commentId: T:UnityEngine.EventSystems.EventTriggerType
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.EventTriggerType.html
+  name: EventTriggerType
+  nameWithType: EventTriggerType
+  fullName: UnityEngine.EventSystems.EventTriggerType
+- uid: UnityEngine.EventSystems.EventHandle
+  commentId: T:UnityEngine.EventSystems.EventHandle
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.EventHandle.html
+  name: EventHandle
+  nameWithType: EventHandle
+  fullName: UnityEngine.EventSystems.EventHandle
+- uid: UnityEngine.EventSystems.EventSystem
+  commentId: T:UnityEngine.EventSystems.EventSystem
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.EventSystem.html
+  name: EventSystem
+  nameWithType: EventSystem
+  fullName: UnityEngine.EventSystems.EventSystem
+- uid: UnityEngine.EventSystems.Physics2DRaycaster
+  commentId: T:UnityEngine.EventSystems.Physics2DRaycaster
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.Physics2DRaycaster.html
+  name: Physics2DRaycaster
+  nameWithType: Physics2DRaycaster
+  fullName: UnityEngine.EventSystems.Physics2DRaycaster
+- uid: UnityEngine.EventSystems.PointerInputModule
+  commentId: T:UnityEngine.EventSystems.PointerInputModule
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerInputModule.html
+  name: PointerInputModule
+  nameWithType: PointerInputModule
+  fullName: UnityEngine.EventSystems.PointerInputModule
+- uid: UnityEngine.EventSystems.PointerInputModule.ButtonState
+  commentId: T:UnityEngine.EventSystems.PointerInputModule.ButtonState
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerInputModule.html
+  name: PointerInputModule.ButtonState
+  nameWithType: PointerInputModule.ButtonState
+  fullName: UnityEngine.EventSystems.PointerInputModule.ButtonState
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.PointerInputModule
+    name: PointerInputModule
+    href: UnityEngine.EventSystems.PointerInputModule.html
+  - name: .
+  - uid: UnityEngine.EventSystems.PointerInputModule.ButtonState
+    name: ButtonState
+    href: UnityEngine.EventSystems.PointerInputModule.ButtonState.html
+  spec.vb:
+  - uid: UnityEngine.EventSystems.PointerInputModule
+    name: PointerInputModule
+    href: UnityEngine.EventSystems.PointerInputModule.html
+  - name: .
+  - uid: UnityEngine.EventSystems.PointerInputModule.ButtonState
+    name: ButtonState
+    href: UnityEngine.EventSystems.PointerInputModule.ButtonState.html
+- uid: UnityEngine.EventSystems.PointerInputModule.MouseState
+  commentId: T:UnityEngine.EventSystems.PointerInputModule.MouseState
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerInputModule.html
+  name: PointerInputModule.MouseState
+  nameWithType: PointerInputModule.MouseState
+  fullName: UnityEngine.EventSystems.PointerInputModule.MouseState
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.PointerInputModule
+    name: PointerInputModule
+    href: UnityEngine.EventSystems.PointerInputModule.html
+  - name: .
+  - uid: UnityEngine.EventSystems.PointerInputModule.MouseState
+    name: MouseState
+    href: UnityEngine.EventSystems.PointerInputModule.MouseState.html
+  spec.vb:
+  - uid: UnityEngine.EventSystems.PointerInputModule
+    name: PointerInputModule
+    href: UnityEngine.EventSystems.PointerInputModule.html
+  - name: .
+  - uid: UnityEngine.EventSystems.PointerInputModule.MouseState
+    name: MouseState
+    href: UnityEngine.EventSystems.PointerInputModule.MouseState.html
+- uid: UnityEngine.EventSystems.PointerInputModule.MouseButtonEventData
+  commentId: T:UnityEngine.EventSystems.PointerInputModule.MouseButtonEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerInputModule.html
+  name: PointerInputModule.MouseButtonEventData
+  nameWithType: PointerInputModule.MouseButtonEventData
+  fullName: UnityEngine.EventSystems.PointerInputModule.MouseButtonEventData
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.PointerInputModule
+    name: PointerInputModule
+    href: UnityEngine.EventSystems.PointerInputModule.html
+  - name: .
+  - uid: UnityEngine.EventSystems.PointerInputModule.MouseButtonEventData
+    name: MouseButtonEventData
+    href: UnityEngine.EventSystems.PointerInputModule.MouseButtonEventData.html
+  spec.vb:
+  - uid: UnityEngine.EventSystems.PointerInputModule
+    name: PointerInputModule
+    href: UnityEngine.EventSystems.PointerInputModule.html
+  - name: .
+  - uid: UnityEngine.EventSystems.PointerInputModule.MouseButtonEventData
+    name: MouseButtonEventData
+    href: UnityEngine.EventSystems.PointerInputModule.MouseButtonEventData.html
+- uid: UnityEngine.EventSystems.AbstractEventData
+  commentId: T:UnityEngine.EventSystems.AbstractEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.AbstractEventData.html
+  name: AbstractEventData
+  nameWithType: AbstractEventData
+  fullName: UnityEngine.EventSystems.AbstractEventData
+- uid: UnityEngine.EventSystems.BaseEventData
+  commentId: T:UnityEngine.EventSystems.BaseEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.BaseEventData.html
+  name: BaseEventData
+  nameWithType: BaseEventData
+  fullName: UnityEngine.EventSystems.BaseEventData
+- uid: UnityEngine.EventSystems.StandaloneInputModule
+  commentId: T:UnityEngine.EventSystems.StandaloneInputModule
+  href: UnityEngine.EventSystems.StandaloneInputModule.html
+  name: StandaloneInputModule
+  nameWithType: StandaloneInputModule
+  fullName: UnityEngine.EventSystems.StandaloneInputModule
+- uid: UnityEngine.EventSystems.StandaloneInputModule.InputMode
+  commentId: T:UnityEngine.EventSystems.StandaloneInputModule.InputMode
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.StandaloneInputModule.html
+  name: StandaloneInputModule.InputMode
+  nameWithType: StandaloneInputModule.InputMode
+  fullName: UnityEngine.EventSystems.StandaloneInputModule.InputMode
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.StandaloneInputModule
+    name: StandaloneInputModule
+    href: UnityEngine.EventSystems.StandaloneInputModule.html
+  - name: .
+  - uid: UnityEngine.EventSystems.StandaloneInputModule.InputMode
+    name: InputMode
+    href: UnityEngine.EventSystems.StandaloneInputModule.InputMode.html
+  spec.vb:
+  - uid: UnityEngine.EventSystems.StandaloneInputModule
+    name: StandaloneInputModule
+    href: UnityEngine.EventSystems.StandaloneInputModule.html
+  - name: .
+  - uid: UnityEngine.EventSystems.StandaloneInputModule.InputMode
+    name: InputMode
+    href: UnityEngine.EventSystems.StandaloneInputModule.InputMode.html
+- uid: UnityEngine.EventSystems.PhysicsRaycaster
+  commentId: T:UnityEngine.EventSystems.PhysicsRaycaster
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PhysicsRaycaster.html
+  name: PhysicsRaycaster
+  nameWithType: PhysicsRaycaster
+  fullName: UnityEngine.EventSystems.PhysicsRaycaster
+- uid: UnityEngine.EventSystems.BaseInputModule
+  commentId: T:UnityEngine.EventSystems.BaseInputModule
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.BaseInputModule.html
+  name: BaseInputModule
+  nameWithType: BaseInputModule
+  fullName: UnityEngine.EventSystems.BaseInputModule
+- uid: UnityEngine.EventSystems.TouchInputModule
+  commentId: T:UnityEngine.EventSystems.TouchInputModule
+  href: UnityEngine.EventSystems.TouchInputModule.html
+  name: TouchInputModule
+  nameWithType: TouchInputModule
+  fullName: UnityEngine.EventSystems.TouchInputModule
+- uid: UnityEngine.EventSystems.BaseRaycaster
+  commentId: T:UnityEngine.EventSystems.BaseRaycaster
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.BaseRaycaster.html
+  name: BaseRaycaster
+  nameWithType: BaseRaycaster
+  fullName: UnityEngine.EventSystems.BaseRaycaster
+- uid: UnityEngine.EventSystems.AxisEventData
+  commentId: T:UnityEngine.EventSystems.AxisEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.AxisEventData.html
+  name: AxisEventData
+  nameWithType: AxisEventData
+  fullName: UnityEngine.EventSystems.AxisEventData
+- uid: UnityEngine.EventSystems.RaycastResult
+  commentId: T:UnityEngine.EventSystems.RaycastResult
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.RaycastResult.html
+  name: RaycastResult
+  nameWithType: RaycastResult
+  fullName: UnityEngine.EventSystems.RaycastResult
+- uid: UnityEngine.EventSystems.RaycasterManager
+  commentId: T:UnityEngine.EventSystems.RaycasterManager
+  href: UnityEngine.EventSystems.RaycasterManager.html
+  name: RaycasterManager
+  nameWithType: RaycasterManager
+  fullName: UnityEngine.EventSystems.RaycasterManager
+- uid: UnityEngine.EventSystems.ExecuteEvents
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents
+  nameWithType: ExecuteEvents
+  fullName: UnityEngine.EventSystems.ExecuteEvents
+- uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  commentId: T:UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+  href: UnityEngine.EventSystems.ExecuteEvents.html
+  name: ExecuteEvents.EventFunction<T1>
+  nameWithType: ExecuteEvents.EventFunction<T1>
+  fullName: UnityEngine.EventSystems.ExecuteEvents.EventFunction<T1>
+  nameWithType.vb: ExecuteEvents.EventFunction(Of T1)
+  fullName.vb: UnityEngine.EventSystems.ExecuteEvents.EventFunction(Of T1)
+  name.vb: ExecuteEvents.EventFunction(Of T1)
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: <
+  - name: T1
+  - name: '>'
+  spec.vb:
+  - uid: UnityEngine.EventSystems.ExecuteEvents
+    name: ExecuteEvents
+    href: UnityEngine.EventSystems.ExecuteEvents.html
+  - name: .
+  - uid: UnityEngine.EventSystems.ExecuteEvents.EventFunction`1
+    name: EventFunction
+    href: UnityEngine.EventSystems.ExecuteEvents.EventFunction-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: )
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html

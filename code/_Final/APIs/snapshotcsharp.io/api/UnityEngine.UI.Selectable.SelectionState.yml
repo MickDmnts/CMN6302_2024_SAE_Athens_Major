@@ -1,0 +1,221 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.Selectable.SelectionState
+  commentId: T:UnityEngine.UI.Selectable.SelectionState
+  id: Selectable.SelectionState
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.Selectable.SelectionState.Disabled
+  - UnityEngine.UI.Selectable.SelectionState.Highlighted
+  - UnityEngine.UI.Selectable.SelectionState.Normal
+  - UnityEngine.UI.Selectable.SelectionState.Pressed
+  - UnityEngine.UI.Selectable.SelectionState.Selected
+  langs:
+  - csharp
+  - vb
+  name: Selectable.SelectionState
+  nameWithType: Selectable.SelectionState
+  fullName: UnityEngine.UI.Selectable.SelectionState
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: SelectionState
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+    startLine: 714
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: An enumeration of selected states of objects
+  example: []
+  syntax:
+    content: protected enum Selectable.SelectionState
+    content.vb: Protected Enum Selectable.SelectionState
+- uid: UnityEngine.UI.Selectable.SelectionState.Normal
+  commentId: F:UnityEngine.UI.Selectable.SelectionState.Normal
+  id: Normal
+  parent: UnityEngine.UI.Selectable.SelectionState
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: Selectable.SelectionState.Normal
+  fullName: UnityEngine.UI.Selectable.SelectionState.Normal
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Normal
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+    startLine: 719
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The UI object can be selected.
+  example: []
+  syntax:
+    content: Normal = 0
+    return:
+      type: UnityEngine.UI.Selectable.SelectionState
+- uid: UnityEngine.UI.Selectable.SelectionState.Highlighted
+  commentId: F:UnityEngine.UI.Selectable.SelectionState.Highlighted
+  id: Highlighted
+  parent: UnityEngine.UI.Selectable.SelectionState
+  langs:
+  - csharp
+  - vb
+  name: Highlighted
+  nameWithType: Selectable.SelectionState.Highlighted
+  fullName: UnityEngine.UI.Selectable.SelectionState.Highlighted
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Highlighted
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+    startLine: 724
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The UI object is highlighted.
+  example: []
+  syntax:
+    content: Highlighted = 1
+    return:
+      type: UnityEngine.UI.Selectable.SelectionState
+- uid: UnityEngine.UI.Selectable.SelectionState.Pressed
+  commentId: F:UnityEngine.UI.Selectable.SelectionState.Pressed
+  id: Pressed
+  parent: UnityEngine.UI.Selectable.SelectionState
+  langs:
+  - csharp
+  - vb
+  name: Pressed
+  nameWithType: Selectable.SelectionState.Pressed
+  fullName: UnityEngine.UI.Selectable.SelectionState.Pressed
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Pressed
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+    startLine: 729
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The UI object is pressed.
+  example: []
+  syntax:
+    content: Pressed = 2
+    return:
+      type: UnityEngine.UI.Selectable.SelectionState
+- uid: UnityEngine.UI.Selectable.SelectionState.Selected
+  commentId: F:UnityEngine.UI.Selectable.SelectionState.Selected
+  id: Selected
+  parent: UnityEngine.UI.Selectable.SelectionState
+  langs:
+  - csharp
+  - vb
+  name: Selected
+  nameWithType: Selectable.SelectionState.Selected
+  fullName: UnityEngine.UI.Selectable.SelectionState.Selected
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Selected
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+    startLine: 734
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The UI object is selected
+  example: []
+  syntax:
+    content: Selected = 3
+    return:
+      type: UnityEngine.UI.Selectable.SelectionState
+- uid: UnityEngine.UI.Selectable.SelectionState.Disabled
+  commentId: F:UnityEngine.UI.Selectable.SelectionState.Disabled
+  id: Disabled
+  parent: UnityEngine.UI.Selectable.SelectionState
+  langs:
+  - csharp
+  - vb
+  name: Disabled
+  nameWithType: Selectable.SelectionState.Disabled
+  fullName: UnityEngine.UI.Selectable.SelectionState.Disabled
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Disabled
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+    startLine: 739
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The UI object cannot be selected.
+  example: []
+  syntax:
+    content: Disabled = 4
+    return:
+      type: UnityEngine.UI.Selectable.SelectionState
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.Selectable.SelectionState
+  commentId: T:UnityEngine.UI.Selectable.SelectionState
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Selectable.html
+  name: Selectable.SelectionState
+  nameWithType: Selectable.SelectionState
+  fullName: UnityEngine.UI.Selectable.SelectionState
+  spec.csharp:
+  - uid: UnityEngine.UI.Selectable
+    name: Selectable
+    href: UnityEngine.UI.Selectable.html
+  - name: .
+  - uid: UnityEngine.UI.Selectable.SelectionState
+    name: SelectionState
+    href: UnityEngine.UI.Selectable.SelectionState.html
+  spec.vb:
+  - uid: UnityEngine.UI.Selectable
+    name: Selectable
+    href: UnityEngine.UI.Selectable.html
+  - name: .
+  - uid: UnityEngine.UI.Selectable.SelectionState
+    name: SelectionState
+    href: UnityEngine.UI.Selectable.SelectionState.html

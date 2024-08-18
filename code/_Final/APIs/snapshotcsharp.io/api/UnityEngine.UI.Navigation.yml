@@ -1,0 +1,897 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.Navigation
+  commentId: T:UnityEngine.UI.Navigation
+  id: Navigation
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.Navigation.Equals(UnityEngine.UI.Navigation)
+  - UnityEngine.UI.Navigation.defaultNavigation
+  - UnityEngine.UI.Navigation.mode
+  - UnityEngine.UI.Navigation.selectOnDown
+  - UnityEngine.UI.Navigation.selectOnLeft
+  - UnityEngine.UI.Navigation.selectOnRight
+  - UnityEngine.UI.Navigation.selectOnUp
+  - UnityEngine.UI.Navigation.wrapAround
+  langs:
+  - csharp
+  - vb
+  name: Navigation
+  nameWithType: Navigation
+  fullName: UnityEngine.UI.Navigation
+  type: Struct
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Navigation
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+    startLine: 5
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct Navigation : IEquatable<Navigation>
+    content.vb: >-
+      <Serializable>
+
+      Public Structure Navigation Implements IEquatable(Of Navigation)
+  implements:
+  - System.IEquatable{UnityEngine.UI.Navigation}
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: UnityEngine.UI.Navigation.mode
+  commentId: P:UnityEngine.UI.Navigation.mode
+  id: mode
+  parent: UnityEngine.UI.Navigation
+  langs:
+  - csharp
+  - vb
+  name: mode
+  nameWithType: Navigation.mode
+  fullName: UnityEngine.UI.Navigation.mode
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: mode
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+    startLine: 113
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Navigation mode.
+  example: []
+  syntax:
+    content: public Navigation.Mode mode { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.UI.Navigation.Mode
+    content.vb: Public Property mode As Navigation.Mode
+  overload: UnityEngine.UI.Navigation.mode*
+- uid: UnityEngine.UI.Navigation.wrapAround
+  commentId: P:UnityEngine.UI.Navigation.wrapAround
+  id: wrapAround
+  parent: UnityEngine.UI.Navigation
+  langs:
+  - csharp
+  - vb
+  name: wrapAround
+  nameWithType: Navigation.wrapAround
+  fullName: UnityEngine.UI.Navigation.wrapAround
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: wrapAround
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+    startLine: 122
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: >-
+    Enables navigation to wrap around from last to first or first to last element.
+
+    Will find the furthest element from the current element in the opposite direction of movement.
+  example:
+  - 'Note: If you have a grid of elements and you are on the last element in a row it will not wrap over to the next row it will pick the furthest element in the opposite direction.'
+  syntax:
+    content: public bool wrapAround { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property wrapAround As Boolean
+  overload: UnityEngine.UI.Navigation.wrapAround*
+- uid: UnityEngine.UI.Navigation.selectOnUp
+  commentId: P:UnityEngine.UI.Navigation.selectOnUp
+  id: selectOnUp
+  parent: UnityEngine.UI.Navigation
+  langs:
+  - csharp
+  - vb
+  name: selectOnUp
+  nameWithType: Navigation.selectOnUp
+  fullName: UnityEngine.UI.Navigation.selectOnUp
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: selectOnUp
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+    startLine: 157
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Specify a Selectable UI GameObject to highlight when the Up arrow key is pressed.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using UnityEngine;
+
+    using System.Collections;
+
+    using UnityEngine.UI;  // Required when Using UI elements.
+
+
+    public class HighlightOnKey : MonoBehaviour
+
+    {
+        public Button btnSave;
+        public Button btnLoad;
+
+        public void Start()
+        {
+            // get the Navigation data
+            Navigation navigation = btnLoad.navigation;
+
+            // switch mode to Explicit to allow for custom assigned behavior
+            navigation.mode = Navigation.Mode.Explicit;
+
+            // highlight the Save button if the up arrow key is pressed
+            navigation.selectOnUp = btnSave;
+
+            // reassign the struct data to the button
+            btnLoad.navigation = navigation;
+        }
+    }</code></pre>
+  syntax:
+    content: public Selectable selectOnUp { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.UI.Selectable
+    content.vb: Public Property selectOnUp As Selectable
+  overload: UnityEngine.UI.Navigation.selectOnUp*
+- uid: UnityEngine.UI.Navigation.selectOnDown
+  commentId: P:UnityEngine.UI.Navigation.selectOnDown
+  id: selectOnDown
+  parent: UnityEngine.UI.Navigation
+  langs:
+  - csharp
+  - vb
+  name: selectOnDown
+  nameWithType: Navigation.selectOnDown
+  fullName: UnityEngine.UI.Navigation.selectOnDown
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: selectOnDown
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+    startLine: 192
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Specify a Selectable UI GameObject to highlight when the down arrow key is pressed.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using UnityEngine;
+
+    using System.Collections;
+
+    using UnityEngine.UI;  // Required when Using UI elements.
+
+
+    public class HighlightOnKey : MonoBehaviour
+
+    {
+        public Button btnSave;
+        public Button btnLoad;
+
+        public void Start()
+        {
+            // get the Navigation data
+            Navigation navigation = btnLoad.navigation;
+
+            // switch mode to Explicit to allow for custom assigned behavior
+            navigation.mode = Navigation.Mode.Explicit;
+
+            // highlight the Save button if the down arrow key is pressed
+            navigation.selectOnDown = btnSave;
+
+            // reassign the struct data to the button
+            btnLoad.navigation = navigation;
+        }
+    }</code></pre>
+  syntax:
+    content: public Selectable selectOnDown { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.UI.Selectable
+    content.vb: Public Property selectOnDown As Selectable
+  overload: UnityEngine.UI.Navigation.selectOnDown*
+- uid: UnityEngine.UI.Navigation.selectOnLeft
+  commentId: P:UnityEngine.UI.Navigation.selectOnLeft
+  id: selectOnLeft
+  parent: UnityEngine.UI.Navigation
+  langs:
+  - csharp
+  - vb
+  name: selectOnLeft
+  nameWithType: Navigation.selectOnLeft
+  fullName: UnityEngine.UI.Navigation.selectOnLeft
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: selectOnLeft
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+    startLine: 227
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Specify a Selectable UI GameObject to highlight when the left arrow key is pressed.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using UnityEngine;
+
+    using System.Collections;
+
+    using UnityEngine.UI;  // Required when Using UI elements.
+
+
+    public class HighlightOnKey : MonoBehaviour
+
+    {
+        public Button btnSave;
+        public Button btnLoad;
+
+        public void Start()
+        {
+            // get the Navigation data
+            Navigation navigation = btnLoad.navigation;
+
+            // switch mode to Explicit to allow for custom assigned behavior
+            navigation.mode = Navigation.Mode.Explicit;
+
+            // highlight the Save button if the left arrow key is pressed
+            navigation.selectOnLeft = btnSave;
+
+            // reassign the struct data to the button
+            btnLoad.navigation = navigation;
+        }
+    }</code></pre>
+  syntax:
+    content: public Selectable selectOnLeft { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.UI.Selectable
+    content.vb: Public Property selectOnLeft As Selectable
+  overload: UnityEngine.UI.Navigation.selectOnLeft*
+- uid: UnityEngine.UI.Navigation.selectOnRight
+  commentId: P:UnityEngine.UI.Navigation.selectOnRight
+  id: selectOnRight
+  parent: UnityEngine.UI.Navigation
+  langs:
+  - csharp
+  - vb
+  name: selectOnRight
+  nameWithType: Navigation.selectOnRight
+  fullName: UnityEngine.UI.Navigation.selectOnRight
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: selectOnRight
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+    startLine: 262
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Specify a Selectable UI GameObject to highlight when the right arrow key is pressed.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using UnityEngine;
+
+    using System.Collections;
+
+    using UnityEngine.UI;  // Required when Using UI elements.
+
+
+    public class HighlightOnKey : MonoBehaviour
+
+    {
+        public Button btnSave;
+        public Button btnLoad;
+
+        public void Start()
+        {
+            // get the Navigation data
+            Navigation navigation = btnLoad.navigation;
+
+            // switch mode to Explicit to allow for custom assigned behavior
+            navigation.mode = Navigation.Mode.Explicit;
+
+            // highlight the Save button if the right arrow key is pressed
+            navigation.selectOnRight = btnSave;
+
+            // reassign the struct data to the button
+            btnLoad.navigation = navigation;
+        }
+    }</code></pre>
+  syntax:
+    content: public Selectable selectOnRight { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.UI.Selectable
+    content.vb: Public Property selectOnRight As Selectable
+  overload: UnityEngine.UI.Navigation.selectOnRight*
+- uid: UnityEngine.UI.Navigation.defaultNavigation
+  commentId: P:UnityEngine.UI.Navigation.defaultNavigation
+  id: defaultNavigation
+  parent: UnityEngine.UI.Navigation
+  langs:
+  - csharp
+  - vb
+  name: defaultNavigation
+  nameWithType: Navigation.defaultNavigation
+  fullName: UnityEngine.UI.Navigation.defaultNavigation
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: defaultNavigation
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+    startLine: 287
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Return a Navigation with sensible default values.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using UnityEngine;
+
+    using System.Collections;
+
+    using UnityEngine.UI; // Required when Using UI elements.
+
+
+    public class ExampleClass : MonoBehaviour
+
+    {
+        public Button button;
+
+        void Start()
+        {
+            //Set the navigation to the default value. ("Automatic" is the default value).
+            button.navigation = Navigation.defaultNavigation;
+        }
+    }</code></pre>
+  syntax:
+    content: public static Navigation defaultNavigation { get; }
+    parameters: []
+    return:
+      type: UnityEngine.UI.Navigation
+    content.vb: Public Shared ReadOnly Property defaultNavigation As Navigation
+  overload: UnityEngine.UI.Navigation.defaultNavigation*
+- uid: UnityEngine.UI.Navigation.Equals(UnityEngine.UI.Navigation)
+  commentId: M:UnityEngine.UI.Navigation.Equals(UnityEngine.UI.Navigation)
+  id: Equals(UnityEngine.UI.Navigation)
+  parent: UnityEngine.UI.Navigation
+  langs:
+  - csharp
+  - vb
+  name: Equals(Navigation)
+  nameWithType: Navigation.Equals(Navigation)
+  fullName: UnityEngine.UI.Navigation.Equals(UnityEngine.UI.Navigation)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Equals
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+    startLine: 298
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  example: []
+  syntax:
+    content: public bool Equals(Navigation other)
+    parameters:
+    - id: other
+      type: UnityEngine.UI.Navigation
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Navigation) As Boolean
+  overload: UnityEngine.UI.Navigation.Equals*
+  implements:
+  - System.IEquatable{UnityEngine.UI.Navigation}.Equals(UnityEngine.UI.Navigation)
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: System.IEquatable{UnityEngine.UI.Navigation}
+  commentId: T:System.IEquatable{UnityEngine.UI.Navigation}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Navigation>
+  nameWithType: IEquatable<Navigation>
+  fullName: System.IEquatable<UnityEngine.UI.Navigation>
+  nameWithType.vb: IEquatable(Of Navigation)
+  fullName.vb: System.IEquatable(Of UnityEngine.UI.Navigation)
+  name.vb: IEquatable(Of Navigation)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: UnityEngine.UI.Navigation
+    name: Navigation
+    href: UnityEngine.UI.Navigation.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.UI.Navigation
+    name: Navigation
+    href: UnityEngine.UI.Navigation.html
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.UI.Navigation.mode*
+  commentId: Overload:UnityEngine.UI.Navigation.mode
+  href: UnityEngine.UI.Navigation.html#UnityEngine_UI_Navigation_mode
+  name: mode
+  nameWithType: Navigation.mode
+  fullName: UnityEngine.UI.Navigation.mode
+- uid: UnityEngine.UI.Navigation.Mode
+  commentId: T:UnityEngine.UI.Navigation.Mode
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Navigation.html
+  name: Navigation.Mode
+  nameWithType: Navigation.Mode
+  fullName: UnityEngine.UI.Navigation.Mode
+  spec.csharp:
+  - uid: UnityEngine.UI.Navigation
+    name: Navigation
+    href: UnityEngine.UI.Navigation.html
+  - name: .
+  - uid: UnityEngine.UI.Navigation.Mode
+    name: Mode
+    href: UnityEngine.UI.Navigation.Mode.html
+  spec.vb:
+  - uid: UnityEngine.UI.Navigation
+    name: Navigation
+    href: UnityEngine.UI.Navigation.html
+  - name: .
+  - uid: UnityEngine.UI.Navigation.Mode
+    name: Mode
+    href: UnityEngine.UI.Navigation.Mode.html
+- uid: UnityEngine.UI.Navigation.wrapAround*
+  commentId: Overload:UnityEngine.UI.Navigation.wrapAround
+  href: UnityEngine.UI.Navigation.html#UnityEngine_UI_Navigation_wrapAround
+  name: wrapAround
+  nameWithType: Navigation.wrapAround
+  fullName: UnityEngine.UI.Navigation.wrapAround
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.UI.Navigation.selectOnUp*
+  commentId: Overload:UnityEngine.UI.Navigation.selectOnUp
+  href: UnityEngine.UI.Navigation.html#UnityEngine_UI_Navigation_selectOnUp
+  name: selectOnUp
+  nameWithType: Navigation.selectOnUp
+  fullName: UnityEngine.UI.Navigation.selectOnUp
+- uid: UnityEngine.UI.Selectable
+  commentId: T:UnityEngine.UI.Selectable
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Selectable.html
+  name: Selectable
+  nameWithType: Selectable
+  fullName: UnityEngine.UI.Selectable
+- uid: UnityEngine.UI.Navigation.selectOnDown*
+  commentId: Overload:UnityEngine.UI.Navigation.selectOnDown
+  href: UnityEngine.UI.Navigation.html#UnityEngine_UI_Navigation_selectOnDown
+  name: selectOnDown
+  nameWithType: Navigation.selectOnDown
+  fullName: UnityEngine.UI.Navigation.selectOnDown
+- uid: UnityEngine.UI.Navigation.selectOnLeft*
+  commentId: Overload:UnityEngine.UI.Navigation.selectOnLeft
+  href: UnityEngine.UI.Navigation.html#UnityEngine_UI_Navigation_selectOnLeft
+  name: selectOnLeft
+  nameWithType: Navigation.selectOnLeft
+  fullName: UnityEngine.UI.Navigation.selectOnLeft
+- uid: UnityEngine.UI.Navigation.selectOnRight*
+  commentId: Overload:UnityEngine.UI.Navigation.selectOnRight
+  href: UnityEngine.UI.Navigation.html#UnityEngine_UI_Navigation_selectOnRight
+  name: selectOnRight
+  nameWithType: Navigation.selectOnRight
+  fullName: UnityEngine.UI.Navigation.selectOnRight
+- uid: UnityEngine.UI.Navigation.defaultNavigation*
+  commentId: Overload:UnityEngine.UI.Navigation.defaultNavigation
+  href: UnityEngine.UI.Navigation.html#UnityEngine_UI_Navigation_defaultNavigation
+  name: defaultNavigation
+  nameWithType: Navigation.defaultNavigation
+  fullName: UnityEngine.UI.Navigation.defaultNavigation
+- uid: UnityEngine.UI.Navigation
+  commentId: T:UnityEngine.UI.Navigation
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Navigation.html
+  name: Navigation
+  nameWithType: Navigation
+  fullName: UnityEngine.UI.Navigation
+- uid: UnityEngine.UI.Navigation.Equals*
+  commentId: Overload:UnityEngine.UI.Navigation.Equals
+  href: UnityEngine.UI.Navigation.html#UnityEngine_UI_Navigation_Equals_UnityEngine_UI_Navigation_
+  name: Equals
+  nameWithType: Navigation.Equals
+  fullName: UnityEngine.UI.Navigation.Equals
+- uid: System.IEquatable{UnityEngine.UI.Navigation}.Equals(UnityEngine.UI.Navigation)
+  commentId: M:System.IEquatable{UnityEngine.UI.Navigation}.Equals(UnityEngine.UI.Navigation)
+  parent: System.IEquatable{UnityEngine.UI.Navigation}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Navigation)
+  nameWithType: IEquatable<Navigation>.Equals(Navigation)
+  fullName: System.IEquatable<UnityEngine.UI.Navigation>.Equals(UnityEngine.UI.Navigation)
+  nameWithType.vb: IEquatable(Of Navigation).Equals(Navigation)
+  fullName.vb: System.IEquatable(Of UnityEngine.UI.Navigation).Equals(UnityEngine.UI.Navigation)
+  spec.csharp:
+  - uid: System.IEquatable{UnityEngine.UI.Navigation}.Equals(UnityEngine.UI.Navigation)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: UnityEngine.UI.Navigation
+    name: Navigation
+    href: UnityEngine.UI.Navigation.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{UnityEngine.UI.Navigation}.Equals(UnityEngine.UI.Navigation)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: UnityEngine.UI.Navigation
+    name: Navigation
+    href: UnityEngine.UI.Navigation.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )

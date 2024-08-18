@@ -1,0 +1,500 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.DefaultControls.Resources
+  commentId: T:UnityEngine.UI.DefaultControls.Resources
+  id: DefaultControls.Resources
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.DefaultControls.Resources.background
+  - UnityEngine.UI.DefaultControls.Resources.checkmark
+  - UnityEngine.UI.DefaultControls.Resources.dropdown
+  - UnityEngine.UI.DefaultControls.Resources.inputField
+  - UnityEngine.UI.DefaultControls.Resources.knob
+  - UnityEngine.UI.DefaultControls.Resources.mask
+  - UnityEngine.UI.DefaultControls.Resources.standard
+  langs:
+  - csharp
+  - vb
+  name: DefaultControls.Resources
+  nameWithType: DefaultControls.Resources
+  fullName: UnityEngine.UI.DefaultControls.Resources
+  type: Struct
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/DefaultControls.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Resources
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/DefaultControls.cs
+    startLine: 61
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Object used to pass resources to use for the default controls.
+  example: []
+  syntax:
+    content: public struct DefaultControls.Resources
+    content.vb: Public Structure DefaultControls.Resources
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: UnityEngine.UI.DefaultControls.Resources.standard
+  commentId: F:UnityEngine.UI.DefaultControls.Resources.standard
+  id: standard
+  parent: UnityEngine.UI.DefaultControls.Resources
+  langs:
+  - csharp
+  - vb
+  name: standard
+  nameWithType: DefaultControls.Resources.standard
+  fullName: UnityEngine.UI.DefaultControls.Resources.standard
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/DefaultControls.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: standard
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/DefaultControls.cs
+    startLine: 66
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The primary sprite to be used for graphical UI elements, used by the button, toggle, and dropdown controls, among others.
+  example: []
+  syntax:
+    content: public Sprite standard
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public standard As Sprite
+- uid: UnityEngine.UI.DefaultControls.Resources.background
+  commentId: F:UnityEngine.UI.DefaultControls.Resources.background
+  id: background
+  parent: UnityEngine.UI.DefaultControls.Resources
+  langs:
+  - csharp
+  - vb
+  name: background
+  nameWithType: DefaultControls.Resources.background
+  fullName: UnityEngine.UI.DefaultControls.Resources.background
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/DefaultControls.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: background
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/DefaultControls.cs
+    startLine: 71
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Sprite used for background elements.
+  example: []
+  syntax:
+    content: public Sprite background
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public background As Sprite
+- uid: UnityEngine.UI.DefaultControls.Resources.inputField
+  commentId: F:UnityEngine.UI.DefaultControls.Resources.inputField
+  id: inputField
+  parent: UnityEngine.UI.DefaultControls.Resources
+  langs:
+  - csharp
+  - vb
+  name: inputField
+  nameWithType: DefaultControls.Resources.inputField
+  fullName: UnityEngine.UI.DefaultControls.Resources.inputField
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/DefaultControls.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: inputField
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/DefaultControls.cs
+    startLine: 76
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Sprite used as background for input fields.
+  example: []
+  syntax:
+    content: public Sprite inputField
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public inputField As Sprite
+- uid: UnityEngine.UI.DefaultControls.Resources.knob
+  commentId: F:UnityEngine.UI.DefaultControls.Resources.knob
+  id: knob
+  parent: UnityEngine.UI.DefaultControls.Resources
+  langs:
+  - csharp
+  - vb
+  name: knob
+  nameWithType: DefaultControls.Resources.knob
+  fullName: UnityEngine.UI.DefaultControls.Resources.knob
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/DefaultControls.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: knob
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/DefaultControls.cs
+    startLine: 81
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Sprite used for knobs that can be dragged, such as on a slider.
+  example: []
+  syntax:
+    content: public Sprite knob
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public knob As Sprite
+- uid: UnityEngine.UI.DefaultControls.Resources.checkmark
+  commentId: F:UnityEngine.UI.DefaultControls.Resources.checkmark
+  id: checkmark
+  parent: UnityEngine.UI.DefaultControls.Resources
+  langs:
+  - csharp
+  - vb
+  name: checkmark
+  nameWithType: DefaultControls.Resources.checkmark
+  fullName: UnityEngine.UI.DefaultControls.Resources.checkmark
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/DefaultControls.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: checkmark
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/DefaultControls.cs
+    startLine: 86
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Sprite used for representation of an "on" state when present, such as a checkmark.
+  example: []
+  syntax:
+    content: public Sprite checkmark
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public checkmark As Sprite
+- uid: UnityEngine.UI.DefaultControls.Resources.dropdown
+  commentId: F:UnityEngine.UI.DefaultControls.Resources.dropdown
+  id: dropdown
+  parent: UnityEngine.UI.DefaultControls.Resources
+  langs:
+  - csharp
+  - vb
+  name: dropdown
+  nameWithType: DefaultControls.Resources.dropdown
+  fullName: UnityEngine.UI.DefaultControls.Resources.dropdown
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/DefaultControls.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: dropdown
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/DefaultControls.cs
+    startLine: 91
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Sprite used to indicate that a button will open a dropdown when clicked.
+  example: []
+  syntax:
+    content: public Sprite dropdown
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public dropdown As Sprite
+- uid: UnityEngine.UI.DefaultControls.Resources.mask
+  commentId: F:UnityEngine.UI.DefaultControls.Resources.mask
+  id: mask
+  parent: UnityEngine.UI.DefaultControls.Resources
+  langs:
+  - csharp
+  - vb
+  name: mask
+  nameWithType: DefaultControls.Resources.mask
+  fullName: UnityEngine.UI.DefaultControls.Resources.mask
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/DefaultControls.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: mask
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/DefaultControls.cs
+    startLine: 96
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Sprite used for masking purposes, for example to be used for the viewport of a scroll view.
+  example: []
+  syntax:
+    content: public Sprite mask
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public mask As Sprite
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

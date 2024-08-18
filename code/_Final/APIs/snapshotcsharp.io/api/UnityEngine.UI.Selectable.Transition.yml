@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.Selectable.Transition
+  commentId: T:UnityEngine.UI.Selectable.Transition
+  id: Selectable.Transition
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.Selectable.Transition.Animation
+  - UnityEngine.UI.Selectable.Transition.ColorTint
+  - UnityEngine.UI.Selectable.Transition.None
+  - UnityEngine.UI.Selectable.Transition.SpriteSwap
+  langs:
+  - csharp
+  - vb
+  name: Selectable.Transition
+  nameWithType: Selectable.Transition
+  fullName: UnityEngine.UI.Selectable.Transition
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Transition
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+    startLine: 131
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Transition mode for a Selectable.
+  example: []
+  syntax:
+    content: public enum Selectable.Transition
+    content.vb: Public Enum Selectable.Transition
+- uid: UnityEngine.UI.Selectable.Transition.None
+  commentId: F:UnityEngine.UI.Selectable.Transition.None
+  id: None
+  parent: UnityEngine.UI.Selectable.Transition
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: Selectable.Transition.None
+  fullName: UnityEngine.UI.Selectable.Transition.None
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: None
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+    startLine: 136
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: No Transition.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: UnityEngine.UI.Selectable.Transition
+- uid: UnityEngine.UI.Selectable.Transition.ColorTint
+  commentId: F:UnityEngine.UI.Selectable.Transition.ColorTint
+  id: ColorTint
+  parent: UnityEngine.UI.Selectable.Transition
+  langs:
+  - csharp
+  - vb
+  name: ColorTint
+  nameWithType: Selectable.Transition.ColorTint
+  fullName: UnityEngine.UI.Selectable.Transition.ColorTint
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ColorTint
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+    startLine: 141
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Use an color tint transition.
+  example: []
+  syntax:
+    content: ColorTint = 1
+    return:
+      type: UnityEngine.UI.Selectable.Transition
+- uid: UnityEngine.UI.Selectable.Transition.SpriteSwap
+  commentId: F:UnityEngine.UI.Selectable.Transition.SpriteSwap
+  id: SpriteSwap
+  parent: UnityEngine.UI.Selectable.Transition
+  langs:
+  - csharp
+  - vb
+  name: SpriteSwap
+  nameWithType: Selectable.Transition.SpriteSwap
+  fullName: UnityEngine.UI.Selectable.Transition.SpriteSwap
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: SpriteSwap
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+    startLine: 146
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Use a sprite swap transition.
+  example: []
+  syntax:
+    content: SpriteSwap = 2
+    return:
+      type: UnityEngine.UI.Selectable.Transition
+- uid: UnityEngine.UI.Selectable.Transition.Animation
+  commentId: F:UnityEngine.UI.Selectable.Transition.Animation
+  id: Animation
+  parent: UnityEngine.UI.Selectable.Transition
+  langs:
+  - csharp
+  - vb
+  name: Animation
+  nameWithType: Selectable.Transition.Animation
+  fullName: UnityEngine.UI.Selectable.Transition.Animation
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Animation
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Selectable.cs
+    startLine: 151
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Use an animation transition.
+  example: []
+  syntax:
+    content: Animation = 3
+    return:
+      type: UnityEngine.UI.Selectable.Transition
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.Selectable.Transition
+  commentId: T:UnityEngine.UI.Selectable.Transition
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Selectable.html
+  name: Selectable.Transition
+  nameWithType: Selectable.Transition
+  fullName: UnityEngine.UI.Selectable.Transition
+  spec.csharp:
+  - uid: UnityEngine.UI.Selectable
+    name: Selectable
+    href: UnityEngine.UI.Selectable.html
+  - name: .
+  - uid: UnityEngine.UI.Selectable.Transition
+    name: Transition
+    href: UnityEngine.UI.Selectable.Transition.html
+  spec.vb:
+  - uid: UnityEngine.UI.Selectable
+    name: Selectable
+    href: UnityEngine.UI.Selectable.html
+  - name: .
+  - uid: UnityEngine.UI.Selectable.Transition
+    name: Transition
+    href: UnityEngine.UI.Selectable.Transition.html

@@ -1,0 +1,1260 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Toggle </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Toggle ">
+      
+      <meta name="description" content="A standard toggle that has an on / off state.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/new/mad/apiSpec/new?filename=UnityEngine_UI_Toggle.md&amp;value=---%0Auid%3A%20UnityEngine.UI.Toggle%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UnityEngine.UI.Toggle">
+
+
+
+  <h1 id="UnityEngine_UI_Toggle" data-uid="UnityEngine.UI.Toggle" class="text-break">
+Class Toggle  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UnityEngine.html">UnityEngine</a>.<a class="xref" href="UnityEngine.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UnityEngine.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>A standard toggle that has an on / off state.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[AddComponentMenu(&quot;UI/Toggle&quot;, 30)]
+[RequireComponent(typeof(RectTransform))]
+public class Toggle : Selectable, IMoveHandler, IPointerDownHandler, IPointerUpHandler, IPointerEnterHandler, IPointerExitHandler, ISelectHandler, IDeselectHandler, IPointerClickHandler, ISubmitHandler, IEventSystemHandler, ICanvasElement</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html">UIBehaviour</a></div>
+      <div><a class="xref" href="UnityEngine.UI.Selectable.html">Selectable</a></div>
+      <div><span class="xref">Toggle</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="UnityEngine.EventSystems.IMoveHandler.html">IMoveHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IPointerDownHandler.html">IPointerDownHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IPointerUpHandler.html">IPointerUpHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IPointerEnterHandler.html">IPointerEnterHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IPointerExitHandler.html">IPointerExitHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.ISelectHandler.html">ISelectHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IDeselectHandler.html">IDeselectHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IPointerClickHandler.html">IPointerClickHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.ISubmitHandler.html">ISubmitHandler</a></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.IEventSystemHandler.html">IEventSystemHandler</a></div>
+      <div><a class="xref" href="UnityEngine.UI.ICanvasElement.html">ICanvasElement</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_s_Selectables">Selectable.s_Selectables</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_s_SelectableCount">Selectable.s_SelectableCount</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_allSelectablesArray">Selectable.allSelectablesArray</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_allSelectableCount">Selectable.allSelectableCount</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_allSelectables">Selectable.allSelectables</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_AllSelectablesNoAlloc_UnityEngine_UI_Selectable___">Selectable.AllSelectablesNoAlloc(Selectable[])</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_m_CurrentIndex">Selectable.m_CurrentIndex</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_navigation">Selectable.navigation</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_transition">Selectable.transition</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_colors">Selectable.colors</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_spriteState">Selectable.spriteState</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_animationTriggers">Selectable.animationTriggers</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_targetGraphic">Selectable.targetGraphic</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_interactable">Selectable.interactable</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_image">Selectable.image</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_Awake">Selectable.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnCanvasGroupChanged">Selectable.OnCanvasGroupChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_IsInteractable">Selectable.IsInteractable()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnTransformParentChanged">Selectable.OnTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_currentSelectionState">Selectable.currentSelectionState</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_InstantClearState">Selectable.InstantClearState()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_DoStateTransition_UnityEngine_UI_Selectable_SelectionState_System_Boolean_">Selectable.DoStateTransition(Selectable.SelectionState, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectable_UnityEngine_Vector3_">Selectable.FindSelectable(Vector3)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectableOnLeft">Selectable.FindSelectableOnLeft()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectableOnRight">Selectable.FindSelectableOnRight()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectableOnUp">Selectable.FindSelectableOnUp()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_FindSelectableOnDown">Selectable.FindSelectableOnDown()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnMove_UnityEngine_EventSystems_AxisEventData_">Selectable.OnMove(AxisEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_IsHighlighted">Selectable.IsHighlighted()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_IsPressed">Selectable.IsPressed()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnPointerDown_UnityEngine_EventSystems_PointerEventData_">Selectable.OnPointerDown(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnPointerUp_UnityEngine_EventSystems_PointerEventData_">Selectable.OnPointerUp(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnPointerEnter_UnityEngine_EventSystems_PointerEventData_">Selectable.OnPointerEnter(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnPointerExit_UnityEngine_EventSystems_PointerEventData_">Selectable.OnPointerExit(PointerEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnSelect_UnityEngine_EventSystems_BaseEventData_">Selectable.OnSelect(BaseEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_OnDeselect_UnityEngine_EventSystems_BaseEventData_">Selectable.OnDeselect(BaseEventData)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Selectable.html#UnityEngine_UI_Selectable_Select">Selectable.Select()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_IsActive">UIBehaviour.IsActive()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnRectTransformDimensionsChange">UIBehaviour.OnRectTransformDimensionsChange()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnBeforeTransformParentChanged">UIBehaviour.OnBeforeTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnCanvasHierarchyChanged">UIBehaviour.OnCanvasHierarchyChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_IsDestroyed">UIBehaviour.IsDestroyed()</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.Invoke(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.InvokeRepeating(string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.CancelInvoke(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.IsInvoking(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine_Auto(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StopCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(Coroutine)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StopCoroutine(string)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">MonoBehaviour.print(object)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.destroyCancellationToken</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponent(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.TryGetComponent(Type, out Component)</a>
+    </div>
+    <div>
+      <span class="xref">Component.TryGetComponent&lt;T&gt;(out T)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.GetComponent(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type, List&lt;Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentIndex()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.CompareTag(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <span class="xref">Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Scene)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate(Object, Transform, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate&lt;T&gt;(T, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.Destroy(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Destroy(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.DestroyImmediate(Object, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyImmediate(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DontDestroyOnLoad(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.DestroyObject(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyObject(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <span class="xref">Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Object.name</span>
+    </div>
+    <div>
+      <span class="xref">Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+  <h2 id="UnityEngine_UI_Toggle_remarks">Remarks</h2>
+  <div class="markdown level0 remarks"><p>The toggle component is a Selectable that controls a child graphic which displays the on / off state.
+When a toggle event occurs a callback is sent to any registered listeners of UI.Toggle._onValueChanged.</p>
+</div>
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UnityEngine_UI_Toggle__ctor_" data-uid="UnityEngine.UI.Toggle.#ctor*"></a>
+
+  <h3 id="UnityEngine_UI_Toggle__ctor" data-uid="UnityEngine.UI.Toggle.#ctor">
+  Toggle()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Toggle()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="UnityEngine_UI_Toggle_graphic" data-uid="UnityEngine.UI.Toggle.graphic">
+  graphic
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Graphic the toggle should be working with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Graphic graphic</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Graphic.html">Graphic</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="UnityEngine_UI_Toggle_onValueChanged" data-uid="UnityEngine.UI.Toggle.onValueChanged">
+  onValueChanged
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Allow for delegate-based subscriptions for faster events than 'eventReceiver', and allowing for multiple receivers.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Toggle.ToggleEvent onValueChanged</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Toggle.html">Toggle</a>.<a class="xref" href="UnityEngine.UI.Toggle.ToggleEvent.html">ToggleEvent</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Toggle_onValueChanged_examples">Examples</h4>
+  <pre><code class="lang-csharp">//Attach this script to a Toggle GameObject. To do this, go to Create&gt;UI&gt;Toggle.
+//Set your own Text in the Inspector window
+
+using UnityEngine;
+using UnityEngine.UI;
+
+public class Example : MonoBehaviour
+{
+    Toggle m_Toggle;
+    public Text m_Text;
+
+    void Start()
+    {
+        //Fetch the Toggle GameObject
+        m_Toggle = GetComponent&lt;Toggle&gt;();
+        //Add listener for when the state of the Toggle changes, to take action
+        m_Toggle.onValueChanged.AddListener(delegate {
+                ToggleValueChanged(m_Toggle);
+            });
+
+        //Initialise the Text to say the first state of the Toggle
+        m_Text.text = "First Value : " + m_Toggle.isOn;
+    }
+
+    //Output the new state of the Toggle into Text
+    void ToggleValueChanged(Toggle change)
+    {
+        m_Text.text =  "New Value : " + m_Toggle.isOn;
+    }
+}</code></pre>
+
+
+
+
+
+
+
+  <h3 id="UnityEngine_UI_Toggle_toggleTransition" data-uid="UnityEngine.UI.Toggle.toggleTransition">
+  toggleTransition
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Transition mode for the toggle.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Toggle.ToggleTransition toggleTransition</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Toggle.html">Toggle</a>.<a class="xref" href="UnityEngine.UI.Toggle.ToggleTransition.html">ToggleTransition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UnityEngine_UI_Toggle_group_" data-uid="UnityEngine.UI.Toggle.group*"></a>
+
+  <h3 id="UnityEngine_UI_Toggle_group" data-uid="UnityEngine.UI.Toggle.group">
+  group
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Group the toggle belongs to.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ToggleGroup group { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.ToggleGroup.html">ToggleGroup</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Toggle_isOn_" data-uid="UnityEngine.UI.Toggle.isOn*"></a>
+
+  <h3 id="UnityEngine_UI_Toggle_isOn" data-uid="UnityEngine.UI.Toggle.isOn">
+  isOn
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs/#L241"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether the toggle is currently active.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool isOn { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Toggle_isOn_examples">Examples</h4>
+  <pre><code class="lang-csharp">/Attach this script to a Toggle GameObject. To do this, go to Create&gt;UI&gt;Toggle.
+//Set your own Text in the Inspector window
+
+using UnityEngine;
+using UnityEngine.UI;
+
+public class Example : MonoBehaviour
+{
+    Toggle m_Toggle;
+    public Text m_Text;
+
+    void Start()
+    {
+        //Fetch the Toggle GameObject
+        m_Toggle = GetComponent&lt;Toggle&gt;();
+        //Add listener for when the state of the Toggle changes, and output the state
+        m_Toggle.onValueChanged.AddListener(delegate {
+                ToggleValueChanged(m_Toggle);
+            });
+
+        //Initialize the Text to say whether the Toggle is in a positive or negative state
+        m_Text.text = "Toggle is : " + m_Toggle.isOn;
+    }
+
+    //Output the new state of the Toggle into Text when the user uses the Toggle
+    void ToggleValueChanged(Toggle change)
+    {
+        m_Text.text =  "Toggle is : " + m_Toggle.isOn;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UnityEngine_UI_Toggle_GraphicUpdateComplete_" data-uid="UnityEngine.UI.Toggle.GraphicUpdateComplete*"></a>
+
+  <h3 id="UnityEngine_UI_Toggle_GraphicUpdateComplete" data-uid="UnityEngine.UI.Toggle.GraphicUpdateComplete">
+  GraphicUpdateComplete()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Callback sent when this ICanvasElement has completed Graphic rebuild.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void GraphicUpdateComplete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Toggle_LayoutComplete_" data-uid="UnityEngine.UI.Toggle.LayoutComplete*"></a>
+
+  <h3 id="UnityEngine_UI_Toggle_LayoutComplete" data-uid="UnityEngine.UI.Toggle.LayoutComplete">
+  LayoutComplete()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Callback sent when this ICanvasElement has completed layout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void LayoutComplete()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Toggle_OnDestroy_" data-uid="UnityEngine.UI.Toggle.OnDestroy*"></a>
+
+  <h3 id="UnityEngine_UI_Toggle_OnDestroy" data-uid="UnityEngine.UI.Toggle.OnDestroy">
+  OnDestroy()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDestroy()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Toggle_OnDidApplyAnimationProperties_" data-uid="UnityEngine.UI.Toggle.OnDidApplyAnimationProperties*"></a>
+
+  <h3 id="UnityEngine_UI_Toggle_OnDidApplyAnimationProperties" data-uid="UnityEngine.UI.Toggle.OnDidApplyAnimationProperties">
+  OnDidApplyAnimationProperties()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDidApplyAnimationProperties()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Toggle_OnDisable_" data-uid="UnityEngine.UI.Toggle.OnDisable*"></a>
+
+  <h3 id="UnityEngine_UI_Toggle_OnDisable" data-uid="UnityEngine.UI.Toggle.OnDisable">
+  OnDisable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDisable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Toggle_OnEnable_" data-uid="UnityEngine.UI.Toggle.OnEnable*"></a>
+
+  <h3 id="UnityEngine_UI_Toggle_OnEnable" data-uid="UnityEngine.UI.Toggle.OnEnable">
+  OnEnable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Toggle_OnPointerClick_" data-uid="UnityEngine.UI.Toggle.OnPointerClick*"></a>
+
+  <h3 id="UnityEngine_UI_Toggle_OnPointerClick_UnityEngine_EventSystems_PointerEventData_" data-uid="UnityEngine.UI.Toggle.OnPointerClick(UnityEngine.EventSystems.PointerEventData)">
+  OnPointerClick(PointerEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs/#L323"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>React to clicks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnPointerClick(PointerEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.PointerEventData.html">PointerEventData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Toggle_OnSubmit_" data-uid="UnityEngine.UI.Toggle.OnSubmit*"></a>
+
+  <h3 id="UnityEngine_UI_Toggle_OnSubmit_UnityEngine_EventSystems_BaseEventData_" data-uid="UnityEngine.UI.Toggle.OnSubmit(UnityEngine.EventSystems.BaseEventData)">
+  OnSubmit(BaseEventData)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs/#L331"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void OnSubmit(BaseEventData eventData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>eventData</code> <a class="xref" href="UnityEngine.EventSystems.BaseEventData.html">BaseEventData</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Toggle_Rebuild_" data-uid="UnityEngine.UI.Toggle.Rebuild*"></a>
+
+  <h3 id="UnityEngine_UI_Toggle_Rebuild_UnityEngine_UI_CanvasUpdate_" data-uid="UnityEngine.UI.Toggle.Rebuild(UnityEngine.UI.CanvasUpdate)">
+  Rebuild(CanvasUpdate)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Rebuild the element for the given stage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Rebuild(CanvasUpdate executing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>executing</code> <a class="xref" href="UnityEngine.UI.CanvasUpdate.html">CanvasUpdate</a></dt>
+    <dd><p>The current CanvasUpdate stage being rebuild.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Toggle_SetIsOnWithoutNotify_" data-uid="UnityEngine.UI.Toggle.SetIsOnWithoutNotify*"></a>
+
+  <h3 id="UnityEngine_UI_Toggle_SetIsOnWithoutNotify_System_Boolean_" data-uid="UnityEngine.UI.Toggle.SetIsOnWithoutNotify(System.Boolean)">
+  SetIsOnWithoutNotify(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set isOn without invoking onValueChanged callback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetIsOnWithoutNotify(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>New Value for isOn.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Toggle_Start_" data-uid="UnityEngine.UI.Toggle.Start*"></a>
+
+  <h3 id="UnityEngine_UI_Toggle_Start" data-uid="UnityEngine.UI.Toggle.Start">
+  Start()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Assume the correct visual state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void Start()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Toggle.cs/#L15" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

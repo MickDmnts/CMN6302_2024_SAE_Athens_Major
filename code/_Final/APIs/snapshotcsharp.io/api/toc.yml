@@ -1,0 +1,35 @@
+### YamlMime:TableOfContent
+items:
+- uid: ProposedArchitecture
+  name: ProposedArchitecture
+  items:
+  - uid: ProposedArchitecture.Common
+    name: Common
+  - uid: ProposedArchitecture.GlobalProperties
+    name: GlobalProperties
+  - uid: ProposedArchitecture.ISnapshot
+    name: ISnapshot
+  - uid: ProposedArchitecture.ISnapshotModel
+    name: ISnapshotModel
+  - uid: ProposedArchitecture.Inventory
+    name: Inventory
+  - uid: ProposedArchitecture.Player
+    name: Player
+  - uid: ProposedArchitecture.SInventory
+    name: SInventory
+  - uid: ProposedArchitecture.SPlayer
+    name: SPlayer
+  - uid: ProposedArchitecture.SWeapon
+    name: SWeapon
+  - uid: ProposedArchitecture.SaveManager
+    name: SaveManager
+  - uid: ProposedArchitecture.Weapon
+    name: Weapon
+  - uid: ProposedArchitecture.WorldLoader
+    name: WorldLoader
+- uid: Snapshot
+  name: Snapshot
+  items:
+  - uid: Snapshot.SnapshotWrapper
+    name: SnapshotWrapper
+memberLayout: SamePage

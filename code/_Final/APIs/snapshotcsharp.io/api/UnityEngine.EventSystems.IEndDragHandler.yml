@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.IEndDragHandler
+  commentId: T:UnityEngine.EventSystems.IEndDragHandler
+  id: IEndDragHandler
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.IEndDragHandler.OnEndDrag(UnityEngine.EventSystems.PointerEventData)
+  langs:
+  - csharp
+  - vb
+  name: IEndDragHandler
+  nameWithType: IEndDragHandler
+  fullName: UnityEngine.EventSystems.IEndDragHandler
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IEndDragHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 252
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: >-
+    Interface to implement if you wish to receive OnEndDrag callbacks.
+
+    Note: You need to implement IDragHandler in addition to IEndDragHandler.
+  remarks: Criteria for this event is implementation dependent. For example see StandAloneInputModule.
+  example: []
+  syntax:
+    content: 'public interface IEndDragHandler : IEventSystemHandler'
+    content.vb: Public Interface IEndDragHandler Inherits IEventSystemHandler
+- uid: UnityEngine.EventSystems.IEndDragHandler.OnEndDrag(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:UnityEngine.EventSystems.IEndDragHandler.OnEndDrag(UnityEngine.EventSystems.PointerEventData)
+  id: OnEndDrag(UnityEngine.EventSystems.PointerEventData)
+  parent: UnityEngine.EventSystems.IEndDragHandler
+  langs:
+  - csharp
+  - vb
+  name: OnEndDrag(PointerEventData)
+  nameWithType: IEndDragHandler.OnEndDrag(PointerEventData)
+  fullName: UnityEngine.EventSystems.IEndDragHandler.OnEndDrag(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OnEndDrag
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 257
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Called by a BaseInputModule when a drag is ended.
+  example: []
+  syntax:
+    content: void OnEndDrag(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Sub OnEndDrag(eventData As PointerEventData)
+  overload: UnityEngine.EventSystems.IEndDragHandler.OnEndDrag*
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.IEndDragHandler.OnEndDrag*
+  commentId: Overload:UnityEngine.EventSystems.IEndDragHandler.OnEndDrag
+  href: UnityEngine.EventSystems.IEndDragHandler.html#UnityEngine_EventSystems_IEndDragHandler_OnEndDrag_UnityEngine_EventSystems_PointerEventData_
+  name: OnEndDrag
+  nameWithType: IEndDragHandler.OnEndDrag
+  fullName: UnityEngine.EventSystems.IEndDragHandler.OnEndDrag
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerEventData.html
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData

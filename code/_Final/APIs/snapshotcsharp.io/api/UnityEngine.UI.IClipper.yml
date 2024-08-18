@@ -1,0 +1,89 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.IClipper
+  commentId: T:UnityEngine.UI.IClipper
+  id: IClipper
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.IClipper.PerformClipping
+  langs:
+  - csharp
+  - vb
+  name: IClipper
+  nameWithType: IClipper
+  fullName: UnityEngine.UI.IClipper
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IClipper
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs
+    startLine: 5
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Interface that can be used to recieve clipping callbacks as part of the canvas update loop.
+  example: []
+  syntax:
+    content: public interface IClipper
+    content.vb: Public Interface IClipper
+- uid: UnityEngine.UI.IClipper.PerformClipping
+  commentId: M:UnityEngine.UI.IClipper.PerformClipping
+  id: PerformClipping
+  parent: UnityEngine.UI.IClipper
+  langs:
+  - csharp
+  - vb
+  name: PerformClipping()
+  nameWithType: IClipper.PerformClipping()
+  fullName: UnityEngine.UI.IClipper.PerformClipping()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: PerformClipping
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs
+    startLine: 14
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Function to to cull / clip children elements.
+  remarks: Called after layout and before Graphic update of the Canvas update loop.
+  example: []
+  syntax:
+    content: void PerformClipping()
+    content.vb: Sub PerformClipping()
+  overload: UnityEngine.UI.IClipper.PerformClipping*
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.IClipper.PerformClipping*
+  commentId: Overload:UnityEngine.UI.IClipper.PerformClipping
+  href: UnityEngine.UI.IClipper.html#UnityEngine_UI_IClipper_PerformClipping
+  name: PerformClipping
+  nameWithType: IClipper.PerformClipping
+  fullName: UnityEngine.UI.IClipper.PerformClipping

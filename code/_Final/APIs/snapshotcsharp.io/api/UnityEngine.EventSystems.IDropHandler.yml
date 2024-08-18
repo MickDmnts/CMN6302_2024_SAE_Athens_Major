@@ -1,0 +1,116 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.IDropHandler
+  commentId: T:UnityEngine.EventSystems.IDropHandler
+  id: IDropHandler
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.IDropHandler.OnDrop(UnityEngine.EventSystems.PointerEventData)
+  langs:
+  - csharp
+  - vb
+  name: IDropHandler
+  nameWithType: IDropHandler
+  fullName: UnityEngine.EventSystems.IDropHandler
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IDropHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 285
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Interface to implement if you wish to receive OnDrop callbacks.
+  remarks: Criteria for this event is implementation dependent. For example see StandAloneInputModule.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using UnityEngine;
+
+    using UnityEngine.EventSystems;
+
+
+    public class DropMe : MonoBehaviour, IDropHandler
+
+    {
+        public void OnDrop(PointerEventData data)
+        {
+            if (data.pointerDrag != null)
+            {
+                Debug.Log ("Dropped object was: "  + data.pointerDrag);
+            }
+        }
+    }</code></pre>
+  syntax:
+    content: 'public interface IDropHandler : IEventSystemHandler'
+    content.vb: Public Interface IDropHandler Inherits IEventSystemHandler
+- uid: UnityEngine.EventSystems.IDropHandler.OnDrop(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:UnityEngine.EventSystems.IDropHandler.OnDrop(UnityEngine.EventSystems.PointerEventData)
+  id: OnDrop(UnityEngine.EventSystems.PointerEventData)
+  parent: UnityEngine.EventSystems.IDropHandler
+  langs:
+  - csharp
+  - vb
+  name: OnDrop(PointerEventData)
+  nameWithType: IDropHandler.OnDrop(PointerEventData)
+  fullName: UnityEngine.EventSystems.IDropHandler.OnDrop(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OnDrop
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 290
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Called by a BaseInputModule on a target that can accept a drop.
+  example: []
+  syntax:
+    content: void OnDrop(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Sub OnDrop(eventData As PointerEventData)
+  overload: UnityEngine.EventSystems.IDropHandler.OnDrop*
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.IDropHandler.OnDrop*
+  commentId: Overload:UnityEngine.EventSystems.IDropHandler.OnDrop
+  href: UnityEngine.EventSystems.IDropHandler.html#UnityEngine_EventSystems_IDropHandler_OnDrop_UnityEngine_EventSystems_PointerEventData_
+  name: OnDrop
+  nameWithType: IDropHandler.OnDrop
+  fullName: UnityEngine.EventSystems.IDropHandler.OnDrop
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerEventData.html
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData

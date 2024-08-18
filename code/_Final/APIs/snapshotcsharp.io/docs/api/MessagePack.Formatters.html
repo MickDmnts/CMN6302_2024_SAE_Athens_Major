@@ -1,0 +1,799 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Namespace MessagePack.Formatters </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Namespace MessagePack.Formatters ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="MessagePack.Formatters">
+
+  <h1 id="MessagePack_Formatters" data-uid="MessagePack.Formatters" class="text-break">Namespace MessagePack.Formatters</h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+
+    <h3 id="classes">
+Classes
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ArrayFormatter-1.html">ArrayFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ArraySegmentFormatter-1.html">ArraySegmentFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.BigIntegerFormatter.html">BigIntegerFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.BitArrayFormatter.html">BitArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.BooleanArrayFormatter.html">BooleanArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.BooleanFormatter.html">BooleanFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ByteArrayFormatter.html">ByteArrayFormatter</a></dt>
+      <dd><p>Serializes a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a> array as a bin type.
+Deserializes a bin type or an array of byte-sized integers into a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a> array.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ByteArraySegmentFormatter.html">ByteArraySegmentFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ByteFormatter.html">ByteFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ByteMemoryFormatter.html">ByteMemoryFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ByteReadOnlyMemoryFormatter.html">ByteReadOnlyMemoryFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ByteReadOnlySequenceFormatter.html">ByteReadOnlySequenceFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.CharArrayFormatter.html">CharArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.CharFormatter.html">CharFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.CollectionFormatterBase-2.html">CollectionFormatterBase&lt;TElement, TCollection&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.CollectionFormatterBase-3.html">CollectionFormatterBase&lt;TElement, TIntermediate, TCollection&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.CollectionFormatterBase-4.html">CollectionFormatterBase&lt;TElement, TIntermediate, TEnumerator, TCollection&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ComplexFormatter.html">ComplexFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ConcurrentBagFormatter-1.html">ConcurrentBagFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ConcurrentDictionaryFormatter-2.html">ConcurrentDictionaryFormatter&lt;TKey, TValue&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ConcurrentQueueFormatter-1.html">ConcurrentQueueFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ConcurrentStackFormatter-1.html">ConcurrentStackFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.DateTimeArrayFormatter.html">DateTimeArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.DateTimeFormatter.html">DateTimeFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.DateTimeOffsetFormatter.html">DateTimeOffsetFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.DecimalFormatter.html">DecimalFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.DictionaryFormatterBase-3.html">DictionaryFormatterBase&lt;TKey, TValue, TDictionary&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.DictionaryFormatterBase-4.html">DictionaryFormatterBase&lt;TKey, TValue, TIntermediate, TDictionary&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.DictionaryFormatterBase-5.html">DictionaryFormatterBase&lt;TKey, TValue, TIntermediate, TEnumerator, TDictionary&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.DictionaryFormatter-2.html">DictionaryFormatter&lt;TKey, TValue&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.DoubleArrayFormatter.html">DoubleArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.DoubleFormatter.html">DoubleFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.DynamicObjectTypeFallbackFormatter.html">DynamicObjectTypeFallbackFormatter</a></dt>
+      <dd><p>This formatter can serialize any value whose static type is <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>
+for which another resolver can provide a formatter for the runtime type.
+Its deserialization is limited to forwarding all calls to the <a class="xref" href="MessagePack.Formatters.PrimitiveObjectFormatter.html">PrimitiveObjectFormatter</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.EnumAsStringFormatter-1.html">EnumAsStringFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ExpandoObjectFormatter.html">ExpandoObjectFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ForceByteBlockFormatter.html">ForceByteBlockFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ForceInt16BlockArrayFormatter.html">ForceInt16BlockArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ForceInt16BlockFormatter.html">ForceInt16BlockFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ForceInt32BlockArrayFormatter.html">ForceInt32BlockArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ForceInt32BlockFormatter.html">ForceInt32BlockFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ForceInt64BlockArrayFormatter.html">ForceInt64BlockArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ForceInt64BlockFormatter.html">ForceInt64BlockFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ForceSByteBlockArrayFormatter.html">ForceSByteBlockArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ForceSByteBlockFormatter.html">ForceSByteBlockFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ForceTypelessFormatter-1.html">ForceTypelessFormatter&lt;T&gt;</a></dt>
+      <dd><p>Force serialize object as typeless.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ForceUInt16BlockArrayFormatter.html">ForceUInt16BlockArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ForceUInt16BlockFormatter.html">ForceUInt16BlockFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ForceUInt32BlockArrayFormatter.html">ForceUInt32BlockArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ForceUInt32BlockFormatter.html">ForceUInt32BlockFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ForceUInt64BlockArrayFormatter.html">ForceUInt64BlockArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ForceUInt64BlockFormatter.html">ForceUInt64BlockFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.FourDimensionalArrayFormatter-1.html">FourDimensionalArrayFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.GenericCollectionFormatter-2.html">GenericCollectionFormatter&lt;TElement, TCollection&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.GenericDictionaryFormatter-3.html">GenericDictionaryFormatter&lt;TKey, TValue, TDictionary&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.GenericEnumFormatter-1.html">GenericEnumFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.GenericEnumerableFormatter-2.html">GenericEnumerableFormatter&lt;TElement, TCollection&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.GenericReadOnlyDictionaryFormatter-3.html">GenericReadOnlyDictionaryFormatter&lt;TKey, TValue, TDictionary&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.GuidFormatter.html">GuidFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.HashSetFormatter-1.html">HashSetFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.IgnoreFormatter-1.html">IgnoreFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.Int16ArrayFormatter.html">Int16ArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.Int16Formatter.html">Int16Formatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.Int32ArrayFormatter.html">Int32ArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.Int32Formatter.html">Int32Formatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.Int64ArrayFormatter.html">Int64ArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.Int64Formatter.html">Int64Formatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.InterfaceCollectionFormatter2-1.html">InterfaceCollectionFormatter2&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.InterfaceCollectionFormatter-1.html">InterfaceCollectionFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.InterfaceDictionaryFormatter-2.html">InterfaceDictionaryFormatter&lt;TKey, TValue&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.InterfaceEnumerableFormatter-1.html">InterfaceEnumerableFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.InterfaceGroupingFormatter-2.html">InterfaceGroupingFormatter&lt;TKey, TElement&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.InterfaceListFormatter2-1.html">InterfaceListFormatter2&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.InterfaceListFormatter-1.html">InterfaceListFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.InterfaceLookupFormatter-2.html">InterfaceLookupFormatter&lt;TKey, TElement&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.InterfaceReadOnlyCollectionFormatter-1.html">InterfaceReadOnlyCollectionFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.InterfaceReadOnlyDictionaryFormatter-2.html">InterfaceReadOnlyDictionaryFormatter&lt;TKey, TValue&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.InterfaceReadOnlyListFormatter-1.html">InterfaceReadOnlyListFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.InterfaceSetFormatter-1.html">InterfaceSetFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.KeyValuePairFormatter-2.html">KeyValuePairFormatter&lt;TKey, TValue&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.LazyFormatter-1.html">LazyFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.LinkedListFormatter-1.html">LinkedListFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ListFormatter-1.html">ListFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.MemoryFormatter-1.html">MemoryFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NativeDateTimeArrayFormatter.html">NativeDateTimeArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NativeDateTimeFormatter.html">NativeDateTimeFormatter</a></dt>
+      <dd><p>Serialize by .NET native DateTime binary format.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NativeDecimalFormatter.html">NativeDecimalFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NativeGuidFormatter.html">NativeGuidFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NilFormatter.html">NilFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NonGenericDictionaryFormatter-1.html">NonGenericDictionaryFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NonGenericInterfaceCollectionFormatter.html">NonGenericInterfaceCollectionFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NonGenericInterfaceDictionaryFormatter.html">NonGenericInterfaceDictionaryFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NonGenericInterfaceEnumerableFormatter.html">NonGenericInterfaceEnumerableFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NonGenericInterfaceListFormatter.html">NonGenericInterfaceListFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NonGenericListFormatter-1.html">NonGenericListFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableBooleanFormatter.html">NullableBooleanFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableByteFormatter.html">NullableByteFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableCharFormatter.html">NullableCharFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableDateTimeFormatter.html">NullableDateTimeFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableDoubleFormatter.html">NullableDoubleFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableForceByteBlockFormatter.html">NullableForceByteBlockFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableForceInt16BlockFormatter.html">NullableForceInt16BlockFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableForceInt32BlockFormatter.html">NullableForceInt32BlockFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableForceInt64BlockFormatter.html">NullableForceInt64BlockFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableForceSByteBlockFormatter.html">NullableForceSByteBlockFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableForceUInt16BlockFormatter.html">NullableForceUInt16BlockFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableForceUInt32BlockFormatter.html">NullableForceUInt32BlockFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableForceUInt64BlockFormatter.html">NullableForceUInt64BlockFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableFormatter-1.html">NullableFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableInt16Formatter.html">NullableInt16Formatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableInt32Formatter.html">NullableInt32Formatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableInt64Formatter.html">NullableInt64Formatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableNilFormatter.html">NullableNilFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableSByteFormatter.html">NullableSByteFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableSingleFormatter.html">NullableSingleFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableStringArrayFormatter.html">NullableStringArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableStringFormatter.html">NullableStringFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableUInt16Formatter.html">NullableUInt16Formatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableUInt32Formatter.html">NullableUInt32Formatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.NullableUInt64Formatter.html">NullableUInt64Formatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ObservableCollectionFormatter-1.html">ObservableCollectionFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.PrimitiveObjectFormatter.html">PrimitiveObjectFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.QueueFormatter-1.html">QueueFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ReadOnlyCollectionFormatter-1.html">ReadOnlyCollectionFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ReadOnlyDictionaryFormatter-2.html">ReadOnlyDictionaryFormatter&lt;TKey, TValue&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ReadOnlyMemoryFormatter-1.html">ReadOnlyMemoryFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ReadOnlyObservableCollectionFormatter-1.html">ReadOnlyObservableCollectionFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ReadOnlySequenceFormatter-1.html">ReadOnlySequenceFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.SByteArrayFormatter.html">SByteArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.SByteFormatter.html">SByteFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.SingleArrayFormatter.html">SingleArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.SingleFormatter.html">SingleFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.SortedDictionaryFormatter-2.html">SortedDictionaryFormatter&lt;TKey, TValue&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.SortedListFormatter-2.html">SortedListFormatter&lt;TKey, TValue&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.StackFormatter-1.html">StackFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.StaticNullableFormatter-1.html">StaticNullableFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.StringBuilderFormatter.html">StringBuilderFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.StringInterningFormatter.html">StringInterningFormatter</a></dt>
+      <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a> formatter that interns strings on deserialization.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ThreeDimensionalArrayFormatter-1.html">ThreeDimensionalArrayFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.TimeSpanFormatter.html">TimeSpanFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.TupleFormatter-1.html">TupleFormatter&lt;T1&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.TupleFormatter-2.html">TupleFormatter&lt;T1, T2&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.TupleFormatter-3.html">TupleFormatter&lt;T1, T2, T3&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.TupleFormatter-4.html">TupleFormatter&lt;T1, T2, T3, T4&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.TupleFormatter-5.html">TupleFormatter&lt;T1, T2, T3, T4, T5&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.TupleFormatter-6.html">TupleFormatter&lt;T1, T2, T3, T4, T5, T6&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.TupleFormatter-7.html">TupleFormatter&lt;T1, T2, T3, T4, T5, T6, T7&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.TupleFormatter-8.html">TupleFormatter&lt;T1, T2, T3, T4, T5, T6, T7, TRest&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.TwoDimensionalArrayFormatter-1.html">TwoDimensionalArrayFormatter&lt;T&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.TypeFormatter-1.html">TypeFormatter&lt;T&gt;</a></dt>
+      <dd><p>Serializes any instance of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a> by its <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type.assemblyqualifiedname">AssemblyQualifiedName</a> value.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.TypelessFormatter.html">TypelessFormatter</a></dt>
+      <dd><p>For <code>object</code> field that holds derived from <code>object</code> value, ex: var arr = new object[] { 1, &quot;a&quot;, new Model() };.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.UInt16ArrayFormatter.html">UInt16ArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.UInt16Formatter.html">UInt16Formatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.UInt32ArrayFormatter.html">UInt32ArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.UInt32Formatter.html">UInt32Formatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.UInt64ArrayFormatter.html">UInt64ArrayFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.UInt64Formatter.html">UInt64Formatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.UriFormatter.html">UriFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ValueTupleFormatter-1.html">ValueTupleFormatter&lt;T1&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ValueTupleFormatter-2.html">ValueTupleFormatter&lt;T1, T2&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ValueTupleFormatter-3.html">ValueTupleFormatter&lt;T1, T2, T3&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ValueTupleFormatter-4.html">ValueTupleFormatter&lt;T1, T2, T3, T4&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ValueTupleFormatter-5.html">ValueTupleFormatter&lt;T1, T2, T3, T4, T5&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ValueTupleFormatter-6.html">ValueTupleFormatter&lt;T1, T2, T3, T4, T5, T6&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ValueTupleFormatter-7.html">ValueTupleFormatter&lt;T1, T2, T3, T4, T5, T6, T7&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.ValueTupleFormatter-8.html">ValueTupleFormatter&lt;T1, T2, T3, T4, T5, T6, T7, TRest&gt;</a></dt>
+      <dd></dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.VersionFormatter.html">VersionFormatter</a></dt>
+      <dd></dd>
+    </dl>
+    <h3 id="interfaces">
+Interfaces
+</h3>
+    <dl class="jumplist">
+      <dt><a class="xref" href="MessagePack.Formatters.IMessagePackFormatter-1.html">IMessagePackFormatter&lt;T&gt;</a></dt>
+      <dd><p>The contract for serialization of some specific type.</p>
+</dd>
+    </dl>
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

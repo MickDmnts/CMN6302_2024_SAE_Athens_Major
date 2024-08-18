@@ -1,0 +1,375 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProposedArchitecture.ISnapshot
+  commentId: T:ProposedArchitecture.ISnapshot
+  id: ISnapshot
+  parent: ProposedArchitecture
+  children:
+  - ProposedArchitecture.ISnapshot.CacheModel
+  - ProposedArchitecture.ISnapshot.ConstructModel
+  - ProposedArchitecture.ISnapshot.GetSnapshotModelType
+  - ProposedArchitecture.ISnapshot.LoadModel(ProposedArchitecture.ISnapshotModel)
+  - ProposedArchitecture.ISnapshot.RegisterToSaveManager
+  - ProposedArchitecture.ISnapshot.RetrieveReferences(System.Int32[])
+  - ProposedArchitecture.ISnapshot.Smri
+  - ProposedArchitecture.ISnapshot.UnregisterToSaveManager
+  langs:
+  - csharp
+  - vb
+  name: ISnapshot
+  nameWithType: ISnapshot
+  fullName: ProposedArchitecture.ISnapshot
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshot.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ISnapshot
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshot.cs
+    startLine: 7
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  summary: Marks a class as ISnapshot-able
+  example: []
+  syntax:
+    content: public interface ISnapshot
+    content.vb: Public Interface ISnapshot
+- uid: ProposedArchitecture.ISnapshot.Smri
+  commentId: P:ProposedArchitecture.ISnapshot.Smri
+  id: Smri
+  parent: ProposedArchitecture.ISnapshot
+  langs:
+  - csharp
+  - vb
+  name: Smri
+  nameWithType: ISnapshot.Smri
+  fullName: ProposedArchitecture.ISnapshot.Smri
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshot.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Smri
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshot.cs
+    startLine: 9
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  summary: The class should have an SMRI field
+  example: []
+  syntax:
+    content: uint Smri { get; }
+    parameters: []
+    return:
+      type: System.UInt32
+    content.vb: ReadOnly Property Smri As UInteger
+  overload: ProposedArchitecture.ISnapshot.Smri*
+- uid: ProposedArchitecture.ISnapshot.RegisterToSaveManager
+  commentId: M:ProposedArchitecture.ISnapshot.RegisterToSaveManager
+  id: RegisterToSaveManager
+  parent: ProposedArchitecture.ISnapshot
+  langs:
+  - csharp
+  - vb
+  name: RegisterToSaveManager()
+  nameWithType: ISnapshot.RegisterToSaveManager()
+  fullName: ProposedArchitecture.ISnapshot.RegisterToSaveManager()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshot.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: RegisterToSaveManager
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshot.cs
+    startLine: 11
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  syntax:
+    content: void RegisterToSaveManager()
+    content.vb: Sub RegisterToSaveManager()
+  overload: ProposedArchitecture.ISnapshot.RegisterToSaveManager*
+- uid: ProposedArchitecture.ISnapshot.CacheModel
+  commentId: M:ProposedArchitecture.ISnapshot.CacheModel
+  id: CacheModel
+  parent: ProposedArchitecture.ISnapshot
+  langs:
+  - csharp
+  - vb
+  name: CacheModel()
+  nameWithType: ISnapshot.CacheModel()
+  fullName: ProposedArchitecture.ISnapshot.CacheModel()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshot.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: CacheModel
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshot.cs
+    startLine: 12
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  syntax:
+    content: void CacheModel()
+    content.vb: Sub CacheModel()
+  overload: ProposedArchitecture.ISnapshot.CacheModel*
+- uid: ProposedArchitecture.ISnapshot.ConstructModel
+  commentId: M:ProposedArchitecture.ISnapshot.ConstructModel
+  id: ConstructModel
+  parent: ProposedArchitecture.ISnapshot
+  langs:
+  - csharp
+  - vb
+  name: ConstructModel()
+  nameWithType: ISnapshot.ConstructModel()
+  fullName: ProposedArchitecture.ISnapshot.ConstructModel()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshot.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ConstructModel
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshot.cs
+    startLine: 13
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  syntax:
+    content: ISnapshotModel ConstructModel()
+    return:
+      type: ProposedArchitecture.ISnapshotModel
+    content.vb: Function ConstructModel() As ISnapshotModel
+  overload: ProposedArchitecture.ISnapshot.ConstructModel*
+- uid: ProposedArchitecture.ISnapshot.UnregisterToSaveManager
+  commentId: M:ProposedArchitecture.ISnapshot.UnregisterToSaveManager
+  id: UnregisterToSaveManager
+  parent: ProposedArchitecture.ISnapshot
+  langs:
+  - csharp
+  - vb
+  name: UnregisterToSaveManager()
+  nameWithType: ISnapshot.UnregisterToSaveManager()
+  fullName: ProposedArchitecture.ISnapshot.UnregisterToSaveManager()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshot.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: UnregisterToSaveManager
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshot.cs
+    startLine: 14
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  syntax:
+    content: void UnregisterToSaveManager()
+    content.vb: Sub UnregisterToSaveManager()
+  overload: ProposedArchitecture.ISnapshot.UnregisterToSaveManager*
+- uid: ProposedArchitecture.ISnapshot.LoadModel(ProposedArchitecture.ISnapshotModel)
+  commentId: M:ProposedArchitecture.ISnapshot.LoadModel(ProposedArchitecture.ISnapshotModel)
+  id: LoadModel(ProposedArchitecture.ISnapshotModel)
+  parent: ProposedArchitecture.ISnapshot
+  langs:
+  - csharp
+  - vb
+  name: LoadModel(ISnapshotModel)
+  nameWithType: ISnapshot.LoadModel(ISnapshotModel)
+  fullName: ProposedArchitecture.ISnapshot.LoadModel(ProposedArchitecture.ISnapshotModel)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshot.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: LoadModel
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshot.cs
+    startLine: 15
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  syntax:
+    content: void LoadModel(ISnapshotModel _model)
+    parameters:
+    - id: _model
+      type: ProposedArchitecture.ISnapshotModel
+    content.vb: Sub LoadModel(_model As ISnapshotModel)
+  overload: ProposedArchitecture.ISnapshot.LoadModel*
+- uid: ProposedArchitecture.ISnapshot.RetrieveReferences(System.Int32[])
+  commentId: M:ProposedArchitecture.ISnapshot.RetrieveReferences(System.Int32[])
+  id: RetrieveReferences(System.Int32[])
+  parent: ProposedArchitecture.ISnapshot
+  langs:
+  - csharp
+  - vb
+  name: RetrieveReferences(int[])
+  nameWithType: ISnapshot.RetrieveReferences(int[])
+  fullName: ProposedArchitecture.ISnapshot.RetrieveReferences(int[])
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshot.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: RetrieveReferences
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshot.cs
+    startLine: 16
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  syntax:
+    content: void RetrieveReferences(int[] _refSmris)
+    parameters:
+    - id: _refSmris
+      type: System.Int32[]
+    content.vb: Sub RetrieveReferences(_refSmris As Integer())
+  overload: ProposedArchitecture.ISnapshot.RetrieveReferences*
+  nameWithType.vb: ISnapshot.RetrieveReferences(Integer())
+  fullName.vb: ProposedArchitecture.ISnapshot.RetrieveReferences(Integer())
+  name.vb: RetrieveReferences(Integer())
+- uid: ProposedArchitecture.ISnapshot.GetSnapshotModelType
+  commentId: M:ProposedArchitecture.ISnapshot.GetSnapshotModelType
+  id: GetSnapshotModelType
+  parent: ProposedArchitecture.ISnapshot
+  langs:
+  - csharp
+  - vb
+  name: GetSnapshotModelType()
+  nameWithType: ISnapshot.GetSnapshotModelType()
+  fullName: ProposedArchitecture.ISnapshot.GetSnapshotModelType()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshot.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetSnapshotModelType
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/ISnapshot.cs
+    startLine: 17
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  syntax:
+    content: Type GetSnapshotModelType()
+    return:
+      type: System.Type
+    content.vb: Function GetSnapshotModelType() As Type
+  overload: ProposedArchitecture.ISnapshot.GetSnapshotModelType*
+references:
+- uid: ProposedArchitecture
+  commentId: N:ProposedArchitecture
+  href: ProposedArchitecture.html
+  name: ProposedArchitecture
+  nameWithType: ProposedArchitecture
+  fullName: ProposedArchitecture
+- uid: ProposedArchitecture.ISnapshot.Smri*
+  commentId: Overload:ProposedArchitecture.ISnapshot.Smri
+  href: ProposedArchitecture.ISnapshot.html#ProposedArchitecture_ISnapshot_Smri
+  name: Smri
+  nameWithType: ISnapshot.Smri
+  fullName: ProposedArchitecture.ISnapshot.Smri
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProposedArchitecture.ISnapshot.RegisterToSaveManager*
+  commentId: Overload:ProposedArchitecture.ISnapshot.RegisterToSaveManager
+  href: ProposedArchitecture.ISnapshot.html#ProposedArchitecture_ISnapshot_RegisterToSaveManager
+  name: RegisterToSaveManager
+  nameWithType: ISnapshot.RegisterToSaveManager
+  fullName: ProposedArchitecture.ISnapshot.RegisterToSaveManager
+- uid: ProposedArchitecture.ISnapshot.CacheModel*
+  commentId: Overload:ProposedArchitecture.ISnapshot.CacheModel
+  href: ProposedArchitecture.ISnapshot.html#ProposedArchitecture_ISnapshot_CacheModel
+  name: CacheModel
+  nameWithType: ISnapshot.CacheModel
+  fullName: ProposedArchitecture.ISnapshot.CacheModel
+- uid: ProposedArchitecture.ISnapshot.ConstructModel*
+  commentId: Overload:ProposedArchitecture.ISnapshot.ConstructModel
+  href: ProposedArchitecture.ISnapshot.html#ProposedArchitecture_ISnapshot_ConstructModel
+  name: ConstructModel
+  nameWithType: ISnapshot.ConstructModel
+  fullName: ProposedArchitecture.ISnapshot.ConstructModel
+- uid: ProposedArchitecture.ISnapshotModel
+  commentId: T:ProposedArchitecture.ISnapshotModel
+  parent: ProposedArchitecture
+  href: ProposedArchitecture.ISnapshotModel.html
+  name: ISnapshotModel
+  nameWithType: ISnapshotModel
+  fullName: ProposedArchitecture.ISnapshotModel
+- uid: ProposedArchitecture.ISnapshot.UnregisterToSaveManager*
+  commentId: Overload:ProposedArchitecture.ISnapshot.UnregisterToSaveManager
+  href: ProposedArchitecture.ISnapshot.html#ProposedArchitecture_ISnapshot_UnregisterToSaveManager
+  name: UnregisterToSaveManager
+  nameWithType: ISnapshot.UnregisterToSaveManager
+  fullName: ProposedArchitecture.ISnapshot.UnregisterToSaveManager
+- uid: ProposedArchitecture.ISnapshot.LoadModel*
+  commentId: Overload:ProposedArchitecture.ISnapshot.LoadModel
+  href: ProposedArchitecture.ISnapshot.html#ProposedArchitecture_ISnapshot_LoadModel_ProposedArchitecture_ISnapshotModel_
+  name: LoadModel
+  nameWithType: ISnapshot.LoadModel
+  fullName: ProposedArchitecture.ISnapshot.LoadModel
+- uid: ProposedArchitecture.ISnapshot.RetrieveReferences*
+  commentId: Overload:ProposedArchitecture.ISnapshot.RetrieveReferences
+  href: ProposedArchitecture.ISnapshot.html#ProposedArchitecture_ISnapshot_RetrieveReferences_System_Int32___
+  name: RetrieveReferences
+  nameWithType: ISnapshot.RetrieveReferences
+  fullName: ProposedArchitecture.ISnapshot.RetrieveReferences
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: ProposedArchitecture.ISnapshot.GetSnapshotModelType*
+  commentId: Overload:ProposedArchitecture.ISnapshot.GetSnapshotModelType
+  href: ProposedArchitecture.ISnapshot.html#ProposedArchitecture_ISnapshot_GetSnapshotModelType
+  name: GetSnapshotModelType
+  nameWithType: ISnapshot.GetSnapshotModelType
+  fullName: ProposedArchitecture.ISnapshot.GetSnapshotModelType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

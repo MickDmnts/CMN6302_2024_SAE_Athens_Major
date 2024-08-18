@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.Scrollbar.Direction
+  commentId: T:UnityEngine.UI.Scrollbar.Direction
+  id: Scrollbar.Direction
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.Scrollbar.Direction.BottomToTop
+  - UnityEngine.UI.Scrollbar.Direction.LeftToRight
+  - UnityEngine.UI.Scrollbar.Direction.RightToLeft
+  - UnityEngine.UI.Scrollbar.Direction.TopToBottom
+  langs:
+  - csharp
+  - vb
+  name: Scrollbar.Direction
+  nameWithType: Scrollbar.Direction
+  fullName: UnityEngine.UI.Scrollbar.Direction
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Scrollbar.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Direction
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Scrollbar.cs
+    startLine: 23
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Setting that indicates one of four directions the scrollbar will travel.
+  example: []
+  syntax:
+    content: public enum Scrollbar.Direction
+    content.vb: Public Enum Scrollbar.Direction
+- uid: UnityEngine.UI.Scrollbar.Direction.LeftToRight
+  commentId: F:UnityEngine.UI.Scrollbar.Direction.LeftToRight
+  id: LeftToRight
+  parent: UnityEngine.UI.Scrollbar.Direction
+  langs:
+  - csharp
+  - vb
+  name: LeftToRight
+  nameWithType: Scrollbar.Direction.LeftToRight
+  fullName: UnityEngine.UI.Scrollbar.Direction.LeftToRight
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Scrollbar.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: LeftToRight
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Scrollbar.cs
+    startLine: 28
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Starting position is the Left.
+  example: []
+  syntax:
+    content: LeftToRight = 0
+    return:
+      type: UnityEngine.UI.Scrollbar.Direction
+- uid: UnityEngine.UI.Scrollbar.Direction.RightToLeft
+  commentId: F:UnityEngine.UI.Scrollbar.Direction.RightToLeft
+  id: RightToLeft
+  parent: UnityEngine.UI.Scrollbar.Direction
+  langs:
+  - csharp
+  - vb
+  name: RightToLeft
+  nameWithType: Scrollbar.Direction.RightToLeft
+  fullName: UnityEngine.UI.Scrollbar.Direction.RightToLeft
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Scrollbar.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: RightToLeft
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Scrollbar.cs
+    startLine: 33
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Starting position is the Right
+  example: []
+  syntax:
+    content: RightToLeft = 1
+    return:
+      type: UnityEngine.UI.Scrollbar.Direction
+- uid: UnityEngine.UI.Scrollbar.Direction.BottomToTop
+  commentId: F:UnityEngine.UI.Scrollbar.Direction.BottomToTop
+  id: BottomToTop
+  parent: UnityEngine.UI.Scrollbar.Direction
+  langs:
+  - csharp
+  - vb
+  name: BottomToTop
+  nameWithType: Scrollbar.Direction.BottomToTop
+  fullName: UnityEngine.UI.Scrollbar.Direction.BottomToTop
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Scrollbar.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: BottomToTop
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Scrollbar.cs
+    startLine: 38
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Starting position is the Bottom.
+  example: []
+  syntax:
+    content: BottomToTop = 2
+    return:
+      type: UnityEngine.UI.Scrollbar.Direction
+- uid: UnityEngine.UI.Scrollbar.Direction.TopToBottom
+  commentId: F:UnityEngine.UI.Scrollbar.Direction.TopToBottom
+  id: TopToBottom
+  parent: UnityEngine.UI.Scrollbar.Direction
+  langs:
+  - csharp
+  - vb
+  name: TopToBottom
+  nameWithType: Scrollbar.Direction.TopToBottom
+  fullName: UnityEngine.UI.Scrollbar.Direction.TopToBottom
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Scrollbar.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: TopToBottom
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Scrollbar.cs
+    startLine: 43
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Starting position is the Top.
+  example: []
+  syntax:
+    content: TopToBottom = 3
+    return:
+      type: UnityEngine.UI.Scrollbar.Direction
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.Scrollbar.Direction
+  commentId: T:UnityEngine.UI.Scrollbar.Direction
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Scrollbar.html
+  name: Scrollbar.Direction
+  nameWithType: Scrollbar.Direction
+  fullName: UnityEngine.UI.Scrollbar.Direction
+  spec.csharp:
+  - uid: UnityEngine.UI.Scrollbar
+    name: Scrollbar
+    href: UnityEngine.UI.Scrollbar.html
+  - name: .
+  - uid: UnityEngine.UI.Scrollbar.Direction
+    name: Direction
+    href: UnityEngine.UI.Scrollbar.Direction.html
+  spec.vb:
+  - uid: UnityEngine.UI.Scrollbar
+    name: Scrollbar
+    href: UnityEngine.UI.Scrollbar.html
+  - name: .
+  - uid: UnityEngine.UI.Scrollbar.Direction
+    name: Direction
+    href: UnityEngine.UI.Scrollbar.Direction.html

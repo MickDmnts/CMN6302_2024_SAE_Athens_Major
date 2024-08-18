@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.Image.OriginVertical
+  commentId: T:UnityEngine.UI.Image.OriginVertical
+  id: Image.OriginVertical
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.Image.OriginVertical.Bottom
+  - UnityEngine.UI.Image.OriginVertical.Top
+  langs:
+  - csharp
+  - vb
+  name: Image.OriginVertical
+  nameWithType: Image.OriginVertical
+  fullName: UnityEngine.UI.Image.OriginVertical
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OriginVertical
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 143
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Origin for the Image.FillMethod.Vertical.
+  example: []
+  syntax:
+    content: public enum Image.OriginVertical
+    content.vb: Public Enum Image.OriginVertical
+- uid: UnityEngine.UI.Image.OriginVertical.Bottom
+  commentId: F:UnityEngine.UI.Image.OriginVertical.Bottom
+  id: Bottom
+  parent: UnityEngine.UI.Image.OriginVertical
+  langs:
+  - csharp
+  - vb
+  name: Bottom
+  nameWithType: Image.OriginVertical.Bottom
+  fullName: UnityEngine.UI.Image.OriginVertical.Bottom
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Bottom
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 148
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: '>Origin at the Bottom Edge.'
+  example: []
+  syntax:
+    content: Bottom = 0
+    return:
+      type: UnityEngine.UI.Image.OriginVertical
+- uid: UnityEngine.UI.Image.OriginVertical.Top
+  commentId: F:UnityEngine.UI.Image.OriginVertical.Top
+  id: Top
+  parent: UnityEngine.UI.Image.OriginVertical
+  langs:
+  - csharp
+  - vb
+  name: Top
+  nameWithType: Image.OriginVertical.Top
+  fullName: UnityEngine.UI.Image.OriginVertical.Top
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Top
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 153
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: '>Origin at the Top Edge.'
+  example: []
+  syntax:
+    content: Top = 1
+    return:
+      type: UnityEngine.UI.Image.OriginVertical
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.Image.OriginVertical
+  commentId: T:UnityEngine.UI.Image.OriginVertical
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Image.html
+  name: Image.OriginVertical
+  nameWithType: Image.OriginVertical
+  fullName: UnityEngine.UI.Image.OriginVertical
+  spec.csharp:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.OriginVertical
+    name: OriginVertical
+    href: UnityEngine.UI.Image.OriginVertical.html
+  spec.vb:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.OriginVertical
+    name: OriginVertical
+    href: UnityEngine.UI.Image.OriginVertical.html

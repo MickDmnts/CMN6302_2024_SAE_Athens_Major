@@ -1,0 +1,1575 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  id: UnityEngine.UI
+  children:
+  - UnityEngine.UI.AnimationTriggers
+  - UnityEngine.UI.AspectRatioFitter
+  - UnityEngine.UI.AspectRatioFitter.AspectMode
+  - UnityEngine.UI.BaseMeshEffect
+  - UnityEngine.UI.BaseVertexEffect
+  - UnityEngine.UI.Button
+  - UnityEngine.UI.Button.ButtonClickedEvent
+  - UnityEngine.UI.CanvasScaler
+  - UnityEngine.UI.CanvasScaler.ScaleMode
+  - UnityEngine.UI.CanvasScaler.ScreenMatchMode
+  - UnityEngine.UI.CanvasScaler.Unit
+  - UnityEngine.UI.CanvasUpdate
+  - UnityEngine.UI.CanvasUpdateRegistry
+  - UnityEngine.UI.ClipperRegistry
+  - UnityEngine.UI.Clipping
+  - UnityEngine.UI.ColorBlock
+  - UnityEngine.UI.ContentSizeFitter
+  - UnityEngine.UI.ContentSizeFitter.FitMode
+  - UnityEngine.UI.DefaultControls
+  - UnityEngine.UI.DefaultControls.IFactoryControls
+  - UnityEngine.UI.DefaultControls.Resources
+  - UnityEngine.UI.Dropdown
+  - UnityEngine.UI.Dropdown.DropdownEvent
+  - UnityEngine.UI.Dropdown.DropdownItem
+  - UnityEngine.UI.Dropdown.OptionData
+  - UnityEngine.UI.Dropdown.OptionDataList
+  - UnityEngine.UI.FontData
+  - UnityEngine.UI.FontUpdateTracker
+  - UnityEngine.UI.Graphic
+  - UnityEngine.UI.GraphicRaycaster
+  - UnityEngine.UI.GraphicRaycaster.BlockingObjects
+  - UnityEngine.UI.GraphicRegistry
+  - UnityEngine.UI.GridLayoutGroup
+  - UnityEngine.UI.GridLayoutGroup.Axis
+  - UnityEngine.UI.GridLayoutGroup.Constraint
+  - UnityEngine.UI.GridLayoutGroup.Corner
+  - UnityEngine.UI.HorizontalLayoutGroup
+  - UnityEngine.UI.HorizontalOrVerticalLayoutGroup
+  - UnityEngine.UI.ICanvasElement
+  - UnityEngine.UI.IClippable
+  - UnityEngine.UI.IClipper
+  - UnityEngine.UI.ILayoutController
+  - UnityEngine.UI.ILayoutElement
+  - UnityEngine.UI.ILayoutGroup
+  - UnityEngine.UI.ILayoutIgnorer
+  - UnityEngine.UI.ILayoutSelfController
+  - UnityEngine.UI.IMaskable
+  - UnityEngine.UI.IMaterialModifier
+  - UnityEngine.UI.IMeshModifier
+  - UnityEngine.UI.Image
+  - UnityEngine.UI.Image.FillMethod
+  - UnityEngine.UI.Image.Origin180
+  - UnityEngine.UI.Image.Origin360
+  - UnityEngine.UI.Image.Origin90
+  - UnityEngine.UI.Image.OriginHorizontal
+  - UnityEngine.UI.Image.OriginVertical
+  - UnityEngine.UI.Image.Type
+  - UnityEngine.UI.InputField
+  - UnityEngine.UI.InputField.CharacterValidation
+  - UnityEngine.UI.InputField.ContentType
+  - UnityEngine.UI.InputField.EditState
+  - UnityEngine.UI.InputField.EndEditEvent
+  - UnityEngine.UI.InputField.InputType
+  - UnityEngine.UI.InputField.LineType
+  - UnityEngine.UI.InputField.OnChangeEvent
+  - UnityEngine.UI.InputField.OnValidateInput
+  - UnityEngine.UI.InputField.SubmitEvent
+  - UnityEngine.UI.LayoutElement
+  - UnityEngine.UI.LayoutGroup
+  - UnityEngine.UI.LayoutRebuilder
+  - UnityEngine.UI.LayoutUtility
+  - UnityEngine.UI.Mask
+  - UnityEngine.UI.MaskUtilities
+  - UnityEngine.UI.MaskableGraphic
+  - UnityEngine.UI.MaskableGraphic.CullStateChangedEvent
+  - UnityEngine.UI.Navigation
+  - UnityEngine.UI.Navigation.Mode
+  - UnityEngine.UI.Outline
+  - UnityEngine.UI.PositionAsUV1
+  - UnityEngine.UI.RawImage
+  - UnityEngine.UI.RectMask2D
+  - UnityEngine.UI.ScrollRect
+  - UnityEngine.UI.ScrollRect.MovementType
+  - UnityEngine.UI.ScrollRect.ScrollRectEvent
+  - UnityEngine.UI.ScrollRect.ScrollbarVisibility
+  - UnityEngine.UI.Scrollbar
+  - UnityEngine.UI.Scrollbar.Direction
+  - UnityEngine.UI.Scrollbar.ScrollEvent
+  - UnityEngine.UI.Selectable
+  - UnityEngine.UI.Selectable.SelectionState
+  - UnityEngine.UI.Selectable.Transition
+  - UnityEngine.UI.Shadow
+  - UnityEngine.UI.Slider
+  - UnityEngine.UI.Slider.Direction
+  - UnityEngine.UI.Slider.SliderEvent
+  - UnityEngine.UI.SpriteState
+  - UnityEngine.UI.StencilMaterial
+  - UnityEngine.UI.Text
+  - UnityEngine.UI.Toggle
+  - UnityEngine.UI.Toggle.ToggleEvent
+  - UnityEngine.UI.Toggle.ToggleTransition
+  - UnityEngine.UI.ToggleGroup
+  - UnityEngine.UI.VertexHelper
+  - UnityEngine.UI.VerticalLayoutGroup
+  langs:
+  - csharp
+  - vb
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  type: Namespace
+  assemblies:
+  - UnityEngine.UI
+references:
+- uid: UnityEngine.UI.Dropdown
+  commentId: T:UnityEngine.UI.Dropdown
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Dropdown.html
+  name: Dropdown
+  nameWithType: Dropdown
+  fullName: UnityEngine.UI.Dropdown
+- uid: UnityEngine.UI.Dropdown.DropdownItem
+  commentId: T:UnityEngine.UI.Dropdown.DropdownItem
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Dropdown.html
+  name: Dropdown.DropdownItem
+  nameWithType: Dropdown.DropdownItem
+  fullName: UnityEngine.UI.Dropdown.DropdownItem
+  spec.csharp:
+  - uid: UnityEngine.UI.Dropdown
+    name: Dropdown
+    href: UnityEngine.UI.Dropdown.html
+  - name: .
+  - uid: UnityEngine.UI.Dropdown.DropdownItem
+    name: DropdownItem
+    href: UnityEngine.UI.Dropdown.DropdownItem.html
+  spec.vb:
+  - uid: UnityEngine.UI.Dropdown
+    name: Dropdown
+    href: UnityEngine.UI.Dropdown.html
+  - name: .
+  - uid: UnityEngine.UI.Dropdown.DropdownItem
+    name: DropdownItem
+    href: UnityEngine.UI.Dropdown.DropdownItem.html
+- uid: UnityEngine.UI.Dropdown.OptionData
+  commentId: T:UnityEngine.UI.Dropdown.OptionData
+  href: UnityEngine.UI.Dropdown.html
+  name: Dropdown.OptionData
+  nameWithType: Dropdown.OptionData
+  fullName: UnityEngine.UI.Dropdown.OptionData
+  spec.csharp:
+  - uid: UnityEngine.UI.Dropdown
+    name: Dropdown
+    href: UnityEngine.UI.Dropdown.html
+  - name: .
+  - uid: UnityEngine.UI.Dropdown.OptionData
+    name: OptionData
+    href: UnityEngine.UI.Dropdown.OptionData.html
+  spec.vb:
+  - uid: UnityEngine.UI.Dropdown
+    name: Dropdown
+    href: UnityEngine.UI.Dropdown.html
+  - name: .
+  - uid: UnityEngine.UI.Dropdown.OptionData
+    name: OptionData
+    href: UnityEngine.UI.Dropdown.OptionData.html
+- uid: UnityEngine.UI.Dropdown.OptionDataList
+  commentId: T:UnityEngine.UI.Dropdown.OptionDataList
+  href: UnityEngine.UI.Dropdown.html
+  name: Dropdown.OptionDataList
+  nameWithType: Dropdown.OptionDataList
+  fullName: UnityEngine.UI.Dropdown.OptionDataList
+  spec.csharp:
+  - uid: UnityEngine.UI.Dropdown
+    name: Dropdown
+    href: UnityEngine.UI.Dropdown.html
+  - name: .
+  - uid: UnityEngine.UI.Dropdown.OptionDataList
+    name: OptionDataList
+    href: UnityEngine.UI.Dropdown.OptionDataList.html
+  spec.vb:
+  - uid: UnityEngine.UI.Dropdown
+    name: Dropdown
+    href: UnityEngine.UI.Dropdown.html
+  - name: .
+  - uid: UnityEngine.UI.Dropdown.OptionDataList
+    name: OptionDataList
+    href: UnityEngine.UI.Dropdown.OptionDataList.html
+- uid: UnityEngine.UI.Dropdown.DropdownEvent
+  commentId: T:UnityEngine.UI.Dropdown.DropdownEvent
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Dropdown.html
+  name: Dropdown.DropdownEvent
+  nameWithType: Dropdown.DropdownEvent
+  fullName: UnityEngine.UI.Dropdown.DropdownEvent
+  spec.csharp:
+  - uid: UnityEngine.UI.Dropdown
+    name: Dropdown
+    href: UnityEngine.UI.Dropdown.html
+  - name: .
+  - uid: UnityEngine.UI.Dropdown.DropdownEvent
+    name: DropdownEvent
+    href: UnityEngine.UI.Dropdown.DropdownEvent.html
+  spec.vb:
+  - uid: UnityEngine.UI.Dropdown
+    name: Dropdown
+    href: UnityEngine.UI.Dropdown.html
+  - name: .
+  - uid: UnityEngine.UI.Dropdown.DropdownEvent
+    name: DropdownEvent
+    href: UnityEngine.UI.Dropdown.DropdownEvent.html
+- uid: UnityEngine.UI.Navigation
+  commentId: T:UnityEngine.UI.Navigation
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Navigation.html
+  name: Navigation
+  nameWithType: Navigation
+  fullName: UnityEngine.UI.Navigation
+- uid: UnityEngine.UI.Navigation.Mode
+  commentId: T:UnityEngine.UI.Navigation.Mode
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Navigation.html
+  name: Navigation.Mode
+  nameWithType: Navigation.Mode
+  fullName: UnityEngine.UI.Navigation.Mode
+  spec.csharp:
+  - uid: UnityEngine.UI.Navigation
+    name: Navigation
+    href: UnityEngine.UI.Navigation.html
+  - name: .
+  - uid: UnityEngine.UI.Navigation.Mode
+    name: Mode
+    href: UnityEngine.UI.Navigation.Mode.html
+  spec.vb:
+  - uid: UnityEngine.UI.Navigation
+    name: Navigation
+    href: UnityEngine.UI.Navigation.html
+  - name: .
+  - uid: UnityEngine.UI.Navigation.Mode
+    name: Mode
+    href: UnityEngine.UI.Navigation.Mode.html
+- uid: UnityEngine.UI.Clipping
+  commentId: T:UnityEngine.UI.Clipping
+  href: UnityEngine.UI.Clipping.html
+  name: Clipping
+  nameWithType: Clipping
+  fullName: UnityEngine.UI.Clipping
+- uid: UnityEngine.UI.Image
+  commentId: T:UnityEngine.UI.Image
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Image.html
+  name: Image
+  nameWithType: Image
+  fullName: UnityEngine.UI.Image
+- uid: UnityEngine.UI.Image.Type
+  commentId: T:UnityEngine.UI.Image.Type
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Image.html
+  name: Image.Type
+  nameWithType: Image.Type
+  fullName: UnityEngine.UI.Image.Type
+  spec.csharp:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.Type
+    name: Type
+    href: UnityEngine.UI.Image.Type.html
+  spec.vb:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.Type
+    name: Type
+    href: UnityEngine.UI.Image.Type.html
+- uid: UnityEngine.UI.Image.FillMethod
+  commentId: T:UnityEngine.UI.Image.FillMethod
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Image.html
+  name: Image.FillMethod
+  nameWithType: Image.FillMethod
+  fullName: UnityEngine.UI.Image.FillMethod
+  spec.csharp:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.FillMethod
+    name: FillMethod
+    href: UnityEngine.UI.Image.FillMethod.html
+  spec.vb:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.FillMethod
+    name: FillMethod
+    href: UnityEngine.UI.Image.FillMethod.html
+- uid: UnityEngine.UI.Image.OriginHorizontal
+  commentId: T:UnityEngine.UI.Image.OriginHorizontal
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Image.html
+  name: Image.OriginHorizontal
+  nameWithType: Image.OriginHorizontal
+  fullName: UnityEngine.UI.Image.OriginHorizontal
+  spec.csharp:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.OriginHorizontal
+    name: OriginHorizontal
+    href: UnityEngine.UI.Image.OriginHorizontal.html
+  spec.vb:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.OriginHorizontal
+    name: OriginHorizontal
+    href: UnityEngine.UI.Image.OriginHorizontal.html
+- uid: UnityEngine.UI.Image.OriginVertical
+  commentId: T:UnityEngine.UI.Image.OriginVertical
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Image.html
+  name: Image.OriginVertical
+  nameWithType: Image.OriginVertical
+  fullName: UnityEngine.UI.Image.OriginVertical
+  spec.csharp:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.OriginVertical
+    name: OriginVertical
+    href: UnityEngine.UI.Image.OriginVertical.html
+  spec.vb:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.OriginVertical
+    name: OriginVertical
+    href: UnityEngine.UI.Image.OriginVertical.html
+- uid: UnityEngine.UI.Image.Origin90
+  commentId: T:UnityEngine.UI.Image.Origin90
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Image.html
+  name: Image.Origin90
+  nameWithType: Image.Origin90
+  fullName: UnityEngine.UI.Image.Origin90
+  spec.csharp:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.Origin90
+    name: Origin90
+    href: UnityEngine.UI.Image.Origin90.html
+  spec.vb:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.Origin90
+    name: Origin90
+    href: UnityEngine.UI.Image.Origin90.html
+- uid: UnityEngine.UI.Image.Origin180
+  commentId: T:UnityEngine.UI.Image.Origin180
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Image.html
+  name: Image.Origin180
+  nameWithType: Image.Origin180
+  fullName: UnityEngine.UI.Image.Origin180
+  spec.csharp:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.Origin180
+    name: Origin180
+    href: UnityEngine.UI.Image.Origin180.html
+  spec.vb:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.Origin180
+    name: Origin180
+    href: UnityEngine.UI.Image.Origin180.html
+- uid: UnityEngine.UI.Image.Origin360
+  commentId: T:UnityEngine.UI.Image.Origin360
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Image.html
+  name: Image.Origin360
+  nameWithType: Image.Origin360
+  fullName: UnityEngine.UI.Image.Origin360
+  spec.csharp:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.Origin360
+    name: Origin360
+    href: UnityEngine.UI.Image.Origin360.html
+  spec.vb:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.Origin360
+    name: Origin360
+    href: UnityEngine.UI.Image.Origin360.html
+- uid: UnityEngine.UI.LayoutElement
+  commentId: T:UnityEngine.UI.LayoutElement
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.LayoutElement.html
+  name: LayoutElement
+  nameWithType: LayoutElement
+  fullName: UnityEngine.UI.LayoutElement
+- uid: UnityEngine.UI.VerticalLayoutGroup
+  commentId: T:UnityEngine.UI.VerticalLayoutGroup
+  href: UnityEngine.UI.VerticalLayoutGroup.html
+  name: VerticalLayoutGroup
+  nameWithType: VerticalLayoutGroup
+  fullName: UnityEngine.UI.VerticalLayoutGroup
+- uid: UnityEngine.UI.GridLayoutGroup
+  commentId: T:UnityEngine.UI.GridLayoutGroup
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.GridLayoutGroup.html
+  name: GridLayoutGroup
+  nameWithType: GridLayoutGroup
+  fullName: UnityEngine.UI.GridLayoutGroup
+- uid: UnityEngine.UI.GridLayoutGroup.Corner
+  commentId: T:UnityEngine.UI.GridLayoutGroup.Corner
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.GridLayoutGroup.html
+  name: GridLayoutGroup.Corner
+  nameWithType: GridLayoutGroup.Corner
+  fullName: UnityEngine.UI.GridLayoutGroup.Corner
+  spec.csharp:
+  - uid: UnityEngine.UI.GridLayoutGroup
+    name: GridLayoutGroup
+    href: UnityEngine.UI.GridLayoutGroup.html
+  - name: .
+  - uid: UnityEngine.UI.GridLayoutGroup.Corner
+    name: Corner
+    href: UnityEngine.UI.GridLayoutGroup.Corner.html
+  spec.vb:
+  - uid: UnityEngine.UI.GridLayoutGroup
+    name: GridLayoutGroup
+    href: UnityEngine.UI.GridLayoutGroup.html
+  - name: .
+  - uid: UnityEngine.UI.GridLayoutGroup.Corner
+    name: Corner
+    href: UnityEngine.UI.GridLayoutGroup.Corner.html
+- uid: UnityEngine.UI.GridLayoutGroup.Axis
+  commentId: T:UnityEngine.UI.GridLayoutGroup.Axis
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.GridLayoutGroup.html
+  name: GridLayoutGroup.Axis
+  nameWithType: GridLayoutGroup.Axis
+  fullName: UnityEngine.UI.GridLayoutGroup.Axis
+  spec.csharp:
+  - uid: UnityEngine.UI.GridLayoutGroup
+    name: GridLayoutGroup
+    href: UnityEngine.UI.GridLayoutGroup.html
+  - name: .
+  - uid: UnityEngine.UI.GridLayoutGroup.Axis
+    name: Axis
+    href: UnityEngine.UI.GridLayoutGroup.Axis.html
+  spec.vb:
+  - uid: UnityEngine.UI.GridLayoutGroup
+    name: GridLayoutGroup
+    href: UnityEngine.UI.GridLayoutGroup.html
+  - name: .
+  - uid: UnityEngine.UI.GridLayoutGroup.Axis
+    name: Axis
+    href: UnityEngine.UI.GridLayoutGroup.Axis.html
+- uid: UnityEngine.UI.GridLayoutGroup.Constraint
+  commentId: T:UnityEngine.UI.GridLayoutGroup.Constraint
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.GridLayoutGroup.html
+  name: GridLayoutGroup.Constraint
+  nameWithType: GridLayoutGroup.Constraint
+  fullName: UnityEngine.UI.GridLayoutGroup.Constraint
+  spec.csharp:
+  - uid: UnityEngine.UI.GridLayoutGroup
+    name: GridLayoutGroup
+    href: UnityEngine.UI.GridLayoutGroup.html
+  - name: .
+  - uid: UnityEngine.UI.GridLayoutGroup.Constraint
+    name: Constraint
+    href: UnityEngine.UI.GridLayoutGroup.Constraint.html
+  spec.vb:
+  - uid: UnityEngine.UI.GridLayoutGroup
+    name: GridLayoutGroup
+    href: UnityEngine.UI.GridLayoutGroup.html
+  - name: .
+  - uid: UnityEngine.UI.GridLayoutGroup.Constraint
+    name: Constraint
+    href: UnityEngine.UI.GridLayoutGroup.Constraint.html
+- uid: UnityEngine.UI.ColorBlock
+  commentId: T:UnityEngine.UI.ColorBlock
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ColorBlock.html
+  name: ColorBlock
+  nameWithType: ColorBlock
+  fullName: UnityEngine.UI.ColorBlock
+- uid: UnityEngine.UI.HorizontalLayoutGroup
+  commentId: T:UnityEngine.UI.HorizontalLayoutGroup
+  href: UnityEngine.UI.HorizontalLayoutGroup.html
+  name: HorizontalLayoutGroup
+  nameWithType: HorizontalLayoutGroup
+  fullName: UnityEngine.UI.HorizontalLayoutGroup
+- uid: UnityEngine.UI.Shadow
+  commentId: T:UnityEngine.UI.Shadow
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Shadow.html
+  name: Shadow
+  nameWithType: Shadow
+  fullName: UnityEngine.UI.Shadow
+- uid: UnityEngine.UI.GraphicRaycaster
+  commentId: T:UnityEngine.UI.GraphicRaycaster
+  href: UnityEngine.UI.GraphicRaycaster.html
+  name: GraphicRaycaster
+  nameWithType: GraphicRaycaster
+  fullName: UnityEngine.UI.GraphicRaycaster
+- uid: UnityEngine.UI.GraphicRaycaster.BlockingObjects
+  commentId: T:UnityEngine.UI.GraphicRaycaster.BlockingObjects
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.GraphicRaycaster.html
+  name: GraphicRaycaster.BlockingObjects
+  nameWithType: GraphicRaycaster.BlockingObjects
+  fullName: UnityEngine.UI.GraphicRaycaster.BlockingObjects
+  spec.csharp:
+  - uid: UnityEngine.UI.GraphicRaycaster
+    name: GraphicRaycaster
+    href: UnityEngine.UI.GraphicRaycaster.html
+  - name: .
+  - uid: UnityEngine.UI.GraphicRaycaster.BlockingObjects
+    name: BlockingObjects
+    href: UnityEngine.UI.GraphicRaycaster.BlockingObjects.html
+  spec.vb:
+  - uid: UnityEngine.UI.GraphicRaycaster
+    name: GraphicRaycaster
+    href: UnityEngine.UI.GraphicRaycaster.html
+  - name: .
+  - uid: UnityEngine.UI.GraphicRaycaster.BlockingObjects
+    name: BlockingObjects
+    href: UnityEngine.UI.GraphicRaycaster.BlockingObjects.html
+- uid: UnityEngine.UI.DefaultControls
+  commentId: T:UnityEngine.UI.DefaultControls
+  href: UnityEngine.UI.DefaultControls.html
+  name: DefaultControls
+  nameWithType: DefaultControls
+  fullName: UnityEngine.UI.DefaultControls
+- uid: UnityEngine.UI.DefaultControls.IFactoryControls
+  commentId: T:UnityEngine.UI.DefaultControls.IFactoryControls
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.DefaultControls.html
+  name: DefaultControls.IFactoryControls
+  nameWithType: DefaultControls.IFactoryControls
+  fullName: UnityEngine.UI.DefaultControls.IFactoryControls
+  spec.csharp:
+  - uid: UnityEngine.UI.DefaultControls
+    name: DefaultControls
+    href: UnityEngine.UI.DefaultControls.html
+  - name: .
+  - uid: UnityEngine.UI.DefaultControls.IFactoryControls
+    name: IFactoryControls
+    href: UnityEngine.UI.DefaultControls.IFactoryControls.html
+  spec.vb:
+  - uid: UnityEngine.UI.DefaultControls
+    name: DefaultControls
+    href: UnityEngine.UI.DefaultControls.html
+  - name: .
+  - uid: UnityEngine.UI.DefaultControls.IFactoryControls
+    name: IFactoryControls
+    href: UnityEngine.UI.DefaultControls.IFactoryControls.html
+- uid: UnityEngine.UI.DefaultControls.Resources
+  commentId: T:UnityEngine.UI.DefaultControls.Resources
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.DefaultControls.html
+  name: DefaultControls.Resources
+  nameWithType: DefaultControls.Resources
+  fullName: UnityEngine.UI.DefaultControls.Resources
+  spec.csharp:
+  - uid: UnityEngine.UI.DefaultControls
+    name: DefaultControls
+    href: UnityEngine.UI.DefaultControls.html
+  - name: .
+  - uid: UnityEngine.UI.DefaultControls.Resources
+    name: Resources
+    href: UnityEngine.UI.DefaultControls.Resources.html
+  spec.vb:
+  - uid: UnityEngine.UI.DefaultControls
+    name: DefaultControls
+    href: UnityEngine.UI.DefaultControls.html
+  - name: .
+  - uid: UnityEngine.UI.DefaultControls.Resources
+    name: Resources
+    href: UnityEngine.UI.DefaultControls.Resources.html
+- uid: UnityEngine.UI.Scrollbar
+  commentId: T:UnityEngine.UI.Scrollbar
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Scrollbar.html
+  name: Scrollbar
+  nameWithType: Scrollbar
+  fullName: UnityEngine.UI.Scrollbar
+- uid: UnityEngine.UI.Scrollbar.Direction
+  commentId: T:UnityEngine.UI.Scrollbar.Direction
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Scrollbar.html
+  name: Scrollbar.Direction
+  nameWithType: Scrollbar.Direction
+  fullName: UnityEngine.UI.Scrollbar.Direction
+  spec.csharp:
+  - uid: UnityEngine.UI.Scrollbar
+    name: Scrollbar
+    href: UnityEngine.UI.Scrollbar.html
+  - name: .
+  - uid: UnityEngine.UI.Scrollbar.Direction
+    name: Direction
+    href: UnityEngine.UI.Scrollbar.Direction.html
+  spec.vb:
+  - uid: UnityEngine.UI.Scrollbar
+    name: Scrollbar
+    href: UnityEngine.UI.Scrollbar.html
+  - name: .
+  - uid: UnityEngine.UI.Scrollbar.Direction
+    name: Direction
+    href: UnityEngine.UI.Scrollbar.Direction.html
+- uid: UnityEngine.UI.Scrollbar.ScrollEvent
+  commentId: T:UnityEngine.UI.Scrollbar.ScrollEvent
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Scrollbar.html
+  name: Scrollbar.ScrollEvent
+  nameWithType: Scrollbar.ScrollEvent
+  fullName: UnityEngine.UI.Scrollbar.ScrollEvent
+  spec.csharp:
+  - uid: UnityEngine.UI.Scrollbar
+    name: Scrollbar
+    href: UnityEngine.UI.Scrollbar.html
+  - name: .
+  - uid: UnityEngine.UI.Scrollbar.ScrollEvent
+    name: ScrollEvent
+    href: UnityEngine.UI.Scrollbar.ScrollEvent.html
+  spec.vb:
+  - uid: UnityEngine.UI.Scrollbar
+    name: Scrollbar
+    href: UnityEngine.UI.Scrollbar.html
+  - name: .
+  - uid: UnityEngine.UI.Scrollbar.ScrollEvent
+    name: ScrollEvent
+    href: UnityEngine.UI.Scrollbar.ScrollEvent.html
+- uid: UnityEngine.UI.HorizontalOrVerticalLayoutGroup
+  commentId: T:UnityEngine.UI.HorizontalOrVerticalLayoutGroup
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.HorizontalOrVerticalLayoutGroup.html
+  name: HorizontalOrVerticalLayoutGroup
+  nameWithType: HorizontalOrVerticalLayoutGroup
+  fullName: UnityEngine.UI.HorizontalOrVerticalLayoutGroup
+- uid: UnityEngine.UI.LayoutGroup
+  commentId: T:UnityEngine.UI.LayoutGroup
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.LayoutGroup.html
+  name: LayoutGroup
+  nameWithType: LayoutGroup
+  fullName: UnityEngine.UI.LayoutGroup
+- uid: UnityEngine.UI.Slider
+  commentId: T:UnityEngine.UI.Slider
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Slider.html
+  name: Slider
+  nameWithType: Slider
+  fullName: UnityEngine.UI.Slider
+- uid: UnityEngine.UI.Slider.Direction
+  commentId: T:UnityEngine.UI.Slider.Direction
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Slider.html
+  name: Slider.Direction
+  nameWithType: Slider.Direction
+  fullName: UnityEngine.UI.Slider.Direction
+  spec.csharp:
+  - uid: UnityEngine.UI.Slider
+    name: Slider
+    href: UnityEngine.UI.Slider.html
+  - name: .
+  - uid: UnityEngine.UI.Slider.Direction
+    name: Direction
+    href: UnityEngine.UI.Slider.Direction.html
+  spec.vb:
+  - uid: UnityEngine.UI.Slider
+    name: Slider
+    href: UnityEngine.UI.Slider.html
+  - name: .
+  - uid: UnityEngine.UI.Slider.Direction
+    name: Direction
+    href: UnityEngine.UI.Slider.Direction.html
+- uid: UnityEngine.UI.Slider.SliderEvent
+  commentId: T:UnityEngine.UI.Slider.SliderEvent
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Slider.html
+  name: Slider.SliderEvent
+  nameWithType: Slider.SliderEvent
+  fullName: UnityEngine.UI.Slider.SliderEvent
+  spec.csharp:
+  - uid: UnityEngine.UI.Slider
+    name: Slider
+    href: UnityEngine.UI.Slider.html
+  - name: .
+  - uid: UnityEngine.UI.Slider.SliderEvent
+    name: SliderEvent
+    href: UnityEngine.UI.Slider.SliderEvent.html
+  spec.vb:
+  - uid: UnityEngine.UI.Slider
+    name: Slider
+    href: UnityEngine.UI.Slider.html
+  - name: .
+  - uid: UnityEngine.UI.Slider.SliderEvent
+    name: SliderEvent
+    href: UnityEngine.UI.Slider.SliderEvent.html
+- uid: UnityEngine.UI.IMaterialModifier
+  commentId: T:UnityEngine.UI.IMaterialModifier
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.IMaterialModifier.html
+  name: IMaterialModifier
+  nameWithType: IMaterialModifier
+  fullName: UnityEngine.UI.IMaterialModifier
+- uid: UnityEngine.UI.Selectable
+  commentId: T:UnityEngine.UI.Selectable
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Selectable.html
+  name: Selectable
+  nameWithType: Selectable
+  fullName: UnityEngine.UI.Selectable
+- uid: UnityEngine.UI.Selectable.Transition
+  commentId: T:UnityEngine.UI.Selectable.Transition
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Selectable.html
+  name: Selectable.Transition
+  nameWithType: Selectable.Transition
+  fullName: UnityEngine.UI.Selectable.Transition
+  spec.csharp:
+  - uid: UnityEngine.UI.Selectable
+    name: Selectable
+    href: UnityEngine.UI.Selectable.html
+  - name: .
+  - uid: UnityEngine.UI.Selectable.Transition
+    name: Transition
+    href: UnityEngine.UI.Selectable.Transition.html
+  spec.vb:
+  - uid: UnityEngine.UI.Selectable
+    name: Selectable
+    href: UnityEngine.UI.Selectable.html
+  - name: .
+  - uid: UnityEngine.UI.Selectable.Transition
+    name: Transition
+    href: UnityEngine.UI.Selectable.Transition.html
+- uid: UnityEngine.UI.Selectable.SelectionState
+  commentId: T:UnityEngine.UI.Selectable.SelectionState
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Selectable.html
+  name: Selectable.SelectionState
+  nameWithType: Selectable.SelectionState
+  fullName: UnityEngine.UI.Selectable.SelectionState
+  spec.csharp:
+  - uid: UnityEngine.UI.Selectable
+    name: Selectable
+    href: UnityEngine.UI.Selectable.html
+  - name: .
+  - uid: UnityEngine.UI.Selectable.SelectionState
+    name: SelectionState
+    href: UnityEngine.UI.Selectable.SelectionState.html
+  spec.vb:
+  - uid: UnityEngine.UI.Selectable
+    name: Selectable
+    href: UnityEngine.UI.Selectable.html
+  - name: .
+  - uid: UnityEngine.UI.Selectable.SelectionState
+    name: SelectionState
+    href: UnityEngine.UI.Selectable.SelectionState.html
+- uid: UnityEngine.UI.SpriteState
+  commentId: T:UnityEngine.UI.SpriteState
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.SpriteState.html
+  name: SpriteState
+  nameWithType: SpriteState
+  fullName: UnityEngine.UI.SpriteState
+- uid: UnityEngine.UI.LayoutUtility
+  commentId: T:UnityEngine.UI.LayoutUtility
+  href: UnityEngine.UI.LayoutUtility.html
+  name: LayoutUtility
+  nameWithType: LayoutUtility
+  fullName: UnityEngine.UI.LayoutUtility
+- uid: UnityEngine.UI.Button
+  commentId: T:UnityEngine.UI.Button
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Button.html
+  name: Button
+  nameWithType: Button
+  fullName: UnityEngine.UI.Button
+- uid: UnityEngine.UI.Button.ButtonClickedEvent
+  commentId: T:UnityEngine.UI.Button.ButtonClickedEvent
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Button.html
+  name: Button.ButtonClickedEvent
+  nameWithType: Button.ButtonClickedEvent
+  fullName: UnityEngine.UI.Button.ButtonClickedEvent
+  spec.csharp:
+  - uid: UnityEngine.UI.Button
+    name: Button
+    href: UnityEngine.UI.Button.html
+  - name: .
+  - uid: UnityEngine.UI.Button.ButtonClickedEvent
+    name: ButtonClickedEvent
+    href: UnityEngine.UI.Button.ButtonClickedEvent.html
+  spec.vb:
+  - uid: UnityEngine.UI.Button
+    name: Button
+    href: UnityEngine.UI.Button.html
+  - name: .
+  - uid: UnityEngine.UI.Button.ButtonClickedEvent
+    name: ButtonClickedEvent
+    href: UnityEngine.UI.Button.ButtonClickedEvent.html
+- uid: UnityEngine.UI.ClipperRegistry
+  commentId: T:UnityEngine.UI.ClipperRegistry
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ClipperRegistry.html
+  name: ClipperRegistry
+  nameWithType: ClipperRegistry
+  fullName: UnityEngine.UI.ClipperRegistry
+- uid: UnityEngine.UI.MaskUtilities
+  commentId: T:UnityEngine.UI.MaskUtilities
+  href: UnityEngine.UI.MaskUtilities.html
+  name: MaskUtilities
+  nameWithType: MaskUtilities
+  fullName: UnityEngine.UI.MaskUtilities
+- uid: UnityEngine.UI.RawImage
+  commentId: T:UnityEngine.UI.RawImage
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.RawImage.html
+  name: RawImage
+  nameWithType: RawImage
+  fullName: UnityEngine.UI.RawImage
+- uid: UnityEngine.UI.BaseVertexEffect
+  commentId: T:UnityEngine.UI.BaseVertexEffect
+  href: UnityEngine.UI.BaseVertexEffect.html
+  name: BaseVertexEffect
+  nameWithType: BaseVertexEffect
+  fullName: UnityEngine.UI.BaseVertexEffect
+- uid: UnityEngine.UI.BaseMeshEffect
+  commentId: T:UnityEngine.UI.BaseMeshEffect
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.BaseMeshEffect.html
+  name: BaseMeshEffect
+  nameWithType: BaseMeshEffect
+  fullName: UnityEngine.UI.BaseMeshEffect
+- uid: UnityEngine.UI.IMeshModifier
+  commentId: T:UnityEngine.UI.IMeshModifier
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.IMeshModifier.html
+  name: IMeshModifier
+  nameWithType: IMeshModifier
+  fullName: UnityEngine.UI.IMeshModifier
+- uid: UnityEngine.UI.MaskableGraphic
+  commentId: T:UnityEngine.UI.MaskableGraphic
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.MaskableGraphic.html
+  name: MaskableGraphic
+  nameWithType: MaskableGraphic
+  fullName: UnityEngine.UI.MaskableGraphic
+- uid: UnityEngine.UI.MaskableGraphic.CullStateChangedEvent
+  commentId: T:UnityEngine.UI.MaskableGraphic.CullStateChangedEvent
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.MaskableGraphic.html
+  name: MaskableGraphic.CullStateChangedEvent
+  nameWithType: MaskableGraphic.CullStateChangedEvent
+  fullName: UnityEngine.UI.MaskableGraphic.CullStateChangedEvent
+  spec.csharp:
+  - uid: UnityEngine.UI.MaskableGraphic
+    name: MaskableGraphic
+    href: UnityEngine.UI.MaskableGraphic.html
+  - name: .
+  - uid: UnityEngine.UI.MaskableGraphic.CullStateChangedEvent
+    name: CullStateChangedEvent
+    href: UnityEngine.UI.MaskableGraphic.CullStateChangedEvent.html
+  spec.vb:
+  - uid: UnityEngine.UI.MaskableGraphic
+    name: MaskableGraphic
+    href: UnityEngine.UI.MaskableGraphic.html
+  - name: .
+  - uid: UnityEngine.UI.MaskableGraphic.CullStateChangedEvent
+    name: CullStateChangedEvent
+    href: UnityEngine.UI.MaskableGraphic.CullStateChangedEvent.html
+- uid: UnityEngine.UI.Mask
+  commentId: T:UnityEngine.UI.Mask
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Mask.html
+  name: Mask
+  nameWithType: Mask
+  fullName: UnityEngine.UI.Mask
+- uid: UnityEngine.UI.Toggle
+  commentId: T:UnityEngine.UI.Toggle
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Toggle.html
+  name: Toggle
+  nameWithType: Toggle
+  fullName: UnityEngine.UI.Toggle
+- uid: UnityEngine.UI.Toggle.ToggleTransition
+  commentId: T:UnityEngine.UI.Toggle.ToggleTransition
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Toggle.html
+  name: Toggle.ToggleTransition
+  nameWithType: Toggle.ToggleTransition
+  fullName: UnityEngine.UI.Toggle.ToggleTransition
+  spec.csharp:
+  - uid: UnityEngine.UI.Toggle
+    name: Toggle
+    href: UnityEngine.UI.Toggle.html
+  - name: .
+  - uid: UnityEngine.UI.Toggle.ToggleTransition
+    name: ToggleTransition
+    href: UnityEngine.UI.Toggle.ToggleTransition.html
+  spec.vb:
+  - uid: UnityEngine.UI.Toggle
+    name: Toggle
+    href: UnityEngine.UI.Toggle.html
+  - name: .
+  - uid: UnityEngine.UI.Toggle.ToggleTransition
+    name: ToggleTransition
+    href: UnityEngine.UI.Toggle.ToggleTransition.html
+- uid: UnityEngine.UI.Toggle.ToggleEvent
+  commentId: T:UnityEngine.UI.Toggle.ToggleEvent
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Toggle.html
+  name: Toggle.ToggleEvent
+  nameWithType: Toggle.ToggleEvent
+  fullName: UnityEngine.UI.Toggle.ToggleEvent
+  spec.csharp:
+  - uid: UnityEngine.UI.Toggle
+    name: Toggle
+    href: UnityEngine.UI.Toggle.html
+  - name: .
+  - uid: UnityEngine.UI.Toggle.ToggleEvent
+    name: ToggleEvent
+    href: UnityEngine.UI.Toggle.ToggleEvent.html
+  spec.vb:
+  - uid: UnityEngine.UI.Toggle
+    name: Toggle
+    href: UnityEngine.UI.Toggle.html
+  - name: .
+  - uid: UnityEngine.UI.Toggle.ToggleEvent
+    name: ToggleEvent
+    href: UnityEngine.UI.Toggle.ToggleEvent.html
+- uid: UnityEngine.UI.Graphic
+  commentId: T:UnityEngine.UI.Graphic
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Graphic.html
+  name: Graphic
+  nameWithType: Graphic
+  fullName: UnityEngine.UI.Graphic
+- uid: UnityEngine.UI.ScrollRect
+  commentId: T:UnityEngine.UI.ScrollRect
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ScrollRect.html
+  name: ScrollRect
+  nameWithType: ScrollRect
+  fullName: UnityEngine.UI.ScrollRect
+- uid: UnityEngine.UI.ScrollRect.MovementType
+  commentId: T:UnityEngine.UI.ScrollRect.MovementType
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ScrollRect.html
+  name: ScrollRect.MovementType
+  nameWithType: ScrollRect.MovementType
+  fullName: UnityEngine.UI.ScrollRect.MovementType
+  spec.csharp:
+  - uid: UnityEngine.UI.ScrollRect
+    name: ScrollRect
+    href: UnityEngine.UI.ScrollRect.html
+  - name: .
+  - uid: UnityEngine.UI.ScrollRect.MovementType
+    name: MovementType
+    href: UnityEngine.UI.ScrollRect.MovementType.html
+  spec.vb:
+  - uid: UnityEngine.UI.ScrollRect
+    name: ScrollRect
+    href: UnityEngine.UI.ScrollRect.html
+  - name: .
+  - uid: UnityEngine.UI.ScrollRect.MovementType
+    name: MovementType
+    href: UnityEngine.UI.ScrollRect.MovementType.html
+- uid: UnityEngine.UI.ScrollRect.ScrollbarVisibility
+  commentId: T:UnityEngine.UI.ScrollRect.ScrollbarVisibility
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ScrollRect.html
+  name: ScrollRect.ScrollbarVisibility
+  nameWithType: ScrollRect.ScrollbarVisibility
+  fullName: UnityEngine.UI.ScrollRect.ScrollbarVisibility
+  spec.csharp:
+  - uid: UnityEngine.UI.ScrollRect
+    name: ScrollRect
+    href: UnityEngine.UI.ScrollRect.html
+  - name: .
+  - uid: UnityEngine.UI.ScrollRect.ScrollbarVisibility
+    name: ScrollbarVisibility
+    href: UnityEngine.UI.ScrollRect.ScrollbarVisibility.html
+  spec.vb:
+  - uid: UnityEngine.UI.ScrollRect
+    name: ScrollRect
+    href: UnityEngine.UI.ScrollRect.html
+  - name: .
+  - uid: UnityEngine.UI.ScrollRect.ScrollbarVisibility
+    name: ScrollbarVisibility
+    href: UnityEngine.UI.ScrollRect.ScrollbarVisibility.html
+- uid: UnityEngine.UI.ScrollRect.ScrollRectEvent
+  commentId: T:UnityEngine.UI.ScrollRect.ScrollRectEvent
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ScrollRect.html
+  name: ScrollRect.ScrollRectEvent
+  nameWithType: ScrollRect.ScrollRectEvent
+  fullName: UnityEngine.UI.ScrollRect.ScrollRectEvent
+  spec.csharp:
+  - uid: UnityEngine.UI.ScrollRect
+    name: ScrollRect
+    href: UnityEngine.UI.ScrollRect.html
+  - name: .
+  - uid: UnityEngine.UI.ScrollRect.ScrollRectEvent
+    name: ScrollRectEvent
+    href: UnityEngine.UI.ScrollRect.ScrollRectEvent.html
+  spec.vb:
+  - uid: UnityEngine.UI.ScrollRect
+    name: ScrollRect
+    href: UnityEngine.UI.ScrollRect.html
+  - name: .
+  - uid: UnityEngine.UI.ScrollRect.ScrollRectEvent
+    name: ScrollRectEvent
+    href: UnityEngine.UI.ScrollRect.ScrollRectEvent.html
+- uid: UnityEngine.UI.Outline
+  commentId: T:UnityEngine.UI.Outline
+  href: UnityEngine.UI.Outline.html
+  name: Outline
+  nameWithType: Outline
+  fullName: UnityEngine.UI.Outline
+- uid: UnityEngine.UI.CanvasUpdate
+  commentId: T:UnityEngine.UI.CanvasUpdate
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.CanvasUpdate.html
+  name: CanvasUpdate
+  nameWithType: CanvasUpdate
+  fullName: UnityEngine.UI.CanvasUpdate
+- uid: UnityEngine.UI.ICanvasElement
+  commentId: T:UnityEngine.UI.ICanvasElement
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ICanvasElement.html
+  name: ICanvasElement
+  nameWithType: ICanvasElement
+  fullName: UnityEngine.UI.ICanvasElement
+- uid: UnityEngine.UI.CanvasUpdateRegistry
+  commentId: T:UnityEngine.UI.CanvasUpdateRegistry
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.CanvasUpdateRegistry.html
+  name: CanvasUpdateRegistry
+  nameWithType: CanvasUpdateRegistry
+  fullName: UnityEngine.UI.CanvasUpdateRegistry
+- uid: UnityEngine.UI.ILayoutElement
+  commentId: T:UnityEngine.UI.ILayoutElement
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ILayoutElement.html
+  name: ILayoutElement
+  nameWithType: ILayoutElement
+  fullName: UnityEngine.UI.ILayoutElement
+- uid: UnityEngine.UI.ILayoutController
+  commentId: T:UnityEngine.UI.ILayoutController
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ILayoutController.html
+  name: ILayoutController
+  nameWithType: ILayoutController
+  fullName: UnityEngine.UI.ILayoutController
+- uid: UnityEngine.UI.ILayoutGroup
+  commentId: T:UnityEngine.UI.ILayoutGroup
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ILayoutGroup.html
+  name: ILayoutGroup
+  nameWithType: ILayoutGroup
+  fullName: UnityEngine.UI.ILayoutGroup
+- uid: UnityEngine.UI.ILayoutSelfController
+  commentId: T:UnityEngine.UI.ILayoutSelfController
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ILayoutSelfController.html
+  name: ILayoutSelfController
+  nameWithType: ILayoutSelfController
+  fullName: UnityEngine.UI.ILayoutSelfController
+- uid: UnityEngine.UI.ILayoutIgnorer
+  commentId: T:UnityEngine.UI.ILayoutIgnorer
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ILayoutIgnorer.html
+  name: ILayoutIgnorer
+  nameWithType: ILayoutIgnorer
+  fullName: UnityEngine.UI.ILayoutIgnorer
+- uid: UnityEngine.UI.IMaskable
+  commentId: T:UnityEngine.UI.IMaskable
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.IMaskable.html
+  name: IMaskable
+  nameWithType: IMaskable
+  fullName: UnityEngine.UI.IMaskable
+- uid: UnityEngine.UI.RectMask2D
+  commentId: T:UnityEngine.UI.RectMask2D
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.RectMask2D.html
+  name: RectMask2D
+  nameWithType: RectMask2D
+  fullName: UnityEngine.UI.RectMask2D
+- uid: UnityEngine.UI.IClipper
+  commentId: T:UnityEngine.UI.IClipper
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.IClipper.html
+  name: IClipper
+  nameWithType: IClipper
+  fullName: UnityEngine.UI.IClipper
+- uid: UnityEngine.UI.IClippable
+  commentId: T:UnityEngine.UI.IClippable
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.IClippable.html
+  name: IClippable
+  nameWithType: IClippable
+  fullName: UnityEngine.UI.IClippable
+- uid: UnityEngine.UI.ToggleGroup
+  commentId: T:UnityEngine.UI.ToggleGroup
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ToggleGroup.html
+  name: ToggleGroup
+  nameWithType: ToggleGroup
+  fullName: UnityEngine.UI.ToggleGroup
+- uid: UnityEngine.UI.LayoutRebuilder
+  commentId: T:UnityEngine.UI.LayoutRebuilder
+  href: UnityEngine.UI.LayoutRebuilder.html
+  name: LayoutRebuilder
+  nameWithType: LayoutRebuilder
+  fullName: UnityEngine.UI.LayoutRebuilder
+- uid: UnityEngine.UI.ContentSizeFitter
+  commentId: T:UnityEngine.UI.ContentSizeFitter
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ContentSizeFitter.html
+  name: ContentSizeFitter
+  nameWithType: ContentSizeFitter
+  fullName: UnityEngine.UI.ContentSizeFitter
+- uid: UnityEngine.UI.ContentSizeFitter.FitMode
+  commentId: T:UnityEngine.UI.ContentSizeFitter.FitMode
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ContentSizeFitter.html
+  name: ContentSizeFitter.FitMode
+  nameWithType: ContentSizeFitter.FitMode
+  fullName: UnityEngine.UI.ContentSizeFitter.FitMode
+  spec.csharp:
+  - uid: UnityEngine.UI.ContentSizeFitter
+    name: ContentSizeFitter
+    href: UnityEngine.UI.ContentSizeFitter.html
+  - name: .
+  - uid: UnityEngine.UI.ContentSizeFitter.FitMode
+    name: FitMode
+    href: UnityEngine.UI.ContentSizeFitter.FitMode.html
+  spec.vb:
+  - uid: UnityEngine.UI.ContentSizeFitter
+    name: ContentSizeFitter
+    href: UnityEngine.UI.ContentSizeFitter.html
+  - name: .
+  - uid: UnityEngine.UI.ContentSizeFitter.FitMode
+    name: FitMode
+    href: UnityEngine.UI.ContentSizeFitter.FitMode.html
+- uid: UnityEngine.UI.InputField
+  commentId: T:UnityEngine.UI.InputField
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.InputField.html
+  name: InputField
+  nameWithType: InputField
+  fullName: UnityEngine.UI.InputField
+- uid: UnityEngine.UI.InputField.ContentType
+  commentId: T:UnityEngine.UI.InputField.ContentType
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.InputField.html
+  name: InputField.ContentType
+  nameWithType: InputField.ContentType
+  fullName: UnityEngine.UI.InputField.ContentType
+  spec.csharp:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.ContentType
+    name: ContentType
+    href: UnityEngine.UI.InputField.ContentType.html
+  spec.vb:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.ContentType
+    name: ContentType
+    href: UnityEngine.UI.InputField.ContentType.html
+- uid: UnityEngine.UI.InputField.InputType
+  commentId: T:UnityEngine.UI.InputField.InputType
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.InputField.html
+  name: InputField.InputType
+  nameWithType: InputField.InputType
+  fullName: UnityEngine.UI.InputField.InputType
+  spec.csharp:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.InputType
+    name: InputType
+    href: UnityEngine.UI.InputField.InputType.html
+  spec.vb:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.InputType
+    name: InputType
+    href: UnityEngine.UI.InputField.InputType.html
+- uid: UnityEngine.UI.InputField.CharacterValidation
+  commentId: T:UnityEngine.UI.InputField.CharacterValidation
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.InputField.html
+  name: InputField.CharacterValidation
+  nameWithType: InputField.CharacterValidation
+  fullName: UnityEngine.UI.InputField.CharacterValidation
+  spec.csharp:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.CharacterValidation
+    name: CharacterValidation
+    href: UnityEngine.UI.InputField.CharacterValidation.html
+  spec.vb:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.CharacterValidation
+    name: CharacterValidation
+    href: UnityEngine.UI.InputField.CharacterValidation.html
+- uid: UnityEngine.UI.InputField.LineType
+  commentId: T:UnityEngine.UI.InputField.LineType
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.InputField.html
+  name: InputField.LineType
+  nameWithType: InputField.LineType
+  fullName: UnityEngine.UI.InputField.LineType
+  spec.csharp:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.LineType
+    name: LineType
+    href: UnityEngine.UI.InputField.LineType.html
+  spec.vb:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.LineType
+    name: LineType
+    href: UnityEngine.UI.InputField.LineType.html
+- uid: UnityEngine.UI.InputField.OnValidateInput
+  commentId: T:UnityEngine.UI.InputField.OnValidateInput
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.InputField.html
+  name: InputField.OnValidateInput
+  nameWithType: InputField.OnValidateInput
+  fullName: UnityEngine.UI.InputField.OnValidateInput
+  spec.csharp:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.OnValidateInput
+    name: OnValidateInput
+    href: UnityEngine.UI.InputField.OnValidateInput.html
+  spec.vb:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.OnValidateInput
+    name: OnValidateInput
+    href: UnityEngine.UI.InputField.OnValidateInput.html
+- uid: UnityEngine.UI.InputField.SubmitEvent
+  commentId: T:UnityEngine.UI.InputField.SubmitEvent
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.InputField.html
+  name: InputField.SubmitEvent
+  nameWithType: InputField.SubmitEvent
+  fullName: UnityEngine.UI.InputField.SubmitEvent
+  spec.csharp:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.SubmitEvent
+    name: SubmitEvent
+    href: UnityEngine.UI.InputField.SubmitEvent.html
+  spec.vb:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.SubmitEvent
+    name: SubmitEvent
+    href: UnityEngine.UI.InputField.SubmitEvent.html
+- uid: UnityEngine.UI.InputField.EndEditEvent
+  commentId: T:UnityEngine.UI.InputField.EndEditEvent
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.InputField.html
+  name: InputField.EndEditEvent
+  nameWithType: InputField.EndEditEvent
+  fullName: UnityEngine.UI.InputField.EndEditEvent
+  spec.csharp:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.EndEditEvent
+    name: EndEditEvent
+    href: UnityEngine.UI.InputField.EndEditEvent.html
+  spec.vb:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.EndEditEvent
+    name: EndEditEvent
+    href: UnityEngine.UI.InputField.EndEditEvent.html
+- uid: UnityEngine.UI.InputField.OnChangeEvent
+  commentId: T:UnityEngine.UI.InputField.OnChangeEvent
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.InputField.html
+  name: InputField.OnChangeEvent
+  nameWithType: InputField.OnChangeEvent
+  fullName: UnityEngine.UI.InputField.OnChangeEvent
+  spec.csharp:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.OnChangeEvent
+    name: OnChangeEvent
+    href: UnityEngine.UI.InputField.OnChangeEvent.html
+  spec.vb:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.OnChangeEvent
+    name: OnChangeEvent
+    href: UnityEngine.UI.InputField.OnChangeEvent.html
+- uid: UnityEngine.UI.InputField.EditState
+  commentId: T:UnityEngine.UI.InputField.EditState
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.InputField.html
+  name: InputField.EditState
+  nameWithType: InputField.EditState
+  fullName: UnityEngine.UI.InputField.EditState
+  spec.csharp:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.EditState
+    name: EditState
+    href: UnityEngine.UI.InputField.EditState.html
+  spec.vb:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.EditState
+    name: EditState
+    href: UnityEngine.UI.InputField.EditState.html
+- uid: UnityEngine.UI.Text
+  commentId: T:UnityEngine.UI.Text
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Text.html
+  name: Text
+  nameWithType: Text
+  fullName: UnityEngine.UI.Text
+- uid: UnityEngine.UI.StencilMaterial
+  commentId: T:UnityEngine.UI.StencilMaterial
+  href: UnityEngine.UI.StencilMaterial.html
+  name: StencilMaterial
+  nameWithType: StencilMaterial
+  fullName: UnityEngine.UI.StencilMaterial
+- uid: UnityEngine.UI.AnimationTriggers
+  commentId: T:UnityEngine.UI.AnimationTriggers
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.AnimationTriggers.html
+  name: AnimationTriggers
+  nameWithType: AnimationTriggers
+  fullName: UnityEngine.UI.AnimationTriggers
+- uid: UnityEngine.UI.AspectRatioFitter
+  commentId: T:UnityEngine.UI.AspectRatioFitter
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.AspectRatioFitter.html
+  name: AspectRatioFitter
+  nameWithType: AspectRatioFitter
+  fullName: UnityEngine.UI.AspectRatioFitter
+- uid: UnityEngine.UI.AspectRatioFitter.AspectMode
+  commentId: T:UnityEngine.UI.AspectRatioFitter.AspectMode
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.AspectRatioFitter.html
+  name: AspectRatioFitter.AspectMode
+  nameWithType: AspectRatioFitter.AspectMode
+  fullName: UnityEngine.UI.AspectRatioFitter.AspectMode
+  spec.csharp:
+  - uid: UnityEngine.UI.AspectRatioFitter
+    name: AspectRatioFitter
+    href: UnityEngine.UI.AspectRatioFitter.html
+  - name: .
+  - uid: UnityEngine.UI.AspectRatioFitter.AspectMode
+    name: AspectMode
+    href: UnityEngine.UI.AspectRatioFitter.AspectMode.html
+  spec.vb:
+  - uid: UnityEngine.UI.AspectRatioFitter
+    name: AspectRatioFitter
+    href: UnityEngine.UI.AspectRatioFitter.html
+  - name: .
+  - uid: UnityEngine.UI.AspectRatioFitter.AspectMode
+    name: AspectMode
+    href: UnityEngine.UI.AspectRatioFitter.AspectMode.html
+- uid: UnityEngine.UI.GraphicRegistry
+  commentId: T:UnityEngine.UI.GraphicRegistry
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.GraphicRegistry.html
+  name: GraphicRegistry
+  nameWithType: GraphicRegistry
+  fullName: UnityEngine.UI.GraphicRegistry
+- uid: UnityEngine.UI.FontUpdateTracker
+  commentId: T:UnityEngine.UI.FontUpdateTracker
+  href: UnityEngine.UI.FontUpdateTracker.html
+  name: FontUpdateTracker
+  nameWithType: FontUpdateTracker
+  fullName: UnityEngine.UI.FontUpdateTracker
+- uid: UnityEngine.UI.CanvasScaler
+  commentId: T:UnityEngine.UI.CanvasScaler
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.CanvasScaler.html
+  name: CanvasScaler
+  nameWithType: CanvasScaler
+  fullName: UnityEngine.UI.CanvasScaler
+- uid: UnityEngine.UI.CanvasScaler.ScaleMode
+  commentId: T:UnityEngine.UI.CanvasScaler.ScaleMode
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.CanvasScaler.html
+  name: CanvasScaler.ScaleMode
+  nameWithType: CanvasScaler.ScaleMode
+  fullName: UnityEngine.UI.CanvasScaler.ScaleMode
+  spec.csharp:
+  - uid: UnityEngine.UI.CanvasScaler
+    name: CanvasScaler
+    href: UnityEngine.UI.CanvasScaler.html
+  - name: .
+  - uid: UnityEngine.UI.CanvasScaler.ScaleMode
+    name: ScaleMode
+    href: UnityEngine.UI.CanvasScaler.ScaleMode.html
+  spec.vb:
+  - uid: UnityEngine.UI.CanvasScaler
+    name: CanvasScaler
+    href: UnityEngine.UI.CanvasScaler.html
+  - name: .
+  - uid: UnityEngine.UI.CanvasScaler.ScaleMode
+    name: ScaleMode
+    href: UnityEngine.UI.CanvasScaler.ScaleMode.html
+- uid: UnityEngine.UI.CanvasScaler.ScreenMatchMode
+  commentId: T:UnityEngine.UI.CanvasScaler.ScreenMatchMode
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.CanvasScaler.html
+  name: CanvasScaler.ScreenMatchMode
+  nameWithType: CanvasScaler.ScreenMatchMode
+  fullName: UnityEngine.UI.CanvasScaler.ScreenMatchMode
+  spec.csharp:
+  - uid: UnityEngine.UI.CanvasScaler
+    name: CanvasScaler
+    href: UnityEngine.UI.CanvasScaler.html
+  - name: .
+  - uid: UnityEngine.UI.CanvasScaler.ScreenMatchMode
+    name: ScreenMatchMode
+    href: UnityEngine.UI.CanvasScaler.ScreenMatchMode.html
+  spec.vb:
+  - uid: UnityEngine.UI.CanvasScaler
+    name: CanvasScaler
+    href: UnityEngine.UI.CanvasScaler.html
+  - name: .
+  - uid: UnityEngine.UI.CanvasScaler.ScreenMatchMode
+    name: ScreenMatchMode
+    href: UnityEngine.UI.CanvasScaler.ScreenMatchMode.html
+- uid: UnityEngine.UI.CanvasScaler.Unit
+  commentId: T:UnityEngine.UI.CanvasScaler.Unit
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.CanvasScaler.html
+  name: CanvasScaler.Unit
+  nameWithType: CanvasScaler.Unit
+  fullName: UnityEngine.UI.CanvasScaler.Unit
+  spec.csharp:
+  - uid: UnityEngine.UI.CanvasScaler
+    name: CanvasScaler
+    href: UnityEngine.UI.CanvasScaler.html
+  - name: .
+  - uid: UnityEngine.UI.CanvasScaler.Unit
+    name: Unit
+    href: UnityEngine.UI.CanvasScaler.Unit.html
+  spec.vb:
+  - uid: UnityEngine.UI.CanvasScaler
+    name: CanvasScaler
+    href: UnityEngine.UI.CanvasScaler.html
+  - name: .
+  - uid: UnityEngine.UI.CanvasScaler.Unit
+    name: Unit
+    href: UnityEngine.UI.CanvasScaler.Unit.html
+- uid: UnityEngine.UI.PositionAsUV1
+  commentId: T:UnityEngine.UI.PositionAsUV1
+  href: UnityEngine.UI.PositionAsUV1.html
+  name: PositionAsUV1
+  nameWithType: PositionAsUV1
+  fullName: UnityEngine.UI.PositionAsUV1
+- uid: UnityEngine.UI.FontData
+  commentId: T:UnityEngine.UI.FontData
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.FontData.html
+  name: FontData
+  nameWithType: FontData
+  fullName: UnityEngine.UI.FontData
+- uid: UnityEngine.UI.VertexHelper
+  commentId: T:UnityEngine.UI.VertexHelper
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.VertexHelper.html
+  name: VertexHelper
+  nameWithType: VertexHelper
+  fullName: UnityEngine.UI.VertexHelper
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html

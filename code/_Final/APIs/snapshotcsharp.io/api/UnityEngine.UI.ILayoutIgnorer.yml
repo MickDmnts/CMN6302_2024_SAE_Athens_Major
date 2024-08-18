@@ -1,0 +1,111 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.ILayoutIgnorer
+  commentId: T:UnityEngine.UI.ILayoutIgnorer
+  id: ILayoutIgnorer
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.ILayoutIgnorer.ignoreLayout
+  langs:
+  - csharp
+  - vb
+  name: ILayoutIgnorer
+  nameWithType: ILayoutIgnorer
+  fullName: UnityEngine.UI.ILayoutIgnorer
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ILayoutIgnorer
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+    startLine: 257
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: A RectTransform will be ignored by the layout system if it has a component which implements ILayoutIgnorer.
+  remarks: A components that implements ILayoutIgnorer can be used to make a parent layout group component not consider this RectTransform part of the group. The RectTransform can then be manually positioned despite being a child GameObject of a layout group.
+  example: []
+  syntax:
+    content: public interface ILayoutIgnorer
+    content.vb: Public Interface ILayoutIgnorer
+- uid: UnityEngine.UI.ILayoutIgnorer.ignoreLayout
+  commentId: P:UnityEngine.UI.ILayoutIgnorer.ignoreLayout
+  id: ignoreLayout
+  parent: UnityEngine.UI.ILayoutIgnorer
+  langs:
+  - csharp
+  - vb
+  name: ignoreLayout
+  nameWithType: ILayoutIgnorer.ignoreLayout
+  fullName: UnityEngine.UI.ILayoutIgnorer.ignoreLayout
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ignoreLayout
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+    startLine: 265
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Should this RectTransform be ignored bvy the layout system?
+  remarks: Setting this property to true will make a parent layout group component not consider this RectTransform part of the group. The RectTransform can then be manually positioned despite being a child GameObject of a layout group.
+  example: []
+  syntax:
+    content: bool ignoreLayout { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property ignoreLayout As Boolean
+  overload: UnityEngine.UI.ILayoutIgnorer.ignoreLayout*
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.ILayoutIgnorer.ignoreLayout*
+  commentId: Overload:UnityEngine.UI.ILayoutIgnorer.ignoreLayout
+  href: UnityEngine.UI.ILayoutIgnorer.html#UnityEngine_UI_ILayoutIgnorer_ignoreLayout
+  name: ignoreLayout
+  nameWithType: ILayoutIgnorer.ignoreLayout
+  fullName: UnityEngine.UI.ILayoutIgnorer.ignoreLayout
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

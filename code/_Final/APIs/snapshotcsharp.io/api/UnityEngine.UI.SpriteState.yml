@@ -1,0 +1,627 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.SpriteState
+  commentId: T:UnityEngine.UI.SpriteState
+  id: SpriteState
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.SpriteState.Equals(UnityEngine.UI.SpriteState)
+  - UnityEngine.UI.SpriteState.disabledSprite
+  - UnityEngine.UI.SpriteState.highlightedSprite
+  - UnityEngine.UI.SpriteState.pressedSprite
+  - UnityEngine.UI.SpriteState.selectedSprite
+  langs:
+  - csharp
+  - vb
+  name: SpriteState
+  nameWithType: SpriteState
+  fullName: UnityEngine.UI.SpriteState
+  type: Struct
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/SpriteState.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: SpriteState
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/SpriteState.cs
+    startLine: 5
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  syntax:
+    content: >-
+      [Serializable]
+
+      public struct SpriteState : IEquatable<SpriteState>
+    content.vb: >-
+      <Serializable>
+
+      Public Structure SpriteState Implements IEquatable(Of SpriteState)
+  implements:
+  - System.IEquatable{UnityEngine.UI.SpriteState}
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: UnityEngine.UI.SpriteState.highlightedSprite
+  commentId: P:UnityEngine.UI.SpriteState.highlightedSprite
+  id: highlightedSprite
+  parent: UnityEngine.UI.SpriteState
+  langs:
+  - csharp
+  - vb
+  name: highlightedSprite
+  nameWithType: SpriteState.highlightedSprite
+  fullName: UnityEngine.UI.SpriteState.highlightedSprite
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/SpriteState.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: highlightedSprite
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/SpriteState.cs
+    startLine: 27
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Highlighted sprite.
+  example: []
+  syntax:
+    content: public Sprite highlightedSprite { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public Property highlightedSprite As Sprite
+  overload: UnityEngine.UI.SpriteState.highlightedSprite*
+- uid: UnityEngine.UI.SpriteState.pressedSprite
+  commentId: P:UnityEngine.UI.SpriteState.pressedSprite
+  id: pressedSprite
+  parent: UnityEngine.UI.SpriteState
+  langs:
+  - csharp
+  - vb
+  name: pressedSprite
+  nameWithType: SpriteState.pressedSprite
+  fullName: UnityEngine.UI.SpriteState.pressedSprite
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/SpriteState.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: pressedSprite
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/SpriteState.cs
+    startLine: 32
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Pressed sprite.
+  example: []
+  syntax:
+    content: public Sprite pressedSprite { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public Property pressedSprite As Sprite
+  overload: UnityEngine.UI.SpriteState.pressedSprite*
+- uid: UnityEngine.UI.SpriteState.selectedSprite
+  commentId: P:UnityEngine.UI.SpriteState.selectedSprite
+  id: selectedSprite
+  parent: UnityEngine.UI.SpriteState
+  langs:
+  - csharp
+  - vb
+  name: selectedSprite
+  nameWithType: SpriteState.selectedSprite
+  fullName: UnityEngine.UI.SpriteState.selectedSprite
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/SpriteState.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: selectedSprite
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/SpriteState.cs
+    startLine: 37
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Selected sprite.
+  example: []
+  syntax:
+    content: public Sprite selectedSprite { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public Property selectedSprite As Sprite
+  overload: UnityEngine.UI.SpriteState.selectedSprite*
+- uid: UnityEngine.UI.SpriteState.disabledSprite
+  commentId: P:UnityEngine.UI.SpriteState.disabledSprite
+  id: disabledSprite
+  parent: UnityEngine.UI.SpriteState
+  langs:
+  - csharp
+  - vb
+  name: disabledSprite
+  nameWithType: SpriteState.disabledSprite
+  fullName: UnityEngine.UI.SpriteState.disabledSprite
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/SpriteState.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: disabledSprite
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/SpriteState.cs
+    startLine: 42
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Disabled sprite.
+  example: []
+  syntax:
+    content: public Sprite disabledSprite { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Sprite
+    content.vb: Public Property disabledSprite As Sprite
+  overload: UnityEngine.UI.SpriteState.disabledSprite*
+- uid: UnityEngine.UI.SpriteState.Equals(UnityEngine.UI.SpriteState)
+  commentId: M:UnityEngine.UI.SpriteState.Equals(UnityEngine.UI.SpriteState)
+  id: Equals(UnityEngine.UI.SpriteState)
+  parent: UnityEngine.UI.SpriteState
+  langs:
+  - csharp
+  - vb
+  name: Equals(SpriteState)
+  nameWithType: SpriteState.Equals(SpriteState)
+  fullName: UnityEngine.UI.SpriteState.Equals(UnityEngine.UI.SpriteState)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/SpriteState.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Equals
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/SpriteState.cs
+    startLine: 44
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  example: []
+  syntax:
+    content: public bool Equals(SpriteState other)
+    parameters:
+    - id: other
+      type: UnityEngine.UI.SpriteState
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As SpriteState) As Boolean
+  overload: UnityEngine.UI.SpriteState.Equals*
+  implements:
+  - System.IEquatable{UnityEngine.UI.SpriteState}.Equals(UnityEngine.UI.SpriteState)
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: System.IEquatable{UnityEngine.UI.SpriteState}
+  commentId: T:System.IEquatable{UnityEngine.UI.SpriteState}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<SpriteState>
+  nameWithType: IEquatable<SpriteState>
+  fullName: System.IEquatable<UnityEngine.UI.SpriteState>
+  nameWithType.vb: IEquatable(Of SpriteState)
+  fullName.vb: System.IEquatable(Of UnityEngine.UI.SpriteState)
+  name.vb: IEquatable(Of SpriteState)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: UnityEngine.UI.SpriteState
+    name: SpriteState
+    href: UnityEngine.UI.SpriteState.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.UI.SpriteState
+    name: SpriteState
+    href: UnityEngine.UI.SpriteState.html
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.UI.SpriteState.highlightedSprite*
+  commentId: Overload:UnityEngine.UI.SpriteState.highlightedSprite
+  href: UnityEngine.UI.SpriteState.html#UnityEngine_UI_SpriteState_highlightedSprite
+  name: highlightedSprite
+  nameWithType: SpriteState.highlightedSprite
+  fullName: UnityEngine.UI.SpriteState.highlightedSprite
+- uid: UnityEngine.Sprite
+  commentId: T:UnityEngine.Sprite
+  parent: UnityEngine
+  isExternal: true
+  name: Sprite
+  nameWithType: Sprite
+  fullName: UnityEngine.Sprite
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.UI.SpriteState.pressedSprite*
+  commentId: Overload:UnityEngine.UI.SpriteState.pressedSprite
+  href: UnityEngine.UI.SpriteState.html#UnityEngine_UI_SpriteState_pressedSprite
+  name: pressedSprite
+  nameWithType: SpriteState.pressedSprite
+  fullName: UnityEngine.UI.SpriteState.pressedSprite
+- uid: UnityEngine.UI.SpriteState.selectedSprite*
+  commentId: Overload:UnityEngine.UI.SpriteState.selectedSprite
+  href: UnityEngine.UI.SpriteState.html#UnityEngine_UI_SpriteState_selectedSprite
+  name: selectedSprite
+  nameWithType: SpriteState.selectedSprite
+  fullName: UnityEngine.UI.SpriteState.selectedSprite
+- uid: UnityEngine.UI.SpriteState.disabledSprite*
+  commentId: Overload:UnityEngine.UI.SpriteState.disabledSprite
+  href: UnityEngine.UI.SpriteState.html#UnityEngine_UI_SpriteState_disabledSprite
+  name: disabledSprite
+  nameWithType: SpriteState.disabledSprite
+  fullName: UnityEngine.UI.SpriteState.disabledSprite
+- uid: UnityEngine.UI.SpriteState.Equals*
+  commentId: Overload:UnityEngine.UI.SpriteState.Equals
+  href: UnityEngine.UI.SpriteState.html#UnityEngine_UI_SpriteState_Equals_UnityEngine_UI_SpriteState_
+  name: Equals
+  nameWithType: SpriteState.Equals
+  fullName: UnityEngine.UI.SpriteState.Equals
+- uid: System.IEquatable{UnityEngine.UI.SpriteState}.Equals(UnityEngine.UI.SpriteState)
+  commentId: M:System.IEquatable{UnityEngine.UI.SpriteState}.Equals(UnityEngine.UI.SpriteState)
+  parent: System.IEquatable{UnityEngine.UI.SpriteState}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(SpriteState)
+  nameWithType: IEquatable<SpriteState>.Equals(SpriteState)
+  fullName: System.IEquatable<UnityEngine.UI.SpriteState>.Equals(UnityEngine.UI.SpriteState)
+  nameWithType.vb: IEquatable(Of SpriteState).Equals(SpriteState)
+  fullName.vb: System.IEquatable(Of UnityEngine.UI.SpriteState).Equals(UnityEngine.UI.SpriteState)
+  spec.csharp:
+  - uid: System.IEquatable{UnityEngine.UI.SpriteState}.Equals(UnityEngine.UI.SpriteState)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: UnityEngine.UI.SpriteState
+    name: SpriteState
+    href: UnityEngine.UI.SpriteState.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{UnityEngine.UI.SpriteState}.Equals(UnityEngine.UI.SpriteState)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: UnityEngine.UI.SpriteState
+    name: SpriteState
+    href: UnityEngine.UI.SpriteState.html
+  - name: )
+- uid: UnityEngine.UI.SpriteState
+  commentId: T:UnityEngine.UI.SpriteState
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.SpriteState.html
+  name: SpriteState
+  nameWithType: SpriteState
+  fullName: UnityEngine.UI.SpriteState
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )

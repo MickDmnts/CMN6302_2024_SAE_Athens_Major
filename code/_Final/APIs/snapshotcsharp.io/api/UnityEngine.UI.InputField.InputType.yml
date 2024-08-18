@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.InputField.InputType
+  commentId: T:UnityEngine.UI.InputField.InputType
+  id: InputField.InputType
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.InputField.InputType.AutoCorrect
+  - UnityEngine.UI.InputField.InputType.Password
+  - UnityEngine.UI.InputField.InputType.Standard
+  langs:
+  - csharp
+  - vb
+  name: InputField.InputType
+  nameWithType: InputField.InputType
+  fullName: UnityEngine.UI.InputField.InputType
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: InputType
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 88
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Type of data expected by the input field mobile keyboard.
+  example: []
+  syntax:
+    content: public enum InputField.InputType
+    content.vb: Public Enum InputField.InputType
+- uid: UnityEngine.UI.InputField.InputType.Standard
+  commentId: F:UnityEngine.UI.InputField.InputType.Standard
+  id: Standard
+  parent: UnityEngine.UI.InputField.InputType
+  langs:
+  - csharp
+  - vb
+  name: Standard
+  nameWithType: InputField.InputType.Standard
+  fullName: UnityEngine.UI.InputField.InputType.Standard
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Standard
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 93
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The standard mobile keyboard
+  example: []
+  syntax:
+    content: Standard = 0
+    return:
+      type: UnityEngine.UI.InputField.InputType
+- uid: UnityEngine.UI.InputField.InputType.AutoCorrect
+  commentId: F:UnityEngine.UI.InputField.InputType.AutoCorrect
+  id: AutoCorrect
+  parent: UnityEngine.UI.InputField.InputType
+  langs:
+  - csharp
+  - vb
+  name: AutoCorrect
+  nameWithType: InputField.InputType.AutoCorrect
+  fullName: UnityEngine.UI.InputField.InputType.AutoCorrect
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: AutoCorrect
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 98
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The mobile autocorrect keyboard.
+  example: []
+  syntax:
+    content: AutoCorrect = 1
+    return:
+      type: UnityEngine.UI.InputField.InputType
+- uid: UnityEngine.UI.InputField.InputType.Password
+  commentId: F:UnityEngine.UI.InputField.InputType.Password
+  id: Password
+  parent: UnityEngine.UI.InputField.InputType
+  langs:
+  - csharp
+  - vb
+  name: Password
+  nameWithType: InputField.InputType.Password
+  fullName: UnityEngine.UI.InputField.InputType.Password
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Password
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 103
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The mobile password keyboard.
+  example: []
+  syntax:
+    content: Password = 2
+    return:
+      type: UnityEngine.UI.InputField.InputType
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.InputField.InputType
+  commentId: T:UnityEngine.UI.InputField.InputType
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.InputField.html
+  name: InputField.InputType
+  nameWithType: InputField.InputType
+  fullName: UnityEngine.UI.InputField.InputType
+  spec.csharp:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.InputType
+    name: InputType
+    href: UnityEngine.UI.InputField.InputType.html
+  spec.vb:
+  - uid: UnityEngine.UI.InputField
+    name: InputField
+    href: UnityEngine.UI.InputField.html
+  - name: .
+  - uid: UnityEngine.UI.InputField.InputType
+    name: InputType
+    href: UnityEngine.UI.InputField.InputType.html

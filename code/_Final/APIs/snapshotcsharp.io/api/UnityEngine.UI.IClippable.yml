@@ -1,0 +1,349 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.IClippable
+  commentId: T:UnityEngine.UI.IClippable
+  id: IClippable
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.IClippable.Cull(UnityEngine.Rect,System.Boolean)
+  - UnityEngine.UI.IClippable.RecalculateClipping
+  - UnityEngine.UI.IClippable.SetClipRect(UnityEngine.Rect,System.Boolean)
+  - UnityEngine.UI.IClippable.SetClipSoftness(UnityEngine.Vector2)
+  - UnityEngine.UI.IClippable.gameObject
+  - UnityEngine.UI.IClippable.rectTransform
+  langs:
+  - csharp
+  - vb
+  name: IClippable
+  nameWithType: IClippable
+  fullName: UnityEngine.UI.IClippable
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IClippable
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs
+    startLine: 20
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Interface for elements that can be clipped if they are under an IClipper
+  example: []
+  syntax:
+    content: public interface IClippable
+    content.vb: Public Interface IClippable
+- uid: UnityEngine.UI.IClippable.gameObject
+  commentId: P:UnityEngine.UI.IClippable.gameObject
+  id: gameObject
+  parent: UnityEngine.UI.IClippable
+  langs:
+  - csharp
+  - vb
+  name: gameObject
+  nameWithType: IClippable.gameObject
+  fullName: UnityEngine.UI.IClippable.gameObject
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: gameObject
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs
+    startLine: 25
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: GameObject of the IClippable object
+  example: []
+  syntax:
+    content: GameObject gameObject { get; }
+    parameters: []
+    return:
+      type: UnityEngine.GameObject
+    content.vb: ReadOnly Property gameObject As GameObject
+  overload: UnityEngine.UI.IClippable.gameObject*
+- uid: UnityEngine.UI.IClippable.RecalculateClipping
+  commentId: M:UnityEngine.UI.IClippable.RecalculateClipping
+  id: RecalculateClipping
+  parent: UnityEngine.UI.IClippable
+  langs:
+  - csharp
+  - vb
+  name: RecalculateClipping()
+  nameWithType: IClippable.RecalculateClipping()
+  fullName: UnityEngine.UI.IClippable.RecalculateClipping()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: RecalculateClipping
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs
+    startLine: 30
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Will be called when the state of a parent IClippable changed.
+  example: []
+  syntax:
+    content: void RecalculateClipping()
+    content.vb: Sub RecalculateClipping()
+  overload: UnityEngine.UI.IClippable.RecalculateClipping*
+- uid: UnityEngine.UI.IClippable.rectTransform
+  commentId: P:UnityEngine.UI.IClippable.rectTransform
+  id: rectTransform
+  parent: UnityEngine.UI.IClippable
+  langs:
+  - csharp
+  - vb
+  name: rectTransform
+  nameWithType: IClippable.rectTransform
+  fullName: UnityEngine.UI.IClippable.rectTransform
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: rectTransform
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs
+    startLine: 35
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The RectTransform of the clippable.
+  example: []
+  syntax:
+    content: RectTransform rectTransform { get; }
+    parameters: []
+    return:
+      type: UnityEngine.RectTransform
+    content.vb: ReadOnly Property rectTransform As RectTransform
+  overload: UnityEngine.UI.IClippable.rectTransform*
+- uid: UnityEngine.UI.IClippable.Cull(UnityEngine.Rect,System.Boolean)
+  commentId: M:UnityEngine.UI.IClippable.Cull(UnityEngine.Rect,System.Boolean)
+  id: Cull(UnityEngine.Rect,System.Boolean)
+  parent: UnityEngine.UI.IClippable
+  langs:
+  - csharp
+  - vb
+  name: Cull(Rect, bool)
+  nameWithType: IClippable.Cull(Rect, bool)
+  fullName: UnityEngine.UI.IClippable.Cull(UnityEngine.Rect, bool)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Cull
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs
+    startLine: 42
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Clip and cull the IClippable given a specific clipping rect
+  example: []
+  syntax:
+    content: void Cull(Rect clipRect, bool validRect)
+    parameters:
+    - id: clipRect
+      type: UnityEngine.Rect
+      description: The Rectangle in which to clip against.
+    - id: validRect
+      type: System.Boolean
+      description: Is the Rect valid. If not then the rect has 0 size.
+    content.vb: Sub Cull(clipRect As Rect, validRect As Boolean)
+  overload: UnityEngine.UI.IClippable.Cull*
+  nameWithType.vb: IClippable.Cull(Rect, Boolean)
+  fullName.vb: UnityEngine.UI.IClippable.Cull(UnityEngine.Rect, Boolean)
+  name.vb: Cull(Rect, Boolean)
+- uid: UnityEngine.UI.IClippable.SetClipRect(UnityEngine.Rect,System.Boolean)
+  commentId: M:UnityEngine.UI.IClippable.SetClipRect(UnityEngine.Rect,System.Boolean)
+  id: SetClipRect(UnityEngine.Rect,System.Boolean)
+  parent: UnityEngine.UI.IClippable
+  langs:
+  - csharp
+  - vb
+  name: SetClipRect(Rect, bool)
+  nameWithType: IClippable.SetClipRect(Rect, bool)
+  fullName: UnityEngine.UI.IClippable.SetClipRect(UnityEngine.Rect, bool)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: SetClipRect
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs
+    startLine: 49
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Set the clip rect for the IClippable.
+  example: []
+  syntax:
+    content: void SetClipRect(Rect value, bool validRect)
+    parameters:
+    - id: value
+      type: UnityEngine.Rect
+      description: The Rectangle for the clipping
+    - id: validRect
+      type: System.Boolean
+      description: Is the rect valid.
+    content.vb: Sub SetClipRect(value As Rect, validRect As Boolean)
+  overload: UnityEngine.UI.IClippable.SetClipRect*
+  nameWithType.vb: IClippable.SetClipRect(Rect, Boolean)
+  fullName.vb: UnityEngine.UI.IClippable.SetClipRect(UnityEngine.Rect, Boolean)
+  name.vb: SetClipRect(Rect, Boolean)
+- uid: UnityEngine.UI.IClippable.SetClipSoftness(UnityEngine.Vector2)
+  commentId: M:UnityEngine.UI.IClippable.SetClipSoftness(UnityEngine.Vector2)
+  id: SetClipSoftness(UnityEngine.Vector2)
+  parent: UnityEngine.UI.IClippable
+  langs:
+  - csharp
+  - vb
+  name: SetClipSoftness(Vector2)
+  nameWithType: IClippable.SetClipSoftness(Vector2)
+  fullName: UnityEngine.UI.IClippable.SetClipSoftness(UnityEngine.Vector2)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: SetClipSoftness
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Culling/IClipRegion.cs
+    startLine: 57
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: >-
+    Set the clip softness for the IClippable.
+
+
+    The softness is a linear alpha falloff over clipSoftness pixels.
+  example: []
+  syntax:
+    content: void SetClipSoftness(Vector2 clipSoftness)
+    parameters:
+    - id: clipSoftness
+      type: UnityEngine.Vector2
+      description: The number of pixels to apply the softness to
+    content.vb: Sub SetClipSoftness(clipSoftness As Vector2)
+  overload: UnityEngine.UI.IClippable.SetClipSoftness*
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.IClippable.gameObject*
+  commentId: Overload:UnityEngine.UI.IClippable.gameObject
+  href: UnityEngine.UI.IClippable.html#UnityEngine_UI_IClippable_gameObject
+  name: gameObject
+  nameWithType: IClippable.gameObject
+  fullName: UnityEngine.UI.IClippable.gameObject
+- uid: UnityEngine.GameObject
+  commentId: T:UnityEngine.GameObject
+  parent: UnityEngine
+  isExternal: true
+  name: GameObject
+  nameWithType: GameObject
+  fullName: UnityEngine.GameObject
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.UI.IClippable.RecalculateClipping*
+  commentId: Overload:UnityEngine.UI.IClippable.RecalculateClipping
+  href: UnityEngine.UI.IClippable.html#UnityEngine_UI_IClippable_RecalculateClipping
+  name: RecalculateClipping
+  nameWithType: IClippable.RecalculateClipping
+  fullName: UnityEngine.UI.IClippable.RecalculateClipping
+- uid: UnityEngine.UI.IClippable.rectTransform*
+  commentId: Overload:UnityEngine.UI.IClippable.rectTransform
+  href: UnityEngine.UI.IClippable.html#UnityEngine_UI_IClippable_rectTransform
+  name: rectTransform
+  nameWithType: IClippable.rectTransform
+  fullName: UnityEngine.UI.IClippable.rectTransform
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: UnityEngine.UI.IClippable.Cull*
+  commentId: Overload:UnityEngine.UI.IClippable.Cull
+  href: UnityEngine.UI.IClippable.html#UnityEngine_UI_IClippable_Cull_UnityEngine_Rect_System_Boolean_
+  name: Cull
+  nameWithType: IClippable.Cull
+  fullName: UnityEngine.UI.IClippable.Cull
+- uid: UnityEngine.Rect
+  commentId: T:UnityEngine.Rect
+  parent: UnityEngine
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: UnityEngine.Rect
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.UI.IClippable.SetClipRect*
+  commentId: Overload:UnityEngine.UI.IClippable.SetClipRect
+  href: UnityEngine.UI.IClippable.html#UnityEngine_UI_IClippable_SetClipRect_UnityEngine_Rect_System_Boolean_
+  name: SetClipRect
+  nameWithType: IClippable.SetClipRect
+  fullName: UnityEngine.UI.IClippable.SetClipRect
+- uid: UnityEngine.UI.IClippable.SetClipSoftness*
+  commentId: Overload:UnityEngine.UI.IClippable.SetClipSoftness
+  href: UnityEngine.UI.IClippable.html#UnityEngine_UI_IClippable_SetClipSoftness_UnityEngine_Vector2_
+  name: SetClipSoftness
+  nameWithType: IClippable.SetClipSoftness
+  fullName: UnityEngine.UI.IClippable.SetClipSoftness
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2

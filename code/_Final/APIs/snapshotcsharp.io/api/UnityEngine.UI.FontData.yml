@@ -1,0 +1,893 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.FontData
+  commentId: T:UnityEngine.UI.FontData
+  id: FontData
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.FontData.alignByGeometry
+  - UnityEngine.UI.FontData.alignment
+  - UnityEngine.UI.FontData.bestFit
+  - UnityEngine.UI.FontData.defaultFontData
+  - UnityEngine.UI.FontData.font
+  - UnityEngine.UI.FontData.fontSize
+  - UnityEngine.UI.FontData.fontStyle
+  - UnityEngine.UI.FontData.horizontalOverflow
+  - UnityEngine.UI.FontData.lineSpacing
+  - UnityEngine.UI.FontData.maxSize
+  - UnityEngine.UI.FontData.minSize
+  - UnityEngine.UI.FontData.richText
+  - UnityEngine.UI.FontData.verticalOverflow
+  langs:
+  - csharp
+  - vb
+  name: FontData
+  nameWithType: FontData
+  fullName: UnityEngine.UI.FontData
+  type: Class
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: FontData
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+    startLine: 5
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class FontData : ISerializationCallbackReceiver
+    content.vb: >-
+      <Serializable>
+
+      Public Class FontData Implements ISerializationCallbackReceiver
+  inheritance:
+  - System.Object
+  implements:
+  - UnityEngine.ISerializationCallbackReceiver
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: UnityEngine.UI.FontData.defaultFontData
+  commentId: P:UnityEngine.UI.FontData.defaultFontData
+  id: defaultFontData
+  parent: UnityEngine.UI.FontData
+  langs:
+  - csharp
+  - vb
+  name: defaultFontData
+  nameWithType: FontData.defaultFontData
+  fullName: UnityEngine.UI.FontData.defaultFontData
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: defaultFontData
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+    startLine: 55
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Get a font data with sensible defaults.
+  example: []
+  syntax:
+    content: public static FontData defaultFontData { get; }
+    parameters: []
+    return:
+      type: UnityEngine.UI.FontData
+    content.vb: Public Shared ReadOnly Property defaultFontData As FontData
+  overload: UnityEngine.UI.FontData.defaultFontData*
+- uid: UnityEngine.UI.FontData.font
+  commentId: P:UnityEngine.UI.FontData.font
+  id: font
+  parent: UnityEngine.UI.FontData
+  langs:
+  - csharp
+  - vb
+  name: font
+  nameWithType: FontData.font
+  fullName: UnityEngine.UI.FontData.font
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: font
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+    startLine: 80
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The Font to use for this generated Text object.
+  example: []
+  syntax:
+    content: public Font font { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.Font
+    content.vb: Public Property font As Font
+  overload: UnityEngine.UI.FontData.font*
+- uid: UnityEngine.UI.FontData.fontSize
+  commentId: P:UnityEngine.UI.FontData.fontSize
+  id: fontSize
+  parent: UnityEngine.UI.FontData
+  langs:
+  - csharp
+  - vb
+  name: fontSize
+  nameWithType: FontData.fontSize
+  fullName: UnityEngine.UI.FontData.fontSize
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: fontSize
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+    startLine: 89
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The Font size to use for this generated Text object.
+  example: []
+  syntax:
+    content: public int fontSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property fontSize As Integer
+  overload: UnityEngine.UI.FontData.fontSize*
+- uid: UnityEngine.UI.FontData.fontStyle
+  commentId: P:UnityEngine.UI.FontData.fontStyle
+  id: fontStyle
+  parent: UnityEngine.UI.FontData
+  langs:
+  - csharp
+  - vb
+  name: fontStyle
+  nameWithType: FontData.fontStyle
+  fullName: UnityEngine.UI.FontData.fontStyle
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: fontStyle
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+    startLine: 98
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The font style to use for this generated Text object.
+  example: []
+  syntax:
+    content: public FontStyle fontStyle { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.FontStyle
+    content.vb: Public Property fontStyle As FontStyle
+  overload: UnityEngine.UI.FontData.fontStyle*
+- uid: UnityEngine.UI.FontData.bestFit
+  commentId: P:UnityEngine.UI.FontData.bestFit
+  id: bestFit
+  parent: UnityEngine.UI.FontData
+  langs:
+  - csharp
+  - vb
+  name: bestFit
+  nameWithType: FontData.bestFit
+  fullName: UnityEngine.UI.FontData.bestFit
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: bestFit
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+    startLine: 107
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Is best fit used for this generated Text object.
+  example: []
+  syntax:
+    content: public bool bestFit { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property bestFit As Boolean
+  overload: UnityEngine.UI.FontData.bestFit*
+- uid: UnityEngine.UI.FontData.minSize
+  commentId: P:UnityEngine.UI.FontData.minSize
+  id: minSize
+  parent: UnityEngine.UI.FontData
+  langs:
+  - csharp
+  - vb
+  name: minSize
+  nameWithType: FontData.minSize
+  fullName: UnityEngine.UI.FontData.minSize
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: minSize
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+    startLine: 116
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The min size for this generated Text object.
+  example: []
+  syntax:
+    content: public int minSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property minSize As Integer
+  overload: UnityEngine.UI.FontData.minSize*
+- uid: UnityEngine.UI.FontData.maxSize
+  commentId: P:UnityEngine.UI.FontData.maxSize
+  id: maxSize
+  parent: UnityEngine.UI.FontData
+  langs:
+  - csharp
+  - vb
+  name: maxSize
+  nameWithType: FontData.maxSize
+  fullName: UnityEngine.UI.FontData.maxSize
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: maxSize
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+    startLine: 125
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The max size for this generated Text object.
+  example: []
+  syntax:
+    content: public int maxSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property maxSize As Integer
+  overload: UnityEngine.UI.FontData.maxSize*
+- uid: UnityEngine.UI.FontData.alignment
+  commentId: P:UnityEngine.UI.FontData.alignment
+  id: alignment
+  parent: UnityEngine.UI.FontData
+  langs:
+  - csharp
+  - vb
+  name: alignment
+  nameWithType: FontData.alignment
+  fullName: UnityEngine.UI.FontData.alignment
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: alignment
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+    startLine: 134
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: How is the text aligned for this generated Text object.
+  example: []
+  syntax:
+    content: public TextAnchor alignment { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.TextAnchor
+    content.vb: Public Property alignment As TextAnchor
+  overload: UnityEngine.UI.FontData.alignment*
+- uid: UnityEngine.UI.FontData.alignByGeometry
+  commentId: P:UnityEngine.UI.FontData.alignByGeometry
+  id: alignByGeometry
+  parent: UnityEngine.UI.FontData
+  langs:
+  - csharp
+  - vb
+  name: alignByGeometry
+  nameWithType: FontData.alignByGeometry
+  fullName: UnityEngine.UI.FontData.alignByGeometry
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: alignByGeometry
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+    startLine: 146
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Use the extents of glyph geometry to perform horizontal alignment rather than glyph metrics.
+  remarks: This can result in better fitting left and right alignment, but may result in incorrect positioning when attempting to overlay multiple fonts (such as a specialized outline font) on top of each other.
+  example: []
+  syntax:
+    content: public bool alignByGeometry { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property alignByGeometry As Boolean
+  overload: UnityEngine.UI.FontData.alignByGeometry*
+- uid: UnityEngine.UI.FontData.richText
+  commentId: P:UnityEngine.UI.FontData.richText
+  id: richText
+  parent: UnityEngine.UI.FontData
+  langs:
+  - csharp
+  - vb
+  name: richText
+  nameWithType: FontData.richText
+  fullName: UnityEngine.UI.FontData.richText
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: richText
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+    startLine: 155
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Should rich text be used for this generated Text object.
+  example: []
+  syntax:
+    content: public bool richText { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property richText As Boolean
+  overload: UnityEngine.UI.FontData.richText*
+- uid: UnityEngine.UI.FontData.horizontalOverflow
+  commentId: P:UnityEngine.UI.FontData.horizontalOverflow
+  id: horizontalOverflow
+  parent: UnityEngine.UI.FontData
+  langs:
+  - csharp
+  - vb
+  name: horizontalOverflow
+  nameWithType: FontData.horizontalOverflow
+  fullName: UnityEngine.UI.FontData.horizontalOverflow
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: horizontalOverflow
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+    startLine: 164
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The horizontal overflow policy for this generated Text object.
+  example: []
+  syntax:
+    content: public HorizontalWrapMode horizontalOverflow { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.HorizontalWrapMode
+    content.vb: Public Property horizontalOverflow As HorizontalWrapMode
+  overload: UnityEngine.UI.FontData.horizontalOverflow*
+- uid: UnityEngine.UI.FontData.verticalOverflow
+  commentId: P:UnityEngine.UI.FontData.verticalOverflow
+  id: verticalOverflow
+  parent: UnityEngine.UI.FontData
+  langs:
+  - csharp
+  - vb
+  name: verticalOverflow
+  nameWithType: FontData.verticalOverflow
+  fullName: UnityEngine.UI.FontData.verticalOverflow
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: verticalOverflow
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+    startLine: 173
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The vertical overflow policy for this generated Text object.
+  example: []
+  syntax:
+    content: public VerticalWrapMode verticalOverflow { get; set; }
+    parameters: []
+    return:
+      type: UnityEngine.VerticalWrapMode
+    content.vb: Public Property verticalOverflow As VerticalWrapMode
+  overload: UnityEngine.UI.FontData.verticalOverflow*
+- uid: UnityEngine.UI.FontData.lineSpacing
+  commentId: P:UnityEngine.UI.FontData.lineSpacing
+  id: lineSpacing
+  parent: UnityEngine.UI.FontData
+  langs:
+  - csharp
+  - vb
+  name: lineSpacing
+  nameWithType: FontData.lineSpacing
+  fullName: UnityEngine.UI.FontData.lineSpacing
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: lineSpacing
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/FontData.cs
+    startLine: 182
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The line spaceing for this generated Text object.
+  example: []
+  syntax:
+    content: public float lineSpacing { get; set; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: Public Property lineSpacing As Single
+  overload: UnityEngine.UI.FontData.lineSpacing*
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.ISerializationCallbackReceiver
+  commentId: T:UnityEngine.ISerializationCallbackReceiver
+  parent: UnityEngine
+  isExternal: true
+  name: ISerializationCallbackReceiver
+  nameWithType: ISerializationCallbackReceiver
+  fullName: UnityEngine.ISerializationCallbackReceiver
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.UI.FontData.defaultFontData*
+  commentId: Overload:UnityEngine.UI.FontData.defaultFontData
+  href: UnityEngine.UI.FontData.html#UnityEngine_UI_FontData_defaultFontData
+  name: defaultFontData
+  nameWithType: FontData.defaultFontData
+  fullName: UnityEngine.UI.FontData.defaultFontData
+- uid: UnityEngine.UI.FontData
+  commentId: T:UnityEngine.UI.FontData
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.FontData.html
+  name: FontData
+  nameWithType: FontData
+  fullName: UnityEngine.UI.FontData
+- uid: UnityEngine.UI.FontData.font*
+  commentId: Overload:UnityEngine.UI.FontData.font
+  href: UnityEngine.UI.FontData.html#UnityEngine_UI_FontData_font
+  name: font
+  nameWithType: FontData.font
+  fullName: UnityEngine.UI.FontData.font
+- uid: UnityEngine.Font
+  commentId: T:UnityEngine.Font
+  parent: UnityEngine
+  isExternal: true
+  name: Font
+  nameWithType: Font
+  fullName: UnityEngine.Font
+- uid: UnityEngine.UI.FontData.fontSize*
+  commentId: Overload:UnityEngine.UI.FontData.fontSize
+  href: UnityEngine.UI.FontData.html#UnityEngine_UI_FontData_fontSize
+  name: fontSize
+  nameWithType: FontData.fontSize
+  fullName: UnityEngine.UI.FontData.fontSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.UI.FontData.fontStyle*
+  commentId: Overload:UnityEngine.UI.FontData.fontStyle
+  href: UnityEngine.UI.FontData.html#UnityEngine_UI_FontData_fontStyle
+  name: fontStyle
+  nameWithType: FontData.fontStyle
+  fullName: UnityEngine.UI.FontData.fontStyle
+- uid: UnityEngine.FontStyle
+  commentId: T:UnityEngine.FontStyle
+  parent: UnityEngine
+  isExternal: true
+  name: FontStyle
+  nameWithType: FontStyle
+  fullName: UnityEngine.FontStyle
+- uid: UnityEngine.UI.FontData.bestFit*
+  commentId: Overload:UnityEngine.UI.FontData.bestFit
+  href: UnityEngine.UI.FontData.html#UnityEngine_UI_FontData_bestFit
+  name: bestFit
+  nameWithType: FontData.bestFit
+  fullName: UnityEngine.UI.FontData.bestFit
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UnityEngine.UI.FontData.minSize*
+  commentId: Overload:UnityEngine.UI.FontData.minSize
+  href: UnityEngine.UI.FontData.html#UnityEngine_UI_FontData_minSize
+  name: minSize
+  nameWithType: FontData.minSize
+  fullName: UnityEngine.UI.FontData.minSize
+- uid: UnityEngine.UI.FontData.maxSize*
+  commentId: Overload:UnityEngine.UI.FontData.maxSize
+  href: UnityEngine.UI.FontData.html#UnityEngine_UI_FontData_maxSize
+  name: maxSize
+  nameWithType: FontData.maxSize
+  fullName: UnityEngine.UI.FontData.maxSize
+- uid: UnityEngine.UI.FontData.alignment*
+  commentId: Overload:UnityEngine.UI.FontData.alignment
+  href: UnityEngine.UI.FontData.html#UnityEngine_UI_FontData_alignment
+  name: alignment
+  nameWithType: FontData.alignment
+  fullName: UnityEngine.UI.FontData.alignment
+- uid: UnityEngine.TextAnchor
+  commentId: T:UnityEngine.TextAnchor
+  parent: UnityEngine
+  isExternal: true
+  name: TextAnchor
+  nameWithType: TextAnchor
+  fullName: UnityEngine.TextAnchor
+- uid: UnityEngine.UI.FontData.alignByGeometry*
+  commentId: Overload:UnityEngine.UI.FontData.alignByGeometry
+  href: UnityEngine.UI.FontData.html#UnityEngine_UI_FontData_alignByGeometry
+  name: alignByGeometry
+  nameWithType: FontData.alignByGeometry
+  fullName: UnityEngine.UI.FontData.alignByGeometry
+- uid: UnityEngine.UI.FontData.richText*
+  commentId: Overload:UnityEngine.UI.FontData.richText
+  href: UnityEngine.UI.FontData.html#UnityEngine_UI_FontData_richText
+  name: richText
+  nameWithType: FontData.richText
+  fullName: UnityEngine.UI.FontData.richText
+- uid: UnityEngine.UI.FontData.horizontalOverflow*
+  commentId: Overload:UnityEngine.UI.FontData.horizontalOverflow
+  href: UnityEngine.UI.FontData.html#UnityEngine_UI_FontData_horizontalOverflow
+  name: horizontalOverflow
+  nameWithType: FontData.horizontalOverflow
+  fullName: UnityEngine.UI.FontData.horizontalOverflow
+- uid: UnityEngine.HorizontalWrapMode
+  commentId: T:UnityEngine.HorizontalWrapMode
+  parent: UnityEngine
+  isExternal: true
+  name: HorizontalWrapMode
+  nameWithType: HorizontalWrapMode
+  fullName: UnityEngine.HorizontalWrapMode
+- uid: UnityEngine.UI.FontData.verticalOverflow*
+  commentId: Overload:UnityEngine.UI.FontData.verticalOverflow
+  href: UnityEngine.UI.FontData.html#UnityEngine_UI_FontData_verticalOverflow
+  name: verticalOverflow
+  nameWithType: FontData.verticalOverflow
+  fullName: UnityEngine.UI.FontData.verticalOverflow
+- uid: UnityEngine.VerticalWrapMode
+  commentId: T:UnityEngine.VerticalWrapMode
+  parent: UnityEngine
+  isExternal: true
+  name: VerticalWrapMode
+  nameWithType: VerticalWrapMode
+  fullName: UnityEngine.VerticalWrapMode
+- uid: UnityEngine.UI.FontData.lineSpacing*
+  commentId: Overload:UnityEngine.UI.FontData.lineSpacing
+  href: UnityEngine.UI.FontData.html#UnityEngine_UI_FontData_lineSpacing
+  name: lineSpacing
+  nameWithType: FontData.lineSpacing
+  fullName: UnityEngine.UI.FontData.lineSpacing
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single

@@ -1,0 +1,276 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.ICanvasElement
+  commentId: T:UnityEngine.UI.ICanvasElement
+  id: ICanvasElement
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.ICanvasElement.GraphicUpdateComplete
+  - UnityEngine.UI.ICanvasElement.IsDestroyed
+  - UnityEngine.UI.ICanvasElement.LayoutComplete
+  - UnityEngine.UI.ICanvasElement.Rebuild(UnityEngine.UI.CanvasUpdate)
+  - UnityEngine.UI.ICanvasElement.transform
+  langs:
+  - csharp
+  - vb
+  name: ICanvasElement
+  nameWithType: ICanvasElement
+  fullName: UnityEngine.UI.ICanvasElement
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ICanvasElement
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 41
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: This is an element that can live on a Canvas.
+  example: []
+  syntax:
+    content: public interface ICanvasElement
+    content.vb: Public Interface ICanvasElement
+- uid: UnityEngine.UI.ICanvasElement.Rebuild(UnityEngine.UI.CanvasUpdate)
+  commentId: M:UnityEngine.UI.ICanvasElement.Rebuild(UnityEngine.UI.CanvasUpdate)
+  id: Rebuild(UnityEngine.UI.CanvasUpdate)
+  parent: UnityEngine.UI.ICanvasElement
+  langs:
+  - csharp
+  - vb
+  name: Rebuild(CanvasUpdate)
+  nameWithType: ICanvasElement.Rebuild(CanvasUpdate)
+  fullName: UnityEngine.UI.ICanvasElement.Rebuild(UnityEngine.UI.CanvasUpdate)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Rebuild
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 47
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Rebuild the element for the given stage.
+  example: []
+  syntax:
+    content: void Rebuild(CanvasUpdate executing)
+    parameters:
+    - id: executing
+      type: UnityEngine.UI.CanvasUpdate
+      description: The current CanvasUpdate stage being rebuild.
+    content.vb: Sub Rebuild(executing As CanvasUpdate)
+  overload: UnityEngine.UI.ICanvasElement.Rebuild*
+- uid: UnityEngine.UI.ICanvasElement.transform
+  commentId: P:UnityEngine.UI.ICanvasElement.transform
+  id: transform
+  parent: UnityEngine.UI.ICanvasElement
+  langs:
+  - csharp
+  - vb
+  name: transform
+  nameWithType: ICanvasElement.transform
+  fullName: UnityEngine.UI.ICanvasElement.transform
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: transform
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 52
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Get the transform associated with the ICanvasElement.
+  example: []
+  syntax:
+    content: Transform transform { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Transform
+    content.vb: ReadOnly Property transform As Transform
+  overload: UnityEngine.UI.ICanvasElement.transform*
+- uid: UnityEngine.UI.ICanvasElement.LayoutComplete
+  commentId: M:UnityEngine.UI.ICanvasElement.LayoutComplete
+  id: LayoutComplete
+  parent: UnityEngine.UI.ICanvasElement
+  langs:
+  - csharp
+  - vb
+  name: LayoutComplete()
+  nameWithType: ICanvasElement.LayoutComplete()
+  fullName: UnityEngine.UI.ICanvasElement.LayoutComplete()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: LayoutComplete
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 57
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Callback sent when this ICanvasElement has completed layout.
+  example: []
+  syntax:
+    content: void LayoutComplete()
+    content.vb: Sub LayoutComplete()
+  overload: UnityEngine.UI.ICanvasElement.LayoutComplete*
+- uid: UnityEngine.UI.ICanvasElement.GraphicUpdateComplete
+  commentId: M:UnityEngine.UI.ICanvasElement.GraphicUpdateComplete
+  id: GraphicUpdateComplete
+  parent: UnityEngine.UI.ICanvasElement
+  langs:
+  - csharp
+  - vb
+  name: GraphicUpdateComplete()
+  nameWithType: ICanvasElement.GraphicUpdateComplete()
+  fullName: UnityEngine.UI.ICanvasElement.GraphicUpdateComplete()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GraphicUpdateComplete
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 62
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Callback sent when this ICanvasElement has completed Graphic rebuild.
+  example: []
+  syntax:
+    content: void GraphicUpdateComplete()
+    content.vb: Sub GraphicUpdateComplete()
+  overload: UnityEngine.UI.ICanvasElement.GraphicUpdateComplete*
+- uid: UnityEngine.UI.ICanvasElement.IsDestroyed
+  commentId: M:UnityEngine.UI.ICanvasElement.IsDestroyed
+  id: IsDestroyed
+  parent: UnityEngine.UI.ICanvasElement
+  langs:
+  - csharp
+  - vb
+  name: IsDestroyed()
+  nameWithType: ICanvasElement.IsDestroyed()
+  fullName: UnityEngine.UI.ICanvasElement.IsDestroyed()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IsDestroyed
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/CanvasUpdateRegistry.cs
+    startLine: 68
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Used if the native representation has been destroyed.
+  example: []
+  syntax:
+    content: bool IsDestroyed()
+    return:
+      type: System.Boolean
+      description: Return true if the element is considered destroyed.
+    content.vb: Function IsDestroyed() As Boolean
+  overload: UnityEngine.UI.ICanvasElement.IsDestroyed*
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.ICanvasElement.Rebuild*
+  commentId: Overload:UnityEngine.UI.ICanvasElement.Rebuild
+  href: UnityEngine.UI.ICanvasElement.html#UnityEngine_UI_ICanvasElement_Rebuild_UnityEngine_UI_CanvasUpdate_
+  name: Rebuild
+  nameWithType: ICanvasElement.Rebuild
+  fullName: UnityEngine.UI.ICanvasElement.Rebuild
+- uid: UnityEngine.UI.CanvasUpdate
+  commentId: T:UnityEngine.UI.CanvasUpdate
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.CanvasUpdate.html
+  name: CanvasUpdate
+  nameWithType: CanvasUpdate
+  fullName: UnityEngine.UI.CanvasUpdate
+- uid: UnityEngine.UI.ICanvasElement.transform*
+  commentId: Overload:UnityEngine.UI.ICanvasElement.transform
+  href: UnityEngine.UI.ICanvasElement.html#UnityEngine_UI_ICanvasElement_transform
+  name: transform
+  nameWithType: ICanvasElement.transform
+  fullName: UnityEngine.UI.ICanvasElement.transform
+- uid: UnityEngine.Transform
+  commentId: T:UnityEngine.Transform
+  parent: UnityEngine
+  isExternal: true
+  name: Transform
+  nameWithType: Transform
+  fullName: UnityEngine.Transform
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.UI.ICanvasElement.LayoutComplete*
+  commentId: Overload:UnityEngine.UI.ICanvasElement.LayoutComplete
+  href: UnityEngine.UI.ICanvasElement.html#UnityEngine_UI_ICanvasElement_LayoutComplete
+  name: LayoutComplete
+  nameWithType: ICanvasElement.LayoutComplete
+  fullName: UnityEngine.UI.ICanvasElement.LayoutComplete
+- uid: UnityEngine.UI.ICanvasElement.GraphicUpdateComplete*
+  commentId: Overload:UnityEngine.UI.ICanvasElement.GraphicUpdateComplete
+  href: UnityEngine.UI.ICanvasElement.html#UnityEngine_UI_ICanvasElement_GraphicUpdateComplete
+  name: GraphicUpdateComplete
+  nameWithType: ICanvasElement.GraphicUpdateComplete
+  fullName: UnityEngine.UI.ICanvasElement.GraphicUpdateComplete
+- uid: UnityEngine.UI.ICanvasElement.IsDestroyed*
+  commentId: Overload:UnityEngine.UI.ICanvasElement.IsDestroyed
+  href: UnityEngine.UI.ICanvasElement.html#UnityEngine_UI_ICanvasElement_IsDestroyed
+  name: IsDestroyed
+  nameWithType: ICanvasElement.IsDestroyed
+  fullName: UnityEngine.UI.ICanvasElement.IsDestroyed
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

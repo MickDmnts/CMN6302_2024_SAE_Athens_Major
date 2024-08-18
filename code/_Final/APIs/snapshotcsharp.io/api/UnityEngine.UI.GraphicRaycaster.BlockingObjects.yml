@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.GraphicRaycaster.BlockingObjects
+  commentId: T:UnityEngine.UI.GraphicRaycaster.BlockingObjects
+  id: GraphicRaycaster.BlockingObjects
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.GraphicRaycaster.BlockingObjects.All
+  - UnityEngine.UI.GraphicRaycaster.BlockingObjects.None
+  - UnityEngine.UI.GraphicRaycaster.BlockingObjects.ThreeD
+  - UnityEngine.UI.GraphicRaycaster.BlockingObjects.TwoD
+  langs:
+  - csharp
+  - vb
+  name: GraphicRaycaster.BlockingObjects
+  nameWithType: GraphicRaycaster.BlockingObjects
+  fullName: UnityEngine.UI.GraphicRaycaster.BlockingObjects
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: BlockingObjects
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs
+    startLine: 20
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Type of raycasters to check against to check for canvas blocking elements.
+  example: []
+  syntax:
+    content: public enum GraphicRaycaster.BlockingObjects
+    content.vb: Public Enum GraphicRaycaster.BlockingObjects
+- uid: UnityEngine.UI.GraphicRaycaster.BlockingObjects.None
+  commentId: F:UnityEngine.UI.GraphicRaycaster.BlockingObjects.None
+  id: None
+  parent: UnityEngine.UI.GraphicRaycaster.BlockingObjects
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: GraphicRaycaster.BlockingObjects.None
+  fullName: UnityEngine.UI.GraphicRaycaster.BlockingObjects.None
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: None
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs
+    startLine: 25
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Perform no raycasts.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: UnityEngine.UI.GraphicRaycaster.BlockingObjects
+- uid: UnityEngine.UI.GraphicRaycaster.BlockingObjects.TwoD
+  commentId: F:UnityEngine.UI.GraphicRaycaster.BlockingObjects.TwoD
+  id: TwoD
+  parent: UnityEngine.UI.GraphicRaycaster.BlockingObjects
+  langs:
+  - csharp
+  - vb
+  name: TwoD
+  nameWithType: GraphicRaycaster.BlockingObjects.TwoD
+  fullName: UnityEngine.UI.GraphicRaycaster.BlockingObjects.TwoD
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: TwoD
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs
+    startLine: 29
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Perform a 2D raycast check to check for blocking 2D elements
+  example: []
+  syntax:
+    content: TwoD = 1
+    return:
+      type: UnityEngine.UI.GraphicRaycaster.BlockingObjects
+- uid: UnityEngine.UI.GraphicRaycaster.BlockingObjects.ThreeD
+  commentId: F:UnityEngine.UI.GraphicRaycaster.BlockingObjects.ThreeD
+  id: ThreeD
+  parent: UnityEngine.UI.GraphicRaycaster.BlockingObjects
+  langs:
+  - csharp
+  - vb
+  name: ThreeD
+  nameWithType: GraphicRaycaster.BlockingObjects.ThreeD
+  fullName: UnityEngine.UI.GraphicRaycaster.BlockingObjects.ThreeD
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ThreeD
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs
+    startLine: 33
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Perform a 3D raycast check to check for blocking 3D elements
+  example: []
+  syntax:
+    content: ThreeD = 2
+    return:
+      type: UnityEngine.UI.GraphicRaycaster.BlockingObjects
+- uid: UnityEngine.UI.GraphicRaycaster.BlockingObjects.All
+  commentId: F:UnityEngine.UI.GraphicRaycaster.BlockingObjects.All
+  id: All
+  parent: UnityEngine.UI.GraphicRaycaster.BlockingObjects
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: GraphicRaycaster.BlockingObjects.All
+  fullName: UnityEngine.UI.GraphicRaycaster.BlockingObjects.All
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: All
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/GraphicRaycaster.cs
+    startLine: 37
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Perform a 2D and a 3D raycasts to check for blocking 2D and 3D elements.
+  example: []
+  syntax:
+    content: All = 3
+    return:
+      type: UnityEngine.UI.GraphicRaycaster.BlockingObjects
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.GraphicRaycaster.BlockingObjects
+  commentId: T:UnityEngine.UI.GraphicRaycaster.BlockingObjects
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.GraphicRaycaster.html
+  name: GraphicRaycaster.BlockingObjects
+  nameWithType: GraphicRaycaster.BlockingObjects
+  fullName: UnityEngine.UI.GraphicRaycaster.BlockingObjects
+  spec.csharp:
+  - uid: UnityEngine.UI.GraphicRaycaster
+    name: GraphicRaycaster
+    href: UnityEngine.UI.GraphicRaycaster.html
+  - name: .
+  - uid: UnityEngine.UI.GraphicRaycaster.BlockingObjects
+    name: BlockingObjects
+    href: UnityEngine.UI.GraphicRaycaster.BlockingObjects.html
+  spec.vb:
+  - uid: UnityEngine.UI.GraphicRaycaster
+    name: GraphicRaycaster
+    href: UnityEngine.UI.GraphicRaycaster.html
+  - name: .
+  - uid: UnityEngine.UI.GraphicRaycaster.BlockingObjects
+    name: BlockingObjects
+    href: UnityEngine.UI.GraphicRaycaster.BlockingObjects.html

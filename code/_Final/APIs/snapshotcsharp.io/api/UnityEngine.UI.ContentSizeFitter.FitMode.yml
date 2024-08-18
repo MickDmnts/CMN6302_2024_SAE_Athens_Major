@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.ContentSizeFitter.FitMode
+  commentId: T:UnityEngine.UI.ContentSizeFitter.FitMode
+  id: ContentSizeFitter.FitMode
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.ContentSizeFitter.FitMode.MinSize
+  - UnityEngine.UI.ContentSizeFitter.FitMode.PreferredSize
+  - UnityEngine.UI.ContentSizeFitter.FitMode.Unconstrained
+  langs:
+  - csharp
+  - vb
+  name: ContentSizeFitter.FitMode
+  nameWithType: ContentSizeFitter.FitMode
+  fullName: UnityEngine.UI.ContentSizeFitter.FitMode
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ContentSizeFitter.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: FitMode
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ContentSizeFitter.cs
+    startLine: 18
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The size fit modes avaliable to use.
+  example: []
+  syntax:
+    content: public enum ContentSizeFitter.FitMode
+    content.vb: Public Enum ContentSizeFitter.FitMode
+- uid: UnityEngine.UI.ContentSizeFitter.FitMode.Unconstrained
+  commentId: F:UnityEngine.UI.ContentSizeFitter.FitMode.Unconstrained
+  id: Unconstrained
+  parent: UnityEngine.UI.ContentSizeFitter.FitMode
+  langs:
+  - csharp
+  - vb
+  name: Unconstrained
+  nameWithType: ContentSizeFitter.FitMode.Unconstrained
+  fullName: UnityEngine.UI.ContentSizeFitter.FitMode.Unconstrained
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ContentSizeFitter.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Unconstrained
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ContentSizeFitter.cs
+    startLine: 23
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Don't perform any resizing.
+  example: []
+  syntax:
+    content: Unconstrained = 0
+    return:
+      type: UnityEngine.UI.ContentSizeFitter.FitMode
+- uid: UnityEngine.UI.ContentSizeFitter.FitMode.MinSize
+  commentId: F:UnityEngine.UI.ContentSizeFitter.FitMode.MinSize
+  id: MinSize
+  parent: UnityEngine.UI.ContentSizeFitter.FitMode
+  langs:
+  - csharp
+  - vb
+  name: MinSize
+  nameWithType: ContentSizeFitter.FitMode.MinSize
+  fullName: UnityEngine.UI.ContentSizeFitter.FitMode.MinSize
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ContentSizeFitter.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: MinSize
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ContentSizeFitter.cs
+    startLine: 27
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Resize to the minimum size of the content.
+  example: []
+  syntax:
+    content: MinSize = 1
+    return:
+      type: UnityEngine.UI.ContentSizeFitter.FitMode
+- uid: UnityEngine.UI.ContentSizeFitter.FitMode.PreferredSize
+  commentId: F:UnityEngine.UI.ContentSizeFitter.FitMode.PreferredSize
+  id: PreferredSize
+  parent: UnityEngine.UI.ContentSizeFitter.FitMode
+  langs:
+  - csharp
+  - vb
+  name: PreferredSize
+  nameWithType: ContentSizeFitter.FitMode.PreferredSize
+  fullName: UnityEngine.UI.ContentSizeFitter.FitMode.PreferredSize
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ContentSizeFitter.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: PreferredSize
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ContentSizeFitter.cs
+    startLine: 31
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Resize to the preferred size of the content.
+  example: []
+  syntax:
+    content: PreferredSize = 2
+    return:
+      type: UnityEngine.UI.ContentSizeFitter.FitMode
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.ContentSizeFitter.FitMode
+  commentId: T:UnityEngine.UI.ContentSizeFitter.FitMode
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ContentSizeFitter.html
+  name: ContentSizeFitter.FitMode
+  nameWithType: ContentSizeFitter.FitMode
+  fullName: UnityEngine.UI.ContentSizeFitter.FitMode
+  spec.csharp:
+  - uid: UnityEngine.UI.ContentSizeFitter
+    name: ContentSizeFitter
+    href: UnityEngine.UI.ContentSizeFitter.html
+  - name: .
+  - uid: UnityEngine.UI.ContentSizeFitter.FitMode
+    name: FitMode
+    href: UnityEngine.UI.ContentSizeFitter.FitMode.html
+  spec.vb:
+  - uid: UnityEngine.UI.ContentSizeFitter
+    name: ContentSizeFitter
+    href: UnityEngine.UI.ContentSizeFitter.html
+  - name: .
+  - uid: UnityEngine.UI.ContentSizeFitter.FitMode
+    name: FitMode
+    href: UnityEngine.UI.ContentSizeFitter.FitMode.html

@@ -1,4 +1,4 @@
-/*
+/**
 * Developed by Michael-Evangelos Diamantis Aug-2024
 * for SAE Athens CMN6302 - Major.
 * Source: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major
@@ -6,38 +6,38 @@
 
 #include "pch.h"
 
-/*
+/**
 A struct for incoming data handling.
 Used solemly for data caching, packing and unpacking.
 */
 struct DataContainer
 {
-	/*The saved data cache parent SMRI*/
+	/** The saved data cache parent SMRI*/
 	unsigned int _Smri;
-	/*The cached data array size*/
+	/** The cached data array size*/
 	int _DataSize;
-	/*The cached data converted in unsigned char for serialization*/
+	/** The cached data converted in unsigned char for serialization*/
 	std::vector<unsigned char> _DataValues;
-	/*The referenced SMRI values this SMRI has.*/
+	/** The referenced SMRI values this SMRI has.*/
 	std::vector<int> _RefSmris;
 
-	/*Packing msgpack::cppack method*/
+	/** Packing msgpack::cppack method*/
 	template<class T>
 	void pack(T& pack) {
 		pack(_Smri, _DataSize, _DataValues, _RefSmris);
 	}
 };
 
-/*
+/**
 A struct used solemly for packing and unpacking purposes.
 Helps in making DataContainer serialization and deserialization easier.
 */
 struct Data
 {
-	/*The map containing the smri-data pairs meant for serialization and deserialization.*/
+	/** The map containing the smri-data pairs meant for serialization and deserialization.*/
 	std::map<unsigned int, DataContainer> _ModelsCache;
 
-	/*Packing msgpack::cppack method*/
+	/** Packing msgpack::cppack method*/
 	template<class T>
 	void pack(T& pack) {
 		pack(_ModelsCache);
@@ -45,25 +45,25 @@ struct Data
 };
 
 #pragma region GlobalVariables
-/*The save format of the saved files.*/
-const std::string SAVE_FORMAT = "{date}_{cnt}";
-/*The save file extension*/
-const std::string SAVE_EXTENSION = ".sav";
-/*
+/** The save format of the saved files.*/
+const std::string SAVE_FORMAT = "{date}_{cnt}"; 
+/** The save file extension*/
+const std::string SAVE_EXTENSION = ".sav"; 
+/**
 The global SMRI value used in data storage and reference preservation.
 Default value is -1
 */
 int _GlobalSmriValue = -1;
-/*A map storing SMRI-Data pairs. Used in serialization and deserialization.*/
+/** A map storing SMRI-Data pairs. Used in serialization and deserialization.*/
 std::map<unsigned int, DataContainer> _ModelsCache;
-/*The externally-set absolute save path.*/
+/** The externally-set absolute save path.*/
 std::string _SavePath = "";
-/*The externally-set file name to unpack from.*/
+/** The externally-set file name to unpack from.*/
 std::string _LoadFile = "";
 #pragma endregion
 
 #pragma region SavePath
-/*
+/**
 Sets the library save path variable.
 The final directory gets created if it does not already exist.
 
@@ -88,7 +88,7 @@ short setSavePath(const char* _savePath) {
 	}
 }
 
-/*
+/**
 Returns the stored save directory absolute path.
 @return The stored save path as a C string.
 @return Nullptr in any other case
@@ -104,7 +104,7 @@ const char* getSavePath() {
 #pragma endregion
 
 #pragma region SMRI_Handling
-/*
+/**
 Increases and returns the current global SMRI.
 In case of any error, call decreaseSmri().
 @return The current SMRI value incremented by 1.
@@ -114,7 +114,7 @@ unsigned int getSmri() {
 	return _GlobalSmriValue;
 }
 
-/*
+/**
 Decreases the Global SMRI by 1.
 Caps to default value: -1
 */
@@ -125,7 +125,7 @@ void decreaseSmri() {
 	}
 }
 
-/*
+/**
 Deletes the associated SMRI Data Container from the ModelCache.
 @param unsigned int _smri
 	The SMRI to delete
@@ -142,7 +142,7 @@ short deleteSmriData(unsigned int _smri) {
 	}
 }
 
-/*
+/**
 @return The current global SMRI without incrementing it.
 */
 unsigned int getCurrentSmri() {
@@ -151,7 +151,7 @@ unsigned int getCurrentSmri() {
 #pragma endregion
 
 #pragma region DataCaching_Packing
-/*
+/**
 That's the main data caching function of the library.
 Creates and caches the DataContainer with the passed parameters and saves it in the ModelCache.
 Passed _data are converted into unsigned char values.
@@ -186,7 +186,7 @@ short cacheData(unsigned int _smri, int _dataSize, unsigned char* _data, int _re
 	}
 }
 
-/*
+/**
 Returns a pointer to the passed _smri associated data array.
 @param unsigned int _smri: The SMRI to retrieve data from
 @param int* _size: Is an output parameter and will be set with the array size of the returned data.
@@ -203,7 +203,7 @@ unsigned char* getData(unsigned int _smri, int* _size) {
 	}
 }
 
-/*
+/**
 Returns a pointer to the referenced SMRI values of the passed _parentSmri;
 @param unsigned int _parentSmri: The SMRI to retrieve the referenced SMRIs array from.
 @param  int* _size: Is an output parameter and will be set with the array size of the returned data.
@@ -220,7 +220,7 @@ int* getRefSmris(unsigned int _parentSmri, int* _size) {
 	}
 }
 
-/*
+/**
 The main serialization method of the library.
 The whole _ModelCache gets serialized and stored in the set save path along with a dynamically created name controlled from the SAVE_FORMAT variable.
 The serialization is handled from the msgpack hpp library.
@@ -251,7 +251,7 @@ short packData() {
 #pragma endregion
 
 #pragma region LoadFromFile_Unpacking
-/*
+/**
 Sets the file name to read data to unpack from which must reside inside the set _SavePath.
 The name gets validated for its existance inside the _SavePath every time it is set.
 @param const char* _loadFileName: A string containing the file name to load from.
@@ -278,7 +278,7 @@ short setLoadFileName(const char* _loadFileName) {
 	}
 }
 
-/*
+/**
 Returns the library cached _LoadFile value containing the file name to unpack data from.
 @return A C string with the value of the _LoadFile
 @return A nullptr in any other case.
@@ -292,7 +292,7 @@ const char* getLoadFileName() {
 	}
 }
 
-/*
+/**
 The deserialization function of the library.
 The serialized data are read directly from the save path and file name, get deserialized and
 cached inside the _ModelsCache library map.
@@ -343,7 +343,7 @@ short unpackData() {
 #pragma endregion
 
 #pragma region DLL_Cleanup
-/*
+/**
 Resets the global SMRI back to its default value: -1
 @return OperationSuccessful if the operation was successful.
 @return OperationFailed: In any other error.
@@ -358,7 +358,7 @@ short resetSmri() {
 	}
 }
 
-/*
+/**
 Clears the ModelsCache, _SavePath and _LoadFile memory.
 @return OperationSuccessful If the operation was successful.
 @return OperationFailed: In any other error.

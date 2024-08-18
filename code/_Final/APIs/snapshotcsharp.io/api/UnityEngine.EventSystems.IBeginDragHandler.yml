@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.IBeginDragHandler
+  commentId: T:UnityEngine.EventSystems.IBeginDragHandler
+  id: IBeginDragHandler
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.IBeginDragHandler.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)
+  langs:
+  - csharp
+  - vb
+  name: IBeginDragHandler
+  nameWithType: IBeginDragHandler
+  fullName: UnityEngine.EventSystems.IBeginDragHandler
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IBeginDragHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 122
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: >-
+    Interface to implement if you wish to receive OnBeginDrag callbacks.
+
+    Note: You need to implement IDragHandler in addition to IBeginDragHandler.
+  remarks: Criteria for this event is implementation dependent. For example see StandAloneInputModule.
+  example: []
+  syntax:
+    content: 'public interface IBeginDragHandler : IEventSystemHandler'
+    content.vb: Public Interface IBeginDragHandler Inherits IEventSystemHandler
+- uid: UnityEngine.EventSystems.IBeginDragHandler.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:UnityEngine.EventSystems.IBeginDragHandler.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)
+  id: OnBeginDrag(UnityEngine.EventSystems.PointerEventData)
+  parent: UnityEngine.EventSystems.IBeginDragHandler
+  langs:
+  - csharp
+  - vb
+  name: OnBeginDrag(PointerEventData)
+  nameWithType: IBeginDragHandler.OnBeginDrag(PointerEventData)
+  fullName: UnityEngine.EventSystems.IBeginDragHandler.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OnBeginDrag
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 127
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Called by a BaseInputModule before a drag is started.
+  example: []
+  syntax:
+    content: void OnBeginDrag(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Sub OnBeginDrag(eventData As PointerEventData)
+  overload: UnityEngine.EventSystems.IBeginDragHandler.OnBeginDrag*
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.IBeginDragHandler.OnBeginDrag*
+  commentId: Overload:UnityEngine.EventSystems.IBeginDragHandler.OnBeginDrag
+  href: UnityEngine.EventSystems.IBeginDragHandler.html#UnityEngine_EventSystems_IBeginDragHandler_OnBeginDrag_UnityEngine_EventSystems_PointerEventData_
+  name: OnBeginDrag
+  nameWithType: IBeginDragHandler.OnBeginDrag
+  fullName: UnityEngine.EventSystems.IBeginDragHandler.OnBeginDrag
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerEventData.html
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData

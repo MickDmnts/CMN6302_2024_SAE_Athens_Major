@@ -1,0 +1,97 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.ISubmitHandler
+  commentId: T:UnityEngine.EventSystems.ISubmitHandler
+  id: ISubmitHandler
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.ISubmitHandler.OnSubmit(UnityEngine.EventSystems.BaseEventData)
+  langs:
+  - csharp
+  - vb
+  name: ISubmitHandler
+  nameWithType: ISubmitHandler
+  fullName: UnityEngine.EventSystems.ISubmitHandler
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ISubmitHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 382
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Interface to implement if you wish to receive OnSubmit callbacks.
+  remarks: Criteria for this event is implementation dependent. For example see StandAloneInputModule.
+  example: []
+  syntax:
+    content: 'public interface ISubmitHandler : IEventSystemHandler'
+    content.vb: Public Interface ISubmitHandler Inherits IEventSystemHandler
+- uid: UnityEngine.EventSystems.ISubmitHandler.OnSubmit(UnityEngine.EventSystems.BaseEventData)
+  commentId: M:UnityEngine.EventSystems.ISubmitHandler.OnSubmit(UnityEngine.EventSystems.BaseEventData)
+  id: OnSubmit(UnityEngine.EventSystems.BaseEventData)
+  parent: UnityEngine.EventSystems.ISubmitHandler
+  langs:
+  - csharp
+  - vb
+  name: OnSubmit(BaseEventData)
+  nameWithType: ISubmitHandler.OnSubmit(BaseEventData)
+  fullName: UnityEngine.EventSystems.ISubmitHandler.OnSubmit(UnityEngine.EventSystems.BaseEventData)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OnSubmit
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 384
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: void OnSubmit(BaseEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.BaseEventData
+    content.vb: Sub OnSubmit(eventData As BaseEventData)
+  overload: UnityEngine.EventSystems.ISubmitHandler.OnSubmit*
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.ISubmitHandler.OnSubmit*
+  commentId: Overload:UnityEngine.EventSystems.ISubmitHandler.OnSubmit
+  href: UnityEngine.EventSystems.ISubmitHandler.html#UnityEngine_EventSystems_ISubmitHandler_OnSubmit_UnityEngine_EventSystems_BaseEventData_
+  name: OnSubmit
+  nameWithType: ISubmitHandler.OnSubmit
+  fullName: UnityEngine.EventSystems.ISubmitHandler.OnSubmit
+- uid: UnityEngine.EventSystems.BaseEventData
+  commentId: T:UnityEngine.EventSystems.BaseEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.BaseEventData.html
+  name: BaseEventData
+  nameWithType: BaseEventData
+  fullName: UnityEngine.EventSystems.BaseEventData

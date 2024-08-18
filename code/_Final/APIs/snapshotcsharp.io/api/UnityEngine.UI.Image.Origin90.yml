@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.Image.Origin90
+  commentId: T:UnityEngine.UI.Image.Origin90
+  id: Image.Origin90
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.Image.Origin90.BottomLeft
+  - UnityEngine.UI.Image.Origin90.BottomRight
+  - UnityEngine.UI.Image.Origin90.TopLeft
+  - UnityEngine.UI.Image.Origin90.TopRight
+  langs:
+  - csharp
+  - vb
+  name: Image.Origin90
+  nameWithType: Image.Origin90
+  fullName: UnityEngine.UI.Image.Origin90
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Origin90
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 159
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Origin for the Image.FillMethod.Radial90.
+  example: []
+  syntax:
+    content: public enum Image.Origin90
+    content.vb: Public Enum Image.Origin90
+- uid: UnityEngine.UI.Image.Origin90.BottomLeft
+  commentId: F:UnityEngine.UI.Image.Origin90.BottomLeft
+  id: BottomLeft
+  parent: UnityEngine.UI.Image.Origin90
+  langs:
+  - csharp
+  - vb
+  name: BottomLeft
+  nameWithType: Image.Origin90.BottomLeft
+  fullName: UnityEngine.UI.Image.Origin90.BottomLeft
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: BottomLeft
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 164
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Radial starting at the Bottom Left corner.
+  example: []
+  syntax:
+    content: BottomLeft = 0
+    return:
+      type: UnityEngine.UI.Image.Origin90
+- uid: UnityEngine.UI.Image.Origin90.TopLeft
+  commentId: F:UnityEngine.UI.Image.Origin90.TopLeft
+  id: TopLeft
+  parent: UnityEngine.UI.Image.Origin90
+  langs:
+  - csharp
+  - vb
+  name: TopLeft
+  nameWithType: Image.Origin90.TopLeft
+  fullName: UnityEngine.UI.Image.Origin90.TopLeft
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: TopLeft
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 169
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Radial starting at the Top Left corner.
+  example: []
+  syntax:
+    content: TopLeft = 1
+    return:
+      type: UnityEngine.UI.Image.Origin90
+- uid: UnityEngine.UI.Image.Origin90.TopRight
+  commentId: F:UnityEngine.UI.Image.Origin90.TopRight
+  id: TopRight
+  parent: UnityEngine.UI.Image.Origin90
+  langs:
+  - csharp
+  - vb
+  name: TopRight
+  nameWithType: Image.Origin90.TopRight
+  fullName: UnityEngine.UI.Image.Origin90.TopRight
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: TopRight
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 174
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Radial starting at the Top Right corner.
+  example: []
+  syntax:
+    content: TopRight = 2
+    return:
+      type: UnityEngine.UI.Image.Origin90
+- uid: UnityEngine.UI.Image.Origin90.BottomRight
+  commentId: F:UnityEngine.UI.Image.Origin90.BottomRight
+  id: BottomRight
+  parent: UnityEngine.UI.Image.Origin90
+  langs:
+  - csharp
+  - vb
+  name: BottomRight
+  nameWithType: Image.Origin90.BottomRight
+  fullName: UnityEngine.UI.Image.Origin90.BottomRight
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: BottomRight
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 179
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Radial starting at the Bottom Right corner.
+  example: []
+  syntax:
+    content: BottomRight = 3
+    return:
+      type: UnityEngine.UI.Image.Origin90
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.Image.Origin90
+  commentId: T:UnityEngine.UI.Image.Origin90
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Image.html
+  name: Image.Origin90
+  nameWithType: Image.Origin90
+  fullName: UnityEngine.UI.Image.Origin90
+  spec.csharp:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.Origin90
+    name: Origin90
+    href: UnityEngine.UI.Image.Origin90.html
+  spec.vb:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.Origin90
+    name: Origin90
+    href: UnityEngine.UI.Image.Origin90.html

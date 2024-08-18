@@ -1,0 +1,115 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.IPointerClickHandler
+  commentId: T:UnityEngine.EventSystems.IPointerClickHandler
+  id: IPointerClickHandler
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.IPointerClickHandler.OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+  langs:
+  - csharp
+  - vb
+  name: IPointerClickHandler
+  nameWithType: IPointerClickHandler
+  fullName: UnityEngine.EventSystems.IPointerClickHandler
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IPointerClickHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 107
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Interface to implement if you wish to receive OnPointerClick callbacks.
+  remarks: Criteria for this event is implementation dependent. For example see StandAloneInputModule.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using UnityEngine;
+
+    using UnityEngine.EventSystems;
+
+
+    public class Example : MonoBehaviour, IPointerClickHandler
+
+    {
+        //Detect if a click occurs
+        public void OnPointerClick(PointerEventData pointerEventData)
+        {
+            //Output to console the clicked GameObject's name and the following message. You can replace this with your own actions for when clicking the GameObject.
+            Debug.Log(name + " Game Object Clicked!");
+        }
+    }</code></pre>
+  syntax:
+    content: 'public interface IPointerClickHandler : IEventSystemHandler'
+    content.vb: Public Interface IPointerClickHandler Inherits IEventSystemHandler
+- uid: UnityEngine.EventSystems.IPointerClickHandler.OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:UnityEngine.EventSystems.IPointerClickHandler.OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+  id: OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+  parent: UnityEngine.EventSystems.IPointerClickHandler
+  langs:
+  - csharp
+  - vb
+  name: OnPointerClick(PointerEventData)
+  nameWithType: IPointerClickHandler.OnPointerClick(PointerEventData)
+  fullName: UnityEngine.EventSystems.IPointerClickHandler.OnPointerClick(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OnPointerClick
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 112
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Use this callback to detect clicks.
+  example: []
+  syntax:
+    content: void OnPointerClick(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Sub OnPointerClick(eventData As PointerEventData)
+  overload: UnityEngine.EventSystems.IPointerClickHandler.OnPointerClick*
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.IPointerClickHandler.OnPointerClick*
+  commentId: Overload:UnityEngine.EventSystems.IPointerClickHandler.OnPointerClick
+  href: UnityEngine.EventSystems.IPointerClickHandler.html#UnityEngine_EventSystems_IPointerClickHandler_OnPointerClick_UnityEngine_EventSystems_PointerEventData_
+  name: OnPointerClick
+  nameWithType: IPointerClickHandler.OnPointerClick
+  fullName: UnityEngine.EventSystems.IPointerClickHandler.OnPointerClick
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerEventData.html
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData

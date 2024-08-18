@@ -1,0 +1,560 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Struct Navigation </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Struct Navigation ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/new/mad/apiSpec/new?filename=UnityEngine_UI_Navigation.md&amp;value=---%0Auid%3A%20UnityEngine.UI.Navigation%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UnityEngine.UI.Navigation">
+
+
+
+  <h1 id="UnityEngine_UI_Navigation" data-uid="UnityEngine.UI.Navigation" class="text-break">
+Struct Navigation  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UnityEngine.html">UnityEngine</a>.<a class="xref" href="UnityEngine.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UnityEngine.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public struct Navigation : IEquatable&lt;Navigation&gt;</code></pre>
+  </div>
+
+
+
+
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="UnityEngine.UI.Navigation.html">Navigation</a>&gt;</div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.equals">ValueType.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode">ValueType.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetype.tostring">ValueType.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UnityEngine_UI_Navigation_defaultNavigation_" data-uid="UnityEngine.UI.Navigation.defaultNavigation*"></a>
+
+  <h3 id="UnityEngine_UI_Navigation_defaultNavigation" data-uid="UnityEngine.UI.Navigation.defaultNavigation">
+  defaultNavigation
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Return a Navigation with sensible default values.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Navigation defaultNavigation { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Navigation.html">Navigation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Navigation_defaultNavigation_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when Using UI elements.
+
+public class ExampleClass : MonoBehaviour
+{
+    public Button button;
+
+    void Start()
+    {
+        //Set the navigation to the default value. ("Automatic" is the default value).
+        button.navigation = Navigation.defaultNavigation;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Navigation_mode_" data-uid="UnityEngine.UI.Navigation.mode*"></a>
+
+  <h3 id="UnityEngine_UI_Navigation_mode" data-uid="UnityEngine.UI.Navigation.mode">
+  mode
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs/#L114"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Navigation mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Navigation.Mode mode { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Navigation.html">Navigation</a>.<a class="xref" href="UnityEngine.UI.Navigation.Mode.html">Mode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Navigation_selectOnDown_" data-uid="UnityEngine.UI.Navigation.selectOnDown*"></a>
+
+  <h3 id="UnityEngine_UI_Navigation_selectOnDown" data-uid="UnityEngine.UI.Navigation.selectOnDown">
+  selectOnDown
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs/#L193"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specify a Selectable UI GameObject to highlight when the down arrow key is pressed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Selectable selectOnDown { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Selectable.html">Selectable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Navigation_selectOnDown_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;  // Required when Using UI elements.
+
+public class HighlightOnKey : MonoBehaviour
+{
+    public Button btnSave;
+    public Button btnLoad;
+
+    public void Start()
+    {
+        // get the Navigation data
+        Navigation navigation = btnLoad.navigation;
+
+        // switch mode to Explicit to allow for custom assigned behavior
+        navigation.mode = Navigation.Mode.Explicit;
+
+        // highlight the Save button if the down arrow key is pressed
+        navigation.selectOnDown = btnSave;
+
+        // reassign the struct data to the button
+        btnLoad.navigation = navigation;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Navigation_selectOnLeft_" data-uid="UnityEngine.UI.Navigation.selectOnLeft*"></a>
+
+  <h3 id="UnityEngine_UI_Navigation_selectOnLeft" data-uid="UnityEngine.UI.Navigation.selectOnLeft">
+  selectOnLeft
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specify a Selectable UI GameObject to highlight when the left arrow key is pressed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Selectable selectOnLeft { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Selectable.html">Selectable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Navigation_selectOnLeft_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;  // Required when Using UI elements.
+
+public class HighlightOnKey : MonoBehaviour
+{
+    public Button btnSave;
+    public Button btnLoad;
+
+    public void Start()
+    {
+        // get the Navigation data
+        Navigation navigation = btnLoad.navigation;
+
+        // switch mode to Explicit to allow for custom assigned behavior
+        navigation.mode = Navigation.Mode.Explicit;
+
+        // highlight the Save button if the left arrow key is pressed
+        navigation.selectOnLeft = btnSave;
+
+        // reassign the struct data to the button
+        btnLoad.navigation = navigation;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Navigation_selectOnRight_" data-uid="UnityEngine.UI.Navigation.selectOnRight*"></a>
+
+  <h3 id="UnityEngine_UI_Navigation_selectOnRight" data-uid="UnityEngine.UI.Navigation.selectOnRight">
+  selectOnRight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs/#L263"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specify a Selectable UI GameObject to highlight when the right arrow key is pressed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Selectable selectOnRight { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Selectable.html">Selectable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Navigation_selectOnRight_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;  // Required when Using UI elements.
+
+public class HighlightOnKey : MonoBehaviour
+{
+    public Button btnSave;
+    public Button btnLoad;
+
+    public void Start()
+    {
+        // get the Navigation data
+        Navigation navigation = btnLoad.navigation;
+
+        // switch mode to Explicit to allow for custom assigned behavior
+        navigation.mode = Navigation.Mode.Explicit;
+
+        // highlight the Save button if the right arrow key is pressed
+        navigation.selectOnRight = btnSave;
+
+        // reassign the struct data to the button
+        btnLoad.navigation = navigation;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Navigation_selectOnUp_" data-uid="UnityEngine.UI.Navigation.selectOnUp*"></a>
+
+  <h3 id="UnityEngine_UI_Navigation_selectOnUp" data-uid="UnityEngine.UI.Navigation.selectOnUp">
+  selectOnUp
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Specify a Selectable UI GameObject to highlight when the Up arrow key is pressed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Selectable selectOnUp { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UnityEngine.UI.Selectable.html">Selectable</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Navigation_selectOnUp_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI;  // Required when Using UI elements.
+
+public class HighlightOnKey : MonoBehaviour
+{
+    public Button btnSave;
+    public Button btnLoad;
+
+    public void Start()
+    {
+        // get the Navigation data
+        Navigation navigation = btnLoad.navigation;
+
+        // switch mode to Explicit to allow for custom assigned behavior
+        navigation.mode = Navigation.Mode.Explicit;
+
+        // highlight the Save button if the up arrow key is pressed
+        navigation.selectOnUp = btnSave;
+
+        // reassign the struct data to the button
+        btnLoad.navigation = navigation;
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Navigation_wrapAround_" data-uid="UnityEngine.UI.Navigation.wrapAround*"></a>
+
+  <h3 id="UnityEngine_UI_Navigation_wrapAround" data-uid="UnityEngine.UI.Navigation.wrapAround">
+  wrapAround
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs/#L123"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Enables navigation to wrap around from last to first or first to last element.
+Will find the furthest element from the current element in the opposite direction of movement.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool wrapAround { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Navigation_wrapAround_examples">Examples</h4>
+  <p>Note: If you have a grid of elements and you are on the last element in a row it will not wrap over to the next row it will pick the furthest element in the opposite direction.</p>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UnityEngine_UI_Navigation_Equals_" data-uid="UnityEngine.UI.Navigation.Equals*"></a>
+
+  <h3 id="UnityEngine_UI_Navigation_Equals_UnityEngine_UI_Navigation_" data-uid="UnityEngine.UI.Navigation.Equals(UnityEngine.UI.Navigation)">
+  Equals(Navigation)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs/#L299"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(Navigation other)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="UnityEngine.UI.Navigation.html">Navigation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs/#L6" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

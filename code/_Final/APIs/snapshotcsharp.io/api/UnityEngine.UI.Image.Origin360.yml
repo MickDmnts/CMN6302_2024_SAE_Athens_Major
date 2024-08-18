@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.Image.Origin360
+  commentId: T:UnityEngine.UI.Image.Origin360
+  id: Image.Origin360
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.Image.Origin360.Bottom
+  - UnityEngine.UI.Image.Origin360.Left
+  - UnityEngine.UI.Image.Origin360.Right
+  - UnityEngine.UI.Image.Origin360.Top
+  langs:
+  - csharp
+  - vb
+  name: Image.Origin360
+  nameWithType: Image.Origin360
+  fullName: UnityEngine.UI.Image.Origin360
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Origin360
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 211
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: One of the points of the Arc for the Image.FillMethod.Radial360.
+  example: []
+  syntax:
+    content: public enum Image.Origin360
+    content.vb: Public Enum Image.Origin360
+- uid: UnityEngine.UI.Image.Origin360.Bottom
+  commentId: F:UnityEngine.UI.Image.Origin360.Bottom
+  id: Bottom
+  parent: UnityEngine.UI.Image.Origin360
+  langs:
+  - csharp
+  - vb
+  name: Bottom
+  nameWithType: Image.Origin360.Bottom
+  fullName: UnityEngine.UI.Image.Origin360.Bottom
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Bottom
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 216
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Arc starting at the center of the Bottom edge.
+  example: []
+  syntax:
+    content: Bottom = 0
+    return:
+      type: UnityEngine.UI.Image.Origin360
+- uid: UnityEngine.UI.Image.Origin360.Right
+  commentId: F:UnityEngine.UI.Image.Origin360.Right
+  id: Right
+  parent: UnityEngine.UI.Image.Origin360
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: Image.Origin360.Right
+  fullName: UnityEngine.UI.Image.Origin360.Right
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Right
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 221
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Arc starting at the center of the Right edge.
+  example: []
+  syntax:
+    content: Right = 1
+    return:
+      type: UnityEngine.UI.Image.Origin360
+- uid: UnityEngine.UI.Image.Origin360.Top
+  commentId: F:UnityEngine.UI.Image.Origin360.Top
+  id: Top
+  parent: UnityEngine.UI.Image.Origin360
+  langs:
+  - csharp
+  - vb
+  name: Top
+  nameWithType: Image.Origin360.Top
+  fullName: UnityEngine.UI.Image.Origin360.Top
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Top
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 226
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Arc starting at the center of the Top edge.
+  example: []
+  syntax:
+    content: Top = 2
+    return:
+      type: UnityEngine.UI.Image.Origin360
+- uid: UnityEngine.UI.Image.Origin360.Left
+  commentId: F:UnityEngine.UI.Image.Origin360.Left
+  id: Left
+  parent: UnityEngine.UI.Image.Origin360
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: Image.Origin360.Left
+  fullName: UnityEngine.UI.Image.Origin360.Left
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Left
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 231
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Arc starting at the center of the Left edge.
+  example: []
+  syntax:
+    content: Left = 3
+    return:
+      type: UnityEngine.UI.Image.Origin360
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.Image.Origin360
+  commentId: T:UnityEngine.UI.Image.Origin360
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Image.html
+  name: Image.Origin360
+  nameWithType: Image.Origin360
+  fullName: UnityEngine.UI.Image.Origin360
+  spec.csharp:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.Origin360
+    name: Origin360
+    href: UnityEngine.UI.Image.Origin360.html
+  spec.vb:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.Origin360
+    name: Origin360
+    href: UnityEngine.UI.Image.Origin360.html

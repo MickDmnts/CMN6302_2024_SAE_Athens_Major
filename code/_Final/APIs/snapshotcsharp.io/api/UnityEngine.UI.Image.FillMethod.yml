@@ -1,0 +1,226 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.Image.FillMethod
+  commentId: T:UnityEngine.UI.Image.FillMethod
+  id: Image.FillMethod
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.Image.FillMethod.Horizontal
+  - UnityEngine.UI.Image.FillMethod.Radial180
+  - UnityEngine.UI.Image.FillMethod.Radial360
+  - UnityEngine.UI.Image.FillMethod.Radial90
+  - UnityEngine.UI.Image.FillMethod.Vertical
+  langs:
+  - csharp
+  - vb
+  name: Image.FillMethod
+  nameWithType: Image.FillMethod
+  fullName: UnityEngine.UI.Image.FillMethod
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: FillMethod
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 80
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The possible fill method types for a Filled Image.
+  example: []
+  syntax:
+    content: public enum Image.FillMethod
+    content.vb: Public Enum Image.FillMethod
+- uid: UnityEngine.UI.Image.FillMethod.Horizontal
+  commentId: F:UnityEngine.UI.Image.FillMethod.Horizontal
+  id: Horizontal
+  parent: UnityEngine.UI.Image.FillMethod
+  langs:
+  - csharp
+  - vb
+  name: Horizontal
+  nameWithType: Image.FillMethod.Horizontal
+  fullName: UnityEngine.UI.Image.FillMethod.Horizontal
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Horizontal
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 88
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The Image will be filled Horizontally.
+  remarks: The Image will be Cropped at either left or right size depending on Image.fillOriging at the Image.fillAmount
+  example: []
+  syntax:
+    content: Horizontal = 0
+    return:
+      type: UnityEngine.UI.Image.FillMethod
+- uid: UnityEngine.UI.Image.FillMethod.Vertical
+  commentId: F:UnityEngine.UI.Image.FillMethod.Vertical
+  id: Vertical
+  parent: UnityEngine.UI.Image.FillMethod
+  langs:
+  - csharp
+  - vb
+  name: Vertical
+  nameWithType: Image.FillMethod.Vertical
+  fullName: UnityEngine.UI.Image.FillMethod.Vertical
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Vertical
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 96
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The Image will be filled Vertically.
+  remarks: The Image will be Cropped at either top or Bottom size depending on Image.fillOrigin at the Image.fillAmount
+  example: []
+  syntax:
+    content: Vertical = 1
+    return:
+      type: UnityEngine.UI.Image.FillMethod
+- uid: UnityEngine.UI.Image.FillMethod.Radial90
+  commentId: F:UnityEngine.UI.Image.FillMethod.Radial90
+  id: Radial90
+  parent: UnityEngine.UI.Image.FillMethod
+  langs:
+  - csharp
+  - vb
+  name: Radial90
+  nameWithType: Image.FillMethod.Radial90
+  fullName: UnityEngine.UI.Image.FillMethod.Radial90
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Radial90
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 104
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The Image will be filled Radially with the radial center in one of the corners.
+  remarks: For this method the Image.fillAmount represents an angle between 0 and 90 degrees. The Image will be cut by a line passing at the Image.fillOrigin at the specified angle.
+  example: []
+  syntax:
+    content: Radial90 = 2
+    return:
+      type: UnityEngine.UI.Image.FillMethod
+- uid: UnityEngine.UI.Image.FillMethod.Radial180
+  commentId: F:UnityEngine.UI.Image.FillMethod.Radial180
+  id: Radial180
+  parent: UnityEngine.UI.Image.FillMethod
+  langs:
+  - csharp
+  - vb
+  name: Radial180
+  nameWithType: Image.FillMethod.Radial180
+  fullName: UnityEngine.UI.Image.FillMethod.Radial180
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Radial180
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 112
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The Image will be filled Radially with the radial center in one of the edges.
+  remarks: For this method the Image.fillAmount represents an angle between 0 and 180 degrees. The Image will be cut by a line passing at the Image.fillOrigin at the specified angle.
+  example: []
+  syntax:
+    content: Radial180 = 3
+    return:
+      type: UnityEngine.UI.Image.FillMethod
+- uid: UnityEngine.UI.Image.FillMethod.Radial360
+  commentId: F:UnityEngine.UI.Image.FillMethod.Radial360
+  id: Radial360
+  parent: UnityEngine.UI.Image.FillMethod
+  langs:
+  - csharp
+  - vb
+  name: Radial360
+  nameWithType: Image.FillMethod.Radial360
+  fullName: UnityEngine.UI.Image.FillMethod.Radial360
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Radial360
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 120
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The Image will be filled Radially with the radial center at the center.
+  remarks: or this method the Image.fillAmount represents an angle between 0 and 360 degrees. The Arc defined by the center of the Image, the Image.fillOrigin and the angle will be cut from the Image.
+  example: []
+  syntax:
+    content: Radial360 = 4
+    return:
+      type: UnityEngine.UI.Image.FillMethod
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.Image.FillMethod
+  commentId: T:UnityEngine.UI.Image.FillMethod
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Image.html
+  name: Image.FillMethod
+  nameWithType: Image.FillMethod
+  fullName: UnityEngine.UI.Image.FillMethod
+  spec.csharp:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.FillMethod
+    name: FillMethod
+    href: UnityEngine.UI.Image.FillMethod.html
+  spec.vb:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.FillMethod
+    name: FillMethod
+    href: UnityEngine.UI.Image.FillMethod.html

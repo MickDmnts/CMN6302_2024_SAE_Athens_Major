@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.Image.OriginHorizontal
+  commentId: T:UnityEngine.UI.Image.OriginHorizontal
+  id: Image.OriginHorizontal
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.Image.OriginHorizontal.Left
+  - UnityEngine.UI.Image.OriginHorizontal.Right
+  langs:
+  - csharp
+  - vb
+  name: Image.OriginHorizontal
+  nameWithType: Image.OriginHorizontal
+  fullName: UnityEngine.UI.Image.OriginHorizontal
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OriginHorizontal
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 126
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Origin for the Image.FillMethod.Horizontal.
+  example: []
+  syntax:
+    content: public enum Image.OriginHorizontal
+    content.vb: Public Enum Image.OriginHorizontal
+- uid: UnityEngine.UI.Image.OriginHorizontal.Left
+  commentId: F:UnityEngine.UI.Image.OriginHorizontal.Left
+  id: Left
+  parent: UnityEngine.UI.Image.OriginHorizontal
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: Image.OriginHorizontal.Left
+  fullName: UnityEngine.UI.Image.OriginHorizontal.Left
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Left
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 131
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: '>Origin at the Left side.'
+  example: []
+  syntax:
+    content: Left = 0
+    return:
+      type: UnityEngine.UI.Image.OriginHorizontal
+- uid: UnityEngine.UI.Image.OriginHorizontal.Right
+  commentId: F:UnityEngine.UI.Image.OriginHorizontal.Right
+  id: Right
+  parent: UnityEngine.UI.Image.OriginHorizontal
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: Image.OriginHorizontal.Right
+  fullName: UnityEngine.UI.Image.OriginHorizontal.Right
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Right
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Image.cs
+    startLine: 136
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: '>Origin at the Right side.'
+  example: []
+  syntax:
+    content: Right = 1
+    return:
+      type: UnityEngine.UI.Image.OriginHorizontal
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.Image.OriginHorizontal
+  commentId: T:UnityEngine.UI.Image.OriginHorizontal
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Image.html
+  name: Image.OriginHorizontal
+  nameWithType: Image.OriginHorizontal
+  fullName: UnityEngine.UI.Image.OriginHorizontal
+  spec.csharp:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.OriginHorizontal
+    name: OriginHorizontal
+    href: UnityEngine.UI.Image.OriginHorizontal.html
+  spec.vb:
+  - uid: UnityEngine.UI.Image
+    name: Image
+    href: UnityEngine.UI.Image.html
+  - name: .
+  - uid: UnityEngine.UI.Image.OriginHorizontal
+    name: OriginHorizontal
+    href: UnityEngine.UI.Image.OriginHorizontal.html

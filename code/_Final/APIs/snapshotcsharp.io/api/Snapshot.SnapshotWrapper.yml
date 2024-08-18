@@ -1,0 +1,1050 @@
+### YamlMime:ManagedReference
+items:
+- uid: Snapshot.SnapshotWrapper
+  commentId: T:Snapshot.SnapshotWrapper
+  id: SnapshotWrapper
+  parent: Snapshot
+  children:
+  - Snapshot.SnapshotWrapper.CacheData(System.UInt32,System.Byte[],System.Int32[])
+  - Snapshot.SnapshotWrapper.DecreaseSmri
+  - Snapshot.SnapshotWrapper.DeleteSmriData(System.UInt32)
+  - Snapshot.SnapshotWrapper.GetCurrentSmri
+  - Snapshot.SnapshotWrapper.GetData(System.UInt32)
+  - Snapshot.SnapshotWrapper.GetLoadFileName
+  - Snapshot.SnapshotWrapper.GetRefSmris(System.UInt32)
+  - Snapshot.SnapshotWrapper.GetSavePath
+  - Snapshot.SnapshotWrapper.GetSmri
+  - Snapshot.SnapshotWrapper.PackData
+  - Snapshot.SnapshotWrapper.ResetCache
+  - Snapshot.SnapshotWrapper.ResetSmri
+  - Snapshot.SnapshotWrapper.SetLoadFileName(System.String)
+  - Snapshot.SnapshotWrapper.SetSavePath(System.String)
+  - Snapshot.SnapshotWrapper.UnpackData
+  langs:
+  - csharp
+  - vb
+  name: SnapshotWrapper
+  nameWithType: SnapshotWrapper
+  fullName: Snapshot.SnapshotWrapper
+  type: Class
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: SnapshotWrapper
+    path: ../Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+    startLine: 10
+  assemblies:
+  - com.mad.snapshot
+  namespace: Snapshot
+  summary: C# library wrapper of SnapshotLib x64-bit dll.
+  example: []
+  syntax:
+    content: public static class SnapshotWrapper
+    content.vb: Public Module SnapshotWrapper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Snapshot.SnapshotWrapper.SetSavePath(System.String)
+  commentId: M:Snapshot.SnapshotWrapper.SetSavePath(System.String)
+  id: SetSavePath(System.String)
+  parent: Snapshot.SnapshotWrapper
+  langs:
+  - csharp
+  - vb
+  name: SetSavePath(string)
+  nameWithType: SnapshotWrapper.SetSavePath(string)
+  fullName: Snapshot.SnapshotWrapper.SetSavePath(string)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: SetSavePath
+    path: ../Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+    startLine: 86
+  assemblies:
+  - com.mad.snapshot
+  namespace: Snapshot
+  summary: Sets the save path inside the dll.
+  example: []
+  syntax:
+    content: public static bool SetSavePath(string _path)
+    parameters:
+    - id: _path
+      type: System.String
+      description: The absolute path to the save directory
+    return:
+      type: System.Boolean
+      description: True if the set was successful, false otherwise.
+    content.vb: Public Shared Function SetSavePath(_path As String) As Boolean
+  overload: Snapshot.SnapshotWrapper.SetSavePath*
+  nameWithType.vb: SnapshotWrapper.SetSavePath(String)
+  fullName.vb: Snapshot.SnapshotWrapper.SetSavePath(String)
+  name.vb: SetSavePath(String)
+- uid: Snapshot.SnapshotWrapper.GetSavePath
+  commentId: M:Snapshot.SnapshotWrapper.GetSavePath
+  id: GetSavePath
+  parent: Snapshot.SnapshotWrapper
+  langs:
+  - csharp
+  - vb
+  name: GetSavePath()
+  nameWithType: SnapshotWrapper.GetSavePath()
+  fullName: Snapshot.SnapshotWrapper.GetSavePath()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetSavePath
+    path: ../Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+    startLine: 104
+  assemblies:
+  - com.mad.snapshot
+  namespace: Snapshot
+  summary: Returns the absolute save path from inside the dll.
+  example: []
+  syntax:
+    content: public static string GetSavePath()
+    return:
+      type: System.String
+      description: Returns the absolute save path from inside the dll.
+    content.vb: Public Shared Function GetSavePath() As String
+  overload: Snapshot.SnapshotWrapper.GetSavePath*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: Could not get the current save path from DLL
+- uid: Snapshot.SnapshotWrapper.GetSmri
+  commentId: M:Snapshot.SnapshotWrapper.GetSmri
+  id: GetSmri
+  parent: Snapshot.SnapshotWrapper
+  langs:
+  - csharp
+  - vb
+  name: GetSmri()
+  nameWithType: SnapshotWrapper.GetSmri()
+  fullName: Snapshot.SnapshotWrapper.GetSmri()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetSmri
+    path: ../Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+    startLine: 120
+  assemblies:
+  - com.mad.snapshot
+  namespace: Snapshot
+  summary: Increases and returns the global DLL SMRI used for data storing and reference preservation.
+  example: []
+  syntax:
+    content: public static uint GetSmri()
+    return:
+      type: System.UInt32
+      description: A uint representing the SMRI in the DLL
+    content.vb: Public Shared Function GetSmri() As UInteger
+  overload: Snapshot.SnapshotWrapper.GetSmri*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: Could not retrieve SMRI from DLL.
+- uid: Snapshot.SnapshotWrapper.DecreaseSmri
+  commentId: M:Snapshot.SnapshotWrapper.DecreaseSmri
+  id: DecreaseSmri
+  parent: Snapshot.SnapshotWrapper
+  langs:
+  - csharp
+  - vb
+  name: DecreaseSmri()
+  nameWithType: SnapshotWrapper.DecreaseSmri()
+  fullName: Snapshot.SnapshotWrapper.DecreaseSmri()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: DecreaseSmri
+    path: ../Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+    startLine: 132
+  assemblies:
+  - com.mad.snapshot
+  namespace: Snapshot
+  summary: Decreases the global SMRI by 1. Use when <xref href="Snapshot.SnapshotWrapper.GetSmri" data-throw-if-not-resolved="false"></xref> fails.
+  example: []
+  syntax:
+    content: public static void DecreaseSmri()
+    content.vb: Public Shared Sub DecreaseSmri()
+  overload: Snapshot.SnapshotWrapper.DecreaseSmri*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: Could not decrease SMRI from DLL
+- uid: Snapshot.SnapshotWrapper.GetCurrentSmri
+  commentId: M:Snapshot.SnapshotWrapper.GetCurrentSmri
+  id: GetCurrentSmri
+  parent: Snapshot.SnapshotWrapper
+  langs:
+  - csharp
+  - vb
+  name: GetCurrentSmri()
+  nameWithType: SnapshotWrapper.GetCurrentSmri()
+  fullName: Snapshot.SnapshotWrapper.GetCurrentSmri()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetCurrentSmri
+    path: ../Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+    startLine: 144
+  assemblies:
+  - com.mad.snapshot
+  namespace: Snapshot
+  summary: Returns the current non-incremented global SMRI from the DLL.
+  example: []
+  syntax:
+    content: public static int GetCurrentSmri()
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function GetCurrentSmri() As Integer
+  overload: Snapshot.SnapshotWrapper.GetCurrentSmri*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: Could not retrieve current SMRI from DLL
+- uid: Snapshot.SnapshotWrapper.DeleteSmriData(System.UInt32)
+  commentId: M:Snapshot.SnapshotWrapper.DeleteSmriData(System.UInt32)
+  id: DeleteSmriData(System.UInt32)
+  parent: Snapshot.SnapshotWrapper
+  langs:
+  - csharp
+  - vb
+  name: DeleteSmriData(uint)
+  nameWithType: SnapshotWrapper.DeleteSmriData(uint)
+  fullName: Snapshot.SnapshotWrapper.DeleteSmriData(uint)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: DeleteSmriData
+    path: ../Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+    startLine: 158
+  assemblies:
+  - com.mad.snapshot
+  namespace: Snapshot
+  summary: Deletes the data associated with the passed SMRI inside the dll.
+  example: []
+  syntax:
+    content: public static bool DeleteSmriData(uint _smri)
+    parameters:
+    - id: _smri
+      type: System.UInt32
+      description: The SMRI to delete data from
+    return:
+      type: System.Boolean
+      description: True if the deletion was successful, false otherwise.
+    content.vb: Public Shared Function DeleteSmriData(_smri As UInteger) As Boolean
+  overload: Snapshot.SnapshotWrapper.DeleteSmriData*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: Could not delete the smri data
+  nameWithType.vb: SnapshotWrapper.DeleteSmriData(UInteger)
+  fullName.vb: Snapshot.SnapshotWrapper.DeleteSmriData(UInteger)
+  name.vb: DeleteSmriData(UInteger)
+- uid: Snapshot.SnapshotWrapper.CacheData(System.UInt32,System.Byte[],System.Int32[])
+  commentId: M:Snapshot.SnapshotWrapper.CacheData(System.UInt32,System.Byte[],System.Int32[])
+  id: CacheData(System.UInt32,System.Byte[],System.Int32[])
+  parent: Snapshot.SnapshotWrapper
+  langs:
+  - csharp
+  - vb
+  name: CacheData(uint, byte[], int[])
+  nameWithType: SnapshotWrapper.CacheData(uint, byte[], int[])
+  fullName: Snapshot.SnapshotWrapper.CacheData(uint, byte[], int[])
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: CacheData
+    path: ../Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+    startLine: 176
+  assemblies:
+  - com.mad.snapshot
+  namespace: Snapshot
+  summary: >-
+    Caches the passed data and references SMRIs inside the dll cache.
+
+    Values are copies so it's safe to also delete them if you want.
+  example: []
+  syntax:
+    content: public static bool CacheData(uint _smri, byte[] _data, int[] _refSmris)
+    parameters:
+    - id: _smri
+      type: System.UInt32
+      description: The SMRI to associate the data array to
+    - id: _data
+      type: System.Byte[]
+      description: The data to copy over to the dll
+    - id: _refSmris
+      type: System.Int32[]
+      description: The references SMRI this SMRI needs.
+    return:
+      type: System.Boolean
+      description: True if the caching was successful, false otherwise.
+    content.vb: Public Shared Function CacheData(_smri As UInteger, _data As Byte(), _refSmris As Integer()) As Boolean
+  overload: Snapshot.SnapshotWrapper.CacheData*
+  nameWithType.vb: SnapshotWrapper.CacheData(UInteger, Byte(), Integer())
+  fullName.vb: Snapshot.SnapshotWrapper.CacheData(UInteger, Byte(), Integer())
+  name.vb: CacheData(UInteger, Byte(), Integer())
+- uid: Snapshot.SnapshotWrapper.GetData(System.UInt32)
+  commentId: M:Snapshot.SnapshotWrapper.GetData(System.UInt32)
+  id: GetData(System.UInt32)
+  parent: Snapshot.SnapshotWrapper
+  langs:
+  - csharp
+  - vb
+  name: GetData(uint)
+  nameWithType: SnapshotWrapper.GetData(uint)
+  fullName: Snapshot.SnapshotWrapper.GetData(uint)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetData
+    path: ../Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+    startLine: 190
+  assemblies:
+  - com.mad.snapshot
+  namespace: Snapshot
+  summary: Returns the associated byte array of the passed smri from the dll.
+  example: []
+  syntax:
+    content: public static byte[] GetData(uint _smri)
+    parameters:
+    - id: _smri
+      type: System.UInt32
+      description: The SMRI to retrieve data for
+    return:
+      type: System.Byte[]
+      description: A byte array containing the deserialized data or null.
+    content.vb: Public Shared Function GetData(_smri As UInteger) As Byte()
+  overload: Snapshot.SnapshotWrapper.GetData*
+  nameWithType.vb: SnapshotWrapper.GetData(UInteger)
+  fullName.vb: Snapshot.SnapshotWrapper.GetData(UInteger)
+  name.vb: GetData(UInteger)
+- uid: Snapshot.SnapshotWrapper.GetRefSmris(System.UInt32)
+  commentId: M:Snapshot.SnapshotWrapper.GetRefSmris(System.UInt32)
+  id: GetRefSmris(System.UInt32)
+  parent: Snapshot.SnapshotWrapper
+  langs:
+  - csharp
+  - vb
+  name: GetRefSmris(uint)
+  nameWithType: SnapshotWrapper.GetRefSmris(uint)
+  fullName: Snapshot.SnapshotWrapper.GetRefSmris(uint)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetRefSmris
+    path: ../Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+    startLine: 213
+  assemblies:
+  - com.mad.snapshot
+  namespace: Snapshot
+  summary: Returns an int array containing the referenced SMRI of the passed SMRI from the dll.
+  example: []
+  syntax:
+    content: public static int[] GetRefSmris(uint _parentSmri)
+    parameters:
+    - id: _parentSmri
+      type: System.UInt32
+      description: The SMRI to retrieve referenced SMRIs for.
+    return:
+      type: System.Int32[]
+      description: A byte array containing the data or null.
+    content.vb: Public Shared Function GetRefSmris(_parentSmri As UInteger) As Integer()
+  overload: Snapshot.SnapshotWrapper.GetRefSmris*
+  nameWithType.vb: SnapshotWrapper.GetRefSmris(UInteger)
+  fullName.vb: Snapshot.SnapshotWrapper.GetRefSmris(UInteger)
+  name.vb: GetRefSmris(UInteger)
+- uid: Snapshot.SnapshotWrapper.PackData
+  commentId: M:Snapshot.SnapshotWrapper.PackData
+  id: PackData
+  parent: Snapshot.SnapshotWrapper
+  langs:
+  - csharp
+  - vb
+  name: PackData()
+  nameWithType: SnapshotWrapper.PackData()
+  fullName: Snapshot.SnapshotWrapper.PackData()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: PackData
+    path: ../Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+    startLine: 231
+  assemblies:
+  - com.mad.snapshot
+  namespace: Snapshot
+  summary: Starts the packing sequence of the cached data inside the dll.
+  example: []
+  syntax:
+    content: public static bool PackData()
+    return:
+      type: System.Boolean
+      description: True if packing was successful, false otherwise.
+    content.vb: Public Shared Function PackData() As Boolean
+  overload: Snapshot.SnapshotWrapper.PackData*
+- uid: Snapshot.SnapshotWrapper.SetLoadFileName(System.String)
+  commentId: M:Snapshot.SnapshotWrapper.SetLoadFileName(System.String)
+  id: SetLoadFileName(System.String)
+  parent: Snapshot.SnapshotWrapper
+  langs:
+  - csharp
+  - vb
+  name: SetLoadFileName(string)
+  nameWithType: SnapshotWrapper.SetLoadFileName(string)
+  fullName: Snapshot.SnapshotWrapper.SetLoadFileName(string)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: SetLoadFileName
+    path: ../Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+    startLine: 247
+  assemblies:
+  - com.mad.snapshot
+  namespace: Snapshot
+  summary: Sets the save file name inside the dll.
+  example: []
+  syntax:
+    content: public static bool SetLoadFileName(string _loadFromFileName)
+    parameters:
+    - id: _loadFromFileName
+      type: System.String
+      description: The save file name to unpack from.
+    return:
+      type: System.Boolean
+      description: True if set was successful, false otherwise.
+    content.vb: Public Shared Function SetLoadFileName(_loadFromFileName As String) As Boolean
+  overload: Snapshot.SnapshotWrapper.SetLoadFileName*
+  nameWithType.vb: SnapshotWrapper.SetLoadFileName(String)
+  fullName.vb: Snapshot.SnapshotWrapper.SetLoadFileName(String)
+  name.vb: SetLoadFileName(String)
+- uid: Snapshot.SnapshotWrapper.GetLoadFileName
+  commentId: M:Snapshot.SnapshotWrapper.GetLoadFileName
+  id: GetLoadFileName
+  parent: Snapshot.SnapshotWrapper
+  langs:
+  - csharp
+  - vb
+  name: GetLoadFileName()
+  nameWithType: SnapshotWrapper.GetLoadFileName()
+  fullName: Snapshot.SnapshotWrapper.GetLoadFileName()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetLoadFileName
+    path: ../Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+    startLine: 265
+  assemblies:
+  - com.mad.snapshot
+  namespace: Snapshot
+  summary: Returns the cached save file name from inside the dll.
+  example: []
+  syntax:
+    content: public static string GetLoadFileName()
+    return:
+      type: System.String
+      description: The saved file name stored in the dll. Can be an empty string.
+    content.vb: Public Shared Function GetLoadFileName() As String
+  overload: Snapshot.SnapshotWrapper.GetLoadFileName*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: Could not get the current load from filename from DLL
+- uid: Snapshot.SnapshotWrapper.UnpackData
+  commentId: M:Snapshot.SnapshotWrapper.UnpackData
+  id: UnpackData
+  parent: Snapshot.SnapshotWrapper
+  langs:
+  - csharp
+  - vb
+  name: UnpackData()
+  nameWithType: SnapshotWrapper.UnpackData()
+  fullName: Snapshot.SnapshotWrapper.UnpackData()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: UnpackData
+    path: ../Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+    startLine: 280
+  assemblies:
+  - com.mad.snapshot
+  namespace: Snapshot
+  summary: >-
+    Starts the unpacking sequence inside the dll to deserialize the serialized data and store them in the dll cache.
+
+    GlobalSMRI is set to be equal to the unpacked data size.
+
+    Cached datas are overwritten.
+  example: []
+  syntax:
+    content: public static bool UnpackData()
+    return:
+      type: System.Boolean
+      description: True if unpacking was successful, false otherwise.
+    content.vb: Public Shared Function UnpackData() As Boolean
+  overload: Snapshot.SnapshotWrapper.UnpackData*
+- uid: Snapshot.SnapshotWrapper.ResetSmri
+  commentId: M:Snapshot.SnapshotWrapper.ResetSmri
+  id: ResetSmri
+  parent: Snapshot.SnapshotWrapper
+  langs:
+  - csharp
+  - vb
+  name: ResetSmri()
+  nameWithType: SnapshotWrapper.ResetSmri()
+  fullName: Snapshot.SnapshotWrapper.ResetSmri()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ResetSmri
+    path: ../Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+    startLine: 295
+  assemblies:
+  - com.mad.snapshot
+  namespace: Snapshot
+  summary: 'Resets the DLL global SMRI back to its default value: -1.'
+  example: []
+  syntax:
+    content: public static bool ResetSmri()
+    return:
+      type: System.Boolean
+      description: True if the reset was succesful, false otherwise with an error log.
+    content.vb: Public Shared Function ResetSmri() As Boolean
+  overload: Snapshot.SnapshotWrapper.ResetSmri*
+- uid: Snapshot.SnapshotWrapper.ResetCache
+  commentId: M:Snapshot.SnapshotWrapper.ResetCache
+  id: ResetCache
+  parent: Snapshot.SnapshotWrapper
+  langs:
+  - csharp
+  - vb
+  name: ResetCache()
+  nameWithType: SnapshotWrapper.ResetCache()
+  fullName: Snapshot.SnapshotWrapper.ResetCache()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ResetCache
+    path: ../Snapshot/Runtime/Source/Mad/CSharpWrapper/SnapshotWrapper.cs
+    startLine: 310
+  assemblies:
+  - com.mad.snapshot
+  namespace: Snapshot
+  summary: >-
+    Deallocates the dll data cache and clears it.
+
+    Resets the set saved directory value to empty.
+
+    Resets the set file name value to empty.
+  example: []
+  syntax:
+    content: public static bool ResetCache()
+    return:
+      type: System.Boolean
+      description: True if the reset was successful, false otherwise.
+    content.vb: Public Shared Function ResetCache() As Boolean
+  overload: Snapshot.SnapshotWrapper.ResetCache*
+references:
+- uid: Snapshot
+  commentId: N:Snapshot
+  href: Snapshot.html
+  name: Snapshot
+  nameWithType: Snapshot
+  fullName: Snapshot
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Snapshot.SnapshotWrapper.SetSavePath*
+  commentId: Overload:Snapshot.SnapshotWrapper.SetSavePath
+  href: Snapshot.SnapshotWrapper.html#Snapshot_SnapshotWrapper_SetSavePath_System_String_
+  name: SetSavePath
+  nameWithType: SnapshotWrapper.SetSavePath
+  fullName: Snapshot.SnapshotWrapper.SetSavePath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Exception
+  commentId: T:System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Snapshot.SnapshotWrapper.GetSavePath*
+  commentId: Overload:Snapshot.SnapshotWrapper.GetSavePath
+  href: Snapshot.SnapshotWrapper.html#Snapshot_SnapshotWrapper_GetSavePath
+  name: GetSavePath
+  nameWithType: SnapshotWrapper.GetSavePath
+  fullName: Snapshot.SnapshotWrapper.GetSavePath
+- uid: Snapshot.SnapshotWrapper.GetSmri*
+  commentId: Overload:Snapshot.SnapshotWrapper.GetSmri
+  href: Snapshot.SnapshotWrapper.html#Snapshot_SnapshotWrapper_GetSmri
+  name: GetSmri
+  nameWithType: SnapshotWrapper.GetSmri
+  fullName: Snapshot.SnapshotWrapper.GetSmri
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: Snapshot.SnapshotWrapper.GetSmri
+  commentId: M:Snapshot.SnapshotWrapper.GetSmri
+  href: Snapshot.SnapshotWrapper.html#Snapshot_SnapshotWrapper_GetSmri
+  name: GetSmri()
+  nameWithType: SnapshotWrapper.GetSmri()
+  fullName: Snapshot.SnapshotWrapper.GetSmri()
+  spec.csharp:
+  - uid: Snapshot.SnapshotWrapper.GetSmri
+    name: GetSmri
+    href: Snapshot.SnapshotWrapper.html#Snapshot_SnapshotWrapper_GetSmri
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Snapshot.SnapshotWrapper.GetSmri
+    name: GetSmri
+    href: Snapshot.SnapshotWrapper.html#Snapshot_SnapshotWrapper_GetSmri
+  - name: (
+  - name: )
+- uid: Snapshot.SnapshotWrapper.DecreaseSmri*
+  commentId: Overload:Snapshot.SnapshotWrapper.DecreaseSmri
+  href: Snapshot.SnapshotWrapper.html#Snapshot_SnapshotWrapper_DecreaseSmri
+  name: DecreaseSmri
+  nameWithType: SnapshotWrapper.DecreaseSmri
+  fullName: Snapshot.SnapshotWrapper.DecreaseSmri
+- uid: Snapshot.SnapshotWrapper.GetCurrentSmri*
+  commentId: Overload:Snapshot.SnapshotWrapper.GetCurrentSmri
+  href: Snapshot.SnapshotWrapper.html#Snapshot_SnapshotWrapper_GetCurrentSmri
+  name: GetCurrentSmri
+  nameWithType: SnapshotWrapper.GetCurrentSmri
+  fullName: Snapshot.SnapshotWrapper.GetCurrentSmri
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Snapshot.SnapshotWrapper.DeleteSmriData*
+  commentId: Overload:Snapshot.SnapshotWrapper.DeleteSmriData
+  href: Snapshot.SnapshotWrapper.html#Snapshot_SnapshotWrapper_DeleteSmriData_System_UInt32_
+  name: DeleteSmriData
+  nameWithType: SnapshotWrapper.DeleteSmriData
+  fullName: Snapshot.SnapshotWrapper.DeleteSmriData
+- uid: Snapshot.SnapshotWrapper.CacheData*
+  commentId: Overload:Snapshot.SnapshotWrapper.CacheData
+  href: Snapshot.SnapshotWrapper.html#Snapshot_SnapshotWrapper_CacheData_System_UInt32_System_Byte___System_Int32___
+  name: CacheData
+  nameWithType: SnapshotWrapper.CacheData
+  fullName: Snapshot.SnapshotWrapper.CacheData
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: Snapshot.SnapshotWrapper.GetData*
+  commentId: Overload:Snapshot.SnapshotWrapper.GetData
+  href: Snapshot.SnapshotWrapper.html#Snapshot_SnapshotWrapper_GetData_System_UInt32_
+  name: GetData
+  nameWithType: SnapshotWrapper.GetData
+  fullName: Snapshot.SnapshotWrapper.GetData
+- uid: Snapshot.SnapshotWrapper.GetRefSmris*
+  commentId: Overload:Snapshot.SnapshotWrapper.GetRefSmris
+  href: Snapshot.SnapshotWrapper.html#Snapshot_SnapshotWrapper_GetRefSmris_System_UInt32_
+  name: GetRefSmris
+  nameWithType: SnapshotWrapper.GetRefSmris
+  fullName: Snapshot.SnapshotWrapper.GetRefSmris
+- uid: Snapshot.SnapshotWrapper.PackData*
+  commentId: Overload:Snapshot.SnapshotWrapper.PackData
+  href: Snapshot.SnapshotWrapper.html#Snapshot_SnapshotWrapper_PackData
+  name: PackData
+  nameWithType: SnapshotWrapper.PackData
+  fullName: Snapshot.SnapshotWrapper.PackData
+- uid: Snapshot.SnapshotWrapper.SetLoadFileName*
+  commentId: Overload:Snapshot.SnapshotWrapper.SetLoadFileName
+  href: Snapshot.SnapshotWrapper.html#Snapshot_SnapshotWrapper_SetLoadFileName_System_String_
+  name: SetLoadFileName
+  nameWithType: SnapshotWrapper.SetLoadFileName
+  fullName: Snapshot.SnapshotWrapper.SetLoadFileName
+- uid: Snapshot.SnapshotWrapper.GetLoadFileName*
+  commentId: Overload:Snapshot.SnapshotWrapper.GetLoadFileName
+  href: Snapshot.SnapshotWrapper.html#Snapshot_SnapshotWrapper_GetLoadFileName
+  name: GetLoadFileName
+  nameWithType: SnapshotWrapper.GetLoadFileName
+  fullName: Snapshot.SnapshotWrapper.GetLoadFileName
+- uid: Snapshot.SnapshotWrapper.UnpackData*
+  commentId: Overload:Snapshot.SnapshotWrapper.UnpackData
+  href: Snapshot.SnapshotWrapper.html#Snapshot_SnapshotWrapper_UnpackData
+  name: UnpackData
+  nameWithType: SnapshotWrapper.UnpackData
+  fullName: Snapshot.SnapshotWrapper.UnpackData
+- uid: Snapshot.SnapshotWrapper.ResetSmri*
+  commentId: Overload:Snapshot.SnapshotWrapper.ResetSmri
+  href: Snapshot.SnapshotWrapper.html#Snapshot_SnapshotWrapper_ResetSmri
+  name: ResetSmri
+  nameWithType: SnapshotWrapper.ResetSmri
+  fullName: Snapshot.SnapshotWrapper.ResetSmri
+- uid: Snapshot.SnapshotWrapper.ResetCache*
+  commentId: Overload:Snapshot.SnapshotWrapper.ResetCache
+  href: Snapshot.SnapshotWrapper.html#Snapshot_SnapshotWrapper_ResetCache
+  name: ResetCache
+  nameWithType: SnapshotWrapper.ResetCache
+  fullName: Snapshot.SnapshotWrapper.ResetCache

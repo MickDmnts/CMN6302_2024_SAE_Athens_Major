@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.CanvasScaler.ScreenMatchMode
+  commentId: T:UnityEngine.UI.CanvasScaler.ScreenMatchMode
+  id: CanvasScaler.ScreenMatchMode
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.CanvasScaler.ScreenMatchMode.Expand
+  - UnityEngine.UI.CanvasScaler.ScreenMatchMode.MatchWidthOrHeight
+  - UnityEngine.UI.CanvasScaler.ScreenMatchMode.Shrink
+  langs:
+  - csharp
+  - vb
+  name: CanvasScaler.ScreenMatchMode
+  nameWithType: CanvasScaler.ScreenMatchMode
+  fullName: UnityEngine.UI.CanvasScaler.ScreenMatchMode
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ScreenMatchMode
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+    startLine: 81
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Scale the canvas area with the width as reference, the height as reference, or something in between.
+  example: []
+  syntax:
+    content: public enum CanvasScaler.ScreenMatchMode
+    content.vb: Public Enum CanvasScaler.ScreenMatchMode
+- uid: UnityEngine.UI.CanvasScaler.ScreenMatchMode.MatchWidthOrHeight
+  commentId: F:UnityEngine.UI.CanvasScaler.ScreenMatchMode.MatchWidthOrHeight
+  id: MatchWidthOrHeight
+  parent: UnityEngine.UI.CanvasScaler.ScreenMatchMode
+  langs:
+  - csharp
+  - vb
+  name: MatchWidthOrHeight
+  nameWithType: CanvasScaler.ScreenMatchMode.MatchWidthOrHeight
+  fullName: UnityEngine.UI.CanvasScaler.ScreenMatchMode.MatchWidthOrHeight
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: MatchWidthOrHeight
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+    startLine: 86
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Scale the canvas area with the width as reference, the height as reference, or something in between.
+  example: []
+  syntax:
+    content: MatchWidthOrHeight = 0
+    return:
+      type: UnityEngine.UI.CanvasScaler.ScreenMatchMode
+- uid: UnityEngine.UI.CanvasScaler.ScreenMatchMode.Expand
+  commentId: F:UnityEngine.UI.CanvasScaler.ScreenMatchMode.Expand
+  id: Expand
+  parent: UnityEngine.UI.CanvasScaler.ScreenMatchMode
+  langs:
+  - csharp
+  - vb
+  name: Expand
+  nameWithType: CanvasScaler.ScreenMatchMode.Expand
+  fullName: UnityEngine.UI.CanvasScaler.ScreenMatchMode.Expand
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Expand
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+    startLine: 90
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Expand the canvas area either horizontally or vertically, so the size of the canvas will never be smaller than the reference.
+  example: []
+  syntax:
+    content: Expand = 1
+    return:
+      type: UnityEngine.UI.CanvasScaler.ScreenMatchMode
+- uid: UnityEngine.UI.CanvasScaler.ScreenMatchMode.Shrink
+  commentId: F:UnityEngine.UI.CanvasScaler.ScreenMatchMode.Shrink
+  id: Shrink
+  parent: UnityEngine.UI.CanvasScaler.ScreenMatchMode
+  langs:
+  - csharp
+  - vb
+  name: Shrink
+  nameWithType: CanvasScaler.ScreenMatchMode.Shrink
+  fullName: UnityEngine.UI.CanvasScaler.ScreenMatchMode.Shrink
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Shrink
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/CanvasScaler.cs
+    startLine: 94
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Crop the canvas area either horizontally or vertically, so the size of the canvas will never be larger than the reference.
+  example: []
+  syntax:
+    content: Shrink = 2
+    return:
+      type: UnityEngine.UI.CanvasScaler.ScreenMatchMode
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.CanvasScaler.ScreenMatchMode
+  commentId: T:UnityEngine.UI.CanvasScaler.ScreenMatchMode
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.CanvasScaler.html
+  name: CanvasScaler.ScreenMatchMode
+  nameWithType: CanvasScaler.ScreenMatchMode
+  fullName: UnityEngine.UI.CanvasScaler.ScreenMatchMode
+  spec.csharp:
+  - uid: UnityEngine.UI.CanvasScaler
+    name: CanvasScaler
+    href: UnityEngine.UI.CanvasScaler.html
+  - name: .
+  - uid: UnityEngine.UI.CanvasScaler.ScreenMatchMode
+    name: ScreenMatchMode
+    href: UnityEngine.UI.CanvasScaler.ScreenMatchMode.html
+  spec.vb:
+  - uid: UnityEngine.UI.CanvasScaler
+    name: CanvasScaler
+    href: UnityEngine.UI.CanvasScaler.html
+  - name: .
+  - uid: UnityEngine.UI.CanvasScaler.ScreenMatchMode
+    name: ScreenMatchMode
+    href: UnityEngine.UI.CanvasScaler.ScreenMatchMode.html

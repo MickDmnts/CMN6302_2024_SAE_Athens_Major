@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.IPointerUpHandler
+  commentId: T:UnityEngine.EventSystems.IPointerUpHandler
+  id: IPointerUpHandler
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.IPointerUpHandler.OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+  langs:
+  - csharp
+  - vb
+  name: IPointerUpHandler
+  nameWithType: IPointerUpHandler
+  fullName: UnityEngine.EventSystems.IPointerUpHandler
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IPointerUpHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 72
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: >-
+    Interface to implement if you wish to receive OnPointerUp callbacks.
+
+    Note: In order to receive OnPointerUp callbacks, you must also implement the EventSystems.IPointerDownHandler|IPointerDownHandler interface
+  remarks: Criteria for this event is implementation dependent. For example see StandAloneInputModule.
+  example: []
+  syntax:
+    content: 'public interface IPointerUpHandler : IEventSystemHandler'
+    content.vb: Public Interface IPointerUpHandler Inherits IEventSystemHandler
+- uid: UnityEngine.EventSystems.IPointerUpHandler.OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:UnityEngine.EventSystems.IPointerUpHandler.OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+  id: OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+  parent: UnityEngine.EventSystems.IPointerUpHandler
+  langs:
+  - csharp
+  - vb
+  name: OnPointerUp(PointerEventData)
+  nameWithType: IPointerUpHandler.OnPointerUp(PointerEventData)
+  fullName: UnityEngine.EventSystems.IPointerUpHandler.OnPointerUp(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OnPointerUp
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 77
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Use this callback to detect pointer up events.
+  example: []
+  syntax:
+    content: void OnPointerUp(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Sub OnPointerUp(eventData As PointerEventData)
+  overload: UnityEngine.EventSystems.IPointerUpHandler.OnPointerUp*
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.IPointerUpHandler.OnPointerUp*
+  commentId: Overload:UnityEngine.EventSystems.IPointerUpHandler.OnPointerUp
+  href: UnityEngine.EventSystems.IPointerUpHandler.html#UnityEngine_EventSystems_IPointerUpHandler_OnPointerUp_UnityEngine_EventSystems_PointerEventData_
+  name: OnPointerUp
+  nameWithType: IPointerUpHandler.OnPointerUp
+  fullName: UnityEngine.EventSystems.IPointerUpHandler.OnPointerUp
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerEventData.html
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData

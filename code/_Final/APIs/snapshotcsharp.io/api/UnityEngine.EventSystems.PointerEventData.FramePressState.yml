@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.PointerEventData.FramePressState
+  commentId: T:UnityEngine.EventSystems.PointerEventData.FramePressState
+  id: PointerEventData.FramePressState
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.PointerEventData.FramePressState.NotChanged
+  - UnityEngine.EventSystems.PointerEventData.FramePressState.Pressed
+  - UnityEngine.EventSystems.PointerEventData.FramePressState.PressedAndReleased
+  - UnityEngine.EventSystems.PointerEventData.FramePressState.Released
+  langs:
+  - csharp
+  - vb
+  name: PointerEventData.FramePressState
+  nameWithType: PointerEventData.FramePressState
+  fullName: UnityEngine.EventSystems.PointerEventData.FramePressState
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: FramePressState
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 35
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: The state of a press for the given frame.
+  example: []
+  syntax:
+    content: public enum PointerEventData.FramePressState
+    content.vb: Public Enum PointerEventData.FramePressState
+- uid: UnityEngine.EventSystems.PointerEventData.FramePressState.Pressed
+  commentId: F:UnityEngine.EventSystems.PointerEventData.FramePressState.Pressed
+  id: Pressed
+  parent: UnityEngine.EventSystems.PointerEventData.FramePressState
+  langs:
+  - csharp
+  - vb
+  name: Pressed
+  nameWithType: PointerEventData.FramePressState.Pressed
+  fullName: UnityEngine.EventSystems.PointerEventData.FramePressState.Pressed
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Pressed
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 40
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Button was pressed this frame.
+  example: []
+  syntax:
+    content: Pressed = 0
+    return:
+      type: UnityEngine.EventSystems.PointerEventData.FramePressState
+- uid: UnityEngine.EventSystems.PointerEventData.FramePressState.Released
+  commentId: F:UnityEngine.EventSystems.PointerEventData.FramePressState.Released
+  id: Released
+  parent: UnityEngine.EventSystems.PointerEventData.FramePressState
+  langs:
+  - csharp
+  - vb
+  name: Released
+  nameWithType: PointerEventData.FramePressState.Released
+  fullName: UnityEngine.EventSystems.PointerEventData.FramePressState.Released
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Released
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 45
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Button was released this frame.
+  example: []
+  syntax:
+    content: Released = 1
+    return:
+      type: UnityEngine.EventSystems.PointerEventData.FramePressState
+- uid: UnityEngine.EventSystems.PointerEventData.FramePressState.PressedAndReleased
+  commentId: F:UnityEngine.EventSystems.PointerEventData.FramePressState.PressedAndReleased
+  id: PressedAndReleased
+  parent: UnityEngine.EventSystems.PointerEventData.FramePressState
+  langs:
+  - csharp
+  - vb
+  name: PressedAndReleased
+  nameWithType: PointerEventData.FramePressState.PressedAndReleased
+  fullName: UnityEngine.EventSystems.PointerEventData.FramePressState.PressedAndReleased
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: PressedAndReleased
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 50
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Button was pressed and released this frame.
+  example: []
+  syntax:
+    content: PressedAndReleased = 2
+    return:
+      type: UnityEngine.EventSystems.PointerEventData.FramePressState
+- uid: UnityEngine.EventSystems.PointerEventData.FramePressState.NotChanged
+  commentId: F:UnityEngine.EventSystems.PointerEventData.FramePressState.NotChanged
+  id: NotChanged
+  parent: UnityEngine.EventSystems.PointerEventData.FramePressState
+  langs:
+  - csharp
+  - vb
+  name: NotChanged
+  nameWithType: PointerEventData.FramePressState.NotChanged
+  fullName: UnityEngine.EventSystems.PointerEventData.FramePressState.NotChanged
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: NotChanged
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 55
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Same as last frame.
+  example: []
+  syntax:
+    content: NotChanged = 3
+    return:
+      type: UnityEngine.EventSystems.PointerEventData.FramePressState
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.PointerEventData.FramePressState
+  commentId: T:UnityEngine.EventSystems.PointerEventData.FramePressState
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerEventData.html
+  name: PointerEventData.FramePressState
+  nameWithType: PointerEventData.FramePressState
+  fullName: UnityEngine.EventSystems.PointerEventData.FramePressState
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.PointerEventData
+    name: PointerEventData
+    href: UnityEngine.EventSystems.PointerEventData.html
+  - name: .
+  - uid: UnityEngine.EventSystems.PointerEventData.FramePressState
+    name: FramePressState
+    href: UnityEngine.EventSystems.PointerEventData.FramePressState.html
+  spec.vb:
+  - uid: UnityEngine.EventSystems.PointerEventData
+    name: PointerEventData
+    href: UnityEngine.EventSystems.PointerEventData.html
+  - name: .
+  - uid: UnityEngine.EventSystems.PointerEventData.FramePressState
+    name: FramePressState
+    href: UnityEngine.EventSystems.PointerEventData.FramePressState.html

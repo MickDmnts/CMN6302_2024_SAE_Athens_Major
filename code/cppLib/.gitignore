@@ -38,4 +38,8 @@
 **/*.out
 **/*.app
 
+# Doxygen
+**/[Hh]tml/
+**/[Ll]atex/
+
 # End of https://www.toptal.com/developers/gitignore/api/c++

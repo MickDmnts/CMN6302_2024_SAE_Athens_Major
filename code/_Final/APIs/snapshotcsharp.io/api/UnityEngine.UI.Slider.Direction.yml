@@ -1,0 +1,192 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.Slider.Direction
+  commentId: T:UnityEngine.UI.Slider.Direction
+  id: Slider.Direction
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.Slider.Direction.BottomToTop
+  - UnityEngine.UI.Slider.Direction.LeftToRight
+  - UnityEngine.UI.Slider.Direction.RightToLeft
+  - UnityEngine.UI.Slider.Direction.TopToBottom
+  langs:
+  - csharp
+  - vb
+  name: Slider.Direction
+  nameWithType: Slider.Direction
+  fullName: UnityEngine.UI.Slider.Direction
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Direction
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs
+    startLine: 22
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Setting that indicates one of four directions.
+  example: []
+  syntax:
+    content: public enum Slider.Direction
+    content.vb: Public Enum Slider.Direction
+- uid: UnityEngine.UI.Slider.Direction.LeftToRight
+  commentId: F:UnityEngine.UI.Slider.Direction.LeftToRight
+  id: LeftToRight
+  parent: UnityEngine.UI.Slider.Direction
+  langs:
+  - csharp
+  - vb
+  name: LeftToRight
+  nameWithType: Slider.Direction.LeftToRight
+  fullName: UnityEngine.UI.Slider.Direction.LeftToRight
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: LeftToRight
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs
+    startLine: 27
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: From the left to the right
+  example: []
+  syntax:
+    content: LeftToRight = 0
+    return:
+      type: UnityEngine.UI.Slider.Direction
+- uid: UnityEngine.UI.Slider.Direction.RightToLeft
+  commentId: F:UnityEngine.UI.Slider.Direction.RightToLeft
+  id: RightToLeft
+  parent: UnityEngine.UI.Slider.Direction
+  langs:
+  - csharp
+  - vb
+  name: RightToLeft
+  nameWithType: Slider.Direction.RightToLeft
+  fullName: UnityEngine.UI.Slider.Direction.RightToLeft
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: RightToLeft
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs
+    startLine: 32
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: From the right to the left
+  example: []
+  syntax:
+    content: RightToLeft = 1
+    return:
+      type: UnityEngine.UI.Slider.Direction
+- uid: UnityEngine.UI.Slider.Direction.BottomToTop
+  commentId: F:UnityEngine.UI.Slider.Direction.BottomToTop
+  id: BottomToTop
+  parent: UnityEngine.UI.Slider.Direction
+  langs:
+  - csharp
+  - vb
+  name: BottomToTop
+  nameWithType: Slider.Direction.BottomToTop
+  fullName: UnityEngine.UI.Slider.Direction.BottomToTop
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: BottomToTop
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs
+    startLine: 37
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: From the bottom to the top.
+  example: []
+  syntax:
+    content: BottomToTop = 2
+    return:
+      type: UnityEngine.UI.Slider.Direction
+- uid: UnityEngine.UI.Slider.Direction.TopToBottom
+  commentId: F:UnityEngine.UI.Slider.Direction.TopToBottom
+  id: TopToBottom
+  parent: UnityEngine.UI.Slider.Direction
+  langs:
+  - csharp
+  - vb
+  name: TopToBottom
+  nameWithType: Slider.Direction.TopToBottom
+  fullName: UnityEngine.UI.Slider.Direction.TopToBottom
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: TopToBottom
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Slider.cs
+    startLine: 42
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: From the top to the bottom.
+  example: []
+  syntax:
+    content: TopToBottom = 3
+    return:
+      type: UnityEngine.UI.Slider.Direction
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.Slider.Direction
+  commentId: T:UnityEngine.UI.Slider.Direction
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Slider.html
+  name: Slider.Direction
+  nameWithType: Slider.Direction
+  fullName: UnityEngine.UI.Slider.Direction
+  spec.csharp:
+  - uid: UnityEngine.UI.Slider
+    name: Slider
+    href: UnityEngine.UI.Slider.html
+  - name: .
+  - uid: UnityEngine.UI.Slider.Direction
+    name: Direction
+    href: UnityEngine.UI.Slider.Direction.html
+  spec.vb:
+  - uid: UnityEngine.UI.Slider
+    name: Slider
+    href: UnityEngine.UI.Slider.html
+  - name: .
+  - uid: UnityEngine.UI.Slider.Direction
+    name: Direction
+    href: UnityEngine.UI.Slider.Direction.html

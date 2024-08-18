@@ -1,0 +1,99 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.IScrollHandler
+  commentId: T:UnityEngine.EventSystems.IScrollHandler
+  id: IScrollHandler
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.IScrollHandler.OnScroll(UnityEngine.EventSystems.PointerEventData)
+  langs:
+  - csharp
+  - vb
+  name: IScrollHandler
+  nameWithType: IScrollHandler
+  fullName: UnityEngine.EventSystems.IScrollHandler
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: IScrollHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 299
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Interface to implement if you wish to receive OnScroll callbacks.
+  remarks: Criteria for this event is implementation dependent. For example see StandAloneInputModule.
+  example: []
+  syntax:
+    content: 'public interface IScrollHandler : IEventSystemHandler'
+    content.vb: Public Interface IScrollHandler Inherits IEventSystemHandler
+- uid: UnityEngine.EventSystems.IScrollHandler.OnScroll(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:UnityEngine.EventSystems.IScrollHandler.OnScroll(UnityEngine.EventSystems.PointerEventData)
+  id: OnScroll(UnityEngine.EventSystems.PointerEventData)
+  parent: UnityEngine.EventSystems.IScrollHandler
+  langs:
+  - csharp
+  - vb
+  name: OnScroll(PointerEventData)
+  nameWithType: IScrollHandler.OnScroll(PointerEventData)
+  fullName: UnityEngine.EventSystems.IScrollHandler.OnScroll(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OnScroll
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 304
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Use this callback to detect scroll events.
+  example: []
+  syntax:
+    content: void OnScroll(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Sub OnScroll(eventData As PointerEventData)
+  overload: UnityEngine.EventSystems.IScrollHandler.OnScroll*
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.IScrollHandler.OnScroll*
+  commentId: Overload:UnityEngine.EventSystems.IScrollHandler.OnScroll
+  href: UnityEngine.EventSystems.IScrollHandler.html#UnityEngine_EventSystems_IScrollHandler_OnScroll_UnityEngine_EventSystems_PointerEventData_
+  name: OnScroll
+  nameWithType: IScrollHandler.OnScroll
+  fullName: UnityEngine.EventSystems.IScrollHandler.OnScroll
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerEventData.html
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData

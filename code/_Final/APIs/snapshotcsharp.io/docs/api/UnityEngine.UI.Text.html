@@ -1,0 +1,2147 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Text </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Text ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/new/mad/apiSpec/new?filename=UnityEngine_UI_Text.md&amp;value=---%0Auid%3A%20UnityEngine.UI.Text%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UnityEngine.UI.Text">
+
+
+
+  <h1 id="UnityEngine_UI_Text" data-uid="UnityEngine.UI.Text" class="text-break">
+Class Text  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UnityEngine.html">UnityEngine</a>.<a class="xref" href="UnityEngine.UI.html">UI</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UnityEngine.UI.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RequireComponent(typeof(CanvasRenderer))]
+[AddComponentMenu(&quot;UI/Legacy/Text&quot;, 100)]
+public class Text : MaskableGraphic, ICanvasElement, IClippable, IMaskable, IMaterialModifier, ILayoutElement</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Object</span></div>
+      <div><span class="xref">Component</span></div>
+      <div><span class="xref">Behaviour</span></div>
+      <div><span class="xref">MonoBehaviour</span></div>
+      <div><a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html">UIBehaviour</a></div>
+      <div><a class="xref" href="UnityEngine.UI.Graphic.html">Graphic</a></div>
+      <div><a class="xref" href="UnityEngine.UI.MaskableGraphic.html">MaskableGraphic</a></div>
+      <div><span class="xref">Text</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="UnityEngine.UI.ICanvasElement.html">ICanvasElement</a></div>
+      <div><a class="xref" href="UnityEngine.UI.IClippable.html">IClippable</a></div>
+      <div><a class="xref" href="UnityEngine.UI.IMaskable.html">IMaskable</a></div>
+      <div><a class="xref" href="UnityEngine.UI.IMaterialModifier.html">IMaterialModifier</a></div>
+      <div><a class="xref" href="UnityEngine.UI.ILayoutElement.html">ILayoutElement</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_m_ShouldRecalculateStencil">MaskableGraphic.m_ShouldRecalculateStencil</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_m_MaskMaterial">MaskableGraphic.m_MaskMaterial</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_onCullStateChanged">MaskableGraphic.onCullStateChanged</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_maskable">MaskableGraphic.maskable</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_isMaskingGraphic">MaskableGraphic.isMaskingGraphic</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_m_StencilValue">MaskableGraphic.m_StencilValue</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_GetModifiedMaterial_UnityEngine_Material_">MaskableGraphic.GetModifiedMaterial(Material)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_Cull_UnityEngine_Rect_System_Boolean_">MaskableGraphic.Cull(Rect, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_SetClipRect_UnityEngine_Rect_System_Boolean_">MaskableGraphic.SetClipRect(Rect, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_SetClipSoftness_UnityEngine_Vector2_">MaskableGraphic.SetClipSoftness(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_OnTransformParentChanged">MaskableGraphic.OnTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_OnCanvasHierarchyChanged">MaskableGraphic.OnCanvasHierarchyChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_RecalculateClipping">MaskableGraphic.RecalculateClipping()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.MaskableGraphic.html#UnityEngine_UI_MaskableGraphic_RecalculateMasking">MaskableGraphic.RecalculateMasking()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_s_DefaultUI">Graphic.s_DefaultUI</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_s_WhiteTexture">Graphic.s_WhiteTexture</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_defaultGraphicMaterial">Graphic.defaultGraphicMaterial</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_Material">Graphic.m_Material</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_SkipLayoutUpdate">Graphic.m_SkipLayoutUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_SkipMaterialUpdate">Graphic.m_SkipMaterialUpdate</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_color">Graphic.color</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_raycastTarget">Graphic.raycastTarget</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_raycastPadding">Graphic.raycastPadding</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_OnDirtyLayoutCallback">Graphic.m_OnDirtyLayoutCallback</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_OnDirtyVertsCallback">Graphic.m_OnDirtyVertsCallback</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_OnDirtyMaterialCallback">Graphic.m_OnDirtyMaterialCallback</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_s_Mesh">Graphic.s_Mesh</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_CachedMesh">Graphic.m_CachedMesh</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_m_CachedUvs">Graphic.m_CachedUvs</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_useLegacyMeshGeneration">Graphic.useLegacyMeshGeneration</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_SetAllDirty">Graphic.SetAllDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_SetLayoutDirty">Graphic.SetLayoutDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_SetVerticesDirty">Graphic.SetVerticesDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_SetMaterialDirty">Graphic.SetMaterialDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_SetRaycastDirty">Graphic.SetRaycastDirty()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnRectTransformDimensionsChange">Graphic.OnRectTransformDimensionsChange()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnBeforeTransformParentChanged">Graphic.OnBeforeTransformParentChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_depth">Graphic.depth</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_rectTransform">Graphic.rectTransform</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_canvas">Graphic.canvas</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_canvasRenderer">Graphic.canvasRenderer</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_defaultMaterial">Graphic.defaultMaterial</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_material">Graphic.material</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_materialForRendering">Graphic.materialForRendering</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnDestroy">Graphic.OnDestroy()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnCullingChanged">Graphic.OnCullingChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_Rebuild_UnityEngine_UI_CanvasUpdate_">Graphic.Rebuild(CanvasUpdate)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_LayoutComplete">Graphic.LayoutComplete()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_GraphicUpdateComplete">Graphic.GraphicUpdateComplete()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_UpdateMaterial">Graphic.UpdateMaterial()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_workerMesh">Graphic.workerMesh</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnPopulateMesh_UnityEngine_Mesh_">Graphic.OnPopulateMesh(Mesh)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_OnDidApplyAnimationProperties">Graphic.OnDidApplyAnimationProperties()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_SetNativeSize">Graphic.SetNativeSize()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_Raycast_UnityEngine_Vector2_UnityEngine_Camera_">Graphic.Raycast(Vector2, Camera)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_PixelAdjustPoint_UnityEngine_Vector2_">Graphic.PixelAdjustPoint(Vector2)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_GetPixelAdjustedRect">Graphic.GetPixelAdjustedRect()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_CrossFadeColor_UnityEngine_Color_System_Single_System_Boolean_System_Boolean_">Graphic.CrossFadeColor(Color, float, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_CrossFadeColor_UnityEngine_Color_System_Single_System_Boolean_System_Boolean_System_Boolean_">Graphic.CrossFadeColor(Color, float, bool, bool, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_CrossFadeAlpha_System_Single_System_Single_System_Boolean_">Graphic.CrossFadeAlpha(float, float, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_RegisterDirtyLayoutCallback_UnityEngine_Events_UnityAction_">Graphic.RegisterDirtyLayoutCallback(UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_UnregisterDirtyLayoutCallback_UnityEngine_Events_UnityAction_">Graphic.UnregisterDirtyLayoutCallback(UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_RegisterDirtyVerticesCallback_UnityEngine_Events_UnityAction_">Graphic.RegisterDirtyVerticesCallback(UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_UnregisterDirtyVerticesCallback_UnityEngine_Events_UnityAction_">Graphic.UnregisterDirtyVerticesCallback(UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_RegisterDirtyMaterialCallback_UnityEngine_Events_UnityAction_">Graphic.RegisterDirtyMaterialCallback(UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.UI.Graphic.html#UnityEngine_UI_Graphic_UnregisterDirtyMaterialCallback_UnityEngine_Events_UnityAction_">Graphic.UnregisterDirtyMaterialCallback(UnityAction)</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_Awake">UIBehaviour.Awake()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_Start">UIBehaviour.Start()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_IsActive">UIBehaviour.IsActive()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_OnCanvasGroupChanged">UIBehaviour.OnCanvasGroupChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="UnityEngine.EventSystems.UIBehaviour.html#UnityEngine_EventSystems_UIBehaviour_IsDestroyed">UIBehaviour.IsDestroyed()</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.IsInvoking()</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.CancelInvoke()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.Invoke(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.InvokeRepeating(string, float, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.CancelInvoke(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.IsInvoking(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StartCoroutine(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StartCoroutine_Auto(IEnumerator)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">MonoBehaviour.StopCoroutine(IEnumerator)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopCoroutine(Coroutine)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">MonoBehaviour.StopCoroutine(string)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.StopAllCoroutines()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">MonoBehaviour.print(object)</a>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.destroyCancellationToken</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.useGUILayout</span>
+    </div>
+    <div>
+      <span class="xref">MonoBehaviour.runInEditMode</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.enabled</span>
+    </div>
+    <div>
+      <span class="xref">Behaviour.isActiveAndEnabled</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponent(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.TryGetComponent(Type, out Component)</a>
+    </div>
+    <div>
+      <span class="xref">Component.TryGetComponent&lt;T&gt;(out T)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.GetComponent(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInChildren(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInChildren&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInChildren&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponentsInChildren&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponentsInParent(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Component.GetComponentsInParent&lt;T&gt;(bool, List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentsInParent&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Component.GetComponents(Type, List&lt;Component&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">Component.GetComponents&lt;T&gt;(List&lt;T&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponents&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Component.GetComponentIndex()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.CompareTag(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessageUpwards(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.SendMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object, SendMessageOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">Component.BroadcastMessage(string, SendMessageOptions)</a>
+    </div>
+    <div>
+      <span class="xref">Component.transform</span>
+    </div>
+    <div>
+      <span class="xref">Component.gameObject</span>
+    </div>
+    <div>
+      <span class="xref">Component.tag</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetInstanceID()</span>
+    </div>
+    <div>
+      <span class="xref">Object.GetHashCode()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object.Equals(object)</a>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.InstantiateAsync&lt;T&gt;(T, Transform, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, Vector3, Quaternion)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">Object.InstantiateAsync&lt;T&gt;(T, int, Transform, ReadOnlySpan&lt;Vector3&gt;, ReadOnlySpan&lt;Quaternion&gt;)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Scene)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate(Object, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate(Object, Transform, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Vector3, Quaternion, Transform)</span>
+    </div>
+    <div>
+      <span class="xref">Object.Instantiate&lt;T&gt;(T, Transform)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.Instantiate&lt;T&gt;(T, Transform, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.Destroy(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.Destroy(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.DestroyImmediate(Object, bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyImmediate(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsByType(Type, FindObjectsInactive, FindObjectsSortMode)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DontDestroyOnLoad(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">Object.DestroyObject(Object, float)</a>
+    </div>
+    <div>
+      <span class="xref">Object.DestroyObject(Object)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindSceneObjectsOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeIncludingAssets(Type)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectsOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectsByType&lt;T&gt;(FindObjectsInactive, FindObjectsSortMode)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindObjectOfType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">Object.FindObjectOfType&lt;T&gt;(bool)</a>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;()</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindFirstObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <span class="xref">Object.FindAnyObjectByType&lt;T&gt;(FindObjectsInactive)</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectsOfTypeAll(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindObjectOfType(Type, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindFirstObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Object.FindAnyObjectByType(Type, FindObjectsInactive)</a>
+    </div>
+    <div>
+      <span class="xref">Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">Object.name</span>
+    </div>
+    <div>
+      <span class="xref">Object.hideFlags</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UnityEngine_UI_Text__ctor_" data-uid="UnityEngine.UI.Text.#ctor*"></a>
+
+  <h3 id="UnityEngine_UI_Text__ctor" data-uid="UnityEngine.UI.Text.#ctor">
+  Text()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected Text()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="fields">Fields
+</h2>
+
+
+
+  <h3 id="UnityEngine_UI_Text_m_DisableFontTextureRebuiltCallback" data-uid="UnityEngine.UI.Text.m_DisableFontTextureRebuiltCallback">
+  m_DisableFontTextureRebuiltCallback
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L28"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[NonSerialized]
+protected bool m_DisableFontTextureRebuiltCallback</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="UnityEngine_UI_Text_m_Text" data-uid="UnityEngine.UI.Text.m_Text">
+  m_Text
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[TextArea(3, 10)]
+[SerializeField]
+protected string m_Text</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <h3 id="UnityEngine_UI_Text_s_DefaultText" data-uid="UnityEngine.UI.Text.s_DefaultText">
+  s_DefaultText
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static Material s_DefaultText</code></pre>
+  </div>
+
+
+
+
+  <h4 class="section">Field Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Material</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UnityEngine_UI_Text_alignByGeometry_" data-uid="UnityEngine.UI.Text.alignByGeometry*"></a>
+
+  <h3 id="UnityEngine_UI_Text_alignByGeometry" data-uid="UnityEngine.UI.Text.alignByGeometry">
+  alignByGeometry
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L372"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Use the extents of glyph geometry to perform horizontal alignment rather than glyph metrics.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool alignByGeometry { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Text_alignByGeometry_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This can result in better fitting left and right alignment, but may result in incorrect positioning when attempting to overlay multiple fonts (such as a specialized outline font) on top of each other.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Text_alignment_" data-uid="UnityEngine.UI.Text.alignment*"></a>
+
+  <h3 id="UnityEngine_UI_Text_alignment" data-uid="UnityEngine.UI.Text.alignment">
+  alignment
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L349"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The positioning of the text reliative to its [[RectTransform]].</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextAnchor alignment { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TextAnchor</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Text_alignment_examples">Examples</h4>
+  <pre><code class="lang-csharp">//Create a Text GameObject by going to __Create__&gt;__UI__&gt;__Text__. Attach this script to the GameObject to see it working.
+
+using UnityEngine;
+using UnityEngine.UI;
+
+public class UITextAlignment : MonoBehaviour
+{
+    Text m_Text;
+
+    void Start()
+    {
+        //Fetch the Text Component
+        m_Text = GetComponent&lt;Text&gt;();
+        //Switch the Text alignment to the middle
+        m_Text.alignment = TextAnchor.MiddleCenter;
+    }
+
+//This is a legacy function used for an instant demonstration. See the &lt;a href="https://unity3d.com/learn/tutorials/s/user-interface-ui"&gt;UI Tutorials pages &lt;/a&gt; and [[wiki:UISystem|UI Section]] of the manual for more information on creating your own buttons etc.
+    void OnGUI()
+    {
+        //Press this Button to change the Text alignment to the lower right
+        if (GUI.Button(new Rect(0, 0, 100, 40), "Lower Right"))
+        {
+            m_Text.alignment = TextAnchor.LowerRight;
+        }
+
+        //Press this Button to change the Text alignment to the upper left
+        if (GUI.Button(new Rect(150, 0, 100, 40), "Upper Left"))
+        {
+            m_Text.alignment = TextAnchor.UpperLeft;
+        }
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_Text_alignment_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is the positioning of the Text relative to its RectTransform. You can alter this via script or in the Inspector of a Text component using the buttons in the Alignment section.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Text_cachedTextGenerator_" data-uid="UnityEngine.UI.Text.cachedTextGenerator*"></a>
+
+  <h3 id="UnityEngine_UI_Text_cachedTextGenerator" data-uid="UnityEngine.UI.Text.cachedTextGenerator">
+  cachedTextGenerator
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The cached TextGenerator used when generating visible Text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextGenerator cachedTextGenerator { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TextGenerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Text_cachedTextGeneratorForLayout_" data-uid="UnityEngine.UI.Text.cachedTextGeneratorForLayout*"></a>
+
+  <h3 id="UnityEngine_UI_Text_cachedTextGeneratorForLayout" data-uid="UnityEngine.UI.Text.cachedTextGeneratorForLayout">
+  cachedTextGeneratorForLayout
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The cached TextGenerator used when determine Layout</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextGenerator cachedTextGeneratorForLayout { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TextGenerator</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Text_flexibleHeight_" data-uid="UnityEngine.UI.Text.flexibleHeight*"></a>
+
+  <h3 id="UnityEngine_UI_Text_flexibleHeight" data-uid="UnityEngine.UI.Text.flexibleHeight">
+  flexibleHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L749"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The extra relative height this layout element should be allocated if there is additional available space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float flexibleHeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Text_flexibleHeight_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when using UI elements.
+
+public class ExampleClass : MonoBehaviour
+{
+    public Transform MyContentPanel;
+
+    //Sets the flexible height on on all children in the content panel.
+    public void Start()
+    {
+        //Assign all the children of the content panel to an array.
+        LayoutElement[] myLayoutElements = MyContentPanel.GetComponentsInChildren&lt;LayoutElement&gt;();
+
+        //For each child in the array change its LayoutElement's flexible height to 100.
+        foreach (LayoutElement element in myLayoutElements)
+        {
+            element.flexibleHeight = 100f;
+        }
+    }
+}</code></pre>
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Text_flexibleWidth_" data-uid="UnityEngine.UI.Text.flexibleWidth*"></a>
+
+  <h3 id="UnityEngine_UI_Text_flexibleWidth" data-uid="UnityEngine.UI.Text.flexibleWidth">
+  flexibleWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L733"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The extra relative width this layout element should be allocated if there is additional available space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float flexibleWidth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Text_flexibleWidth_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using System.Collections;
+using UnityEngine.UI; // Required when using UI elements.
+
+public class ExampleClass : MonoBehaviour
+{
+    public Transform MyContentPanel;
+
+    //Sets the flexible height on on all children in the content panel.
+    public void Start()
+    {
+        //Assign all the children of the content panel to an array.
+        LayoutElement[] myLayoutElements = MyContentPanel.GetComponentsInChildren&lt;LayoutElement&gt;();
+
+        //For each child in the array change its LayoutElement's flexible width to 200.
+        foreach (LayoutElement element in myLayoutElements)
+        {
+            element.flexibleWidth = 200f;
+        }
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_Text_flexibleWidth_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Setting preferredWidth to -1 removed the preferredWidth.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Text_font_" data-uid="UnityEngine.UI.Text.font*"></a>
+
+  <h3 id="UnityEngine_UI_Text_font" data-uid="UnityEngine.UI.Text.font">
+  font
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The Font used by the text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Font font { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Font</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Text_font_examples">Examples</h4>
+  <pre><code class="lang-csharp">//Create a new Text GameObject by going to Create&gt;UI&gt;Text in the Editor. Attach this script to the Text GameObject. Then, choose or click and drag your own font into the Font section in the Inspector window.
+
+using UnityEngine;
+using UnityEngine.UI;
+
+public class TextFontExample : MonoBehaviour
+{
+    Text m_Text;
+    //Attach your own Font in the Inspector
+    public Font m_Font;
+
+    void Start()
+    {
+        //Fetch the Text component from the GameObject
+        m_Text = GetComponent&lt;Text&gt;();
+    }
+
+    void Update()
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            //Change the Text Font to the Font attached in the Inspector
+            m_Text.font = m_Font;
+            //Change the Text to the message below
+            m_Text.text = "My Font Changed!";
+        }
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_Text_font_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is the font used by the Text component. Use it to alter or return the font from the Text. There are many free fonts available online.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Text_fontSize_" data-uid="UnityEngine.UI.Text.fontSize*"></a>
+
+  <h3 id="UnityEngine_UI_Text_fontSize" data-uid="UnityEngine.UI.Text.fontSize">
+  fontSize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L439"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The size that the Font should render at. Unit of measure is Points.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int fontSize { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Text_fontSize_examples">Examples</h4>
+  <pre><code class="lang-csharp">//For this script to work, create a new Text GameObject by going to Create&gt;U&gt;Text. Attach the script to the Text GameObject. Make sure the GameObject has a RectTransform component.
+
+using UnityEngine;
+using UnityEngine.UI;
+
+public class Example : MonoBehaviour
+{
+    Text m_Text;
+    RectTransform m_RectTransform;
+
+    void Start()
+    {
+        //Fetch the Text and RectTransform components from the GameObject
+        m_Text = GetComponent&lt;Text&gt;();
+        m_RectTransform = GetComponent&lt;RectTransform&gt;();
+    }
+
+    void Update()
+    {
+        //Press the space key to change the Font size
+        if (Input.GetKey(KeyCode.Space))
+        {
+            changeFontSize();
+        }
+    }
+
+    void changeFontSize()
+    {
+        //Change the Font Size to 16
+        m_Text.fontSize = 30;
+
+        //Change the RectTransform size to allow larger fonts and sentences
+        m_RectTransform.sizeDelta = new Vector2(m_Text.fontSize * 10, 100);
+
+        //Change the m_Text text to the message below
+        m_Text.text = "I changed my Font size!";
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_Text_fontSize_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is the size of the Font of the Text. Use this to fetch or change the size of the Font. When changing the Font size, remember to take into account the RectTransform of the Text. Larger Font sizes or messages may not fit in certain rectangle sizes and do not show in the Scene.
+Note: Point size is not consistent from one font to another.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Text_fontStyle_" data-uid="UnityEngine.UI.Text.fontStyle*"></a>
+
+  <h3 id="UnityEngine_UI_Text_fontStyle" data-uid="UnityEngine.UI.Text.fontStyle">
+  fontStyle
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L523"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Font style used by the Text's text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public FontStyle fontStyle { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">FontStyle</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Text_horizontalOverflow_" data-uid="UnityEngine.UI.Text.horizontalOverflow*"></a>
+
+  <h3 id="UnityEngine_UI_Text_horizontalOverflow" data-uid="UnityEngine.UI.Text.horizontalOverflow">
+  horizontalOverflow
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L462"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Horizontal overflow mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HorizontalWrapMode horizontalOverflow { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">HorizontalWrapMode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Text_horizontalOverflow_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>When set to HorizontalWrapMode.Overflow, text can exceed the horizontal boundaries of the Text graphic. When set to HorizontalWrapMode.Wrap, text will be word-wrapped to fit within the boundaries.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Text_layoutPriority_" data-uid="UnityEngine.UI.Text.layoutPriority*"></a>
+
+  <h3 id="UnityEngine_UI_Text_layoutPriority" data-uid="UnityEngine.UI.Text.layoutPriority">
+  layoutPriority
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L751"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The layout priority of this component.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual int layoutPriority { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Text_layoutPriority_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If multiple components on the same GameObject implement the ILayoutElement interface, the values provided by components that return a higher priority value are given priority. However, values less than zero are ignored. This way a component can override only select properties by leaving the remaning values to be -1 or other values less than zero.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Text_lineSpacing_" data-uid="UnityEngine.UI.Text.lineSpacing*"></a>
+
+  <h3 id="UnityEngine_UI_Text_lineSpacing" data-uid="UnityEngine.UI.Text.lineSpacing">
+  lineSpacing
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L502"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Line spacing, specified as a factor of font line height. A value of 1 will produce normal line spacing.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float lineSpacing { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Text_mainTexture_" data-uid="UnityEngine.UI.Text.mainTexture*"></a>
+
+  <h3 id="UnityEngine_UI_Text_mainTexture" data-uid="UnityEngine.UI.Text.mainTexture">
+  mainTexture
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Text's texture comes from the font.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Texture mainTexture { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Texture</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Text_minHeight_" data-uid="UnityEngine.UI.Text.minHeight*"></a>
+
+  <h3 id="UnityEngine_UI_Text_minHeight" data-uid="UnityEngine.UI.Text.minHeight">
+  minHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L735"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The minimum height this layout element may be allocated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float minHeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Text_minWidth_" data-uid="UnityEngine.UI.Text.minWidth*"></a>
+
+  <h3 id="UnityEngine_UI_Text_minWidth" data-uid="UnityEngine.UI.Text.minWidth">
+  minWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L719"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The minimum width this layout element may be allocated.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float minWidth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Text_pixelsPerUnit_" data-uid="UnityEngine.UI.Text.pixelsPerUnit*"></a>
+
+  <h3 id="UnityEngine_UI_Text_pixelsPerUnit" data-uid="UnityEngine.UI.Text.pixelsPerUnit">
+  pixelsPerUnit
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L546"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Provides information about how fonts are scale to the screen.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public float pixelsPerUnit { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Text_pixelsPerUnit_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>For dynamic fonts, the value is equivalent to the scale factor of the canvas. For non-dynamic fonts, the value is calculated from the requested text size and the size from the font.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Text_preferredHeight_" data-uid="UnityEngine.UI.Text.preferredHeight*"></a>
+
+  <h3 id="UnityEngine_UI_Text_preferredHeight" data-uid="UnityEngine.UI.Text.preferredHeight">
+  preferredHeight
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L740"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The preferred height this layout element should be allocated if there is sufficient space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float preferredHeight { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Text_preferredHeight_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>PreferredHeight can be set to -1 to remove the size.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Text_preferredWidth_" data-uid="UnityEngine.UI.Text.preferredWidth*"></a>
+
+  <h3 id="UnityEngine_UI_Text_preferredWidth" data-uid="UnityEngine.UI.Text.preferredWidth">
+  preferredWidth
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L724"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The preferred width this layout element should be allocated if there is sufficient space.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual float preferredWidth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Text_preferredWidth_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>PreferredWidth can be set to -1 to remove the size.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Text_resizeTextForBestFit_" data-uid="UnityEngine.UI.Text.resizeTextForBestFit*"></a>
+
+  <h3 id="UnityEngine_UI_Text_resizeTextForBestFit" data-uid="UnityEngine.UI.Text.resizeTextForBestFit">
+  resizeTextForBestFit
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Should the text be allowed to auto resized.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool resizeTextForBestFit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Text_resizeTextMaxSize_" data-uid="UnityEngine.UI.Text.resizeTextMaxSize*"></a>
+
+  <h3 id="UnityEngine_UI_Text_resizeTextMaxSize" data-uid="UnityEngine.UI.Text.resizeTextMaxSize">
+  resizeTextMaxSize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The maximum size the text is allowed to be. 1 = infinitely large.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int resizeTextMaxSize { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Text_resizeTextMinSize_" data-uid="UnityEngine.UI.Text.resizeTextMinSize*"></a>
+
+  <h3 id="UnityEngine_UI_Text_resizeTextMinSize" data-uid="UnityEngine.UI.Text.resizeTextMinSize">
+  resizeTextMinSize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The minimum size the text is allowed to be.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int resizeTextMinSize { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Text_supportRichText_" data-uid="UnityEngine.UI.Text.supportRichText*"></a>
+
+  <h3 id="UnityEngine_UI_Text_supportRichText" data-uid="UnityEngine.UI.Text.supportRichText">
+  supportRichText
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L228"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Whether this Text will support rich text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool supportRichText { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Text_text_" data-uid="UnityEngine.UI.Text.text*"></a>
+
+  <h3 id="UnityEngine_UI_Text_text" data-uid="UnityEngine.UI.Text.text">
+  text
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Text that's being displayed by the Text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual string text { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Text_text_examples">Examples</h4>
+  <pre><code class="lang-csharp">using UnityEngine;
+using UnityEngine.UI;
+
+public class Example : MonoBehaviour
+{
+    public Text m_MyText;
+
+    void Start()
+    {
+        //Text sets your text to say this message
+        m_MyText.text = "This is my text";
+    }
+
+    void Update()
+    {
+        //Press the space key to change the Text message
+        if (Input.GetKey(KeyCode.Space))
+        {
+            m_MyText.text = "My text has now changed.";
+        }
+    }
+}</code></pre>
+
+
+  <h4 class="section" id="UnityEngine_UI_Text_text_remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This is the string value of a Text component. Use this to read or edit the message displayed in Text.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Text_verticalOverflow_" data-uid="UnityEngine.UI.Text.verticalOverflow*"></a>
+
+  <h3 id="UnityEngine_UI_Text_verticalOverflow" data-uid="UnityEngine.UI.Text.verticalOverflow">
+  verticalOverflow
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L482"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Vertical overflow mode.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VerticalWrapMode verticalOverflow { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">VerticalWrapMode</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UnityEngine_UI_Text_CalculateLayoutInputHorizontal_" data-uid="UnityEngine.UI.Text.CalculateLayoutInputHorizontal*"></a>
+
+  <h3 id="UnityEngine_UI_Text_CalculateLayoutInputHorizontal" data-uid="UnityEngine.UI.Text.CalculateLayoutInputHorizontal">
+  CalculateLayoutInputHorizontal()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L716"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>After this method is invoked, layout horizontal input properties should return up-to-date values.
+Children will already have up-to-date layout horizontal inputs when this methods is called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CalculateLayoutInputHorizontal()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Text_CalculateLayoutInputVertical_" data-uid="UnityEngine.UI.Text.CalculateLayoutInputVertical*"></a>
+
+  <h3 id="UnityEngine_UI_Text_CalculateLayoutInputVertical" data-uid="UnityEngine.UI.Text.CalculateLayoutInputVertical">
+  CalculateLayoutInputVertical()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L717"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>After this method is invoked, layout vertical input properties should return up-to-date values.
+Children will already have up-to-date layout vertical inputs when this methods is called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void CalculateLayoutInputVertical()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Text_FontTextureChanged_" data-uid="UnityEngine.UI.Text.FontTextureChanged*"></a>
+
+  <h3 id="UnityEngine_UI_Text_FontTextureChanged" data-uid="UnityEngine.UI.Text.FontTextureChanged">
+  FontTextureChanged()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Called by the FontUpdateTracker when the texture associated with a font is modified.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FontTextureChanged()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Text_GetGenerationSettings_" data-uid="UnityEngine.UI.Text.GetGenerationSettings*"></a>
+
+  <h3 id="UnityEngine_UI_Text_GetGenerationSettings_UnityEngine_Vector2_" data-uid="UnityEngine.UI.Text.GetGenerationSettings(UnityEngine.Vector2)">
+  GetGenerationSettings(Vector2)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L607"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convenience function to populate the generation setting for the text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TextGenerationSettings GetGenerationSettings(Vector2 extents)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>extents</code> <span class="xref">Vector2</span></dt>
+    <dd><p>The extents the text can draw in.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TextGenerationSettings</span></dt>
+    <dd><p>Generated settings.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Text_GetTextAnchorPivot_" data-uid="UnityEngine.UI.Text.GetTextAnchorPivot*"></a>
+
+  <h3 id="UnityEngine_UI_Text_GetTextAnchorPivot_UnityEngine_TextAnchor_" data-uid="UnityEngine.UI.Text.GetTextAnchorPivot(UnityEngine.TextAnchor)">
+  GetTextAnchorPivot(TextAnchor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L640"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Convenience function to determine the vector offset of the anchor.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Vector2 GetTextAnchorPivot(TextAnchor anchor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anchor</code> <span class="xref">TextAnchor</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Vector2</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Text_OnDisable_" data-uid="UnityEngine.UI.Text.OnDisable*"></a>
+
+  <h3 id="UnityEngine_UI_Text_OnDisable" data-uid="UnityEngine.UI.Text.OnDisable">
+  OnDisable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L570"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clear references.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnDisable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Text_OnEnable_" data-uid="UnityEngine.UI.Text.OnEnable*"></a>
+
+  <h3 id="UnityEngine_UI_Text_OnEnable" data-uid="UnityEngine.UI.Text.OnEnable">
+  OnEnable()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L563"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Mark the Graphic and the canvas as having been changed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnEnable()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UnityEngine_UI_Text_OnPopulateMesh_" data-uid="UnityEngine.UI.Text.OnPopulateMesh*"></a>
+
+  <h3 id="UnityEngine_UI_Text_OnPopulateMesh_UnityEngine_UI_VertexHelper_" data-uid="UnityEngine.UI.Text.OnPopulateMesh(UnityEngine.UI.VertexHelper)">
+  OnPopulateMesh(VertexHelper)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L658"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Callback function when a UI element needs to generate vertices. Fills the vertex buffer data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnPopulateMesh(VertexHelper toFill)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>toFill</code> <a class="xref" href="UnityEngine.UI.VertexHelper.html">VertexHelper</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section" id="UnityEngine_UI_Text_OnPopulateMesh_UnityEngine_UI_VertexHelper__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Used by Text, UI.Image, and RawImage for example to generate vertices specific to their use case.</p>
+</div>
+
+
+
+
+  <a id="UnityEngine_UI_Text_UpdateGeometry_" data-uid="UnityEngine.UI.Text.UpdateGeometry*"></a>
+
+  <h3 id="UnityEngine_UI_Text_UpdateGeometry" data-uid="UnityEngine.UI.Text.UpdateGeometry">
+  UpdateGeometry()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L576"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Call to update the geometry of the Graphic onto the CanvasRenderer.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void UpdateGeometry()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major/blob/mad/code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Text.cs/#L6" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

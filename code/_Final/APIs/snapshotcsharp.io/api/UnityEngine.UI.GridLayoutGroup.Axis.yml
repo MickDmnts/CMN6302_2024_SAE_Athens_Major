@@ -1,0 +1,135 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.GridLayoutGroup.Axis
+  commentId: T:UnityEngine.UI.GridLayoutGroup.Axis
+  id: GridLayoutGroup.Axis
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.GridLayoutGroup.Axis.Horizontal
+  - UnityEngine.UI.GridLayoutGroup.Axis.Vertical
+  langs:
+  - csharp
+  - vb
+  name: GridLayoutGroup.Axis
+  nameWithType: GridLayoutGroup.Axis
+  fullName: UnityEngine.UI.GridLayoutGroup.Axis
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Axis
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs
+    startLine: 43
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The grid axis we are looking at.
+  remarks: As the storage is a [][] we make access easier by passing a axis.
+  example: []
+  syntax:
+    content: public enum GridLayoutGroup.Axis
+    content.vb: Public Enum GridLayoutGroup.Axis
+- uid: UnityEngine.UI.GridLayoutGroup.Axis.Horizontal
+  commentId: F:UnityEngine.UI.GridLayoutGroup.Axis.Horizontal
+  id: Horizontal
+  parent: UnityEngine.UI.GridLayoutGroup.Axis
+  langs:
+  - csharp
+  - vb
+  name: Horizontal
+  nameWithType: GridLayoutGroup.Axis.Horizontal
+  fullName: UnityEngine.UI.GridLayoutGroup.Axis.Horizontal
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Horizontal
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs
+    startLine: 48
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Horizontal axis
+  example: []
+  syntax:
+    content: Horizontal = 0
+    return:
+      type: UnityEngine.UI.GridLayoutGroup.Axis
+- uid: UnityEngine.UI.GridLayoutGroup.Axis.Vertical
+  commentId: F:UnityEngine.UI.GridLayoutGroup.Axis.Vertical
+  id: Vertical
+  parent: UnityEngine.UI.GridLayoutGroup.Axis
+  langs:
+  - csharp
+  - vb
+  name: Vertical
+  nameWithType: GridLayoutGroup.Axis.Vertical
+  fullName: UnityEngine.UI.GridLayoutGroup.Axis.Vertical
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Vertical
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/GridLayoutGroup.cs
+    startLine: 52
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Vertical axis.
+  example: []
+  syntax:
+    content: Vertical = 1
+    return:
+      type: UnityEngine.UI.GridLayoutGroup.Axis
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.GridLayoutGroup.Axis
+  commentId: T:UnityEngine.UI.GridLayoutGroup.Axis
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.GridLayoutGroup.html
+  name: GridLayoutGroup.Axis
+  nameWithType: GridLayoutGroup.Axis
+  fullName: UnityEngine.UI.GridLayoutGroup.Axis
+  spec.csharp:
+  - uid: UnityEngine.UI.GridLayoutGroup
+    name: GridLayoutGroup
+    href: UnityEngine.UI.GridLayoutGroup.html
+  - name: .
+  - uid: UnityEngine.UI.GridLayoutGroup.Axis
+    name: Axis
+    href: UnityEngine.UI.GridLayoutGroup.Axis.html
+  spec.vb:
+  - uid: UnityEngine.UI.GridLayoutGroup
+    name: GridLayoutGroup
+    href: UnityEngine.UI.GridLayoutGroup.html
+  - name: .
+  - uid: UnityEngine.UI.GridLayoutGroup.Axis
+    name: Axis
+    href: UnityEngine.UI.GridLayoutGroup.Axis.html

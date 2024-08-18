@@ -1,0 +1,234 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.Navigation.Mode
+  commentId: T:UnityEngine.UI.Navigation.Mode
+  id: Navigation.Mode
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.Navigation.Mode.Automatic
+  - UnityEngine.UI.Navigation.Mode.Explicit
+  - UnityEngine.UI.Navigation.Mode.Horizontal
+  - UnityEngine.UI.Navigation.Mode.None
+  - UnityEngine.UI.Navigation.Mode.Vertical
+  langs:
+  - csharp
+  - vb
+  name: Navigation.Mode
+  nameWithType: Navigation.Mode
+  fullName: UnityEngine.UI.Navigation.Mode
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Mode
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+    startLine: 16
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  syntax:
+    content: >-
+      [Flags]
+
+      public enum Navigation.Mode
+    content.vb: >-
+      <Flags>
+
+      Public Enum Navigation.Mode
+  attributes:
+  - type: System.FlagsAttribute
+    ctor: System.FlagsAttribute.#ctor
+    arguments: []
+- uid: UnityEngine.UI.Navigation.Mode.None
+  commentId: F:UnityEngine.UI.Navigation.Mode.None
+  id: None
+  parent: UnityEngine.UI.Navigation.Mode
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: Navigation.Mode.None
+  fullName: UnityEngine.UI.Navigation.Mode.None
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: None
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+    startLine: 51
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: No navigation is allowed from this object.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: UnityEngine.UI.Navigation.Mode
+- uid: UnityEngine.UI.Navigation.Mode.Horizontal
+  commentId: F:UnityEngine.UI.Navigation.Mode.Horizontal
+  id: Horizontal
+  parent: UnityEngine.UI.Navigation.Mode
+  langs:
+  - csharp
+  - vb
+  name: Horizontal
+  nameWithType: Navigation.Mode.Horizontal
+  fullName: UnityEngine.UI.Navigation.Mode.Horizontal
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Horizontal
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+    startLine: 59
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Horizontal Navigation.
+  remarks: Navigation should only be allowed when left / right move events happen.
+  example: []
+  syntax:
+    content: Horizontal = 1
+    return:
+      type: UnityEngine.UI.Navigation.Mode
+- uid: UnityEngine.UI.Navigation.Mode.Vertical
+  commentId: F:UnityEngine.UI.Navigation.Mode.Vertical
+  id: Vertical
+  parent: UnityEngine.UI.Navigation.Mode
+  langs:
+  - csharp
+  - vb
+  name: Vertical
+  nameWithType: Navigation.Mode.Vertical
+  fullName: UnityEngine.UI.Navigation.Mode.Vertical
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Vertical
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+    startLine: 67
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Vertical navigation.
+  remarks: Navigation should only be allowed when up / down move events happen.
+  example: []
+  syntax:
+    content: Vertical = 2
+    return:
+      type: UnityEngine.UI.Navigation.Mode
+- uid: UnityEngine.UI.Navigation.Mode.Automatic
+  commentId: F:UnityEngine.UI.Navigation.Mode.Automatic
+  id: Automatic
+  parent: UnityEngine.UI.Navigation.Mode
+  langs:
+  - csharp
+  - vb
+  name: Automatic
+  nameWithType: Navigation.Mode.Automatic
+  fullName: UnityEngine.UI.Navigation.Mode.Automatic
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Automatic
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+    startLine: 75
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Automatic navigation.
+  remarks: Attempt to find the 'best' next object to select. This should be based on a sensible heuristic.
+  example: []
+  syntax:
+    content: Automatic = Horizontal | Vertical
+    return:
+      type: UnityEngine.UI.Navigation.Mode
+    content.vb: Automatic = Horizontal Or Vertical
+- uid: UnityEngine.UI.Navigation.Mode.Explicit
+  commentId: F:UnityEngine.UI.Navigation.Mode.Explicit
+  id: Explicit
+  parent: UnityEngine.UI.Navigation.Mode
+  langs:
+  - csharp
+  - vb
+  name: Explicit
+  nameWithType: Navigation.Mode.Explicit
+  fullName: UnityEngine.UI.Navigation.Mode.Explicit
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Explicit
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Navigation.cs
+    startLine: 83
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Explicit navigation.
+  remarks: User should explicitly specify what is selected by each move event.
+  example: []
+  syntax:
+    content: Explicit = 4
+    return:
+      type: UnityEngine.UI.Navigation.Mode
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.Navigation.Mode
+  commentId: T:UnityEngine.UI.Navigation.Mode
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.Navigation.html
+  name: Navigation.Mode
+  nameWithType: Navigation.Mode
+  fullName: UnityEngine.UI.Navigation.Mode
+  spec.csharp:
+  - uid: UnityEngine.UI.Navigation
+    name: Navigation
+    href: UnityEngine.UI.Navigation.html
+  - name: .
+  - uid: UnityEngine.UI.Navigation.Mode
+    name: Mode
+    href: UnityEngine.UI.Navigation.Mode.html
+  spec.vb:
+  - uid: UnityEngine.UI.Navigation
+    name: Navigation
+    href: UnityEngine.UI.Navigation.html
+  - name: .
+  - uid: UnityEngine.UI.Navigation.Mode
+    name: Mode
+    href: UnityEngine.UI.Navigation.Mode.html

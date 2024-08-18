@@ -1,0 +1,158 @@
+### YamlMime:ManagedReference
+items:
+- uid: MessagePack.Unity.Extension
+  commentId: N:MessagePack.Unity.Extension
+  id: MessagePack.Unity.Extension
+  children:
+  - MessagePack.Unity.Extension.BoundsArrayBlitFormatter
+  - MessagePack.Unity.Extension.ColorArrayBlitFormatter
+  - MessagePack.Unity.Extension.DoubleArrayBlitFormatter
+  - MessagePack.Unity.Extension.FloatArrayBlitFormatter
+  - MessagePack.Unity.Extension.IntArrayBlitFormatter
+  - MessagePack.Unity.Extension.QuaternionArrayBlitFormatter
+  - MessagePack.Unity.Extension.RectArrayBlitFormatter
+  - MessagePack.Unity.Extension.UnityBlitResolver
+  - MessagePack.Unity.Extension.UnityBlitWithPrimitiveArrayResolver
+  - MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1
+  - MessagePack.Unity.Extension.Vector2ArrayBlitFormatter
+  - MessagePack.Unity.Extension.Vector3ArrayBlitFormatter
+  - MessagePack.Unity.Extension.Vector4ArrayBlitFormatter
+  langs:
+  - csharp
+  - vb
+  name: MessagePack.Unity.Extension
+  nameWithType: MessagePack.Unity.Extension
+  fullName: MessagePack.Unity.Extension
+  type: Namespace
+  assemblies:
+  - MessagePack
+references:
+- uid: MessagePack.Unity.Extension.UnityBlitResolver
+  commentId: T:MessagePack.Unity.Extension.UnityBlitResolver
+  parent: MessagePack.Unity.Extension
+  href: MessagePack.Unity.Extension.UnityBlitResolver.html
+  name: UnityBlitResolver
+  nameWithType: UnityBlitResolver
+  fullName: MessagePack.Unity.Extension.UnityBlitResolver
+- uid: MessagePack.Unity.Extension.UnityBlitWithPrimitiveArrayResolver
+  commentId: T:MessagePack.Unity.Extension.UnityBlitWithPrimitiveArrayResolver
+  parent: MessagePack.Unity.Extension
+  href: MessagePack.Unity.Extension.UnityBlitWithPrimitiveArrayResolver.html
+  name: UnityBlitWithPrimitiveArrayResolver
+  nameWithType: UnityBlitWithPrimitiveArrayResolver
+  fullName: MessagePack.Unity.Extension.UnityBlitWithPrimitiveArrayResolver
+- uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1
+  commentId: T:MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1
+  href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html
+  name: UnsafeBlitFormatterBase<T>
+  nameWithType: UnsafeBlitFormatterBase<T>
+  fullName: MessagePack.Unity.Extension.UnsafeBlitFormatterBase<T>
+  nameWithType.vb: UnsafeBlitFormatterBase(Of T)
+  fullName.vb: MessagePack.Unity.Extension.UnsafeBlitFormatterBase(Of T)
+  name.vb: UnsafeBlitFormatterBase(Of T)
+  spec.csharp:
+  - uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1
+    name: UnsafeBlitFormatterBase
+    href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: MessagePack.Unity.Extension.UnsafeBlitFormatterBase`1
+    name: UnsafeBlitFormatterBase
+    href: MessagePack.Unity.Extension.UnsafeBlitFormatterBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: MessagePack.Unity.Extension.Vector2ArrayBlitFormatter
+  commentId: T:MessagePack.Unity.Extension.Vector2ArrayBlitFormatter
+  href: MessagePack.Unity.Extension.Vector2ArrayBlitFormatter.html
+  name: Vector2ArrayBlitFormatter
+  nameWithType: Vector2ArrayBlitFormatter
+  fullName: MessagePack.Unity.Extension.Vector2ArrayBlitFormatter
+- uid: MessagePack.Unity.Extension.Vector3ArrayBlitFormatter
+  commentId: T:MessagePack.Unity.Extension.Vector3ArrayBlitFormatter
+  href: MessagePack.Unity.Extension.Vector3ArrayBlitFormatter.html
+  name: Vector3ArrayBlitFormatter
+  nameWithType: Vector3ArrayBlitFormatter
+  fullName: MessagePack.Unity.Extension.Vector3ArrayBlitFormatter
+- uid: MessagePack.Unity.Extension.Vector4ArrayBlitFormatter
+  commentId: T:MessagePack.Unity.Extension.Vector4ArrayBlitFormatter
+  href: MessagePack.Unity.Extension.Vector4ArrayBlitFormatter.html
+  name: Vector4ArrayBlitFormatter
+  nameWithType: Vector4ArrayBlitFormatter
+  fullName: MessagePack.Unity.Extension.Vector4ArrayBlitFormatter
+- uid: MessagePack.Unity.Extension.QuaternionArrayBlitFormatter
+  commentId: T:MessagePack.Unity.Extension.QuaternionArrayBlitFormatter
+  href: MessagePack.Unity.Extension.QuaternionArrayBlitFormatter.html
+  name: QuaternionArrayBlitFormatter
+  nameWithType: QuaternionArrayBlitFormatter
+  fullName: MessagePack.Unity.Extension.QuaternionArrayBlitFormatter
+- uid: MessagePack.Unity.Extension.ColorArrayBlitFormatter
+  commentId: T:MessagePack.Unity.Extension.ColorArrayBlitFormatter
+  href: MessagePack.Unity.Extension.ColorArrayBlitFormatter.html
+  name: ColorArrayBlitFormatter
+  nameWithType: ColorArrayBlitFormatter
+  fullName: MessagePack.Unity.Extension.ColorArrayBlitFormatter
+- uid: MessagePack.Unity.Extension.BoundsArrayBlitFormatter
+  commentId: T:MessagePack.Unity.Extension.BoundsArrayBlitFormatter
+  href: MessagePack.Unity.Extension.BoundsArrayBlitFormatter.html
+  name: BoundsArrayBlitFormatter
+  nameWithType: BoundsArrayBlitFormatter
+  fullName: MessagePack.Unity.Extension.BoundsArrayBlitFormatter
+- uid: MessagePack.Unity.Extension.RectArrayBlitFormatter
+  commentId: T:MessagePack.Unity.Extension.RectArrayBlitFormatter
+  href: MessagePack.Unity.Extension.RectArrayBlitFormatter.html
+  name: RectArrayBlitFormatter
+  nameWithType: RectArrayBlitFormatter
+  fullName: MessagePack.Unity.Extension.RectArrayBlitFormatter
+- uid: MessagePack.Unity.Extension.IntArrayBlitFormatter
+  commentId: T:MessagePack.Unity.Extension.IntArrayBlitFormatter
+  href: MessagePack.Unity.Extension.IntArrayBlitFormatter.html
+  name: IntArrayBlitFormatter
+  nameWithType: IntArrayBlitFormatter
+  fullName: MessagePack.Unity.Extension.IntArrayBlitFormatter
+- uid: MessagePack.Unity.Extension.FloatArrayBlitFormatter
+  commentId: T:MessagePack.Unity.Extension.FloatArrayBlitFormatter
+  href: MessagePack.Unity.Extension.FloatArrayBlitFormatter.html
+  name: FloatArrayBlitFormatter
+  nameWithType: FloatArrayBlitFormatter
+  fullName: MessagePack.Unity.Extension.FloatArrayBlitFormatter
+- uid: MessagePack.Unity.Extension.DoubleArrayBlitFormatter
+  commentId: T:MessagePack.Unity.Extension.DoubleArrayBlitFormatter
+  href: MessagePack.Unity.Extension.DoubleArrayBlitFormatter.html
+  name: DoubleArrayBlitFormatter
+  nameWithType: DoubleArrayBlitFormatter
+  fullName: MessagePack.Unity.Extension.DoubleArrayBlitFormatter
+- uid: MessagePack.Unity.Extension
+  commentId: N:MessagePack.Unity.Extension
+  href: MessagePack.html
+  name: MessagePack.Unity.Extension
+  nameWithType: MessagePack.Unity.Extension
+  fullName: MessagePack.Unity.Extension
+  spec.csharp:
+  - uid: MessagePack
+    name: MessagePack
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Unity
+    name: Unity
+    href: MessagePack.Unity.html
+  - name: .
+  - uid: MessagePack.Unity.Extension
+    name: Extension
+    href: MessagePack.Unity.Extension.html
+  spec.vb:
+  - uid: MessagePack
+    name: MessagePack
+    href: MessagePack.html
+  - name: .
+  - uid: MessagePack.Unity
+    name: Unity
+    href: MessagePack.Unity.html
+  - name: .
+  - uid: MessagePack.Unity.Extension
+    name: Extension
+    href: MessagePack.Unity.Extension.html

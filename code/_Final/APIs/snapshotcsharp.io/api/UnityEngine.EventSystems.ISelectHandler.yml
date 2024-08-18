@@ -1,0 +1,97 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.ISelectHandler
+  commentId: T:UnityEngine.EventSystems.ISelectHandler
+  id: ISelectHandler
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.ISelectHandler.OnSelect(UnityEngine.EventSystems.BaseEventData)
+  langs:
+  - csharp
+  - vb
+  name: ISelectHandler
+  nameWithType: ISelectHandler
+  fullName: UnityEngine.EventSystems.ISelectHandler
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ISelectHandler
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 343
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Interface to implement if you wish to receive OnSelect callbacks.
+  remarks: Criteria for this event is implementation dependent. For example see StandAloneInputModule.
+  example: []
+  syntax:
+    content: 'public interface ISelectHandler : IEventSystemHandler'
+    content.vb: Public Interface ISelectHandler Inherits IEventSystemHandler
+- uid: UnityEngine.EventSystems.ISelectHandler.OnSelect(UnityEngine.EventSystems.BaseEventData)
+  commentId: M:UnityEngine.EventSystems.ISelectHandler.OnSelect(UnityEngine.EventSystems.BaseEventData)
+  id: OnSelect(UnityEngine.EventSystems.BaseEventData)
+  parent: UnityEngine.EventSystems.ISelectHandler
+  langs:
+  - csharp
+  - vb
+  name: OnSelect(BaseEventData)
+  nameWithType: ISelectHandler.OnSelect(BaseEventData)
+  fullName: UnityEngine.EventSystems.ISelectHandler.OnSelect(UnityEngine.EventSystems.BaseEventData)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OnSelect
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs
+    startLine: 345
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  syntax:
+    content: void OnSelect(BaseEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.BaseEventData
+    content.vb: Sub OnSelect(eventData As BaseEventData)
+  overload: UnityEngine.EventSystems.ISelectHandler.OnSelect*
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.ISelectHandler.OnSelect*
+  commentId: Overload:UnityEngine.EventSystems.ISelectHandler.OnSelect
+  href: UnityEngine.EventSystems.ISelectHandler.html#UnityEngine_EventSystems_ISelectHandler_OnSelect_UnityEngine_EventSystems_BaseEventData_
+  name: OnSelect
+  nameWithType: ISelectHandler.OnSelect
+  fullName: UnityEngine.EventSystems.ISelectHandler.OnSelect
+- uid: UnityEngine.EventSystems.BaseEventData
+  commentId: T:UnityEngine.EventSystems.BaseEventData
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.BaseEventData.html
+  name: BaseEventData
+  nameWithType: BaseEventData
+  fullName: UnityEngine.EventSystems.BaseEventData

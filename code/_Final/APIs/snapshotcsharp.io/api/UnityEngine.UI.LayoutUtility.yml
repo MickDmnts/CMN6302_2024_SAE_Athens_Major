@@ -1,0 +1,916 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.LayoutUtility
+  commentId: T:UnityEngine.UI.LayoutUtility
+  id: LayoutUtility
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.LayoutUtility.GetFlexibleHeight(UnityEngine.RectTransform)
+  - UnityEngine.UI.LayoutUtility.GetFlexibleSize(UnityEngine.RectTransform,System.Int32)
+  - UnityEngine.UI.LayoutUtility.GetFlexibleWidth(UnityEngine.RectTransform)
+  - UnityEngine.UI.LayoutUtility.GetLayoutProperty(UnityEngine.RectTransform,System.Func{UnityEngine.UI.ILayoutElement,System.Single},System.Single)
+  - UnityEngine.UI.LayoutUtility.GetLayoutProperty(UnityEngine.RectTransform,System.Func{UnityEngine.UI.ILayoutElement,System.Single},System.Single,UnityEngine.UI.ILayoutElement@)
+  - UnityEngine.UI.LayoutUtility.GetMinHeight(UnityEngine.RectTransform)
+  - UnityEngine.UI.LayoutUtility.GetMinSize(UnityEngine.RectTransform,System.Int32)
+  - UnityEngine.UI.LayoutUtility.GetMinWidth(UnityEngine.RectTransform)
+  - UnityEngine.UI.LayoutUtility.GetPreferredHeight(UnityEngine.RectTransform)
+  - UnityEngine.UI.LayoutUtility.GetPreferredSize(UnityEngine.RectTransform,System.Int32)
+  - UnityEngine.UI.LayoutUtility.GetPreferredWidth(UnityEngine.RectTransform)
+  langs:
+  - csharp
+  - vb
+  name: LayoutUtility
+  nameWithType: LayoutUtility
+  fullName: UnityEngine.UI.LayoutUtility
+  type: Class
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: LayoutUtility
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+    startLine: 7
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Utility functions for querying layout elements for their minimum, preferred, and flexible sizes.
+  example: []
+  syntax:
+    content: public static class LayoutUtility
+    content.vb: Public Module LayoutUtility
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UnityEngine.UI.LayoutUtility.GetMinSize(UnityEngine.RectTransform,System.Int32)
+  commentId: M:UnityEngine.UI.LayoutUtility.GetMinSize(UnityEngine.RectTransform,System.Int32)
+  id: GetMinSize(UnityEngine.RectTransform,System.Int32)
+  parent: UnityEngine.UI.LayoutUtility
+  langs:
+  - csharp
+  - vb
+  name: GetMinSize(RectTransform, int)
+  nameWithType: LayoutUtility.GetMinSize(RectTransform, int)
+  fullName: UnityEngine.UI.LayoutUtility.GetMinSize(UnityEngine.RectTransform, int)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetMinSize
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+    startLine: 15
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Returns the minimum size of the layout element.
+  remarks: All components on the GameObject that implement the ILayoutElement are queried. The one with the highest priority which has a value for this setting is used. If multiple componets have this setting and have the same priority, the maximum value out of those is used.
+  example: []
+  syntax:
+    content: public static float GetMinSize(RectTransform rect, int axis)
+    parameters:
+    - id: rect
+      type: UnityEngine.RectTransform
+      description: The RectTransform of the layout element to query.
+    - id: axis
+      type: System.Int32
+      description: The axis to query. This can be 0 or 1.
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetMinSize(rect As RectTransform, axis As Integer) As Single
+  overload: UnityEngine.UI.LayoutUtility.GetMinSize*
+  nameWithType.vb: LayoutUtility.GetMinSize(RectTransform, Integer)
+  fullName.vb: UnityEngine.UI.LayoutUtility.GetMinSize(UnityEngine.RectTransform, Integer)
+  name.vb: GetMinSize(RectTransform, Integer)
+- uid: UnityEngine.UI.LayoutUtility.GetPreferredSize(UnityEngine.RectTransform,System.Int32)
+  commentId: M:UnityEngine.UI.LayoutUtility.GetPreferredSize(UnityEngine.RectTransform,System.Int32)
+  id: GetPreferredSize(UnityEngine.RectTransform,System.Int32)
+  parent: UnityEngine.UI.LayoutUtility
+  langs:
+  - csharp
+  - vb
+  name: GetPreferredSize(RectTransform, int)
+  nameWithType: LayoutUtility.GetPreferredSize(RectTransform, int)
+  fullName: UnityEngine.UI.LayoutUtility.GetPreferredSize(UnityEngine.RectTransform, int)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetPreferredSize
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+    startLine: 28
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Returns the preferred size of the layout element.
+  remarks: All components on the GameObject that implement the ILayoutElement are queried. The one with the highest priority which has a value for this setting is used. If multiple componets have this setting and have the same priority, the maximum value out of those is used.
+  example: []
+  syntax:
+    content: public static float GetPreferredSize(RectTransform rect, int axis)
+    parameters:
+    - id: rect
+      type: UnityEngine.RectTransform
+      description: The RectTransform of the layout element to query.
+    - id: axis
+      type: System.Int32
+      description: The axis to query. This can be 0 or 1.
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetPreferredSize(rect As RectTransform, axis As Integer) As Single
+  overload: UnityEngine.UI.LayoutUtility.GetPreferredSize*
+  nameWithType.vb: LayoutUtility.GetPreferredSize(RectTransform, Integer)
+  fullName.vb: UnityEngine.UI.LayoutUtility.GetPreferredSize(UnityEngine.RectTransform, Integer)
+  name.vb: GetPreferredSize(RectTransform, Integer)
+- uid: UnityEngine.UI.LayoutUtility.GetFlexibleSize(UnityEngine.RectTransform,System.Int32)
+  commentId: M:UnityEngine.UI.LayoutUtility.GetFlexibleSize(UnityEngine.RectTransform,System.Int32)
+  id: GetFlexibleSize(UnityEngine.RectTransform,System.Int32)
+  parent: UnityEngine.UI.LayoutUtility
+  langs:
+  - csharp
+  - vb
+  name: GetFlexibleSize(RectTransform, int)
+  nameWithType: LayoutUtility.GetFlexibleSize(RectTransform, int)
+  fullName: UnityEngine.UI.LayoutUtility.GetFlexibleSize(UnityEngine.RectTransform, int)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetFlexibleSize
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+    startLine: 41
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Returns the flexible size of the layout element.
+  remarks: All components on the GameObject that implement the ILayoutElement are queried. The one with the highest priority which has a value for this setting is used. If multiple componets have this setting and have the same priority, the maximum value out of those is used.
+  example: []
+  syntax:
+    content: public static float GetFlexibleSize(RectTransform rect, int axis)
+    parameters:
+    - id: rect
+      type: UnityEngine.RectTransform
+      description: The RectTransform of the layout element to query.
+    - id: axis
+      type: System.Int32
+      description: The axis to query. This can be 0 or 1.
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetFlexibleSize(rect As RectTransform, axis As Integer) As Single
+  overload: UnityEngine.UI.LayoutUtility.GetFlexibleSize*
+  nameWithType.vb: LayoutUtility.GetFlexibleSize(RectTransform, Integer)
+  fullName.vb: UnityEngine.UI.LayoutUtility.GetFlexibleSize(UnityEngine.RectTransform, Integer)
+  name.vb: GetFlexibleSize(RectTransform, Integer)
+- uid: UnityEngine.UI.LayoutUtility.GetMinWidth(UnityEngine.RectTransform)
+  commentId: M:UnityEngine.UI.LayoutUtility.GetMinWidth(UnityEngine.RectTransform)
+  id: GetMinWidth(UnityEngine.RectTransform)
+  parent: UnityEngine.UI.LayoutUtility
+  langs:
+  - csharp
+  - vb
+  name: GetMinWidth(RectTransform)
+  nameWithType: LayoutUtility.GetMinWidth(RectTransform)
+  fullName: UnityEngine.UI.LayoutUtility.GetMinWidth(UnityEngine.RectTransform)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetMinWidth
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+    startLine: 53
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Returns the minimum width of the layout element.
+  remarks: All components on the GameObject that implement the ILayoutElement are queried. The one with the highest priority which has a value for this setting is used. If multiple componets have this setting and have the same priority, the maximum value out of those is used.
+  example: []
+  syntax:
+    content: public static float GetMinWidth(RectTransform rect)
+    parameters:
+    - id: rect
+      type: UnityEngine.RectTransform
+      description: The RectTransform of the layout element to query.
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetMinWidth(rect As RectTransform) As Single
+  overload: UnityEngine.UI.LayoutUtility.GetMinWidth*
+- uid: UnityEngine.UI.LayoutUtility.GetPreferredWidth(UnityEngine.RectTransform)
+  commentId: M:UnityEngine.UI.LayoutUtility.GetPreferredWidth(UnityEngine.RectTransform)
+  id: GetPreferredWidth(UnityEngine.RectTransform)
+  parent: UnityEngine.UI.LayoutUtility
+  langs:
+  - csharp
+  - vb
+  name: GetPreferredWidth(RectTransform)
+  nameWithType: LayoutUtility.GetPreferredWidth(RectTransform)
+  fullName: UnityEngine.UI.LayoutUtility.GetPreferredWidth(UnityEngine.RectTransform)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetPreferredWidth
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+    startLine: 65
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Returns the preferred width of the layout element.
+  example: []
+  syntax:
+    content: public static float GetPreferredWidth(RectTransform rect)
+    parameters:
+    - id: rect
+      type: UnityEngine.RectTransform
+      description: The RectTransform of the layout element to query.
+    return:
+      type: System.Single
+      description: All components on the GameObject that implement the ILayoutElement are queried. The one with the highest priority which has a value for this setting is used. If multiple componets have this setting and have the same priority, the maximum value out of those is used.
+    content.vb: Public Shared Function GetPreferredWidth(rect As RectTransform) As Single
+  overload: UnityEngine.UI.LayoutUtility.GetPreferredWidth*
+- uid: UnityEngine.UI.LayoutUtility.GetFlexibleWidth(UnityEngine.RectTransform)
+  commentId: M:UnityEngine.UI.LayoutUtility.GetFlexibleWidth(UnityEngine.RectTransform)
+  id: GetFlexibleWidth(UnityEngine.RectTransform)
+  parent: UnityEngine.UI.LayoutUtility
+  langs:
+  - csharp
+  - vb
+  name: GetFlexibleWidth(RectTransform)
+  nameWithType: LayoutUtility.GetFlexibleWidth(RectTransform)
+  fullName: UnityEngine.UI.LayoutUtility.GetFlexibleWidth(UnityEngine.RectTransform)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetFlexibleWidth
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+    startLine: 77
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Returns the flexible width of the layout element.
+  remarks: All components on the GameObject that implement the ILayoutElement are queried. The one with the highest priority which has a value for this setting is used. If multiple componets have this setting and have the same priority, the maximum value out of those is used
+  example: []
+  syntax:
+    content: public static float GetFlexibleWidth(RectTransform rect)
+    parameters:
+    - id: rect
+      type: UnityEngine.RectTransform
+      description: The RectTransform of the layout element to query.
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetFlexibleWidth(rect As RectTransform) As Single
+  overload: UnityEngine.UI.LayoutUtility.GetFlexibleWidth*
+- uid: UnityEngine.UI.LayoutUtility.GetMinHeight(UnityEngine.RectTransform)
+  commentId: M:UnityEngine.UI.LayoutUtility.GetMinHeight(UnityEngine.RectTransform)
+  id: GetMinHeight(UnityEngine.RectTransform)
+  parent: UnityEngine.UI.LayoutUtility
+  langs:
+  - csharp
+  - vb
+  name: GetMinHeight(RectTransform)
+  nameWithType: LayoutUtility.GetMinHeight(RectTransform)
+  fullName: UnityEngine.UI.LayoutUtility.GetMinHeight(UnityEngine.RectTransform)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetMinHeight
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+    startLine: 89
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Returns the minimum height of the layout element.
+  remarks: All components on the GameObject that implement the ILayoutElement are queried. The one with the highest priority which has a value for this setting is used. If multiple componets have this setting and have the same priority, the maximum value out of those is used.
+  example: []
+  syntax:
+    content: public static float GetMinHeight(RectTransform rect)
+    parameters:
+    - id: rect
+      type: UnityEngine.RectTransform
+      description: The RectTransform of the layout element to query.
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetMinHeight(rect As RectTransform) As Single
+  overload: UnityEngine.UI.LayoutUtility.GetMinHeight*
+- uid: UnityEngine.UI.LayoutUtility.GetPreferredHeight(UnityEngine.RectTransform)
+  commentId: M:UnityEngine.UI.LayoutUtility.GetPreferredHeight(UnityEngine.RectTransform)
+  id: GetPreferredHeight(UnityEngine.RectTransform)
+  parent: UnityEngine.UI.LayoutUtility
+  langs:
+  - csharp
+  - vb
+  name: GetPreferredHeight(RectTransform)
+  nameWithType: LayoutUtility.GetPreferredHeight(RectTransform)
+  fullName: UnityEngine.UI.LayoutUtility.GetPreferredHeight(UnityEngine.RectTransform)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetPreferredHeight
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+    startLine: 101
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Returns the preferred height of the layout element.
+  remarks: All components on the GameObject that implement the ILayoutElement are queried. The one with the highest priority which has a value for this setting is used. If multiple componets have this setting and have the same priority, the maximum value out of those is used.
+  example: []
+  syntax:
+    content: public static float GetPreferredHeight(RectTransform rect)
+    parameters:
+    - id: rect
+      type: UnityEngine.RectTransform
+      description: The RectTransform of the layout element to query.
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetPreferredHeight(rect As RectTransform) As Single
+  overload: UnityEngine.UI.LayoutUtility.GetPreferredHeight*
+- uid: UnityEngine.UI.LayoutUtility.GetFlexibleHeight(UnityEngine.RectTransform)
+  commentId: M:UnityEngine.UI.LayoutUtility.GetFlexibleHeight(UnityEngine.RectTransform)
+  id: GetFlexibleHeight(UnityEngine.RectTransform)
+  parent: UnityEngine.UI.LayoutUtility
+  langs:
+  - csharp
+  - vb
+  name: GetFlexibleHeight(RectTransform)
+  nameWithType: LayoutUtility.GetFlexibleHeight(RectTransform)
+  fullName: UnityEngine.UI.LayoutUtility.GetFlexibleHeight(UnityEngine.RectTransform)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetFlexibleHeight
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+    startLine: 113
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Returns the flexible height of the layout element.
+  remarks: All components on the GameObject that implement the ILayoutElement are queried. The one with the highest priority which has a value for this setting is used. If multiple componets have this setting and have the same priority, the maximum value out of those is used.
+  example: []
+  syntax:
+    content: public static float GetFlexibleHeight(RectTransform rect)
+    parameters:
+    - id: rect
+      type: UnityEngine.RectTransform
+      description: The RectTransform of the layout element to query.
+    return:
+      type: System.Single
+    content.vb: Public Shared Function GetFlexibleHeight(rect As RectTransform) As Single
+  overload: UnityEngine.UI.LayoutUtility.GetFlexibleHeight*
+- uid: UnityEngine.UI.LayoutUtility.GetLayoutProperty(UnityEngine.RectTransform,System.Func{UnityEngine.UI.ILayoutElement,System.Single},System.Single)
+  commentId: M:UnityEngine.UI.LayoutUtility.GetLayoutProperty(UnityEngine.RectTransform,System.Func{UnityEngine.UI.ILayoutElement,System.Single},System.Single)
+  id: GetLayoutProperty(UnityEngine.RectTransform,System.Func{UnityEngine.UI.ILayoutElement,System.Single},System.Single)
+  parent: UnityEngine.UI.LayoutUtility
+  langs:
+  - csharp
+  - vb
+  name: GetLayoutProperty(RectTransform, Func<ILayoutElement, float>, float)
+  nameWithType: LayoutUtility.GetLayoutProperty(RectTransform, Func<ILayoutElement, float>, float)
+  fullName: UnityEngine.UI.LayoutUtility.GetLayoutProperty(UnityEngine.RectTransform, System.Func<UnityEngine.UI.ILayoutElement, float>, float)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetLayoutProperty
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+    startLine: 125
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Gets a calculated layout property for the layout element with the given RectTransform.
+  example: []
+  syntax:
+    content: public static float GetLayoutProperty(RectTransform rect, Func<ILayoutElement, float> property, float defaultValue)
+    parameters:
+    - id: rect
+      type: UnityEngine.RectTransform
+      description: The RectTransform of the layout element to get a property for.
+    - id: property
+      type: System.Func{UnityEngine.UI.ILayoutElement,System.Single}
+      description: The property to calculate.
+    - id: defaultValue
+      type: System.Single
+      description: The default value to use if no component on the layout element supplies the given property
+    return:
+      type: System.Single
+      description: The calculated value of the layout property.
+    content.vb: Public Shared Function GetLayoutProperty(rect As RectTransform, [property] As Func(Of ILayoutElement, Single), defaultValue As Single) As Single
+  overload: UnityEngine.UI.LayoutUtility.GetLayoutProperty*
+  nameWithType.vb: LayoutUtility.GetLayoutProperty(RectTransform, Func(Of ILayoutElement, Single), Single)
+  fullName.vb: UnityEngine.UI.LayoutUtility.GetLayoutProperty(UnityEngine.RectTransform, System.Func(Of UnityEngine.UI.ILayoutElement, Single), Single)
+  name.vb: GetLayoutProperty(RectTransform, Func(Of ILayoutElement, Single), Single)
+- uid: UnityEngine.UI.LayoutUtility.GetLayoutProperty(UnityEngine.RectTransform,System.Func{UnityEngine.UI.ILayoutElement,System.Single},System.Single,UnityEngine.UI.ILayoutElement@)
+  commentId: M:UnityEngine.UI.LayoutUtility.GetLayoutProperty(UnityEngine.RectTransform,System.Func{UnityEngine.UI.ILayoutElement,System.Single},System.Single,UnityEngine.UI.ILayoutElement@)
+  id: GetLayoutProperty(UnityEngine.RectTransform,System.Func{UnityEngine.UI.ILayoutElement,System.Single},System.Single,UnityEngine.UI.ILayoutElement@)
+  parent: UnityEngine.UI.LayoutUtility
+  langs:
+  - csharp
+  - vb
+  name: GetLayoutProperty(RectTransform, Func<ILayoutElement, float>, float, out ILayoutElement)
+  nameWithType: LayoutUtility.GetLayoutProperty(RectTransform, Func<ILayoutElement, float>, float, out ILayoutElement)
+  fullName: UnityEngine.UI.LayoutUtility.GetLayoutProperty(UnityEngine.RectTransform, System.Func<UnityEngine.UI.ILayoutElement, float>, float, out UnityEngine.UI.ILayoutElement)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: GetLayoutProperty
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/LayoutUtility.cs
+    startLine: 139
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: Gets a calculated layout property for the layout element with the given RectTransform.
+  example: []
+  syntax:
+    content: public static float GetLayoutProperty(RectTransform rect, Func<ILayoutElement, float> property, float defaultValue, out ILayoutElement source)
+    parameters:
+    - id: rect
+      type: UnityEngine.RectTransform
+      description: The RectTransform of the layout element to get a property for.
+    - id: property
+      type: System.Func{UnityEngine.UI.ILayoutElement,System.Single}
+      description: The property to calculate.
+    - id: defaultValue
+      type: System.Single
+      description: The default value to use if no component on the layout element supplies the given property
+    - id: source
+      type: UnityEngine.UI.ILayoutElement
+      description: Optional out parameter to get the component that supplied the calculated value.
+    return:
+      type: System.Single
+      description: The calculated value of the layout property.
+    content.vb: Public Shared Function GetLayoutProperty(rect As RectTransform, [property] As Func(Of ILayoutElement, Single), defaultValue As Single, source As ILayoutElement) As Single
+  overload: UnityEngine.UI.LayoutUtility.GetLayoutProperty*
+  nameWithType.vb: LayoutUtility.GetLayoutProperty(RectTransform, Func(Of ILayoutElement, Single), Single, ILayoutElement)
+  fullName.vb: UnityEngine.UI.LayoutUtility.GetLayoutProperty(UnityEngine.RectTransform, System.Func(Of UnityEngine.UI.ILayoutElement, Single), Single, UnityEngine.UI.ILayoutElement)
+  name.vb: GetLayoutProperty(RectTransform, Func(Of ILayoutElement, Single), Single, ILayoutElement)
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.UI.LayoutUtility.GetMinSize*
+  commentId: Overload:UnityEngine.UI.LayoutUtility.GetMinSize
+  href: UnityEngine.UI.LayoutUtility.html#UnityEngine_UI_LayoutUtility_GetMinSize_UnityEngine_RectTransform_System_Int32_
+  name: GetMinSize
+  nameWithType: LayoutUtility.GetMinSize
+  fullName: UnityEngine.UI.LayoutUtility.GetMinSize
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.UI.LayoutUtility.GetPreferredSize*
+  commentId: Overload:UnityEngine.UI.LayoutUtility.GetPreferredSize
+  href: UnityEngine.UI.LayoutUtility.html#UnityEngine_UI_LayoutUtility_GetPreferredSize_UnityEngine_RectTransform_System_Int32_
+  name: GetPreferredSize
+  nameWithType: LayoutUtility.GetPreferredSize
+  fullName: UnityEngine.UI.LayoutUtility.GetPreferredSize
+- uid: UnityEngine.UI.LayoutUtility.GetFlexibleSize*
+  commentId: Overload:UnityEngine.UI.LayoutUtility.GetFlexibleSize
+  href: UnityEngine.UI.LayoutUtility.html#UnityEngine_UI_LayoutUtility_GetFlexibleSize_UnityEngine_RectTransform_System_Int32_
+  name: GetFlexibleSize
+  nameWithType: LayoutUtility.GetFlexibleSize
+  fullName: UnityEngine.UI.LayoutUtility.GetFlexibleSize
+- uid: UnityEngine.UI.LayoutUtility.GetMinWidth*
+  commentId: Overload:UnityEngine.UI.LayoutUtility.GetMinWidth
+  href: UnityEngine.UI.LayoutUtility.html#UnityEngine_UI_LayoutUtility_GetMinWidth_UnityEngine_RectTransform_
+  name: GetMinWidth
+  nameWithType: LayoutUtility.GetMinWidth
+  fullName: UnityEngine.UI.LayoutUtility.GetMinWidth
+- uid: UnityEngine.UI.LayoutUtility.GetPreferredWidth*
+  commentId: Overload:UnityEngine.UI.LayoutUtility.GetPreferredWidth
+  href: UnityEngine.UI.LayoutUtility.html#UnityEngine_UI_LayoutUtility_GetPreferredWidth_UnityEngine_RectTransform_
+  name: GetPreferredWidth
+  nameWithType: LayoutUtility.GetPreferredWidth
+  fullName: UnityEngine.UI.LayoutUtility.GetPreferredWidth
+- uid: UnityEngine.UI.LayoutUtility.GetFlexibleWidth*
+  commentId: Overload:UnityEngine.UI.LayoutUtility.GetFlexibleWidth
+  href: UnityEngine.UI.LayoutUtility.html#UnityEngine_UI_LayoutUtility_GetFlexibleWidth_UnityEngine_RectTransform_
+  name: GetFlexibleWidth
+  nameWithType: LayoutUtility.GetFlexibleWidth
+  fullName: UnityEngine.UI.LayoutUtility.GetFlexibleWidth
+- uid: UnityEngine.UI.LayoutUtility.GetMinHeight*
+  commentId: Overload:UnityEngine.UI.LayoutUtility.GetMinHeight
+  href: UnityEngine.UI.LayoutUtility.html#UnityEngine_UI_LayoutUtility_GetMinHeight_UnityEngine_RectTransform_
+  name: GetMinHeight
+  nameWithType: LayoutUtility.GetMinHeight
+  fullName: UnityEngine.UI.LayoutUtility.GetMinHeight
+- uid: UnityEngine.UI.LayoutUtility.GetPreferredHeight*
+  commentId: Overload:UnityEngine.UI.LayoutUtility.GetPreferredHeight
+  href: UnityEngine.UI.LayoutUtility.html#UnityEngine_UI_LayoutUtility_GetPreferredHeight_UnityEngine_RectTransform_
+  name: GetPreferredHeight
+  nameWithType: LayoutUtility.GetPreferredHeight
+  fullName: UnityEngine.UI.LayoutUtility.GetPreferredHeight
+- uid: UnityEngine.UI.LayoutUtility.GetFlexibleHeight*
+  commentId: Overload:UnityEngine.UI.LayoutUtility.GetFlexibleHeight
+  href: UnityEngine.UI.LayoutUtility.html#UnityEngine_UI_LayoutUtility_GetFlexibleHeight_UnityEngine_RectTransform_
+  name: GetFlexibleHeight
+  nameWithType: LayoutUtility.GetFlexibleHeight
+  fullName: UnityEngine.UI.LayoutUtility.GetFlexibleHeight
+- uid: UnityEngine.UI.LayoutUtility.GetLayoutProperty*
+  commentId: Overload:UnityEngine.UI.LayoutUtility.GetLayoutProperty
+  href: UnityEngine.UI.LayoutUtility.html#UnityEngine_UI_LayoutUtility_GetLayoutProperty_UnityEngine_RectTransform_System_Func_UnityEngine_UI_ILayoutElement_System_Single__System_Single_
+  name: GetLayoutProperty
+  nameWithType: LayoutUtility.GetLayoutProperty
+  fullName: UnityEngine.UI.LayoutUtility.GetLayoutProperty
+- uid: System.Func{UnityEngine.UI.ILayoutElement,System.Single}
+  commentId: T:System.Func{UnityEngine.UI.ILayoutElement,System.Single}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<ILayoutElement, float>
+  nameWithType: Func<ILayoutElement, float>
+  fullName: System.Func<UnityEngine.UI.ILayoutElement, float>
+  nameWithType.vb: Func(Of ILayoutElement, Single)
+  fullName.vb: System.Func(Of UnityEngine.UI.ILayoutElement, Single)
+  name.vb: Func(Of ILayoutElement, Single)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: UnityEngine.UI.ILayoutElement
+    name: ILayoutElement
+    href: UnityEngine.UI.ILayoutElement.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.UI.ILayoutElement
+    name: ILayoutElement
+    href: UnityEngine.UI.ILayoutElement.html
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: UnityEngine.UI.ILayoutElement
+  commentId: T:UnityEngine.UI.ILayoutElement
+  parent: UnityEngine.UI
+  href: UnityEngine.UI.ILayoutElement.html
+  name: ILayoutElement
+  nameWithType: ILayoutElement
+  fullName: UnityEngine.UI.ILayoutElement

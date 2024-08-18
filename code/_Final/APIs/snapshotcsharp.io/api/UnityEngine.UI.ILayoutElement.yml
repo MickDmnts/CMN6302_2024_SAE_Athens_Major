@@ -1,0 +1,491 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.ILayoutElement
+  commentId: T:UnityEngine.UI.ILayoutElement
+  id: ILayoutElement
+  parent: UnityEngine.UI
+  children:
+  - UnityEngine.UI.ILayoutElement.CalculateLayoutInputHorizontal
+  - UnityEngine.UI.ILayoutElement.CalculateLayoutInputVertical
+  - UnityEngine.UI.ILayoutElement.flexibleHeight
+  - UnityEngine.UI.ILayoutElement.flexibleWidth
+  - UnityEngine.UI.ILayoutElement.layoutPriority
+  - UnityEngine.UI.ILayoutElement.minHeight
+  - UnityEngine.UI.ILayoutElement.minWidth
+  - UnityEngine.UI.ILayoutElement.preferredHeight
+  - UnityEngine.UI.ILayoutElement.preferredWidth
+  langs:
+  - csharp
+  - vb
+  name: ILayoutElement
+  nameWithType: ILayoutElement
+  fullName: UnityEngine.UI.ILayoutElement
+  type: Interface
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: ILayoutElement
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+    startLine: 17
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: A component is treated as a layout element by the auto layout system if it implements ILayoutElement.
+  remarks: >-
+    The layout system will invoke CalculateLayoutInputHorizontal before querying minWidth, preferredWidth, and flexibleWidth. It can potentially save performance if these properties are cached when CalculateLayoutInputHorizontal is invoked, so they don't need to be recalculated every time the properties are queried.
+
+
+    The layout system will invoke CalculateLayoutInputVertical before querying minHeight, preferredHeight, and flexibleHeight.It can potentially save performance if these properties are cached when CalculateLayoutInputVertical is invoked, so they don't need to be recalculated every time the properties are queried.
+
+
+    The minWidth, preferredWidth, and flexibleWidth properties should not rely on any properties of the RectTransform of the layout element, otherwise the behavior will be non-deterministic.
+
+    The minHeight, preferredHeight, and flexibleHeight properties may rely on horizontal aspects of the RectTransform, such as the width or the X component of the position.
+
+    Any properties of the RectTransforms on child layout elements may always be relied on.
+  example: []
+  syntax:
+    content: public interface ILayoutElement
+    content.vb: Public Interface ILayoutElement
+- uid: UnityEngine.UI.ILayoutElement.CalculateLayoutInputHorizontal
+  commentId: M:UnityEngine.UI.ILayoutElement.CalculateLayoutInputHorizontal
+  id: CalculateLayoutInputHorizontal
+  parent: UnityEngine.UI.ILayoutElement
+  langs:
+  - csharp
+  - vb
+  name: CalculateLayoutInputHorizontal()
+  nameWithType: ILayoutElement.CalculateLayoutInputHorizontal()
+  fullName: UnityEngine.UI.ILayoutElement.CalculateLayoutInputHorizontal()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: CalculateLayoutInputHorizontal
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+    startLine: 23
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: >-
+    After this method is invoked, layout horizontal input properties should return up-to-date values.
+     Children will already have up-to-date layout horizontal inputs when this methods is called.
+  example: []
+  syntax:
+    content: void CalculateLayoutInputHorizontal()
+    content.vb: Sub CalculateLayoutInputHorizontal()
+  overload: UnityEngine.UI.ILayoutElement.CalculateLayoutInputHorizontal*
+- uid: UnityEngine.UI.ILayoutElement.CalculateLayoutInputVertical
+  commentId: M:UnityEngine.UI.ILayoutElement.CalculateLayoutInputVertical
+  id: CalculateLayoutInputVertical
+  parent: UnityEngine.UI.ILayoutElement
+  langs:
+  - csharp
+  - vb
+  name: CalculateLayoutInputVertical()
+  nameWithType: ILayoutElement.CalculateLayoutInputVertical()
+  fullName: UnityEngine.UI.ILayoutElement.CalculateLayoutInputVertical()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: CalculateLayoutInputVertical
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+    startLine: 29
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: >-
+    After this method is invoked, layout vertical input properties should return up-to-date values.
+
+    Children will already have up-to-date layout vertical inputs when this methods is called.
+  example: []
+  syntax:
+    content: void CalculateLayoutInputVertical()
+    content.vb: Sub CalculateLayoutInputVertical()
+  overload: UnityEngine.UI.ILayoutElement.CalculateLayoutInputVertical*
+- uid: UnityEngine.UI.ILayoutElement.minWidth
+  commentId: P:UnityEngine.UI.ILayoutElement.minWidth
+  id: minWidth
+  parent: UnityEngine.UI.ILayoutElement
+  langs:
+  - csharp
+  - vb
+  name: minWidth
+  nameWithType: ILayoutElement.minWidth
+  fullName: UnityEngine.UI.ILayoutElement.minWidth
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: minWidth
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+    startLine: 34
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The minimum width this layout element may be allocated.
+  example: []
+  syntax:
+    content: float minWidth { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: ReadOnly Property minWidth As Single
+  overload: UnityEngine.UI.ILayoutElement.minWidth*
+- uid: UnityEngine.UI.ILayoutElement.preferredWidth
+  commentId: P:UnityEngine.UI.ILayoutElement.preferredWidth
+  id: preferredWidth
+  parent: UnityEngine.UI.ILayoutElement
+  langs:
+  - csharp
+  - vb
+  name: preferredWidth
+  nameWithType: ILayoutElement.preferredWidth
+  fullName: UnityEngine.UI.ILayoutElement.preferredWidth
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: preferredWidth
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+    startLine: 42
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The preferred width this layout element should be allocated if there is sufficient space.
+  remarks: PreferredWidth can be set to -1 to remove the size.
+  example: []
+  syntax:
+    content: float preferredWidth { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: ReadOnly Property preferredWidth As Single
+  overload: UnityEngine.UI.ILayoutElement.preferredWidth*
+- uid: UnityEngine.UI.ILayoutElement.flexibleWidth
+  commentId: P:UnityEngine.UI.ILayoutElement.flexibleWidth
+  id: flexibleWidth
+  parent: UnityEngine.UI.ILayoutElement
+  langs:
+  - csharp
+  - vb
+  name: flexibleWidth
+  nameWithType: ILayoutElement.flexibleWidth
+  fullName: UnityEngine.UI.ILayoutElement.flexibleWidth
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: flexibleWidth
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+    startLine: 78
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The extra relative width this layout element should be allocated if there is additional available space.
+  remarks: Setting preferredWidth to -1 removed the preferredWidth.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using UnityEngine;
+
+    using System.Collections;
+
+    using UnityEngine.UI; // Required when using UI elements.
+
+
+    public class ExampleClass : MonoBehaviour
+
+    {
+        public Transform MyContentPanel;
+
+        //Sets the flexible height on on all children in the content panel.
+        public void Start()
+        {
+            //Assign all the children of the content panel to an array.
+            LayoutElement[] myLayoutElements = MyContentPanel.GetComponentsInChildren&lt;LayoutElement&gt;();
+
+            //For each child in the array change its LayoutElement's flexible width to 200.
+            foreach (LayoutElement element in myLayoutElements)
+            {
+                element.flexibleWidth = 200f;
+            }
+        }
+    }</code></pre>
+  syntax:
+    content: float flexibleWidth { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: ReadOnly Property flexibleWidth As Single
+  overload: UnityEngine.UI.ILayoutElement.flexibleWidth*
+- uid: UnityEngine.UI.ILayoutElement.minHeight
+  commentId: P:UnityEngine.UI.ILayoutElement.minHeight
+  id: minHeight
+  parent: UnityEngine.UI.ILayoutElement
+  langs:
+  - csharp
+  - vb
+  name: minHeight
+  nameWithType: ILayoutElement.minHeight
+  fullName: UnityEngine.UI.ILayoutElement.minHeight
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: minHeight
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+    startLine: 83
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The minimum height this layout element may be allocated.
+  example: []
+  syntax:
+    content: float minHeight { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: ReadOnly Property minHeight As Single
+  overload: UnityEngine.UI.ILayoutElement.minHeight*
+- uid: UnityEngine.UI.ILayoutElement.preferredHeight
+  commentId: P:UnityEngine.UI.ILayoutElement.preferredHeight
+  id: preferredHeight
+  parent: UnityEngine.UI.ILayoutElement
+  langs:
+  - csharp
+  - vb
+  name: preferredHeight
+  nameWithType: ILayoutElement.preferredHeight
+  fullName: UnityEngine.UI.ILayoutElement.preferredHeight
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: preferredHeight
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+    startLine: 91
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The preferred height this layout element should be allocated if there is sufficient space.
+  remarks: PreferredHeight can be set to -1 to remove the size.
+  example: []
+  syntax:
+    content: float preferredHeight { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: ReadOnly Property preferredHeight As Single
+  overload: UnityEngine.UI.ILayoutElement.preferredHeight*
+- uid: UnityEngine.UI.ILayoutElement.flexibleHeight
+  commentId: P:UnityEngine.UI.ILayoutElement.flexibleHeight
+  id: flexibleHeight
+  parent: UnityEngine.UI.ILayoutElement
+  langs:
+  - csharp
+  - vb
+  name: flexibleHeight
+  nameWithType: ILayoutElement.flexibleHeight
+  fullName: UnityEngine.UI.ILayoutElement.flexibleHeight
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: flexibleHeight
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+    startLine: 123
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The extra relative height this layout element should be allocated if there is additional available space.
+  example:
+  - >-
+    <pre><code class="lang-csharp">using UnityEngine;
+
+    using System.Collections;
+
+    using UnityEngine.UI; // Required when using UI elements.
+
+
+    public class ExampleClass : MonoBehaviour
+
+    {
+        public Transform MyContentPanel;
+
+        //Sets the flexible height on on all children in the content panel.
+        public void Start()
+        {
+            //Assign all the children of the content panel to an array.
+            LayoutElement[] myLayoutElements = MyContentPanel.GetComponentsInChildren&lt;LayoutElement&gt;();
+
+            //For each child in the array change its LayoutElement's flexible height to 100.
+            foreach (LayoutElement element in myLayoutElements)
+            {
+                element.flexibleHeight = 100f;
+            }
+        }
+    }</code></pre>
+  syntax:
+    content: float flexibleHeight { get; }
+    parameters: []
+    return:
+      type: System.Single
+    content.vb: ReadOnly Property flexibleHeight As Single
+  overload: UnityEngine.UI.ILayoutElement.flexibleHeight*
+- uid: UnityEngine.UI.ILayoutElement.layoutPriority
+  commentId: P:UnityEngine.UI.ILayoutElement.layoutPriority
+  id: layoutPriority
+  parent: UnityEngine.UI.ILayoutElement
+  langs:
+  - csharp
+  - vb
+  name: layoutPriority
+  nameWithType: ILayoutElement.layoutPriority
+  fullName: UnityEngine.UI.ILayoutElement.layoutPriority
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: layoutPriority
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/Layout/ILayoutElement.cs
+    startLine: 131
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  summary: The layout priority of this component.
+  remarks: If multiple components on the same GameObject implement the ILayoutElement interface, the values provided by components that return a higher priority value are given priority. However, values less than zero are ignored. This way a component can override only select properties by leaving the remaning values to be -1 or other values less than zero.
+  example: []
+  syntax:
+    content: int layoutPriority { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property layoutPriority As Integer
+  overload: UnityEngine.UI.ILayoutElement.layoutPriority*
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: UnityEngine.UI.ILayoutElement.CalculateLayoutInputHorizontal*
+  commentId: Overload:UnityEngine.UI.ILayoutElement.CalculateLayoutInputHorizontal
+  href: UnityEngine.UI.ILayoutElement.html#UnityEngine_UI_ILayoutElement_CalculateLayoutInputHorizontal
+  name: CalculateLayoutInputHorizontal
+  nameWithType: ILayoutElement.CalculateLayoutInputHorizontal
+  fullName: UnityEngine.UI.ILayoutElement.CalculateLayoutInputHorizontal
+- uid: UnityEngine.UI.ILayoutElement.CalculateLayoutInputVertical*
+  commentId: Overload:UnityEngine.UI.ILayoutElement.CalculateLayoutInputVertical
+  href: UnityEngine.UI.ILayoutElement.html#UnityEngine_UI_ILayoutElement_CalculateLayoutInputVertical
+  name: CalculateLayoutInputVertical
+  nameWithType: ILayoutElement.CalculateLayoutInputVertical
+  fullName: UnityEngine.UI.ILayoutElement.CalculateLayoutInputVertical
+- uid: UnityEngine.UI.ILayoutElement.minWidth*
+  commentId: Overload:UnityEngine.UI.ILayoutElement.minWidth
+  href: UnityEngine.UI.ILayoutElement.html#UnityEngine_UI_ILayoutElement_minWidth
+  name: minWidth
+  nameWithType: ILayoutElement.minWidth
+  fullName: UnityEngine.UI.ILayoutElement.minWidth
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.single
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.UI.ILayoutElement.preferredWidth*
+  commentId: Overload:UnityEngine.UI.ILayoutElement.preferredWidth
+  href: UnityEngine.UI.ILayoutElement.html#UnityEngine_UI_ILayoutElement_preferredWidth
+  name: preferredWidth
+  nameWithType: ILayoutElement.preferredWidth
+  fullName: UnityEngine.UI.ILayoutElement.preferredWidth
+- uid: UnityEngine.UI.ILayoutElement.flexibleWidth*
+  commentId: Overload:UnityEngine.UI.ILayoutElement.flexibleWidth
+  href: UnityEngine.UI.ILayoutElement.html#UnityEngine_UI_ILayoutElement_flexibleWidth
+  name: flexibleWidth
+  nameWithType: ILayoutElement.flexibleWidth
+  fullName: UnityEngine.UI.ILayoutElement.flexibleWidth
+- uid: UnityEngine.UI.ILayoutElement.minHeight*
+  commentId: Overload:UnityEngine.UI.ILayoutElement.minHeight
+  href: UnityEngine.UI.ILayoutElement.html#UnityEngine_UI_ILayoutElement_minHeight
+  name: minHeight
+  nameWithType: ILayoutElement.minHeight
+  fullName: UnityEngine.UI.ILayoutElement.minHeight
+- uid: UnityEngine.UI.ILayoutElement.preferredHeight*
+  commentId: Overload:UnityEngine.UI.ILayoutElement.preferredHeight
+  href: UnityEngine.UI.ILayoutElement.html#UnityEngine_UI_ILayoutElement_preferredHeight
+  name: preferredHeight
+  nameWithType: ILayoutElement.preferredHeight
+  fullName: UnityEngine.UI.ILayoutElement.preferredHeight
+- uid: UnityEngine.UI.ILayoutElement.flexibleHeight*
+  commentId: Overload:UnityEngine.UI.ILayoutElement.flexibleHeight
+  href: UnityEngine.UI.ILayoutElement.html#UnityEngine_UI_ILayoutElement_flexibleHeight
+  name: flexibleHeight
+  nameWithType: ILayoutElement.flexibleHeight
+  fullName: UnityEngine.UI.ILayoutElement.flexibleHeight
+- uid: UnityEngine.UI.ILayoutElement.layoutPriority*
+  commentId: Overload:UnityEngine.UI.ILayoutElement.layoutPriority
+  href: UnityEngine.UI.ILayoutElement.html#UnityEngine_UI_ILayoutElement_layoutPriority
+  name: layoutPriority
+  nameWithType: ILayoutElement.layoutPriority
+  fullName: UnityEngine.UI.ILayoutElement.layoutPriority
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

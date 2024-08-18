@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.EventSystems.PointerEventData.InputButton
+  commentId: T:UnityEngine.EventSystems.PointerEventData.InputButton
+  id: PointerEventData.InputButton
+  parent: UnityEngine.EventSystems
+  children:
+  - UnityEngine.EventSystems.PointerEventData.InputButton.Left
+  - UnityEngine.EventSystems.PointerEventData.InputButton.Middle
+  - UnityEngine.EventSystems.PointerEventData.InputButton.Right
+  langs:
+  - csharp
+  - vb
+  name: PointerEventData.InputButton
+  nameWithType: PointerEventData.InputButton
+  fullName: UnityEngine.EventSystems.PointerEventData.InputButton
+  type: Enum
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: InputButton
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 14
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Input press tracking.
+  example: []
+  syntax:
+    content: public enum PointerEventData.InputButton
+    content.vb: Public Enum PointerEventData.InputButton
+- uid: UnityEngine.EventSystems.PointerEventData.InputButton.Left
+  commentId: F:UnityEngine.EventSystems.PointerEventData.InputButton.Left
+  id: Left
+  parent: UnityEngine.EventSystems.PointerEventData.InputButton
+  langs:
+  - csharp
+  - vb
+  name: Left
+  nameWithType: PointerEventData.InputButton.Left
+  fullName: UnityEngine.EventSystems.PointerEventData.InputButton.Left
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Left
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 19
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Left button
+  example: []
+  syntax:
+    content: Left = 0
+    return:
+      type: UnityEngine.EventSystems.PointerEventData.InputButton
+- uid: UnityEngine.EventSystems.PointerEventData.InputButton.Right
+  commentId: F:UnityEngine.EventSystems.PointerEventData.InputButton.Right
+  id: Right
+  parent: UnityEngine.EventSystems.PointerEventData.InputButton
+  langs:
+  - csharp
+  - vb
+  name: Right
+  nameWithType: PointerEventData.InputButton.Right
+  fullName: UnityEngine.EventSystems.PointerEventData.InputButton.Right
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Right
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 24
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Right button.
+  example: []
+  syntax:
+    content: Right = 1
+    return:
+      type: UnityEngine.EventSystems.PointerEventData.InputButton
+- uid: UnityEngine.EventSystems.PointerEventData.InputButton.Middle
+  commentId: F:UnityEngine.EventSystems.PointerEventData.InputButton.Middle
+  id: Middle
+  parent: UnityEngine.EventSystems.PointerEventData.InputButton
+  langs:
+  - csharp
+  - vb
+  name: Middle
+  nameWithType: PointerEventData.InputButton.Middle
+  fullName: UnityEngine.EventSystems.PointerEventData.InputButton.Middle
+  type: Field
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Middle
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventData/PointerEventData.cs
+    startLine: 29
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.EventSystems
+  summary: Middle button
+  example: []
+  syntax:
+    content: Middle = 2
+    return:
+      type: UnityEngine.EventSystems.PointerEventData.InputButton
+references:
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  href: UnityEngine.html
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    href: UnityEngine.EventSystems.html
+- uid: UnityEngine.EventSystems.PointerEventData.InputButton
+  commentId: T:UnityEngine.EventSystems.PointerEventData.InputButton
+  parent: UnityEngine.EventSystems
+  href: UnityEngine.EventSystems.PointerEventData.html
+  name: PointerEventData.InputButton
+  nameWithType: PointerEventData.InputButton
+  fullName: UnityEngine.EventSystems.PointerEventData.InputButton
+  spec.csharp:
+  - uid: UnityEngine.EventSystems.PointerEventData
+    name: PointerEventData
+    href: UnityEngine.EventSystems.PointerEventData.html
+  - name: .
+  - uid: UnityEngine.EventSystems.PointerEventData.InputButton
+    name: InputButton
+    href: UnityEngine.EventSystems.PointerEventData.InputButton.html
+  spec.vb:
+  - uid: UnityEngine.EventSystems.PointerEventData
+    name: PointerEventData
+    href: UnityEngine.EventSystems.PointerEventData.html
+  - name: .
+  - uid: UnityEngine.EventSystems.PointerEventData.InputButton
+    name: InputButton
+    href: UnityEngine.EventSystems.PointerEventData.InputButton.html

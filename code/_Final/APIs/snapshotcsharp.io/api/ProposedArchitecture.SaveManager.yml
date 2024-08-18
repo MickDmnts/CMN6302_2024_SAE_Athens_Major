@@ -1,0 +1,769 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProposedArchitecture.SaveManager
+  commentId: T:ProposedArchitecture.SaveManager
+  id: SaveManager
+  parent: ProposedArchitecture
+  children:
+  - ProposedArchitecture.SaveManager.#ctor(ProposedArchitecture.Common)
+  - ProposedArchitecture.SaveManager.CacheModel(ProposedArchitecture.ISnapshotModel)
+  - ProposedArchitecture.SaveManager.Cleanup
+  - ProposedArchitecture.SaveManager.LoadSaveFile(System.String)
+  - ProposedArchitecture.SaveManager.RegisterModel(ProposedArchitecture.ISnapshot)
+  - ProposedArchitecture.SaveManager.Save
+  - ProposedArchitecture.SaveManager.Snapshots
+  - ProposedArchitecture.SaveManager.UnregisterFromSnapshot(ProposedArchitecture.ISnapshot)
+  langs:
+  - csharp
+  - vb
+  name: SaveManager
+  nameWithType: SaveManager
+  fullName: ProposedArchitecture.SaveManager
+  type: Class
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/SaveManager.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: SaveManager
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/SaveManager.cs
+    startLine: 11
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  summary: >-
+    Responsible for handling the SnapshotWrapper, ISnapshot and ISnapshotModel instances.
+
+    Hands out SMRIs.
+  example: []
+  syntax:
+    content: public class SaveManager
+    content.vb: Public Class SaveManager
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ProposedArchitecture.SaveManager.Snapshots
+  commentId: P:ProposedArchitecture.SaveManager.Snapshots
+  id: Snapshots
+  parent: ProposedArchitecture.SaveManager
+  langs:
+  - csharp
+  - vb
+  name: Snapshots
+  nameWithType: SaveManager.Snapshots
+  fullName: ProposedArchitecture.SaveManager.Snapshots
+  type: Property
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/SaveManager.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Snapshots
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/SaveManager.cs
+    startLine: 20
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  summary: Returns a read only collection of the Snapshot reference cache.
+  example: []
+  syntax:
+    content: public IReadOnlyList<ISnapshot> Snapshots { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{ProposedArchitecture.ISnapshot}
+    content.vb: Public ReadOnly Property Snapshots As IReadOnlyList(Of ISnapshot)
+  overload: ProposedArchitecture.SaveManager.Snapshots*
+- uid: ProposedArchitecture.SaveManager.#ctor(ProposedArchitecture.Common)
+  commentId: M:ProposedArchitecture.SaveManager.#ctor(ProposedArchitecture.Common)
+  id: '#ctor(ProposedArchitecture.Common)'
+  parent: ProposedArchitecture.SaveManager
+  langs:
+  - csharp
+  - vb
+  name: SaveManager(Common)
+  nameWithType: SaveManager.SaveManager(Common)
+  fullName: ProposedArchitecture.SaveManager.SaveManager(ProposedArchitecture.Common)
+  type: Constructor
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/SaveManager.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: .ctor
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/SaveManager.cs
+    startLine: 33
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  summary: Creates a SaveManager instance
+  example: []
+  syntax:
+    content: public SaveManager(Common _common)
+    parameters:
+    - id: _common
+      type: ProposedArchitecture.Common
+      description: Reference to the Common instance
+    content.vb: Public Sub New(_common As Common)
+  overload: ProposedArchitecture.SaveManager.#ctor*
+  nameWithType.vb: SaveManager.New(Common)
+  fullName.vb: ProposedArchitecture.SaveManager.New(ProposedArchitecture.Common)
+  name.vb: New(Common)
+- uid: ProposedArchitecture.SaveManager.UnregisterFromSnapshot(ProposedArchitecture.ISnapshot)
+  commentId: M:ProposedArchitecture.SaveManager.UnregisterFromSnapshot(ProposedArchitecture.ISnapshot)
+  id: UnregisterFromSnapshot(ProposedArchitecture.ISnapshot)
+  parent: ProposedArchitecture.SaveManager
+  langs:
+  - csharp
+  - vb
+  name: UnregisterFromSnapshot(ISnapshot)
+  nameWithType: SaveManager.UnregisterFromSnapshot(ISnapshot)
+  fullName: ProposedArchitecture.SaveManager.UnregisterFromSnapshot(ProposedArchitecture.ISnapshot)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/SaveManager.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: UnregisterFromSnapshot
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/SaveManager.cs
+    startLine: 55
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  summary: >-
+    Unregisters the passed ISnapshot from data caching upon packing.
+
+    The passed snapshot is also removed from the Snapshot list.
+  example: []
+  syntax:
+    content: public void UnregisterFromSnapshot(ISnapshot _snapshot)
+    parameters:
+    - id: _snapshot
+      type: ProposedArchitecture.ISnapshot
+      description: ''
+    content.vb: Public Sub UnregisterFromSnapshot(_snapshot As ISnapshot)
+  overload: ProposedArchitecture.SaveManager.UnregisterFromSnapshot*
+- uid: ProposedArchitecture.SaveManager.RegisterModel(ProposedArchitecture.ISnapshot)
+  commentId: M:ProposedArchitecture.SaveManager.RegisterModel(ProposedArchitecture.ISnapshot)
+  id: RegisterModel(ProposedArchitecture.ISnapshot)
+  parent: ProposedArchitecture.SaveManager
+  langs:
+  - csharp
+  - vb
+  name: RegisterModel(ISnapshot)
+  nameWithType: SaveManager.RegisterModel(ISnapshot)
+  fullName: ProposedArchitecture.SaveManager.RegisterModel(ProposedArchitecture.ISnapshot)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/SaveManager.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: RegisterModel
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/SaveManager.cs
+    startLine: 65
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  summary: Registers the passed ISnapshot instance to the serialization event handler and adds it to the ISnapshot reference list.
+  example: []
+  syntax:
+    content: public uint RegisterModel(ISnapshot _snapshot)
+    parameters:
+    - id: _snapshot
+      type: ProposedArchitecture.ISnapshot
+      description: The snapshot instance
+    return:
+      type: System.UInt32
+      description: The SMRI of the registered model.
+    content.vb: Public Function RegisterModel(_snapshot As ISnapshot) As UInteger
+  overload: ProposedArchitecture.SaveManager.RegisterModel*
+- uid: ProposedArchitecture.SaveManager.Save
+  commentId: M:ProposedArchitecture.SaveManager.Save
+  id: Save
+  parent: ProposedArchitecture.SaveManager
+  langs:
+  - csharp
+  - vb
+  name: Save()
+  nameWithType: SaveManager.Save()
+  fullName: ProposedArchitecture.SaveManager.Save()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/SaveManager.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Save
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/SaveManager.cs
+    startLine: 77
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  summary: >-
+    Kicks off the packing sequence. All the cached ISnapshot.CacheData methods get called and 
+
+    their data are serialized and passed to the internal DLL library cache.
+
+    The cached SaveManager models list gets cleared afterwards.
+  example: []
+  syntax:
+    content: public void Save()
+    content.vb: Public Sub Save()
+  overload: ProposedArchitecture.SaveManager.Save*
+- uid: ProposedArchitecture.SaveManager.CacheModel(ProposedArchitecture.ISnapshotModel)
+  commentId: M:ProposedArchitecture.SaveManager.CacheModel(ProposedArchitecture.ISnapshotModel)
+  id: CacheModel(ProposedArchitecture.ISnapshotModel)
+  parent: ProposedArchitecture.SaveManager
+  langs:
+  - csharp
+  - vb
+  name: CacheModel(ISnapshotModel)
+  nameWithType: SaveManager.CacheModel(ISnapshotModel)
+  fullName: ProposedArchitecture.SaveManager.CacheModel(ProposedArchitecture.ISnapshotModel)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/SaveManager.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: CacheModel
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/SaveManager.cs
+    startLine: 99
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  summary: Stores the passed model to the SaveManager data container list.
+  example: []
+  syntax:
+    content: public void CacheModel(ISnapshotModel _model)
+    parameters:
+    - id: _model
+      type: ProposedArchitecture.ISnapshotModel
+      description: The snapshot data container instance
+    content.vb: Public Sub CacheModel(_model As ISnapshotModel)
+  overload: ProposedArchitecture.SaveManager.CacheModel*
+- uid: ProposedArchitecture.SaveManager.LoadSaveFile(System.String)
+  commentId: M:ProposedArchitecture.SaveManager.LoadSaveFile(System.String)
+  id: LoadSaveFile(System.String)
+  parent: ProposedArchitecture.SaveManager
+  langs:
+  - csharp
+  - vb
+  name: LoadSaveFile(string)
+  nameWithType: SaveManager.LoadSaveFile(string)
+  fullName: ProposedArchitecture.SaveManager.LoadSaveFile(string)
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/SaveManager.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: LoadSaveFile
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/SaveManager.cs
+    startLine: 109
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  summary: >-
+    Kicks off the Unpacking mechanism contained in the passed fileName.
+
+    The deserialized data are stored inside the SaveManager ISnapshotModel cache for accessing.
+
+    Each cached ISnapshot.LoadModel and ISnapshot.RetrieveReferences method gets called after each data retrieval from the dll cache.
+  example: []
+  syntax:
+    content: public void LoadSaveFile(string _fileName)
+    parameters:
+    - id: _fileName
+      type: System.String
+      description: ''
+    content.vb: Public Sub LoadSaveFile(_fileName As String)
+  overload: ProposedArchitecture.SaveManager.LoadSaveFile*
+  nameWithType.vb: SaveManager.LoadSaveFile(String)
+  fullName.vb: ProposedArchitecture.SaveManager.LoadSaveFile(String)
+  name.vb: LoadSaveFile(String)
+- uid: ProposedArchitecture.SaveManager.Cleanup
+  commentId: M:ProposedArchitecture.SaveManager.Cleanup
+  id: Cleanup
+  parent: ProposedArchitecture.SaveManager
+  langs:
+  - csharp
+  - vb
+  name: Cleanup()
+  nameWithType: SaveManager.Cleanup()
+  fullName: ProposedArchitecture.SaveManager.Cleanup()
+  type: Method
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/SaveManager.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: Cleanup
+    path: ../Snapshot/Runtime/Source/Mad/ProposedUsage/SaveManager/SaveManager.cs
+    startLine: 130
+  assemblies:
+  - com.mad.snapshot
+  namespace: ProposedArchitecture
+  summary: Resets the dll library caches and SMRI.
+  example: []
+  syntax:
+    content: public bool Cleanup()
+    return:
+      type: System.Boolean
+    content.vb: Public Function Cleanup() As Boolean
+  overload: ProposedArchitecture.SaveManager.Cleanup*
+references:
+- uid: ProposedArchitecture
+  commentId: N:ProposedArchitecture
+  href: ProposedArchitecture.html
+  name: ProposedArchitecture
+  nameWithType: ProposedArchitecture
+  fullName: ProposedArchitecture
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProposedArchitecture.SaveManager.Snapshots*
+  commentId: Overload:ProposedArchitecture.SaveManager.Snapshots
+  href: ProposedArchitecture.SaveManager.html#ProposedArchitecture_SaveManager_Snapshots
+  name: Snapshots
+  nameWithType: SaveManager.Snapshots
+  fullName: ProposedArchitecture.SaveManager.Snapshots
+- uid: System.Collections.Generic.IReadOnlyList{ProposedArchitecture.ISnapshot}
+  commentId: T:System.Collections.Generic.IReadOnlyList{ProposedArchitecture.ISnapshot}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<ISnapshot>
+  nameWithType: IReadOnlyList<ISnapshot>
+  fullName: System.Collections.Generic.IReadOnlyList<ProposedArchitecture.ISnapshot>
+  nameWithType.vb: IReadOnlyList(Of ISnapshot)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of ProposedArchitecture.ISnapshot)
+  name.vb: IReadOnlyList(Of ISnapshot)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: ProposedArchitecture.ISnapshot
+    name: ISnapshot
+    href: ProposedArchitecture.ISnapshot.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: ProposedArchitecture.ISnapshot
+    name: ISnapshot
+    href: ProposedArchitecture.ISnapshot.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: ProposedArchitecture.SaveManager.#ctor*
+  commentId: Overload:ProposedArchitecture.SaveManager.#ctor
+  href: ProposedArchitecture.SaveManager.html#ProposedArchitecture_SaveManager__ctor_ProposedArchitecture_Common_
+  name: SaveManager
+  nameWithType: SaveManager.SaveManager
+  fullName: ProposedArchitecture.SaveManager.SaveManager
+  nameWithType.vb: SaveManager.New
+  fullName.vb: ProposedArchitecture.SaveManager.New
+  name.vb: New
+- uid: ProposedArchitecture.Common
+  commentId: T:ProposedArchitecture.Common
+  parent: ProposedArchitecture
+  href: ProposedArchitecture.Common.html
+  name: Common
+  nameWithType: Common
+  fullName: ProposedArchitecture.Common
+- uid: ProposedArchitecture.SaveManager.UnregisterFromSnapshot*
+  commentId: Overload:ProposedArchitecture.SaveManager.UnregisterFromSnapshot
+  href: ProposedArchitecture.SaveManager.html#ProposedArchitecture_SaveManager_UnregisterFromSnapshot_ProposedArchitecture_ISnapshot_
+  name: UnregisterFromSnapshot
+  nameWithType: SaveManager.UnregisterFromSnapshot
+  fullName: ProposedArchitecture.SaveManager.UnregisterFromSnapshot
+- uid: ProposedArchitecture.ISnapshot
+  commentId: T:ProposedArchitecture.ISnapshot
+  parent: ProposedArchitecture
+  href: ProposedArchitecture.ISnapshot.html
+  name: ISnapshot
+  nameWithType: ISnapshot
+  fullName: ProposedArchitecture.ISnapshot
+- uid: ProposedArchitecture.SaveManager.RegisterModel*
+  commentId: Overload:ProposedArchitecture.SaveManager.RegisterModel
+  href: ProposedArchitecture.SaveManager.html#ProposedArchitecture_SaveManager_RegisterModel_ProposedArchitecture_ISnapshot_
+  name: RegisterModel
+  nameWithType: SaveManager.RegisterModel
+  fullName: ProposedArchitecture.SaveManager.RegisterModel
+- uid: System.UInt32
+  commentId: T:System.UInt32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint32
+  name: uint
+  nameWithType: uint
+  fullName: uint
+  nameWithType.vb: UInteger
+  fullName.vb: UInteger
+  name.vb: UInteger
+- uid: ProposedArchitecture.SaveManager.Save*
+  commentId: Overload:ProposedArchitecture.SaveManager.Save
+  href: ProposedArchitecture.SaveManager.html#ProposedArchitecture_SaveManager_Save
+  name: Save
+  nameWithType: SaveManager.Save
+  fullName: ProposedArchitecture.SaveManager.Save
+- uid: ProposedArchitecture.SaveManager.CacheModel*
+  commentId: Overload:ProposedArchitecture.SaveManager.CacheModel
+  href: ProposedArchitecture.SaveManager.html#ProposedArchitecture_SaveManager_CacheModel_ProposedArchitecture_ISnapshotModel_
+  name: CacheModel
+  nameWithType: SaveManager.CacheModel
+  fullName: ProposedArchitecture.SaveManager.CacheModel
+- uid: ProposedArchitecture.ISnapshotModel
+  commentId: T:ProposedArchitecture.ISnapshotModel
+  parent: ProposedArchitecture
+  href: ProposedArchitecture.ISnapshotModel.html
+  name: ISnapshotModel
+  nameWithType: ISnapshotModel
+  fullName: ProposedArchitecture.ISnapshotModel
+- uid: ProposedArchitecture.SaveManager.LoadSaveFile*
+  commentId: Overload:ProposedArchitecture.SaveManager.LoadSaveFile
+  href: ProposedArchitecture.SaveManager.html#ProposedArchitecture_SaveManager_LoadSaveFile_System_String_
+  name: LoadSaveFile
+  nameWithType: SaveManager.LoadSaveFile
+  fullName: ProposedArchitecture.SaveManager.LoadSaveFile
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ProposedArchitecture.SaveManager.Cleanup*
+  commentId: Overload:ProposedArchitecture.SaveManager.Cleanup
+  href: ProposedArchitecture.SaveManager.html#ProposedArchitecture_SaveManager_Cleanup
+  name: Cleanup
+  nameWithType: SaveManager.Cleanup
+  fullName: ProposedArchitecture.SaveManager.Cleanup
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

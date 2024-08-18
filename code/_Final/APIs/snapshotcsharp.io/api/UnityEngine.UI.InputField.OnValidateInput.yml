@@ -1,0 +1,100 @@
+### YamlMime:ManagedReference
+items:
+- uid: UnityEngine.UI.InputField.OnValidateInput
+  commentId: T:UnityEngine.UI.InputField.OnValidateInput
+  id: InputField.OnValidateInput
+  parent: UnityEngine.UI
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: InputField.OnValidateInput
+  nameWithType: InputField.OnValidateInput
+  fullName: UnityEngine.UI.InputField.OnValidateInput
+  type: Delegate
+  source:
+    remote:
+      path: code/unityProject/development/SnapshotDevelopment/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+      branch: mad
+      repo: https://github.com/MickDmnts/CMN6302_2024_SAE_Athens_Major.git
+    id: OnValidateInput
+    path: ../Library/PackageCache/com.unity.ugui@1.0.0/Runtime/UI/Core/InputField.cs
+    startLine: 179
+  assemblies:
+  - UnityEngine.UI
+  namespace: UnityEngine.UI
+  syntax:
+    content: public delegate char InputField.OnValidateInput(string text, int charIndex, char addedChar)
+    parameters:
+    - id: text
+      type: System.String
+    - id: charIndex
+      type: System.Int32
+    - id: addedChar
+      type: System.Char
+    return:
+      type: System.Char
+    content.vb: Public Delegate Function InputField.OnValidateInput(text As String, charIndex As Integer, addedChar As Char) As Char
+references:
+- uid: UnityEngine.UI
+  commentId: N:UnityEngine.UI
+  href: UnityEngine.html
+  name: UnityEngine.UI
+  nameWithType: UnityEngine.UI
+  fullName: UnityEngine.UI
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    href: UnityEngine.html
+  - name: .
+  - uid: UnityEngine.UI
+    name: UI
+    href: UnityEngine.UI.html
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
